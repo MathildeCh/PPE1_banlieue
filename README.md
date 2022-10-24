@@ -3,19 +3,19 @@
 
 ## Contributeurs et repos persos
 
-Mathilde Charlet - https://github.com/MathildeCh/exo_PPE
+Mathilde Charlet - https://github.com/MathildeCh/exo_PPE\n
 Diego Rossini - https://github.com/DiegoRossini/PPE1
 
 
 ## Mot choisi pour le projet
 
-BANLIEUE (français)
-PERIFERIA (italien)
+BANLIEUE (français)\n
+PERIFERIA (italien)\n
 SUBURB (anglais americain)
 
 
 ## Langues choisies
 
-Français
-Italien
+Français\n
+Italien\n
 Anglais Americain
