@@ -11,13 +11,13 @@ Lilas Pastré - https://github.com/Lilasp/PPE1
 
 BANLIEUE (français)\
 PERIFERIA (italien)\
-ΠΡΟΆΣΤΙΟ (grec moderne)\ 
-SUBURB (anglais americain)
+SUBURB (anglais americain)\
+ΠΡΟΆΣΤΙΟ (grec moderne)  
 
 
 ## Langues choisies
 
 Français\
 Italien\
-Grec\
-Anglais Americain<br/>
+Anglais Americain\
+Grec<br/>
