@@ -11,7 +11,7 @@ Lilas Pastré - https://github.com/Lilasp/PPE1
 
 BANLIEUE (français)\
 PERIFERIA (italien)\
-ΠΡΟΆΣΤΙΟ (grec)\ 
+ΠΡΟΆΣΤΙΟ (grec moderne)\ 
 SUBURB (anglais americain)
 
 
