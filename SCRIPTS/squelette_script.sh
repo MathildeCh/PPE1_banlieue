@@ -40,7 +40,7 @@ do
             ##on ne fait rien
             ## écriture du résultat (??)
         # fi
-    done < $dirURLs/$fichier
+    done < $dirURLs/$fichier #problème rencontré: "$fichier" -> not a valid identifier
 done
 
 
