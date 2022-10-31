@@ -74,7 +74,7 @@ Constitution du corpus sur le même principe de recherche de coocurrence sur *Go
 
 ## 31/10/2022
 
-## Création du journal de bord
+### Création du journal de bord
 
 Nous avons retracé le parcours effectué jusqu'à présent.
 
