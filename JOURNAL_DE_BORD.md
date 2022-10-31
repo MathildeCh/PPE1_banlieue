@@ -20,7 +20,7 @@ Ces trois critères nous permettront de constituer un corpus multilingue compara
 
 ### Première proposition de mot
 
-- Diego : “*sentir*” 
+- Diego : “*sentir*”<br>
 **Problèmes** :
 1. ne respecte pas le critère de *dénotation* (plus de 10 sens dans l'entrée lexicale en français)
 2. aucun verbe ne semble avoir été choisi au cours des années précédentes, peut-être le même problème de dénotation pour beaucoup de verbes : nous ne choisirons pas de verbe
@@ -29,7 +29,7 @@ Ces trois critères nous permettront de constituer un corpus multilingue compara
 
 ### Deuxième proposition de mot 
 
-- Mathilde : "*dépaysement*”
+- Mathilde : "*dépaysement*”<br>
 **Problème** :
 1. ne respecte pas le critère de *traduisibilité* 
 
@@ -37,7 +37,7 @@ Ces trois critères nous permettront de constituer un corpus multilingue compara
 
 ### Choix du mot définitif
 
-- Diego et Mathilde : "***banlieue***"
+- Diego et Mathilde : "***banlieue***"<br>
 Répond aux trois critères
 
 
