@@ -3,7 +3,7 @@
 
 ## Contributeurs et repos persos
 
-Mathilde Charlet - https://github.com/MathildeCh/exo_PPE<br/>
+Mathilde Charlet - https://github.com/MathildeCh/PPE<br/>
 Diego Rossini - https://github.com/DiegoRossini/PPE1<br/>
 Lilas Pastré - https://github.com/Lilasp/PPE1
 
