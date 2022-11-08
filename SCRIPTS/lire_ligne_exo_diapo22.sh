@@ -76,12 +76,13 @@ while read -r line;
 do
     i=$(expr $i + 1)
     echo "
-                    <tr>
-                        <td>$i</td>
-                        <td>$line</td>
-                    </tr>" >> tableau.html;
+                <tr>
+                    <td>$i</td>
+                    <td>$line</td>
+                </tr>" >> tableau.html;
 done < $URLS;
 
-echo "      </table>
+echo "
+            </table>
         </body>
     </html>" >> tableau.html;
