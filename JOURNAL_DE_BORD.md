@@ -78,5 +78,16 @@ Constitution du corpus sur le même principe de recherche de coocurrence sur *Go
 
 Nous avons retracé le parcours effectué jusqu'à présent.
 
+##08/11/2022
+
+##Table HTML: intégration du numéro de ligne et des urls.
+
+Nous avons créé le script qui permet de créer les tableaux HTML par corpus avec le numéro de ligne et les urls. Nous avons aussi trouvé comment isoler le code de la réponse HTTP.
+
+##16/11/2022
+
+##Table HTML: intégration du code HTTP et de l'encodage.
+
+Nous avons inclus le code HTTP aux tableaux. Nous avons également trouvé comment isoler l'encodage (charset) du header et l'inclure dans les tableaux (à finaliser). Nous avons presque réussi à isoler les titres des articles.
 
 
