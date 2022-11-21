@@ -90,4 +90,8 @@ Nous avons créé le script qui permet de créer les tableaux HTML par corpus av
 
 Nous avons inclus le code HTTP aux tableaux. Nous avons également trouvé comment isoler l'encodage (charset) du header et l'inclure dans les tableaux (à finaliser). Nous avons presque réussi à isoler les titres des articles.
 
+## 21/11/2022
 
+##Table HTML: intégration vérification encodage + comptage mot cible (incomplét!)
+
+Nous avons inclus les comptages des occurrences du mot cible dans les différents langues après vérification du codeHTTP correct. Il manque toutefois le comptage du mot grec équivalent à "banlieue". Il reste à vérifier comment traiter les urls qui n'ont pas un codeHTTP valable pour l'extraction du texte.
