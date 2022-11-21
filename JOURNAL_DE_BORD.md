@@ -94,4 +94,4 @@ Nous avons inclus le code HTTP aux tableaux. Nous avons également trouvé comme
 
 ##Table HTML: intégration vérification encodage + comptage mot cible (incomplét!)
 
-Nous avons inclus les comptages des occurrences du mot cible dans les différents langues après vérification du codeHTTP correct. Il manque toutefois le comptage du mot grec équivalent à "banlieue". Il reste à vérifier comment traiter les urls qui n'ont pas un codeHTTP valable pour l'extraction du texte.
+Nous avons inclus les comptages des occurrences du mot cible dans les différents langues après vérification du codeHTTP correct. Il manque toutefois le comptage du mot grec équivalent à "banlieue". Il reste à vérifier comment traiter les urls qui n'ont pas un codeHTTP valable (403) pour l'extraction du texte.
