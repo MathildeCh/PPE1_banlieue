@@ -38,13 +38,13 @@ do
     ##Lecture du fichier ligne à ligne
     while read -r line;
     do
-        compteur=$(expr $i + 1)
+        compteur=$(($compteur+1))
         codeHTTP=$(curl -s -L -w '%{http_code}\n' -o ciao.html $line)
         encodage=$(curl -Is -L -w '%{content_type}\n' $line | grep -i -P -o "charset=\S+" | cut -d= -f2 | head -n1)
         ##pour chaque urls
         echo "
         <tr>
-            <td>$i</td>
+            <td>$compteur</td>
             <td>$line</td>
             <td>$codeHTTP</td>
             <td>$encodage</td>
