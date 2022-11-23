@@ -106,3 +106,7 @@ Nous avons créé les dossiers TABLEAUX et ASPIRATIONS afin de stocker les table
 ### Tentative d'accepter les cookies
 
 Nous avons essayé plusieurs méthodes sur curl (-b --cookie) et lynx (FORCE_SSL_COOKIES_SECURE:TRUE) pour accepter les cookies automatiquement et éviter certains codes HTTP 403, mais sans succès. Nous estimons que nous en avons suffisamment peu pour que ça ne pose pas problème outre mesure. 
+
+### Dossier DUMPS-TEXT
+
+Nous avons créé le dossier DUMPS-TEXT qui contient le texte en intégralité des urls avec un code HTTP 200, extrait avec lynx. 
