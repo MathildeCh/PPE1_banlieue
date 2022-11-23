@@ -78,20 +78,31 @@ Constitution du corpus sur le même principe de recherche de coocurrence sur *Go
 
 Nous avons retracé le parcours effectué jusqu'à présent.
 
-##08/11/2022
+## 08/11/2022
 
-##Table HTML: intégration du numéro de ligne et des urls.
+### Table HTML: intégration du numéro de ligne et des urls.
 
 Nous avons créé le script qui permet de créer les tableaux HTML par corpus avec le numéro de ligne et les urls. Nous avons aussi trouvé comment isoler le code de la réponse HTTP.
 
-##16/11/2022
+## 16/11/2022
 
-##Table HTML: intégration du code HTTP et de l'encodage.
+### Table HTML: intégration du code HTTP et de l'encodage.
 
 Nous avons inclus le code HTTP aux tableaux. Nous avons également trouvé comment isoler l'encodage (charset) du header et l'inclure dans les tableaux (à finaliser). Nous avons presque réussi à isoler les titres des articles.
 
 ## 21/11/2022
 
-##Table HTML: intégration vérification encodage + comptage mot cible (incomplét!)
+### Table HTML: intégration vérification encodage + comptage mot cible (incomplet!)
 
 Nous avons inclus les comptages des occurrences du mot cible dans les différents langues après vérification du codeHTTP correct. Il manque toutefois le comptage du mot grec équivalent à "banlieue". Il reste à vérifier comment traiter les urls qui n'ont pas un codeHTTP valable (403) pour l'extraction du texte.
+
+
+## 23/11/2022
+
+### Réorganisation de l'arborescence
+
+Nous avons créé les dossiers TABLEAUX et ASPIRATIONS afin de stocker les tableaux et les pages html. Nous avons modifié squelette_script.sh en conséquence. 
+
+### Tentative d'accepter les cookies
+
+Nous avons essayé plusieurs méthodes sur curl (-b --cookie) et lynx (FORCE_SSL_COOKIES_SECURE:TRUE) pour accepter les cookies automatiquement et éviter certains codes HTTP 403, mais sans succès. Nous estimons que nous en avons suffisamment peu pour que ça ne pose pas problème outre mesure. 
