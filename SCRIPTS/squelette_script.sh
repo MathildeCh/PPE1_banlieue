@@ -33,28 +33,54 @@ do
                     <th>URLS $fichier</th>
                     <th>code HTTP</th>
                     <th>charset</th>
-                </tr>" > tableau_$fichier.html;
+                    <th>n_occurrence_mot</th>
+                </tr>" > /home/diego/Desktop/Master_TAL/Corsi/M1_S1_Programmation_et_projet_encadré_1/RepoCommun/PPE1_banlieue/TABLEAUX/tableau_$fichier.html;
+
+                # Ici faut mettre chacun le parcours vers le dossier TABLEAUX dans locale
 
     ##Lecture du fichier ligne à ligne
     while read -r line;
     do
-        compteur=$(expr $i + 1)
-        codeHTTP=$(curl -s -L -w '%{http_code}\n' -o ciao.html $line)
+        occurences_mot=$NONE
+        compteur=$(($compteur+1))
+        codeHTTP=$(curl -s -L -w '%{http_code}\n' -o /home/diego/Desktop/Master_TAL/Corsi/M1_S1_Programmation_et_projet_encadré_1/RepoCommun/PPE1_banlieue/ASPIRATIONS/ciao$compteur$fichier.html $line)
         encodage=$(curl -Is -L -w '%{content_type}\n' $line | grep -i -P -o "charset=\S+" | cut -d= -f2 | head -n1)
+
+
+
+        # Ici on teste si l'encodage est bien en utf-8. Si aucun encodage est relevé on suppose utf-8.
+        if test -z "$encodage"
+            then
+            encodage="UTF-8"
+        fi
+
+
+        # Ici on recupère le texte du URL si le code HTTP le permet
+        if [[ $codeHTTP == "200" || $codeHTTP == "302" ]]
+            then
+            if [[ $encodage == "UTF-8" || "uft-8" ]]
+                then
+                unset occurences_mot 
+                occurences_mot=$(lynx -dump -nolist $line | egrep -o -c "\b(suburbs?|periferi(a|e)|banlieues?)\b")
+                lynx -dump -nolist $line > /home/diego/Desktop/Master_TAL/Corsi/M1_S1_Programmation_et_projet_encadré_1/RepoCommun/PPE1_banlieue/DUMPS-TEXT/ciao$compteur$fichier.txt
+            fi 
+        fi
+
         ##pour chaque urls
         echo "
         <tr>
-            <td>$i</td>
+            <td>$compteur</td>
             <td>$line</td>
             <td>$codeHTTP</td>
             <td>$encodage</td>
-        </tr>" >> tableau_$fichier.html;
+            <td>$occurences_mot</td>
+        </tr>" >> /home/diego/Desktop/Master_TAL/Corsi/M1_S1_Programmation_et_projet_encadré_1/RepoCommun/PPE1_banlieue/TABLEAUX/tableau_$fichier.html;
     done < $dirURLs/$fichier;
 
     echo "
             </table>
         </body>
-    </html>" >> tableau_$fichier.html;
+    </html>" >> /home/diego/Desktop/Master_TAL/Corsi/M1_S1_Programmation_et_projet_encadré_1/RepoCommun/PPE1_banlieue/TABLEAUX/tableau_$fichier.html;
 
         ##Si URL OK #TODO
         # if [[ $responseHTTP == 200 OR 3xx ]]
