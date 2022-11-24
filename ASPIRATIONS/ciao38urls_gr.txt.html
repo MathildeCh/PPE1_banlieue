@@ -1,0 +1,1258 @@
+<!-- Quantcast Choice. Consent Manager Tag v2.0 (for TCF 2.0) -->
+<script type="text/javascript" async=true>
+(function() {
+
+    if (navigator.userAgent.indexOf('Speed Insights') > -1 || navigator.userAgent.indexOf('Chrome-Lighthouse') > -1) {
+        return;
+    } 
+    
+  var host = window.location.hostname;
+  var element = document.createElement('script');
+  var firstScript = document.getElementsByTagName('script')[0];
+  var url = 'https://quantcast.mgr.consensu.org'
+    .concat('/choice/', 'wzVMGkr5mk1Q3', '/', host, '/choice.js')
+  var uspTries = 0;
+  var uspTriesLimit = 3;
+  element.async = true;
+  element.type = 'text/javascript';
+  element.src = url;
+
+  firstScript.parentNode.insertBefore(element, firstScript);
+
+  function makeStub() {
+    var TCF_LOCATOR_NAME = '__tcfapiLocator';
+    var queue = [];
+    var win = window;
+    var cmpFrame;
+
+    function addFrame() {
+      var doc = win.document;
+      var otherCMP = !!(win.frames[TCF_LOCATOR_NAME]);
+
+      if (!otherCMP) {
+        if (doc.body) {
+          var iframe = doc.createElement('iframe');
+
+          iframe.style.cssText = 'display:none';
+          iframe.name = TCF_LOCATOR_NAME;
+          doc.body.appendChild(iframe);
+        } else {
+          setTimeout(addFrame, 5);
+        }
+      }
+      return !otherCMP;
+    }
+
+    function tcfAPIHandler() {
+      var gdprApplies;
+      var args = arguments;
+
+      if (!args.length) {
+        return queue;
+      } else if (args[0] === 'setGdprApplies') {
+        if (
+          args.length > 3 &&
+          args[2] === 2 &&
+          typeof args[3] === 'boolean'
+        ) {
+          gdprApplies = args[3];
+          if (typeof args[2] === 'function') {
+            args[2]('set', true);
+          }
+        }
+      } else if (args[0] === 'ping') {
+        var retr = {
+          gdprApplies: gdprApplies,
+          cmpLoaded: false,
+          cmpStatus: 'stub'
+        };
+
+        if (typeof args[2] === 'function') {
+          args[2](retr);
+        }
+      } else {
+        queue.push(args);
+      }
+    }
+
+    function postMessageEventHandler(event) {
+      var msgIsString = typeof event.data === 'string';
+      var json = {};
+
+      try {
+        if (msgIsString) {
+          json = JSON.parse(event.data);
+        } else {
+          json = event.data;
+        }
+      } catch (ignore) {}
+
+      var payload = json.__tcfapiCall;
+
+      if (payload) {
+        window.__tcfapi(
+          payload.command,
+          payload.version,
+          function(retValue, success) {
+            var returnMsg = {
+              __tcfapiReturn: {
+                returnValue: retValue,
+                success: success,
+                callId: payload.callId
+              }
+            };
+            if (msgIsString) {
+              returnMsg = JSON.stringify(returnMsg);
+            }
+            if (event && event.source && event.source.postMessage) {
+              event.source.postMessage(returnMsg, '*');
+            }
+          },
+          payload.parameter
+        );
+      }
+    }
+
+    while (win) {
+      try {
+        if (win.frames[TCF_LOCATOR_NAME]) {
+          cmpFrame = win;
+          break;
+        }
+      } catch (ignore) {}
+
+      if (win === window.top) {
+        break;
+      }
+      win = win.parent;
+    }
+    if (!cmpFrame) {
+      addFrame();
+      win.__tcfapi = tcfAPIHandler;
+      win.addEventListener('message', postMessageEventHandler, false);
+    }
+  };
+
+  makeStub();
+
+  var uspStubFunction = function() {
+    var arg = arguments;
+    if (typeof window.__uspapi !== uspStubFunction) {
+      setTimeout(function() {
+        if (typeof window.__uspapi !== 'undefined') {
+          window.__uspapi.apply(window.__uspapi, arg);
+        }
+      }, 500);
+    }
+  };
+
+  var checkIfUspIsReady = function() {
+    uspTries++;
+    if (window.__uspapi === uspStubFunction && uspTries < uspTriesLimit) {
+      console.warn('USP is not accessible');
+    } else {
+      clearInterval(uspInterval);
+    }
+  };
+
+  if (typeof window.__uspapi === 'undefined') {
+    window.__uspapi = uspStubFunction;
+    var uspInterval = setInterval(checkIfUspIsReady, 6000);
+  }
+})();
+</script>
+<!-- End Quantcast Choice. Consent Manager Tag v2.0 (for TCF 2.0) --><!doctype html>
+<html lang="el">
+<head prefix="og: http://ogp.me/ns#">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="all" />
+<meta name="development" content="Netstream" />
+<meta name="robots" content="all" />
+<meta name="keywords" content="Basket League, Παναθηναϊκός, Κολοσσός Ρόδου" />
+<meta name="description" content="Ο Κολοσσός 2,28΄΄ πριν το τέλος καρδιοχτύπησε τους πράσινους όταν μείωσε στους τέσσερις πόντους, όμως δύο τρίποντα από τους Καλαϊτζάκη και Πονίτκα επανέφεραν την τάξη" />
+<meta property="og:locale" content="el_GR" />
+<meta property="article:published_time" content="2022-10-30T17:35:00+03:00" />
+<meta property="og:image" content="https://www.vradini.gr/photos/c_696px_531px/articles/2022/10/8d5a0b_pao.jpg" />
+<meta property="og:image:width" content="696" />
+<meta property="og:image:height" content="531" />
+<meta property="og:title" content="Basket League: Εύκολα ο Παναθηναϊκός με 77-67 τον Κολοσσό Ρόδου" />
+<meta property="og:site_name" content="Η Βραδυνή" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://www.vradini.gr/article/spor/678415-basket-league-eykola-o-panathhnaikos-nikhse-77-67-to-kolorso-rodoy" />
+<meta property="og:description" content="Ο Κολοσσός 2,28΄΄ πριν το τέλος καρδιοχτύπησε τους πράσινους όταν μείωσε στους τέσσερις πόντους, όμως δύο τρίποντα από τους Καλαϊτζάκη και Πονίτκα επανέφεραν την τάξη" />
+<meta property="og:tag" content="Basket League" />
+<meta property="og:tag" content="Παναθηναϊκός" />
+<meta property="og:tag" content="Κολοσσός Ρόδου" />
+
+<title>Basket League: Εύκολα ο Παναθηναϊκός με 77-67 τον Κολοσσό Ρόδου - Σπορ - Η Βραδυνή</title>
+<script data-schema="WebPage" type="application/ld+json">{"@context":"http://schema.org","@type":"WebPage","name":"Η Βραδυνή - ","description":"Η Βραδυνή - ειδήσεις από την Ελλάδα και όλο τον κόσμο"}</script>
+<script data-schema="NewsArticle" type="application/ld+json">{"@context":"http://schema.org","@type":"NewsArticle","description":"Εϋκολο έργο είχε ο Παναθηναϊκός απέναντι στον Κολοσσό Ρόδου όμως 2,28΄΄ πριν το τέλος καρδιοχτύπησε όταν οι Ροδίτες μείωσαν στους τέσσερις πόντους. Όμως δύο τρίποντα από τους Καλαϊτζάκη και Πονίτκα, επανέφεραν την «παναθηναϊκή καρδιά» στη θέση της και το τριφύλι πήρε το ροζ φύλλο αγώνα.","image":{"@type":"ImageObject","url":"https://www.vradini.gr/photos/w_1200px/articles/2022/10/8d5a0b_pao.jpg","width":1200,"height":798},"mainEntityOfPage":{"@type":"WebPage","url":"https://www.vradini.gr/article/spor/678415-basket-league-eykola-o-panathhnaikos-nikhse-77-67-to-kolorso-rodoy"},"url":"https://www.vradini.gr/article/spor/678415-basket-league-eykola-o-panathhnaikos-nikhse-77-67-to-kolorso-rodoy","alternativeHeadline":"Basket League: Εύκολα ο Παναθηναϊκός με 77-67 τον Κολοσσό Ρόδου","author":{"@type":"Person","name":"VRADINI.GR","jobTitle":"","image":"https://www.vradini.gr/style/images/upload_photo.png"},"keywords":"Basket League , Παναθηναϊκός , Κολοσσός Ρόδου","dateCreated":"2022-10-30T17:36:23+03:00","dateModified":"2022-11-08T10:47:02+03:00","datePublished":"2022-10-30T17:35:00+03:00","articleSection":"Σπορ","headline":"Basket League: Εύκολα ο Παναθηναϊκός με 77-67 τον Κολοσσό Ρόδου","publisher":{"@type":"Organization","name":"vradini.gr","url":"https://www.vradini.gr","address":{"@type":"PostalAddress","addressLocality":"Γαλάτσι","addressRegion":"GR","postalCode":"111 47","streetAddress":"Φιλοθέης 12","addressCountry":{"@type":"Country","name":"Greece"}},"contactPoint":{"@type":"ContactPoint","areaServed":"GR","contactType":"custome service","telephone":"+30-211-7054587"},"logo":{"@type":"ImageObject","url":"https://www.vradini.gr/style/images/vradini_logo.png","height":40,"width":280},"sameAs":["https://news.google.com/publications/CAAqBwgKMIudogswzqe6Aw?hl=el&gl=GR&ceid=GR:el","https://www.facebook.com/vradini.gr","https://twitter.com/VradiniGr","https://www.instagram.com/vradini.gr/","https://www.youtube.com/channel/UC8hnKp5j72dbiWpotwINTFg/videos"]},"articleBody":"Εϋκολο έργο είχε ο Παναθηναϊκός απέναντι στον Κολοσσό Ρόδου όμως 2,28΄΄ πριν το τέλος καρδιοχτύπησε όταν οι Ροδίτες μείωσαν στους τέσσερις πόντους. Όμως δύο τρίποντα από τους Καλαϊτζάκη και Πονίτκα, επανέφεραν την «παναθηναϊκή καρδιά» στη θέση της και το τριφύλι πήρε το ροζ φύλλο αγώνα.\r\nΣτην πρώτη περίοδο ο Παναθηναϊκός μπήκε δυναμικά και βρέθηκε να προηγείται με 15 πόντους του Κολοσσού με 17-2 στο 5'. Οι Ροδίτες έκαναν άσχημο ξεκίνημα με 1/2 σουτ και 7 λάθη ως εκείνο το σημείο.\r\nΟι «πράσινοι» συνέχεισαν να «πυροβολούν» ασταμάτητα από παντού παίρνοντας προβάδισμα και με 22 πόντους με εντυπωσιακά ποσοστά ευστοχίας (7/8 δίποντα, 3/6 τρίποντα, 9/13 βολές) και τα 7 κλεψίματα με 32-10 στο 9΄.\r\nΣτη δεύτερη περίοδο συνεχίστηκε η υπεροχή του Παναθηναϊκού, ο Ράντονιτς έκανε ροτέισον για να ξεκουράσει βασικούς και το «τρυφίλι» προηγήθηκε 48-27 στο ημίχρονο.\r\nΣτην τρίτη περίοδο ο Παναθηναϊκός κατάβασε ταχύτητα, αλλά ο Κολοσσός «ξύπνησε» και με το Γιαννόπουλο να ευστοχεί έξω από τα 6,75 σε συνδυασμό με τα λάθη των πρασίνων, μπήκε για τα καλά στο παιχνίδι.\r\nΤο 56-48 της τρίτης περόδου έφτασε να γίνει 66-62 στα 2'28'' για το τέλος, με την ομάδα του Ηλία Παπαθεοδώρου να μειώσει στους τέσσερις και να επειλεί τους γηπεδούχους.\r\nΟ Παναθηναϊκός δεν είχε πει την τελευταία του λέξη αφού με δύο καθοριστικά τρίποντα  ανησύχησε από Καλαϊτζάκη (στα 42.4'') και Πονίτκα (στα 21'') πήρε το ρος φύλλο αγώνα.\r\nΟΙ ΔΙΑΙΤΗΤΕΣ: Ζαχαρής - Ξενικάκης - Μαρτινάκος.\r\nΤΑ ΔΕΚΑΛΕΠΤΑ: 32-13, 48-27, 56-48, 77-67.\r\nΠΑΝΑΘΗΝΑΪΚΟΣ (Ράντονιτς): Π. Καλαϊτζάκης 8 (1/6 τρίποντα), Λι 10 (2/7 τρίποντα, 5 ασίστ, 3 κλεψίματα), Παπαγιάννης 13 (5/8 δίποντα, 1/1 τρίποντο, 9 ριμπάουντ, 2 ασίστ, 2 μπλοκ), Γουίλιαμς 7 (1), Πονίτκα 15 (4/5 δίποντα, 1/4 τρίποντα, 4/4 βολές, 6 ριμπάουντ, 2 ασίστ, 5 λάθη, 2 κλεψίματα), Γουόλτερς 2 (2 ασίστ), Μποχωρίδης 2, Γ. Καλαϊτζάκης 9 (1), Σαμοντούροβ 1, Μαντζούκας 8 (2), Γκουντάιτις 2 (6 ριμπάουντ).\r\nΚΟΛΟΣΣΟΣ (Παπαθεοδώρου): Σταρκς 25 (8/15 δίποντα, 2/4 τρίποντα, 3/5 βολές, 4 ριμπάουντ, 3 ασίστ, 2 κλεψίματα, 2 λάθη), Χρυσικόπουλος 2 (1/7 σουτ, 4 ριμπάουντ), Χατζηδάκης 2, Κατσίβελης 9 (2 τρίποντα, 7 ριμπάουντ, 3 ασίστ, 6 λάθη, 5 κλεψίματα), Γιαννόπουλος 11 (3/6 τρίποντα, 4 ριμπάουντ), Μορέιρα 13 (5/12 δίποντα, 3/5 βολές, 8 ριμπάουντ), Όσμπορν, Μπιλλής, Μπαρσέλο 5 (1), Στεφάνοβιτς (0/3 σουτ).\r\n"}</script>
+
+<link rel="preload" href="https://www.vradini.gr/style/fontawesome/all.min.css" as="style">
+<link href="https://www.vradini.gr/style/fontawesome/all.min.css" rel="stylesheet" type="text/css" defer />
+<link href="https://www.vradini.gr/style/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="https://www.vradini.gr/style/hamburgers.min.css" rel="stylesheet" type="text/css" />
+<link href="https://www.vradini.gr/js/mmenu-js/mmenu.css" rel="stylesheet" type="text/css" />
+<link href="https://www.vradini.gr/js/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet" type="text/css" />
+<link href="https://www.vradini.gr/js/owl.carousel/assets/owl.theme.default.min.css" rel="stylesheet" type="text/css" />
+<link href="https://www.vradini.gr/js/lightGallery/css/lightgallery.min.css" rel="stylesheet" type="text/css" />
+<link href="https://www.vradini.gr/js/lightGallery/css/lg-transitions.min.css" rel="stylesheet" type="text/css" />
+<link href="https://www.vradini.gr/js/malihu/jquery.mCustomScrollbar.min.css" rel="stylesheet" type="text/css" />
+<link href="https://www.vradini.gr/js/colorbox1.6/example3/colorbox.css?1" rel="stylesheet" type="text/css" />
+<link href="https://www.vradini.gr/style/style.c023k.css" rel="stylesheet" type="text/css" />	
+
+<link rel="apple-touch-icon" sizes="57x57" href="https://www.vradini.gr/style/favicon/apple-icon-57x57.png?1">
+<link rel="apple-touch-icon" sizes="60x60" href="https://www.vradini.gr/style/favicon/apple-icon-60x60.png?1">
+<link rel="apple-touch-icon" sizes="72x72" href="https://www.vradini.gr/style/favicon/apple-icon-72x72.png?1">
+<link rel="apple-touch-icon" sizes="76x76" href="https://www.vradini.gr/style/favicon/apple-icon-76x76.png?1">
+<link rel="apple-touch-icon" sizes="114x114" href="https://www.vradini.gr/style/favicon/apple-icon-114x114.png?1">
+<link rel="apple-touch-icon" sizes="120x120" href="https://www.vradini.gr/style/favicon/apple-icon-120x120.png?1">
+<link rel="apple-touch-icon" sizes="144x144" href="https://www.vradini.gr/style/favicon/apple-icon-144x144.png?1">
+<link rel="apple-touch-icon" sizes="152x152" href="https://www.vradini.gr/style/favicon/apple-icon-152x152.png?1">
+<link rel="apple-touch-icon" sizes="180x180" href="https://www.vradini.gr/style/favicon/apple-icon-180x180.png?1">
+<link rel="icon" type="image/png" sizes="192x192"  href="https://www.vradini.gr/style/favicon/android-icon-192x192.png?1">
+<link rel="icon" type="image/png" sizes="32x32" href="https://www.vradini.gr/style/favicon/favicon-32x32.png?1">
+<link rel="icon" type="image/png" sizes="96x96" href="https://www.vradini.gr/style/favicon/favicon-96x96.png?1">
+<link rel="icon" type="image/png" sizes="16x16" href="https://www.vradini.gr/style/favicon/favicon-16x16.png?1">
+<link rel="manifest" href="https://www.vradini.gr/style/favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="https://www.vradini.gr/style/favicon/ms-icon-144x144.png?1">
+<meta name="theme-color" content="#ffffff">
+
+<script type="text/javascript">
+var site_path = '';
+</script>
+<script type="text/javascript" src="https://www.vradini.gr/js/jquery/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="https://www.vradini.gr/js/bootstrap/bootstrap.bundle.min.js"></script>
+<script type="text/javascript" src="https://www.vradini.gr/js/owl.carousel/owl.carousel.min.js"></script>
+<script type="text/javascript" src="https://www.vradini.gr/js/lazysizes/lazysizes.min.js?1"></script>
+<script type="text/javascript" src="https://www.vradini.gr/js/mmenu-js/mmenu.js"></script>
+<script type="text/javascript" src="https://www.vradini.gr/js/hc-sticky/hc-sticky.min.js"></script>
+<script type="text/javascript" src="https://www.vradini.gr/js/colorbox1.6/jquery.colorbox-min.js"></script>
+<script type="text/javascript" src="https://www.vradini.gr/js/malihu/jquery.mCustomScrollbar.concat.min.js"></script>
+<script type="text/javascript" src="https://www.vradini.gr/js/waypoints/jquery.waypoints.min.js"></script>
+<script type="text/javascript" src="https://www.vradini.gr/js/waypoints/shortcuts/infinite.min.js?2"></script>
+<script type="text/javascript" src="https://www.vradini.gr/js/jquery.throttle-debounce/jquery.ba-throttle-debounce.min.js"></script>
+<script type="text/javascript" src="https://www.vradini.gr/js/js-cookie/js.cookie.min.js"></script>
+<script type="text/javascript" src="https://www.vradini.gr/js/jquery.marquee/jquery.marquee.min.js"></script>
+<script type="text/javascript" src="https://www.vradini.gr/js/URI.js"></script>
+<script type="text/javascript" src="https://www.vradini.gr/js/frontend.min.js?13"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-153283326-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+    
+      gtag('config', 'UA-153283326-1');
+    </script>
+	<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+<script>
+  window.OneSignal = window.OneSignal || [];
+  OneSignal.push(function() {
+    OneSignal.init({
+      appId: "fdb3df10-1687-4ce2-9733-8a70d2b7ed90",
+    });
+  });
+</script>
+    
+<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>
+<script>
+  window.googletag = window.googletag || {cmd: []};
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/21885431718/vradini_300x250A', [[300, 250], [300, 600], [300, 100]], 'vradini_A').addService(googletag.pubads());
+    googletag.defineSlot('/21885431718/vradini_300x250B', [[300, 250], [300, 600], [300, 100]], 'vradini_B').addService(googletag.pubads());
+	googletag.defineSlot('/21885431718/vradini_300x250C', [[300, 600], [300, 100], [300, 250]], 'vradini_C').addService(googletag.pubads());
+    googletag.defineSlot('/21885431718/vradini_300x250C-2', [300, 250], 'vradini_C2').addService(googletag.pubads());
+	googletag.defineSlot('/21885431718/vradini_300x250D', [[300, 600], [300, 100], [300, 250]], 'vradini_D').addService(googletag.pubads());
+    googletag.defineSlot('/21885431718/vradini_300x250D-2', [300, 250], 'vradini_D2').addService(googletag.pubads());
+	googletag.defineSlot('/21885431718/vradini_300x250PR', [[300, 100], [300, 250], [300, 600]], 'vradini_PR').addService(googletag.pubads());
+    googletag.defineSlot('/21885431718/vradini_300x250PR-2', [300, 250], 'vradini_PR2').addService(googletag.pubads());
+	googletag.defineSlot('/21885431718/vradini_300x250PR_B', [300, 250], 'vradini_PRB').addService(googletag.pubads());
+    googletag.defineSlot('/21885431718/vradini_300x250PR_B-2', [300, 250], 'vradini_PRB2').addService(googletag.pubads());  
+	googletag.defineSlot('/21885431718/vradini_300x250PR_C', [300, 250], 'vradini_PRC').addService(googletag.pubads());
+	googletag.defineSlot('/21885431718/vradini_300x250PR_D', [300, 250], 'vradini_PRD').addService(googletag.pubads());
+    googletag.defineSlot('/21885431718/vradini-tis-kyriakis_300x250', [300, 250], 'vradini_tis_kyriakis').addService(googletag.pubads());
+	googletag.defineSlot('/21885431718/vradini_Billboard_970x250', [970, 250], 'vradini_BILLBOARD').addService(googletag.pubads());
+    googletag.defineSlot('/21885431718/vradini_300x250_health', [300, 250], 'vradini_health').addService(googletag.pubads());
+    googletag.defineSlot('/21885431718/Vradini_1280x438', [1280, 438], 'vradini_1280x438').addService(googletag.pubads());
+    
+        googletag.pubads().enableSingleRequest();
+    googletag.pubads().collapseEmptyDivs();
+    googletag.enableServices();
+  });
+</script>	
+    
+<script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "bdf178k9pe");
+</script>	
+    
+	
+    
+<link rel="canonical" href="https://www.vradini.gr/article/spor/678415-basket-league-eykola-o-panathhnaikos-nikhse-77-67-to-kolorso-rodoy" />
+
+</head>
+	
+<body class=" article_page ">
+    
+    <!-- Google Tag Manager (noscript) -->
+    <noscript>
+    	<iframe src="https://www.googletagmanager.com/ns.html?id=UA-153283326-1" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    
+	
+	<div id="wrapper">
+
+		<header>
+            <div class="top_bar">
+                <div class="container position-relative">
+                    <div class="row">
+                    <div class="col-lg-6 col-12 text-lg-start text-center weather_date">
+						<script>
+						const Cookie = Cookies.withAttributes({path: '/',secure: true});
+						$(function(){
+							$(document).on('click', '.change_city', function(e){
+								e.preventDefault();
+								$('#weather_selector').html($(this).html());
+								$('#weather_label').html($(this).data('temp'));
+								$('#weather_icon').attr('src', $(this).data('src'));
+								$('#weather_icon').attr('data-bs-original-title', $(this).data('title'));
+								Cookies.set('weatherCity', $(this).data('id'), { expires: 365 });
+
+							});	
+						})</script>
+												<img id="weather_icon" data-bs-toggle="tooltip" data-bs-title="Κατά τόπους συννεφιά" data-bs-placement="bottom" src="https://www.vradini.gr/style/images/weather/night/116.png" alt="Κατά τόπους συννεφιά"> <span id="weather_label">13</span> &#8451;
+						
+                        <div class="dropdown weather d-inline-block ms-1">
+                          <button class="btn btn-darkblue dropdown-toggle" type="button" id="weather_selector" data-bs-toggle="dropdown" aria-expanded="false">Αθήνα</button>
+                          <ul class="dropdown-menu" aria-labelledby="weather_selector">
+                            <li><a class="dropdown-item change_city" data-title="Κατά τόπους συννεφιά" data-src="https://www.vradini.gr/style/images/weather/night/116.png" data-id="athens" data-temp="13" href="#athens">Αθήνα</a></li>
+                            <li><a class="dropdown-item change_city" data-title="Κατά τόπους συννεφιά" data-src="https://www.vradini.gr/style/images/weather/night/116.png" data-id="thessaloniki" data-temp="13" href="#thessaloniki">Θεσσαλονίκη</a></li>
+							  
+                          </ul>
+                        </div>
+                        
+                        <span class="date ms-3">
+                            <i class="fal fa-clock me-1"></i> Πέμπτη, 24 Νοεμβρίου 2022                        </span>
+                        
+                    </div><!-- /.weather_date -->
+                    <div class="col-lg-6 col-12 text-lg-end text-center socialsearch">
+                        <ul>
+                            <li><a href="https://news.google.com/publications/CAAqBwgKMIudogswzqe6Aw?hl=el&gl=GR&ceid=GR:el" target="_blank" rel="noreferrer nofollow" aria-label="Google News"><img src="https://www.vradini.gr/style/images/google-news.svg" alt="Google News" class="img-fluid" /> <span aria-label="Google News" class="d-none">Follow us on Google News</span></a></li>                            <li><a href="https://www.facebook.com/vradini.gr" target="_blank" rel="noreferrer nofollow" aria-label="facebook"><i class="fab fa-facebook-f"></i> <span aria-label="facebook" class="d-none">Follow us on facebook</span></a></li>                            <li><a href="https://twitter.com/VradiniGr" target="_blank" rel="noreferrer nofollow" aria-label="twitter"><i class="fab fa-twitter"></i> <span aria-label="twitter" class="d-none">Follow us on twitter</span></a></li>                            <li><a href="https://www.instagram.com/vradini.gr/" target="_blank" rel="noreferrer nofollow" aria-label="instagram"><i class="fab fa-instagram"></i> <span aria-label="instagram" class="d-none">Follow us on instagram</span></a></li>							<li><a href="https://www.youtube.com/channel/UC8hnKp5j72dbiWpotwINTFg/videos" target="_blank" rel="noreferrer nofollow" aria-label="youtube"><i class="fab fa-youtube"></i> <span aria-label="youtube" class="d-none">Follow us on youtube</span></a></li>                            <li><a href="#open_search" class="open_search" aria-label="Αναζήτηση" data-rel="search_button_box"><i class="fal fa-search"></i> <span aria-label="search" class="d-none">Αναζήτηση</span></a></li>
+                        </ul>
+                    </div><!-- /.socialsearch -->
+                    </div><!-- /.row -->
+                    
+                    <div id="search_wrapper" class="search_component  ">
+                        <div class="icon"><a href="/search"><i class="fal fa-search fa-lg"></i></a></div>
+                        <div class="input-group">
+                          <input type="text" class="form-control search_box" id="search_button_box" value="" placeholder="Αναζήτηση στο vradini.gr..." aria-label="Αναζήτηση στο vradini.gr..." aria-describedby="search_button">
+                          <button class="btn btn-search search_button" type="button" id="search_button">Αναζήτηση</button>
+                        </div>
+                        <div class="icon"><a href="#close_search" class="close_search"><i class="fal fa-times fa-lg"></i></a></div>
+                    </div><!-- /#search_wrapper -->
+                    
+                </div><!-- /.container -->
+            </div>
+            <div class="main_bar">
+                <div class="container">
+                    <div class="logo">
+                        <a href="/"><img src="https://www.vradini.gr/style/images/logo_white_coin.svg" alt="Η Βραδυνή" class="img-fluid" /></a>
+                    </div><!-- /.logo -->
+                </div><!-- /.container -->
+            </div><!-- /.main_bar -->
+            <div id="navigation">
+                <div class="container">
+                
+                    <nav class="navbar navbar-expand-xl navbar-dark">
+                        <div class="container-fluid p-0">
+							<div class="mm-categories">
+                                <button id="mm_menu" class="hamburger hamburger--spin js-hamburger" type="button" aria-label="Mobile Menu">
+                                  <span class="hamburger-box">
+                                    <span class="hamburger-inner"></span>
+                                  </span>
+                                </button>
+                            </div>
+                            
+                            <div class="collapse navbar-collapse" id="main_menu">
+                                <ul class="navbar-nav">
+<style>
+#navigation .navbar-dark .navbar-nav .nav-item.cat_5 .nav-link:focus,#navigation .navbar-dark .navbar-nav .nav-item.cat_5 .nav-link:hover, .mm-listitem.cat_5:hover, .article_page .main-content .main_category.cat_5 {background-color: #ff4d36;}
+#navigation .navbar-dark .navbar-nav .nav-item.cat_1 .nav-link:focus,#navigation .navbar-dark .navbar-nav .nav-item.cat_1 .nav-link:hover, .mm-listitem.cat_1:hover, .article_page .main-content .main_category.cat_1 {background-color: #3198ff;}
+#navigation .navbar-dark .navbar-nav .nav-item.cat_21 .nav-link:focus,#navigation .navbar-dark .navbar-nav .nav-item.cat_21 .nav-link:hover, .mm-listitem.cat_21:hover, .article_page .main-content .main_category.cat_21 {background-color: #1bc576;}
+#navigation .navbar-dark .navbar-nav .nav-item.cat_7 .nav-link:focus,#navigation .navbar-dark .navbar-nav .nav-item.cat_7 .nav-link:hover, .mm-listitem.cat_7:hover, .article_page .main-content .main_category.cat_7 {background-color: #ff7f0f;}
+#navigation .navbar-dark .navbar-nav .nav-item.cat_23 .nav-link:focus,#navigation .navbar-dark .navbar-nav .nav-item.cat_23 .nav-link:hover, .mm-listitem.cat_23:hover, .article_page .main-content .main_category.cat_23 {background-color: #8bade8;}
+#navigation .navbar-dark .navbar-nav .nav-item.cat_22 .nav-link:focus,#navigation .navbar-dark .navbar-nav .nav-item.cat_22 .nav-link:hover, .mm-listitem.cat_22:hover, .article_page .main-content .main_category.cat_22 {background-color: #005789;}
+#navigation .navbar-dark .navbar-nav .nav-item.cat_18 .nav-link:focus,#navigation .navbar-dark .navbar-nav .nav-item.cat_18 .nav-link:hover, .mm-listitem.cat_18:hover, .article_page .main-content .main_category.cat_18 {background-color: #90c418;}
+#navigation .navbar-dark .navbar-nav .nav-item.cat_4 .nav-link:focus,#navigation .navbar-dark .navbar-nav .nav-item.cat_4 .nav-link:hover, .mm-listitem.cat_4:hover, .article_page .main-content .main_category.cat_4 {background-color: #4a61fb;}
+</style>
+									<li class="nav-item cat_5"><a class="nav-link" href="https://www.vradini.gr/article/politiki">Πολιτική</a></li>									<li class="nav-item cat_1"><a class="nav-link" href="https://www.vradini.gr/article/ellada">Ελλάδα</a></li>									<li class="nav-item cat_21"><a class="nav-link" href="https://www.vradini.gr/article/kosmos">Κόσμος</a></li>									<li class="nav-item cat_7"><a class="nav-link" href="https://www.vradini.gr/article/oikonomia">Οικονομία</a></li>									<li class="nav-item cat_23"><a class="nav-link" href="https://www.vradini.gr/article/business">Business</a></li>									<li class="nav-item cat_22"><a class="nav-link" href="https://www.vradini.gr/article/vradyni-tis-kyriakis">«Η Βραδυνή της Κυριακής»</a></li>									<li class="nav-item cat_18"><a class="nav-link" href="https://www.vradini.gr/article/ygeia">Υγεία</a></li>									<li class="nav-item cat_4"><a class="nav-link" href="https://www.vradini.gr/article/people-style">People & Style</a></li>									<li class="nav-item dropdown more">
+                                        <a class="nav-link dropdown-toggle" id="navbarMore" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Περισσότερα</a>
+                                          <ul class="dropdown-menu" aria-labelledby="navbarMore">
+                                            <li><a class="dropdown-item cat_13" href="https://www.vradini.gr/article/sunenteukseis">Συνεντεύξεις</a></li>
+                                            <li><a class="dropdown-item cat_24" href="https://www.vradini.gr/article/toyrismos">Τουρισμός</a></li>
+                                            <li><a class="dropdown-item cat_6" href="https://www.vradini.gr/article/apopseis">Απόψεις</a></li>
+                                            <li><a class="dropdown-item cat_11" href="https://www.vradini.gr/article/spor">Σπορ</a></li>
+                                            <li><a class="dropdown-item cat_8" href="https://www.vradini.gr/article/politismos">Πολιτισμός</a></li>
+                                            <li><a class="dropdown-item cat_17" href="https://www.vradini.gr/article/texnologia">Τεχνολογία</a></li>
+                                            <li><a class="dropdown-item cat_19" href="https://www.vradini.gr/article/aftokinito">Αυτοκίνητο</a></li>
+                                            <li><a class="dropdown-item cat_14" href="https://www.vradini.gr/article/video">Βίντεο</a></li>
+                                            <li><a class="dropdown-item cat_29" href="https://www.vradini.gr/article/media">Media</a></li>
+											 
+                                          </ul>
+                                    </li>
+									
+                                </ul><!-- /.navbar-nav -->
+                            </div><!-- /#main_menu -->
+                        </div><!-- /.container-fluid -->
+                    </nav>
+
+                </div><!-- /. container -->
+            </div><!-- /#navigation -->
+			
+			
+            <div id="tagsline">
+                <div class="container">
+                    <ul>
+									<li><a href="/tag/kibwtos-toy-kosmoy">Κιβωτός του Κόσμου</a></li>
+									<li><a href="/tag/kolwnos">Κολωνός</a></li>
+									<li><a href="/tag/ellhnotoyrkika">Ελληνοτουρκικά</a></li>
+									<li><a href="/tag/energeia">Ενέργεια</a></li>
+									<li><a href="/tag/patra">Πάτρα</a></li>
+			                    </ul>
+                </div><!-- /.container -->
+            </div><!-- /#tagsline -->
+            
+		</header>
+     
+        <script>
+        $(function(){
+            $('#alert_news ul').bind('beforeStarting', function () {
+
+            }).marquee({
+                duration: 50000,
+                gap: 0,
+                delayBeforeStart: 1500,
+                direction: 'left',
+                duplicated: true,
+                startVisible: true,
+                pauseOnHover: true
+            });
+
+        });
+        </script>
+        		<div id="alert_news">
+			<ul style="overflow: hidden">
+				<li>ΒΡΑΖΙΛΙΑ - ΣΕΡΒΙΑ 2-0 B΄ΗΜΙΧΡΟΝΟ</li>
+				<li><a href="https://www.vradini.gr/article/spor/681906-moyntial-2022-kardioxtyphse-h-portogalia">ΠΟΡΤΟΓΑΛΙΑ - ΓΚΑΝΑ 3-2 ΤΕΛ</a></li>
+				<li><a href="https://www.vradini.gr/article/spor/681883-moyntial-2022-dyo-dokaria-h-seleste-mia-eykaria-h-n-korea">Μουντιάλ 2022: ΟΥΡΟΥΓΟΥΑΗ - ΝΟΤΙΑ ΚΟΡΕΑ 0-0 ΤΕΛ</a></li>
+			</ul>
+		</div><!-- /#alert_news -->
+        <div id="small_menu" class="sticky-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-2">
+                        <div class="mm-categories">
+                            <button id="mm_menu" class="hamburger hamburger--spin js-hamburger" type="button" aria-label="Mobile Menu">
+                              <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                              </span>
+                            </button>
+                        </div><!-- /.mm-categories -->
+                    </div>
+                    <div class="col-md-4 col-8 logo text-center">
+                        <a href="/"><img src="https://www.vradini.gr/style/images/logo_white_small.svg" alt="Η Βραδυνή" class="img-fluid" /></a>
+                    </div>
+                    <div class="col-md-4 col-2 socialsearch">
+                        <ul>
+                            <li><a href="https://news.google.com/publications/CAAqBwgKMIudogswzqe6Aw?hl=el&gl=GR&ceid=GR:el" target="_blank" rel="noreferrer nofollow" aria-label="Google News"><img src="https://www.vradini.gr/style/images/google-news.svg" alt="Google News" class="img-fluid" /> <span aria-label="Google News" class="d-none">Follow us on Google News</span></a></li>                            <li><a href="https://www.facebook.com/vradini.gr" target="_blank" rel="noreferrer nofollow" aria-label="facebook"><i class="fab fa-facebook-f"></i> <span aria-label="facebook" class="d-none">Follow us on facebook</span></a></li>                            <li><a href="https://twitter.com/VradiniGr" target="_blank" rel="noreferrer nofollow" aria-label="twitter"><i class="fab fa-twitter"></i> <span aria-label="twitter" class="d-none">Follow us on twitter</span></a></li>                            <li><a href="https://www.instagram.com/vradini.gr/" target="_blank" rel="noreferrer nofollow" aria-label="instagram"><i class="fab fa-instagram"></i> <span aria-label="instagram" class="d-none">Follow us on instagram</span></a></li>                            <li><a href="https://www.youtube.com/channel/UC8hnKp5j72dbiWpotwINTFg/videos" target="_blank" rel="noreferrer nofollow" aria-label="youtube"><i class="fab fa-youtube"></i> <span aria-label="youtube" class="d-none">Follow us on youtube</span></a></li>                            <li><a href="#open_search" class="open_search" aria-label="Αναζήτηση" data-rel="search_button_box2"><i class="fal fa-search"></i> <span aria-label="search" class="d-none">Αναζήτηση</span></a></li>
+                        </ul>
+                    </div>
+                </div><!-- /.row -->
+                
+                 <div id="search_wrapper_small" class="search_component ">
+                        <div class="icon"><a href="/search"><i class="fal fa-search fa-lg"></i></a></div>
+                        <div class="input-group">
+                          <input type="text" class="form-control search_box" value="" id="search_button_box2" placeholder="Αναζήτηση στο vradini.gr..." aria-label="Αναζήτηση στο vradini.gr..." aria-describedby="#search_button2">
+                          <button class="btn btn-search search_button" type="button" id="search_button2">Αναζήτηση</button>
+                        </div>
+                        <div class="icon"><a href="#close_search" class="close_search"><i class="fal fa-times fa-lg"></i></a></div>
+                    </div><!-- /#search_wrapper_small -->
+                
+            </div><!-- /.container -->
+        </div><!-- /.small_menu -->
+        
+		<style>
+.mm-menu {
+	--mm-color-background:#052962;
+}
+.mm-listitem {
+	--mm-color-text:#fff;
+	line-height:24px;
+    font-weight: 600;
+	border-color:rgba(255,255,255,.2);
+}
+.mm-listitem:hover {
+	background-color:#0070E0;
+	--mm-color-text:#fff;
+}
+.mm-listitem:hover .mm-btn_next:after, .mm-listitem:hover .mm-btn_prev:before {
+	--mm-color-button:#fff;
+}
+.mm-listitem:after {
+	left: 0;
+}
+.mm-listitem span.icon {
+	width:40px;
+	float:left;
+}
+.mm-navbar {
+	--mm-color-background:#08234D;
+	--mm-color-text-dimmed:#FFF;
+}
+.mm-navbar .mm-navbar__title {
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 22px;
+    text-overflow: ellipsis;
+	background-color: #08234D;
+	color: #fff;
+}
+.mm-navbars_top .mm-navbar a {
+	margin-left:0;
+}
+.mm-btn--next:after, .mm-btn--prev:before {
+	border-color: #fff;
+}
+</style>
+<script>
+var mm_menu, mm_api; 
+$(function(){
+	mm_menu = new Mmenu('#mobile-menu', {
+	   "extensions": [
+		  "pagedim-black"
+	   ],
+		"navbar": {
+			"title": "Μενού"
+	   },
+	   	   "navbars": [
+			{
+				"position": "top",
+				"content": [
+					"prev",
+					"title"
+				]
+			},
+			{
+				"position": "bottom",
+				"content": [
+					"<a class='fas fa-home fa-lg' href='/'></a>",
+										"<a class='fab fa-facebook-f fa-lg' href='https://www.facebook.com/vradini.gr' target='_blank'></a>",					"<a class='fab fa-instagram fa-lg' href='https://www.instagram.com/vradini.gr/' target='_blank'></a>",					"<a class='fab fa-twitter fa-lg' href='https://twitter.com/VradiniGr' target='_blank'></a>",					"<a class='fab fa-youtube fa-lg' href='https://www.youtube.com/channel/UC8hnKp5j72dbiWpotwINTFg/videos' target='_blank'></a>",														]
+			}
+	   ]
+	});
+	mm_api = mm_menu.API;
+
+	mm_api.bind('close:before', function() {
+		$('#navigation .hamburger').removeClass('is-active');
+		$('#small_menu .hamburger').removeClass('is-active');
+	});
+	mm_api.bind('open:before', function() {
+		$('#navigation .hamburger').addClass('is-active');
+		$('#small_menu .hamburger').addClass('is-active');
+	});	
+	
+		
+    $(document).on('click', '#mm_menu', function(e){
+		e.preventDefault();
+		if(!$('#mobile-menu').hasClass('mm-menu_opened')){
+			mm_api.open();
+		}
+    });
+	
+});
+</script>
+
+
+<div style="display:none">
+    <nav id="mobile-menu">
+        <ul>
+            <li><a href="">Αρχική</a></li>
+            <li class="cat_5"><a href="https://www.vradini.gr/article/politiki">Πολιτική</a></li>
+            <li class="cat_1"><a href="https://www.vradini.gr/article/ellada">Ελλάδα</a></li>
+            <li class="cat_21"><a href="https://www.vradini.gr/article/kosmos">Κόσμος</a></li>
+            <li class="cat_7"><a href="https://www.vradini.gr/article/oikonomia">Οικονομία</a></li>
+            <li class="cat_23"><a href="https://www.vradini.gr/article/business">Business</a></li>
+            <li class="cat_22"><a href="https://www.vradini.gr/article/vradyni-tis-kyriakis">«Η Βραδυνή της Κυριακής»</a></li>
+            <li class="cat_18"><a href="https://www.vradini.gr/article/ygeia">Υγεία</a></li>
+            <li class="cat_4"><a href="https://www.vradini.gr/article/people-style">People & Style</a></li>
+            <li><span>Περισσότερα</span>
+
+                <ul>
+                    <li class="cat_13"><a href="https://www.vradini.gr/article/sunenteukseis">Συνεντεύξεις</a></li>
+                    <li class="cat_24"><a href="https://www.vradini.gr/article/toyrismos">Τουρισμός</a></li>
+                    <li class="cat_6"><a href="https://www.vradini.gr/article/apopseis">Απόψεις</a></li>
+                    <li class="cat_11"><a href="https://www.vradini.gr/article/spor">Σπορ</a></li>
+                    <li class="cat_8"><a href="https://www.vradini.gr/article/politismos">Πολιτισμός</a></li>
+                    <li class="cat_17"><a href="https://www.vradini.gr/article/texnologia">Τεχνολογία</a></li>
+                    <li class="cat_19"><a href="https://www.vradini.gr/article/aftokinito">Αυτοκίνητο</a></li>
+                    <li class="cat_14"><a href="https://www.vradini.gr/article/video">Βίντεο</a></li>
+                    <li class="cat_29"><a href="https://www.vradini.gr/article/media">Media</a></li>
+                    
+                </ul>
+            </li>
+            <li><span>#Trending</span>
+
+                <ul>
+                    <li><a href="/tag/kibwtos-toy-kosmoy">#Κιβωτός του Κόσμου</a></li>
+                    <li><a href="/tag/kolwnos">#Κολωνός</a></li>
+                    <li><a href="/tag/ellhnotoyrkika">#Ελληνοτουρκικά</a></li>
+                    <li><a href="/tag/energeia">#Ενέργεια</a></li>
+                    <li><a href="/tag/patra">#Πάτρα</a></li>
+                    
+                </ul>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+       
+		<main>
+            
+			<img src="/ajax/pin/a1hlYURucDdXc2cxczBGZkVJUjZaelFFOFZTMUdVbDNUQlBqN3c3RmpkazIyNkZhV3E4M0NKei93cTNwSU9DVVdXeFhhREV6UVdkdU1FeEhXa0Z3Wm5GcmJFeFVaejA5" style="position:absolute;left:-9999999px;"/>	
+<script>
+var MODULE = 'articles';
+var waypoints_bind;
+var mywaypoint_up = [], mywaypoint_down = [];
+var active_article = '678415';
+
+
+$(function(){
+	waypoints_refresh = function(){
+		
+		for (var id in mywaypoint_down){
+			mywaypoint_down[id].context.refresh();
+			mywaypoint_up[id].context.refresh();
+		}
+		
+		
+	};
+	
+	waypoints_bind = function(id){
+        if(!id){ return; }
+		mywaypoint_down[id] = new Waypoint({
+			element: $('#article_section_'+id)[0],
+			handler: function(direction) {
+				 if (direction == 'down' && (active_article != $(this.element).data('id')) ) {					 history.replaceState(null,null, $(this.element).data('url'));
+					 $(document).attr("title", $(this.element).data('title'));
+					 					gtag('event', 'page_view', {
+					  page_title: document.title,
+					  page_location: location.href,
+					  page_path: location.pathname
+					});
+					 
+					gtag('event', 'Read more', {
+					  'event_label': 'Scroll',
+					  'event_category': 'Scroll to next article',
+					  'non_interaction': true
+					});
+					
+					 				}
+			},
+		 	offset: '70%'
+		});
+
+		mywaypoint_up[id] = new Waypoint({
+			element: $('#article_section_'+id)[0],
+			handler: function(direction) {
+				 if (direction == 'up') {					 history.replaceState(null,null, $(this.element).data('url'));
+					 $(document).attr("title", $(this.element).data('title'));
+					 					gtag('event', 'page_view', {
+					  page_title: document.title,
+					  page_location: location.href,
+					  page_path: location.pathname
+					});
+					 
+					gtag('event', 'Read more', {
+					  'event_label': 'Scroll',
+					  'event_category': 'Scroll to next article',
+					  'non_interaction': true
+					});
+									}
+			},
+		 	offset: 'bottom-in-view'
+		});
+		
+		////// injected banners /////
+		fix_baners();
+		fix_article();
+		fix_article_galleries();
+		fix_glomex();
+		fix_TikTok();
+		
+	}
+		
+	waypoints_bind(678415);
+
+
+		
+    infinite = new Waypoint.Infinite({
+	  element: $('#infinite-articles')[0],
+	  items: '.art_section',
+	  offset: function () {
+		return this.context.innerHeight() - this.adapter.outerHeight() + 100
+	  },
+	  loadingClass: 'infinite-loading',
+	  more: '.infinite-more-link',
+	  onBeforePageLoad: function(){
+		  $('#article_loader_spinner').show();
+	  },
+		onAfterPageLoad: function(){
+			$('#article_loader_spinner').hide();
+			var items = this.element.lastElementChild;
+			
+			waypoints_bind($(items).data('id'));
+			waypoints_refresh();
+						
+			////// injected banners /////
+			fix_baners();
+			fix_article_galleries();
+			fix_glomex();
+			fix_TikTok();
+		}
+	  
+	});
+
+	
+ 
+	$(window).on("popstate", function(e) {
+		if (e.originalEvent.state !== null) {
+			if(history.state.article_id){
+				if(!$("#article_section_"+history.state.article_id)){
+				}
+				
+				if($("#article_section_"+history.state.article_id).offset().top<200){
+					$('html, body').stop().animate({
+						scrollTop: 0
+					}, 2000);				
+				}else{
+					$('html, body').stop().animate({
+						scrollTop: $("#article_section_"+history.state.article_id).offset().top
+					}, 2000);				
+				}
+			}
+		}
+	});	
+
+
+	//pin_article(678415, '', 'articles');
+
+});
+</script>
+	
+
+<section id="article-page" class="article_page">
+	
+		<script>
+		var width = window.innerWidth || document.documentElement.clientWidth;
+		
+		
+				if (width < 768+1) //Εμφάνιση μέχρι
+		 {
+		   		   		   			document.write(Base64.decode('PGRpdiBzdHlsZT0iIiBjbGFzcz0ibWFpbl9iYW5uZXIiPgoJCQk8ZGl2IGlkPSd2cmFkaW5pX0InPg0KICA8c2NyaXB0Pg0KICAgIGdvb2dsZXRhZy5jbWQucHVzaChmdW5jdGlvbigpIHsgZ29vZ2xldGFnLmRpc3BsYXkoJ3ZyYWRpbmlfQicpOyB9KTsNCiAgPC9zY3JpcHQ+DQo8L2Rpdj4JCQk8L2Rpdj4='));
+		}
+	
+	</script>
+	
+					
+	
+						
+	<div class="container" id="infinite-articles">
+        
+        <article class="art_section "
+                 id="article_section_678415" 
+                 data-title="Basket League: Εύκολα ο Παναθηναϊκός με 77-67 τον Κολοσσό Ρόδου - Σπορ - Η Βραδυνή" 
+                 data-url="https://www.vradini.gr/article/spor/678415-basket-league-eykola-o-panathhnaikos-nikhse-77-67-to-kolorso-rodoy" 
+                 data-url-analytics="article/spor/678415-basket-league-eykola-o-panathhnaikos-nikhse-77-67-to-kolorso-rodoy" 
+                 data-id="678415"  >
+
+            
+        
+            <div class="d-flex flex-nowrap">
+                <div class="main-content ">
+					
+
+            <span class="main_category cat_11"><a href="https://www.vradini.gr/article/spor">Σπορ</a></span>
+                        <h1>Basket League: Εύκολα ο Παναθηναϊκός με 77-67 τον Κολοσσό Ρόδου</h1>
+        
+                        <h2>Ο Κολοσσός 2,28΄΄ πριν το τέλος καρδιοχτύπησε τους πράσινους όταν μείωσε στους τέσσερις πόντους, όμως δύο τρίποντα από τους Καλαϊτζάκη και Πονίτκα επανέφεραν την τάξη</h2>
+                        
+                        <time datetime="2022-10-30T17:35:00.000Z" title="30/10/2022, 17:35">30 Οκτωβρίου 2022</time>
+                                                <figure class="main-image">
+														<img src="https://www.vradini.gr/style/images/nopic.jpg" data-sizes="auto" data-srcset="https://www.vradini.gr/photos/c_300px_169px/articles/2022/10/8d5a0b_pao.jpg 300w, https://www.vradini.gr/photos/c_500px_281px/articles/2022/10/8d5a0b_pao.jpg 500w, https://www.vradini.gr/photos/c_960px_540px/articles/2022/10/8d5a0b_pao.jpg 800w" alt="Basket League: Εύκολα ο Παναθηναϊκός με 77-67 τον Κολοσσό Ρόδου" class="img-fluid lazyload"/>
+                            							                        </figure>
+                                         
+                 
+					<div class="row">
+						<div class="col-md-6 col-12">
+                                                <div class="author">
+                                								                                <figure><img src="https://www.vradini.gr/style/images/upload_photo.png" alt="Αρθρογράφος: Vradini.gr" class="img-fluid img-circle"></figure>
+								                                <span><mark>Από Vradini.gr</mark></span>
+                                                            </div>
+		                    <div class="clearfix"></div>
+      				
+                          							
+						</div>
+						<div class="col-md-6 col-12 text-md-end text center pt-3">
+							<div class="addthis_inline_share_toolbox"></div>
+						</div>
+					</div><!-- /.row -->
+
+                    
+	                                    <div class="main-text">
+					<p>Εϋκολο έργο είχε ο <strong>Παναθηναϊκός</strong> απέναντι στον <strong>Κολοσσό Ρόδου</strong> όμως 2,28΄΄ πριν το τέλος καρδιοχτύπησε όταν οι Ροδίτες μείωσαν στους τέσσερις πόντους. Όμως δύο τρίποντα από τους Καλαϊτζάκη και Πονίτκα, επανέφεραν την «παναθηναϊκή καρδιά» στη θέση της και το τριφύλι πήρε το ροζ φύλλο αγώνα.</p><p>Στην πρώτη περίοδο ο Παναθηναϊκός μπήκε δυναμικά και βρέθηκε να προηγείται με 15 πόντους του Κολοσσού με 17-2 στο 5'. Οι Ροδίτες έκαναν άσχημο ξεκίνημα με 1/2 σουτ και 7 λάθη ως εκείνο το σημείο.</p><div class="parsed_viral clearfix"> 
+			 
+			</div><p>Οι «πράσινοι» συνέχεισαν να «πυροβολούν» ασταμάτητα από παντού παίρνοντας προβάδισμα και με 22 πόντους με εντυπωσιακά ποσοστά ευστοχίας (7/8 δίποντα, 3/6 τρίποντα, 9/13 βολές) και τα 7 κλεψίματα με 32-10 στο 9΄.</p><div class="parsed"> 
+							<div ref="9|inread_mobile1" class="injected_bannner_base64" style="display:none" data-min="0" data-max="769" data-dfp="0">PGRpdiBzdHlsZT0iIiBjbGFzcz0ibW9iaWxlX2Jhbm5lciBiYW5uZXItc3RpY2t5Ij4KCQkJPGRpdiBpZD0ndnJhZGluaV9QUicgY2xhc3M9ImJhbm5lci1zdGlja3kiPg0KICA8c2NyaXB0Pg0KICAgIGdvb2dsZXRhZy5jbWQucHVzaChmdW5jdGlvbigpIHsgZ29vZ2xldGFnLmRpc3BsYXkoJ3ZyYWRpbmlfUFInKTsgfSk7DQogIDwvc2NyaXB0Pg0KPC9kaXY+CQkJPC9kaXY+</div>
+				 
+			</div><p>Στη δεύτερη περίοδο συνεχίστηκε η υπεροχή του Παναθηναϊκού, ο Ράντονιτς έκανε ροτέισον για να ξεκουράσει βασικούς και το «τρυφίλι» προηγήθηκε 48-27 στο ημίχρονο.</p><p>Στην τρίτη περίοδο ο Παναθηναϊκός κατάβασε ταχύτητα, αλλά ο Κολοσσός «ξύπνησε» και με το Γιαννόπουλο να ευστοχεί έξω από τα 6,75 σε συνδυασμό με τα λάθη των πρασίνων, μπήκε για τα καλά στο παιχνίδι.</p><p>Το 56-48 της τρίτης περόδου έφτασε να γίνει 66-62 στα 2'28'' για το τέλος, με την ομάδα του Ηλία Παπαθεοδώρου να μειώσει στους τέσσερις και να επειλεί τους γηπεδούχους.</p><p>Ο Παναθηναϊκός δεν είχε πει την τελευταία του λέξη αφού με δύο καθοριστικά τρίποντα  ανησύχησε από Καλαϊτζάκη (στα 42.4'') και Πονίτκα (στα 21'') πήρε το ρος φύλλο αγώνα.</p><p>ΟΙ ΔΙΑΙΤΗΤΕΣ: Ζαχαρής - Ξενικάκης - Μαρτινάκος.</p><p>ΤΑ ΔΕΚΑΛΕΠΤΑ: 32-13, 48-27, 56-48, 77-67.</p><p>ΠΑΝΑΘΗΝΑΪΚΟΣ (Ράντονιτς): Π. Καλαϊτζάκης 8 (1/6 τρίποντα), Λι 10 (2/7 τρίποντα, 5 ασίστ, 3 κλεψίματα), Παπαγιάννης 13 (5/8 δίποντα, 1/1 τρίποντο, 9 ριμπάουντ, 2 ασίστ, 2 μπλοκ), Γουίλιαμς 7 (1), Πονίτκα 15 (4/5 δίποντα, 1/4 τρίποντα, 4/4 βολές, 6 ριμπάουντ, 2 ασίστ, 5 λάθη, 2 κλεψίματα), Γουόλτερς 2 (2 ασίστ), Μποχωρίδης 2, Γ. Καλαϊτζάκης 9 (1), Σαμοντούροβ 1, Μαντζούκας 8 (2), Γκουντάιτις 2 (6 ριμπάουντ).</p><p>ΚΟΛΟΣΣΟΣ (Παπαθεοδώρου): Σταρκς 25 (8/15 δίποντα, 2/4 τρίποντα, 3/5 βολές, 4 ριμπάουντ, 3 ασίστ, 2 κλεψίματα, 2 λάθη), Χρυσικόπουλος 2 (1/7 σουτ, 4 ριμπάουντ), Χατζηδάκης 2, Κατσίβελης 9 (2 τρίποντα, 7 ριμπάουντ, 3 ασίστ, 6 λάθη, 5 κλεψίματα), Γιαννόπουλος 11 (3/6 τρίποντα, 4 ριμπάουντ), Μορέιρα 13 (5/12 δίποντα, 3/5 βολές, 8 ριμπάουντ), Όσμπορν, Μπιλλής, Μπαρσέλο 5 (1), Στεφάνοβιτς (0/3 σουτ).</p><p>
+<span class="glomex_base64" style="display:none">PHNjcmlwdCBzcmM9Imh0dHBzOi8vcGxheWVyLmdsb21leC5jb20vaW50ZWdyYXRpb24vMS9nbG9tZXgtcGxheWVyLmpzIj48L3NjcmlwdD4gPGdsb21leC1wbGF5ZXIgICBkYXRhLWludGVncmF0aW9uLWlkPSI0MDU5OXYxN2wyOHkwcW96IiAgIGRhdGEtcGxheWxpc3QtaWQ9InYtY256ZGphZW43NjZ4Ij4gPC9nbG9tZXgtcGxheWVyPiA8c2NyaXB0IHR5cGU9ImFwcGxpY2F0aW9uL2xkK2pzb24iPiB7IkBjb250ZXh0IjoiaHR0cDovL3NjaGVtYS5vcmciLCJAdHlwZSI6IlZpZGVvT2JqZWN0IiwibmFtZSI6Is6gzrHOvc6xzrjOt869zrHPis66z4zPgiAtIM6azr/Ou86/z4PPg8+Mz4IgNzctNjcgfCBISUdITElHSFRTIiwiZGVzY3JpcHRpb24iOiLOoM6xzr3Osc64zrfOvc6xz4rOus+Mz4IgLSDOms6/zrvOv8+Dz4PPjM+CIDc3LTY3IiwidGh1bWJuYWlsVXJsIjoiaHR0cHM6Ly9pMnRodW1icy5nbG9tZXguY29tL2RDMWliSFUxYm5ScWRIbzRiRFV2TWpBeU1pOHhNQzh6TUM4eE5TODFNRjh4TlY4Mk16VmxPV1F6TnpneU1qRTFMbXB3Wnc9PS9wcm9maWxlOnBsYXllci05NjB4NTQwIiwiZHVyYXRpb24iOiJQVDVNMjlTIiwidXBsb2FkRGF0ZSI6IjIwMjItMTAtMzBUMTU6NTM6MzMuMDAwWiIsImVtYmVkVXJsIjoiaHR0cHM6Ly9wbGF5ZXIuZ2xvbWV4LmNvbS9pbnRlZ3JhdGlvbi8xL2lmcmFtZS1wbGF5ZXIuaHRtbD9pbnRlZ3JhdGlvbklkPTQwNTk5djE3bDI4eTBxb3omcGxheWxpc3RJZD12LWNuemRqYWVuNzY2eCIsInByb3ZpZGVyIjp7IkB0eXBlIjoiT3JnYW5pemF0aW9uIiwibmFtZSI6Imdsb21leCBHbWJIIiwibG9nbyI6eyJAdHlwZSI6IkltYWdlT2JqZWN0IiwidXJsIjoiaHR0cHM6Ly9wbGF5ZXIuZ2xvbWV4LmNvbS9sb2dvX3ZAMngucG5nIiwid2lkdGgiOjEzNiwiaGVpZ2h0IjoxNDZ9fX0gPC9zY3JpcHQ+</span>
+</p>
+
+
+                    </div>
+                        <div class="clearfix"></div>
+                        <div class="google_news">
+                        	<a href="https://news.google.com/publications/CAAqBwgKMIudogswzqe6Aw?hl=el&gl=GR&ceid=GR:el" target="_blank" rel="noopener" class="ga_trackme" data-action="google_news" data-title="Basket League: &Epsilon;ύ&kappa;&omicron;&lambda;&alpha; &omicron; &Pi;&alpha;&nu;&alpha;&theta;&eta;&nu;&alpha;ϊ&kappa;ό&sigmaf; &mu;&epsilon; 77-67 &tau;&omicron;&nu; &Kappa;&omicron;&lambda;&omicron;&sigma;&sigma;ό &Rho;ό&delta;&omicron;&upsilon;"><img src="https://www.vradini.gr/style/images/google-news.svg" alt="Ακολουθήστε το vradini.gr στο Google News για να μαθαίνετε πρώτοι όλες τις ειδήσεις" class="img-fluid" /> Ακολουθήστε το vradini.gr στο Google News για να μαθαίνετε πρώτοι όλες τις ειδήσεις!</a>
+                        </div><!-- /.google_news -->
+                        <div class="tags">
+                            <h3 class="block-title no-border">TAGS</h3>
+                            <ul>
+                                                                <li><a href="/tag/basket-league">Basket League</a></li>
+                                                                <li><a href="/tag/panathhnaikos">Παναθηναϊκός</a></li>
+                                                                <li><a href="/tag/kolossos-rodoy">Κολοσσός Ρόδου</a></li>
+                                                            </ul>
+                        </div><!-- /.tags -->
+                        						
+						<div class="clearfix"></div>
+		
+						<h2 class="block-title see_more">Δείτε επίσης</h2>
+		
+						<div class="row home_sections mb-5">
+							<div class="col-lg-4 col-md-6 col-12">
+								<article>
+									<div class="image">
+										<a href="https://www.vradini.gr/article/spor/678419-super-league-o-olympikakos-katharise-se-8-lepta-ton-agwna-me-th-lamia">
+											<figure>
+												<img src="https://www.vradini.gr/style/images/nopic.jpg" data-sizes="auto" data-srcset="https://www.vradini.gr/photos/c_300px_227px/articles/2022/10/ed5041_osfp.jpg 300w, https://www.vradini.gr/photos/c_500px_378px/articles/2022/10/ed5041_osfp.jpg 500w, https://www.vradini.gr/photos/c_720px_544px/articles/2022/10/ed5041_osfp.jpg 800w" alt="Super League: Ο Ολυμπικακός «καθάρισε» σε 6 λεπτά τον αγώνα με τη Λαμία"  class="img-fluid lazyload"/>
+											</figure>
+										</a>
+									</div>
+									<div class="meta"><span class="datetime ">30/10/2022, 18:14</span></div>									<div class="title"><h3><a href="https://www.vradini.gr/article/spor/678419-super-league-o-olympikakos-katharise-se-8-lepta-ton-agwna-me-th-lamia">Super League: Ο Ολυμπικακός «καθάρισε» σε 6 λεπτά τον αγώνα με τη Λαμία</a></h3></div>
+
+								</article>
+							</div>
+							
+							<div class="col-lg-4 col-md-6 col-12">
+								<article>
+									<div class="image">
+										<a href="https://www.vradini.gr/article/spor/678421-super-league-prwth-nikh-gia-to-lebadeiako">
+											<figure>
+												<img src="https://www.vradini.gr/style/images/nopic.jpg" data-sizes="auto" data-srcset="https://www.vradini.gr/photos/c_300px_227px/articles/2022/10/levad.jpg 300w, https://www.vradini.gr/photos/c_500px_378px/articles/2022/10/levad.jpg 500w, https://www.vradini.gr/photos/c_720px_544px/articles/2022/10/levad.jpg 800w" alt="Super League: Πρώτη νίκη για το Λεβαδειακό"  class="img-fluid lazyload"/>
+											</figure>
+										</a>
+									</div>
+									<div class="meta"><span class="datetime ">30/10/2022, 18:50</span></div>									<div class="title"><h3><a href="https://www.vradini.gr/article/spor/678421-super-league-prwth-nikh-gia-to-lebadeiako">Super League: Πρώτη νίκη για το Λεβαδειακό</a></h3></div>
+
+								</article>
+							</div>
+							
+							<div class="col-lg-4 col-md-6 col-12">
+								<article>
+									<div class="image">
+										<a href="https://www.vradini.gr/article/spor/678438-basket-league-sto-relanti-o-olympiakos-98-61-to-layrio">
+											<figure>
+												<img src="https://www.vradini.gr/style/images/nopic.jpg" data-sizes="auto" data-srcset="https://www.vradini.gr/photos/c_300px_227px/articles/2022/10/7f6dbd_osfp.jpg 300w, https://www.vradini.gr/photos/c_500px_378px/articles/2022/10/7f6dbd_osfp.jpg 500w, https://www.vradini.gr/photos/c_720px_544px/articles/2022/10/7f6dbd_osfp.jpg 800w" alt="Basket League: Στο «ρελαντί» ο Ολυμπιακός 98-61 το Λαύριο"  class="img-fluid lazyload"/>
+											</figure>
+										</a>
+									</div>
+									<div class="meta"><span class="datetime ">30/10/2022, 20:56</span></div>									<div class="title"><h3><a href="https://www.vradini.gr/article/spor/678438-basket-league-sto-relanti-o-olympiakos-98-61-to-layrio">Basket League: Στο «ρελαντί» ο Ολυμπιακός 98-61 το Λαύριο</a></h3></div>
+
+								</article>
+							</div>
+							
+							<div class="col-lg-4 col-md-6 col-12">
+								<article>
+									<div class="image">
+										<a href="https://www.vradini.gr/article/spor/678397-marantona-exei-fygei-alla-einai-pantoy">
+											<figure>
+												<img src="https://www.vradini.gr/style/images/nopic.jpg" data-sizes="auto" data-srcset="https://www.vradini.gr/photos/c_300px_227px/articles/2022/10/w30_120724555.jpg 300w, https://www.vradini.gr/photos/c_500px_378px/articles/2022/10/w30_120724555.jpg 500w, https://www.vradini.gr/photos/c_720px_544px/articles/2022/10/w30_120724555.jpg 800w" alt="Μαραντόνα, έχει φύγει αλλά είναι...παντού-Σήμερα θα γινόταν 62 ετών"  class="img-fluid lazyload"/>
+											</figure>
+										</a>
+									</div>
+									<div class="meta"><span class="datetime ">30/10/2022, 16:00</span></div>									<div class="title"><h3><a href="https://www.vradini.gr/article/spor/678397-marantona-exei-fygei-alla-einai-pantoy">Μαραντόνα, έχει φύγει αλλά είναι...παντού - Σήμερα θα γινόταν 62 ετών, έτσι τιμούν τον κορυφαίο!</a></h3></div>
+
+								</article>
+							</div>
+							
+							<div class="col-lg-4 col-md-6 col-12">
+								<article>
+									<div class="image">
+										<a href="https://www.vradini.gr/article/spor/678389-apo-3-4-toy-2002-sto-1-0-toy-libagia-to-2017-kai-ta-13-seri-mats-xwris-htta-toy-paok">
+											<figure>
+												<img src="https://www.vradini.gr/style/images/nopic.jpg" data-sizes="auto" data-srcset="https://www.vradini.gr/photos/c_300px_227px/articles/2022/10/131518.jpg 300w, https://www.vradini.gr/photos/c_500px_378px/articles/2022/10/131518.jpg 500w, https://www.vradini.gr/photos/c_720px_544px/articles/2022/10/131518.jpg 800w" alt="Ντέρμπι Δικεφάλων: Από 3-4 του 2002, στο 1-0 του Λιβάγια το 2017"  class="img-fluid lazyload"/>
+											</figure>
+										</a>
+									</div>
+									<div class="meta"><span class="datetime ">30/10/2022, 15:00</span></div>									<div class="title"><h3><a href="https://www.vradini.gr/article/spor/678389-apo-3-4-toy-2002-sto-1-0-toy-libagia-to-2017-kai-ta-13-seri-mats-xwris-htta-toy-paok">Ντέρμπι Δικεφάλων: Από 3-4 του 2002, στο 1-0 του Λιβάγια το 2017</a></h3></div>
+
+								</article>
+							</div>
+							
+							<div class="col-lg-4 col-md-6 col-12">
+								<article>
+									<div class="image">
+										<a href="https://www.vradini.gr/article/spor/678387-mpernar-sto-ape-mpe-tha-paleyoyme-se-kathe-paixnidi-gia-toys-traymaties-kai-ton-kosmo-mas">
+											<figure>
+												<img src="https://www.vradini.gr/style/images/nopic.jpg" data-sizes="auto" data-srcset="https://www.vradini.gr/photos/c_300px_227px/articles/2022/10/untitled_design_3_17_1024x576.jpg 300w, https://www.vradini.gr/photos/c_500px_378px/articles/2022/10/untitled_design_3_17_1024x576.jpg 500w, https://www.vradini.gr/photos/c_720px_544px/articles/2022/10/untitled_design_3_17_1024x576.jpg 800w" alt="Παναθηναϊκός -Μπερνάρ :«Θα παλεύουμε σε κάθε παιχνίδι για τους τραυματίες και τον κόσμο μας»"  class="img-fluid lazyload"/>
+											</figure>
+										</a>
+									</div>
+									<div class="meta"><span class="datetime ">30/10/2022, 14:15</span></div>									<div class="title"><h3><a href="https://www.vradini.gr/article/spor/678387-mpernar-sto-ape-mpe-tha-paleyoyme-se-kathe-paixnidi-gia-toys-traymaties-kai-ton-kosmo-mas">Παναθηναϊκός -Μπερνάρ :«Θα παλεύουμε σε κάθε παιχνίδι για τους τραυματίες και τον κόσμο μας»</a></h3></div>
+
+								</article>
+							</div>
+							
+							
+							
+						</div><!-- /.row -->
+
+                </div><!-- /.main-content -->
+                
+    <div class="side-content">
+
+						<div ref="5|ROS1" class="injected_bannner_base64" style="display:none"  data-dfp="0">PGRpdiBzdHlsZT0iIiBjbGFzcz0ic2lkZV9iYW5uZXIgbXQtMCI+CgkJCTxkaXYgaWQ9J3ZyYWRpbmlfQSc+DQogIDxzY3JpcHQ+DQogICAgZ29vZ2xldGFnLmNtZC5wdXNoKGZ1bmN0aW9uKCkgeyBnb29nbGV0YWcuZGlzcGxheSgndnJhZGluaV9BJyk7IH0pOw0KICA8L3NjcmlwdD4NCjwvZGl2PgkJCTwvZGl2Pg==</div>
+						
+        <h3 class="heading" style="color:#052962;"><a href="https://www.vradini.gr/articles-timeline">Ροή ειδήσεων</a></h3>
+        <div id="timeline" class="mCustomScrollbar">
+
+            <article>
+        <div class="cover">
+            <figure><img src="https://www.vradini.gr/style/images/nopic.jpg" data-src="https://www.vradini.gr/photos/c_300px_300px/articles/2022/11/sky_express_athens_airport__21.jpg" alt="SKY express: Η εταιρεία με τη μεγαλύτερη αύξηση πτητικού έργου στην Ευρώπη το 2022"  class="img-fluid lazyload"/></figure>                        
+        </div>
+        <span class="category"><a href="https://www.vradini.gr/article/business" style="color:#8bade8">Business</a></span>
+        <time datetime="2022-11-24T23:00:00.000Z" title="24/11/2022, 23:00">πριν 5 λεπτά</time>
+        <h3>SKY express: Η εταιρεία με τη μεγαλύτερη αύξηση πτητικού έργου στην Ευρώπη το 2022</h3>
+        <a href="https://www.vradini.gr/article/business/681904-sky-express-h-etaireia-me-th-megalyterh-aykshsh-pthtikoy-ergoy-se-olh-thn-eyrwph-gia-to-2022" class="stretched-link" aria-label="SKY express: Η εταιρεία με τη μεγαλύτερη αύξηση πτητικού έργου στην Ευρώπη το 2022"></a>
+    </article>
+        <article>
+        <div class="cover">
+            <figure><img src="https://www.vradini.gr/style/images/nopic.jpg" data-src="https://www.vradini.gr/photos/c_300px_300px/articles/2022/11/4e0058_tzoker.jpg" alt="Νέο τζακ ποτ στην κλήρωση του Τζόκερ"  class="img-fluid lazyload"/></figure>                        
+        </div>
+        <span class="category"><a href="https://www.vradini.gr/article/ellada" style="color:#3198ff">Ελλάδα</a></span>
+        <time datetime="2022-11-24T22:40:00.000Z" title="24/11/2022, 22:40">πριν 25 λεπτά</time>
+        <h3>Νέο τζακ ποτ στην κλήρωση του Τζόκερ</h3>
+        <a href="https://www.vradini.gr/article/ellada/681919-neo-tzak-pot-sthn-klhrwsh-toy-tzoker" class="stretched-link" aria-label="Νέο τζακ ποτ στην κλήρωση του Τζόκερ"></a>
+    </article>
+        <article>
+        <div class="cover">
+            <figure><img src="https://www.vradini.gr/style/images/nopic.jpg" data-src="https://www.vradini.gr/photos/c_300px_300px/articles/2022/11/5c3973_1.jpg" alt="Θεσσαλονίκη: Του έσπασε το αυτοκίνητο επειδή δεν ανταποκρινόταν στον έρωτα της"  class="img-fluid lazyload"/></figure>                        
+        </div>
+        <span class="category"><a href="https://www.vradini.gr/article/ellada" style="color:#3198ff">Ελλάδα</a></span>
+        <time datetime="2022-11-24T22:17:00.000Z" title="24/11/2022, 22:17">πριν 48 λεπτά</time>
+        <h3>Θεσσαλονίκη: Του έσπασε το αυτοκίνητο επειδή δεν ανταποκρινόταν στον έρωτα της</h3>
+        <a href="https://www.vradini.gr/article/ellada/681918-thessalonikh-toy-espase-to-aytokinhto-epeidh-den-antapokrinotan-ston-erwta-ths" class="stretched-link" aria-label="Θεσσαλονίκη: Του έσπασε το αυτοκίνητο επειδή δεν ανταποκρινόταν στον έρωτα της"></a>
+    </article>
+        <article>
+        <div class="cover">
+            <figure><img src="https://www.vradini.gr/style/images/nopic.jpg" data-src="https://www.vradini.gr/photos/c_300px_300px/articles/2022/11/b96702_gold.jpg" alt="Συνεχίζει ανοδικά ο χρυσός"  class="img-fluid lazyload"/></figure>                        
+        </div>
+        <span class="category"><a href="https://www.vradini.gr/article/oikonomia" style="color:#ff7f0f">Οικονομία</a></span>
+        <time datetime="2022-11-24T22:00:00.000Z" title="24/11/2022, 22:00">πριν 1 ώρα</time>
+        <h3>Συνεχίζει ανοδικά ο χρυσός</h3>
+        <a href="https://www.vradini.gr/article/oikonomia/681916-synexizei-anodika-o-xrysos" class="stretched-link" aria-label="Συνεχίζει ανοδικά ο χρυσός"></a>
+    </article>
+        <article>
+        <div class="cover">
+            <figure><img src="https://www.vradini.gr/style/images/nopic.jpg" data-src="https://www.vradini.gr/photos/c_300px_300px/articles/2022/11/ypourgiko.jpg" alt="Συνεδριάζει αύριο το υπουργικό συμβούλιο "  class="img-fluid lazyload"/></figure>                        
+        </div>
+        <span class="category"><a href="https://www.vradini.gr/article/politiki" style="color:#ff4d36">Πολιτική</a></span>
+        <time datetime="2022-11-24T21:40:00.000Z" title="24/11/2022, 21:40">πριν 1 ώρα</time>
+        <h3>Συνεδριάζει αύριο το υπουργικό συμβούλιο </h3>
+        <a href="https://www.vradini.gr/article/politiki/681914-to-ayriano-programma-toy-prwthypoyrgoy" class="stretched-link" aria-label="Συνεδριάζει αύριο το υπουργικό συμβούλιο "></a>
+    </article>
+        <article>
+        <div class="cover">
+            <figure><img src="https://www.vradini.gr/style/images/nopic.jpg" data-src="https://www.vradini.gr/photos/c_300px_300px/articles/2022/11/113114_negprwsism221280.jpg" alt="Υπουργείο Υγείας: Εγκαίνια 48 κλινών αρνητικής πίεσης στο Σισμανόγλειο"  class="img-fluid lazyload"/></figure>                        
+        </div>
+        <span class="category"><a href="https://www.vradini.gr/article/ygeia" style="color:#90c418">Υγεία</a></span>
+        <time datetime="2022-11-24T20:46:00.000Z" title="24/11/2022, 20:46">πριν 2 ώρες</time>
+        <h3>Υπουργείο Υγείας: Εγκαίνια 48 κλινών αρνητικής πίεσης στο Σισμανόγλειο</h3>
+        <a href="https://www.vradini.gr/article/ygeia/681908-ypoyrgeio-ygeias-egkainia-48-klinwn-arnhtikhs-pieshs-sto-sismanogleio" class="stretched-link" aria-label="Υπουργείο Υγείας: Εγκαίνια 48 κλινών αρνητικής πίεσης στο Σισμανόγλειο"></a>
+    </article>
+        <article>
+        <div class="cover">
+            <figure><img src="https://www.vradini.gr/style/images/nopic.jpg" data-src="https://www.vradini.gr/photos/c_300px_300px/articles/2022/11/kalpi1.jpg" alt="Δημοσκόπηση Metron: Προβάδισμα 8 μονάδων της ΝΔ έναντι του ΣΥΡΙΖΑ"  class="img-fluid lazyload"/></figure>                        
+        </div>
+        <span class="category"><a href="https://www.vradini.gr/article/politiki" style="color:#ff4d36">Πολιτική</a></span>
+        <time datetime="2022-11-24T20:32:00.000Z" title="24/11/2022, 20:32">πριν 3 ώρες</time>
+        <h3>Δημοσκόπηση Metron: Προβάδισμα 8 μονάδων της ΝΔ έναντι του ΣΥΡΙΖΑ</h3>
+        <a href="https://www.vradini.gr/article/politiki/681907-dhmoskophsh-metron-probadisma-8-monadwn-ths-nd-enanti-toy-syriza" class="stretched-link" aria-label="Δημοσκόπηση Metron: Προβάδισμα 8 μονάδων της ΝΔ έναντι του ΣΥΡΙΖΑ"></a>
+    </article>
+        <article>
+        <div class="cover">
+            <figure><img src="https://www.vradini.gr/style/images/nopic.jpg" data-src="https://www.vradini.gr/photos/c_300px_300px/articles/2022/11/portogal.jpg" alt="Μουντιάλ 2022: «Καρδιοχτύπησε» αλλά νίκησε η Πορτογαλία"  class="img-fluid lazyload"/></figure>                        
+        </div>
+        <span class="category"><a href="https://www.vradini.gr/article/spor" style="color:#00d46e">Σπορ</a></span>
+        <time datetime="2022-11-24T20:26:00.000Z" title="24/11/2022, 20:26">πριν 3 ώρες</time>
+        <h3>Μουντιάλ 2022: «Καρδιοχτύπησε» αλλά νίκησε η Πορτογαλία</h3>
+        <a href="https://www.vradini.gr/article/spor/681906-moyntial-2022-kardioxtyphse-h-portogalia" class="stretched-link" aria-label="Μουντιάλ 2022: «Καρδιοχτύπησε» αλλά νίκησε η Πορτογαλία"></a>
+    </article>
+        <article>
+        <div class="cover">
+            <figure><img src="https://www.vradini.gr/style/images/nopic.jpg" data-src="https://www.vradini.gr/photos/c_300px_300px/articles/2022/11/giatroi_giatros_apergia_nosokomoi.jpg" alt="Νομοσχέδιο για την υγεία: Με απεργιακές κινητοποιήσεις απαντούν οι εργαζόμενοι στα δημόσια νοσοκομεία"  class="img-fluid lazyload"/></figure>                        
+        </div>
+        <span class="category"><a href="https://www.vradini.gr/article/ygeia" style="color:#90c418">Υγεία</a></span>
+        <time datetime="2022-11-24T19:40:00.000Z" title="24/11/2022, 19:40">πριν 3 ώρες</time>
+        <h3>Νομοσχέδιο για την υγεία:Με απεργίες  απαντούν οι εργαζόμενοι στα δημόσια νοσοκομεία</h3>
+        <a href="https://www.vradini.gr/article/ygeia/681899-nomosxedio-gia-thn-ygeia-me-apergiakes-kinhtopoihseis-apantoyn-oi-ergazomenoi-sta-dhmosia-nosokomeia" class="stretched-link" aria-label="Νομοσχέδιο για την υγεία:Με απεργίες  απαντούν οι εργαζόμενοι στα δημόσια νοσοκομεία"></a>
+    </article>
+        <article>
+        <div class="cover">
+            <figure><img src="https://www.vradini.gr/style/images/nopic.jpg" data-src="https://www.vradini.gr/photos/c_300px_300px/articles/2022/11/thanos.jpg" alt="Θ. Πλεύρης:Προσωρινό φρένο στους ανεμβολίαστους υγειονομικούς από τον υπουργό υγείας"  class="img-fluid lazyload"/></figure>                        
+        </div>
+        <span class="category"><a href="https://www.vradini.gr/article/ygeia" style="color:#90c418">Υγεία</a></span>
+        <time datetime="2022-11-24T19:33:00.000Z" title="24/11/2022, 19:33">πριν 4 ώρες</time>
+        <h3>Θ. Πλεύρης:Προσωρινό φρένο στους ανεμβολίαστους υγειονομικούς από τον υπουργό υγείας</h3>
+        <a href="https://www.vradini.gr/article/ygeia/681903-thanos-pleyrhs-freno-stoys-anemboliastoys-ygeionomikoys" class="stretched-link" aria-label="Θ. Πλεύρης:Προσωρινό φρένο στους ανεμβολίαστους υγειονομικούς από τον υπουργό υγείας"></a>
+    </article>
+        <article>
+        <div class="cover">
+            <figure><img src="https://www.vradini.gr/style/images/nopic.jpg" data-src="https://www.vradini.gr/photos/c_300px_300px/articles/2022/11/oukrania_rusia.jpg" alt="Ανταλλαγή 100 αιχμαλώτων πολέμου Ρωσίας - Ουκρανίας"  class="img-fluid lazyload"/></figure>                        
+        </div>
+        <span class="category"><a href="https://www.vradini.gr/article/kosmos" style="color:#1bc576">Κόσμος</a></span>
+        <time datetime="2022-11-24T19:30:00.000Z" title="24/11/2022, 19:30">πριν 4 ώρες</time>
+        <h3>Ανταλλαγή 100 αιχμαλώτων πολέμου Ρωσίας - Ουκρανίας</h3>
+        <a href="https://www.vradini.gr/article/kosmos/681898-rwsia-oykrania-mosxa-kai-kiebo-anthllaksan-100-aixmalwtoys-polemoy" class="stretched-link" aria-label="Ανταλλαγή 100 αιχμαλώτων πολέμου Ρωσίας - Ουκρανίας"></a>
+    </article>
+        <article>
+        <div class="cover">
+            <figure><img src="https://www.vradini.gr/style/images/nopic.jpg" data-src="https://www.vradini.gr/photos/c_300px_300px/articles/2022/11/____________2022__eurokinissi_.jpg" alt="Αθήνα: Αύξηση 4% στην πληρότητα των ξενοδοχείων τον Οκτώβριο"  class="img-fluid lazyload"/></figure>                        
+        </div>
+        <span class="category"><a href="https://www.vradini.gr/article/toyrismos" style="color:#3dd0e3">Τουρισμός</a></span>
+        <time datetime="2022-11-24T19:25:00.000Z" title="24/11/2022, 19:25">πριν 4 ώρες</time>
+        <h3>Αθήνα: Αύξηση 4% στην πληρότητα των ξενοδοχείων τον Οκτώβριο</h3>
+        <a href="https://www.vradini.gr/article/toyrismos/681897-athhna-aykshsh-4-sthn-plhrothta-twn-ksenodoxeiwn-ton-oktwbrio" class="stretched-link" aria-label="Αθήνα: Αύξηση 4% στην πληρότητα των ξενοδοχείων τον Οκτώβριο"></a>
+    </article>
+        <article>
+        <div class="cover">
+            <figure><img src="https://www.vradini.gr/style/images/nopic.jpg" data-src="https://www.vradini.gr/photos/c_300px_300px_ct/articles/2022/11/09b723_1_antonios.jpg" alt="Αυτοί είναι οι τρεις δικηγόροι του πατέρα Αντλωνιου - Ποιά η υπερασπιστική γραμμή"  class="img-fluid lazyload"/></figure>                        
+        </div>
+        <span class="category"><a href="https://www.vradini.gr/article/ellada" style="color:#3198ff">Ελλάδα</a></span>
+        <time datetime="2022-11-24T19:20:00.000Z" title="24/11/2022, 19:20">πριν 4 ώρες</time>
+        <h3>Αυτοί είναι οι τρεις δικηγόροι του πατέρα Αντώνιου - Ποιά η υπερασπιστική γραμμή</h3>
+        <a href="https://www.vradini.gr/article/ellada/681902-aytoi-einai-oi-treis-dikhgoroi-toy-patera-antlwnioy-poia-h-yperaspistikh-grammh" class="stretched-link" aria-label="Αυτοί είναι οι τρεις δικηγόροι του πατέρα Αντώνιου - Ποιά η υπερασπιστική γραμμή"></a>
+    </article>
+        <article>
+        <div class="cover">
+            <figure><img src="https://www.vradini.gr/style/images/nopic.jpg" data-src="https://www.vradini.gr/photos/c_300px_300px/articles/2022/11/mhtsotakkk.jpeg" alt="Συνάντηση Μητσοτάκη με μαθητές από μειονοτικά σχολεία της Ροδόπης"  class="img-fluid lazyload"/></figure>                        
+        </div>
+        <span class="category"><a href="https://www.vradini.gr/article/politiki" style="color:#ff4d36">Πολιτική</a></span>
+        <time datetime="2022-11-24T19:15:00.000Z" title="24/11/2022, 19:15">πριν 4 ώρες</time>
+        <h3>Συνάντηση Μητσοτάκη με μαθητές από μειονοτικά σχολεία της Ροδόπης</h3>
+        <a href="https://www.vradini.gr/article/politiki/681901-synanthsh-mhtsotakh-me-mathhtes-apo-meionotika-sxoleia-ths-rodophs" class="stretched-link" aria-label="Συνάντηση Μητσοτάκη με μαθητές από μειονοτικά σχολεία της Ροδόπης"></a>
+    </article>
+        <article>
+        <div class="cover">
+            <figure><img src="https://www.vradini.gr/style/images/nopic.jpg" data-src="https://www.vradini.gr/photos/c_300px_300px/articles/2022/11/photo_1__2_.jpg" alt="ΕΕΚΤ: Πώς να προφυλαχτείτε από τις απάτες μέσω κινητών τηλεφώνων"  class="img-fluid lazyload"/></figure>                        
+        </div>
+        <span class="category"><a href="https://www.vradini.gr/article/ellada" style="color:#3198ff">Ελλάδα</a></span>
+        <time datetime="2022-11-24T19:10:00.000Z" title="24/11/2022, 19:10">πριν 4 ώρες</time>
+        <h3>ΕΕΚΤ: Πώς να προφυλαχτείτε από τις απάτες μέσω κινητών τηλεφώνων</h3>
+        <a href="https://www.vradini.gr/article/ellada/681892-eekt-pws-na-profylaxteite-apo-tis-apates-mesw-kinhtwn-thlefwnwn" class="stretched-link" aria-label="ΕΕΚΤ: Πώς να προφυλαχτείτε από τις απάτες μέσω κινητών τηλεφώνων"></a>
+    </article>
+        <article>
+        <div class="cover">
+            <figure><img src="https://www.vradini.gr/style/images/nopic.jpg" data-src="https://www.vradini.gr/photos/c_300px_300px/articles/2022/11/1_26_9.jpg" alt="«Ξαφνικά πετάχτηκε μπροστά μου»-Τί υποστηρίζει ο 26χρονος Αλβανός οδηγός"  class="img-fluid lazyload"/></figure>                        
+        </div>
+        <span class="category"><a href="https://www.vradini.gr/article/ellada" style="color:#3198ff">Ελλάδα</a></span>
+        <time datetime="2022-11-24T19:09:00.000Z" title="24/11/2022, 19:09">πριν 4 ώρες</time>
+        <h3>«Ξαφνικά πετάχτηκε μπροστά μου»-Τί υποστηρίζει ο 26χρονος Αλβανός οδηγός</h3>
+        <a href="https://www.vradini.gr/article/ellada/681900-ksafnika-petaxthke-mprosta-kai-moy-ksefyge-to-amaksi-ti-yposthrizei-o-26xronos-albanos-odhgos" class="stretched-link" aria-label="«Ξαφνικά πετάχτηκε μπροστά μου»-Τί υποστηρίζει ο 26χρονος Αλβανός οδηγός"></a>
+    </article>
+        <article>
+        <div class="cover">
+            <figure><img src="https://www.vradini.gr/style/images/nopic.jpg" data-src="https://www.vradini.gr/photos/c_300px_300px/articles/2022/11/maestro_6__1_.jpg" alt=" «Maestro»: Δείτε βίντεο από τα γυρίσματα του επεισοδίου"  class="img-fluid lazyload"/></figure>                        
+        </div>
+        <span class="category"><a href="https://www.vradini.gr/article/media" style="color:#00B2FF">Media</a></span>
+        <time datetime="2022-11-24T19:00:00.000Z" title="24/11/2022, 19:00">πριν 4 ώρες</time>
+        <h3>«Maestro»: Δείτε βίντεο από τα γυρίσματα του επεισοδίου</h3>
+        <a href="https://www.vradini.gr/article/media/681888-maestro-deite-binteo-apo-ta-gyrismata-toy-epeisodioy" class="stretched-link" aria-label="«Maestro»: Δείτε βίντεο από τα γυρίσματα του επεισοδίου"></a>
+    </article>
+        <article>
+        <div class="cover">
+            <figure><img src="https://www.vradini.gr/style/images/nopic.jpg" data-src="https://www.vradini.gr/photos/c_300px_300px/articles/2022/11/316836875_664614625199914_6544332111682072734_n.jpg" alt="Λένα Δροσάκη: «Αν δεν μου κάτσεις, δεν θα περάσεις» μου είπε ο Φιλιππίδης"  class="img-fluid lazyload"/></figure>                        
+        </div>
+        <span class="category"><a href="https://www.vradini.gr/article/ellada" style="color:#3198ff">Ελλάδα</a></span>
+        <time datetime="2022-11-24T18:56:00.000Z" title="24/11/2022, 18:56">πριν 4 ώρες</time>
+        <h3>Λένα Δροσάκη: «'Αν δεν μου κάτσεις, δεν θα περάσεις' μου είπε ο Φιλιππίδης»</h3>
+        <a href="https://www.vradini.gr/article/ellada/681895-lena-drosakh-039-an-den-moy-katseis-den-tha-peraseis-039-moy-eipe-o-filippidhs" class="stretched-link" aria-label="Λένα Δροσάκη: «'Αν δεν μου κάτσεις, δεν θα περάσεις' μου είπε ο Φιλιππίδης»"></a>
+    </article>
+        <article>
+        <div class="cover">
+            <figure><img src="https://www.vradini.gr/style/images/nopic.jpg" data-src="https://www.vradini.gr/photos/c_300px_300px/articles/2022/11/316737376_530539355633319_1537329068925649082_n.jpg" alt="Νίκος Μουτσινάς: «Γίνεται τηλεοπτικό δικαστήριο, δικάζουν οι παρουσιαστές»"  class="img-fluid lazyload"/></figure>                        
+        </div>
+        <span class="category"><a href="https://www.vradini.gr/article/media" style="color:#00B2FF">Media</a></span>
+        <time datetime="2022-11-24T18:50:00.000Z" title="24/11/2022, 18:50">πριν 4 ώρες</time>
+        <h3>Νίκος Μουτσινάς: «Γίνεται τηλεοπτικό δικαστήριο, δικάζουν οι παρουσιαστές»</h3>
+        <a href="https://www.vradini.gr/article/media/681881-nikos-moytsinas-ginetai-thleoptiko-dikasthrio-dikazoyn-oi-paroysiastes" class="stretched-link" aria-label="Νίκος Μουτσινάς: «Γίνεται τηλεοπτικό δικαστήριο, δικάζουν οι παρουσιαστές»"></a>
+    </article>
+        <article>
+        <div class="cover">
+            <figure><img src="https://www.vradini.gr/style/images/nopic.jpg" data-src="https://www.vradini.gr/photos/c_300px_300px/articles/2022/11/sminias2.jpg" alt="Τροχαίο Λεωφόρος Μεσογείων: Έτρεχε να προλάβει το λεωφορείο ο αρχισμηνίας "  class="img-fluid lazyload"/></figure>                        
+        </div>
+        <span class="category"><a href="https://www.vradini.gr/article/ellada" style="color:#3198ff">Ελλάδα</a></span>
+        <time datetime="2022-11-24T18:48:00.000Z" title="24/11/2022, 18:48">πριν 4 ώρες</time>
+        <h3>Τροχαίο Λεωφόρος Μεσογείων: Έτρεχε να προλάβει το λεωφορείο ο αρχισμηνίας </h3>
+        <a href="https://www.vradini.gr/article/ellada/681896-troxaio-l-mesogeiwn-etrexe-na-prolabei-to-lewforeio" class="stretched-link" aria-label="Τροχαίο Λεωφόρος Μεσογείων: Έτρεχε να προλάβει το λεωφορείο ο αρχισμηνίας "></a>
+    </article>
+        <article>
+        <div class="cover">
+            <figure><img src="https://www.vradini.gr/style/images/nopic.jpg" data-src="https://www.vradini.gr/photos/c_300px_300px/articles/2022/11/18986884.jpg" alt="Πέθανε η κόρη του πρώην προπονητή του Ολυμπιακού, Όσκαρ Γκαρθία"  class="img-fluid lazyload"/></figure>                        
+        </div>
+        <span class="category"><a href="https://www.vradini.gr/article/spor" style="color:#00d46e">Σπορ</a></span>
+        <time datetime="2022-11-24T18:40:00.000Z" title="24/11/2022, 18:40">πριν 4 ώρες</time>
+        <h3>Πέθανε η κόρη του πρώην προπονητή του Ολυμπιακού, Όσκαρ Γκαρθία</h3>
+        <a href="https://www.vradini.gr/article/spor/681880-pethane-h-korh-toy-prwhn-proponhth-toy-olympiakoy-oskar-gkarthia" class="stretched-link" aria-label="Πέθανε η κόρη του πρώην προπονητή του Ολυμπιακού, Όσκαρ Γκαρθία"></a>
+    </article>
+        <article>
+        <div class="cover">
+            <figure><img src="https://www.vradini.gr/style/images/nopic.jpg" data-src="https://www.vradini.gr/photos/c_300px_300px/articles/2022/11/kikilias___skai_24.11.2022__1_.jpg" alt="Κικίλιας: «Τα ταξιδιωτικά έσοδα θα υπερβούν τον στόχο του προϋπολογισμού κατά 3 δις»"  class="img-fluid lazyload"/></figure>                        
+        </div>
+        <span class="category"><a href="https://www.vradini.gr/article/toyrismos" style="color:#3dd0e3">Τουρισμός</a></span>
+        <time datetime="2022-11-24T18:35:00.000Z" title="24/11/2022, 18:35">πριν 4 ώρες</time>
+        <h3>Κικίλιας: «Τα ταξιδιωτικά έσοδα θα υπερβούν τον στόχο του προϋπολογισμού κατά 3 δις»</h3>
+        <a href="https://www.vradini.gr/article/toyrismos/681890-b-kikilias-ta-taksidiwtika-esoda-tha-yperbei-ton-stoxo-toy-proypologismoy-kata-3-dis-eyrw" class="stretched-link" aria-label="Κικίλιας: «Τα ταξιδιωτικά έσοδα θα υπερβούν τον στόχο του προϋπολογισμού κατά 3 δις»"></a>
+    </article>
+        <article>
+        <div class="cover">
+            <figure><img src="https://www.vradini.gr/style/images/nopic.jpg" data-src="https://www.vradini.gr/photos/c_300px_300px/articles/2022/11/3_ki_3.jpg" alt="Κιβωτός του Κόσμου: Στο μικροσκόπιο της Οικονομικής αστυνομίας όλες οι δομές"  class="img-fluid lazyload"/></figure>                        
+        </div>
+        <span class="category"><a href="https://www.vradini.gr/article/ellada" style="color:#3198ff">Ελλάδα</a></span>
+        <time datetime="2022-11-24T18:34:00.000Z" title="24/11/2022, 18:34">πριν 5 ώρες</time>
+        <h3>Κιβωτός του Κόσμου: Στο μικροσκόπιο της Οικονομικής αστυνομίας όλες οι δομές</h3>
+        <a href="https://www.vradini.gr/article/ellada/681894-kibwtos-toy-kosmoy-sto-mikroskopio-ths-oikonomikhs-astynomias-oles-oi-domes" class="stretched-link" aria-label="Κιβωτός του Κόσμου: Στο μικροσκόπιο της Οικονομικής αστυνομίας όλες οι δομές"></a>
+    </article>
+        <article>
+        <div class="cover">
+            <figure><img src="https://www.vradini.gr/style/images/nopic.jpg" data-src="https://www.vradini.gr/photos/c_300px_300px/articles/2022/11/merkel.jpg" alt="Μέρκελ: «Στο τέλος της θητείας μου δεν είχα πλέον ισχύ για να επιβληθώ στον Πούτιν»"  class="img-fluid lazyload"/></figure>                        
+        </div>
+        <span class="category"><a href="https://www.vradini.gr/article/kosmos" style="color:#1bc576">Κόσμος</a></span>
+        <time datetime="2022-11-24T18:30:00.000Z" title="24/11/2022, 18:30">πριν 5 ώρες</time>
+        <h3>Μέρκελ: «Στο τέλος της θητείας μου δεν είχα πλέον ισχύ για να επιβληθώ στον Πούτιν»</h3>
+        <a href="https://www.vradini.gr/article/kosmos/681875-merkel-sto-telos-ths-thhteias-moy-den-eixa-pleon-isxy-gia-na-epiblhthw-ston-poytin" class="stretched-link" aria-label="Μέρκελ: «Στο τέλος της θητείας μου δεν είχα πλέον ισχύ για να επιβληθώ στον Πούτιν»"></a>
+    </article>
+        <article>
+        <div class="cover">
+            <figure><img src="https://www.vradini.gr/style/images/nopic.jpg" data-src="https://www.vradini.gr/photos/c_300px_300px/articles/2022/11/kivotos_tou_kosmou.jpg" alt="Κιβωτός του Κόσμου: Νέα αποκάλυψη σοκ - Ποιός άδειασε τη θυρίδα στην τράπεζα;"  class="img-fluid lazyload"/></figure>                        
+        </div>
+        <span class="category"><a href="https://www.vradini.gr/article/ellada" style="color:#3198ff">Ελλάδα</a></span>
+        <time datetime="2022-11-24T18:20:00.000Z" title="24/11/2022, 18:20">πριν 5 ώρες</time>
+        <h3>Κιβωτός του Κόσμου: Νέα αποκάλυψη σοκ - Ποιός άδειασε τη θυρίδα στην τράπεζα;</h3>
+        <a href="https://www.vradini.gr/article/ellada/681891-kibwtos-toy-kosmoy-nea-apokalypsh-sok-poios-adeiase-th-thyrida" class="stretched-link" aria-label="Κιβωτός του Κόσμου: Νέα αποκάλυψη σοκ - Ποιός άδειασε τη θυρίδα στην τράπεζα;"></a>
+    </article>
+            </div><!-- /#timeline -->
+        
+					<div ref="6|ROS2" class="injected_bannner_base64" style="display:none"  data-dfp="0">PGRpdiBzdHlsZT0iIiBjbGFzcz0ic2lkZV9iYW5uZXIgYmFubmVyLXN0aWNreSI+CgkJCTxkaXYgaWQ9J3ZyYWRpbmlfQic+DQogIDxzY3JpcHQ+DQogICAgZ29vZ2xldGFnLmNtZC5wdXNoKGZ1bmN0aW9uKCkgeyBnb29nbGV0YWcuZGlzcGxheSgndnJhZGluaV9CJyk7IH0pOw0KICA8L3NjcmlwdD4NCjwvZGl2PgkJCTwvZGl2Pg==</div>
+						
+	</div><!-- /.side-content -->
+
+
+                
+            </div>
+
+ 
+	<input type="hidden" class="infinite-more-link" data-next="aHR0cHM6Ly93d3cudnJhZGluaS5nci9hcnRpY2xlL3Nwb3IvNjc5MDIxLWVzYWtlP21vcmVfcmVsYXRlZD02Nzg4MTktNjc4NDM4">
+      
+        </article>
+    
+    </div><!-- /.container -->
+    <div id="article_loader_spinner" style="display: none;">
+        <div class="loading_article">
+            <i class="fa fa-spinner fa-spin fa-6x fa-fw"></i>
+        </div>
+    </div>
+</section><!-- /.article_page -->		</main>
+	
+		<div class="push"></div>
+	</div><!-- /#wrapper -->
+
+	
+	<footer>
+        <div class="container">
+            <div class="col-12 logo"><a href="/"><img src="https://www.vradini.gr/style/images/logo_white.svg" alt="Η Βραδυνή" class="img-fluid" /></a></div>
+        </div>
+		
+        <div class="menu">
+            <div class="col-12 socialsearch">
+                <ul>
+                    <li><a href="https://news.google.com/publications/CAAqBwgKMIudogswzqe6Aw?hl=el&gl=GR&ceid=GR:el" target="_blank" rel="noreferrer nofollow" aria-label="Google News"><img src="https://www.vradini.gr/style/images/google-news.svg" alt="Google News" class="img-fluid" /> <span aria-label="Google News" class="d-none">Follow us on Google News</span></a></li>                    <li><a href="https://www.facebook.com/vradini.gr" target="_blank" rel="noreferrer nofollow" aria-label="facebook"><i class="fab fa-facebook-f"></i> <span aria-label="facebook" class="d-none">Follow us on facebook</span></a></li>                    <li><a href="https://twitter.com/VradiniGr" target="_blank" rel="noreferrer nofollow" aria-label="twitter"><i class="fab fa-twitter"></i> <span aria-label="twitter" class="d-none">Follow us on twitter</span></a></li>                    <li><a href="https://www.instagram.com/vradini.gr/" target="_blank" rel="noreferrer nofollow" aria-label="instagram"><i class="fab fa-instagram"></i> <span aria-label="instagram" class="d-none">Follow us on instagram</span></a></li>                    <li><a href="https://www.youtube.com/channel/UC8hnKp5j72dbiWpotwINTFg/videos" target="_blank" rel="noreferrer nofollow" aria-label="youtube"><i class="fab fa-youtube"></i> <span aria-label="youtube" class="d-none">Follow us on youtube</span></a></li>                </ul>
+            </div><!-- /.socialsearch -->
+            <div class="col-12">
+                
+                    
+    <style>
+        .main_categories li a:link.cat_5:hover {color: #ff4d36;}
+        .main_categories li a:link.cat_1:hover {color: #3198ff;}
+        .main_categories li a:link.cat_21:hover {color: #1bc576;}
+        .main_categories li a:link.cat_7:hover {color: #ff7f0f;}
+        .main_categories li a:link.cat_23:hover {color: #8bade8;}
+        .main_categories li a:link.cat_22:hover {color: #005789;}
+        .main_categories li a:link.cat_18:hover {color: #90c418;}
+        .main_categories li a:link.cat_4:hover {color: #4a61fb;}
+        </style>                
+                
+            <ul class="main_categories">
+                                <li><a href="https://www.vradini.gr/article/politiki" class="cat_5">Πολιτική</a></li>
+			                    <li><a href="https://www.vradini.gr/article/ellada" class="cat_1">Ελλάδα</a></li>
+			                    <li><a href="https://www.vradini.gr/article/kosmos" class="cat_21">Κόσμος</a></li>
+			                    <li><a href="https://www.vradini.gr/article/oikonomia" class="cat_7">Οικονομία</a></li>
+			                    <li><a href="https://www.vradini.gr/article/business" class="cat_23">Business</a></li>
+			                    <li><a href="https://www.vradini.gr/article/vradyni-tis-kyriakis" class="cat_22">«Η Βραδυνή της Κυριακής»</a></li>
+			                    <li><a href="https://www.vradini.gr/article/ygeia" class="cat_18">Υγεία</a></li>
+			                    <li><a href="https://www.vradini.gr/article/people-style" class="cat_4">People & Style</a></li>
+			                </ul><!-- /.main_categories -->
+                    
+                <ul class="sub_categories">
+                    <li><a href="/terms-of-use">Όροι χρήσης</a></li>
+                    <li><a href="/taytothta">Ταυτότητα</a></li>
+                    <li><a href="/diafimisi">Διαφήμιση</a></li>
+                                    </ul>
+            </div>
+        </div>
+        
+        <div class="bottom_bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-12 copyright">
+                        <span>© 2022 vradini.gr</span>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6 col-12 madeby">
+                        <a href="https://www.netstream.gr" target="_blank">Made by netstream</a>
+                    </div>
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+    </div><!-- /.bottom_bar -->
+	</footer>
+
+	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-6360ccaa6cfc6b6b"></script>
+
+<!-- script execution: 0.08985 seconds -->	</body>
+	</html>
+	

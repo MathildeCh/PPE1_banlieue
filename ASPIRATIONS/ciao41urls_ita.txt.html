@@ -1,0 +1,1257 @@
+
+<!DOCTYPE html>
+<html lang="it-IT" class="s-light site-s-light">
+
+<head><meta charset="UTF-8" /><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>class RocketLazyLoadScripts{constructor(){this.triggerEvents=["keydown","mousedown","mousemove","touchmove","touchstart","touchend","wheel"],this.userEventHandler=this._triggerListener.bind(this),this.touchStartHandler=this._onTouchStart.bind(this),this.touchMoveHandler=this._onTouchMove.bind(this),this.touchEndHandler=this._onTouchEnd.bind(this),this.clickHandler=this._onClick.bind(this),this.interceptedClicks=[],window.addEventListener("pageshow",(e=>{this.persisted=e.persisted})),window.addEventListener("DOMContentLoaded",(()=>{this._preconnect3rdParties()})),this.delayedScripts={normal:[],async:[],defer:[]},this.allJQueries=[]}_addUserInteractionListener(e){document.hidden?e._triggerListener():(this.triggerEvents.forEach((t=>window.addEventListener(t,e.userEventHandler,{passive:!0}))),window.addEventListener("touchstart",e.touchStartHandler,{passive:!0}),window.addEventListener("mousedown",e.touchStartHandler),document.addEventListener("visibilitychange",e.userEventHandler))}_removeUserInteractionListener(){this.triggerEvents.forEach((e=>window.removeEventListener(e,this.userEventHandler,{passive:!0}))),document.removeEventListener("visibilitychange",this.userEventHandler)}_onTouchStart(e){"HTML"!==e.target.tagName&&(window.addEventListener("touchend",this.touchEndHandler),window.addEventListener("mouseup",this.touchEndHandler),window.addEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.addEventListener("mousemove",this.touchMoveHandler),e.target.addEventListener("click",this.clickHandler),this._renameDOMAttribute(e.target,"onclick","rocket-onclick"))}_onTouchMove(e){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler),e.target.removeEventListener("click",this.clickHandler),this._renameDOMAttribute(e.target,"rocket-onclick","onclick")}_onTouchEnd(e){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler)}_onClick(e){e.target.removeEventListener("click",this.clickHandler),this._renameDOMAttribute(e.target,"rocket-onclick","onclick"),this.interceptedClicks.push(e),e.preventDefault(),e.stopPropagation(),e.stopImmediatePropagation()}_replayClicks(){window.removeEventListener("touchstart",this.touchStartHandler,{passive:!0}),window.removeEventListener("mousedown",this.touchStartHandler),this.interceptedClicks.forEach((e=>{e.target.dispatchEvent(new MouseEvent("click",{view:e.view,bubbles:!0,cancelable:!0}))}))}_renameDOMAttribute(e,t,n){e.hasAttribute&&e.hasAttribute(t)&&(event.target.setAttribute(n,event.target.getAttribute(t)),event.target.removeAttribute(t))}_triggerListener(){this._removeUserInteractionListener(this),"loading"===document.readyState?document.addEventListener("DOMContentLoaded",this._loadEverythingNow.bind(this)):this._loadEverythingNow()}_preconnect3rdParties(){let e=[];document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((t=>{if(t.hasAttribute("src")){const n=new URL(t.src).origin;n!==location.origin&&e.push({src:n,crossOrigin:t.crossOrigin||"module"===t.getAttribute("data-rocket-type")})}})),e=[...new Map(e.map((e=>[JSON.stringify(e),e]))).values()],this._batchInjectResourceHints(e,"preconnect")}async _loadEverythingNow(){this.lastBreath=Date.now(),this._delayEventListeners(),this._delayJQueryReady(this),this._handleDocumentWrite(),this._registerAllDelayedScripts(),this._preloadAllScripts(),await this._loadScriptsFromList(this.delayedScripts.normal),await this._loadScriptsFromList(this.delayedScripts.defer),await this._loadScriptsFromList(this.delayedScripts.async);try{await this._triggerDOMContentLoaded(),await this._triggerWindowLoad()}catch(e){}window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this._replayClicks()}_registerAllDelayedScripts(){document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((e=>{e.hasAttribute("src")?e.hasAttribute("async")&&!1!==e.async?this.delayedScripts.async.push(e):e.hasAttribute("defer")&&!1!==e.defer||"module"===e.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(e):this.delayedScripts.normal.push(e):this.delayedScripts.normal.push(e)}))}async _transformScript(e){return await this._littleBreath(),new Promise((t=>{const n=document.createElement("script");[...e.attributes].forEach((e=>{let t=e.nodeName;"type"!==t&&("data-rocket-type"===t&&(t="type"),n.setAttribute(t,e.nodeValue))})),e.hasAttribute("src")?(n.addEventListener("load",t),n.addEventListener("error",t)):(n.text=e.text,t());try{e.parentNode.replaceChild(n,e)}catch(e){t()}}))}async _loadScriptsFromList(e){const t=e.shift();return t?(await this._transformScript(t),this._loadScriptsFromList(e)):Promise.resolve()}_preloadAllScripts(){this._batchInjectResourceHints([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}_batchInjectResourceHints(e,t){var n=document.createDocumentFragment();e.forEach((e=>{if(e.src){const i=document.createElement("link");i.href=e.src,i.rel=t,"preconnect"!==t&&(i.as="script"),e.getAttribute&&"module"===e.getAttribute("data-rocket-type")&&(i.crossOrigin=!0),e.crossOrigin&&(i.crossOrigin=e.crossOrigin),n.appendChild(i)}})),document.head.appendChild(n)}_delayEventListeners(){let e={};function t(t,n){!function(t){function n(n){return e[t].eventsToRewrite.indexOf(n)>=0?"rocket-"+n:n}e[t]||(e[t]={originalFunctions:{add:t.addEventListener,remove:t.removeEventListener},eventsToRewrite:[]},t.addEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.add.apply(t,arguments)},t.removeEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.remove.apply(t,arguments)})}(t),e[t].eventsToRewrite.push(n)}function n(e,t){let n=e[t];Object.defineProperty(e,t,{get:()=>n||function(){},set(i){e["rocket"+t]=n=i}})}t(document,"DOMContentLoaded"),t(window,"DOMContentLoaded"),t(window,"load"),t(window,"pageshow"),t(document,"readystatechange"),n(document,"onreadystatechange"),n(window,"onload"),n(window,"onpageshow")}_delayJQueryReady(e){let t=window.jQuery;Object.defineProperty(window,"jQuery",{get:()=>t,set(n){if(n&&n.fn&&!e.allJQueries.includes(n)){n.fn.ready=n.fn.init.prototype.ready=function(t){e.domReadyFired?t.bind(document)(n):document.addEventListener("rocket-DOMContentLoaded",(()=>t.bind(document)(n)))};const t=n.fn.on;n.fn.on=n.fn.init.prototype.on=function(){if(this[0]===window){function e(e){return e.split(" ").map((e=>"load"===e||0===e.indexOf("load.")?"rocket-jquery-load":e)).join(" ")}"string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=e(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach((t=>{delete Object.assign(arguments[0],{[e(t)]:arguments[0][t]})[t]}))}return t.apply(this,arguments),this},e.allJQueries.push(n)}t=n}})}async _triggerDOMContentLoaded(){this.domReadyFired=!0,await this._littleBreath(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._littleBreath(),window.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._littleBreath(),document.dispatchEvent(new Event("rocket-readystatechange")),await this._littleBreath(),document.rocketonreadystatechange&&document.rocketonreadystatechange()}async _triggerWindowLoad(){await this._littleBreath(),window.dispatchEvent(new Event("rocket-load")),await this._littleBreath(),window.rocketonload&&window.rocketonload(),await this._littleBreath(),this.allJQueries.forEach((e=>e(window).trigger("rocket-jquery-load"))),await this._littleBreath();const e=new Event("rocket-pageshow");e.persisted=this.persisted,window.dispatchEvent(e),await this._littleBreath(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted})}_handleDocumentWrite(){const e=new Map;document.write=document.writeln=function(t){const n=document.currentScript,i=document.createRange(),r=n.parentElement;let o=e.get(n);void 0===o&&(o=n.nextSibling,e.set(n,o));const s=document.createDocumentFragment();i.setStart(s,0),s.appendChild(i.createContextualFragment(t)),r.insertBefore(s,o)}}async _littleBreath(){Date.now()-this.lastBreath>45&&(await this._requestAnimFrame(),this.lastBreath=Date.now())}async _requestAnimFrame(){return document.hidden?new Promise((e=>setTimeout(e))):new Promise((e=>requestAnimationFrame(e)))}static run(){const e=new RocketLazyLoadScripts;e._addUserInteractionListener(e)}}RocketLazyLoadScripts.run();</script>
+
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+	<!-- This site is optimized with the Yoast SEO Premium plugin v19.5 (Yoast SEO v19.10) - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Siena, &#039;&#039;pattuglione&#039;&#039; della Polizia in centro e in periferia - Siena Free</title><link rel="preload" as="font" href="https://sienafree.it/wp-content/themes/smart-mag/css/icons/fonts/ts-icons.woff2?v2.3" type="font/woff2" crossorigin="anonymous" /><link rel="preload" href="//www.w3.org/2000/svg'%20viewBox='0%200%20285%2088'%3E%3C/svg%3E" as="image" /><link rel="preload" href="https://sienafree.it/wp-content/uploads/2022/08/sienafree-logo-bianco-trasparente-325-285x88.png" as="image" imagesrcset="https://sienafree.it/wp-content/uploads/2022/08/sienafree-logo-bianco-trasparente-325-285x88.png 285w, https://sienafree.it/wp-content/uploads/2022/08/sienafree-logo-bianco-trasparente-325.png 325w" imagesizes="(max-width: 285px) 100vw, 285px" /><link rel="preload" href="//www.w3.org/2000/svg'%20viewBox='0%200%20150%2090'%3E%3C/svg%3E" as="image" /><link rel="preload" href="https://sienafree.it/wp-content/uploads/2022/08/banca-centro-manchette-2022.jpg" as="image" /><link rel="preload" href="//www.w3.org/2000/svg'%20viewBox='0%200%20325%20100'%3E%3C/svg%3E" as="image" /><link rel='preload' href='https://sienafree.it/wp-content/themes/smart-mag/css/icons/fonts/ts-icons.woff2?v2.3' as='font' crossorigin><link rel="preload" as="font" href="https://sienafree.it/wp-content/themes/smart-mag/css/icons/fonts/ts-icons.woff2?v2.3" crossorigin><style id="wpr-usedcss">:where(p.has-text-color:not(.has-link-color)) a{color:inherit}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px;--body-font:"Public Sans",system-ui,sans-serif;--ui-font:var(--body-font);--text-font:var(--body-font);--title-font:var(--ui-font);--h-font:var(--ui-font);--text-size:14px;--text-lh:1.714;--main-width:1200px;--grid-gutter:36px;--wrap-padding:35px;--boxed-pad:45px;--sidebar-width:33.3333333%;--sidebar-c-width:var(--sidebar-width);--sidebar-pad:38px;--sidebar-c-pad:var(--sidebar-pad);--c-sidebar-sep:var(--c-separator2);--max-width-md:680px;--title-size-xs:14px;--title-size-s:16px;--title-size-n:18px;--title-size-m:20px;--title-size-l:25px;--title-size-xl:30px;--title-fw-semi:600;--title-fw-bold:700;--grid-p-title:var(--title-size-m);--grid-sm-p-title:var(--title-size-s);--grid-lg-p-title:var(--title-size-l);--list-p-title:calc(var(--title-size-m) * 1.05);--small-p-title:var(--title-size-xs);--feat-grid-title-s:var(--title-size-n);--feat-grid-title-m:var(--title-size-m);--feat-grid-title-l:var(--title-size-l);--excerpt-size:15px;--post-content-size:1.186rem;--post-content-lh:1.7;--post-content-gaps:1.54em;--single-content-size:var(--post-content-size);--p-media-margin:1.867em;--c-facebook:#1a6dd4;--c-twitter:#55acef;--c-pinterest:#e4223e;--c-linkedin:#02669a;--c-tumblr:#44546b;--c-instagram:#c13584;--c-vk:#45668e;--c-vimeo:#1ab7ea;--c-youtube:#ff0000;--c-dribbble:#ea4c89;--c-flickr:#0063dc;--c-email:#080808;--c-whatsapp:#23c761;--c-soundcloud:#ff8800;--c-rss:#f97d1e;--c-reddit:#ff4500;--c-telegram:#0088cc;--c-tiktok:#FE2C55;--c-discord:#5865f2;--c-twitch:#7b3ed6;--block-wrap-mb:55px;--btn-height:38px;--btn-shadow:0 2px 7px -4px rgba(0, 0, 0, .16);--admin-bar-h:32px}.screen-reader-text{border:0;clip:rect(1px,1px,1px,1px);clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-wrap:normal!important}.screen-reader-text:focus{background-color:#ddd;clip:auto!important;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}figure{margin:0 0 1em}a,address,article,aside,body,button,caption,code,details,div,dt,em,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,hr,html,i,iframe,img,input,ins,label,legend,li,mark,menu,object,p,pre,section,span,strong,table,tbody,textarea,time,tr,ul,var,video{margin:0;padding:0;border:0;vertical-align:baseline;font-size:100%;font-family:inherit}article,aside,details,figcaption,figure,footer,menu,section{display:block}ul{box-sizing:border-box;list-style:none;list-style-type:var(--ul-style,none);margin:var(--ul-margin,0);margin-left:var(--ul-ml,0)}table{border-collapse:collapse;border-spacing:0;max-width:100%;background-color:transparent}button,input[type=submit]{box-sizing:content-box;-webkit-appearance:none;cursor:pointer}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}input[type=search]{-webkit-appearance:none}a img{border:0}img{max-width:100%;height:auto}@media screen and (-ms-high-contrast:active),(-ms-high-contrast:none){img{min-height:1px}}::-webkit-input-placeholder{color:inherit}::-moz-placeholder{color:inherit;opacity:1}html{box-sizing:border-box;font-size:14px}*,::after,::before{box-sizing:inherit}.s-light,:root{--c-main:#2ab391;--c-main-rgb:42,179,145;--c-contrast-0:#fff;--c-contrast-10:#fbfbfb;--c-contrast-50:#f7f7f7;--c-contrast-75:#efefef;--c-contrast-100:#e8e8e8;--c-contrast-125:#e2e2e2;--c-contrast-150:#ddd;--c-contrast-200:#ccc;--c-contrast-300:#bbb;--c-contrast-400:#999;--c-contrast-450:#8a8a8a;--c-contrast-500:#777;--c-contrast-600:#666;--c-contrast-650:#505050;--c-contrast-700:#444;--c-contrast-800:#333;--c-contrast-850:#191919;--c-contrast-900:#161616;--c-contrast:#000;--c-rgba:0,0,0;--c-separator:var(--c-contrast-100);--c-separator2:var(--c-contrast-125);--c-links:var(--c-contrast-900);--c-headings:var(--c-contrast-900);--c-excerpts:var(--c-contrast-650);--c-nav:var(--c-contrast-900);--c-nav-hov-bg:transparent;--c-nav-drop-sep:rgba(0, 0, 0, .07);--c-nav-blip:var(--c-contrast-300);--c-post-meta:var(--c-contrast-450);--footer-mt:60px;--footer-bg:#f7f7f7;--footer-lower-bg:#f0f0f0}.s-dark:not(i),.site-s-dark,.site-s-dark .s-light{--c-contrast-0:#000;--c-contrast-10:#070707;--c-contrast-50:#111;--c-contrast-75:#151515;--c-contrast-100:#222;--c-contrast-125:#2b2b2b;--c-contrast-150:#333;--c-contrast-200:#444;--c-contrast-300:#555;--c-contrast-400:#777;--c-contrast-450:#999;--c-contrast-500:#bbb;--c-contrast-600:#c0c0c0;--c-contrast-650:#ccc;--c-contrast-700:#d1d1d1;--c-contrast-800:#ddd;--c-contrast-850:#ececec;--c-contrast-900:#f0f0f0;--c-contrast:#fff;--c-rgba:255,255,255;--c-a-hover:rgba(var(--c-rgba), .7);--c-headings:var(--c-contrast-850);--c-excerpts:var(--c-contrast-650);--c-separator:rgba(var(--c-rgba), .13);--c-separator2:rgba(var(--c-rgba), .13);--c-links:var(--c-contrast-900);--c-headings:var(--c-contrast-850);--c-nav:var(--c-contrast-900);--c-nav-drop-bg:var(--c-contrast-10);--c-nav-drop-sep:rgba(255, 255, 255, .1);--c-post-meta:rgba(var(--c-rgba), .65);--c-email:var(--c-contrast-300);--c-input-bg:rgba(var(--c-rgba), .1);--footer-bg:#0f0f11;--footer-lower-bg:#040404}.site-s-dark{--footer-bg:#070708}.site-s-dark body{background:#151516}body{font-family:var(--body-font);line-height:1.5;color:var(--body-color,var(--c-contrast-700));background:var(--c-contrast-0);-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:transparent;overflow-x:hidden}@media (max-width:1200px){.main-wrap{overflow-x:clip}.feat-grid{overflow:hidden}}::selection{background:var(--c-main);color:#fff}img::selection{background:0 0}@media (max-width:782px){:root{--admin-bar-h:46px}}*,:after,:before{-webkit-font-smoothing:antialiased}p{margin-bottom:21px;word-break:break-all;word-break:break-word;overflow-wrap:break-word}h1{font-size:1.846em}h2{font-size:1.5em}h3{font-size:1.285em}h4{font-size:1.21em}h5{font-size:1.107em}h1,h2,h3,h4,h5{font-weight:var(--title-fw-bold);font-family:var(--h-font);color:var(--c-headings)}a{color:var(--c-a,var(--c-links));text-decoration:none;transition:all .25s ease-in-out}a:hover{text-decoration:none;color:var(--c-a-hover,var(--c-main))}code,pre{background:rgba(var(--c-rgba),.03)}code{padding:4px 10px}pre{padding:1.5em 1em;border-left:3px solid var(--c-separator);border-bottom:1px solid transparent;display:block;word-break:break-all;word-wrap:break-word;font-family:Menlo,Monaco,Consolas,monospace;font-size:max(14px, .9em)}pre code{white-space:pre-wrap;background:0 0;font-size:inherit}table caption{padding:0 0 7px;width:auto;font-weight:600}li{padding:var(--li-padding,0);padding-left:var(--li-pl,0);margin:var(--li-margin,0);margin-bottom:var(--li-mb,0)}input,select,textarea{border:1px solid var(--c-contrast-150);padding:7px 12px;outline:0;height:auto;font-size:14px;color:var(--c-contrast-500);max-width:100%;border-radius:2px;box-shadow:0 2px 7px -4px rgba(0,0,0,.1);background:var(--c-input-bg,var(--c-contrast-0))}input{width:var(--input-width,initial);height:var(--input-height,38px)}input[type=checkbox],input[type=radio]{width:initial;height:initial}textarea{overflow:auto;width:100%;padding:14px 12px;line-height:1.5}input:focus,select:focus,textarea:focus{border-color:var(--c-contrast-400);color:var(--c-contrast-650)}.ts-button,button,input[type=reset] input[type=button],input[type=submit]{-webkit-appearance:none;padding:var(--btn-pad,0 17px);font-family:var(--ui-font);font-size:var(--btn-f-size, 12px);font-weight:var(--btn-f-weight,600);line-height:var(--btn-l-height, var(--btn-height));height:var(--btn-height);letter-spacing:.03em;text-transform:uppercase;text-align:center;box-shadow:var(--btn-shadow);transition:.25s ease-in-out;background:var(--c-main);color:#fff;border:0;border-radius:2px}.ts-button:hover,button:hover,input[type=reset] input[type=button]:hover,input[type=submit]:hover{background:#161616;border-color:#161616;color:#fff}.s-dark .ts-button:hover,.s-dark button:hover,.s-dark input[type=reset] input[type=button]:hover,.s-dark input[type=submit]:hover{border-color:#555}button:focus{outline:0}button:active,input[type=button]:active,input[type=submit]:active{opacity:.9}.ts-button-b{background:0 0;border:1px solid var(--c-main);color:var(--c-main)}.ts-button:not(._){box-shadow:var(--btn-shadow)}.search-form{display:flex}.search-form label{flex-grow:1;max-width:400px}.search-form .search-field{width:100%}.search-form input[type=submit]{border-top-left-radius:0;border-bottom-left-radius:0;margin-left:-2px}.cf:after,.cf:before{content:"";display:table;flex-basis:0;order:1}.cf:after{clear:both}.screen-reader-text,.visuallyhidden{border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.main-color{color:var(--c-main)}.post-title{color:var(--c-headings);font-family:var(--title-font);line-height:1.36}.post-title a{--c-links:initial;--c-a:initial;--c-a-hover:var(--c-main);display:block}hr{margin:41px 0;height:1px;background:var(--c-separator)}.lazyload,.lazyloading{will-change:opacity!important;background-color:var(--c-contrast-150)}.lazyload:not(._),.lazyloading:not(._){opacity:.1}.no-display{will-change:opacity;opacity:0}.appear,.lazyloaded{will-change:initial;opacity:1}.appear,.lazyload,.lazyloading,.post-content img,.wp-post-image{transition:opacity .3s ease-in-out}@media (min-width:941px){.post-content:hover img,.wp-post-image{will-change:opacity}}.wp-post-image:hover{opacity:.85}@keyframes fade-in{0%{opacity:0}100%{opacity:1}}@keyframes fade-in-up-lg{from{opacity:0;transform:translate3d(0,8px,0)}to{opacity:1;transform:none}}.fade-in:not(._){visibility:visible;opacity:1}.fade-in-down-lg,.fade-in-up-lg{will-change:transform;animation:.65s ease-out fade-in-up-lg;animation-fill-mode:both}.media-ratio{position:relative;display:block;height:0}.media-ratio .wp-post-image,.media-ratio>img{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover}.media-ratio.ratio-1-1{padding-bottom:100%}.media-ratio.ratio-3-2{padding-bottom:66.6666667%}.main-wrap,.ts-contain,.wrap{max-width:100%;box-sizing:border-box}.ts-contain,.wrap{width:100%;margin:0 auto}@media (min-width:1201px){.wrap{width:var(--main-width)}.main,.ts-contain{width:calc(var(--main-width) + var(--wrap-padding) * 2)}}.main{margin:42px auto}.main,.ts-contain{padding:0 35px;padding:0 var(--wrap-padding)}@media (max-width:940px){.wrap{max-width:var(--max-width-md)}.main,.ts-contain{max-width:calc(var(--max-width-md) + 70px);padding-left:25px;padding-right:25px}}@media (max-width:540px){ul{margin-left:var(--ul-ml-xs,0)}.main,.ts-contain{padding-left:20px;padding-right:20px}}@media (max-width:350px){.main,.ts-contain{padding-left:15px;padding-right:15px}}.main .ts-contain,.ts-contain .ts-contain{padding:0}@media (min-width:941px){.main-content:not(.main){width:calc(100% - var(--sidebar-c-width))}}.row,.ts-row{--grid-gutter-h:calc(var(--grid-gutter) / 2);display:flex;flex-wrap:wrap;margin-right:calc(-1 * var(--grid-gutter-h));margin-left:calc(-1 * var(--grid-gutter-h))}.grid{display:grid;grid-column-gap:var(--grid-gutter);grid-row-gap:var(--grid-row-gap,0)}@media (max-width:767px){:root{--block-wrap-mb:45px}body,html{overflow-x:hidden}.grid{--grid-gutter:26px}}.cols-gap-lg{--grid-gutter:50px}.grid-1{--col:100%;grid-template-columns:repeat(1,minmax(0,1fr))}.grid-2{--col:50%;grid-template-columns:repeat(2,minmax(0,1fr))}@media (max-width:940px){.md\:grid-1{--col:100%;grid-template-columns:repeat(1,minmax(0,1fr))}.md\:grid-2{--col:50%;grid-template-columns:repeat(2,minmax(0,1fr))}.md\:grid-4{--col:25%;grid-template-columns:repeat(4,minmax(0,1fr))}}@media (max-width:767px){.cols-gap-lg{--grid-gutter:26px}.sm\:grid-1{--col:100%;grid-template-columns:repeat(1,minmax(0,1fr))}.sm\:grid-2{--col:50%;grid-template-columns:repeat(2,minmax(0,1fr))}}@media (max-width:540px){.xs\:grid-1{--col:100%;grid-template-columns:repeat(1,minmax(0,1fr))}}.col-4{width:33.3333333%}.col-8{width:66.6666667%}.column{width:100%}.column.right{text-align:right}.column.left{text-align:left}.column.center{text-align:center}.column,[class*=" col-"],[class^=col-]{flex:0 0 auto;padding-left:var(--grid-gutter-h);padding-right:var(--grid-gutter-h)}@media (max-width:940px){.column,[class*=" col-"],[class^=col-]{width:100%}}.main-featured .row{opacity:0}.main-featured .row.appear{opacity:1;-webkit-transform:translate3d(0,0,0)}.main-featured .slides{position:relative;min-height:170px}.common-slider .slick-arrow{--trans-x:0;display:none;position:absolute;z-index:100;top:var(--arrow-top,50%);left:0;background:0 0;border:1px solid #fff;color:#fff;font-size:18px;height:32px;width:30px;line-height:30px;text-align:center;transition-property:color,background;transform:translate(var(--trans-x),-50%) translateY(var(--trans-ey,0))}.common-slider .slick-arrow i{line-height:inherit}.common-slider .slick-arrow:hover{background:var(--c-contrast-0);color:var(--c-contrast-900)}.common-slider .prev-arrow{left:25px}.common-slider .next-arrow{left:auto;right:25px}.common-slider .slides{max-height:700px}.common-slider .loaded.slides{max-height:none}.common-slider .nav-dots{margin-top:50px;display:flex;justify-content:center;align-items:center}.common-slider .nav-dots button{display:block;border:0;padding:7px 4px;font-size:0;background:0 0;width:initial;height:initial;line-height:1;box-shadow:none}.common-slider .nav-dots button:before{content:"";display:block;width:9px;height:9px;border-radius:50%;border:1px solid rgba(var(--c-rgba),.3);outline:0;transition:.4s ease-out}figure img,p img{vertical-align:middle}figcaption{font-style:italic;font-size:calc(.3em + 8.4px);text-align:center;color:var(--c-contrast-450)}.post-content,.textwidget{--ul-style:disc;--ul-margin:calc(var(--post-content-gaps) + .26em) auto;--ul-ml:35px;--ul-ml-xs:15px;--li-pl:3px;--li-mb:0.5em;--c-a:var(--c-main);--c-a-hover:var(--c-links)}.post-content p,.post-content>div,.post-content>iframe,.textwidget p,.textwidget>div,.textwidget>iframe{margin-bottom:var(--post-content-gaps)}.post-content strong,.textwidget strong{font-weight:var(--title-fw-bold)}.post-content>pre,.textwidget>pre{margin:calc(var(--post-content-gaps) + .3em) auto}.post-content li>ul,.textwidget li>ul{margin-top:.5em;margin-bottom:.5em}.post-content>ul[class]:not([class*=align]),.textwidget>ul[class]:not([class*=align]){margin-left:0}.post-content>:not(._):last-child,.textwidget>:not(._):last-child{margin-bottom:0}.post-content>:not(._):first-child,.textwidget>:not(._):first-child{margin-top:0}.post-content h1,.post-content h2,.post-content h3,.post-content h4,.post-content h5,.textwidget h1,.textwidget h2,.textwidget h3,.textwidget h4,.textwidget h5{margin-top:1.35em;margin-bottom:.75em;font-weight:var(--title-fw-bold);color:var(--c-headings);font-family:var(--text-h-font, inherit);line-height:1.5}.post-content a:hover img,.textwidget a:hover img{opacity:1}.post-content table,.textwidget table{margin:calc(var(--post-content-gaps) + .66em) auto}.post-content iframe,.textwidget iframe{max-width:100%}.post-content figcaption a,.textwidget figcaption a{text-decoration:underline}.post-content{font-family:var(--text-font);font-size:var(--text-size);line-height:var(--text-lh);text-rendering:optimizeLegibility;font-size:var(--post-content-size);line-height:var(--post-content-lh);color:var(--c-contrast-800);--wp--preset--font-size--small:14px;--wp--preset--font-size--large:22px}@media (max-width:767px){.post-content{font-size:max(14px, calc(var(--post-content-size) * .96))}}.post-content .search-field{vertical-align:top}.post-content .tiled-gallery{margin:calc(var(--post-content-gaps) + .66em) auto}.post-content figure>a:not(.pinit-btn){display:block}.post-content>p .fluid-width-video-wrapper{margin:var(--p-media-margin) auto}.post-content table{font-size:calc(.6923077em + 4px)}.post-content figure>ul{margin:0;list-style:none}.spc-social{display:flex;align-items:center}.spc-social .icon{font-size:var(--spc-social-fs, 14px);line-height:1.6;width:1.2em;text-align:center}.spc-social .service{display:flex;height:100%;align-items:center;justify-content:center;padding:0 3px;margin-right:var(--spc-social-space,2px);color:var(--c-spc-social,inherit);background:var(--c-spcs-bg,transparent)}.spc-social .service:hover{opacity:var(--spcs-hov-opacity, .8);color:var(--c-spc-social-hov,var(--c-main))}.spc-social .service:last-child{margin-right:0}.spc-social-b{--spc-social-fs:19px;--spc-social-size:38px;--spc-social-space:9px}.spc-social-b .icon{line-height:1;width:auto}.spc-social-b .service{padding:0;width:var(--spc-social-size);height:var(--spc-social-size);border:1px solid rgba(0,0,0,.09);border-radius:50%}.s-dark .spc-social-b .service{background:rgba(var(--c-rgba),.12);background:var(--c-spcs-bg,rgba(var(--c-rgba),.12))}.spc-social-bg{--c-spc-social:#fff;--spcs-hov-opacity:.8}.spc-social-bg .service{--c-spcs-bg:var(--c-spcs-icon)}.spc-social-bg .service:hover{color:var(--c-spc-social)}.spc-social-colors .service{--c-spcs-icon:#000}.spc-social-colors .s-facebook{--c-spcs-icon:var(--c-facebook)}.spc-social-colors .s-twitter{--c-spcs-icon:var(--c-twitter)}.spc-social-colors .s-instagram{--c-spcs-icon:var(--c-instagram)}.spc-social-colors .s-linkedin{--c-spcs-icon:var(--c-linkedin)}.spc-social-colors .s-whatsapp{--c-spcs-icon:var(--c-whatsapp)}.spc-social-colors .s-telegram{--c-spcs-icon:var(--c-telegram)}.spc-social-block{flex-wrap:wrap;margin-bottom:calc(-1 * var(--spc-social-space,2px))}.spc-social-block .service{margin-bottom:var(--spc-social-space,2px)}.post-meta{--p-meta-sep:"\2014";display:flex;flex-direction:column;margin-bottom:var(--p-meta-mb,initial);font-family:var(--ui-font);font-size:12px;color:var(--c-post-meta);line-height:1.5}.post-meta-items a{color:inherit}.post-meta .meta-item:before{content:"\2014";content:var(--p-meta-sep);padding:0 var(--p-meta-sep-pad,4px);display:inline-block;transform:scale(.916)}.post-meta .has-icon{white-space:nowrap}.post-meta .has-icon:before{display:none}.post-meta .has-icon i{font-size:var(--p-meta-icons-s, 1.083em);color:var(--c-p-meta-icons);margin-right:4px}.post-meta .has-next-icon{margin-right:var(--p-meta-icons-mr,10px)}.post-meta .has-next-icon:not(.has-icon){margin-right:18px}.post-meta .meta-item:first-child:before{display:none}.post-meta .post-title{margin:var(--p-title-space,9px) 0}.post-meta .post-cat{display:inline-flex;flex-wrap:wrap;justify-content:center;align-items:center}.post-meta .post-cat>a{padding:0;color:var(--c-main);font-weight:500;letter-spacing:.05em;text-transform:uppercase}.post-meta .post-cat>a:hover{opacity:.8}.post-meta .post-cat a+a:before{content:"\2022";display:inline-flex;padding:0 6px;font-size:.9em;font-weight:400;line-height:1}.post-meta .cat-labels{display:inline-flex;margin-bottom:-5px}.post-meta .cat-labels .category{display:inline-flex;margin-bottom:6px}.post-meta .meta-item+.cat-labels{vertical-align:middle;margin-left:8px}.post-meta .meta-item+.cat-labels:before{content:""}.post-meta .cat-labels+.meta-item:before{content:"";margin-left:3px}.post-meta>:last-child{margin-bottom:0}.post-meta>:first-child{margin-top:0}.post-meta>.is-title:last-child{margin-bottom:0!important}.post-meta>.is-title:first-child{margin-top:0!important}.load-button{--btn-f-size:13px;padding:12px 16px;width:30%;min-width:270px;max-width:100%;height:auto;line-height:1;font-weight:700}.load-button .icon{margin-left:7px}.load-button.loading{cursor:default}.pagination-more{display:flex;justify-content:center}.gallery{--g-cols:1;display:grid;grid-template-columns:repeat(var(--g-cols),1fr);grid-gap:10px}.l-post .media{position:relative;align-self:flex-start;border-radius:var(--media-radius,0);overflow:hidden}.l-post .content{position:relative}.l-post img{max-width:initial}.l-post .image-link{display:block;position:relative;max-width:100%}.l-post .post-title{font-size:var(--title-size-m);font-weight:var(--title-fw-bold)}@media (max-width:540px){.l-post .post-title a{display:initial}.l-post .post-meta-items a{pointer-events:none}.touch .l-post .post-meta-items a{pointer-events:auto}}.l-post .review{font-family:var(--ui-font)}.l-post .review-number{position:absolute;right:0;bottom:0;background:#080808;height:32px;line-height:32px;min-width:30px;text-align:center;font-size:11px;font-weight:700;color:#efefef}.l-post .review-number span{display:block;position:relative;z-index:1}.l-post .review-number .progress{z-index:0;position:absolute;top:0;left:0;background:var(--c-main);height:100%;width:0}.grid-post .media{margin-bottom:16px}.grid-post .media:last-child{margin-bottom:0}.grid-post .image-link{width:100%}.grid-post .post-title{font-size:var(--grid-p-title)}.grid-sm-post .image-link{width:100%}.grid-sm-post .post-title{font-size:var(--grid-sm-p-title);margin-top:11px}.small-post{display:flex;width:100%;--post-format-scale:.82}.small-post .post-title{font-size:var(--small-p-title);font-weight:var(--title-fw-semi);line-height:1.43}.small-post .media{display:block;width:110px;max-width:40%;margin-right:18px;flex-shrink:0}.small-post .media img{display:block}.small-post .content{margin-top:2px;flex-grow:1}.small-post .review-number{height:26px;line-height:26px;min-width:26px}.small-post.m-pos-right .media{order:2;margin-right:0;margin-left:18px}.loop+.main-pagination{margin-top:50px}.loop-sep{overflow:hidden}.loop-sep .l-post:after{content:"";position:absolute;left:0;width:100%;bottom:calc(var(--grid-row-gap)/ 2 * -1);border-bottom:1px solid var(--c-separator)}.loop-grid{--grid-row-gap:36px}.loop-grid .l-post .image-link{overflow:hidden}.loop-grid .l-post.sticky{background:var(--c-contrast-75);padding:15px}.loop-grid-sm{--grid-row-gap:26px}.loop-small{--grid-row-gap:25px}.loop-small .l-post{position:relative}.loop-small-sep{--grid-row-gap:32px}.feat-grid{--main-ratio:1.8;--grid-gap:2px}@media (max-width:540px){.feat-grid .cat-labels a{font-size:10px;line-height:20px}}.feat-grid .media .wp-post-image{width:100.5%}.feat-grid.slider{max-width:100vw}.mobile-menu{--c-sep:rgba(var(--c-rgba), .08);font-size:16px;font-family:var(--ui-font);font-weight:700;letter-spacing:0;color:var(--c-links);-webkit-font-smoothing:antialiased}.mobile-menu.s-dark,.s-dark .mobile-menu{--c-sep:rgba(var(--c-rgba), 0.11)}.mobile-menu li{position:relative;display:flex;width:100%;flex-wrap:wrap;border-bottom:1px solid var(--c-sep)}.mobile-menu li a{max-width:calc(100% - 65px);float:none;display:block;padding:12px 0;padding-right:50px;line-height:1.5;color:inherit}.mobile-menu li li{padding-left:12px;border:0}.mobile-menu li ul li:last-child ul{border-bottom-color:transparent}.mobile-menu ul{width:100%;max-height:0;opacity:0;background:0 0;overflow:hidden;border:0;transition:opacity .6s ease,max-height .8s ease}.mobile-menu ul>li>ul li{padding-left:15px}.mobile-menu ul li a{padding:8px 0;font-size:.93em;font-size:max(13px, .93em);font-weight:500}.mobile-menu .mega-menu{display:none}.mobile-menu .item-active>ul{opacity:1;max-height:3000px;transition:opacity .4s ease-in,max-height 1s ease-in}.mobile-menu>.item-active{padding-bottom:10px}.mobile-menu .chevron{display:flex;align-items:center;margin-left:auto;padding:0 25px;margin-right:-15px;border:0;color:var(--c-contrast-400);text-align:center;font-size:12px;-webkit-text-stroke:1.2px var(--c-contrast-0);line-height:1.8;cursor:pointer}.mobile-menu .item-active>.chevron{transform:rotate(180deg)}.mobile-menu li:hover>a{opacity:.8}.off-canvas{position:fixed;top:0;left:0;display:flex;flex-direction:column;height:100%;width:80vw;min-width:320px;max-width:370px;box-sizing:border-box;background:var(--c-contrast-0);z-index:10000;transform:translate3d(-100%,0,0);transition:.4s ease-in-out;transition-property:transform,visibility;visibility:hidden;content-visibility:auto}@media (max-width:350px){.off-canvas{min-width:300px}}.off-canvas-head{padding:0 25px;padding-top:38px;margin-bottom:20px}.off-canvas-content{display:flex;flex-direction:column;padding:25px;overflow-y:auto;overflow-x:hidden;flex:1 1 auto}@media (min-width:941px){.off-canvas-content{--c-sb:var(--c-contrast-200);--c-sb-track:transparent;--sb-size:4px;--sb-width:thin;scrollbar-width:var(--sb-width);scrollbar-color:var(--c-sb) var(--c-sb-track)}.off-canvas-content::-webkit-scrollbar-track{background-color:var(--c-sb-track)}.off-canvas-content::-webkit-scrollbar-thumb{background-color:var(--c-sb);border-radius:3px}.has-scrollbar .off-canvas-content::-webkit-scrollbar{width:var(--sb-size)}}.off-canvas .mobile-menu{margin-bottom:45px;margin-top:-10px;transition:opacity .5s ease-in;opacity:.2}.off-canvas .logo-image{display:inline-block;max-width:calc(100% - 34px)}.off-canvas .ts-logo{display:flex;justify-content:center;align-items:center}.off-canvas .close{position:absolute;top:0;right:0;padding:0 9px;background:#161616;color:#fff;line-height:26px;font-size:14px}.off-canvas .spc-social{--c-spc-social:var(--c-contrast);--spc-social-fs:17px;padding-top:10px;margin-top:auto;justify-content:center}.off-canvas.s-dark .close,.s-dark .off-canvas .close{background:var(--c-contrast-200)}.admin-bar .off-canvas{top:var(--admin-bar-h);height:calc(100% - var(--admin-bar-h))}.off-canvas-backdrop{content:"";position:fixed;opacity:0;z-index:9999;pointer-events:none;height:0;width:0;top:0;left:0;background:rgba(0,0,0,.3);transition:opacity .3s ease-in-out}.off-canvas-active{overflow:hidden}.off-canvas-active .off-canvas{transform:translate3d(0,0,0);visibility:visible;box-shadow:2px 0 15px 0 rgba(0,0,0,.1)}.off-canvas-active .mobile-menu{opacity:1}.off-canvas-active .off-canvas-backdrop{opacity:1;width:100%;height:100%;pointer-events:auto}.off-canvas-widgets,.off-canvas-widgets .widget{margin-bottom:45px}.off-canvas-widgets .widget:last-child{margin-bottom:0}.s-dark .search-modal,.search-modal.s-dark{--bg-opacity:.95}.search-modal.mfp-bg{background:var(--c-contrast-0);opacity:0;transition:.35s ease-in-out;will-change:opacity;position:fixed;z-index:10001;pointer-events:none}.search-modal.mfp-bg.mfp-ready{opacity:var(--bg-opacity, .98)}.search-modal.mfp-bg.mfp-removing{opacity:0}.search-modal .search-modal-wrap{display:block}.search-modal.mfp-ready.mfp-wrap{opacity:1;transform:none}.search-modal.mfp-removing.mfp-wrap,.search-modal.mfp-wrap{opacity:0;will-change:opacity;transition:.4s ease-in-out;transform:scale(.95)}.search-modal.mfp-removing.mfp-wrap{transition-duration:.2s}.search-modal .mfp-close{position:absolute;z-index:1046;top:20px;right:20px;padding:0;background:0 0;color:var(--c-contrast);font-size:60px;font-family:Arial,Baskerville,monospace;line-height:44px;opacity:.65;-webkit-text-stroke:2px var(--c-contrast-0)}.search-modal .mfp-close:active{top:20px}.admin-bar .search-modal .mfp-close{top:50px}.search-modal .search-form{flex-wrap:wrap;position:relative}.search-modal .search-field{padding:0;padding-bottom:12px;margin-bottom:22px;border:0;border-bottom:1px solid var(--c-separator2);height:auto;font-size:60px;font-weight:700;line-height:1;color:var(--c-contrast-850);background:0 0}@media (max-width:767px){.gallery{grid-template-columns:repeat(var(--g-cols-sm,3),1fr)}.search-modal .search-field{font-size:42px}}.search-modal .message{font-size:18px;color:var(--c-contrast-400)}.search-modal-box{padding:0 50px;margin:0 auto;max-width:790px}.search-modal .live-search-results{top:84px;left:0;right:auto;width:100%;margin-bottom:15px;border:1px solid var(--c-separator);border-top:0;box-shadow:none}.search-modal-wrap{display:none}.base-text{font-family:var(--text-font);font-size:var(--text-size);line-height:var(--text-lh);text-rendering:optimizeLegibility}.block-head{--line-weight:1px;--c-border:var(--c-separator2);--space-below:26px;--c-block:var(--c-main);display:flex;flex-wrap:nowrap;font-family:var(--ui-font);align-items:center;justify-content:space-between;margin-bottom:var(--space-below)}.block-head .heading{font-size:17px;font-weight:700;line-height:1.2;text-transform:uppercase;color:var(--c-block);flex-shrink:0;max-width:100%}.block-head .heading .color{color:var(--c-contrast-900)}.block-head .heading a{color:inherit}.block-head .heading .arrow{margin-left:5px;transform:scale(1.4) translatey(-5%)}.block-head .filters{display:flex;margin-left:25px;font-size:13px;overflow-x:auto;flex-wrap:nowrap;font-size:13px;scrollbar-width:none}.block-head .filters::-webkit-scrollbar{display:none}.block-head .filters li{display:inline-block;margin-left:15px;flex-shrink:0}.block-head .filters a{color:var(--c-contrast-400)}.block-head .filters .active{color:var(--c-block)}.block-head-ac{--c-block:var(--c-contrast-900)}.block-head-ac .heading .color{color:var(--c-heading-multi,var(--c-main))}.block-head-e{--c-line:var(--c-separator2);--line-weight:1px;--inner-pad:20px}.block-head-e:after,.block-head-e:before{content:"";margin-top:1px;height:var(--line-weight);background-color:var(--c-line);flex:1 1 auto;margin-left:var(--inner-pad)}.block-head-e:before{margin-left:0;margin-right:var(--inner-pad)}.block-head-e.is-left:before{display:none}.block-head-e .filters{order:5;margin-left:5px}.cat-labels{line-height:0}.cat-labels .category,.cat-labels a{display:inline-flex;background:var(--c-main);margin-right:var(--cat-label-mr,5px);padding:0 8px;color:#fff;border-radius:1px;font-family:var(--ui-font);font-size:11px;font-weight:500;text-transform:uppercase;letter-spacing:.03em;line-height:22px}.cat-labels .category:hover,.cat-labels a:hover{background:var(--hover-bg,var(--c-main));color:#fff;filter:contrast(1.2)}.cat-labels .category:last-child,.cat-labels a:last-child{margin-right:0}.navigation{--nav-height:var(--head-h, 43px);font-family:var(--ui-font);color:var(--c-nav);height:100%;align-self:center}.s-dark .navigation{--c-nav-blip:initial}.navigation ul{display:flex;list-style:none;line-height:1.6}.navigation .menu,.navigation .menu li{height:100%}.navigation .menu>li>a,.navigation .sub-menu>li>a{display:flex;align-items:center}.navigation .menu>li>a{color:inherit;height:100%;text-decoration:none;text-transform:var(--nav-text-case);padding:0 var(--nav-items-space,17px);font-size:var(--nav-text, 15px);font-weight:var(--nav-text-weight,600);letter-spacing:var(--nav-ls, inherit)}@media (max-width:940px){.feat-grid .wrap .prev-arrow{left:50px}.feat-grid .wrap .next-arrow{right:50px}.navigation .menu{display:none}}.navigation .menu li>a:after{display:inline-block;content:"\f107";font-family:ts-icons;font-style:normal;font-weight:400;font-size:14px;line-height:1;color:var(--c-nav-blip,inherit);margin-left:8px}@media (min-width:941px) and (max-width:1200px){.navigation .menu>li>a{padding:0 5px;padding:0 max(5px,calc(var(--nav-items-space) * .6));font-size:calc(10px + (var(--nav-text) - 10px) * .7)}.navigation .menu li>a:after{margin-left:5px;font-size:12px}}.navigation .menu .only-icon>a:after,.navigation .menu li>a:only-child:after{display:none}.navigation .menu>li:first-child>a{border-left:0;box-shadow:none}.navigation .menu>.current-menu-item,.navigation .menu>li:hover{background:var(--c-nav-hov-bg)}.navigation .menu>.current-menu-item>a,.navigation .menu>li:hover>a{color:var(--c-nav-hov)}.navigation .menu>.current-menu-item>a:after,.navigation .menu>li:hover>a:after{color:inherit}.navigation .menu .sub-menu,.navigation .menu ul{position:absolute;overflow:visible;visibility:hidden;display:block;opacity:0;padding:5px 0;background:var(--c-nav-drop-bg,var(--c-contrast-0));border:1px solid var(--c-nav-drop-sep);box-shadow:rgba(0,0,0,.08) 0 2px 3px -1px,rgba(0,0,0,.06) 0 4px 11px -2px;transition:all .2s ease-in;z-index:110;pointer-events:none}.navigation .menu>li:not(.item-mega-menu){position:relative}.navigation .menu>li>ul{top:100%}.navigation .menu ul ul{left:100%;top:0;margin-top:-5px}.navigation .menu li:first-child>ul{margin-top:-6px}.navigation li:hover>.sub-menu,.navigation li:hover>ul{visibility:visible;opacity:1;pointer-events:auto}.navigation .sub-menu li>a:after{content:"\f105";font-size:13px;margin-left:25px;text-shadow:none;display:inline-flex;align-self:center}.navigation .menu li li>a:after{display:block;float:right;line-height:inherit}.navigation .menu>li li a{float:none;display:block;padding:9px 22px;border-top:1px solid var(--c-nav-drop-sep);font-size:var(--nav-drop-text, 14px);letter-spacing:var(--nav-drop-ls, inherit);font-weight:var(--nav-drop-fw,400);color:var(--c-nav-drop,inherit);text-transform:none;text-decoration:none;pointer-events:none}.navigation .menu>li:hover li a{pointer-events:auto}.navigation .menu li{transition:.3s ease-in;transition-property:opacity,background}.navigation .menu ul li{float:none;min-width:235px;max-width:350px;border-top:0;padding:0;position:relative}.navigation .menu ul>li:first-child>a{border-top:0;box-shadow:none}.navigation .menu li .current-menu-item,.navigation .menu li li:hover{background:var(--c-nav-drop-hov-bg)}.navigation .menu li .current-menu-item>a,.navigation .menu li li:hover>a{color:var(--c-nav-drop-hov)}.navigation .mega-menu .sub-menu li,.navigation .menu .mega-menu>li{min-width:0}.mega-menu{top:100%}.mega-menu .sub-cats{padding:25px 30px;padding-bottom:35px;width:19.5%;border-right:1px solid var(--c-separator2)}.mega-menu .sub-cats li{min-width:initial;max-width:initial}.mega-menu .sub-cats li:first-child{margin-top:0}.mega-menu .sub-cats li:first-child a{border-top:0}.mega-menu .sub-cats li:hover{background:0 0}.mega-menu .sub-cats:not(._) a{padding-left:0;font-size:max(14px, var(--nav-drop-text, 0))}.mega-menu .sub-cats li:last-child a{border-bottom:1px solid var(--c-nav-drop-sep)}.smart-head-row-full .items-center .mega-menu{left:50%;transform:translateX(-50%);margin-left:0}.smart-head-row-full .items-right .mega-menu{right:0;left:auto}.navigation .mega-menu{width:var(--main-width);left:0;max-width:100%}@media (min-width:1201px){.navigation .mega-menu{max-width:calc(100vw - ((var(--wrap-padding) * 2)))}}@media (min-width:941px) and (max-width:1200px){.navigation .mega-menu{max-width:100vw;margin-left:calc(-1 * var(--head-row-pad))}}.navigation .menu .mega-menu{display:flex;flex:0 1 auto;padding:0}.navigation li:hover>.mega-menu-a .lazyload{display:block}.navigation li:not(:hover)>.mega-menu .wp-post-image{pointer-events:none}.mega-menu-a .recent-posts{float:none;vertical-align:top;padding:35px 30px 45px;width:100%}.s-dark .mega-menu-a .recent-posts{background:rgba(var(--c-rgba),.03)}.mega-menu-a .recent-posts .posts{display:none}.mega-menu-a .recent-posts .posts.active{display:block;animation:.5s ease-out fade-in;animation-fill-mode:both}.mega-menu-a .recent-posts .post{padding:0 13px}.mega-menu-a .recent-posts .post-title{font-weight:var(--title-fw-semi);font-size:15px}.mega-menu-a .sub-cats+.recent-posts{width:80.5%}.navigation .mega-menu.links{padding:35px 10px 40px}.navigation .mega-menu.links>li.current-menu-item{background:inherit}.navigation .mega-menu.links>li{width:25%;padding:0 25px}.navigation .mega-menu.links .sub-menu{--c-nav-drop-sep:rgba(var(--c-rgba), .05);box-shadow:none;border:0}.s-dark .navigation .mega-menu.links .sub-menu{--c-nav-drop-sep:rgba(var(--c-rgba), .08)}.navigation .mega-menu.links>li>a{border:0;text-transform:uppercase;font-size:14px;font-weight:600;border-bottom:1px solid var(--c-nav-drop-sep);padding:9px 0}.navigation .mega-menu.links>li>a:after{display:none}.navigation .mega-menu.links>li ul{visibility:inherit;opacity:1;position:static;margin-top:0}.navigation .mega-menu.links>li li a{padding-left:10px}.navigation .mega-menu.links>li li:last-child a{border-bottom:1px solid var(--c-nav-drop-sep)}.navigation .mega-menu.links>li li a:before{display:inline-block;font-family:ts-icons;font-style:normal;font-weight:400;font-size:12px;line-height:.9;content:"\f105";margin-right:10px}.navigation .mega-menu.links>li:hover{background:0 0}.live-search-results{visibility:hidden;opacity:0;position:absolute;right:0;z-index:1500;top:100%;width:350px;padding:25px;background:var(--c-contrast-0);box-shadow:0 2px 6px rgba(var(--c-rgba),.15);transition:opacity .3s ease-in}.live-search-results .media{width:80px}.live-search-results .view-all{--c-a:var(--c-contrast-450);margin:-25px;margin-top:25px;border-bottom:0}.live-search-results .view-all a{display:block;text-align:center;background:var(--c-contrast-50);border-top:1px solid var(--c-separator);padding:14px;text-transform:uppercase;font-size:12px}.trending-ticker{--max-width:450px}@media (max-width:1200px){.trending-ticker{--max-width:400px}}.trending-ticker ul{float:left}.trending-ticker li{display:none;color:var(--c-contrast-700)}.trending-ticker li:first-child{display:block}.trending-ticker .post-link{max-width:450px;max-width:min(var(--max-width),100%);text-overflow:ellipsis;white-space:nowrap;overflow:hidden;display:inline-block;vertical-align:middle;line-height:1.3;padding-right:10px;margin-top:-2px;color:inherit}.trending-ticker .post-link:hover{color:inherit;opacity:.8}.trending-ticker .heading{float:left;color:var(--c-main);text-transform:uppercase;margin-right:35px}.ts-logo .logo-image-dark{display:none}.s-dark .ts-logo .logo-image-dark{display:block}.s-dark .ts-logo .logo-image-dark~.logo-image{display:none}@media (max-width:940px){.trending-ticker{--max-width:40vw}.smart-head{display:none}}.smart-head-row{--icons-size:16px;--c-icons:var(--c-links);padding:0 var(--head-row-pad);background-color:var(--c-bg);height:var(--head-h);border:0 solid transparent;color:var(--c-contrast-800)}.s-dark .smart-head-row,.smart-head-row.s-dark{--c-a-hover:var(--c-main)}.smart-head .logo-link{--c-a-hover:var(--c-headings);display:flex;flex-shrink:0;align-items:center;font-size:37px;font-weight:700;text-align:center;letter-spacing:-1px}@media (max-width:540px){.smart-head .logo-link{font-size:28px;flex-shrink:1}}.smart-head .logo-link:not(:last-child){--item-mr:35px}.smart-head .logo-link>h1,.smart-head .logo-link>span{font:inherit;display:flex;align-items:center}.smart-head .logo-is-image{font-size:0}.smart-head .logo-image{padding:10px 0;max-height:var(--head-h);object-fit:contain}.smart-head .search-icon{color:var(--c-search-icon,var(--c-icons));font-size:var(--search-icon-size, var(--icons-size));display:flex;align-items:center;padding-left:5px;height:100%}.smart-head .search-icon:hover{color:var(--c-main)}.smart-head .h-date{--item-mr:30px;flex-shrink:0;font-size:13px}.smart-head .h-text{flex-shrink:0;font-size:13px;max-width:100%}.smart-head .h-text>ins{min-width:728px;max-width:100%}.smart-head .is-icon{padding:0 4px}.smart-head .has-icon,.smart-head .has-icon-only{display:inline-flex;align-items:center;height:100%;max-height:45px}.smart-head .has-icon-only:last-child,.smart-head .has-icon-only:last-child .is-icon,.smart-head .has-icon:last-child,.smart-head .has-icon:last-child .is-icon{padding-right:0}.smart-head .has-icon-only{--item-mr:9px}.smart-head .spc-social{flex-wrap:nowrap}.scheme-switcher{position:relative}.scheme-switcher .icon{font-size:var(--icons-size);width:var(--icons-size)}.scheme-switcher .toggle{--c-a:var(--c-icons);line-height:1;width:100%;text-align:center}.scheme-switcher .toggle-light{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);opacity:0;pointer-events:none}.site-s-dark .scheme-switcher .toggle-dark{transform:scale(0) rotate(80deg);opacity:0;pointer-events:none}.site-s-dark .scheme-switcher .toggle-light{opacity:1;pointer-events:auto}.smart-head{--nav-items-space:17px;--head-top-h:40px;--head-mid-h:110px;--head-bot-h:55px;--head-row-pad:30px;--c-bg:transparent;--c-border:var(--c-contrast-75);--c-shadow:transparent;position:relative;box-shadow:0 3px 4px 0 var(--c-shadow)}@media (max-width:767px){.search-modal-box{max-width:100%}.smart-head-row{padding:0 20px}}.smart-head-row>.inner{display:flex;justify-content:space-between;padding:var(--head-inner-pad,0);height:100%;position:relative}.smart-head-row.wrap{padding:0;--head-inner-pad:0 25px}.smart-head-row-full{width:100%}.smart-head-row-3>.inner{display:grid;grid-template-columns:1fr auto 1fr;grid-template-columns:minmax(max-content,1fr) auto minmax(max-content,1fr)}.smart-head-top{--c-bg:var(--c-contrast-50);--head-h:var(--head-top-h);--search-icon-size:14px;--icons-size:14px}.smart-head-top .spc-social-b{--spc-social-fs:14px;--spc-social-size:34px}.smart-head-top .ts-button{--btn-f-size:11px}.s-dark .smart-head-top,.smart-head-top.s-dark{--c-bg:var(--c-contrast-0)}.smart-head-mid{--head-h:var(--head-mid-h)}.s-dark .smart-head-mid,.smart-head-mid.s-dark{--c-bg:var(--c-contrast-0)}.smart-head-bot{--head-h:var(--head-bot-h);border:1px solid var(--c-border);border-left:0;border-right:0}.smart-head-bot .ts-button{--btn-f-size:12px}.s-dark .smart-head-bot,.smart-head-bot.s-dark{--c-bg:var(--c-contrast-0);--c-border:transparent}.smart-head .items{--item-mr:15px;display:flex;align-items:center;flex:1 1 auto;height:inherit}.smart-head .items>*{margin-left:var(--item-ml,0);margin-right:var(--item-mr)}.smart-head .items-right{justify-content:flex-end}.smart-head .items-center{justify-content:center;flex-shrink:0}.smart-head .items-center:not(.empty){padding-left:15px;padding-right:15px}.smart-head .items>:first-child{margin-left:0}.smart-head .items-center>:last-child,.smart-head .items-right>:last-child{margin-right:0}.smart-head-b{--head-mid-h:110px;--head-bot-h:60px;--c-bg:transparent;--c-border:var(--c-separator);--nav-text:14px;--nav-text-weight:600;--nav-ls:0.08em;--nav-text-case:uppercase}.s-dark .smart-head-b,.smart-head-b .s-dark{--c-icons:var(--c-contrast-400)}.smart-head-b .navigation{--c-nav-blip:#aaa}.smart-head-b .smart-head-bot{--icons-size:18px;--c-border:rgba(255, 255, 255, .1)}.s-dark .smart-head-b .smart-head-bot,.smart-head-b .smart-head-bot.s-dark{--c-bg:var(--c-contrast-75)}.smart-head-mobile{--head-top-h:45px;--head-mid-h:65px;display:block}@media (min-width:941px){.smart-head-mobile{display:none}}.smart-head-mobile .smart-head-row{--icons-size:18px;--c-icons:var(--c-contrast-800)}.smart-head-mobile .smart-head-mid{border-top-color:var(--c-main)}.smart-head-mobile>:last-child{border-bottom:1px solid var(--c-contrast-100)}.offcanvas-toggle{display:flex;align-items:center;background:0 0;padding:0;box-shadow:none;line-height:1;height:100%}.offcanvas-toggle:hover{background:inherit;--c-hamburger:var(--c-main)}.hamburger-icon{--line-weight:3px;--line-width:100%;--height:17px;display:inline-flex;vertical-align:middle;height:var(--height);width:26px;position:relative}.hamburger-icon .inner,.hamburger-icon .inner:after,.hamburger-icon .inner:before{position:absolute;height:var(--line-weight);background-color:var(--c-hamburger,var(--c-icons));transition:background .2s ease-in-out}.hamburger-icon .inner{top:auto;bottom:0;width:calc(100% - 6px)}.hamburger-icon .inner:after,.hamburger-icon .inner:before{display:block;content:"";width:calc(100% + 6px)}.hamburger-icon .inner:before{top:0;transform:translateY(calc(-1 * var(--height) + 100%))}.hamburger-icon .inner:after{bottom:0;transform:translateY(calc(-1 * var(--height)/ 2 + 50%))}.smart-head-sticky{position:fixed!important;top:0;z-index:10000!important;box-shadow:0 0 20px rgba(0,0,0,.05)}.s-light .smart-head-sticky:not(.s-dark){background:#fff}.smart-head-sticky.s-dark{border-bottom:0}.smart-head-sticky:not(.smart-head-row-full):not(.sticky-is-full){left:50%;margin-left:calc(-1 * var(--main-width)/ 2);box-shadow:none}.smart-head-sticky.sticky-is-full{width:100%}.smart-head-sticky.sticky-is-full>.inner{width:var(--main-width);margin:0 auto}.smart-head-sticky.off{transform:translateY(-102%)}.smart-head-sticky.animate{animation:.3s ease-out smart-sticky;transition:transform .3s ease-out;will-change:opacity}@keyframes smart-sticky{from{transform:translateY(-100%)}to{transform:none}}@media (min-width:600px){.admin-bar .smart-head-sticky{top:32px}}.widget{font-size:14px;--li-pad:5px;--c-li-sep:transparent}.textwidget{font-size:15px}.widget_search{overflow:hidden}.widget_search label>span{display:none}.widget-tabbed .block-head{padding:0}.widget-tabbed .tabs-data{border-bottom:0}.widget-tabbed .tabs-data>*{display:none}.widget-tabbed .tabs-data>:first-child{display:block}.widget-tabbed .tabs-data>.inactive{display:none}.spc-social-follow{--s-fsize:13px}@media (min-width:941px) and (max-width:1200px){.spc-social-follow .grid{grid-template-columns:1fr}}.spc-social-follow .service-link{display:flex;border-radius:2px;line-height:44px;background:var(--c-spcs-bg,transparent);color:#fff;font-weight:600;font-size:var(--s-fsize);vertical-align:middle}.spc-social-follow .service-link:hover{opacity:.88}.spc-social-follow .the-icon{flex-shrink:0;color:var(--c-spc-social,inherit);width:40px;font-size:17px;line-height:inherit;text-align:center}.spc-social-follow .label{text-overflow:ellipsis;overflow:hidden;white-space:nowrap}.spc-social-follow .count{font-weight:700}.spc-social-follow-b .services{grid-gap:10px}.spc-social-follow-b .service-link.has-count .label{order:3;margin:0 8px;font-size:12px;font-weight:500;opacity:.9}.spc-social-follow-b .count{order:2}.widget-about .image-logo{display:flex;margin-bottom:20px}.widget-about .about-text p:last-child{margin-bottom:0}.widget-about .spc-social{margin-top:30px;--c-spc-social:var(--c-contrast);--spc-social-fs:16px}.the-post>.post{margin-bottom:45px}.the-post .featured img{width:100%}.main-content video{width:100%;height:100%;max-width:100%}.s-head-modern{--cat-label-mr:8px;--p-meta-icons-mr:12px;--title-size:35px;margin-bottom:25px}.s-head-modern .cat-labels{position:static;padding-bottom:1px}.s-head-modern .post-meta{margin-bottom:20px}.s-head-modern .post-title{margin:15px 0;font-size:var(--title-size);font-weight:700;line-height:1.24;letter-spacing:-.005em}.s-head-modern>:last-child{margin-bottom:0}.s-head-modern .single-featured{margin-top:28px;margin-bottom:42px}@media (max-width:767px){.s-head-modern .post-title{font-size:calc(var(--title-size) * .829)}.s-head-modern .single-featured{width:100vw;margin-left:calc(50% - 50vw);margin-bottom:32px}}.single-featured{margin-bottom:32px}.post-share-bot{display:flex;margin:22px 0;padding:0;padding-top:10px;justify-content:space-between;align-items:center}.post-share-bot+*{margin-top:22px}.post-share-bot .info{font-size:13px;font-weight:500;display:inline-block;margin-right:30px;text-transform:uppercase;color:var(--c-links)}@media (max-width:767px){.post-share-bot .info{display:none}}.post-share-bot .share-links{display:flex;width:100%;justify-content:flex-end;--spc-social-space:4px}.post-share-bot .share-links a{flex:0 0 auto;padding:0;width:70px;height:32px;line-height:32px;border-radius:2px;color:#fff;font-size:18px}@media (max-width:767px){.post-share-bot .share-links a{flex:1 1 auto}}.post-share-bot .share-links a:hover{filter:brightness(110%);opacity:1}.post-share-b{--service-sm-width:42px;--service-gap:5px;--service-b-radius:2px;display:flex;font-family:var(--ui-font)}.post-share-b:not(._){margin-bottom:calc(-1 * var(--service-gap))}.post-share-b a:hover{text-decoration:none}.post-share-b .service{display:flex;flex:0 1 auto;min-width:100px;width:var(--service-width,140px);margin-right:var(--service-gap);margin-bottom:var(--service-gap);border-radius:var(--service-b-radius);color:#fff;background:var(--c-spcs-icon);line-height:38px;justify-content:center;box-shadow:inset 0 -1px 2px rgba(0,0,0,.1)}.post-share-b .service:hover{filter:brightness(110%)}.post-share-b .service i{padding:0;font-size:17px;line-height:inherit}.post-share-b .service .label{margin-left:11px;font-size:13px;font-weight:600}@media (max-width:540px){.post-share-b .service{min-width:initial;flex:1 1 auto}.post-share-b .service .label{font-size:11px}}@media (max-width:415px){.post-share-b .service .label{display:none}}.post-share-b .show-more{display:flex;margin-bottom:var(--service-gap);width:40px;min-width:38px;align-items:center;justify-content:center;border:1px solid var(--c-contrast-150);border-radius:var(--service-b-radius);color:var(--c-contrast-200);font-size:13px}.s-dark .post-share-b .show-more{color:var(--c-contrast-500)}.post-share-b.all .service{display:flex}@media (max-width:540px){.post-share-b.all .service{min-width:initial;width:var(--service-sm-width)}.post-share-b.all .label{display:none}}.post-share-b.all .show-more{display:none}.post-content>.review-box{margin-top:2.2em;margin-bottom:2.2em}.review-box{background:rgba(var(--c-rgba),.05);border-left:3px solid var(--c-separator);padding:10px 15px 0}.review-box>.inner{font-size:.9em;font-size:max(14px, .9em)}.review-box .heading{font-size:18px;font-weight:var(--title-fw-semi);border-left:3px solid var(--c-main);margin-left:-18px;padding-left:15px;line-height:2;margin-top:3px;margin-bottom:14px}.review-box .overall{background:var(--c-main);color:#fff;padding:10px 8px;min-width:130px;max-width:145px;flex-shrink:0;text-align:center}.review-box .overall .number{display:block;font-size:65px;font-weight:600;line-height:1}.review-box .overall .percent{font-size:25px}.review-box ul{list-style:none;margin-left:0;padding:28px 0}.review-box li{margin-bottom:15px;flex-wrap:wrap;display:flex;width:100%;align-items:center;justify-content:space-between}.review-box .label{font-size:14px}.review-box ul .rating{float:right;font-weight:600;margin-left:auto;order:3;white-space:nowrap}.review-box .bar,.review-box .rating-bar{width:100%;background:var(--c-contrast-0);height:21px;order:5}.review-box .bar{background:var(--c-main);display:block}.user-ratings .hover-number{letter-spacing:1px;float:right;font-weight:600;margin-left:auto}.user-ratings .rating-bar{cursor:pointer}.user-ratings.voted .rating-bar{cursor:default}.navigate-posts{border-top:1px solid var(--c-separator);padding:0;padding-top:35px;margin-bottom:35px;overflow:hidden;display:flex;width:100%}.navigate-posts .next,.navigate-posts .previous{flex:1 1 auto;width:50%;text-align:right;box-sizing:border-box;padding:0 35px}.navigate-posts .next:only-child,.navigate-posts .previous:only-child{text-align:inherit;border-left:0;padding-left:0}.navigate-posts .title{display:block;margin-bottom:10px;font-size:11px;text-transform:uppercase;letter-spacing:.03em}.navigate-posts .link{font-family:var(--title-font);font-weight:500;font-size:15px}@media (max-width:540px){.navigate-posts .next,.navigate-posts .previous{padding:0 15px}.navigate-posts .link{font-size:14px}}.navigate-posts .previous{padding-left:21px}.navigate-posts .next{text-align:left;border-left:1px solid var(--c-separator);padding-right:21px}.navigate-posts .previous i{margin-right:7px}.navigate-posts .next i{margin-left:7px}.related-posts{--block-wrap-mb:0;margin-top:46px;margin-bottom:46px}.ts-comments-hidden{display:none}.ts-comments-show{display:flex;justify-content:center;margin:40px 0 20px;--btn-height:42px;--btn-f-size:13px}.ts-comments-show .ts-button{flex:1;display:flex;justify-content:center;align-items:center;border-radius:3px}.ts-comments-show .ts-button-b{font-weight:700;max-width:350px}.post-slideshow{margin-top:14px;background:rgba(var(--c-rgba),.025);padding:1.857em 30px}@media (max-width:540px){.navigate-posts .previous{padding-left:0}.navigate-posts .next{border-left:0;padding-right:0}.post-slideshow{margin-left:-20px;margin-right:-20px}}.post-slideshow .content-page>p:last-child,.post-slideshow>p:last-child{margin-bottom:7px}.post-slideshow .content-page{margin-bottom:0;opacity:1;transition:all .5s ease-in}.post-slideshow .content-page.hidden{opacity:0}.post-slideshow .post-pagination-large,.post-slideshow .post-pagination-large:first-child{margin:0 -30px;padding:14px 25px;margin-top:-1.857em;margin-bottom:1.857em;box-shadow:0 1px 0 0 rgba(0,0,0,.05)}.post-slideshow .post-pagination-large.bottom,.post-slideshow .post-pagination-large:first-child.bottom{margin-top:1.857em;margin-bottom:-1.857em}.post-pagination-large{overflow:hidden;background:rgba(var(--c-rgba),.03)}.post-pagination-large .info{font-size:12px;text-transform:uppercase}.post-pagination-large .info strong{padding:0 2px}.post-pagination-large .ts-button{--btn-height:32px;--btn-l-height:32px;display:inline-block;font-size:12px}.post-pagination-large .next,.post-pagination-large .prev{padding:0 3px;font-size:11px;display:inline-block}.post-pagination-large .links{float:right}.block-wrap{margin-bottom:var(--block-wrap-mb)}.block-wrap.mb-none{margin-bottom:0}.block-content{position:relative}.block-content.loading{will-change:transform;opacity:.2}.has-sb-sep{--sidebar-c-pad:var(--sidebar-sep-pad, calc(var(--sidebar-pad) + 8px))}.main-sidebar{width:100%}.main-sidebar .widget{margin-bottom:45px}.main-sidebar .widget:last-child{margin-bottom:0}.has-sb-sep .main-sidebar{position:relative;border-left:1px solid transparent}.has-sb-sep .main-sidebar:before{content:" ";position:absolute;border-left:1px solid var(--c-sidebar-sep);height:100%;margin-left:calc(-1 * (var(--grid-gutter)/ 4 + var(--sidebar-c-pad)/ 2))}@media (max-width:940px){.main-sidebar{margin-top:50px}.has-sb-sep .main-sidebar:before{display:none}}.main-footer{color:var(--c-contrast-600);margin-top:var(--footer-mt);background:var(--footer-bg)}.main-footer:not(.s-dark){color:var(--c-contrast-700)}.upper-footer>.wrap{padding-top:60px;padding-bottom:60px}.upper-footer .block-head{--space-below:30px}.upper-footer .block-head .heading{font-size:15px;letter-spacing:.04em}.s-dark .upper-footer .block-head{--c-block:var(--c-contrast)}@media (min-width:941px){.main-sidebar{padding-left:var(--sidebar-c-pad);margin-left:auto;width:var(--sidebar-c-width)}.upper-footer .widgets{margin-bottom:-55px}}.upper-footer .widget{margin-bottom:55px}@media (max-width:940px){.upper-footer>.wrap{padding-top:55px;padding-bottom:55px}.upper-footer .widget:last-child{margin-bottom:0}.bold-footer-lower .links .menu-item{font-size:13px;margin-right:25px}}.lower-footer{font-size:13px;background:var(--footer-lower-bg);--c-links:var(--c-contrast-700);color:var(--c-contrast-500)}.lower-footer .menu{display:flex}@media (min-width:941px){.bold-footer-upper>.wrap{padding-top:70px;padding-bottom:60px}}.bold-footer-lower{--c-links:var(--c-contrast-500);color:var(--c-contrast-400)}.bold-footer-lower .inner{padding:60px 20px;display:flex;flex-direction:column;align-items:center}.bold-footer-lower .spc-social{--c-spc-social:var(--c-contrast);--spc-social-fs:18px;--spc-social-size:42px;--spc-social-space:10px;margin-bottom:calc(34px - var(--spc-social-space))}.bold-footer-lower .links{margin-bottom:20px;--c-links:var(--c-foot-menu, var(--c-contrast))}.bold-footer-lower .links .menu{display:flex;justify-content:center;flex-wrap:wrap}.bold-footer-lower .links .menu-item{margin-bottom:11px;margin-right:25px;font-family:var(--ui-font);font-size:13px;font-weight:600;letter-spacing:.07em;text-transform:uppercase}.bold-footer-lower .links .menu-item:last-child{margin-right:0}.layout-boxed{background:var(--c-contrast-75)}.layout-boxed .main-wrap{background:var(--c-contrast-0);box-shadow:0 0 15px 0 rgba(var(--c-rgba),.08)}.s-dark .layout-boxed .main-wrap{box-shadow:0 0 25px 0 rgba(var(--c-rgba),.02);border:1px solid var(--c-contrast-100);border-top:0;border-bottom:0}@media (min-width:1201px){.layout-boxed .main-wrap{--main-wrap-width:calc(var(--main-width) + var(--boxed-pad) * 2);width:var(--main-wrap-width);max-width:100%;margin:0 auto}.layout-boxed .smart-head-sticky{width:var(--main-wrap-width)}}.ts-bg-cover{position:fixed;width:100%;height:100%;top:0;left:0;background-position:center center;background-size:cover;background-attachment:fixed;will-change:transform;z-index:-1}.a-wrap{--display-init:flex;display:flex;flex-direction:column;justify-content:center;align-items:center}.a-wrap .label{width:100%;margin-bottom:4px;color:var(--c-contrast-450);text-align:center;font-size:12px;line-height:1.5}.a-wrap a>img{display:block}.a-wrap>iframe,.a-wrap>ins{width:100%;text-align:center}.a-wrap-base{margin:30px auto;padding:0 15px}.a-wrap-3:not(.a-wrap-bg){margin-bottom:42px}.a-wrap-3+.main-footer{margin-top:0}.auth-modal-register{display:none}body.elementor-default{--e-global-color-smartmag-main:var(--c-main);--e-global-color-smartmag:var(--c-main)}.ts-sticky-native:not(.elementor-column),.ts-sticky-native>.elementor-widget-wrap{align-self:flex-start;position:-webkit-sticky;position:sticky;top:var(--ts-sticky-top,40px);transition:top .2s ease-in}:root{--c-main:#ff7514;--c-main-rgb:255,117,20;--text-font:Georgia,serif;--body-font:Georgia,serif;--main-width:1260px;--wrap-padding:15px;--sidebar-width:388px;--sidebar-pad:15px;--sidebar-sep-pad:15px;--boxed-pad:0px;--grid-gutter:30px}.ts-row{--sidebar-c-width:calc(var(--sidebar-width) + var(--grid-gutter-h) + var(--sidebar-c-pad))}.main-sidebar .widget-title .heading{font-family:Helvetica,system-ui,-apple-system,"Segoe UI",Arial,sans-serif}.main-sidebar .widget{margin-bottom:30px}.smart-head-main .smart-head-top{--head-h:45px}.smart-head-main .smart-head-mid{--head-h:120px}.smart-head-main .smart-head-mid>.inner{padding-top:3px}.smart-head-main .smart-head-bot{background-color:#c2dcef;border-top-color:#ccc;border-bottom-width:1px;border-bottom-color:#ccc}.s-dark .smart-head-main .smart-head-bot,.smart-head-main .s-dark.smart-head-bot{background-color:#303030;border-top-color:#4f4f4f;border-bottom-color:#757575}.navigation{font-family:Helvetica,system-ui,-apple-system,"Segoe UI",Arial,sans-serif}.navigation-main{--nav-items-space:7px;margin-left:calc(-1 * var(--nav-items-space))}.mobile-menu{font-family:Helvetica,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;font-size:16px}.trending-ticker .heading{font-family:Helvetica,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;font-weight:700;margin-right:15px}.trending-ticker .post-link{font-family:Helvetica,system-ui,-apple-system,"Segoe UI",Arial,sans-serif}.trending-ticker{--max-width:750px}.smart-head .h-text2{font-family:Helvetica,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;font-size:13px}.cat-labels .category,.post-meta .meta-item,.upper-footer .block-head .heading{font-family:Helvetica,system-ui,-apple-system,"Segoe UI",Arial,sans-serif}.block-head-e1 .heading{font-family:Helvetica,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;color:#ff7514}.loop-small .media:not(i){max-width:110px}.post-meta-single .meta-item{font-size:14px;text-transform:lowercase}.entry-content{--post-content-size:var(--single-content-size);font-size:19px;line-height:1.6}.post-share-b{--service-width:152px;--service-gap:10px;--service-b-radius:5px}.category .feat-grid{--grid-gap:30px;--main-ratio:1.50}@media (min-width:940px) and (max-width:1200px){.ts-row{--sidebar-c-width:calc(var(--sidebar-width) + var(--grid-gutter-h) + var(--sidebar-c-pad))}}@media (min-width:768px) and (max-width:940px){.main,.ts-contain{padding-left:35px;padding-right:35px}}@media (max-width:767px){.bold-footer-lower .inner{padding:50px 20px}.bold-footer-lower .links .menu-item{font-size:12px;margin-right:20px}.main,.ts-contain{padding-left:25px;padding-right:25px}}.mfp-bg{top:0;left:0;width:100%;height:100%;z-index:1042;overflow:hidden;position:fixed;background:#0b0b0b;opacity:.8}.mfp-wrap{top:0;left:0;width:100%;height:100%;z-index:20000;position:fixed;outline:0!important;-webkit-backface-visibility:hidden}.mfp-container{text-align:center;position:absolute;width:100%;height:100%;left:0;top:0;padding:0 8px;box-sizing:border-box}.mfp-container:before{content:'';display:inline-block;height:100%;vertical-align:middle}.mfp-align-top .mfp-container:before{display:none}.mfp-ajax-cur{cursor:progress}.mfp-zoom-out-cur{cursor:zoom-out}.mfp-arrow,.mfp-close,.mfp-counter{user-select:none}.mfp-loading.mfp-figure{display:none}button.mfp-arrow,button.mfp-close{overflow:visible;cursor:pointer;background:0 0;border:0;display:block;outline:0;padding:0;z-index:1046;box-shadow:none}button::-moz-focus-inner{padding:0;border:0}.mfp-close{width:44px;height:44px;line-height:44px;position:absolute;right:0;top:0;text-decoration:none;text-align:center;opacity:.65;padding:0 0 18px 10px;color:#fff;font-style:normal;font-size:28px;font-family:Arial,Baskerville,monospace}.mfp-close:focus,.mfp-close:hover{opacity:1}.mfp-close:active{top:1px}.mfp-close-btn-in .mfp-close{color:#333}.mfp-counter{position:absolute;top:0;right:0;color:#ccc;font-size:12px;line-height:18px;white-space:nowrap}.mfp-arrow{position:absolute;opacity:.65;margin:0;top:50%;margin-top:-55px;padding:0;width:90px;height:110px;-webkit-tap-highlight-color:transparent}.mfp-arrow:active{margin-top:-54px}.mfp-arrow:focus,.mfp-arrow:hover{opacity:1}.mfp-arrow:after,.mfp-arrow:before{content:'';display:block;width:0;height:0;position:absolute;left:0;top:0;margin-top:35px;margin-left:35px;border:inset transparent}.mfp-arrow:after{border-top-width:13px;border-bottom-width:13px;top:8px}.mfp-arrow:before{border-top-width:21px;border-bottom-width:21px;opacity:.7}.mfp-iframe-scaler{width:100%;height:0;overflow:hidden;padding-top:56.25%}.mfp-iframe-scaler iframe{position:absolute;display:block;top:0;left:0;width:100%;height:100%;box-shadow:0 0 8px rgba(0,0,0,.6);background:#000}img.mfp-img{width:auto;max-width:100%;height:auto;display:block;line-height:0;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding:40px 0;margin:0 auto}.mfp-figure{line-height:0}.mfp-figure:after{content:'';position:absolute;left:0;top:40px;bottom:40px;display:block;right:0;width:auto;height:auto;z-index:-1;box-shadow:0 0 8px rgba(0,0,0,.6);background:#444}.mfp-figure figure{margin:0}.mfp-bottom-bar{margin-top:-36px;position:absolute;top:100%;left:0;width:100%;cursor:auto}.mfp-title{text-align:left;line-height:18px;color:#f3f3f3;word-wrap:break-word;padding-right:36px}@media screen and (max-width:800px) and (orientation:landscape),screen and (max-height:300px){.mfp-img-mobile img.mfp-img{padding:0}.mfp-img-mobile .mfp-figure:after{top:0;bottom:0}.mfp-img-mobile .mfp-bottom-bar{background:rgba(0,0,0,.6);bottom:0;margin:0;top:auto;padding:3px 5px;position:fixed;box-sizing:border-box}.mfp-img-mobile .mfp-bottom-bar:empty{padding:0}.mfp-img-mobile .mfp-counter{right:5px;top:3px}.mfp-img-mobile .mfp-close{top:0;right:0;width:35px;height:35px;line-height:35px;background:rgba(0,0,0,.6);position:fixed;text-align:center;padding:0}}@media all and (max-width:900px){.mfp-arrow{transform:scale(.75)}.mfp-container{padding-left:6px;padding-right:6px}}.mfp-fade.mfp-bg{opacity:0;-webkit-transition:.15s ease-out;-moz-transition:.15s ease-out;transition:all .15s ease-out}.mfp-fade.mfp-bg.mfp-ready{opacity:.8}.mfp-fade.mfp-bg.mfp-removing{opacity:0}.mfp-fade.mfp-removing .mfp-arrow{display:none}.mfp-fade .mfp-arrow{opacity:0;transition:all .15s ease-out}.mfp-fade.mfp-ready .mfp-arrow{opacity:1}@font-face{font-family:ts-icons;src:url('https://sienafree.it/wp-content/themes/smart-mag/css/icons/fonts/ts-icons.woff2?v2.3') format('woff2'),url('https://sienafree.it/wp-content/themes/smart-mag/css/icons/fonts/ts-icons.woff?v2.3') format('woff'),url('https://sienafree.it/wp-content/themes/smart-mag/css/icons/fonts/ts-icons.ttf?v2.3') format('truetype');font-weight:400;font-style:normal;font-display:swap}.tsi{display:inline-block;font:14px/1 ts-icons;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.tsi-spin{-webkit-animation:2s linear infinite tsi-spin;animation:2s linear infinite tsi-spin}@-webkit-keyframes tsi-spin{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(359deg);transform:rotate(359deg)}}@keyframes tsi-spin{0%{-webkit-transform:rotate(0);transform:rotate(0)}100%{-webkit-transform:rotate(359deg);transform:rotate(359deg)}}.tsi-telegram:before{content:"\e903"}.tsi-moon:before{content:"\e902"}.tsi-clock:before{content:"\e900"}.tsi-bright:before{content:"\e901"}.tsi-search:before{content:"\f002"}.tsi-times:before{content:"\f00d"}.tsi-repeat:before{content:"\f01e"}.tsi-chevron-left:before{content:"\f053"}.tsi-chevron-down:before{content:"\f078"}.tsi-twitter:before{content:"\f099"}.tsi-facebook:before{content:"\f09a"}.tsi-linkedin:before{content:"\f0e1"}.tsi-angle-left:before{content:"\f104"}.tsi-angle-right:before{content:"\f105"}.tsi-instagram:before{content:"\f16d"}.tsi-whatsapp:before{content:"\f232"}.tsi-chevron-right:before{content:"\f054"}.layout-boxed{background:#fff}.layout-boxed .main-wrap{box-shadow:none;border:1px solid #e2e2e2}#lx_700596{left:50%;transform:translate(-50%,0);z-index:9999998;position:fixed;bottom:0;background:0 0;text-align:center;transition:.3s ease-in;line-height:0;box-shadow:0 0 5px 0 rgba(0,0,0,.2)!important;background-color:#f0f4f8;padding-left:33px;min-width:auto!important}#lx_700596 .lx_home_button{background-color:#f0f4f8;border-radius:7px 7px 0 0;height:24px;line-height:24px;padding:0 9px;text-align:center;position:absolute;right:0;top:-24px;border:none;outline:0;font-family:verdana;font-size:12px;color:#48647f;cursor:pointer;font-weight:400;text-decoration:none;box-shadow:0 0 5px 0 rgba(0,0,0,.2)!important}#lx_700596 .lx_home_button svg{fill:#48647F!important;vertical-align:middle;display:inline-block}#lx_700596 .lx_home_button svg path{fill:#48647F!important}#lx_700596 .lx_home_button:hover{text-decoration:none}#lx_700596 .lx_close_button{position:absolute;height:100%;width:33px;top:0;left:0;background-size:13px 13px;background-position:9px;background-color:#f0f4f8;background-repeat:no-repeat;border:0;text-transform:none;z-index:1;cursor:pointer;padding:0}#lx_700596 .lx_close_button span{position:absolute;height:33px;top:50%;margin-top:-17px;width:90px;text-align:center;transform:rotate(-90deg);left:50%;margin-left:-45px;display:block;line-height:31px;color:#48647f}#lx_700596 .lx_close_button:before{position:absolute;content:"";top:-40px;right:-40px;left:-40px;bottom:0;cursor:default}#lx_700596 .lx_no_click{position:absolute;width:113px;left:-43px;bottom:0;height:140%}.theiaStickySidebar:after{content:"";display:table;clear:both}.fluid-width-video-wrapper{width:100%;position:relative;padding:0}.fluid-width-video-wrapper embed,.fluid-width-video-wrapper iframe,.fluid-width-video-wrapper object{position:absolute;top:0;left:0;width:100%;height:100%}.block-sc[data-id="2"] .loop{--grid-row-gap:30px}.cl-consent-clickio,.cl-consent-clickio a,.cl-consent-clickio span,.cl-consent__buttons{-webkit-box-sizing:border-box;box-sizing:border-box}.cl-consent__descr p{margin:0}.cl-consent-popup--main{background-color:#edeff5!important;max-width:678px}.cl-consent-popup--details{background-color:#edeff5!important;max-width:660px}.cl-consent__buttons{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;position:relative}.cl-consent-clickio{font-size:10px;line-height:normal;color:#334e68;margin-right:-24px;margin-top:14px}.cl-consent-clickio a{color:inherit!important;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;text-decoration:none;color:#4b81e8!important}.cl-consent-clickio span{padding-right:6px}@media (max-width:767px){.cl-consent__buttons{-webkit-box-orient:vertical;-webkit-box-direction:reverse;-ms-flex-direction:column-reverse;flex-direction:column-reverse}.cl-consent-clickio{margin-right:-12px}.cl-consent-popup--details{padding-left:15px;padding-right:15px}.cl-consent-popup--details .cl-consent-clickio{margin-right:-5px}}</style>
+	<link rel="canonical" href="https://sienafree.it/70303-siena-pattuglione-della-polizia-in-centro-e-in-periferia" />
+	<meta property="og:locale" content="it_IT" />
+	<meta property="og:type" content="article" />
+	<meta property="og:title" content="Siena, &#039;&#039;pattuglione&#039;&#039; della Polizia in centro e in periferia" />
+	<meta property="og:description" content="Un altro servizio straordinario di controllo del territorio è stato effettuato nella sera di ieri dalla Polizia di Stato, sulla base delle direttive del Questore di Siena Maurizio Piccolotti, finalizzatead intensificare le attività di prevenzione dei reati in genere e contro il patrimonio in particolare, ma anche di altre azioni illecite. Nella sera di ieri" />
+	<meta property="og:url" content="https://sienafree.it/70303-siena-pattuglione-della-polizia-in-centro-e-in-periferia" />
+	<meta property="og:site_name" content="Siena Free" />
+	<meta property="article:publisher" content="https://www.facebook.com/sienafree.it/" />
+	<meta property="article:published_time" content="2015-03-05T12:13:57+00:00" />
+	<meta property="og:image" content="https://sienafree.it/images/notizie/siena/polizia-siena-sandomenico650.jpg" />
+	<meta name="author" content="sienafree" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:creator" content="@SienaFree" />
+	<meta name="twitter:site" content="@SienaFree" />
+	<meta name="twitter:label1" content="Scritto da" />
+	<meta name="twitter:data1" content="sienafree" />
+	<meta name="twitter:label2" content="Tempo di lettura stimato" />
+	<meta name="twitter:data2" content="1 minuto" />
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://sienafree.it/70303-siena-pattuglione-della-polizia-in-centro-e-in-periferia#article","isPartOf":{"@id":"https://sienafree.it/70303-siena-pattuglione-della-polizia-in-centro-e-in-periferia"},"author":{"name":"sienafree","@id":"https://sienafree.it/#/schema/person/2b249c50580f2a8fda3a118f07e8b723"},"headline":"Siena, &#8221;pattuglione&#8221; della Polizia in centro e in periferia","datePublished":"2015-03-05T12:13:57+00:00","dateModified":"2015-03-05T12:13:57+00:00","mainEntityOfPage":{"@id":"https://sienafree.it/70303-siena-pattuglione-della-polizia-in-centro-e-in-periferia"},"wordCount":239,"publisher":{"@id":"https://sienafree.it/#organization"},"image":{"@id":"https://sienafree.it/70303-siena-pattuglione-della-polizia-in-centro-e-in-periferia#primaryimage"},"thumbnailUrl":"https://sienafree.it/images/notizie/siena/polizia-siena-sandomenico650.jpg","articleSection":["SIENA"],"inLanguage":"it-IT"},{"@type":"WebPage","@id":"https://sienafree.it/70303-siena-pattuglione-della-polizia-in-centro-e-in-periferia","url":"https://sienafree.it/70303-siena-pattuglione-della-polizia-in-centro-e-in-periferia","name":"Siena, ''pattuglione'' della Polizia in centro e in periferia - Siena Free","isPartOf":{"@id":"https://sienafree.it/#website"},"primaryImageOfPage":{"@id":"https://sienafree.it/70303-siena-pattuglione-della-polizia-in-centro-e-in-periferia#primaryimage"},"image":{"@id":"https://sienafree.it/70303-siena-pattuglione-della-polizia-in-centro-e-in-periferia#primaryimage"},"thumbnailUrl":"https://sienafree.it/images/notizie/siena/polizia-siena-sandomenico650.jpg","datePublished":"2015-03-05T12:13:57+00:00","dateModified":"2015-03-05T12:13:57+00:00","breadcrumb":{"@id":"https://sienafree.it/70303-siena-pattuglione-della-polizia-in-centro-e-in-periferia#breadcrumb"},"inLanguage":"it-IT","potentialAction":[{"@type":"ReadAction","target":["https://sienafree.it/70303-siena-pattuglione-della-polizia-in-centro-e-in-periferia"]}]},{"@type":"ImageObject","inLanguage":"it-IT","@id":"https://sienafree.it/70303-siena-pattuglione-della-polizia-in-centro-e-in-periferia#primaryimage","url":"https://sienafree.it/images/notizie/siena/polizia-siena-sandomenico650.jpg","contentUrl":"https://sienafree.it/images/notizie/siena/polizia-siena-sandomenico650.jpg"},{"@type":"BreadcrumbList","@id":"https://sienafree.it/70303-siena-pattuglione-della-polizia-in-centro-e-in-periferia#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://sienafree.it/"},{"@type":"ListItem","position":2,"name":"SIENA","item":"https://sienafree.it/siena"},{"@type":"ListItem","position":3,"name":"SIENA","item":"https://sienafree.it/siena/siena-siena"},{"@type":"ListItem","position":4,"name":"Siena, &#8221;pattuglione&#8221; della Polizia in centro e in periferia"}]},{"@type":"WebSite","@id":"https://sienafree.it/#website","url":"https://sienafree.it/","name":"Siena Free","description":"quotidiano online di Siena e provincia","publisher":{"@id":"https://sienafree.it/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://sienafree.it/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"it-IT"},{"@type":"Organization","@id":"https://sienafree.it/#organization","name":"Siena Free","url":"https://sienafree.it/","logo":{"@type":"ImageObject","inLanguage":"it-IT","@id":"https://sienafree.it/#/schema/logo/image/","url":"https://sienafree.it/wp-content/uploads/2022/07/sienafree-logo2017_650.jpg","contentUrl":"https://sienafree.it/wp-content/uploads/2022/07/sienafree-logo2017_650.jpg","width":650,"height":200,"caption":"Siena Free"},"image":{"@id":"https://sienafree.it/#/schema/logo/image/"},"sameAs":["https://www.instagram.com/sienafree","https://www.facebook.com/sienafree.it/","https://twitter.com/SienaFree"]},{"@type":"Person","@id":"https://sienafree.it/#/schema/person/2b249c50580f2a8fda3a118f07e8b723","name":"sienafree","image":{"@type":"ImageObject","inLanguage":"it-IT","@id":"https://sienafree.it/#/schema/person/image/","url":"https://secure.gravatar.com/avatar/2e8f1a219d30c83073f4fd6fe0111a69?s=96&d=mm&r=g","contentUrl":"https://secure.gravatar.com/avatar/2e8f1a219d30c83073f4fd6fe0111a69?s=96&d=mm&r=g","caption":"sienafree"},"sameAs":["https://www.sienafree.it"]}]}</script>
+	<!-- / Yoast SEO Premium plugin. -->
+
+
+
+<link rel="alternate" type="application/rss+xml" title="Siena Free &raquo; Feed" href="https://sienafree.it/feed" />
+
+
+
+<style id='smartmag-core-inline-css' type='text/css'></style>
+
+
+
+<script type="rocketlazyloadscript" data-rocket-type='text/javascript' src='https://sienafree.it/wp-includes/js/jquery/jquery.min.js?ver=3.6.1' id='jquery-core-js' defer></script>
+<script type="rocketlazyloadscript">(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+					(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+					m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+					})(window,document,'script','https://sienafree.it/wp-content/plugins/perfmatters/js/analytics.js','ga');ga('create', 'UA-7211926-1', 'auto');ga('set', 'allowAdFeatures', false);ga('set', 'anonymizeIp', true);ga('send', 'pageview');</script><!-- INIZIO CODICE SIENAFREE -->
+
+<!-- GOOGLE AD MANAGER -->
+<script type="rocketlazyloadscript" data-minify="1" async src="https://sienafree.it/wp-content/cache/min/1/tag/js/gpt.js?ver=1668844357"></script>
+<script type="rocketlazyloadscript">
+  window.googletag = window.googletag || {cmd: []};
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/5357751/skin', [1, 1], 'div-gpt-ad-1668699699675-0').addService(googletag.pubads());
+    googletag.defineSlot('/5357751/billboard-970x484', [970, 484], 'div-gpt-ad-1649227192831-0').addService(googletag.pubads());
+    googletag.defineSlot('/5357751/leaderboardhome_728x90', [728, 90], 'div-gpt-ad-1647327517704-0').addService(googletag.pubads());
+    googletag.defineSlot('/5357751/bannerhome_top1_300x250', [300, 250], 'div-gpt-ad-1658743689415-0').addService(googletag.pubads());
+    googletag.defineSlot('/5357751/bannerhome_top2_300x250', [300, 250], 'div-gpt-ad-1658743758079-0').addService(googletag.pubads());
+    googletag.defineSlot('/5357751/bannerhome_top3_300x250', [300, 250], 'div-gpt-ad-1658743790455-0').addService(googletag.pubads());
+    googletag.defineSlot('/5357751/bannerhome_top4_300x250', [300, 250], 'div-gpt-ad-1658743820145-0').addService(googletag.pubads());
+    googletag.defineSlot('/5357751/banner_home_300x300', [250, 250], 'div-gpt-ad-1636096985673-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+  });
+</script>
+
+<!-- CLICKIO -->
+<script type="rocketlazyloadscript" async data-rocket-type="text/javascript" src="//s.clickiocdn.com/t/227440/360_light.js"></script>
+
+<!-- AD SENSE-->
+<script type="rocketlazyloadscript" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7148704067135678"
+crossorigin="anonymous"></script>
+
+<!-- FINE CODICE SIENAFREE -->
+
+		<script type="rocketlazyloadscript">
+		var BunyadSchemeKey = 'bunyad-scheme';
+		(() => {
+			const d = document.documentElement;
+			const c = d.classList;
+			const scheme = localStorage.getItem(BunyadSchemeKey);
+			if (scheme) {
+				d.dataset.origClass = c;
+				scheme === 'dark' ? c.remove('s-light', 'site-s-light') : c.remove('s-dark', 'site-s-dark');
+				c.add('site-s-' + scheme, 's-' + scheme);
+			}
+		})();
+		</script>
+		<link rel="icon" href="https://sienafree.it/wp-content/uploads/2022/09/cropped-favicon-512x512-1-1-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://sienafree.it/wp-content/uploads/2022/09/cropped-favicon-512x512-1-1-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://sienafree.it/wp-content/uploads/2022/09/cropped-favicon-512x512-1-1-180x180.png" />
+<meta name="msapplication-TileImage" content="https://sienafree.it/wp-content/uploads/2022/09/cropped-favicon-512x512-1-1-270x270.png" />
+		<style type="text/css" id="wp-custom-css"></style>
+		<noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript>
+
+</head>
+
+<body class="post-template-default single single-post postid-70303 single-format-standard right-sidebar post-layout-modern post-cat-35 has-sb-sep layout-boxed elementor-default elementor-kit-70105">
+
+<!-- /5357751/skin -->
+<div id='div-gpt-ad-1668699699675-0'>
+	<script type="rocketlazyloadscript">
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1668699699675-0'); });
+	</script>
+</div>
+
+<!-- /clickio/701805/Horizontal sticky Mobile -->
+<script type="rocketlazyloadscript" async data-rocket-type='text/javascript' src='//s.clickiocdn.com/t/227440/360_light.js'></script>
+<script type="rocketlazyloadscript" class='__lxGc__' data-rocket-type='text/javascript'>
+((__lxGc__=window.__lxGc__||{'s':{},'b':0})['s']['_227440']=__lxGc__['s']['_227440']||{'b':{}})['b']['_701805']={'i':__lxGc__.b++};
+</script>
+
+<!-- /clickio/701706/Horizontal sticky Mobile -->
+<script type="rocketlazyloadscript" async data-rocket-type='text/javascript' src='//s.clickiocdn.com/t/227440/360_light.js'></script>
+<script type="rocketlazyloadscript" class='__lxGc__' data-rocket-type='text/javascript'>
+((__lxGc__=window.__lxGc__||{'s':{},'b':0})['s']['_227440']=__lxGc__['s']['_227440']||{'b':{}})['b']['_701706']={'i':__lxGc__.b++};
+</script>
+
+<!-- /clickio/700597/Horizontal sticky Desktop -->
+<script type="rocketlazyloadscript" async data-rocket-type='text/javascript' src='//s.clickiocdn.com/t/227440/360_light.js'></script>
+<script type="rocketlazyloadscript" class='__lxGc__' data-rocket-type='text/javascript'>
+((__lxGc__=window.__lxGc__||{'s':{},'b':0})['s']['_227440']=__lxGc__['s']['_227440']||{'b':{}})['b']['_700597']={'i':__lxGc__.b++};
+</script>
+	<div class="ts-bg-cover"></div>
+
+<div class="main-wrap">
+
+	
+<div class="off-canvas-backdrop"></div>
+<div class="mobile-menu-container off-canvas s-dark" id="off-canvas">
+
+	<div class="off-canvas-head">
+		<a href="#" class="close"><i class="tsi tsi-times"></i></a>
+
+		<div class="ts-logo">
+					</div>
+	</div>
+
+	<div class="off-canvas-content">
+
+		
+			<ul id="menu-main-menu" class="mobile-menu"><li id="menu-item-136552" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-136552"><a href="https://sienafree.it/siena/siena-siena">Siena</a></li>
+<li id="menu-item-136553" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-136553"><a href="https://sienafree.it/provincia">Provincia</a></li>
+<li id="menu-item-136555" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-136555"><a href="https://sienafree.it/toscana/toscana-toscana">Toscana</a></li>
+<li id="menu-item-137548" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-137548"><a href="https://sienafree.it/politica">Politica</a></li>
+<li id="menu-item-136556" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-136556"><a href="https://sienafree.it/economia-e-finanza/economia-e-finanza-economia-e-finanza">Economia</a></li>
+<li id="menu-item-136559" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-136559"><a href="https://sienafree.it/arte-scienza-e-cultura/arte-scienza-e-cultura-arte-scienza-e-cultura">Cultura</a></li>
+<li id="menu-item-136561" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-136561"><a href="https://sienafree.it/eventi-e-spettacoli/eventi-e-spettacoli-eventi-e-spettacoli">Spettacoli</a></li>
+<li id="menu-item-136563" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-136563"><a href="https://sienafree.it/sport">Sport</a>
+<ul class="sub-menu">
+	<li id="menu-item-136572" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-136572"><a href="https://sienafree.it/sport/calcio-ac-siena">CALCIO</a></li>
+	<li id="menu-item-136573" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-136573"><a href="https://sienafree.it/sport/basket">BASKET</a></li>
+	<li id="menu-item-136574" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-136574"><a href="https://sienafree.it/sport/volley">VOLLEY</a></li>
+	<li id="menu-item-136575" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-136575"><a href="https://sienafree.it/sport/altre-di-sport">ALTRE DI SPORT</a></li>
+</ul>
+</li>
+<li id="menu-item-136560" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-136560"><a href="https://sienafree.it/ambiente-ed-energia/ambiente-ed-energia-ambiente-ed-energia">Ambiente ed Energia</a></li>
+<li id="menu-item-136604" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-136604"><a href="https://sienafree.it/agroalimentare-enogastronomia/agroalimentare-enogastronomia-agroalimentare-enogastronomia">Agroalimentare ed Enogastronomia</a></li>
+<li id="menu-item-136557" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-136557"><a href="https://sienafree.it/lavoro-formazione/lavoro">Lavoro e Corsi di formazione</a></li>
+<li id="menu-item-136558" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-136558"><a href="https://sienafree.it/salute-e-benessere/salute-e-benessere-salute-e-benessere">Salute</a></li>
+<li id="menu-item-136663" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-136663"><a href="https://sienafree.it/scienza-ricerca">Scienza e Ricerca</a></li>
+<li id="menu-item-136564" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-136564"><a href="https://sienafree.it/universita/universita-universita">Scuola e Università</a></li>
+<li id="menu-item-137801" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-137801"><a href="https://sienafree.it/turismo-e-servizi/turismo">Turismo</a></li>
+<li id="menu-item-136565" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-136565"><a href="https://sienafree.it/palio-e-contrade">Palio e Contrade</a>
+<ul class="sub-menu">
+	<li id="menu-item-136618" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-136618"><a href="https://sienafree.it/palio-e-contrade/palio">PALIO</a></li>
+	<li id="menu-item-136673" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-136673"><a href="https://sienafree.it/2853-contrada-dellaquila-notizie-e-prossimi-appuntamenti">AQULA</a></li>
+	<li id="menu-item-136675" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-136675"><a href="https://sienafree.it/2851-contrada-del-bruco-notizie-e-prossimi-appuntamenti">BRUCO</a></li>
+	<li id="menu-item-136686" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-136686"><a href="https://sienafree.it/2888-contrada-della-chiocciola-notizie-e-prossimi-appuntamenti">CHIOCCIOLA</a></li>
+	<li id="menu-item-136674" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-136674"><a href="https://sienafree.it/2889-contrada-della-civetta-notizie-e-prossimi-appuntamenti">CIVETTA</a></li>
+	<li id="menu-item-136683" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-136683"><a href="https://sienafree.it/2890-contrada-del-drago-notizie-e-prossimi-appuntamenti">DRAGO</a></li>
+	<li id="menu-item-136681" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-136681"><a href="https://sienafree.it/2762-contrada-della-giraffa-notizie-e-prossimi-appuntamenti">GIRAFFA</a></li>
+	<li id="menu-item-136684" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-136684"><a href="https://sienafree.it/3882-contrada-dellistrice-notizie-e-prossimi-appuntamenti">ISTRICE</a></li>
+	<li id="menu-item-136677" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-136677"><a href="https://sienafree.it/2892-contrada-del-leocorno-notizie-e-prossimi-appuntamenti">LEOCORNO</a></li>
+	<li id="menu-item-136687" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-136687"><a href="https://sienafree.it/2893-contrada-della-lupa-notizie-e-prossimi-appuntamenti">LUPA</a></li>
+	<li id="menu-item-136682" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-136682"><a href="https://sienafree.it/2895-contrada-del-nicchio-notizie-e-prossimi-appuntamenti">NICCHIO</a></li>
+	<li id="menu-item-136679" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-136679"><a href="https://sienafree.it/2894-contrada-delloca-notizie-e-prossimi-appuntamenti">OCA</a></li>
+	<li id="menu-item-136685" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-136685"><a href="https://sienafree.it/2899-contrada-dellonda-notizie-e-prossimi-appuntamenti">ONDA</a></li>
+	<li id="menu-item-136688" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-136688"><a href="https://sienafree.it/2898-contrada-della-pantera-notizie-e-prossimi-appuntamenti">PANTERA</a></li>
+	<li id="menu-item-136680" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-136680"><a href="https://sienafree.it/3004-contrada-della-selva-notizie-e-prossimi-appuntamenti">SELVA</a></li>
+	<li id="menu-item-136678" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-136678"><a href="https://sienafree.it/2896-contrada-della-tartuca-notizie-e-prossimi-appuntamenti">TARTUCA</a></li>
+	<li id="menu-item-136689" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-136689"><a href="https://sienafree.it/2901-contrada-della-torre-notizie-e-prossimi-appuntamenti">TORRE</a></li>
+	<li id="menu-item-136676" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-136676"><a href="https://sienafree.it/2900-contrada-di-valdimontone-notizie-e-prossimi-appuntamenti">VALDIMONTONE</a></li>
+</ul>
+</li>
+</ul>
+		
+					<div class="off-canvas-widgets">
+				<div id="search-2" class="widget widget_search"><form role="search" method="get" class="search-form" action="https://sienafree.it/">
+				<label>
+					<span class="screen-reader-text">Ricerca per:</span>
+					<input type="search" class="search-field" placeholder="Cerca &hellip;" value="" name="s" />
+				</label>
+				<input type="submit" class="search-submit" value="Cerca" />
+			</form></div><div id="media_image-3" class="widget widget_media_image"><img data-perfmatters-preload width="285" height="88" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20285%2088'%3E%3C/svg%3E" class="image wp-image-135575  attachment-medium size-medium" alt="" decoding="async" style="max-width: 100%; height: auto;" data-lazy-srcset="https://sienafree.it/wp-content/uploads/2022/08/sienafree-logo-bianco-trasparente-325-285x88.png 285w, https://sienafree.it/wp-content/uploads/2022/08/sienafree-logo-bianco-trasparente-325.png 325w" data-lazy-sizes="(max-width: 285px) 100vw, 285px" data-lazy-src="https://sienafree.it/wp-content/uploads/2022/08/sienafree-logo-bianco-trasparente-325-285x88.png" /><noscript><img data-perfmatters-preload width="285" height="88" src="https://sienafree.it/wp-content/uploads/2022/08/sienafree-logo-bianco-trasparente-325-285x88.png" class="image wp-image-135575  attachment-medium size-medium" alt="" decoding="async" style="max-width: 100%; height: auto;" srcset="https://sienafree.it/wp-content/uploads/2022/08/sienafree-logo-bianco-trasparente-325-285x88.png 285w, https://sienafree.it/wp-content/uploads/2022/08/sienafree-logo-bianco-trasparente-325.png 325w" sizes="(max-width: 285px) 100vw, 285px" /></noscript></div>			</div>
+		
+		
+		<div class="spc-social-block spc-social spc-social-b smart-head-social">
+		
+			
+				<a href="https://www.facebook.com/sienafree.it/" class="link service s-facebook" target="_blank" rel="noopener">
+					<i class="icon tsi tsi-facebook"></i>
+					<span class="visuallyhidden">Facebook</span>
+				</a>
+									
+			
+				<a href="https://twitter.com/SienaFree" class="link service s-twitter" target="_blank" rel="noopener">
+					<i class="icon tsi tsi-twitter"></i>
+					<span class="visuallyhidden">Twitter</span>
+				</a>
+									
+			
+				<a href="https://whatsapp.sienafree.it/" class="link service s-whatsapp" target="_blank" rel="noopener">
+					<i class="icon tsi tsi-whatsapp"></i>
+					<span class="visuallyhidden">WhatsApp</span>
+				</a>
+									
+			
+				<a href="https://t.me/sienafree" class="link service s-telegram" target="_blank" rel="noopener">
+					<i class="icon tsi tsi-telegram"></i>
+					<span class="visuallyhidden">Telegram</span>
+				</a>
+									
+			
+				<a href="https://www.instagram.com/sienafree" class="link service s-instagram" target="_blank" rel="noopener">
+					<i class="icon tsi tsi-instagram"></i>
+					<span class="visuallyhidden">Instagram</span>
+				</a>
+									
+			
+		</div>
+
+		
+	</div>
+
+</div>
+<div class="smart-head smart-head-b smart-head-main" id="smart-head" data-sticky="bot" data-sticky-type="fixed" data-sticky-full>
+	
+	<div class="smart-head-row smart-head-top s-dark smart-head-row-full">
+
+		<div class="inner wrap">
+
+							
+				<div class="items items-left ">
+				
+<div class="trending-ticker" data-delay="7">
+	<span class="heading">ULTIME NOTIZIE</span>
+
+	<ul>
+				
+			<li><a href="https://sienafree.it/140908-infermiere-di-famiglia-e-di-comunita-nellasl-toscana-sud-est-un-anno-di-crescita-e-responsabilita" class="post-link">Infermiere di famiglia e di comunità nell’Asl Toscana sud est, un anno di crescita e responsabilità</a></li>
+		
+				
+			<li><a href="https://sienafree.it/140907-violentata-ragazza-due-arrestati-dalla-polizia-di-stato" class="post-link">Violentata ragazza: due arrestati dalla Polizia di Stato</a></li>
+		
+				
+			<li><a href="https://sienafree.it/140905-lasl-toscana-sud-est-pronta-per-la-giornata-nazionale-del-parkinson" class="post-link">L’Asl Toscana sud est pronta per la Giornata nazionale del Parkinson</a></li>
+		
+				
+			<li><a href="https://sienafree.it/140904-incontro-tra-azienda-regionale-per-il-diritto-allo-studio-universitario-e-associazioni-studentesche-cravos" class="post-link">Incontro tra Azienda Regionale per il Diritto allo Studio Universitario e associazioni studentesche Cravos</a></li>
+		
+				
+			<li><a href="https://sienafree.it/140897-inaugurato-il-782-anno-accademico-delluniversita-di-siena" class="post-link">Inaugurato il 782° anno accademico dell’Università di Siena</a></li>
+		
+				
+			<li><a href="https://sienafree.it/140895-trovato-con-stupefacenti-per-uso-personale-nascosti-nellauto-segnalato-alla-prefettura" class="post-link">Trovato con stupefacenti per uso personale nascosti nell&#8217;auto: segnalato alla Prefettura</a></li>
+		
+				
+			<li><a href="https://sienafree.it/140892-basket-c-gold-al-palaorlandi-il-costone-supera-valdisieve" class="post-link">Basket C Gold, al PalaOrlandi il Costone supera Valdisieve</a></li>
+		
+				
+			<li><a href="https://sienafree.it/140891-siena-manutenzione-alla-rete-idrica-in-strada-dei-cappuccini" class="post-link">Siena, manutenzione alla rete idrica in strada dei Cappuccini</a></li>
+		
+				
+			<li><a href="https://sienafree.it/140889-doppio-appuntamento-con-aperitivi-in-danza-di-motus" class="post-link">Doppio appuntamento con &#8220;Aperitivi in danza&#8221; di Motus</a></li>
+		
+				
+			<li><a href="https://sienafree.it/140887-giorgio-del-ciondolo-nominato-nella-direzione-nazionale-del-psi" class="post-link">Giorgio Del Ciondolo nominato nella Direzione nazionale del PSI</a></li>
+		
+				
+			</ul>
+</div>
+				</div>
+
+							
+				<div class="items items-center empty">
+								</div>
+
+							
+				<div class="items items-right ">
+				
+		<div class="spc-social-block spc-social spc-social-b smart-head-social">
+		
+			
+				<a href="https://www.facebook.com/sienafree.it/" class="link service s-facebook" target="_blank" rel="noopener">
+					<i class="icon tsi tsi-facebook"></i>
+					<span class="visuallyhidden">Facebook</span>
+				</a>
+									
+			
+				<a href="https://twitter.com/SienaFree" class="link service s-twitter" target="_blank" rel="noopener">
+					<i class="icon tsi tsi-twitter"></i>
+					<span class="visuallyhidden">Twitter</span>
+				</a>
+									
+			
+				<a href="https://www.instagram.com/sienafree" class="link service s-instagram" target="_blank" rel="noopener">
+					<i class="icon tsi tsi-instagram"></i>
+					<span class="visuallyhidden">Instagram</span>
+				</a>
+									
+			
+				<a href="https://whatsapp.sienafree.it/" class="link service s-whatsapp" target="_blank" rel="noopener">
+					<i class="icon tsi tsi-whatsapp"></i>
+					<span class="visuallyhidden">WhatsApp</span>
+				</a>
+									
+			
+				<a href="https://t.me/sienafree" class="link service s-telegram" target="_blank" rel="noopener">
+					<i class="icon tsi tsi-telegram"></i>
+					<span class="visuallyhidden">Telegram</span>
+				</a>
+									
+			
+		</div>
+
+		
+<span class="h-date">
+	giovedì, 24 Novembre 2022</span>				</div>
+
+						
+		</div>
+	</div>
+
+	
+	<div class="smart-head-row smart-head-mid smart-head-row-3 is-light smart-head-row-full">
+
+		<div class="inner wrap">
+
+							
+				<div class="items items-left ">
+				
+<div class="h-text h-text">
+	<a href="https://www.bancacentro.it/" target="_blank"><img data-perfmatters-preload src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20150%2090'%3E%3C/svg%3E" width="150" height="90" data-lazy-src="https://sienafree.it/wp-content/uploads/2022/08/banca-centro-manchette-2022.jpg"><noscript><img data-perfmatters-preload src="https://sienafree.it/wp-content/uploads/2022/08/banca-centro-manchette-2022.jpg" width="150" height="90"></noscript></a></div>				</div>
+
+							
+				<div class="items items-center ">
+					<a href="https://sienafree.it/" title="Siena Free" rel="home" class="logo-link ts-logo logo-is-image">
+		<span>
+			
+				
+					<img data-perfmatters-preload src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20325%20100'%3E%3C/svg%3E" class="logo-image logo-image-dark" alt="Siena Free" width="325" height="100" data-lazy-src="https://sienafree.it/wp-content/uploads/2022/08/sienafree-logo-bianco-trasparente-325.png"/><noscript><img src="https://sienafree.it/wp-content/uploads/2022/08/sienafree-logo-bianco-trasparente-325.png" class="logo-image logo-image-dark" alt="Siena Free" width="325" height="100"/></noscript><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20325%20100'%3E%3C/svg%3E" class="logo-image" alt="Siena Free" width="325" height="100" data-lazy-src="https://sienafree.it/wp-content/uploads/2022/08/sienafree-logo-trasparente-325.png"/><noscript><img src="https://sienafree.it/wp-content/uploads/2022/08/sienafree-logo-trasparente-325.png" class="logo-image" alt="Siena Free" width="325" height="100"/></noscript>
+									 
+					</span>
+	</a>				</div>
+
+							
+				<div class="items items-right ">
+				
+<div class="h-text h-text">
+	<a href="https://www.bancacentro.it/" target="_blank"><img data-perfmatters-preload src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20150%2090'%3E%3C/svg%3E" width="150" height="90" data-lazy-src="https://sienafree.it/wp-content/uploads/2022/08/banca-centro-manchette-2022.jpg"><noscript><img data-perfmatters-preload src="https://sienafree.it/wp-content/uploads/2022/08/banca-centro-manchette-2022.jpg" width="150" height="90"></noscript></a></div>				</div>
+
+						
+		</div>
+	</div>
+
+	
+	<div class="smart-head-row smart-head-bot smart-head-row-3 is-light smart-head-row-full">
+
+		<div class="inner wrap">
+
+							
+				<div class="items items-left ">
+				
+<button class="offcanvas-toggle has-icon" type="button" aria-label="Menu">
+	<span class="hamburger-icon hamburger-icon-a">
+		<span class="inner"></span>
+	</span>
+</button>
+<div class="h-text h-text2">
+	MENU</div>				</div>
+
+							
+				<div class="items items-center ">
+				
+		<div class="spc-social-block spc-social spc-social-b smart-head-social">
+		
+			
+				<a href="https://www.facebook.com/sienafree.it/" class="link service s-facebook" target="_blank" rel="noopener">
+					<i class="icon tsi tsi-facebook"></i>
+					<span class="visuallyhidden">Facebook</span>
+				</a>
+									
+			
+				<a href="https://twitter.com/SienaFree" class="link service s-twitter" target="_blank" rel="noopener">
+					<i class="icon tsi tsi-twitter"></i>
+					<span class="visuallyhidden">Twitter</span>
+				</a>
+									
+			
+				<a href="https://www.instagram.com/sienafree" class="link service s-instagram" target="_blank" rel="noopener">
+					<i class="icon tsi tsi-instagram"></i>
+					<span class="visuallyhidden">Instagram</span>
+				</a>
+									
+			
+				<a href="https://whatsapp.sienafree.it/" class="link service s-whatsapp" target="_blank" rel="noopener">
+					<i class="icon tsi tsi-whatsapp"></i>
+					<span class="visuallyhidden">WhatsApp</span>
+				</a>
+									
+			
+				<a href="https://t.me/sienafree" class="link service s-telegram" target="_blank" rel="noopener">
+					<i class="icon tsi tsi-telegram"></i>
+					<span class="visuallyhidden">Telegram</span>
+				</a>
+									
+			
+		</div>
+
+						</div>
+
+							
+				<div class="items items-right ">
+				
+<div class="scheme-switcher has-icon-only">
+	<a href="#" class="toggle is-icon toggle-dark" title="Modalità Dark">
+		<i class="icon tsi tsi-moon"></i>
+	</a>
+	<a href="#" class="toggle is-icon toggle-light" title="Modalità Light">
+		<i class="icon tsi tsi-bright"></i>
+	</a>
+</div>
+
+	<a href="#" class="search-icon has-icon-only is-icon" title="Cerca">
+		<i class="tsi tsi-search"></i>
+	</a>
+
+				</div>
+
+						
+		</div>
+	</div>
+
+	</div>
+<div class="smart-head smart-head-a smart-head-mobile" id="smart-head-mobile" data-sticky="mid" data-sticky-type="fixed" data-sticky-full>
+	
+	<div class="smart-head-row smart-head-mid smart-head-row-3 s-dark smart-head-row-full">
+
+		<div class="inner wrap">
+
+							
+				<div class="items items-left ">
+				
+<button class="offcanvas-toggle has-icon" type="button" aria-label="Menu">
+	<span class="hamburger-icon hamburger-icon-a">
+		<span class="inner"></span>
+	</span>
+</button>				</div>
+
+							
+				<div class="items items-center ">
+					<a href="https://sienafree.it/" title="Siena Free" rel="home" class="logo-link ts-logo logo-is-image">
+		<span>
+			
+				
+					<img data-perfmatters-preload src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20325%20100'%3E%3C/svg%3E" class="logo-image logo-image-dark" alt="Siena Free" width="325" height="100" data-lazy-src="https://sienafree.it/wp-content/uploads/2022/08/sienafree-logo-bianco-trasparente-325.png"/><noscript><img src="https://sienafree.it/wp-content/uploads/2022/08/sienafree-logo-bianco-trasparente-325.png" class="logo-image logo-image-dark" alt="Siena Free" width="325" height="100"/></noscript><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20325%20100'%3E%3C/svg%3E" class="logo-image" alt="Siena Free" width="325" height="100" data-lazy-src="https://sienafree.it/wp-content/uploads/2022/08/sienafree-logo-trasparente-325.png"/><noscript><img src="https://sienafree.it/wp-content/uploads/2022/08/sienafree-logo-trasparente-325.png" class="logo-image" alt="Siena Free" width="325" height="100"/></noscript>
+									 
+					</span>
+	</a>				</div>
+
+							
+				<div class="items items-right ">
+				
+<div class="scheme-switcher has-icon-only">
+	<a href="#" class="toggle is-icon toggle-dark" title="Modalità Dark">
+		<i class="icon tsi tsi-moon"></i>
+	</a>
+	<a href="#" class="toggle is-icon toggle-light" title="Modalità Light">
+		<i class="icon tsi tsi-bright"></i>
+	</a>
+</div>
+
+	<a href="#" class="search-icon has-icon-only is-icon" title="Cerca">
+		<i class="tsi tsi-search"></i>
+	</a>
+
+				</div>
+
+						
+		</div>
+	</div>
+
+	</div>
+
+<div class="main ts-contain cf right-sidebar">
+	
+		
+
+<div class="ts-row">
+	<div class="col-8 main-content">
+
+					<div class="the-post-header s-head-modern s-head-modern-a">
+	<div class="post-meta post-meta-a post-meta-left post-meta-single has-below"><div class="post-meta-items meta-above"><span class="meta-item cat-labels">
+						
+						<a href="https://sienafree.it/siena/siena-siena" class="category" rel="category">SIENA</a>
+					</span>
+					</div><h1 class="is-title post-title">Siena, &#8221;pattuglione&#8221; della Polizia in centro e in periferia</h1><div class="post-meta-items meta-below"><span class="meta-item has-next-icon date"><time class="post-date" datetime="2015-03-05T13:13:57+01:00">5 Marzo 2015</time></span><span class="meta-item read-time has-icon"><i class="tsi tsi-clock"></i>2 minuti di lettura</span></div></div>
+<div class="post-share post-share-b spc-social-colors ">
+	
+		
+		<a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fsienafree.it%2F70303-siena-pattuglione-della-polizia-in-centro-e-in-periferia" class="cf service s-facebook service-lg" 
+			title="Condividi su Facebok" target="_blank" rel="nofollow noopener">
+			<i class="tsi tsi-tsi tsi-facebook"></i>
+			<span class="label">Facebook</span>
+		</a>
+			
+		
+		<a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fsienafree.it%2F70303-siena-pattuglione-della-polizia-in-centro-e-in-periferia&#038;text=Siena%2C%20%27%27pattuglione%27%27%20della%20Polizia%20in%20centro%20e%20in%20periferia" class="cf service s-twitter service-lg" 
+			title="Condividi su Twitter" target="_blank" rel="nofollow noopener">
+			<i class="tsi tsi-tsi tsi-twitter"></i>
+			<span class="label">Twitter</span>
+		</a>
+			
+		
+		<a href="https://wa.me/?text=Siena%2C%20%27%27pattuglione%27%27%20della%20Polizia%20in%20centro%20e%20in%20periferia%20https%3A%2F%2Fsienafree.it%2F70303-siena-pattuglione-della-polizia-in-centro-e-in-periferia" class="cf service s-whatsapp service-lg" 
+			title="Condividi su WhatsApp" target="_blank" rel="nofollow noopener">
+			<i class="tsi tsi-tsi tsi-whatsapp"></i>
+			<span class="label">WhatsApp</span>
+		</a>
+			
+		
+		<a href="https://t.me/share/url?url=https%3A%2F%2Fsienafree.it%2F70303-siena-pattuglione-della-polizia-in-centro-e-in-periferia&#038;title=Siena%2C%20%27%27pattuglione%27%27%20della%20Polizia%20in%20centro%20e%20in%20periferia" class="cf service s-telegram service-lg" 
+			title="Condividi su Telegram" target="_blank" rel="nofollow noopener">
+			<i class="tsi tsi-tsi tsi-telegram"></i>
+			<span class="label">Telegram</span>
+		</a>
+			
+		
+		<a href="https://www.linkedin.com/shareArticle?mini=true&#038;url=https%3A%2F%2Fsienafree.it%2F70303-siena-pattuglione-della-polizia-in-centro-e-in-periferia" class="cf service s-linkedin service-lg" 
+			title="Condividi su LinkedIn" target="_blank" rel="nofollow noopener">
+			<i class="tsi tsi-tsi tsi-linkedin"></i>
+			<span class="label">LinkedIn</span>
+		</a>
+			
+		
+		
+</div>
+	
+	
+</div>		
+					<div class="single-featured">
+					
+	<div class="featured">
+			</div>
+
+				</div>
+		
+		<div class="the-post s-post-modern">
+
+			<article id="post-70303" class="post-70303 post type-post status-publish format-standard category-siena-siena">
+				
+<div class="post-content-wrap">
+	
+	<div class="post-content cf entry-content content-normal">
+
+		
+				
+		<p><strong><img decoding="async" style="margin-bottom: 10px; float: left;" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20650%20432'%3E%3C/svg%3E" alt="polizia-siena-sandomenico650" width="650" height="432" data-lazy-src="https://sienafree.it/images/notizie/siena/polizia-siena-sandomenico650.jpg" /><noscript><img decoding="async" style="margin-bottom: 10px; float: left;" src="https://sienafree.it/images/notizie/siena/polizia-siena-sandomenico650.jpg" alt="polizia-siena-sandomenico650" width="650" height="432" /></noscript>Un altro servizio straordinario di controllo del territorio</strong> è stato effettuato nella sera di ieri dalla Polizia di Stato, sulla base delle direttive del Questore di Siena Maurizio Piccolotti, finalizzatead intensificare le attività di prevenzione dei reati in genere e contro il patrimonio in particolare, ma anche di altre azioni illecite.</p>
+<p><strong>Nella sera di ieri con sei pattuglie</strong>, coordinate da un Ispettore dell’Ufficio Prevenzione Generale e Soccorso Pubblico della Questura, cinque delle quali appartenenti al Reparto Prevenzione Crimine Toscana, proveniente da Firenze, sono state battute a tappeto diverse zone del centro storico della città, ma anche dell’immediata periferia, nel territorio del Comune di Siena.</p>
+<p><strong>Piazza Gramsci, Piazza Matteotti,  via della Palla a Corda, Piazza del Mercato</strong>, via di Salicotto, Via Roma, per poi arrivare in Strada di Certosa e in Via Cassia Sud, fino alla località di Isola D’Arbia, sono state le aree più controllate.</p>
+<p><strong>Il bilancio è di 59 persone identificate e 15 veicoli sottoposti a verifica</strong>. In particolare, oltre a quelle in transito, sono state controllate le persone presenti nei vari nei luoghi di ritrovo, come bar, pub e altri esercizi, dove sono stati identificati gli avventori, senza rilevare particolari anomalie o irregolarità.</p>
+<p><strong>I pattuglioni della Polizia di Stato</strong>, con l’intensificazione del controllo del territorio, proseguiranno nei prossimi giorni, nelle diverse fasce orarie, non solo nel capoluogo ma anche nei territori degli altri comuni della provincia di Siena.</p>
+
+				
+		
+		
+		
+	</div>
+</div>
+	
+			</article>
+
+			
+	
+	<div class="post-share-bot">
+		<span class="info">Condividi:</span>
+		
+		<span class="share-links spc-social spc-social-colors spc-social-bg">
+
+			
+				<a href="https://www.facebook.com/sharer.php?u=https%3A%2F%2Fsienafree.it%2F70303-siena-pattuglione-della-polizia-in-centro-e-in-periferia" class="service s-facebook tsi tsi-facebook" 
+					title="Condividi su Facebok" target="_blank" rel="nofollow noopener">
+					<span class="visuallyhidden">Facebook</span>
+				</a>
+					
+			
+				<a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fsienafree.it%2F70303-siena-pattuglione-della-polizia-in-centro-e-in-periferia&#038;text=Siena%2C%20%27%27pattuglione%27%27%20della%20Polizia%20in%20centro%20e%20in%20periferia" class="service s-twitter tsi tsi-twitter" 
+					title="Condividi su Twitter" target="_blank" rel="nofollow noopener">
+					<span class="visuallyhidden">Twitter</span>
+				</a>
+					
+			
+				<a href="https://wa.me/?text=Siena%2C%20%27%27pattuglione%27%27%20della%20Polizia%20in%20centro%20e%20in%20periferia%20https%3A%2F%2Fsienafree.it%2F70303-siena-pattuglione-della-polizia-in-centro-e-in-periferia" class="service s-whatsapp tsi tsi-whatsapp" 
+					title="Condividi su WhatsApp" target="_blank" rel="nofollow noopener">
+					<span class="visuallyhidden">WhatsApp</span>
+				</a>
+					
+			
+				<a href="https://t.me/share/url?url=https%3A%2F%2Fsienafree.it%2F70303-siena-pattuglione-della-polizia-in-centro-e-in-periferia&#038;title=Siena%2C%20%27%27pattuglione%27%27%20della%20Polizia%20in%20centro%20e%20in%20periferia" class="service s-telegram tsi tsi-telegram" 
+					title="Condividi su Telegram" target="_blank" rel="nofollow noopener">
+					<span class="visuallyhidden">Telegram</span>
+				</a>
+					
+			
+				<a href="https://www.linkedin.com/shareArticle?mini=true&#038;url=https%3A%2F%2Fsienafree.it%2F70303-siena-pattuglione-della-polizia-in-centro-e-in-periferia" class="service s-linkedin tsi tsi-linkedin" 
+					title="Condividi su LinkedIn" target="_blank" rel="nofollow noopener">
+					<span class="visuallyhidden">LinkedIn</span>
+				</a>
+					
+			
+		</span>
+	</div>
+	
+
+
+	<section class="navigate-posts">
+	
+		<div class="previous">
+					<span class="main-color title"><i class="tsi tsi-chevron-left"></i> Articolo precedente</span><span class="link"><a href="https://sienafree.it/70302-maltempo-i-disagi-in-toscana-grosseto" rel="prev">Maltempo, i disagi in Toscana: Grosseto</a></span>
+				</div>
+		<div class="next">
+					<span class="main-color title">Articolo successivo <i class="tsi tsi-chevron-right"></i></span><span class="link"><a href="https://sienafree.it/70304-maltempo-tecnici-di-acquedotto-del-fiora-al-lavoro" rel="next">Maltempo, tecnici di Acquedotto del Fiora al lavoro</a></span>
+				</div>		
+	</section>
+
+
+
+	<section class="related-posts">
+							
+							
+				<div class="block-head block-head-ac block-head-e block-head-e1 is-left">
+
+					<h4 class="heading">RACCOMANDATI PER TE</h4>					
+									</div>
+				
+			
+				<section class="block-wrap block-grid mb-none" data-id="1">
+
+				
+			<div class="block-content">
+					
+	<div class="loop loop-grid loop-grid-sm grid grid-2 md:grid-2 xs:grid-1">
+
+					
+<article class="l-post  grid-sm-post grid-post">
+
+	
+			<div class="media">
+
+		
+			<a href="https://sienafree.it/140514-siena-un-altro-appuntamento-nelle-contrade-per-la-campagna-della-polizia-di-stato-contro-le-truffe-agli-anziani" class="image-link media-ratio ratio-3-2" title="Siena, un altro appuntamento nelle Contrade per la campagna della Polizia di Stato contro le truffe agli anziani"><img width="396" height="264" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20396%20264'%3E%3C/svg%3E" class="attachment-large size-large wp-post-image" alt="" decoding="async" data-lazy-sizes="(max-width: 396px) 100vw, 396px" title="Siena, un altro appuntamento nelle Contrade per la campagna della Polizia di Stato contro le truffe agli anziani" data-lazy-srcset="https://sienafree.it/wp-content/uploads/2022/11/occhio-alle-truffe-polizia.jpg 810w, https://sienafree.it/wp-content/uploads/2022/11/occhio-alle-truffe-polizia-285x190.jpg 285w, https://sienafree.it/wp-content/uploads/2022/11/occhio-alle-truffe-polizia-768x512.jpg 768w, https://sienafree.it/wp-content/uploads/2022/11/occhio-alle-truffe-polizia-390x260.jpg 390w" data-lazy-src="https://sienafree.it/wp-content/uploads/2022/11/occhio-alle-truffe-polizia.jpg" /><noscript><img width="396" height="264" src="https://sienafree.it/wp-content/uploads/2022/11/occhio-alle-truffe-polizia.jpg" class="attachment-large size-large wp-post-image" alt="" decoding="async" sizes="(max-width: 396px) 100vw, 396px" title="Siena, un altro appuntamento nelle Contrade per la campagna della Polizia di Stato contro le truffe agli anziani" srcset="https://sienafree.it/wp-content/uploads/2022/11/occhio-alle-truffe-polizia.jpg 810w, https://sienafree.it/wp-content/uploads/2022/11/occhio-alle-truffe-polizia-285x190.jpg 285w, https://sienafree.it/wp-content/uploads/2022/11/occhio-alle-truffe-polizia-768x512.jpg 768w, https://sienafree.it/wp-content/uploads/2022/11/occhio-alle-truffe-polizia-390x260.jpg 390w" /></noscript></a>			
+			
+			
+			
+		
+		</div>
+	
+
+	
+		<div class="content">
+
+			<div class="post-meta post-meta-a has-below"><div class="post-meta-items meta-above"><span class="meta-item post-cat">
+						
+						<a href="https://sienafree.it/siena/siena-siena" class="category" rel="category">SIENA</a>
+					</span>
+					</div><h2 class="is-title post-title"><a href="https://sienafree.it/140514-siena-un-altro-appuntamento-nelle-contrade-per-la-campagna-della-polizia-di-stato-contro-le-truffe-agli-anziani">Siena, un altro appuntamento nelle Contrade per la campagna della Polizia di Stato contro le truffe agli anziani</a></h2><div class="post-meta-items meta-below"><span class="meta-item date"><span class="date-link"><time class="post-date" datetime="2022-11-17T18:20:52+01:00">17 Novembre 2022</time></span></span></div></div>			
+			
+			
+		</div>
+
+	
+</article>					
+<article class="l-post  grid-sm-post grid-post">
+
+	
+			<div class="media">
+
+		
+			<a href="https://sienafree.it/140398-sanzionata-e-sospesa-dalla-polizia-municipale-unattivita-nel-centro-di-siena-priva-di-licenza" class="image-link media-ratio ratio-3-2" title="Sanzionata e sospesa dalla Polizia Municipale un’attività nel centro di Siena priva di licenza"><img width="396" height="264" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20396%20264'%3E%3C/svg%3E" class="attachment-large size-large wp-post-image" alt="" decoding="async" data-lazy-sizes="(max-width: 396px) 100vw, 396px" title="Sanzionata e sospesa dalla Polizia Municipale un’attività nel centro di Siena priva di licenza" data-lazy-srcset="https://sienafree.it/wp-content/uploads/2022/11/polizia-municipale-comando-siena.jpg 810w, https://sienafree.it/wp-content/uploads/2022/11/polizia-municipale-comando-siena-285x190.jpg 285w, https://sienafree.it/wp-content/uploads/2022/11/polizia-municipale-comando-siena-768x512.jpg 768w, https://sienafree.it/wp-content/uploads/2022/11/polizia-municipale-comando-siena-390x260.jpg 390w" data-lazy-src="https://sienafree.it/wp-content/uploads/2022/11/polizia-municipale-comando-siena.jpg" /><noscript><img width="396" height="264" src="https://sienafree.it/wp-content/uploads/2022/11/polizia-municipale-comando-siena.jpg" class="attachment-large size-large wp-post-image" alt="" decoding="async" sizes="(max-width: 396px) 100vw, 396px" title="Sanzionata e sospesa dalla Polizia Municipale un’attività nel centro di Siena priva di licenza" loading="lazy" srcset="https://sienafree.it/wp-content/uploads/2022/11/polizia-municipale-comando-siena.jpg 810w, https://sienafree.it/wp-content/uploads/2022/11/polizia-municipale-comando-siena-285x190.jpg 285w, https://sienafree.it/wp-content/uploads/2022/11/polizia-municipale-comando-siena-768x512.jpg 768w, https://sienafree.it/wp-content/uploads/2022/11/polizia-municipale-comando-siena-390x260.jpg 390w" /></noscript></a>			
+			
+			
+			
+		
+		</div>
+	
+
+	
+		<div class="content">
+
+			<div class="post-meta post-meta-a has-below"><div class="post-meta-items meta-above"><span class="meta-item post-cat">
+						
+						<a href="https://sienafree.it/siena/siena-siena" class="category" rel="category">SIENA</a>
+					</span>
+					</div><h2 class="is-title post-title"><a href="https://sienafree.it/140398-sanzionata-e-sospesa-dalla-polizia-municipale-unattivita-nel-centro-di-siena-priva-di-licenza">Sanzionata e sospesa dalla Polizia Municipale un’attività nel centro di Siena priva di licenza</a></h2><div class="post-meta-items meta-below"><span class="meta-item date"><span class="date-link"><time class="post-date" datetime="2022-11-15T08:46:16+01:00">15 Novembre 2022</time></span></span></div></div>			
+			
+			
+		</div>
+
+	
+</article>					
+<article class="l-post  grid-sm-post grid-post">
+
+	
+			<div class="media">
+
+		
+			<a href="https://sienafree.it/140373-il-calendario-della-polizia-di-stato-2023-12-mesi-di-immagini" class="image-link media-ratio ratio-3-2" title="Il calendario della Polizia di Stato 2023: 12 mesi di immagini"><img width="396" height="264" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20396%20264'%3E%3C/svg%3E" class="attachment-large size-large wp-post-image" alt="" decoding="async" data-lazy-sizes="(max-width: 396px) 100vw, 396px" title="Il calendario della Polizia di Stato 2023: 12 mesi di immagini" data-lazy-srcset="https://sienafree.it/wp-content/uploads/2022/11/calendario-polizia-di-stato-2023_1.jpg 810w, https://sienafree.it/wp-content/uploads/2022/11/calendario-polizia-di-stato-2023_1-285x190.jpg 285w, https://sienafree.it/wp-content/uploads/2022/11/calendario-polizia-di-stato-2023_1-768x512.jpg 768w, https://sienafree.it/wp-content/uploads/2022/11/calendario-polizia-di-stato-2023_1-390x260.jpg 390w" data-lazy-src="https://sienafree.it/wp-content/uploads/2022/11/calendario-polizia-di-stato-2023_1.jpg" /><noscript><img width="396" height="264" src="https://sienafree.it/wp-content/uploads/2022/11/calendario-polizia-di-stato-2023_1.jpg" class="attachment-large size-large wp-post-image" alt="" decoding="async" sizes="(max-width: 396px) 100vw, 396px" title="Il calendario della Polizia di Stato 2023: 12 mesi di immagini" loading="lazy" srcset="https://sienafree.it/wp-content/uploads/2022/11/calendario-polizia-di-stato-2023_1.jpg 810w, https://sienafree.it/wp-content/uploads/2022/11/calendario-polizia-di-stato-2023_1-285x190.jpg 285w, https://sienafree.it/wp-content/uploads/2022/11/calendario-polizia-di-stato-2023_1-768x512.jpg 768w, https://sienafree.it/wp-content/uploads/2022/11/calendario-polizia-di-stato-2023_1-390x260.jpg 390w" /></noscript></a>			
+			
+			
+			
+		
+		</div>
+	
+
+	
+		<div class="content">
+
+			<div class="post-meta post-meta-a has-below"><div class="post-meta-items meta-above"><span class="meta-item post-cat">
+						
+						<a href="https://sienafree.it/siena/siena-siena" class="category" rel="category">SIENA</a>
+					</span>
+					</div><h2 class="is-title post-title"><a href="https://sienafree.it/140373-il-calendario-della-polizia-di-stato-2023-12-mesi-di-immagini">Il calendario della Polizia di Stato 2023: 12 mesi di immagini</a></h2><div class="post-meta-items meta-below"><span class="meta-item date"><span class="date-link"><time class="post-date" datetime="2022-11-14T13:17:20+01:00">14 Novembre 2022</time></span></span></div></div>			
+			
+			
+		</div>
+
+	
+</article>					
+<article class="l-post  grid-sm-post grid-post">
+
+	
+			<div class="media">
+
+		
+			<a href="https://sienafree.it/140294-siena-un-denunciato-per-spaccio-di-stupefacenti-nei-controlli-notturni-della-polizia" class="image-link media-ratio ratio-3-2" title="Siena, un denunciato per spaccio di stupefacenti nei controlli notturni della Polizia"><img width="396" height="264" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20396%20264'%3E%3C/svg%3E" class="attachment-large size-large wp-post-image" alt="" decoding="async" data-lazy-sizes="(max-width: 396px) 100vw, 396px" title="Siena, un denunciato per spaccio di stupefacenti nei controlli notturni della Polizia" data-lazy-srcset="https://sienafree.it/wp-content/uploads/2022/11/polizia-sequestro-stupefacenti-12novembre2022.jpg 810w, https://sienafree.it/wp-content/uploads/2022/11/polizia-sequestro-stupefacenti-12novembre2022-285x190.jpg 285w, https://sienafree.it/wp-content/uploads/2022/11/polizia-sequestro-stupefacenti-12novembre2022-768x512.jpg 768w, https://sienafree.it/wp-content/uploads/2022/11/polizia-sequestro-stupefacenti-12novembre2022-390x260.jpg 390w" data-lazy-src="https://sienafree.it/wp-content/uploads/2022/11/polizia-sequestro-stupefacenti-12novembre2022.jpg" /><noscript><img width="396" height="264" src="https://sienafree.it/wp-content/uploads/2022/11/polizia-sequestro-stupefacenti-12novembre2022.jpg" class="attachment-large size-large wp-post-image" alt="" decoding="async" sizes="(max-width: 396px) 100vw, 396px" title="Siena, un denunciato per spaccio di stupefacenti nei controlli notturni della Polizia" loading="lazy" srcset="https://sienafree.it/wp-content/uploads/2022/11/polizia-sequestro-stupefacenti-12novembre2022.jpg 810w, https://sienafree.it/wp-content/uploads/2022/11/polizia-sequestro-stupefacenti-12novembre2022-285x190.jpg 285w, https://sienafree.it/wp-content/uploads/2022/11/polizia-sequestro-stupefacenti-12novembre2022-768x512.jpg 768w, https://sienafree.it/wp-content/uploads/2022/11/polizia-sequestro-stupefacenti-12novembre2022-390x260.jpg 390w" /></noscript></a>			
+			
+			
+			
+		
+		</div>
+	
+
+	
+		<div class="content">
+
+			<div class="post-meta post-meta-a has-below"><div class="post-meta-items meta-above"><span class="meta-item post-cat">
+						
+						<a href="https://sienafree.it/siena/siena-siena" class="category" rel="category">SIENA</a>
+					</span>
+					</div><h2 class="is-title post-title"><a href="https://sienafree.it/140294-siena-un-denunciato-per-spaccio-di-stupefacenti-nei-controlli-notturni-della-polizia">Siena, un denunciato per spaccio di stupefacenti nei controlli notturni della Polizia</a></h2><div class="post-meta-items meta-below"><span class="meta-item date"><span class="date-link"><time class="post-date" datetime="2022-11-12T17:11:09+01:00">12 Novembre 2022</time></span></span></div></div>			
+			
+			
+		</div>
+
+	
+</article>		
+	</div>
+
+		
+			</div>
+
+		</section>
+		
+	</section>			
+			<div class="comments">
+							</div>
+
+		</div>
+	</div>
+	
+			
+	
+	<aside class="col-4 main-sidebar has-sep" data-sticky="1">
+	
+			<div class="inner theiaStickySidebar">
+		
+			<div id="custom_html-13" class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><hr></div></div>
+		<div id="smartmag-block-codes-1" class="widget ts-block-widget smartmag-widget-codes">		
+		<div class="block">
+			<div class="a-wrap"> <!-- AD MANAGER -->
+<!-- /5357751/bannerhome_top1_300x250 -->
+<div id='div-gpt-ad-1658743689415-0' style='min-width: 300px; min-height: 250px;'>
+  <script type="rocketlazyloadscript">
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1658743689415-0'); });
+  </script>
+</div></div>		</div>
+
+		</div>
+		<div id="smartmag-block-codes-4" class="widget ts-block-widget smartmag-widget-codes">		
+		<div class="block">
+			<div class="a-wrap"> <!-- AD MANAGER -->
+<!-- /5357751/bannerhome_top2_300x250 -->
+<div id='div-gpt-ad-1658743758079-0' style='min-width: 300px; min-height: 250px;'>
+  <script type="rocketlazyloadscript">
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1658743758079-0'); });
+  </script>
+</div></div>		</div>
+
+		</div>
+		<div id="smartmag-block-codes-7" class="widget ts-block-widget smartmag-widget-codes">		
+		<div class="block">
+			<div class="a-wrap"> <!-- ########### Ad Script for sienafree.it_1scroll_300x250 ################# -->
+<ins data-revive-zoneid="2016" data-revive-id="e590432163035a6e5fc26dac29dd7e0b"></ins>
+<script type="rocketlazyloadscript" async src="//adv.presscommtech.com/www/delivery/asyncjs.php"></script>
+<!-- ####### Fine Ad Script for sienafree.it_1scroll_300x250 ################ --></div>		</div>
+
+		</div>
+		<div id="smartmag-block-posts-small-2" class="widget ts-block-widget smartmag-widget-posts-small">		
+		<div class="block">
+					<section class="block-wrap block-posts-small block-sc mb-none" data-id="2" data-block="{&quot;id&quot;:&quot;posts-small&quot;,&quot;props&quot;:{&quot;cat_labels&quot;:false,&quot;cat_labels_pos&quot;:&quot;bot-left&quot;,&quot;reviews&quot;:&quot;none&quot;,&quot;post_formats_pos&quot;:&quot;center&quot;,&quot;load_more_style&quot;:&quot;b&quot;,&quot;meta_cat_style&quot;:&quot;text&quot;,&quot;media_ratio&quot;:&quot;1-1&quot;,&quot;media_ratio_custom&quot;:&quot;&quot;,&quot;media_width&quot;:&quot;&quot;,&quot;excerpts&quot;:false,&quot;excerpt_length&quot;:&quot;15&quot;,&quot;read_more&quot;:&quot;&quot;,&quot;heading&quot;:&quot;ULTIME NOTIZIE&quot;,&quot;posts&quot;:&quot;6&quot;,&quot;pagination&quot;:&quot;1&quot;,&quot;pagination_type&quot;:&quot;load-more&quot;,&quot;space_below&quot;:&quot;none&quot;,&quot;media_pos&quot;:&quot;right&quot;,&quot;meta_items_default&quot;:false,&quot;meta_above&quot;:[&quot;cat&quot;],&quot;meta_below&quot;:[&quot;date&quot;],&quot;style&quot;:&quot;a&quot;,&quot;container_width&quot;:&quot;33&quot;,&quot;query_type&quot;:&quot;custom&quot;,&quot;sort_order&quot;:&quot;desc&quot;,&quot;post_type&quot;:&quot;post&quot;,&quot;is_sc_call&quot;:true}}">
+
+			<div class="widget-title block-head block-head-ac block-head block-head-ac block-head-e block-head-e1 has-style"><h5 class="heading">ULTIME NOTIZIE</h5></div>	
+			<div class="block-content">
+				
+	<div class="loop loop-small loop-small-a loop-sep loop-small-sep grid grid-1 md:grid-1 sm:grid-1 xs:grid-1">
+
+					
+<article class="l-post  small-a-post m-pos-right small-post">
+
+	
+			<div class="media">
+
+		
+			<a href="https://sienafree.it/140908-infermiere-di-famiglia-e-di-comunita-nellasl-toscana-sud-est-un-anno-di-crescita-e-responsabilita" class="image-link media-ratio ratio-1-1" title="Infermiere di famiglia e di comunità nell’Asl Toscana sud est, un anno di crescita e responsabilità"><img width="116" height="116" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20116%20116'%3E%3C/svg%3E" class="attachment-medium size-medium wp-post-image" alt="" decoding="async" data-lazy-sizes="(max-width: 116px) 100vw, 116px" title="Infermiere di famiglia e di comunità nell’Asl Toscana sud est, un anno di crescita e responsabilità" data-lazy-srcset="https://sienafree.it/wp-content/uploads/2022/09/infermiera650_2-285x190.jpg 285w, https://sienafree.it/wp-content/uploads/2022/09/infermiera650_2-390x260.jpg 390w, https://sienafree.it/wp-content/uploads/2022/09/infermiera650_2.jpg 650w" data-lazy-src="https://sienafree.it/wp-content/uploads/2022/09/infermiera650_2-285x190.jpg" /><noscript><img width="116" height="116" src="https://sienafree.it/wp-content/uploads/2022/09/infermiera650_2-285x190.jpg" class="attachment-medium size-medium wp-post-image" alt="" decoding="async" sizes="(max-width: 116px) 100vw, 116px" title="Infermiere di famiglia e di comunità nell’Asl Toscana sud est, un anno di crescita e responsabilità" loading="lazy" srcset="https://sienafree.it/wp-content/uploads/2022/09/infermiera650_2-285x190.jpg 285w, https://sienafree.it/wp-content/uploads/2022/09/infermiera650_2-390x260.jpg 390w, https://sienafree.it/wp-content/uploads/2022/09/infermiera650_2.jpg 650w" /></noscript></a>			
+			
+			
+			
+		
+		</div>
+	
+
+	
+		<div class="content">
+
+			<div class="post-meta post-meta-a post-meta-left has-below"><div class="post-meta-items meta-above"><span class="meta-item post-cat">
+						
+						<a href="https://sienafree.it/salute-e-benessere/salute-e-benessere-salute-e-benessere" class="category" rel="category">SALUTE e BENESSERE</a>
+					</span>
+					</div><h4 class="is-title post-title"><a href="https://sienafree.it/140908-infermiere-di-famiglia-e-di-comunita-nellasl-toscana-sud-est-un-anno-di-crescita-e-responsabilita">Infermiere di famiglia e di comunità nell’Asl Toscana sud est, un anno di crescita e responsabilità</a></h4><div class="post-meta-items meta-below"><span class="meta-item date"><span class="date-link"><time class="post-date" datetime="2022-11-24T18:16:09+01:00">24 Novembre 2022</time></span></span></div></div>			
+			
+			
+		</div>
+
+	
+</article>	
+					
+<article class="l-post  small-a-post m-pos-right small-post">
+
+	
+			<div class="media">
+
+		
+			<a href="https://sienafree.it/140907-violentata-ragazza-due-arrestati-dalla-polizia-di-stato" class="image-link media-ratio ratio-1-1" title="Violentata ragazza: due arrestati dalla Polizia di Stato"><img width="116" height="116" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20116%20116'%3E%3C/svg%3E" class="attachment-medium size-medium wp-post-image" alt="" decoding="async" data-lazy-sizes="(max-width: 116px) 100vw, 116px" title="Violentata ragazza: due arrestati dalla Polizia di Stato" data-lazy-srcset="https://sienafree.it/wp-content/uploads/2022/11/polizia-commissariato-poggibonsi-285x190.jpg 285w, https://sienafree.it/wp-content/uploads/2022/11/polizia-commissariato-poggibonsi-768x512.jpg 768w, https://sienafree.it/wp-content/uploads/2022/11/polizia-commissariato-poggibonsi-390x260.jpg 390w, https://sienafree.it/wp-content/uploads/2022/11/polizia-commissariato-poggibonsi.jpg 810w" data-lazy-src="https://sienafree.it/wp-content/uploads/2022/11/polizia-commissariato-poggibonsi-285x190.jpg" /><noscript><img width="116" height="116" src="https://sienafree.it/wp-content/uploads/2022/11/polizia-commissariato-poggibonsi-285x190.jpg" class="attachment-medium size-medium wp-post-image" alt="" decoding="async" sizes="(max-width: 116px) 100vw, 116px" title="Violentata ragazza: due arrestati dalla Polizia di Stato" loading="lazy" srcset="https://sienafree.it/wp-content/uploads/2022/11/polizia-commissariato-poggibonsi-285x190.jpg 285w, https://sienafree.it/wp-content/uploads/2022/11/polizia-commissariato-poggibonsi-768x512.jpg 768w, https://sienafree.it/wp-content/uploads/2022/11/polizia-commissariato-poggibonsi-390x260.jpg 390w, https://sienafree.it/wp-content/uploads/2022/11/polizia-commissariato-poggibonsi.jpg 810w" /></noscript></a>			
+			
+			
+			
+		
+		</div>
+	
+
+	
+		<div class="content">
+
+			<div class="post-meta post-meta-a post-meta-left has-below"><div class="post-meta-items meta-above"><span class="meta-item post-cat">
+						
+						<a href="https://sienafree.it/provincia/poggibonsi" class="category" rel="category">POGGIBONSI</a>
+					</span>
+					</div><h4 class="is-title post-title"><a href="https://sienafree.it/140907-violentata-ragazza-due-arrestati-dalla-polizia-di-stato">Violentata ragazza: due arrestati dalla Polizia di Stato</a></h4><div class="post-meta-items meta-below"><span class="meta-item date"><span class="date-link"><time class="post-date" datetime="2022-11-24T18:07:34+01:00">24 Novembre 2022</time></span></span></div></div>			
+			
+			
+		</div>
+
+	
+</article>	
+					
+<article class="l-post  small-a-post m-pos-right small-post">
+
+	
+			<div class="media">
+
+		
+			<a href="https://sienafree.it/140905-lasl-toscana-sud-est-pronta-per-la-giornata-nazionale-del-parkinson" class="image-link media-ratio ratio-1-1" title="L’Asl Toscana sud est pronta per la Giornata nazionale del Parkinson"><img width="116" height="116" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20116%20116'%3E%3C/svg%3E" class="attachment-medium size-medium wp-post-image" alt="" decoding="async" data-lazy-sizes="(max-width: 116px) 100vw, 116px" title="L’Asl Toscana sud est pronta per la Giornata nazionale del Parkinson" data-lazy-srcset="https://sienafree.it/wp-content/uploads/2022/11/giornata-nazionale-parkinson-2022-285x190.png 285w, https://sienafree.it/wp-content/uploads/2022/11/giornata-nazionale-parkinson-2022-768x512.png 768w, https://sienafree.it/wp-content/uploads/2022/11/giornata-nazionale-parkinson-2022-390x260.png 390w, https://sienafree.it/wp-content/uploads/2022/11/giornata-nazionale-parkinson-2022.png 810w" data-lazy-src="https://sienafree.it/wp-content/uploads/2022/11/giornata-nazionale-parkinson-2022-285x190.png" /><noscript><img width="116" height="116" src="https://sienafree.it/wp-content/uploads/2022/11/giornata-nazionale-parkinson-2022-285x190.png" class="attachment-medium size-medium wp-post-image" alt="" decoding="async" sizes="(max-width: 116px) 100vw, 116px" title="L’Asl Toscana sud est pronta per la Giornata nazionale del Parkinson" loading="lazy" srcset="https://sienafree.it/wp-content/uploads/2022/11/giornata-nazionale-parkinson-2022-285x190.png 285w, https://sienafree.it/wp-content/uploads/2022/11/giornata-nazionale-parkinson-2022-768x512.png 768w, https://sienafree.it/wp-content/uploads/2022/11/giornata-nazionale-parkinson-2022-390x260.png 390w, https://sienafree.it/wp-content/uploads/2022/11/giornata-nazionale-parkinson-2022.png 810w" /></noscript></a>			
+			
+			
+			
+		
+		</div>
+	
+
+	
+		<div class="content">
+
+			<div class="post-meta post-meta-a post-meta-left has-below"><div class="post-meta-items meta-above"><span class="meta-item post-cat">
+						
+						<a href="https://sienafree.it/salute-e-benessere/salute-e-benessere-salute-e-benessere" class="category" rel="category">SALUTE e BENESSERE</a>
+					</span>
+					</div><h4 class="is-title post-title"><a href="https://sienafree.it/140905-lasl-toscana-sud-est-pronta-per-la-giornata-nazionale-del-parkinson">L’Asl Toscana sud est pronta per la Giornata nazionale del Parkinson</a></h4><div class="post-meta-items meta-below"><span class="meta-item date"><span class="date-link"><time class="post-date" datetime="2022-11-24T17:58:03+01:00">24 Novembre 2022</time></span></span></div></div>			
+			
+			
+		</div>
+
+	
+</article>	
+					
+<article class="l-post  small-a-post m-pos-right small-post">
+
+	
+			<div class="media">
+
+		
+			<a href="https://sienafree.it/140904-incontro-tra-azienda-regionale-per-il-diritto-allo-studio-universitario-e-associazioni-studentesche-cravos" class="image-link media-ratio ratio-1-1" title="Incontro tra Azienda Regionale per il Diritto allo Studio Universitario e associazioni studentesche Cravos"><img width="116" height="116" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20116%20116'%3E%3C/svg%3E" class="attachment-medium size-medium wp-post-image" alt="" decoding="async" data-lazy-sizes="(max-width: 116px) 100vw, 116px" title="Incontro tra Azienda Regionale per il Diritto allo Studio Universitario e associazioni studentesche Cravos" data-lazy-srcset="https://sienafree.it/wp-content/uploads/2022/10/universita-di-siena-mensa-bandini-285x190.jpg 285w, https://sienafree.it/wp-content/uploads/2022/10/universita-di-siena-mensa-bandini-768x512.jpg 768w, https://sienafree.it/wp-content/uploads/2022/10/universita-di-siena-mensa-bandini-390x260.jpg 390w, https://sienafree.it/wp-content/uploads/2022/10/universita-di-siena-mensa-bandini.jpg 810w" data-lazy-src="https://sienafree.it/wp-content/uploads/2022/10/universita-di-siena-mensa-bandini-285x190.jpg" /><noscript><img width="116" height="116" src="https://sienafree.it/wp-content/uploads/2022/10/universita-di-siena-mensa-bandini-285x190.jpg" class="attachment-medium size-medium wp-post-image" alt="" decoding="async" sizes="(max-width: 116px) 100vw, 116px" title="Incontro tra Azienda Regionale per il Diritto allo Studio Universitario e associazioni studentesche Cravos" loading="lazy" srcset="https://sienafree.it/wp-content/uploads/2022/10/universita-di-siena-mensa-bandini-285x190.jpg 285w, https://sienafree.it/wp-content/uploads/2022/10/universita-di-siena-mensa-bandini-768x512.jpg 768w, https://sienafree.it/wp-content/uploads/2022/10/universita-di-siena-mensa-bandini-390x260.jpg 390w, https://sienafree.it/wp-content/uploads/2022/10/universita-di-siena-mensa-bandini.jpg 810w" /></noscript></a>			
+			
+			
+			
+		
+		</div>
+	
+
+	
+		<div class="content">
+
+			<div class="post-meta post-meta-a post-meta-left has-below"><div class="post-meta-items meta-above"><span class="meta-item post-cat">
+						
+						<a href="https://sienafree.it/universita/universita-universita" class="category" rel="category">SCUOLA e UNIVERSITA&#039;</a>
+					</span>
+					</div><h4 class="is-title post-title"><a href="https://sienafree.it/140904-incontro-tra-azienda-regionale-per-il-diritto-allo-studio-universitario-e-associazioni-studentesche-cravos">Incontro tra Azienda Regionale per il Diritto allo Studio Universitario e associazioni studentesche Cravos</a></h4><div class="post-meta-items meta-below"><span class="meta-item date"><span class="date-link"><time class="post-date" datetime="2022-11-24T17:12:37+01:00">24 Novembre 2022</time></span></span></div></div>			
+			
+			
+		</div>
+
+	
+</article>	
+					
+<article class="l-post  small-a-post m-pos-right small-post">
+
+	
+			<div class="media">
+
+		
+			<a href="https://sienafree.it/140897-inaugurato-il-782-anno-accademico-delluniversita-di-siena" class="image-link media-ratio ratio-1-1" title="Inaugurato il 782° anno accademico dell’Università di Siena"><img width="116" height="116" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20116%20116'%3E%3C/svg%3E" class="attachment-medium size-medium wp-post-image" alt="" decoding="async" data-lazy-sizes="(max-width: 116px) 100vw, 116px" title="Inaugurato il 782° anno accademico dell’Università di Siena" data-lazy-srcset="https://sienafree.it/wp-content/uploads/2022/11/unisi-inaugurazione-anno-accademico-2022-285x190.jpg 285w, https://sienafree.it/wp-content/uploads/2022/11/unisi-inaugurazione-anno-accademico-2022-768x512.jpg 768w, https://sienafree.it/wp-content/uploads/2022/11/unisi-inaugurazione-anno-accademico-2022-390x260.jpg 390w, https://sienafree.it/wp-content/uploads/2022/11/unisi-inaugurazione-anno-accademico-2022-810x540.jpg 810w, https://sienafree.it/wp-content/uploads/2022/11/unisi-inaugurazione-anno-accademico-2022.jpg 1230w" data-lazy-src="https://sienafree.it/wp-content/uploads/2022/11/unisi-inaugurazione-anno-accademico-2022-285x190.jpg" /><noscript><img width="116" height="116" src="https://sienafree.it/wp-content/uploads/2022/11/unisi-inaugurazione-anno-accademico-2022-285x190.jpg" class="attachment-medium size-medium wp-post-image" alt="" decoding="async" sizes="(max-width: 116px) 100vw, 116px" title="Inaugurato il 782° anno accademico dell’Università di Siena" loading="lazy" srcset="https://sienafree.it/wp-content/uploads/2022/11/unisi-inaugurazione-anno-accademico-2022-285x190.jpg 285w, https://sienafree.it/wp-content/uploads/2022/11/unisi-inaugurazione-anno-accademico-2022-768x512.jpg 768w, https://sienafree.it/wp-content/uploads/2022/11/unisi-inaugurazione-anno-accademico-2022-390x260.jpg 390w, https://sienafree.it/wp-content/uploads/2022/11/unisi-inaugurazione-anno-accademico-2022-810x540.jpg 810w, https://sienafree.it/wp-content/uploads/2022/11/unisi-inaugurazione-anno-accademico-2022.jpg 1230w" /></noscript></a>			
+			
+			
+			
+		
+		</div>
+	
+
+	
+		<div class="content">
+
+			<div class="post-meta post-meta-a post-meta-left has-below"><div class="post-meta-items meta-above"><span class="meta-item post-cat">
+						
+						<a href="https://sienafree.it/universita/universita-universita" class="category" rel="category">SCUOLA e UNIVERSITA&#039;</a>
+					</span>
+					</div><h4 class="is-title post-title"><a href="https://sienafree.it/140897-inaugurato-il-782-anno-accademico-delluniversita-di-siena">Inaugurato il 782° anno accademico dell’Università di Siena</a></h4><div class="post-meta-items meta-below"><span class="meta-item date"><span class="date-link"><time class="post-date" datetime="2022-11-24T16:57:25+01:00">24 Novembre 2022</time></span></span></div></div>			
+			
+			
+		</div>
+
+	
+</article>	
+					
+<article class="l-post  small-a-post m-pos-right small-post">
+
+	
+			<div class="media">
+
+		
+			<a href="https://sienafree.it/140895-trovato-con-stupefacenti-per-uso-personale-nascosti-nellauto-segnalato-alla-prefettura" class="image-link media-ratio ratio-1-1" title="Trovato con stupefacenti per uso personale nascosti nell&#8217;auto: segnalato alla Prefettura"><img width="116" height="116" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20116%20116'%3E%3C/svg%3E" class="attachment-medium size-medium wp-post-image" alt="" decoding="async" data-lazy-sizes="(max-width: 116px) 100vw, 116px" title="Trovato con stupefacenti per uso personale nascosti nell&#8217;auto: segnalato alla Prefettura" data-lazy-srcset="https://sienafree.it/wp-content/uploads/2022/11/carabinieri-posto-di-controllo-sinalunga-285x190.jpg 285w, https://sienafree.it/wp-content/uploads/2022/11/carabinieri-posto-di-controllo-sinalunga-768x512.jpg 768w, https://sienafree.it/wp-content/uploads/2022/11/carabinieri-posto-di-controllo-sinalunga-390x260.jpg 390w, https://sienafree.it/wp-content/uploads/2022/11/carabinieri-posto-di-controllo-sinalunga.jpg 810w" data-lazy-src="https://sienafree.it/wp-content/uploads/2022/11/carabinieri-posto-di-controllo-sinalunga-285x190.jpg" /><noscript><img width="116" height="116" src="https://sienafree.it/wp-content/uploads/2022/11/carabinieri-posto-di-controllo-sinalunga-285x190.jpg" class="attachment-medium size-medium wp-post-image" alt="" decoding="async" sizes="(max-width: 116px) 100vw, 116px" title="Trovato con stupefacenti per uso personale nascosti nell&#8217;auto: segnalato alla Prefettura" loading="lazy" srcset="https://sienafree.it/wp-content/uploads/2022/11/carabinieri-posto-di-controllo-sinalunga-285x190.jpg 285w, https://sienafree.it/wp-content/uploads/2022/11/carabinieri-posto-di-controllo-sinalunga-768x512.jpg 768w, https://sienafree.it/wp-content/uploads/2022/11/carabinieri-posto-di-controllo-sinalunga-390x260.jpg 390w, https://sienafree.it/wp-content/uploads/2022/11/carabinieri-posto-di-controllo-sinalunga.jpg 810w" /></noscript></a>			
+			
+			
+			
+		
+		</div>
+	
+
+	
+		<div class="content">
+
+			<div class="post-meta post-meta-a post-meta-left has-below"><div class="post-meta-items meta-above"><span class="meta-item post-cat">
+						
+						<a href="https://sienafree.it/provincia/sinalunga" class="category" rel="category">SINALUNGA</a>
+					</span>
+					</div><h4 class="is-title post-title"><a href="https://sienafree.it/140895-trovato-con-stupefacenti-per-uso-personale-nascosti-nellauto-segnalato-alla-prefettura">Trovato con stupefacenti per uso personale nascosti nell&#8217;auto: segnalato alla Prefettura</a></h4><div class="post-meta-items meta-below"><span class="meta-item date"><span class="date-link"><time class="post-date" datetime="2022-11-24T13:59:42+01:00">24 Novembre 2022</time></span></span></div></div>			
+			
+			
+		</div>
+
+	
+</article>	
+		
+	</div>
+
+	
+
+	
+		
+	<div class="main-pagination pagination-more" data-type="load-more">
+		<a href="https://sienafree.it/70303-siena-pattuglione-della-polizia-in-centro-e-in-periferia/page/2" class="ts-button load-button load-button-b ts-button-b" data-page="1">
+				Carica altri articoli 
+				<i class="icon tsi tsi-repeat"></i>
+		</a>
+	</div>	
+	
+	
+
+				</div>
+
+		</section>
+		<style></style>		</div>
+
+		</div><div id="custom_html-14" class="widget_text widget widget_custom_html"><div class="textwidget custom-html-widget"><hr></div></div>
+		<div id="smartmag-block-codes-3" class="widget ts-block-widget smartmag-widget-codes">		
+		<div class="block">
+			<div class="a-wrap"> <!-- AD MANAGER -->
+<!-- /5357751/bannerhome_top3_300x250 -->
+<div id='div-gpt-ad-1658743790455-0' style='min-width: 300px; min-height: 250px;'>
+  <script type="rocketlazyloadscript">
+    googletag.cmd.push(function() { googletag.display('div-gpt-ad-1658743790455-0'); });
+  </script>
+</div></div>		</div>
+
+		</div>
+		<div id="smartmag-block-codes-5" class="widget ts-block-widget smartmag-widget-codes">		
+		<div class="block">
+			<div class="a-wrap"> <!-- AD SENSE SQUARE BANNER 1 -->
+<script type="rocketlazyloadscript" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7148704067135678"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:inline-block;width:300px;height:250px"
+     data-ad-client="ca-pub-7148704067135678"
+     data-ad-slot="4116468358"></ins>
+<script type="rocketlazyloadscript">
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>		</div>
+
+		</div>
+		<div id="smartmag-block-codes-6" class="widget ts-block-widget smartmag-widget-codes">		
+		<div class="block">
+			<div class="a-wrap"> <!-- AD SENSE SQUARE BANNER 2 -->
+<script type="rocketlazyloadscript" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7148704067135678"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:inline-block;width:300px;height:250px"
+     data-ad-client="ca-pub-7148704067135678"
+     data-ad-slot="1677135130"></ins>
+<script type="rocketlazyloadscript">
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>		</div>
+
+		</div><div id="bunyad-social-3" class="widget widget-social-b">		<div class="spc-social-follow spc-social-follow-b spc-social-colors spc-social-bg">
+			<ul class="services grid grid-2 md:grid-4 sm:grid-2" itemscope itemtype="http://schema.org/Organization">
+				<link itemprop="url" href="https://sienafree.it/">
+								
+				<li class="service-wrap">
+
+					<a href="https://facebook.com/sienafree.it" class="service service-link s-facebook has-count" target="_blank" itemprop="sameAs" rel="noopener">
+						<i class="the-icon tsi tsi-facebook"></i>
+						<span class="label">Facebook</span>
+
+													<span class="count">67.237</span>
+							
+					</a>
+
+				</li>
+				
+								
+				<li class="service-wrap">
+
+					<a href="https://twitter.com/sienafree" class="service service-link s-twitter has-count" target="_blank" itemprop="sameAs" rel="noopener">
+						<i class="the-icon tsi tsi-twitter"></i>
+						<span class="label">Twitter</span>
+
+													<span class="count">7.627</span>
+							
+					</a>
+
+				</li>
+				
+								
+				<li class="service-wrap">
+
+					<a href="https://t.me/sienafree" class="service service-link s-telegram has-count" target="_blank" itemprop="sameAs" rel="noopener">
+						<i class="the-icon tsi tsi-telegram"></i>
+						<span class="label">Telegram</span>
+
+													<span class="count">475</span>
+							
+					</a>
+
+				</li>
+				
+								
+				<li class="service-wrap">
+
+					<a href="https://whatsapp.sienafree.it/" class="service service-link s-whatsapp " target="_blank" itemprop="sameAs" rel="noopener">
+						<i class="the-icon tsi tsi-whatsapp"></i>
+						<span class="label">3.595 WhatsApp</span>
+
+							
+					</a>
+
+				</li>
+				
+							</ul>
+		</div>
+		
+		</div>		</div>
+	
+	</aside>
+	
+</div>
+	</div>
+
+<div class="a-wrap a-wrap-base a-wrap-3"> <!-- ########### Ad Script for sienafree.it_cl_widget ################# -->
+<ins data-revive-zoneid="2018" data-revive-id="e590432163035a6e5fc26dac29dd7e0b"></ins>
+<script type="rocketlazyloadscript" async src="//adv.presscommtech.com/www/delivery/asyncjs.php"></script>
+<!-- ####### Fine Ad Script for sienafree.it_cl_widget ################ --></div>			<footer class="main-footer cols-gap-lg footer-bold s-dark">
+
+						<div class="upper-footer bold-footer-upper">
+			<div class="ts-contain wrap">
+				<div class="widgets row cf">
+					
+		<div class="widget col-8 widget-about">		
+			
+		<div class="inner ">
+		
+							<div class="image-logo">
+					<img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20200%2061'%3E%3C/svg%3E" width="200" height="61" alt data-lazy-src="https://sienafree.it/wp-content/uploads/2022/07/sienafree-logo-bianco-200.jpg" /><noscript><img src="https://sienafree.it/wp-content/uploads/2022/07/sienafree-logo-bianco-200.jpg" width="200" height="61" alt /></noscript>
+				</div>
+						
+						
+			<div class="base-text about-text"><div style="font-family:helvetica">Copyright 2017-2022 © Sienafree srls - Tutti i diritti riservati<br />
+Editore: Sienafree srls - Sede legale: viale Vittorio Veneto, 41 - 53100 Siena - sienafree@pec.it<br />
+Codice Fiscale, Partita I.V.A. e Iscrizione al Registro delle Imprese di Siena 01431460524 | R.E.A. di Siena: 147263<br />
+Iscrizione al Registro della stampa del Tribunale di Siena: 04/17 del 29/05/2017 | Iscrizione al R.O.C.: 36060<br />
+Direttore responsabile: Giuseppe Nigro<br />
+Redazione e invio comunicati stampa: stampa@sienafree.it<br />
+Per la pubblicità: Sienafree srls - publi@sienafree.it</div>
+</div>
+
+			
+		</div>
+
+		</div>		
+		<div class="widget_text widget col-4 widget_custom_html"><div class="textwidget custom-html-widget"><a href="https://www.consorziotutelapaliodisiena.it/"><img style="margin-right: 10px; float: left;" src="https://sienafree.it/wp-content/uploads/2022/09/ctps-logo-2022.png" alt="Consorzio Tutela Palio di Siena" width="90" height="90" data-src="https://www.sienafree.it/images/palio/logoconsorziotutelapalio_nuovo60.jpg" /></a><div style="font-family:helvetica">Gli stemmi, i colori delle Contrade e le immagini del Palio sono utilizzati con l'approvazione del <strong><a href="https://www.consorziotutelapaliodisiena.it/">Consorzio per la Tutela del Palio di Siena</a></strong>. Ogni altro uso o riproduzione sono vietati salvo espressa autorizzazione del Consorzio.</div></div></div>				</div>
+			</div>
+		</div>
+		
+	
+			<div class="lower-footer bold-footer-lower">
+			<div class="ts-contain inner">
+
+				
+
+				
+		<div class="spc-social-block spc-social spc-social-b ">
+		
+			
+				<a href="https://www.facebook.com/sienafree.it/" class="link service s-facebook" target="_blank" rel="noopener">
+					<i class="icon tsi tsi-facebook"></i>
+					<span class="visuallyhidden">Facebook</span>
+				</a>
+									
+			
+				<a href="https://twitter.com/SienaFree" class="link service s-twitter" target="_blank" rel="noopener">
+					<i class="icon tsi tsi-twitter"></i>
+					<span class="visuallyhidden">Twitter</span>
+				</a>
+									
+			
+				<a href="https://www.instagram.com/sienafree" class="link service s-instagram" target="_blank" rel="noopener">
+					<i class="icon tsi tsi-instagram"></i>
+					<span class="visuallyhidden">Instagram</span>
+				</a>
+									
+			
+				<a href="https://whatsapp.sienafree.it/" class="link service s-whatsapp" target="_blank" rel="noopener">
+					<i class="icon tsi tsi-whatsapp"></i>
+					<span class="visuallyhidden">WhatsApp</span>
+				</a>
+									
+			
+				<a href="https://t.me/sienafree" class="link service s-telegram" target="_blank" rel="noopener">
+					<i class="icon tsi tsi-telegram"></i>
+					<span class="visuallyhidden">Telegram</span>
+				</a>
+									
+			
+		</div>
+
+		
+											
+						<div class="links">
+							<div class="menu-footer-menu-container"><ul id="menu-footer-menu" class="menu"><li id="menu-item-136916" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-136916"><a href="https://sienafree.it/privacy-policy">Privacy Policy</a></li>
+<li id="menu-item-136917" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-136917"><a href="https://sienafree.it/cookie-policy">Cookie Policy</a></li>
+<li id="menu-item-136919" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-136919"><a href="https://sienafree.it/termini-e-condizioni">Termini e condizioni</a></li>
+</ul></div>						</div>
+						
+				
+				<div class="copyright">
+					&copy; 2022 Siena Free. realizzato da Sienafree srls				</div>
+			</div>
+		</div>		
+			</footer>
+		
+	
+</div><!-- .main-wrap -->
+
+
+
+	<div class="search-modal-wrap" data-scheme="dark">
+		<div class="search-modal-box" role="dialog" aria-modal="true">
+
+			<form method="get" class="search-form" action="https://sienafree.it/">
+				<input type="search" class="search-field" name="s" placeholder="Cerca..." value="" required />
+
+				<button type="submit" class="search-submit visuallyhidden">Submit</button>
+
+				<p class="message">
+					Inserisci il termine di ricerca e premi <em>Enter</em>. Premi <em>Esc</em> per annullare.				</p>
+						
+			</form>
+
+		</div>
+	</div>
+
+
+<!-- CLICKIO GDPR-->
+<script type="rocketlazyloadscript" data-minify="1" async data-rocket-type="text/javascript" src="https://sienafree.it/wp-content/cache/min/1/t/consent_227440.js?ver=1668844357"></script><script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript' src='https://sienafree.it/wp-content/cache/min/1/wp-content/themes/smart-mag/js/jquery.mfp-lightbox.js?ver=1668844357' id='magnific-popup-js' defer></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript' src='https://sienafree.it/wp-content/cache/min/1/wp-content/themes/smart-mag/js/jquery.sticky-sidebar.js?ver=1668844357' id='theia-sticky-sidebar-js' defer></script>
+<script type='text/javascript' id='smartmag-theme-js-extra'>
+/* <![CDATA[ */
+var Bunyad = {"ajaxurl":"https:\/\/sienafree.it\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript' src='https://sienafree.it/wp-content/cache/min/1/wp-content/themes/smart-mag/js/theme.js?ver=1668844357' id='smartmag-theme-js' defer></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-type='text/javascript' data-cfasync="false" data-no-optimize="1" src='https://sienafree.it/wp-content/cache/min/1/wp-content/plugins/perfmatters/vendor/instant-page/instantpage.js?ver=1668844357' id='perfmatters-instant-page-js' defer></script>
+<script>window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:".rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="https://sienafree.it/wp-content/plugins/wp-rocket/assets/js/lazyload/17.5/lazyload.min.js"></script>
+<script>class RocketElementorAnimation{constructor(){this.deviceMode=document.createElement("span"),this.deviceMode.id="elementor-device-mode",this.deviceMode.setAttribute("class","elementor-screen-only"),document.body.appendChild(this.deviceMode)}_detectAnimations(){let t=getComputedStyle(this.deviceMode,":after").content.replace(/"/g,"");this.animationSettingKeys=this._listAnimationSettingsKeys(t),document.querySelectorAll(".elementor-invisible[data-settings]").forEach(t=>{const e=t.getBoundingClientRect();if(e.bottom>=0&&e.top<=window.innerHeight)try{this._animateElement(t)}catch(t){}})}_animateElement(t){const e=JSON.parse(t.dataset.settings),i=e._animation_delay||e.animation_delay||0,n=e[this.animationSettingKeys.find(t=>e[t])];if("none"===n)return void t.classList.remove("elementor-invisible");t.classList.remove(n),this.currentAnimation&&t.classList.remove(this.currentAnimation),this.currentAnimation=n;let s=setTimeout(()=>{t.classList.remove("elementor-invisible"),t.classList.add("animated",n),this._removeAnimationSettings(t,e)},i);window.addEventListener("rocket-startLoading",function(){clearTimeout(s)})}_listAnimationSettingsKeys(t="mobile"){const e=[""];switch(t){case"mobile":e.unshift("_mobile");case"tablet":e.unshift("_tablet");case"desktop":e.unshift("_desktop")}const i=[];return["animation","_animation"].forEach(t=>{e.forEach(e=>{i.push(t+e)})}),i}_removeAnimationSettings(t,e){this._listAnimationSettingsKeys().forEach(t=>delete e[t]),t.dataset.settings=JSON.stringify(e)}static run(){const t=new RocketElementorAnimation;requestAnimationFrame(t._detectAnimations.bind(t))}}document.addEventListener("DOMContentLoaded",RocketElementorAnimation.run);</script></body>
+</html>
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cached@1669321612 -->

@@ -1,0 +1,1234 @@
+<!DOCTYPE html>
+<html lang="el">
+<head><meta charset="UTF-8" /><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>class RocketLazyLoadScripts{constructor(){this.triggerEvents=["keydown","mousedown","mousemove","touchmove","touchstart","touchend","wheel"],this.userEventHandler=this._triggerListener.bind(this),this.touchStartHandler=this._onTouchStart.bind(this),this.touchMoveHandler=this._onTouchMove.bind(this),this.touchEndHandler=this._onTouchEnd.bind(this),this.clickHandler=this._onClick.bind(this),this.interceptedClicks=[],window.addEventListener("pageshow",(e=>{this.persisted=e.persisted})),window.addEventListener("DOMContentLoaded",(()=>{this._preconnect3rdParties()})),this.delayedScripts={normal:[],async:[],defer:[]},this.allJQueries=[]}_addUserInteractionListener(e){document.hidden?e._triggerListener():(this.triggerEvents.forEach((t=>window.addEventListener(t,e.userEventHandler,{passive:!0}))),window.addEventListener("touchstart",e.touchStartHandler,{passive:!0}),window.addEventListener("mousedown",e.touchStartHandler),document.addEventListener("visibilitychange",e.userEventHandler))}_removeUserInteractionListener(){this.triggerEvents.forEach((e=>window.removeEventListener(e,this.userEventHandler,{passive:!0}))),document.removeEventListener("visibilitychange",this.userEventHandler)}_onTouchStart(e){"HTML"!==e.target.tagName&&(window.addEventListener("touchend",this.touchEndHandler),window.addEventListener("mouseup",this.touchEndHandler),window.addEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.addEventListener("mousemove",this.touchMoveHandler),e.target.addEventListener("click",this.clickHandler),this._renameDOMAttribute(e.target,"onclick","rocket-onclick"))}_onTouchMove(e){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler),e.target.removeEventListener("click",this.clickHandler),this._renameDOMAttribute(e.target,"rocket-onclick","onclick")}_onTouchEnd(e){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler)}_onClick(e){e.target.removeEventListener("click",this.clickHandler),this._renameDOMAttribute(e.target,"rocket-onclick","onclick"),this.interceptedClicks.push(e),e.preventDefault(),e.stopPropagation(),e.stopImmediatePropagation()}_replayClicks(){window.removeEventListener("touchstart",this.touchStartHandler,{passive:!0}),window.removeEventListener("mousedown",this.touchStartHandler),this.interceptedClicks.forEach((e=>{e.target.dispatchEvent(new MouseEvent("click",{view:e.view,bubbles:!0,cancelable:!0}))}))}_renameDOMAttribute(e,t,n){e.hasAttribute&&e.hasAttribute(t)&&(event.target.setAttribute(n,event.target.getAttribute(t)),event.target.removeAttribute(t))}_triggerListener(){this._removeUserInteractionListener(this),"loading"===document.readyState?document.addEventListener("DOMContentLoaded",this._loadEverythingNow.bind(this)):this._loadEverythingNow()}_preconnect3rdParties(){let e=[];document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((t=>{if(t.hasAttribute("src")){const n=new URL(t.src).origin;n!==location.origin&&e.push({src:n,crossOrigin:t.crossOrigin||"module"===t.getAttribute("data-rocket-type")})}})),e=[...new Map(e.map((e=>[JSON.stringify(e),e]))).values()],this._batchInjectResourceHints(e,"preconnect")}async _loadEverythingNow(){this.lastBreath=Date.now(),this._delayEventListeners(),this._delayJQueryReady(this),this._handleDocumentWrite(),this._registerAllDelayedScripts(),this._preloadAllScripts(),await this._loadScriptsFromList(this.delayedScripts.normal),await this._loadScriptsFromList(this.delayedScripts.defer),await this._loadScriptsFromList(this.delayedScripts.async);try{await this._triggerDOMContentLoaded(),await this._triggerWindowLoad()}catch(e){}window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this._replayClicks()}_registerAllDelayedScripts(){document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((e=>{e.hasAttribute("src")?e.hasAttribute("async")&&!1!==e.async?this.delayedScripts.async.push(e):e.hasAttribute("defer")&&!1!==e.defer||"module"===e.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(e):this.delayedScripts.normal.push(e):this.delayedScripts.normal.push(e)}))}async _transformScript(e){return await this._littleBreath(),new Promise((t=>{const n=document.createElement("script");[...e.attributes].forEach((e=>{let t=e.nodeName;"type"!==t&&("data-rocket-type"===t&&(t="type"),n.setAttribute(t,e.nodeValue))})),e.hasAttribute("src")?(n.addEventListener("load",t),n.addEventListener("error",t)):(n.text=e.text,t());try{e.parentNode.replaceChild(n,e)}catch(e){t()}}))}async _loadScriptsFromList(e){const t=e.shift();return t?(await this._transformScript(t),this._loadScriptsFromList(e)):Promise.resolve()}_preloadAllScripts(){this._batchInjectResourceHints([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}_batchInjectResourceHints(e,t){var n=document.createDocumentFragment();e.forEach((e=>{if(e.src){const i=document.createElement("link");i.href=e.src,i.rel=t,"preconnect"!==t&&(i.as="script"),e.getAttribute&&"module"===e.getAttribute("data-rocket-type")&&(i.crossOrigin=!0),e.crossOrigin&&(i.crossOrigin=e.crossOrigin),n.appendChild(i)}})),document.head.appendChild(n)}_delayEventListeners(){let e={};function t(t,n){!function(t){function n(n){return e[t].eventsToRewrite.indexOf(n)>=0?"rocket-"+n:n}e[t]||(e[t]={originalFunctions:{add:t.addEventListener,remove:t.removeEventListener},eventsToRewrite:[]},t.addEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.add.apply(t,arguments)},t.removeEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.remove.apply(t,arguments)})}(t),e[t].eventsToRewrite.push(n)}function n(e,t){let n=e[t];Object.defineProperty(e,t,{get:()=>n||function(){},set(i){e["rocket"+t]=n=i}})}t(document,"DOMContentLoaded"),t(window,"DOMContentLoaded"),t(window,"load"),t(window,"pageshow"),t(document,"readystatechange"),n(document,"onreadystatechange"),n(window,"onload"),n(window,"onpageshow")}_delayJQueryReady(e){let t=window.jQuery;Object.defineProperty(window,"jQuery",{get:()=>t,set(n){if(n&&n.fn&&!e.allJQueries.includes(n)){n.fn.ready=n.fn.init.prototype.ready=function(t){e.domReadyFired?t.bind(document)(n):document.addEventListener("rocket-DOMContentLoaded",(()=>t.bind(document)(n)))};const t=n.fn.on;n.fn.on=n.fn.init.prototype.on=function(){if(this[0]===window){function e(e){return e.split(" ").map((e=>"load"===e||0===e.indexOf("load.")?"rocket-jquery-load":e)).join(" ")}"string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=e(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach((t=>{delete Object.assign(arguments[0],{[e(t)]:arguments[0][t]})[t]}))}return t.apply(this,arguments),this},e.allJQueries.push(n)}t=n}})}async _triggerDOMContentLoaded(){this.domReadyFired=!0,await this._littleBreath(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._littleBreath(),window.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._littleBreath(),document.dispatchEvent(new Event("rocket-readystatechange")),await this._littleBreath(),document.rocketonreadystatechange&&document.rocketonreadystatechange()}async _triggerWindowLoad(){await this._littleBreath(),window.dispatchEvent(new Event("rocket-load")),await this._littleBreath(),window.rocketonload&&window.rocketonload(),await this._littleBreath(),this.allJQueries.forEach((e=>e(window).trigger("rocket-jquery-load"))),await this._littleBreath();const e=new Event("rocket-pageshow");e.persisted=this.persisted,window.dispatchEvent(e),await this._littleBreath(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted})}_handleDocumentWrite(){const e=new Map;document.write=document.writeln=function(t){const n=document.currentScript,i=document.createRange(),r=n.parentElement;let o=e.get(n);void 0===o&&(o=n.nextSibling,e.set(n,o));const s=document.createDocumentFragment();i.setStart(s,0),s.appendChild(i.createContextualFragment(t)),r.insertBefore(s,o)}}async _littleBreath(){Date.now()-this.lastBreath>45&&(await this._requestAnimFrame(),this.lastBreath=Date.now())}async _requestAnimFrame(){return document.hidden?new Promise((e=>setTimeout(e))):new Promise((e=>requestAnimationFrame(e)))}static run(){const e=new RocketLazyLoadScripts;e._addUserInteractionListener(e)}}RocketLazyLoadScripts.run();</script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+<script data-cfasync="false" data-pagespeed-no-defer>
+	var gtm4wp_datalayer_name = "dataLayer";
+	var dataLayer = dataLayer || [];
+</script>
+
+
+<title>Αττική: Επιχειρηματίας σε ΜΕΘ μετά από 17 μαχαιριές για... σειρά σε καντίνα!</title><link rel="stylesheet" href="https://www.mynews.gr/wp-content/cache/min/1/2ad04137f442d8a511d4d2c4d26d3e2e.css" media="all" data-minify="1" />
+<meta name="description" content="Σε Μονάδα Εντατικής Θεραπείας νοσηλεύεται ένας επιχειρηματίας μετά από επίθεση με 15 μαχαιριές που δέχθηκε από δύο νεαρά άτομα στην Αθήνα. Συγκεκριμένα" />
+<link rel="canonical" href="https://www.mynews.gr/attiki-epicheirimatias-se-meth-meta-apo-17-machairies-gia-seira-se-kantina/" />
+<meta property="og:locale" content="el_GR" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Αττική: Επιχειρηματίας σε ΜΕΘ μετά από 17 μαχαιριές για... σειρά σε καντίνα! | mynews.gr" />
+<meta property="og:description" content="Σε Μονάδα Εντατικής Θεραπείας νοσηλεύεται ένας επιχειρηματίας μετά από επίθεση με 15 μαχαιριές που δέχθηκε από δύο νεαρά άτομα στην Αθήνα. Συγκεκριμένα" />
+<meta property="og:url" content="https://www.mynews.gr/attiki-epicheirimatias-se-meth-meta-apo-17-machairies-gia-seira-se-kantina/" />
+<meta property="og:site_name" content="mynews.gr" />
+<meta property="article:publisher" content="https://www.facebook.com/www.mynews.gr" />
+<meta property="article:published_time" content="2022-10-28T18:21:57+00:00" />
+<meta property="article:modified_time" content="2022-10-28T18:21:23+00:00" />
+<meta property="og:image" content="https://www.mynews.gr/wp-content/uploads/2022/09/astynomia-peripoliko.jpg" />
+<meta property="og:image:width" content="780" />
+<meta property="og:image:height" content="410" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta name="author" content="Παναγιώτης Σωτηρόπουλος" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:creator" content="@mynews_gr" />
+<meta name="twitter:site" content="@mynews_gr" />
+<meta name="twitter:label1" content="Συντάχθηκε από" />
+<meta name="twitter:data1" content="Παναγιώτης Σωτηρόπουλος" />
+<meta name="twitter:label2" content="Εκτιμώμενος χρόνος ανάγνωσης" />
+<meta name="twitter:data2" content="1 λεπτό" />
+<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"NewsArticle","@id":"https://www.mynews.gr/attiki-epicheirimatias-se-meth-meta-apo-17-machairies-gia-seira-se-kantina/#article","isPartOf":{"@id":"https://www.mynews.gr/attiki-epicheirimatias-se-meth-meta-apo-17-machairies-gia-seira-se-kantina/"},"author":{"name":"Παναγιώτης Σωτηρόπουλος","@id":"https://www.mynews.gr/#/schema/person/c04bb390bde57a606a02ce89e9db898a"},"headline":"Αττική: Επιχειρηματίας σε ΜΕΘ μετά από 17 μαχαιριές για&#8230; σειρά σε καντίνα!","datePublished":"2022-10-28T18:21:57+00:00","dateModified":"2022-10-28T18:21:23+00:00","mainEntityOfPage":{"@id":"https://www.mynews.gr/attiki-epicheirimatias-se-meth-meta-apo-17-machairies-gia-seira-se-kantina/"},"wordCount":3,"commentCount":0,"publisher":{"@id":"https://www.mynews.gr/#organization"},"image":{"@id":"https://www.mynews.gr/attiki-epicheirimatias-se-meth-meta-apo-17-machairies-gia-seira-se-kantina/#primaryimage"},"thumbnailUrl":"https://www.mynews.gr/wp-content/uploads/2022/09/astynomia-peripoliko.jpg","keywords":["Αθήνα","Αστυνομικοί","Αττική","Επίθεση","Νοσοκομείο","Τραυματίας"],"articleSection":["Αστυνομία","Ελλάδα"],"inLanguage":"el","potentialAction":[{"@type":"CommentAction","name":"Comment","target":["https://www.mynews.gr/attiki-epicheirimatias-se-meth-meta-apo-17-machairies-gia-seira-se-kantina/#respond"]}],"copyrightYear":"2022","copyrightHolder":{"@id":"https://www.mynews.gr/#organization"}},{"@type":"WebPage","@id":"https://www.mynews.gr/attiki-epicheirimatias-se-meth-meta-apo-17-machairies-gia-seira-se-kantina/","url":"https://www.mynews.gr/attiki-epicheirimatias-se-meth-meta-apo-17-machairies-gia-seira-se-kantina/","name":"Αττική: Επιχειρηματίας σε ΜΕΘ μετά από 17 μαχαιριές για... σειρά σε καντίνα!","isPartOf":{"@id":"https://www.mynews.gr/#website"},"primaryImageOfPage":{"@id":"https://www.mynews.gr/attiki-epicheirimatias-se-meth-meta-apo-17-machairies-gia-seira-se-kantina/#primaryimage"},"image":{"@id":"https://www.mynews.gr/attiki-epicheirimatias-se-meth-meta-apo-17-machairies-gia-seira-se-kantina/#primaryimage"},"thumbnailUrl":"https://www.mynews.gr/wp-content/uploads/2022/09/astynomia-peripoliko.jpg","datePublished":"2022-10-28T18:21:57+00:00","dateModified":"2022-10-28T18:21:23+00:00","description":"Σε Μονάδα Εντατικής Θεραπείας νοσηλεύεται ένας επιχειρηματίας μετά από επίθεση με 15 μαχαιριές που δέχθηκε από δύο νεαρά άτομα στην Αθήνα. Συγκεκριμένα","breadcrumb":{"@id":"https://www.mynews.gr/attiki-epicheirimatias-se-meth-meta-apo-17-machairies-gia-seira-se-kantina/#breadcrumb"},"inLanguage":"el","potentialAction":[{"@type":"ReadAction","target":["https://www.mynews.gr/attiki-epicheirimatias-se-meth-meta-apo-17-machairies-gia-seira-se-kantina/"]}]},{"@type":"ImageObject","inLanguage":"el","@id":"https://www.mynews.gr/attiki-epicheirimatias-se-meth-meta-apo-17-machairies-gia-seira-se-kantina/#primaryimage","url":"https://www.mynews.gr/wp-content/uploads/2022/09/astynomia-peripoliko.jpg","contentUrl":"https://www.mynews.gr/wp-content/uploads/2022/09/astynomia-peripoliko.jpg","width":780,"height":410,"caption":"Αστυνομία περιπολικό"},{"@type":"BreadcrumbList","@id":"https://www.mynews.gr/attiki-epicheirimatias-se-meth-meta-apo-17-machairies-gia-seira-se-kantina/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Αρχική","item":"https://www.mynews.gr/"},{"@type":"ListItem","position":2,"name":"Όλες οι Ειδήσεις","item":"https://www.mynews.gr/eidiseis/"},{"@type":"ListItem","position":3,"name":"Αττική: Επιχειρηματίας σε ΜΕΘ μετά από 17 μαχαιριές για&#8230; σειρά σε καντίνα!"}]},{"@type":"WebSite","@id":"https://www.mynews.gr/#website","url":"https://www.mynews.gr/","name":"mynews.gr","description":"Ειδήσεις, νέα και όλη η έκτακτη επικαιρότητα","publisher":{"@id":"https://www.mynews.gr/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://www.mynews.gr/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"el"},{"@type":"Organization","@id":"https://www.mynews.gr/#organization","name":"mynews.gr","url":"https://www.mynews.gr/","logo":{"@type":"ImageObject","inLanguage":"el","@id":"https://www.mynews.gr/#/schema/logo/image/","url":"https://www.mynews.gr/wp-content/uploads/2022/02/mynews-logo.png","contentUrl":"https://www.mynews.gr/wp-content/uploads/2022/02/mynews-logo.png","width":713,"height":150,"caption":"mynews.gr"},"image":{"@id":"https://www.mynews.gr/#/schema/logo/image/"},"sameAs":["https://www.youtube.com/channel/UCSVHd8ZqHAPv3G01QA2VrEQ","https://www.facebook.com/www.mynews.gr","https://twitter.com/mynews_gr"]},{"@type":"Person","@id":"https://www.mynews.gr/#/schema/person/c04bb390bde57a606a02ce89e9db898a","name":"Παναγιώτης Σωτηρόπουλος","sameAs":["https://www.mynews.gr/"]}]}</script>
+
+<link rel='dns-prefetch' href='//quantcast.mgr.consensu.org' />
+<link rel='dns-prefetch' href='//test.quantcast.mgr.consensu.org' />
+<link rel="alternate" type="application/rss+xml" title="Ροή RSS &raquo; mynews.gr" href="https://www.mynews.gr/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Ροή Σχολίων &raquo; mynews.gr" href="https://www.mynews.gr/comments/feed/" />
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"NewsMediaOrganization","name":"mynews.gr","url":"https://www.mynews.gr/","address":[{"@type":"PostalAddress","addressCountry":"Greece","addressLocality":"Θεσσαλονίκη","addressRegion":"GR","postalCode":"555 35","streetAddress":"Κωστή Παλαμά 6Γ, Πυλαία"}],"contactPoint":[{"@type":"ContactPoint","areaServed":"GR","contactType":"customer service","telephone":"+30-2310-909090"}],"logo":{"@type":"ImageObject","url":"https://www.mynews.gr/wp-content/uploads/2022/02/mynews-logo.png","height":150,"width":713}}</script>
+<link rel="alternate" type="application/rss+xml" title="Ροή Σχολίων mynews.gr &raquo; Αττική: Επιχειρηματίας σε ΜΕΘ μετά από 17 μαχαιριές για&#8230; σειρά σε καντίνα!" href="https://www.mynews.gr/attiki-epicheirimatias-se-meth-meta-apo-17-machairies-gia-seira-se-kantina/feed/" />
+<style id='global-styles-inline-css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;}:where(.is-layout-flex){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<style id='rocket-lazyload-inline-css'>
+.rll-youtube-player{position:relative;padding-bottom:56.23%;height:0;overflow:hidden;max-width:100%;}.rll-youtube-player:focus-within{outline: 2px solid currentColor;outline-offset: 5px;}.rll-youtube-player iframe{position:absolute;top:0;left:0;width:100%;height:100%;z-index:100;background:0 0}.rll-youtube-player img{bottom:0;display:block;left:0;margin:auto;max-width:100%;width:100%;position:absolute;right:0;top:0;border:none;height:auto;-webkit-transition:.4s all;-moz-transition:.4s all;transition:.4s all}.rll-youtube-player img:hover{-webkit-filter:brightness(75%)}.rll-youtube-player .play{height:100%;width:100%;left:0;top:0;position:absolute;background:url(https://www.mynews.gr/wp-content/plugins/wp-rocket/assets/img/youtube.png) no-repeat center;background-color: transparent !important;cursor:pointer;border:none;}
+</style>
+<script type="rocketlazyloadscript" src='https://www.mynews.gr/wp-content/themes/mynews/jo/bootstrap-5.0.1/bootstrap.min.js?ver=6.1.1' id='bootstrap-js'></script>
+<link rel="https://api.w.org/" href="https://www.mynews.gr/wp-json/" /><link rel="alternate" type="application/json" href="https://www.mynews.gr/wp-json/wp/v2/posts/103924" /><link rel='shortlink' href='https://www.mynews.gr/?p=103924' />
+<link rel="alternate" type="application/json+oembed" href="https://www.mynews.gr/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.mynews.gr%2Fattiki-epicheirimatias-se-meth-meta-apo-17-machairies-gia-seira-se-kantina%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://www.mynews.gr/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.mynews.gr%2Fattiki-epicheirimatias-se-meth-meta-apo-17-machairies-gia-seira-se-kantina%2F&#038;format=xml" />
+
+
+<script data-cfasync="false" data-pagespeed-no-defer type="text/javascript">
+	var dataLayer_content = {"pagePostType":"post","pagePostType2":"single-post","pageCategory":["astynomia","ellada"],"pageAttributes":["athina","astynomikoi","attiki","epithesi","nosokomeio","traymatias"]};
+	dataLayer.push( dataLayer_content );
+</script>
+<script type="rocketlazyloadscript" data-cfasync="false">
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.'+'js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5JPSWB3');
+</script>
+
+
+<script type="rocketlazyloadscript" async src="https://www.googletagmanager.com/gtag/js?id=UA-210639155-1"></script>
+<script type="rocketlazyloadscript">
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-210639155-1');
+</script>
+<meta name="ahrefs-site-verification" content="945ad33864f434d6eb43646b1a4e5d53299a2f1e996778f5e58407457cbbc655">
+<script type="rocketlazyloadscript" src="//cdn.orangeclickmedia.com/tech/mynews.gr/ocm.js" async="async"></script>
+<style>
+			
+			
+			
+			.sidebar .inside-right-sidebar {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    place-content: stretch space-between;
+    align-items: stretch;
+}
+			
+			
+			
+/* HTML5 Reset
+---------------------------------------------------------------------------- */
+
+/* normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css
+---------------------------------------------------------------------------- */
+/* stylelint-disable */
+html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}[hidden],template{display:none}
+/* stylelint-enable */
+
+/* Box Sizing
+--------------------------------------------- */
+
+html{box-sizing:border-box}
+*,::after,::before{box-sizing:inherit}
+
+/* Float Clearing
+--------------------------------------------- */
+
+.author-box::before,.clearfix::before,.entry-content::before,.entry::before,.footer-widgets::before,.nav-primary::before,.nav-secondary::before,.pagination::before,.site-container::before,.site-footer::before,.site-header::before,.site-inner::before,.widget::before,.wrap::before {content:" ";display:table}
+
+.author-box::after,.clearfix::after,.entry-content::after,.entry::after,.footer-widgets::after,.nav-primary::after,.nav-secondary::after,.pagination::after,.site-container::after,.site-footer::after,.site-header::after,.site-inner::after,.widget::after,.wrap::after{clear:both;content:" ";display:table}
+
+/* Typographical Elements
+--------------------------------------------- */
+
+html{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased}
+.button,.gallery img,button,input:focus,input[type=button],input[type=reset],input[type=submit],textarea:focus{transition:all .2s ease-in-out}
+
+/* Objects
+--------------------------------------------- */
+
+.wp-caption,embed,iframe,img,object,video{max-width:100%}
+img{height:auto;vertical-align:top}
+figure{margin:0}
+
+/* Gallery
+--------------------------------------------- */
+
+.gallery{overflow:hidden}
+.gallery img{border:1px solid #eee;height:auto;padding:4px}
+.gallery img:focus,.gallery img:hover{border:1px solid #999;outline:0}
+.gallery-columns-1 .gallery-item{width:100%}
+.gallery-columns-2 .gallery-item{width:50%}
+.gallery-columns-3 .gallery-item{width:33%}
+.gallery-columns-4 .gallery-item{width:25%}
+.gallery-columns-5 .gallery-item{width:20%}
+.gallery-columns-6 .gallery-item{width:16.6666%}
+.gallery-columns-7 .gallery-item{width:14.2857%}
+.gallery-columns-8 .gallery-item{width:12.5%}
+.gallery-columns-9 .gallery-item{width:11.1111%}
+
+.gallery-columns-2 .gallery-item:nth-child(2n+1),.gallery-columns-3 .gallery-item:nth-child(3n+1),.gallery-columns-4 .gallery-item:nth-child(4n+1),.gallery-columns-5 .gallery-item:nth-child(5n+1),.gallery-columns-6 .gallery-item:nth-child(6n+1),.gallery-columns-7 .gallery-item:nth-child(7n+1),.gallery-columns-8 .gallery-item:nth-child(8n+1),.gallery-columns-9 .gallery-item:nth-child(9n+1){clear:left}
+
+.gallery-item{float:left;margin:0 0 30px;text-align:center}
+
+/* Forms
+--------------------------------------------- */
+
+input,select,textarea{background-color:#fff;border:1px solid #ddd;color:#333;font-size:18px;font-weight:400;padding:15px;width:100%}			
+input:focus,textarea:focus{border:1px solid #999;outline:none}
+input[type=checkbox],input[type=image],input[type=radio]{width:auto}
+:-ms-input-placeholder{color:#333;opacity:1}
+::placeholder{color:#333;opacity:1}
+
+.button,.site-container div.wpforms-container-full .wpforms-form button[type=submit],.site-container div.wpforms-container-full .wpforms-form input[type=submit],button,input[type=button],input[type=reset],input[type=submit]{border: 1px solid #000;border-radius:5px;cursor:pointer;font-size:16px;font-weight:600;padding:15px 30px;text-align:center;text-decoration:none;white-space:normal;width:auto}
+
+.button:focus,.button:hover,.site-container div.wpforms-container-full .wpforms-form button[type=submit]:focus,.site-container div.wpforms-container-full .wpforms-form button[type=submit]:hover,.site-container div.wpforms-container-full .wpforms-form input[type=submit]:focus,.site-container div.wpforms-container-full .wpforms-form input[type=submit]:hover,button:focus,button:hover,input[type=button]:focus,input[type=button]:hover,input[type=reset]:focus,input[type=reset]:hover,input[type=submit]:focus,input[type=submit]:hover{background-color:#000;border: 1px solid #000;color:#fff}
+			
+.comment-form textarea{border-radius:5px}
+.comment-form input{border-radius:5px}			
+.comment-form label{font-size:16px;font-weight:600;padding-bottom:5px}			
+.comment-respond{background:#ededed;padding:30px;border:1px solid #ddd;border-radius:5px}			
+.comment article{padding:15px;border:1px solid #ddd;border-radius:5px}			
+.comment-respond p {margin: 0 0 10px}
+.comment-form-author,.comment-form-email{display:inline-block;width:49%}
+ 
+.entry-content .button:focus,.entry-content .button:hover{color:#fff}
+.button{display:inline-block}
+
+.site-container button:disabled,.site-container button:disabled:hover,.site-container input:disabled,.site-container input:disabled:hover,.site-container input[type=button]:disabled,.site-container input[type=button]:disabled:hover,.site-container input[type=reset]:disabled,.site-container input[type=reset]:disabled:hover,.site-container input[type=submit]:disabled,.site-container input[type=submit]:disabled:hover{background-color:#eee;border-width:0;color:#777;cursor:not-allowed}
+input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-results-button{display:none}
+
+/* Tables
+--------------------------------------------- */
+
+table{border-collapse:collapse;border-spacing:0;margin-bottom:40px;width:100%;word-break:break-all}
+tbody{border-bottom:1px solid #eee}
+td,th{line-height:2;text-align:left;vertical-align:top}
+td{padding:.5em}
+tr{border-top:1px solid #eee}
+th{font-weight:600;padding:.5em}
+
+/* Screen Reader Text
+--------------------------------------------- */
+
+.screen-reader-shortcut,.screen-reader-text,.screen-reader-text span{border:0;clip:rect(0,0,0,0);height:1px;overflow:hidden;position:absolute!important;width:1px;word-wrap:normal!important}
+.screen-reader-shortcut:focus,.screen-reader-text:focus,.widget_search input[type=submit]:focus{background:#fff;box-shadow:0 0 2px 2px rgba(0,0,0,.6);clip:auto!important;color:#333;display:block;font-size:1em;font-weight:700;height:auto;padding:15px 23px 14px;text-decoration:none;width:auto;z-index:100000}
+
+.more-link{display:inline-block;position:relative;margin-bottom:30px}
+
+/* Avatar
+--------------------------------------------- */
+
+.avatar{border-radius:50%;float:left}
+.alignleft .avatar,.author-box .avatar{margin-right:20px}
+.alignright .avatar{margin-left:20px}
+.comment .avatar{margin:0 15px 20px 0}
+
+/* Genesis
+--------------------------------------------- */
+
+.after-entry,.archive-description,.author-box{margin-bottom:40px}
+.after-entry{box-shadow:0 0 20px rgba(0,0,0,.05);padding:20px 30px}
+.after-entry .widget:last-of-type{margin-bottom:0}
+.breadcrumb{border-bottom:1px solid #eee;font-size:16px;margin-bottom:40px;padding-bottom:10px}
+.genesis-title-hidden .breadcrumb{margin-top:40px}
+.archive-description p:last-child,.author-box p:last-child{margin-bottom:0}
+
+/* Search Form
+--------------------------------------------- */
+
+.search-form{overflow:hidden}
+.entry-content .search-form{margin-bottom:40px;width:50%}
+.post-password-form input[type=submit],.search-form input[type=submit]{margin-top:10px}
+.widget_search input[type=submit]{border:0;clip:rect(0,0,0,0);height:1px;margin:-1px;padding:0;position:absolute;width:1px}
+.header-search input{border-radius:10px;border:none}
+.header-search button{background-color:#fff;border:none;color:#fff}
+
+
+/* WordPress
+--------------------------------------------- */
+
+.gallery-caption,.wp-caption-text,figcaption{font-size:14px;font-weight:600;margin-top:.5em;margin-bottom:1em;padding-left:10px;padding-right:10px;text-align:center}
+.entry-content p.wp-caption-text{margin-bottom:0}
+.entry-content .wp-audio-shortcode,.entry-content .wp-playlist,.entry-content .wp-video{margin:0 0 20px}
+
+
+/* Pagination
+--------------------------------------------- */
+
+.pagination{clear:both;margin:35px 0}
+.adjacent-entry-pagination{margin-bottom:0}
+.archive-pagination li{display:inline}
+.archive-pagination li a{background-color:#f5f5f5;color:#333;cursor:pointer;display:inline-block;font-size:16px;font-weight:600;margin-bottom:4px;padding:8px 12px;text-decoration:none}
+.archive-pagination li a:focus,.archive-pagination li a:hover,.archive-pagination li.active a{background-color:#333;color:#fff}
+
+/* Entry Comments
+--------------------------------------------- */
+
+.comment-respond,.entry-comments,.entry-pings{margin-bottom:40px}
+.comment-list li{padding:10px 0 0 30px}
+.comment-list .depth-1{padding-left:0}
+.comment-content{clear:both}
+.comment-content ul>li{list-style-type:disc}
+.comment-respond input[type=email],.comment-respond input[type=text],.comment-respond input[type=url]{width:100%}
+.comment-respond label{display:block;margin-right:12px}
+.comment-header p {margin-bottom:0; display: inline-block}
+.entry-pings .reply{display:none}
+.comment-form-cookies-consent label{display:inline;padding-left:10px}
+.comment-author-name {font-weight:700;text-transform: uppercase}
+.entry-comments {font-size:16px;}
+.entry-comments p {margin: 0 0 10px}
+.comment-reply a {color:#62a4e9}
+.comment-list .comment {margin-bottom:5px}
+.comment-list .comment-time {color: #a2a2a2;}
+
+/* Sidebar
+---------------------------------------------------------------------------- */
+
+.sidebar{font-size:16px;line-height:1.5}
+.sidebar .widget{margin-bottom:40px}
+.sidebar p{margin-bottom:20px}
+
+/* Footer Widgets
+---------------------------------------------------------------------------- */
+
+.footer-widgets{border-top:1px solid #eee;background-color:#fff;clear:both;padding:60px 0}
+.footer-widgets .wrap{margin-left:auto;margin-right:auto}
+.footer-widget-area{margin-bottom:40px;padding-left:30px;padding-right:30px}
+.footer-widget-area:last-child,.footer-widgets .widget:last-child{margin-bottom:0}
+
+
+/* Site Footer
+---------------------------------------------------------------------------- */
+
+.site-footer{background-color:#0d0c0c;border-top:1px solid #fff;font-size:15px;line-height:1.5;padding:30px;text-align:center;color:#fff}
+.site-footer p{margin-bottom:0}
+.site-footer a {color:#fff}
+
+/* Print Styles
+---------------------------------------------------------------------------- */
+
+@media print {
+
+	*,::after,::before{background:0 0!important;box-shadow:none!important;color:#333!important;text-shadow:none!important}
+	a,a:visited{text-decoration:underline}
+	a[href]::after{content:none !important;}
+	abbr[title]::after{content:" (" attr(title) ")"}
+	.site-title>a::after,a[href^="#"]::after,a[href^="javascript:"]::after{content:""}
+	thead{display:table-header-group}
+	img,tr{page-break-inside:avoid}
+	img{max-width:100%!important}
+	.no-print{display: none !important;}
+	
+	@page{margin:2cm .5cm}
+	
+	h2,h3,p{orphans:3;widows:3}
+	blockquote,pre{border:1px solid #999;page-break-inside:avoid}
+	.content,.content-sidebar{width:100%}
+
+	.breadcrumb,.comment-edit-link,.comment-form,.comment-list .reply a,.comment-reply-title,.edit-link,.entry-comments-link,.entry-footer,.genesis-box,.header-widget-area,.hidden-print,.home-top,.nav-primary,.nav-secondary,.post-edit-link,.sidebar,button,input,select,textarea{display:none!important}
+
+	.title-area{text-align:center;width:100%}
+	.site-title>a{margin:0;text-decoration:none;text-indent:0}
+	.site-inner{padding-top:0;position:relative}
+	.author-box{margin-bottom:0}
+	h1,h2,h3,h4,h5,h6{orphans:3;page-break-after:avoid;page-break-inside:avoid;widows:3}
+	img{page-break-after:avoid;page-break-inside:avoid}
+	blockquote,pre,table{page-break-inside:avoid}
+	dl,ol,ul{page-break-before:avoid}
+
+}		
+			
+	
+			
+.single .entry-content>p:first-child:first-letter{font-family:Solid Mirage Etroit;font-size:75px;float:left;margin-right:15px;margin-bottom:15px;line-height:.8;font-weight:700}		
+			
+p {margin: 0 0 35px;padding: 0;}
+ol,ul {margin: 0;padding: 0;}
+li {list-style-type: none;}
+hr {border: 0;border-collapse: collapse;border-bottom: 1px solid currentColor;clear: both;color: #eee;margin: 1.65em auto;}
+b, strong {font-weight: 700;}
+blockquote,cite,em,i {font-style: italic;}
+mark {background: #ddd;color: #333;}
+blockquote {margin: 30px;}
+			
+.site-container {word-wrap: break-word;}	
+.widget-title {font-size: 18px;font-weight: 600;margin-bottom: 20px;}
+
+			
+a.aligncenter img {display: block; margin: 0 auto;}
+a.alignnone {display: inline-block;}
+.alignleft {float: left;text-align: left;}
+.alignright {float: right;text-align: right;}
+a.alignleft, a.alignnone, a.alignright {max-width: 100%;}
+img.centered, .aligncenter, .singular-image {display: block; margin: 0 auto 10px;}
+img.alignnone, .alignnone { margin-bottom: 15px;}
+a.alignleft,img.alignleft, .wp-caption.alignleft { margin: 0 10px 5px 0;}
+a.alignright, img.alignright,.wp-caption.alignright {margin: 0 0 15px 10px;}
+			
+.wp-custom-logo .custom-logo-link {display: block;}
+.wp-custom-logo .title-area img {width: auto;}
+			
+.entry {margin-bottom: 40px;}
+.single .entry-content ol, .single .entry-content ul {margin-bottom: 20px;padding-left: 20px;}
+.entry-content ol > li {list-style-type: decimal;}
+.entry-content ul > li {list-style-type: disc;}
+.entry-content ol ul > li, .entry-content ul ul > li {list-style-type: circle;}
+.entry-content ol ol,.entry-content ul ul {margin-bottom: 0; }
+.entry-content code {background-color: #f5f5f5;}
+.content .sticky {background-color: #f5f5f5;padding: 30px;}
+			
+p.entry-meta {font-size: 16px; margin-bottom: 0;}
+.entry-header .entry-meta {margin-bottom: 20px;}
+.entry-footer .entry-meta {border-top: 1px solid #eee;padding-top: 20px;}
+.entry-categories, .entry-tags {display: block;}
+.entry-comments-link::before {content: "\2014";margin: 0 6px 0 2px;}
+			
+body{background-color:#fff;color:#333;font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","Liberation Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";font-size:18px;font-weight:400;line-height:1.5;margin:0;overflow-x:hidden}
+			
+.site-inner {margin: 0 auto; padding: 30px 15px 0; }
+			
+/* Heading */
+.term-title{letter-spacing:2px;padding-bottom:5px;word-spacing:5px;font-weight:900;text-transform:uppercase}
+			
+/* Section Heading */
+.section-title{font-size:20px;letter-spacing:2px;word-spacing:5px;margin-top:5px;margin-bottom:15px;padding-bottom:5px;border-bottom:1px solid #fec830;font-weight:900;text-transform:uppercase}
+			
+/* Font Sizes */
+.text-11 {font-size: 11px;}
+.text-12 {font-size: 12px;}
+.text-13 {font-size: 13px;}
+.text-14 {font-size: 14px;}
+.text-16 {font-size: 16px;}
+.text-17 {font-size: 17px;}
+.text-18 {font-size: 18px;}
+.text-20 {font-size: 20px;}
+.text-24 {font-size: 25px;}
+.text-25 {font-size: 25px;}
+.text-30 {font-size: 30px;}
+.text-40 {font-size: 40px;}
+.text-50 {font-size: 50px;}
+
+.fw-300 {font-weight: 300;}
+.fw-400 {font-weight: 400;}
+.fw-600 {font-weight: 600;}
+.fw-700 {font-weight: 700;}
+.fw-900 {font-weight: 900;}
+
+.lh-1 {line-height: 1;}
+.lh-120 {line-height: 1.25;}
+.lh-150 {line-height: 1.5;}
+
+.text-white {color: #fff;}
+
+.text-gray {color: #a2a2a2;}
+.text-gray-light {color: #a6aaac;}
+.text-black {color: #333;}
+.text-blue {color: #2271b1;}
+.text-blue-light {color: #2877a5;}
+.text-red {color: #cc0a07;}
+.text-green {color: #27ae60;}
+.term-text a {color: #cc0a07;}
+.single .entry-content .text-black {color: #333;}
+.single .entry-content .text-gray {color: #a2a2a2;}
+.single .entry-content .text-black:hover  {color: #a6aaac;}
+.single .entry-content .text-black:focus  {color: #a6aaac;}
+
+
+.bg-gray {background-color: #f8f9fa;}
+.bg-gray-dark {background-color: #f3f3f3;}
+.bg-black {background-color: #0d0c0c;}
+.bg-white {background-color: #fff;}
+.bg-orange {background-color: #fcd968;}
+.bg-blue {background-color: #2877a5;}
+.bg-red {background-color: #cc0a07;}
+			
+			
+.text-white-hover:hover {color: #e6e6e6;}
+
+.bg-gray-hover:hover {background-color: #f8f9fa;}
+.bg-black-hover:hover {background-color: #000; color:#fff }
+.bg-red-hover:hover {background-color: #cc0a07; color:#fff }
+.box-shadow { box-shadow: 0 7px 12px -5px #000;}
+.bg-white-hover:hover {background-color: #fff; color:#cc0a07 }
+
+.border-b-hover-2:hover {border-bottom: 3px solid #cc0a07;}
+
+
+.border {border: 1px solid #c4c8cc;}
+.border-black {border: 1px solid #c4c8cc;}
+.border-red {border: 1px solid #cc0a07;}
+.border-red-2 {border: 2px solid #cc0a07;}
+.border-orange {border: 1px solid #fec830;}
+.border-top {border-top: 1px solid #000;}
+.border-bottom {border-bottom: 1px solid #000;}
+.border-bottom-dotted {border-bottom: 1px dotted #000;}
+.border-left {border-left: 1px solid #000;}
+.border-right {border-right: 1px solid #000;}
+.border-right-gray {border-right: 1px solid #d7dadb;}
+.border-lr-gray {border-right: 1px solid #d7dadb;border-left: 1px solid #d7dadb;}
+.border-black {border-color: #212529;}
+.border-radius-20 {border-radius: 20px;}
+.border-radius-5 {border-radius: 5px;}
+.border-radius-0-40 {border-radius: 0 40px;}
+.border-radius-0-20 {border-radius: 0 20px;}
+.border-radius-0-80 {border-radius: 0 80px;}
+.border-radius-80-0 {border-radius: 80px 0;}
+.border-radius-0-10 {border-radius: 0 10px;}
+.border-left-red-2 {border-left: 2px solid #cc0a07;}
+			
+.border-bottom-black {border-bottom: 1px solid #000;}
+.border-bottom-orange2 {border-bottom: 2px solid #fec830;}
+.border-bottom-orange1 {border-bottom: 1px solid #fec830;}
+
+.border-top-gray {border-top: 1px solid #d7dadb;}
+.border-bottom-gray {border-bottom: 1px solid #d7dadb;}
+.shadow-bottom {box-shadow: 0 5px 7px -6px rgb(0 0 0 / 50%);}
+
+.position-relative {position: relative;}
+.position-absolute {position: absolute;}
+.position-fixed {position: fixed;}
+.position-sticky {position: -webkit-sticky; position: sticky;}
+.sticky-top {position: -webkit-sticky;position: sticky;top: 20px;}
+.height-1200 {height: 1200px;}
+.height-900 {height: 900px;}
+.height-600 {height: 600px;}
+.height-360 {height: 360px;}
+.height-400 {height: 400px;}
+.min-height-400 {min-height: 400px;}
+.sticky-banner-300 {
+ 	min-height: 560px;
+    margin: -30px auto 35px;
+    padding: 0;
+
+    max-width: 300px;		
+}
+			
+.text-left {text-align: left;}
+.text-right {text-align: right;}
+.text-center {text-align: center;}
+
+.align-top {vertical-align: top;}
+.align-middle {vertical-align: middle;}
+.align-bottom {vertical-align: bottom;}
+
+.align-text-bottom {vertical-align: text-bottom ;}
+.align-text-top {vertical-align: text-top;}
+			
+.align-items-center {align-items: center;}
+			
+.jo-nowrap {white-space:nowrap;}
+.italic {font-style: italic;}
+			
+.float-left {float: left;}
+.float-right {float: right;}
+.overflow-hidden {overflow: hidden;}
+
+.jo-list-item {display: list-item;}
+.jo-inline {display: inline;}
+.jo-block {display: block;}
+.jo-inline-block {display: inline-block;}
+.d-flex {display: flex !important;}
+.jo-none {display: none;}
+			
+
+
+.m-0 {margin: 0}
+.m-3 {margin: 3px;}
+.m-5 {margin: 5px;}
+.m-10 {margin: 10px;}
+.m-auto {margin: auto;}
+.mx-auto {margin-right: auto; margin-left: auto;}
+.my-auto {margin-top: auto; margin-bottom: auto;}
+.mx-0 {margin-right: 0; margin-left: 0;}
+.my-2 {margin-top: 2px; margin-bottom: 2px;}
+.mx-5 {margin-right: 5px; margin-left: 5px;}
+.mx-10 {margin-right: 10px; margin-left: 10px;}
+.my-5 {margin-top: 5px; margin-bottom: 5px;}
+.my-10 {margin-top: 10px; margin-bottom: 10px;}
+.my-15 {margin-top: 15px; margin-bottom: 15px;}
+.mt-5 {margin-top: 5px;}
+.mt-10 {margin-top: 10px;}
+.mt-20 {margin-top: 20px;}
+.mt-30 {margin-top: 30px;}
+.mb-0 {margin-bottom: 5px;}
+.mb-5 {margin-bottom: 5px;}
+.mb-10 {margin-bottom: 10px;}
+.mb-15 {margin-bottom: 15px;}
+.mb-20 {margin-bottom: 20px;}
+.mb-25 {margin-bottom: 25px;}
+.mb-30 {margin-bottom: 30px;}
+.mb-45 {margin-bottom: 45px;}
+.mb-55 {margin-bottom: 45px;}
+.ml-0 {margin-left: 0px;}
+.ml-5 {margin-left: 5px;}
+.ml-10 {margin-left: 10px;}
+.ml-20 {margin-left: 20px;}
+.mr-0 {margin-right: 0px;}
+.mr-5 {margin-right: 5px;}
+.mr-10 {margin-right: 10px;}
+.mr-20 {margin-right: 20px;}
+			
+.m-auto {margin: auto !important;}
+.mr-auto {margin-right: auto !important;}
+
+.p-0 {padding: 0;}
+.p-3 {padding: 3px;}
+.p-5 {padding: 5px;}
+.p-10 {padding: 10px;}
+.p-15 {padding: 15px;}
+.p-20 {padding: 20px;}
+.px-2 {padding-right: 2px; padding-left: 2px;}			
+.px-5 {padding-right: 5px; padding-left: 5px;}
+.px-10 {padding-right: 10px; padding-left: 10px;}
+.px-15 {padding-right: 15px; padding-left: 15px;}
+.px-20 {padding-right: 20px; padding-left: 20px;}
+.py-3 {padding-top: 3px; padding-bottom: 3px;}
+.py-5 {padding-top: 5px; padding-bottom: 5px;}
+.py-10 {padding-top: 10px; padding-bottom: 10px;}
+.py-20 {padding-top: 20px; padding-bottom: 20px;}
+.py-30 {padding-top: 30px; padding-bottom: 30px;}
+.pt-0 {padding-top: 0;}
+.pt-5 {padding-top: 5px;}
+.pt-10 {padding-top: 10px;}
+.pt-15 {padding-top: 15px;}
+.pt-20 {padding-top: 20px;}
+.pb-0 {padding-bottom: 0;}
+.pb-5 {padding-bottom: 5px;}
+.pb-10 {padding-bottom: 10px;}
+.pb-15 {padding-bottom: 15px;}
+.pb-20 {padding-bottom: 20px;}
+.pb-25 {padding-bottom: 25px;}
+.pb-30 {padding-bottom: 30px;}
+.pl-5 {padding-left: 5px;}
+.pl-10 {padding-left: 10px;}
+.pl-25 {padding-left: 25px;}
+.pr-4 {padding-right: 5px;}
+.pr-10 {padding-right: 10px;}			
+
+.jo-btn {display: inline-block; line-height: 1.2; font-weight: 600; cursor: pointer; text-align: center; vertical-align: middle; text-decoration: none; -webkit-user-select: none;}	
+.jo-label {display: inline-block; line-height: 1.2; text-align: center; vertical-align: middle; text-decoration: none; -webkit-user-select: none; padding: 2px 5px 3px 5px;}
+			
+.jo-btn-1 {color: #333; border: 1px solid #bdcacf; font-size: 14px; padding: 4px 10px 5px 10px;}
+.jo-btn-2 {border-radius: 5px; box-shadow: 0 0 6px 1px #e3e3e3; width: 100%; padding: 10px 10px;}
+.jo-btn-3 {color: #59585a; border: 1px solid #fec830; border-radius: 20px; font-size: 12px; padding: 4px 10px 5px 10px;}
+.jo-btn-4 {background-color: #fcd968; color: #000; border: 1px solid #ffcc26; border-radius: 20px; font-size: 12px; padding: 4px 10px 4px 10px;}
+.imdb-logo {padding: 2px 5px 2px 5px; background-color: #ffcc26; border-radius: 3px; margin-right: 5px; font-weight: 700; font-size: 12px;}
+			
+.jo-btn-3:focus, .jo-btn-3:hover {color: #2c3643; border: 1px solid #2c3643;}
+.jo-btn-1:focus, .jo-btn-1:hover {color: #000; border: 1px solid #000;}
+.jo-btn-4:focus, .jo-btn-4:hover {background-color: #fff;}
+			
+h1,h2,h3,h4,h5,h6{font-weight:700;line-height:1.2;margin-top:0;margin-bottom:15px}		
+
+h1 {font-size: 23px;}
+h2 {font-size: 20px;}
+h3 {font-size: 18px;}
+h4 {font-size: 17px;}
+h5 {font-size: 16px;}
+h6 {font-size: 16px;}
+			
+h1 a,h2 a,h3 a,h4 a,h5 a,h6 a{color:#0d0c0c;text-decoration:none}
+			
+h2 a:hover,h3 a:hover,h4 a:hover,h5 a:hover,h6 a:hover{color:#cc0a07;text-decoration:none}
+			
+.w-100 {width: 100%}
+.w-auto {width: auto;}
+.max-width-100 {max-width:100px;}
+.max-width-300 {max-width: 330px; margin-left: auto; margin-right: auto;}
+.max-width-336 {max-width: 336px; margin-left: auto; margin-right: auto;}
+.ls-2 {letter-spacing: 2px;}
+.ws-5 {word-spacing: 5px;}
+.uppercase {text-transform: uppercase;}
+
+.text-truncate {overflow: hidden; text-overflow: ellipsis; white-space: nowrap;}
+
+.container,.container-fluid,.container-lg,.container-md,.container-sm,.container-xl,.container-xxl{width:100%;margin-right:auto;margin-left:auto}
+
+.justify-content-center{justify-content:center!important}		
+a {color: #424242; text-decoration: none;}
+.text-white-a a {color: #fff;}
+
+.underline {text-decoration: underline;}
+		
+.single .entry-content a {color: #cc0a07; text-decoration: none;}
+.single .entry-content a:hover {color: #ad4240}
+.single .entry-content a:focus {color: #ad4240}
+a:focus, a:hover {color: #cc0a07; text-decoration: none;}
+
+.text-red-hover:hover, .text-red-hover:focus {color: #cc0a07;} 
+.single .entry-content .text-red-hover:hover  {color: #cc0a07;}
+.single .entry-content .text-red-hover:focus {color: #cc0a07;}
+			
+.embed-containers {position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; background-color: #000;}			
+.embed-containers iframe, .embed-container object, .embed-container embed {position: absolute;top: 0;left: 0;width: 100%;height: 100%;}
+
+.max-width-300 {max-width: 300px; margin-left: auto; margin-right: auto;}
+.max-width-336 {max-width: 336px; margin-left: auto; margin-right: auto;}
+.max-width-360 {max-width: 360px; margin-left: auto; margin-right: auto;}
+.max-width-780 {max-width: 780px; margin-left: auto; margin-right: auto;}
+.max-width-1180 {max-width: 1180px; margin-left: auto; margin-right: auto;}
+			
+.max-height-600 {max-height: 600px;}
+
+.overflow-auto {overflow: auto;}
+
+.spinner-grow{width:10px;height:10px;vertical-align:1px;background-color:#ff5722;opacity:0;-webkit-animation:.75s linear infinite spinner-grow;animation:.75s linear infinite spinner-grow;border-radius:50px}
+@keyframes spinner-grow{0%{transform:scale(0)}50%{opacity:1;transform:none}}			
+
+.card{position:relative;display:flex;flex-direction:column}
+.card-img-overlay{position:absolute;bottom:0}
+.card-img{z-index:-1}
+.card-image::after{content:"";left:0;bottom:0;position:absolute;background:linear-gradient(0deg ,#000 15%,rgba(0,0,0,0) 90%);width:100%;height:100%}
+			
+#topmenu{position:absolute;width:100%;z-index:9999}
+
+.dots:before {content: "•"; color: #a2a2a2; margin: 0 5px;}
+
+.row {display: flex; flex-wrap: wrap;}
+.row > * {flex-shrink: 0; width: 100%; max-width: 100%;}
+.col {flex: 1 0 0%;}
+.row-cols-auto > * {flex: 0 0 auto;width: auto;}
+
+.row-cols-1 > * {flex: 0 0 auto; width: 100%;}
+.row-cols-2 > * {flex: 0 0 auto; width: 50%;}
+.row-cols-3 > * {flex: 0 0 auto; width: 33.3333333333%;}
+.row-cols-4 > * {flex: 0 0 auto; width: 25%;}
+.row-cols-5 > * {flex: 0 0 auto; width: 20%;}
+.row-cols-6 > * {flex: 0 0 auto; width: 16.6666666667%;}
+
+.col-auto {flex: 0 0 auto; width: auto;}
+.col-1 {flex: 0 0 auto; width: 8.3333333333%;}
+.col-2 {flex: 0 0 auto; width: 16.6666666667%;}
+.col-3 {flex: 0 0 auto; width: 25%;}
+.col-4 {flex: 0 0 auto; width: 33.3333333333%;}
+.col-5 {flex: 0 0 auto; width: 41.6666666667%;}
+.col-6 {flex: 0 0 auto; width: 50%;}
+.col-7 {flex: 0 0 auto; width: 58.3333333333%;}
+.col-8 {flex: 0 0 auto; width: 66.6666666667%;}
+.col-9 {flex: 0 0 auto; width: 75%;}
+.col-10 {flex: 0 0 auto; width: 83.3333333333%;}
+.col-11 {flex: 0 0 auto; width: 91.6666666667%;}
+.col-12 {flex: 0 0 auto; width: 100%;}
+
+
+
+.hamburger {
+	display: inline-block;
+    width: 1.8em;
+    height: 1.8em;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+	margin: 0px 7px 0px 7px;	
+	background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16"><path d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/></svg>');
+}		
+			
+.facebook-icon {background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" fill="%23000" viewBox="0 0 16 16"><path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/></svg>');
+}
+			
+.twitter-icon {background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" fill="%23000" viewBox="0 0 16 16"><path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/></svg>');
+}
+			
+.instagram-icon {background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" fill="%23000" viewBox="0 0 16 16"><path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/></svg>');
+}
+			
+.chevron-right {background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" fill="%23000" viewBox="0 0 16 16"><path d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/></svg>');
+}
+			
+.chevron-down {background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" fill="%23000" viewBox="0 0 16 16"><path d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg>');
+}
+			
+.comment-icon {
+	display: inline-block;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+	width: 1em;
+    height: 1.5em;
+	background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" fill="%23cc0a07" viewBox="0 0 16 16"><path d="M8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6-.097 1.016-.417 2.13-.771 2.966-.079.186.074.394.273.362 2.256-.37 3.597-.938 4.18-1.234A9.06 9.06 0 0 0 8 15z"/></svg>');
+}
+					
+.email {background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" fill="%23000" viewBox="0 0 16 16"><path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/></svg>');
+}
+			
+.arrow-top {background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" fill="%23000" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M7.646 2.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 3.707 2.354 9.354a.5.5 0 1 1-.708-.708l6-6z"/><path fill-rule="evenodd" d="M7.646 6.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 7.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/></svg>');
+}
+			
+.youtube-icon {background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" fill="%23000" viewBox="0 0 16 16"><path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.007 2.007 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.007 2.007 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31.4 31.4 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.007 2.007 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A99.788 99.788 0 0 1 7.858 2h.193zM6.4 5.209v4.818l4.157-2.408L6.4 5.209z"/></svg>');	
+}
+			
+.search-icon {background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" fill="%23000" viewBox="0 0 16 16"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/></svg>');
+}
+			
+.video-icon {background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" fill="%23fff" viewBox="0 0 16 16"> <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/><path d="M6.271 5.055a.5.5 0 0 1 .52.038l3.5 2.5a.5.5 0 0 1 0 .814l-3.5 2.5A.5.5 0 0 1 6 10.5v-5a.5.5 0 0 1 .271-.445z"/></svg>');
+}
+			
+.video-icon-2 {background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" fill="%23fff" viewBox="0 0 18 18"> <path d="M6 12.796V3.204L11.481 8 6 12.796zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753z"/></svg>');
+}			
+			
+			
+
+			
+			
+.object-cover {
+	top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+	position:absolute;
+}
+		
+.video-svg {width:2em;height:2em;vertical-align:middle;background-repeat:no-repeat;background-position:center;background-size:100%;}
+			
+.video-ico-center {
+	left: 43%;
+    bottom: 40%;		
+}
+			
+.jo-svg-icon{display:inline-block;width:1.2em;height:1.8em;vertical-align:middle;background-repeat:no-repeat;background-position:center;background-size:100%}
+
+.jo-svg-icon:hover{opacity: 0.7}
+.video-svg:hover{opacity: 0.7}
+			
+.vertical-align-bottom {vertical-align: bottom}
+
+.nav{display:flex;flex-wrap:wrap;padding-left:0;margin-bottom:0;list-style:none}
+			
+.jo-arrow-down::before{display:inline-block;width:0;height:0;margin-left:5px;margin-right:5px;vertical-align:.255em;content:"";border-top:.3em solid;border-right:.3em solid transparent;border-bottom:0;border-left:.3em solid transparent}
+
+.collapse-front{position:absolute;width:100%;z-index:9999}
+.collapse:not(.show){display:none}
+.collapsing{height:0;overflow:hidden;transition:height .35s ease}
+			
+.jo-one-line {overflow: hidden;text-overflow: ellipsis;white-space: nowrap;}			
+					
+table,td,th{border:1px solid #dee2e6}
+			
+table {border-collapse: collapse;border-spacing: 0;margin-bottom: 15px;width: 100%;}
+td,th {line-height: 1.5;vertical-align: top;}
+td {padding: 0.5em;}
+th {font-weight: 600;padding: 0.5em;}
+			
+.scroll-x {overflow-x: scroll; overflow-x: hidden; white-space: nowrap; -webkit-overflow-scrolling: touch;}
+.scrollbar-none::-webkit-scrollbar { display: none;}
+			
+			
+.ul-list ul {
+	 margin-bottom: 20px;
+    padding-left: 20px;		
+}
+			
+.ul-list ul > li {
+    list-style-type: disc;
+}
+			
+.clear::before,
+.clear::after {
+  			content: "";
+  clear: both;
+  display: table;
+			}
+			
+.twitter-tweet {margin: 0 auto;}
+			
+.jo-chart {width: 100%; height: 400px;}
+			
+.adslot_1 { display:inline-block; width: 970px; height: 250px;}
+
+#inline1, #inline2 {
+	margin-bottom: 20px;			
+}
+
+/* Media Queries
+---------------------------------------------------------------------------- */
+
+	/**** Min-width Media Queries ****/
+	/*---------------------------------------------------------------------------- */
+	
+	/* sm - Small devices (landscape phones, 576px and up) */
+	@media (min-width: 576px) {
+		
+		table {table-layout: auto; word-break: normal;}
+		
+	
+		.col-sm {flex: 1 0 0%;}
+		.row-cols-sm-auto > * {flex: 0 0 auto; width: auto;}
+		.row-cols-sm-1 > * {flex: 0 0 auto; width: 100%;}
+		.row-cols-sm-2 > * {flex: 0 0 auto; width: 50%;}
+		.row-cols-sm-3 > * {flex: 0 0 auto; width: 33.3333333333%;}
+		.row-cols-sm-4 > * {flex: 0 0 auto; width: 25%;}
+		.row-cols-sm-5 > * {flex: 0 0 auto; width: 20%;}
+		.row-cols-sm-6 > * {flex: 0 0 auto; width: 16.6666666667%;}
+
+		.col-sm-auto {flex: 0 0 auto; width: auto;}
+		.col-sm-1 {flex: 0 0 auto; width: 8.3333333333%;}
+		.col-sm-2 {flex: 0 0 auto; width: 16.6666666667%;}
+		.col-sm-3 {flex: 0 0 auto; width: 25%;}
+		.col-sm-4 {flex: 0 0 auto; width: 33.3333333333%;}
+		.col-sm-5 {flex: 0 0 auto; width: 41.6666666667%;}
+		.col-sm-6 {flex: 0 0 auto; width: 50%;}
+		.col-sm-7 {flex: 0 0 auto; width: 58.3333333333%;}
+		.col-sm-8 {flex: 0 0 auto; width: 66.6666666667%;}
+		.col-sm-9 {flex: 0 0 auto; width: 75%;}
+		.col-sm-10 {flex: 0 0 auto; width: 83.3333333333%;}
+		.col-sm-11 {flex: 0 0 auto; width: 91.6666666667%;}
+		.col-sm-12 {flex: 0 0 auto; width: 100%;}
+		
+	}
+	
+	/* md - Medium devices (tablets, 768px and up) */
+	@media only screen and (min-width: 768px) {
+		
+		.pl-25-md {padding-left: 25px;}
+		.text-center-md {text-align: center;}
+		.jo-min-md-none {display: none;}
+
+		
+		/* Font Sizes */
+		.text-md-11 {font-size: 11px;}
+		.text-md-12 {font-size: 12px;}
+		.text-md-13 {font-size: 13px;}
+		.text-md-14 {font-size: 14px;}
+		.text-md-16 {font-size: 16px;}
+		.text-md-18 {font-size: 18px;}
+		.text-md-20 {font-size: 20px;}
+		.text-md-30 {font-size: 30px;}
+		.text-md-35 {font-size: 35px;}
+	
+		.col-md {flex: 1 0 0%;}
+		.row-cols-md-auto > * {flex: 0 0 auto; width: auto;}
+		.row-cols-md-1 > * {flex: 0 0 auto;width: 100%;}
+		.row-cols-md-2 > * {flex: 0 0 auto; width: 50%;}
+		.row-cols-md-3 > * {flex: 0 0 auto;width: 33.3333333333%;}
+		.row-cols-md-4 > * {flex: 0 0 auto;width: 25%;}
+		.row-cols-md-5 > * {flex: 0 0 auto;width: 20%;}
+		.row-cols-md-6 > * {flex: 0 0 auto;width: 16.6666666667%;}
+
+		.col-md-auto {flex: 0 0 auto;width: auto;}
+		.col-md-1 {flex: 0 0 auto;width: 8.3333333333%;}
+		.col-md-2 {flex: 0 0 auto;width: 16.6666666667%;}
+		.col-md-3 {flex: 0 0 auto;width: 25%;}
+		.col-md-4 {flex: 0 0 auto;width: 33.3333333333%;}
+		.col-md-5 {flex: 0 0 auto;width: 41.6666666667%;}
+		.col-md-6 {flex: 0 0 auto;width: 50%;}
+		.col-md-7 {flex: 0 0 auto;width: 58.3333333333%;}
+		.col-md-8 {flex: 0 0 auto;width: 66.6666666667%;}
+		.col-md-9 {flex: 0 0 auto;width: 75%;}
+		.col-md-10 {flex: 0 0 auto;width: 83.3333333333%;}
+		.col-md-11 {flex: 0 0 auto;width: 91.6666666667%;}
+		.col-md-12 {flex: 0 0 auto;width: 100%;}
+	}	
+	
+	/* lg - Large devices (desktops, 992px and up) */
+	@media (min-width: 992px) { 
+	
+		/* Genesis */
+		.admin-bar .site-header {top: 32px;}
+		.site-inner {max-width: 1180px;}
+		.content {float: left; width: 68%; max-width: 780px;}
+		.sidebar-content .content {float: right;}
+		.full-width-content .content {float: none; margin-left: auto; margin-right: auto; max-width:1180px; width:100%;}
+		.sidebar {float: right; max-width: 300px; width: 28%;}
+		.sidebar-content .sidebar {float: left;}
+		.author-box {background-color: #f5f5f5; padding: 30px;}
+		.after-entry {padding: 40px 60px;}
+		.after-entry, .archive-description, .author-box, .comment-respond, .entry, .entry-comments, .entry-pings { margin-bottom: 30px;}
+	
+		/* Font Sizes */
+		.text-lg-11 {font-size: 11px;}
+		.text-lg-12 {font-size: 12px;}
+		.text-lg-13 {font-size: 13px;}
+		.text-lg-14 {font-size: 14px;}
+		.text-lg-16 {font-size: 16px;}
+		.text-lg-18 {font-size: 18px;}
+		.text-lg-20 {font-size: 20px;}
+		.text-lg-30 {font-size: 30px;}
+
+		.text-center-lg {text-align: center;}
+		.term-title {font-size: 40px;}
+		
+		
+		h1 {font-size: 30px;}
+		h2 {font-size: 25px;}
+		h3 {font-size: 19px;}
+		h4 {font-size: 18px;}
+		h5 {font-size: 17px;}
+		h6 {font-size: 16px;}
+	
+	
+	
+		.col-lg {flex: 1 0 0%;}
+		.row-cols-lg-auto > * {flex: 0 0 auto; width: auto;}
+		.row-cols-lg-1 > * {flex: 0 0 auto; width: 100%;}
+		.row-cols-lg-2 > * {flex: 0 0 auto;width: 50%;}
+		.row-cols-lg-3 > * {flex: 0 0 auto;width: 33.3333333333%;}
+		.row-cols-lg-4 > * {flex: 0 0 auto;width: 25%;}
+		.row-cols-lg-5 > * {flex: 0 0 auto;width: 20%;}
+		.row-cols-lg-6 > * {flex: 0 0 auto;width: 16.6666666667%;}
+
+		.col-lg-auto {flex: 0 0 auto; width: auto;}
+		.col-lg-1 {flex: 0 0 auto; width: 8.3333333333%;}
+		.col-lg-2 {flex: 0 0 auto; width: 16.6666666667%;}
+		.col-lg-3 {flex: 0 0 auto; width: 25%;}
+		.col-lg-4 {flex: 0 0 auto; width: 33.3333333333%;}
+		.col-lg-5 {flex: 0 0 auto; width: 41.6666666667%;}
+		.col-lg-6 {flex: 0 0 auto; width: 50%;}
+		.col-lg-7 {flex: 0 0 auto; width: 58.3333333333%;}
+		.col-lg-8 {flex: 0 0 auto; width: 66.6666666667%;}
+		.col-lg-9 {flex: 0 0 auto; width: 75%;}
+		.col-lg-10 {flex: 0 0 auto; width: 83.3333333333%;}
+		.col-lg-11 {flex: 0 0 auto; width: 91.6666666667%;}
+		.col-lg-12 {flex: 0 0 auto; width: 100%;}
+
+	}
+	
+	/* xl - X-Large devices (large desktops, 1200px and up) */
+	@media (min-width: 1200px) {
+		
+	
+	
+		.col-xl {flex: 1 0 0%;}
+		.row-cols-xl-auto > * {flex: 0 0 auto; width: auto;}
+		.row-cols-xl-1 > * {flex: 0 0 auto; width: 100%;}
+		.row-cols-xl-2 > * {flex: 0 0 auto; width: 50%;}
+		.row-cols-xl-3 > * {flex: 0 0 auto; width: 33.3333333333%;}
+		.row-cols-xl-4 > * {flex: 0 0 auto; width: 25%;}
+		.row-cols-xl-5 > * {flex: 0 0 auto;width: 20%;}
+		.row-cols-xl-6 > * {flex: 0 0 auto;width: 16.6666666667%;}
+
+		.col-xl-auto {flex: 0 0 auto; width: auto;}
+		.col-xl-1 {flex: 0 0 auto; width: 8.3333333333%;}
+		.col-xl-2 {flex: 0 0 auto; width: 16.6666666667%;}
+		.col-xl-3 {flex: 0 0 auto; width: 25%;}
+		.col-xl-4 {flex: 0 0 auto; width: 33.3333333333%;}
+		.col-xl-5 {flex: 0 0 auto; width: 41.6666666667%;}
+		.col-xl-6 {flex: 0 0 auto; width: 50%;}
+		.col-xl-7 {flex: 0 0 auto; width: 58.3333333333%;}
+		.col-xl-8 {flex: 0 0 auto; width: 66.6666666667%;}
+		.col-xl-9 {flex: 0 0 auto; width: 75%;}
+		.col-xl-10 {flex: 0 0 auto; width: 83.3333333333%;}
+		.col-xl-11 {flex: 0 0 auto; width: 91.6666666667%;}
+		.col-xl-12 {flex: 0 0 auto; width: 100%;}
+		
+	}
+	
+	/* 	xxl XX-Large devices (larger desktops, 1400px and up)*/
+	@media (min-width: 1400px) {
+		
+	.container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {max-width: 1320px;}
+	
+	}
+	
+	/**** Max-width Media Queries ****/
+	/*---------------------------------------------------------------------------- */
+	
+	
+	/* xs - Max Extra-Small devices*/
+	@media (max-width: 575.98px) {
+		
+		.single .entry-content>p:first-child:first-letter{font-family:Solid Mirage Etroit;font-size:50px;float:left;margin-right:5px;margin-bottom:5px;line-height:.8;font-weight:700}	
+		
+		.jo-chart {width: 100%; height: 350px;}
+		.img-full-xs {
+			width: 100vw!important;
+    		max-width: 100vw!important;
+			margin-left: calc(50% - 50vw)!important;
+		}
+		
+		.jo-xs-none {display: none;}
+		.text-center-xs {text-align:center;}
+		.table-responsive-xs {overflow-x: auto; -webkit-overflow-scrolling: touch;}
+		.max-width-100-xs {max-width: 100px;}
+		.max-width-130-xs {max-width: 130px;}
+		.w-100-xs {width: 100%;}
+		.max-width-300-xs {max-width: 300px; margin-left: auto; margin-right: auto;}
+		.max-width-330-xs {max-width: 330px; margin-left: auto; margin-right: auto;}
+		.mt-10-xs {margin-top:10px}
+		.mb-10-xs {margin-bottom:10px}
+		
+		/* Font Sizes */
+		.text-xs-11 {font-size: 11px;}
+		.text-xs-12 {font-size: 12px;}
+		.text-xs-13 {font-size: 13px;}
+		.text-xs-14 {font-size: 14px;}
+		.text-xs-16 {font-size: 16px;}
+		.text-xs-18 {font-size: 18px;}
+		.text-xs-20 {font-size: 20px;}
+		.text-xs-25 {font-size: 25px;}
+		.text-xs-30 {font-size: 30px;}
+		
+		.comment-respond {padding: 10px;}
+	}
+
+	/* sm - Max Small devices*/
+	@media only screen and (max-width: 767.98px) { 
+		.jo-sm-none {display: none;}
+		.table-responsive-sm {overflow-x: auto; -webkit-overflow-scrolling: touch;}
+		.text-center-sm {text-align:center;}
+		.entry-title {font-size: 25px;}
+		
+		/* Font Sizes */
+		.text-sm-11 {font-size: 11px;}
+		.text-sm-12 {font-size: 12px;}
+		.text-sm-13 {font-size: 13px;}
+		.text-sm-14 {font-size: 14px;}
+		.text-sm-16 {font-size: 16px;}
+		.text-sm-18 {font-size: 18px;}
+		.text-sm-20 {font-size: 20px;}
+		.text-sm-25 {font-size: 25px;}
+		.text-sm-30 {font-size: 30px;}
+
+	}
+			
+	@media only screen and (max-width: 781px) { 
+		.max-781-none {display: none;}
+	}
+
+	/* md - Max Medium devices */
+	@media (max-width: 991.98px) { 
+		.sidebar {display: none;}
+		.jo-md-none {display: none;}
+		.table-responsive-md {overflow-x: auto; -webkit-overflow-scrolling: touch;}
+		.text-center-md {text-align:center;}
+		.text-right-md {text-align:right;}
+		.adslot_1 {display: none!important;}
+	}	
+			
+			
+		 </style>
+<link rel="icon" href="https://www.mynews.gr/wp-content/uploads/2021/10/cropped-512x512-1-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://www.mynews.gr/wp-content/uploads/2021/10/cropped-512x512-1-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://www.mynews.gr/wp-content/uploads/2021/10/cropped-512x512-1-180x180.png" />
+<meta name="msapplication-TileImage" content="https://www.mynews.gr/wp-content/uploads/2021/10/cropped-512x512-1-270x270.png" />
+<noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript></head>
+<body class="post-template-default single single-post postid-103924 single-format-standard wp-custom-logo header-full-width content-sidebar genesis-breadcrumbs-hidden genesis-singular-image-hidden genesis-footer-widgets-hidden">
+
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5JPSWB3" height="0" width="0" style="display:none;visibility:hidden" aria-hidden="true"></iframe></noscript>
+
+
+<div class="site-container"><header itemscope="" itemtype="https://schema.org/WPHeader"><nav class="jo-a-text-black container-fluid" itemscope="" itemtype="https://schema.org/SiteNavigationElement">
+<div class="container">
+<div class="row align-items-center px-5 py-20">
+<div class="col-md-4 col-auto">
+<a class="collapsed jo-btn" data-bs-toggle="collapse" data-bs-target="#topmenu" aria-controls="topmenu" aria-expanded="false" aria-label="Toggle navigation">
+<span class="hamburger jo-p-1"></span>
+<a class="p-5 fw-700 text-14 text-right-md jo-md-none" href="/eidiseis/">Όλες οι Ειδήσεις</a>
+</a>
+</div>
+<div class="col-md-4 col-auto px-10 text-center text-left-md"><a class="p-5 max-width-130-xs" href="https://www.mynews.gr/">
+<picture>
+<img class="max-width-130-xs" width="200" height="48" src="/wp-content/themes/mynews/images/logo.svg" alt="mynews.gr">
+</picture>
+</a></div>
+<div class="col-md-4 col text-right">
+<div class="header-search border-bottom mb-15 jo-inline-block jo-md-none" itemprop="potentialAction" itemscope="" itemtype="https://schema.org/SearchAction">
+<form role="search" method="get" class="d-flex justify-content-center" action="/?s=">
+<input name="s" type="text" class="p-5 text-14" placeholder="Αναζήτηση">
+<button type="submit" value="Search" class="p-5" type="button"><i class="jo-svg-icon search-icon"></i></button>
+</form>
+</div>
+<a class="p-5 fw-700 text-14 text-right-md jo-min-md-none" href="/eidiseis/">Όλες οι Ειδήσεις</a>
+<a class="jo-btn ml-5 jo-md-none" href="https://www.facebook.com/www.mynews.gr"><span class="jo-svg-icon facebook-icon mr-5"></span></a>
+<a class="jo-btn ml-5 jo-md-none" href="https://twitter.com/mynews_gr"><span class="jo-svg-icon twitter-icon mr-5"></span></a>
+</div>
+</div>
+</div><div class="collapse" id="topmenu"><div class="container text-14 p-5 bg-white box-shadow fw-700"><div class="row text-center">
+<a href="/ellada/" class="col-6 col-sm-2 jo-block p-10 bg-red-hover border-lr-gray" itemprop="url"><span itemprop="name">ΕΛΛΑΔΑ</span></a>
+<a href="/kosmos/" class="col-6 col-sm-2 jo-block p-10 bg-red-hover border-lr-gray" itemprop="url"><span itemprop="name">ΚΟΣΜΟΣ</span></a>
+<a href="/oikonomia/" class="col-6 col-sm-2 jo-block p-10 bg-red-hover border-lr-gray" itemprop="url"><span itemprop="name">ΟΙΚΟΝΟΜΙΑ</span></a>
+<a href="/politiki/" class="col-6 col-sm-2 jo-block p-10 bg-red-hover border-lr-gray" itemprop="url"><span itemprop="name">ΠΟΛΙΤΙΚΗ</span></a>
+<a href="/eidiseis/koronoios/" class="col-6 col-sm-2 jo-block p-10 bg-red-hover border-lr-gray" itemprop="url"><span itemprop="name">ΚΟΡΩΝΟΪΟΣ</span></a>
+<a href="/politismos/" class="col-6 col-sm-2 jo-block p-10 bg-red-hover border-lr-gray" itemprop="url"><span itemprop="name">ΠΟΛΙΤΙΣΜΟΣ</span></a>
+<a href="/athlitika/" class="col-6 col-sm-2 jo-block p-10 bg-red-hover border-lr-gray" itemprop="url"><span itemprop="name">ΑΘΛΗΤΙΣΜΟΣ</span></a>
+<a href="/ygeia/" class="col-6 col-sm-2 jo-block p-10 bg-red-hover border-lr-gray" itemprop="url"><span itemprop="name">ΥΓΕΙΑ</span></a>
+<a href="/texnologia/" class="col-6 col-sm-2 jo-block p-10 bg-red-hover border-lr-gray" itemprop="url"><span itemprop="name">ΤΕΧΝΟΛΟΓΙΑ</span></a>
+<a href="/media/" class="col-6 col-sm-2 jo-block p-10 bg-red-hover border-lr-gray" itemprop="url"><span itemprop="name">MEDIA</span></a>
+<a href="/videos/" class="col-6 col-sm-2 jo-block p-10 bg-red-hover border-lr-gray" itemprop="url"><span itemprop="name">VIDEOS</span></a>
+<a href="/ellada/koinonia/" class="col-6 col-sm-2 jo-block p-10 bg-red-hover border-lr-gray" itemprop="url"><span itemprop="name">ΚΟΙΝΩΝΙΑ</span></a>
+<a href="/ellada/astynomia/" class="col-6 col-sm-2 jo-block p-10 bg-red-hover border-lr-gray" itemprop="url"><span itemprop="name">ΑΣΤΥΝΟΜΙΑ</span></a>
+<a href="/ellada/ekpaideusi/" class="col-6 col-sm-2 jo-block p-10 bg-red-hover border-lr-gray" itemprop="url"><span itemprop="name">ΕΚΠΑΙΔΕΥΣΗ</span></a>
+<a href="/politiki/kyvernisi/" class="col-6 col-sm-2 jo-block p-10 bg-red-hover border-lr-gray" itemprop="url"><span itemprop="name">ΚΥΒΕΡΝΗΣΗ</span></a>
+<a href="/politiki/antipolitevsi/" class="col-6 col-sm-2 jo-block p-10 bg-red-hover border-lr-gray" itemprop="url"><span itemprop="name">ΑΝΤΙΠΟΛΙΤΕΥΣΗ</span></a>
+<a href="/politiki/exoteriki-politiki/" class="col-6 col-sm-2 jo-block p-10 bg-red-hover border-lr-gray" itemprop="url"><span itemprop="name">ΕΞΩΤΕΡΙΚΗ ΠΟΛΙΤΙΚΗ</span></a>
+<a href="/kairos/" class="col-6 col-sm-2 jo-block p-10 bg-red-hover border-lr-gray" itemprop="url"><span itemprop="name">ΚΑΙΡΟΣ</span></a>
+<a href="/people/" class="col-6 col-sm-2 jo-block p-10 bg-red-hover border-lr-gray" itemprop="url"><span itemprop="name">PEOPLE</span></a>
+<div>
+<div class="header-search border-bottom mb-15 jo-min-md-none max-width-336" itemprop="potentialAction" itemscope="" itemtype="https://schema.org/SearchAction">
+<form role="search" method="get" class="d-flex justify-content-center" action="/?s=">
+<input name="s" type="text" class="p-5 text-14" placeholder="Αναζήτηση">
+<button type="submit" value="Search" class="p-5" type="button"><i class="jo-svg-icon search-icon"></i></button>
+</form>
+</div>
+</div>
+</div><div class="jo-min-md-none py-10 text-center border-top">
+<a class="jo-btn  jo-inline-block ml-5" href="https://www.facebook.com/www.mynews.gr"><span class="jo-svg-icon facebook-icon mr-5"></span></a>
+<a class="jo-btn jo-inline-block ml-5" href="https://twitter.com/mynews_gr"><span class="jo-svg-icon twitter-icon mr-5"></span></a>
+</div></div></div><div class="lh-120 text-14 fw-400 py-10 shadow-bottom border-top-gray container-fluid"><div class="container row align-items-center"><div class="col-auto col-md-8 jo-sm-none jo-one-line fw-700">
+<a href="/ellada/" class="p-10 bg-red-hover jo-inline-block mr-10" itemprop="url"><span itemprop="name">ΕΛΛΑΔΑ</span></a>
+<a href="/kosmos/" class="p-10 bg-red-hover jo-inline-block mr-10" itemprop="url"><span itemprop="name">ΚΟΣΜΟΣ</span></a>
+<a href="/oikonomia/" class="p-10 bg-red-hover jo-inline-block mr-10" itemprop="url"><span itemprop="name">ΟΙΚΟΝΟΜΙΑ</span></a>
+<a href="/ellada/koinonia/" class="p-10 bg-red-hover jo-inline-block mr-10" itemprop="url"><span itemprop="name">ΚΟΙΝΩΝΙΑ</span></a>
+<a href="/politiki/" class="p-10 bg-red-hover jo-inline-block mr-10" itemprop="url"><span itemprop="name">ΠΟΛΙΤΙΚΗ</span></a>
+<a href="/politismos/" class="p-10 bg-red-hover jo-inline-block mr-10" itemprop="url"><span itemprop="name">ΠΟΛΙΤΙΣΜΟΣ</span></a>
+<a href="/athlitika/" class="p-10 bg-red-hover jo-inline-block mr-10" itemprop="url"><span itemprop="name">ΑΘΛΗΤΙΣΜΟΣ</span></a>
+<a href="/videos/" class="p-10 bg-red-hover jo-inline-block mr-10" itemprop="url"><span itemprop="name">VIDEOS</span></a>
+</div><div class="col-12 col-md-4"><marquee class="no-print" width="100%" behavior="scroll" direction="left" scrollamount="4"><div class="mr-5 jo-inline-block spinner-grow" role="status"></div><a href="https://www.mynews.gr/moyntial-2022-epideixi-anoterotitas-i-vrazilia-ntythike-neimar-o-ritsarlison/" class="mr-10 ">Μουντιάλ 2022: Επίδειξη ανωτερότητας η Βραζιλία- Ντύθηκε&#8230; Νεϊμάρ ο Ριτσάρλισον</a><div class="mr-5 jo-inline-block spinner-grow" role="status"></div><a href="https://www.mynews.gr/eikones-sok-meta-ta-vrefika-galata-antikleptika-kai-stis-sardeles-ti-leei-o-adonis-georgiadis/" class="mr-10 ">Εικόνες-ΣΟΚ: Μετά τα βρεφικά γάλατα, αντικλεπτικά και στις&#8230; σαρδέλες-Τι λέει ο Άδωνις Γεωργιάδης</a><div class="mr-5 jo-inline-block spinner-grow" role="status"></div><a href="https://www.mynews.gr/kivotos-toy-kosmoy-synecheis-kataggelies-kai-polykrotes-apokalypseis-gia-ti-dysodi-ypothesi-vid/" class="mr-10 ">Κιβωτός του Κόσμου: Συνεχείς καταγγελίες και πολύκροτες αποκαλύψεις για τη δυσώδη υπόθεση (vid)</a><div class="mr-5 jo-inline-block spinner-grow" role="status"></div><a href="https://www.mynews.gr/thessaloniki-toy-espase-to-aytokinito-epeidi-den-antapokrithike-ston-erota-tis/" class="mr-10 ">Θεσσαλονίκη: Του έσπασε το αυτοκίνητο επειδή δεν ανταποκρίθηκε στον έρωτά της!</a><div class="mr-5 jo-inline-block spinner-grow" role="status"></div><a href="https://www.mynews.gr/moyntial-2022-i-portogalia-ypetaxe-3-2-ti-gkana-egrapse-istoria-o-kristiano-ronalnto/" class="mr-10 ">Μουντιάλ 2022: Η Πορτογαλία υπέταξε (3-2) τη Γκάνα- Έγραψε ιστορία ο Κριστιάνο Ρονάλντο (vids)</a></marquee></div></div></div></nav></header><div class="site-inner"><div class="text-center mb-25 margin-auto max-781-none">
+<div id="billboard1" data-ocm-ad style="min-height:250px">
+</div></div><div class="content-sidebar-wrap"><main class="content"><article class="post-103924 post type-post status-publish format-standard has-post-thumbnail category-astynomia category-ellada tag-athina tag-astynomikoi tag-attiki tag-epithesi tag-nosokomeio tag-traymatias entry" aria-label="Αττική: Επιχειρηματίας σε ΜΕΘ μετά από 17 μαχαιριές για&#8230; σειρά σε καντίνα!"><header class="entry-header"><div class="mb-10"><a class="py-5 text-16 px-10 fw-700 border-radius-0-10 bg-red text-white bg-white-hover" href="https://www.mynews.gr/ellada/astynomia/">Αστυνομία</a></div><header><h1 class="entry-title mb-20">Αττική: Επιχειρηματίας σε ΜΕΘ μετά από 17 μαχαιριές για&#8230; σειρά σε καντίνα!</h1></header><div class="mb-15 text-16 fw-600"><span class="fw-700 jo-inline-block text-red">#TAGS</span><a class="dots jo-inline-block" href="https://www.mynews.gr/eidiseis/athina/">Αθήνα</a> <a class="dots jo-inline-block" href="https://www.mynews.gr/eidiseis/astynomikoi/">Αστυνομικοί</a> <a class="dots jo-inline-block" href="https://www.mynews.gr/eidiseis/attiki/">Αττική</a> <a class="dots jo-inline-block" href="https://www.mynews.gr/eidiseis/epithesi/">Επίθεση</a> <a class="dots jo-inline-block" href="https://www.mynews.gr/eidiseis/nosokomeio/">Νοσοκομείο</a> <a class="dots jo-inline-block" href="https://www.mynews.gr/eidiseis/traymatias/">Τραυματίας</a> </div><img width="780" height="410" src="https://www.mynews.gr/wp-content/uploads/2022/09/astynomia-peripoliko-780x410.jpg" class="img-full-xs mb-20 wp-post-image" alt="Αστυνομία περιπολικό" decoding="async" srcset="https://www.mynews.gr/wp-content/uploads/2022/09/astynomia-peripoliko-780x410.jpg 780w, https://www.mynews.gr/wp-content/uploads/2022/09/astynomia-peripoliko-300x158.jpg 300w" sizes="(max-width: 780px) 100vw, 780px" /><div class="mb-30 text-16 row"><div class="col-12 col-sm-8 text-xs-14 mt-5 text-center-xs align-items-center">Πα 28/10/2022 21:21 <span class="dots"></span> Newsroom</div><div class="col-12 col-sm-4 text-xs-12 text-center-xs text-right mt-10-xs"><a class="align-items-center ml-10 jo-inline-block" href="#respond">
+<span class="vertical-align-bottom comment-icon"></span>
+<span class="ml-5 mr-10 fw-600 text-red">0 Σχόλια</span></a><a rel="noopener noreferrer" class="jo-btn jo-btn-1 mt-2 ml-2 no-print" href="https://facebook.com/sharer/sharer.php?u=https://www.mynews.gr/attiki-epicheirimatias-se-meth-meta-apo-17-machairies-gia-seira-se-kantina/">
+<span class="jo-svg-icon facebook-icon"></span></a><a rel="noopener noreferrer" class="jo-btn jo-btn-1 mt-2 ml-2 no-print" href="https://twitter.com/intent/tweet?text=Αττική: Επιχειρηματίας σε ΜΕΘ μετά από 17 μαχαιριές για&#8230; σειρά σε καντίνα!&url=https://www.mynews.gr/attiki-epicheirimatias-se-meth-meta-apo-17-machairies-gia-seira-se-kantina/">
+<span class="jo-svg-icon twitter-icon"></span></a><a rel="noopener noreferrer" class="jo-btn jo-btn-1 mt-2 ml-2 no-print" href="/cdn-cgi/l/email-protection#46793533242c2325327b88d789c289c288ff88fc88e87c6688d389c688ff89c188f388ff89c788f188fa88f789c288e988f789c46689c588f36688da88d388de6688fa88f389c288ea6688f789c689ca6677716688fa88f789c188f788ff89c788ff88eb89c46688f588ff88f760657e7475767d6689c588f388ff89c788ea6689c588f36688fc88f788fb89c288e988fb88f767" alt="mail">
+<span class="jo-svg-icon email"></span></a></div></div></header><div class="entry-content"><p><strong>Σε Μονάδα Εντατικής Θεραπείας νοσηλεύεται ένας επιχειρηματίας μετά από επίθεση με 15 μαχαιριές που δέχθηκε από δύο νεαρά άτομα στην Αθήνα.</strong></p>
+<p><strong>Συγκεκριμένα στα βόρεια προάστια της Πρωτεύουσας και μετά από παρεξήγηση για τη θέση σε καντίνα, ο επιχειρηματίας δέχθηκε 17 μαχαιριές από δύο άτομα και νοσηλεύεται σε νοσοκομείο.</strong></p>
+<p>Όπως μετέφερε το Mega στο κεντρικό δελτίο ειδήσεών του ο επιχειρηματίας δραστηριοποιείται στον τομέα του Real Estate έχοντας έδρα τα βόρεια προάστια της Αττικής και έπεσε θύμα εγκληματικής επίθεσης, όταν έξω από καντίνα δέχτηκε 17 μαχαιριές.</p>
+<p>Δύο άτομα απείλησαν τον 60χρονο και ακόμη δύο άνδρες μετά από παρεξήγηση για τη σειρά σε&#8230; καντίνα και μια από τις μαχαιριές τον βρήκε στη μηριαία αρτηρία.</p>
+<p>Οι αστυνομικοί συνέλαβαν έναν από τους δυο δράστες, ηλικίας 20 ετών, ενώ είναι σε εξέλιξη οι έρευνες για τον εντοπισμό του δεύτερου, ενός ατόμου που έχει απασχολήσει και στο παρελθόν την αστυνομία, ηλικίας περίπου 25 ετών.</p>
+<style>
+			
+	.arrow-right {
+  width: 0; 
+  height: 0; 
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  
+  border-left: 8px solid #cc0a07;
+		margin: 2px 10px 0 -1px;
+}
+
+				.live-update p {
+					margin: 0 0 15px;
+				}
+		</style>
+<div class="entry-content text-16 fw-600 border-radius-5 mb-30">Ακολούθησε το <a href="https://news.google.com/publications/CAAqBwgKMLmUrAswtp_EAw">mynews.gr στο Google News</a> για να ενημερώνεσαι άμεσα για όλες τις <a href="https://www.mynews.gr/eidiseis/">ειδήσεις</a> και την έκτακτη επικαιρότητα από την Ελλάδα και τον Κόσμο.</div></div><h3 class="fw-900">ΠΕΡΙΣΣΟΤΕΡΕΣ ΕΙΔΗΣΕΙΣ:</h3><div class="ul-list"><ul><li class="fw-600"><a class="text-red underline" href="https://www.mynews.gr/mati-attikis-eisvoli-liston-se-monokatoikia-kratoysan-omiro-tin-oikiaki-voitho-sikosan-erga-technis/" rel="bookmark">Μάτι Αττικής: Εισβολή ληστών σε μονοκατοικία-Κρατούσαν όμηρο την οικιακή βοηθό-«Σήκωσαν» έργα τέχνης</a></li><li class="fw-600"><a class="text-red underline" href="https://www.mynews.gr/attiki-katelixe-o-andras-poy-parasyrthike-apo-dyo-ochimata-sti-l-mesogeion-vid/" rel="bookmark">Αττική: Κατέληξε ο άντρας που παρασύρθηκε από δυο οχήματα στη Λ. Μεσογείων (vid)</a></li><li class="fw-600"><a class="text-red underline" href="https://www.mynews.gr/ioanna-kolovoy-skylakakis-to-spiti-tis-vgike-se-pleistiriasmo-epi-syriza/" rel="bookmark">Ιωάννα Κολοβού-Σκυλακάκης: «Το σπίτι της βγήκε σε πλειστηριασμό επί ΣΥΡΙΖΑ»</a></li><li class="fw-600"><a class="text-red underline" href="https://www.mynews.gr/korinthos-47chronos-synelifthi-gia-systimatiko-viasmo-tis-19chronis-koris-toy-vid/" rel="bookmark">Κόρινθος: 47χρονος συνελήφθη για συστηματικό βιασμό της 19χρονης κόρης του (vid)</a></li></ul></div><section class="mb-45 mt-30 px-5 py-10 border border-radius-5"><header><h2 class="term-title text-center text-30 text-xs-25">Ρoή Ειδήσεων</h2></header><div class="row mb-15"><div class="col-12 col-sm-6 p-5"><div class="text-14 text-gray">24/11/2022 22:59</div><h3 class="text-16"><a href="https://www.mynews.gr/moyntial-2022-epideixi-anoterotitas-i-vrazilia-ntythike-neimar-o-ritsarlison/" rel="bookmark">Μουντιάλ 2022: Επίδειξη ανωτερότητας η Βραζιλία- Ντύθηκε&#8230; Νεϊμάρ ο Ριτσάρλισον</a></h3></div><div class="col-12 col-sm-6 p-5"><div class="text-14 text-gray">24/11/2022 22:55</div><h3 class="text-16"><a href="https://www.mynews.gr/idiotikoi-vrefonipiakoi-stathmoi-aplirotoi-epi-3-mines-apo-ta-voucher-toy-espa-proanaggeloyn-geniki-apergia/" rel="bookmark">Ιδιωτικοί βρεφονηπιακοί σταθμοί: Απλήρωτοι επί 3 μήνες από τα voucher του ΕΣΠΑ- Προαναγγέλουν γενική απεργία</a></h3></div><div class="col-12 col-sm-6 p-5"><div class="text-14 text-gray">24/11/2022 22:46</div><h3 class="text-16"><a href="https://www.mynews.gr/erchetai-o-neos-kok-poies-oi-kyrioteres-allages-se-poines-kai-prostima/" rel="bookmark">Έρχεται ο νέος ΚΟΚ-Ποιες οι κυριότερες αλλαγές σε ποινές και πρόστιμα</a></h3></div><div class="col-12 col-sm-6 p-5"><div class="text-14 text-gray">24/11/2022 22:37</div><h3 class="text-16"><a href="https://www.mynews.gr/xana-tzakpot-sto-tzoker-deite-poioi-arithmoi-klirothikan-pic/" rel="bookmark">Ξανά τζακπότ στο Τζόκερ-Δείτε ποιοι αριθμοί κληρώθηκαν (pic)</a></h3></div><div class="col-12 col-sm-6 p-5"><div class="text-14 text-gray">24/11/2022 22:29</div><h3 class="text-16"><a href="https://www.mynews.gr/humanrights360-eisaggeliki-ereyna-gia-tis-oikonomikes-drastiriotites-stelechon-tis-mko/" rel="bookmark">HumanRights360: Εισαγγελική έρευνα για τις οικονομικές δραστηριότητες στελεχών της ΜΚΟ</a></h3></div><div class="col-12 col-sm-6 p-5"><div class="text-14 text-gray">24/11/2022 22:20</div><h3 class="text-16"><a href="https://www.mynews.gr/moyntial-2022-tromeri-theoria-synomosias-gia-tin-itta-tis-argentinis-sta-social-media-pics/" rel="bookmark">Μουντιάλ 2022: Τρομερή θεωρία συνωμοσίας για την ήττα της Αργεντινής στα social media (pics)</a></h3></div><div class="col-12 col-sm-6 p-5"><div class="text-14 text-gray">24/11/2022 22:11</div><h3 class="text-16"><a href="https://www.mynews.gr/ee-adiexodo-meta-tin-protasi-tis-komision-gia-to-plafon-veto-15-choron-mazi-me-tin-ellada/" rel="bookmark">ΕΕ: Αδιέξοδο μετά την πρόταση της Κομισιόν για το πλαφόν-Βέτο 15 χωρών, μαζί με την Ελλάδα</a></h3></div><div class="col-12 col-sm-6 p-5"><div class="text-14 text-gray">24/11/2022 22:02</div><h3 class="text-16"><a href="https://www.mynews.gr/star-anatropi-me-to-asia-express-giati-allazei-ora-provolis-vid/" rel="bookmark">Star: Ανατροπή με το Asia Express-Γιατί αλλάζει ώρα προβολής (vid)</a></h3></div><div class="text-center"><a class="jo-btn jo-btn-1 bg-gray-hover mt-10" href="/eidiseis/">Όλες οι Ειδήσεις</a></div></div></section><footer class="entry-footer"></footer></article></main><aside class="sidebar sidebar-primary widget-area" role="complementary" aria-label="Primary Sidebar"><h2 class="genesis-sidebar-title screen-reader-text">Primary Sidebar</h2><section id="text-2" class="widget widget_text"><div class="widget-wrap"> <div class="textwidget"><div class="height-900 text-center">
+<div class="sticky-top">
+<p></p>
+<div id="sidebar1" data-ocm-ad style="min-height:250px">
+</div>
+</div>
+</div>
+</div>
+</div></section>
+<section id="text-3" class="widget widget_text"><div class="widget-wrap"> <div class="textwidget"><div class="height-360 text-center max-width-336">
+<div class="sticky-top">
+<p></p>
+<div id="sidebar2" data-ocm-ad style="min-height:250px">
+</div>
+</div>
+</div>
+</div>
+</div></section>
+</aside><div class="clear"></div><section class="container mb-45 px-5"><h2 class="term-title">Δείτε Επίσης </h2><div class="row"><article class="col-12 col-md-4 mb-30 p-10"><div class="max-width-330-xs"><a href="https://www.mynews.gr/thanos-pleyris-i-antidrasi-toy-ypoyrgoy-ygeias-stin-apofasi-toy-ste-gia-toys-anemvoliastoys-ygeionomikoys/" title="Θάνος Πλεύρης: Η αντίδραση του Υπουργού Υγείας στην απόφαση-«βόμβα» του ΣτΕ για τους ανεμβολίαστους υγειονομικούς"><img width="300" height="158" src="https://www.mynews.gr/wp-content/uploads/2022/01/pleuris-300x158.jpg" class="aligncenter mb-20 w-100 wp-post-image" alt="Πλεύρης" decoding="async" loading="lazy" /></a><h3 class="text-18 mb-20" itemprop="name"><a href="https://www.mynews.gr/thanos-pleyris-i-antidrasi-toy-ypoyrgoy-ygeias-stin-apofasi-toy-ste-gia-toys-anemvoliastoys-ygeionomikoys/" rel="bookmark" itemprop="url">Θάνος Πλεύρης: Η αντίδραση του Υπουργού Υγείας στην απόφαση-«βόμβα» του ΣτΕ για τους ανεμβολίαστους υγειονομικούς</a></h3><div class="text-14">«Θα λάβουμε όλα τα αναγκαία μέτρα για να μην τεθεί σε κίνδυνο η δημόσια υγεία». Αυτή ήταν η αντίδραση του...</div></div></article><div class="col-auto mb-30 p-10 max-width-336"><div class="bg-gray height-360 text-center"><div class="sticky-top">
+<div id="infeed1" data-ocm-ad style="min-height:250px">
+</div></div></div></div><article class="col-12 col-md-4 mb-30 p-10"><div class="max-width-330-xs"><a href="https://www.mynews.gr/vomva-kivotos-toy-kosmoy-ayti-i-i-gynaika-adeiase-tin-trapeziki-thyrida-tis-mko/" title="ΒΟΜΒΑ-«Κιβωτός του Κόσμου»: Αυτή η γυναίκα «άδειασε» την τραπεζική θυρίδα της ΜΚΟ (vid)"><img width="300" height="158" src="https://www.mynews.gr/wp-content/uploads/2022/11/kivotos-2-300x158.jpg" class="aligncenter mb-20 w-100 wp-post-image" alt="Κιβωτός του Κόσμου" decoding="async" loading="lazy" /></a><h3 class="text-18 mb-20" itemprop="name"><a href="https://www.mynews.gr/vomva-kivotos-toy-kosmoy-ayti-i-i-gynaika-adeiase-tin-trapeziki-thyrida-tis-mko/" rel="bookmark" itemprop="url">ΒΟΜΒΑ-«Κιβωτός του Κόσμου»: Αυτή η γυναίκα «άδειασε» την τραπεζική θυρίδα της ΜΚΟ (vid)</a></h3><div class="text-14">Ραγδαίες είναι οι εξελίξεις και οι αποκαλύψεις για την «Κιβωτό του Κόσμου», με το οικονομικό σκέλος της ΜΚΟ να παίρνει...</div></div></article><article class="col-12 col-md-4 mb-30 p-10"><div class="max-width-330-xs"><a href="https://www.mynews.gr/thessaloniki-parasyrsi-21chronis-fovithika-oti-tha-me-apelasoyn-aisthanthika-oti-tha-ti-voithisei-o-kosmos/" title="Θεσσαλονίκη-Παράσυρση 21χρονης: «Φοβήθηκα ότι θα με απελάσουν-Αισθάνθηκα ότι θα τη βοηθήσει ο κόσμος»"><img width="300" height="158" src="https://www.mynews.gr/wp-content/uploads/2022/11/26xronos-300x158.jpg" class="aligncenter mb-20 w-100 wp-post-image" alt="26χρονος, Θεσσαλονίκη" decoding="async" loading="lazy" /></a><h3 class="text-18 mb-20" itemprop="name"><a href="https://www.mynews.gr/thessaloniki-parasyrsi-21chronis-fovithika-oti-tha-me-apelasoyn-aisthanthika-oti-tha-ti-voithisei-o-kosmos/" rel="bookmark" itemprop="url">Θεσσαλονίκη-Παράσυρση 21χρονης: «Φοβήθηκα ότι θα με απελάσουν-Αισθάνθηκα ότι θα τη βοηθήσει ο κόσμος»</a></h3><div class="text-14">Ο 26χρονος οδηγός, που παρέσυρε την 21χρονη, τραυματίζοντας τη βαρύτατα στο κέντρο της Θεσσαλονίκης, την Τρίτη (22/11) τα ξημερώματα «έλυσε»...</div></div></article><article class="col-12 col-md-4 mb-30 p-10"><div class="max-width-330-xs"><a href="https://www.mynews.gr/korinthos-voytia-thanatoy-gia-40chroni-epese-apo-ton-tetarto-orofo-kai-skotothike/" title="Κόρινθος: «Βουτιά» θανάτου για 40χρονη-Έπεσε από τον τέταρτο όροφο και σκοτώθηκε"><img width="300" height="158" src="https://www.mynews.gr/wp-content/uploads/2022/06/ekav-300x158.jpg" class="aligncenter mb-20 w-100 wp-post-image" alt="ΕΚΑΒ" decoding="async" loading="lazy" /></a><h3 class="text-18 mb-20" itemprop="name"><a href="https://www.mynews.gr/korinthos-voytia-thanatoy-gia-40chroni-epese-apo-ton-tetarto-orofo-kai-skotothike/" rel="bookmark" itemprop="url">Κόρινθος: «Βουτιά» θανάτου για 40χρονη-Έπεσε από τον τέταρτο όροφο και σκοτώθηκε</a></h3><div class="text-14">Τραγικό θάνατο βρήκε μια γυναίκα στην Κόρινθο, η οποία έπεσε στο κενό από τον τέταρτο όροφο πολυκατοικίας! Σύμφωνα με το...</div></div></article><article class="col-12 col-md-4 mb-30 p-10"><div class="max-width-330-xs"><a href="https://www.mynews.gr/panepistimio-thessalias-foititis-den-mporei-na-parei-to-ptychio-toy-logo-chreoys-anakoinosi-toy-idrymatos/" title="Πανεπιστήμιο Θεσσαλίας: Φοιτητής δεν μπορεί να πάρει το πτυχίο του λόγω χρέους!-Ανακοίνωση του ιδρύματος"><img width="300" height="158" src="https://www.mynews.gr/wp-content/uploads/2022/11/panepistimio-thessalias-300x158.jpg" class="aligncenter mb-20 w-100 wp-post-image" alt="Πανεπιστημιο Θεσσαλίας" decoding="async" loading="lazy" /></a><h3 class="text-18 mb-20" itemprop="name"><a href="https://www.mynews.gr/panepistimio-thessalias-foititis-den-mporei-na-parei-to-ptychio-toy-logo-chreoys-anakoinosi-toy-idrymatos/" rel="bookmark" itemprop="url">Πανεπιστήμιο Θεσσαλίας: Φοιτητής δεν μπορεί να πάρει το πτυχίο του λόγω χρέους!-Ανακοίνωση του ιδρύματος</a></h3><div class="text-14">Ένας νεαρός φοιτητής του πρώην ΤΕΙ Λάρισας δεν μπορεί να πάρει το πτυχίο του λόγω χρέους 150 ευρώ, παρά το...</div></div></article><article class="col-12 col-md-4 mb-30 p-10"><div class="max-width-330-xs"><a href="https://www.mynews.gr/korinthos-47chronos-synelifthi-gia-systimatiko-viasmo-tis-19chronis-koris-toy-vid/" title="Κόρινθος: 47χρονος συνελήφθη για συστηματικό βιασμό της 19χρονης κόρης του (vid)"><img width="300" height="158" src="https://www.mynews.gr/wp-content/uploads/2022/11/viasmos-1-300x158.jpg" class="aligncenter mb-20 w-100 wp-post-image" alt="Βιασμός" decoding="async" loading="lazy" /></a><h3 class="text-18 mb-20" itemprop="name"><a href="https://www.mynews.gr/korinthos-47chronos-synelifthi-gia-systimatiko-viasmo-tis-19chronis-koris-toy-vid/" rel="bookmark" itemprop="url">Κόρινθος: 47χρονος συνελήφθη για συστηματικό βιασμό της 19χρονης κόρης του (vid)</a></h3><div class="text-14">Χειροπέδες σε έναν 47χρονο, πέρασαν οι Αρχές, στην Κόρινθο, τον οποίο κατήγγειλε η 19χρονη κόρη του, για τον συστηματικό βιασμό...</div></div></article><article class="col-12 col-md-4 mb-30 p-10"><div class="max-width-330-xs"><a href="https://www.mynews.gr/kivotos-toy-kosmoy-proin-stelechos-tis-domis-entopistike-na-adeiazei-thyrida-apo-kentriki-trapeza-tis-athinas/" title="Κιβωτός του Κόσμου: Πρώην στέλεχος της δομής εντοπίστηκε να αδειάζει θυρίδα από κεντρική τράπεζα της Αθήνας"><img width="300" height="158" src="https://www.mynews.gr/wp-content/uploads/2022/03/euro-300x158.jpg" class="aligncenter mb-20 w-100 wp-post-image" alt="χρήματα" decoding="async" loading="lazy" /></a><h3 class="text-18 mb-20" itemprop="name"><a href="https://www.mynews.gr/kivotos-toy-kosmoy-proin-stelechos-tis-domis-entopistike-na-adeiazei-thyrida-apo-kentriki-trapeza-tis-athinas/" rel="bookmark" itemprop="url">Κιβωτός του Κόσμου: Πρώην στέλεχος της δομής εντοπίστηκε να αδειάζει θυρίδα από κεντρική τράπεζα της Αθήνας</a></h3><div class="text-14">Σοβαρές είναι οι εξελίξεις στην υπόθεση της Κιβωτού του Κόσμου, καθώς ένα πρώην στέλεχος της δομής άδειασε όλα τα χρήματα...</div></div></article><article class="col-12 col-md-4 mb-30 p-10"><div class="max-width-330-xs"><a href="https://www.mynews.gr/moyntial-voyrkose-o-kristiano-ronalnto-stin-anakroysi-toy-ethnikoy-ymnoy-tis-portogalias/" title="Μουντιάλ: Βούρκωσε ο Κριστιάνο Ρονάλντο στην ανάκρουση του εθνικού ύμνου της Πορτογαλίας (vids)"><img width="300" height="158" src="https://www.mynews.gr/wp-content/uploads/2022/11/ronaldo-300x158.jpg" class="aligncenter mb-20 w-100 wp-post-image" alt="Κριστιάνο Ρονάλντο" decoding="async" loading="lazy" /></a><h3 class="text-18 mb-20" itemprop="name"><a href="https://www.mynews.gr/moyntial-voyrkose-o-kristiano-ronalnto-stin-anakroysi-toy-ethnikoy-ymnoy-tis-portogalias/" rel="bookmark" itemprop="url">Μουντιάλ: Βούρκωσε ο Κριστιάνο Ρονάλντο στην ανάκρουση του εθνικού ύμνου της Πορτογαλίας (vids)</a></h3><div class="text-14">Ιδιαίτερα συγκινημένος εμφανίστηκε ο Κριστιάνο Ρονάλντο λίγο πριν την έναρξη του αγώνα της Πορτογαλίας με την Γκάνα στην πρεμιέρα των...</div></div></article><article class="col-12 col-md-4 mb-30 p-10"><div class="max-width-330-xs"><a href="https://www.mynews.gr/oskar-gkarthia-penthos-gia-ton-proin-proponiti-toy-olympiakoy-pethane-i-kori-toy/" title="Όσκαρ Γκαρθία: Πένθος για τον πρώην προπονητή του Ολυμπιακού- Πέθανε η κόρη του"><img width="300" height="158" src="https://www.mynews.gr/wp-content/uploads/2022/11/Oscar-Garcia-osfp-300x158.jpg" class="aligncenter mb-20 w-100 wp-post-image" alt="" decoding="async" loading="lazy" /></a><h3 class="text-18 mb-20" itemprop="name"><a href="https://www.mynews.gr/oskar-gkarthia-penthos-gia-ton-proin-proponiti-toy-olympiakoy-pethane-i-kori-toy/" rel="bookmark" itemprop="url">Όσκαρ Γκαρθία: Πένθος για τον πρώην προπονητή του Ολυμπιακού- Πέθανε η κόρη του</a></h3><div class="text-14">Μια από τις πιο δύσκολες στιγμές της ζωής του βιώνει ο Ισπανός, πρώην προπονητής του Ολυμπιακού, Όσκαρ Γκαρθία, καθώς πενθεί...</div></div></article><article class="col-12 col-md-4 mb-30 p-10"><div class="max-width-330-xs"><a href="https://www.mynews.gr/agria-gi-epeisodio-paraskeyis-24-11-to-schedio-toy-ari-gia-na-pagideysei-tin-olga-vids/" title="Άγρια Γη-Επεισόδιο Παρασκευής (24/11): Το σχέδιο του Άρη για να παγιδεύσει την Όλγα (vids)"><img width="300" height="158" src="https://www.mynews.gr/wp-content/uploads/2022/11/agria-gi-7-300x158.jpg" class="aligncenter mb-20 w-100 wp-post-image" alt="Άγρια Γη" decoding="async" loading="lazy" /></a><h3 class="text-18 mb-20" itemprop="name"><a href="https://www.mynews.gr/agria-gi-epeisodio-paraskeyis-24-11-to-schedio-toy-ari-gia-na-pagideysei-tin-olga-vids/" rel="bookmark" itemprop="url">Άγρια Γη-Επεισόδιο Παρασκευής (24/11): Το σχέδιο του Άρη για να παγιδεύσει την Όλγα (vids)</a></h3><div class="text-14">Συναρπαστικές προμηνύονται οι εξελίξεις στο αποψινό (24/11) επεισόδιο στη σειρά «Άγρια Γη», με τον Άρη να καταστρώνει σχέδιο για να...</div></div></article><article class="col-12 col-md-4 mb-30 p-10"><div class="max-width-330-xs"><a href="https://www.mynews.gr/moyntial-2022-inniaki-goyiliams-ala-mpoychalakis-sto-portogalia-gkana-3-2-i-epiki-antidrasi-toy-ronalnto-vids/" title="Μουντιάλ 2022: Ιννιάκι Γουίλιαμς&#8230; αλά Μπουχαλάκης στο Πορτογαλία-Γκάνα (3-2) &#8211; Η επική αντίδραση του Ρονάλντο (vids)"><img width="300" height="158" src="https://www.mynews.gr/wp-content/uploads/2022/11/ronaldo-1-300x158.jpg" class="aligncenter mb-20 w-100 wp-post-image" alt="Ρονάλντο" decoding="async" loading="lazy" /></a><h3 class="text-18 mb-20" itemprop="name"><a href="https://www.mynews.gr/moyntial-2022-inniaki-goyiliams-ala-mpoychalakis-sto-portogalia-gkana-3-2-i-epiki-antidrasi-toy-ronalnto-vids/" rel="bookmark" itemprop="url">Μουντιάλ 2022: Ιννιάκι Γουίλιαμς&#8230; αλά Μπουχαλάκης στο Πορτογαλία-Γκάνα (3-2) &#8211; Η επική αντίδραση του Ρονάλντο (vids)</a></h3><div class="text-14">Μπορεί η Πορτογαλία να επικράτησε της Γκάνας με 3-2, στο σημερινό (24/11) παιχνίδι για τον όγδοο όμιλο του Μουντιάλ, όμως...</div></div></article></div><div class="text-center"><a class="jo-btn jo-btn-1 bg-gray-hover mb-10" href="/eidiseis/">Όλες οι Ειδήσεις</a></div></section></div><div class="row mb-40 container"><div class="col-12 p-5 col-md-9"><h2 class="screen-reader-text">Reader Interactions</h2> <div id="respond" class="comment-respond">
+<h3 id="reply-title" class="comment-reply-title">ΠΡΟΣΘΗΚΗ ΣΧΟΛΙΟΥ <small><a rel="nofollow" id="cancel-comment-reply-link" href="/attiki-epicheirimatias-se-meth-meta-apo-17-machairies-gia-seira-se-kantina/#respond" style="display:none;">Ακύρωση απάντησης</a></small></h3><form action="https://www.mynews.gr/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate><p class="comment-notes"><span id="email-notes">Η ηλ. διεύθυνση σας δεν δημοσιεύεται.</span> <span class="required-field-message">Τα υποχρεωτικά πεδία σημειώνονται με <span class="required">*</span></span></p><p class="comment-form-comment"><label for="comment">Σχόλιο <span class="required">*</span></label> <textarea id="comment" name="comment" cols="45" rows="8" maxlength="65525" required></textarea></p><p class="comment-form-author"><label for="author">Όνομα <span class="required">*</span></label> <input id="author" name="author" type="text" value="" size="30" maxlength="245" autocomplete="name" required /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input id="email" name="email" type="email" value="" size="30" maxlength="100" aria-describedby="email-notes" autocomplete="email" required /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Yποβολή" /> <input type='hidden' name='comment_post_ID' value='103924' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p></form> </div>
+</div><div class="col-12 col-md-3 p-10"><div class=" jo-sm-none max-width-300 bg-gray m-auto">
+<div id="sidebar3" data-ocm-ad style="min-height:250px">
+</div></div></div></div></div><div class="container-fluid p-10 mt-20 border-top bg-black"><div class="row text-14 container"><div class="fw-700 text-center">
+<a href="/ellada/" class="p-10 bg-red-hover jo-inline-block mr-10 text-white" itemprop="url"><span itemprop="name">ΕΛΛΑΔΑ</span></a>
+<a href="/kosmos/" class="p-10 bg-red-hover jo-inline-block mr-10 text-white" itemprop="url"><span itemprop="name">ΚΟΣΜΟΣ</span></a>
+<a href="/oikonomia/" class="p-10 bg-red-hover jo-inline-block mr-10 text-white" itemprop="url"><span itemprop="name">ΟΙΚΟΝΟΜΙΑ</span></a>
+<a href="/politiki/" class="p-10 bg-red-hover jo-inline-block mr-10 text-white" itemprop="url"><span itemprop="name">ΠΟΛΙΤΙΚΗ</span></a>
+<a href="/politismos/" class="p-10 bg-red-hover jo-inline-block mr-10 text-white" itemprop="url"><span itemprop="name">ΠΟΛΙΤΙΣΜΟΣ</span></a>
+<a href="/athlitika/" class="p-10 bg-red-hover jo-inline-block mr-10 text-white" itemprop="url"><span itemprop="name">ΑΘΛΗΤΙΣΜΟΣ</span></a>
+<a href="/ygeia/" class="p-10 bg-red-hover jo-inline-block mr-10 text-white" itemprop="url"><span itemprop="name">ΥΓΕΙΑ</span></a>
+<a href="/videos/" class="p-10 bg-red-hover jo-inline-block mr-10 text-white" itemprop="url"><span itemprop="name">VIDEOS</span></a>
+</div></div></div><footer class="site-footer"><div class="wrap"><p>Copyright &#x000A9;&nbsp;2022 • mynews.gr • <a href="/oroi-xrisis/">Όροι Χρήσης</a> • <a href="/contact/">Επικοινωνία</a> • ΓΕΜΗ: 059043304000</p></div></footer></div><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="rocketlazyloadscript" async src="https://static.adman.gr/adman.js"></script><script type="rocketlazyloadscript">window.AdmanQueue=window.AdmanQueue||[];AdmanQueue.push(function(){Adman.adunit({id:828,h:'https://x.grxchange.gr',inline:true})});</script><script id='post-views-counter-frontend-js-extra'>
+var pvcArgsFrontend = {"mode":"js","postID":"103924","requestURL":"https:\/\/www.mynews.gr\/wp-admin\/admin-ajax.php","nonce":"dfa6094761"};
+</script>
+<script type="rocketlazyloadscript" src='https://www.mynews.gr/wp-content/plugins/post-views-counter/js/frontend.min.js?ver=1.3.12' id='post-views-counter-frontend-js'></script>
+<script type="rocketlazyloadscript" src='https://www.mynews.gr/wp-includes/js/comment-reply.min.js?ver=6.1.1' id='comment-reply-js'></script>
+<script>window.lazyLoadOptions={elements_selector:"iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}};window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="https://www.mynews.gr/wp-content/plugins/wp-rocket/assets/js/lazyload/17.5/lazyload.min.js"></script><script>function lazyLoadThumb(e){var t='<img src="https://i.ytimg.com/vi/ID/hqdefault.jpg" alt="" width="480" height="360">',a='<button class="play" aria-label="play Youtube video"></button>';return t.replace("ID",e)+a}function lazyLoadYoutubeIframe(){var e=document.createElement("iframe"),t="ID?autoplay=1";t+=0===this.parentNode.dataset.query.length?'':'&'+this.parentNode.dataset.query;e.setAttribute("src",t.replace("ID",this.parentNode.dataset.src)),e.setAttribute("frameborder","0"),e.setAttribute("allowfullscreen","1"),e.setAttribute("allow", "accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"),this.parentNode.parentNode.replaceChild(e,this.parentNode)}document.addEventListener("DOMContentLoaded",function(){var e,t,p,a=document.getElementsByClassName("rll-youtube-player");for(t=0;t<a.length;t++)e=document.createElement("div"),e.setAttribute("data-id",a[t].dataset.id),e.setAttribute("data-query", a[t].dataset.query),e.setAttribute("data-src", a[t].dataset.src),e.innerHTML=lazyLoadThumb(a[t].dataset.id),a[t].appendChild(e),p=e.querySelector('.play'),p.onclick=lazyLoadYoutubeIframe});</script></body></html>
