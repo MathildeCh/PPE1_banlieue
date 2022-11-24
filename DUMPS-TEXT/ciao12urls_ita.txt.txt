@@ -1,0 +1,615 @@
+   #Fratelli d'Italia » Feed Fratelli d'Italia » Feed dei commenti
+   Fratelli d'Italia » Tor Sapienza, Rampelli: Spaccio, prostituzione,
+   degrado. Così si vive in periferia. Le vedette avvisano i criminali
+   quando arriva la polizia Feed dei commenti alternate alternate
+   alternate
+
+   fbpx
+
+   Fratelli d'Italia
+   [logofdi.png]
+     *
+     *
+     *
+     *
+
+     * [home2.fw_.png]
+     * Movimento
+          + Chi Siamo
+          + Statuto
+          + Codice Etico
+          + Programma Ecr Party
+          + Candidati elezioni 2022
+          + Elezioni Trasparenti
+               o Elezioni 2022
+                    # Elezioni Politiche
+                         @ Italia
+                              - Plurinominali
+                              - Uninominali
+                              - Scarica Lista Plurinominale
+                              - Scarica Lista Uninominale
+                         @ Estero
+                              - Estero
+                              - Scarica Lista Estero
+                    # Elezioni Regionali
+                         @ Sicilia
+                    # Elezioni Suppletive
+                         @ Roma
+                    # Elezioni Provinciali
+                         @ Lecce
+                         @ Foggia
+                         @ Napoli
+                         @ Salerno
+                    # Elezioni Comunali
+                         @ Abruzzo
+                         @ Calabria
+                         @ Campania
+                         @ Emilia Romagna
+                         @ Friuli Venezia Giulia
+                         @ Lazio
+                         @ Liguria
+                         @ Lombardia
+                         @ Marche
+                         @ Piemonte
+                         @ Puglia
+                         @ Sardegna
+                         @ Sicilia
+                         @ Toscana
+                         @ Umbria
+                         @ Veneto
+               o Elezioni 2021
+                    # Elezioni Suppletive
+                         @ Roma
+                         @ Siena
+                    # Elezioni Regionali
+                         @ Calabria
+                    # Elezioni Comunali
+                         @ Abruzzo
+                         @ Basilicata
+                         @ Calabria
+                         @ Campania
+                         @ Emilia Romagna
+                         @ Friuli Venezia Giulia
+                         @ Lazio
+                         @ Liguria
+                         @ Lombardia
+                         @ Marche
+                         @ Molise
+                         @ Piemonte
+                         @ Puglia
+                         @ Sardegna
+                         @ Sicilia
+                         @ Toscana
+                         @ Umbria
+                         @ Veneto
+                         @ Trentino Alto Adige
+                    # Elezioni Provinciali
+                         @ Brindisi
+                         @ Caserta
+                         @ Frosinone
+                         @ Milano
+                         @ Pescara
+                         @ Salerno
+                         @ Varese
+               o Elezioni 2020
+                    # Elezioni Suppletive
+                         @ Sardegna
+                         @ Veneto
+                    # Regionali
+                         @ Marche
+                         @ Toscana
+                         @ Campania
+                         @ Liguria
+                         @ Puglia
+                         @ Val D’Aosta
+                         @ Veneto
+                    # Comunali
+                         @ Abruzzo
+                         @ Basilicata
+                         @ Campania
+                         @ Calabria
+                         @ Emilia Romagna
+                         @ Lazio
+                         @ Lombardia
+                         @ Marche
+                         @ Piemonte
+                         @ Puglia
+                         @ Sardegna
+                         @ Sicilia
+                         @ Toscana
+                         @ Trentino Alto Adige
+                         @ Val D’Aosta
+                         @ Veneto
+               o Archivio Elezioni
+                    # Elezioni suppletive
+                         @ Roma 01
+                         @ Trentino Alto Adige
+                    # Europee
+                         @ Circoscrizione 1 Italia Nord Occidentale
+                         @ Circoscrizione 2 Italia Nord Orientale
+                         @ Circoscrizione 3 Italia Centrale
+                         @ Circoscrizione 4 Italia Meridionale
+                         @ Circoscrizione 5 Isole
+                    # Regionali
+                         @ Piemonte
+                         @ Sardegna
+                         @ Basilicata
+                         @ Umbria
+                         @ Calabria
+                         @ Emilia Romagna
+                    # Comunali
+                         @ Sardegna
+                              - Cagliari
+                                   = Consiglio Comunale
+                                   = Municipalità Pirri
+                              - Sassari
+                              - Alghero
+                         @ Abruzzo
+                              - Giulianova
+                              - Montesilvano
+                              - Pescara
+                         @ Basilicata
+                              - Potenza
+                         @ Calabria
+                              - Vibo Valentia
+                              - Corigliano Rossano
+                              - Lamezia Terme
+                         @ Campania
+                              - Ariano Irpino
+                              - Arzano
+                              - Bacoli
+                              - Capaccio
+                              - Casavatore
+                              - Casoria
+                              - Castelvolturno
+                              - Nocera Superiore
+                              - Pagani
+                              - Sant’Anastasia
+                              - Sarno
+                              - Scafati
+                         @ Friuli Venezia Giulia
+                              - Porcia
+                         @ Toscana
+                              - Signa
+                              - Scandicci
+                              - San Giuliano Terme
+                              - San Giovanni valdarno
+                              - Rosignano Marittimo
+                              - Prato
+                              - Pontedera
+                              - Ponsacco
+                              - Poggibonsi
+                              - Firenze
+                              - Fignine e Incisa Valdarno
+                              - Empoli
+                              - Cortona
+                              - Collesalvetti
+                              - Certaldo
+                              - Cecina
+                              - Capannori
+                              - Calenzano
+                              - Agliana
+                              - Massarosa
+                              - Montemurlo
+                              - Montecatini Terme
+                              - Piombino
+                              - Monsummano Terme
+                              - Livorno
+                              - Lastra a Signa
+                              - Fucecchio
+                              - Follonica
+                         @ Marche
+                              - Ascoli Piceno
+                              - Recanati
+                              - Pesaro
+                         @ Lombardia
+                              - Bergamo
+                              - Suzzara
+                              - Montichiari
+                              - Lainate
+                              - Ghedi
+                              - Malnate
+                              - Giussano
+                              - Pavia
+                              - Paderno Lugnano
+                              - Cusano Milanino
+                              - Cremona
+                              - Cornaredo
+                              - Cormano
+                              - Concorezzo
+                              - Cesano Boscone
+                              - Cantù
+                              - Bovisio Masciago
+                              - Besana in Brianza
+                              - Muggio
+                              - Novate Milanese
+                              - Trezzano sul Naviglio
+                              - Settimo Milanese
+                              - Samarate
+                              - Rozzano
+                              - Romano di Lombardia
+                              - Porto Mantovano
+                              - Mariano Comense
+                         @ Sicilia
+                              - Gela
+                              - Castelvetrano
+                              - Caltanissetta
+                         @ Lazio
+                              - Veroli
+                              - Tarquinia
+                              - Palestrina
+                              - Nettuno
+                              - Monterotondo
+                              - Civitavecchia
+                              - Civita Castellana
+                              - Cassino
+                              - Ciampino
+                              - Latina
+                         @ Piemonte
+                              - Galliate
+                              - Fossano
+                              - Collegno
+                              - Chieri
+                              - Casale Monferrato
+                              - Bra
+                              - Biella
+                              - Beinasco
+                              - Vercelli
+                              - Verbania
+                              - Tortona
+                              - Saluzzo
+                              - Rivoli
+                              - Piossasco
+                              - Novi Ligure
+                              - Leini
+                              - Alba
+                         @ Liguria
+                              - Ventimiglia
+                              - Sanremo
+                              - Albenga
+                         @ Molise
+                              - Termoli
+                              - Campobasso
+                         @ Emilia Romagna
+                              - Cesena
+                              - Forlì
+                              - Zola Pedrosa
+                              - Scandiano
+                              - Sassuolo
+                              - San Lazzaro di Savena
+                              - Reggio Emilia
+                              - Pianoro
+                              - Molinella
+                              - Modena
+                              - Mirandola
+                              - Medicina
+                              - Maranello
+                              - Lugo
+                              - Fiorano Modenese
+                              - Fidenza
+                              - Ferrara
+                              - Copparo
+                              - Castel Franco Emilia
+                              - Castel Maggiore
+                              - Casalgrande
+                              - Casalecchio di Reno
+                              - Carpi
+                              - Bellaria Igea Marina
+                              - Argenta
+                         @ Umbria
+                              - Bastia Umbra
+                              - Orvieto
+                              - Perugia
+                              - Marsciano
+                              - Gubbio
+                              - Foligno
+                              - Castiglione del Lago
+                              - Bastia Umbra
+                         @ Puglia
+                              - Putignano
+                              - San Giovanni Rotondo
+                              - Foggia
+                              - San Severo
+                              - Torremaggiore
+                              - Lucera
+                              - Orta Nova
+                              - Gioia del Colle
+                              - Mesagne
+                              - Lecce
+                              - Bari
+                              - Corato
+                         @ Veneto
+                              - Paese
+                              - Noale
+                              - Negrar di Valpolicella
+                              - Mogliano Veneto
+                              - Legnago
+                              - Cardoneghe
+                              - Bassano del Grappa
+                              - Arzignano
+                              - Vittorio Veneto
+                              - Valdagno
+                              - Spinea
+                              - Selvazzano Dentro Padova
+                              - Scorzè
+                              - Rovigo
+                              - Preganziol
+                              - Pescantina
+          + Trasparenza
+               o Legge 3/2019
+               o Contributi Ricevuti (Legge 3/2019)
+               o Bilancio 2012
+               o Bilancio 2013
+               o Bilancio 2014
+               o Bilancio 2015
+               o Bilancio 2016
+               o Bilancio 2017
+               o Bilancio 2018
+               o Bilancio 2019
+               o Bilancio 2020
+               o Bilancio 2021
+          + Garanzia
+          + Privacy Policy
+          + Struttura
+               o Organi
+                    # Esecutivo
+                    # Dipartimenti e Laboratori Tematici
+          + Eletti
+               o Deputati e Senatori
+               o Deputati Europei
+     * Notizie
+          + Ultime Notizie
+          + L’impegno di FdI
+          + Dalle Regioni
+          + Gazzetta tricolore
+     * Programmi
+          + Programma Fratelli d’Italia 2022
+          + Programma Centrodestra
+          + Programma Elettorale Turismo 2022
+          + Patto per il turismo 2022
+     * Media
+          + Attività Territorio
+               o Firma per l’Italia
+               o Materiali Banchetti
+               o #vogliamovotare
+               o #ElezioniSubito
+               o No Fattura Elettronica
+               o Gazebo in tutta Italia
+          + Video
+          + Fotografie
+               o Foto Conferenza Programmatica
+               o Foto banchetti #noiussoli
+               o “La crisi non va in vacanza”
+               o Bologna “Più sicurezza più Italia”
+               o Ferrara “contro #FrancoCFA”
+               o Vivi la vita
+               o Firme Rep. Pres.
+               o Subito al lavoro
+               o Made in Italy
+               o Archivio Foto1
+                    # Noi non Tradiamo
+                    # Tour Agricoltura
+                    # Italia Sovrana
+                    # Referendum Propositivo
+                    # #MeloniSindaco
+               o Archivio Foto2
+                    # Roma nun te vole
+                    # 24 maggio: Piave
+                    # Difendo ciò che amo
+                    # Io Voto Italiano
+                    # Bologna #Liberiamoci
+               o Archivio Foto3
+                    # Petizione Primarie
+                    # Politiche 2013
+                    # Amministrative 2013
+                    # Blitz di Prato
+                    # Roma Senza Paura
+               o Archivio Foto4
+                    # Congresso Nazionale
+                    # Vendita Bankitalia
+                    # Contro Bankitalia
+                    # Rifare l’Italia
+                    # Staffetta per l’Italia
+               o Archivio Foto5
+                    # Convegno Marò
+                    # Primarie delle Idee
+                    # Dai Territori
+                    # Terrazza del Pincio
+                    # 7 marzo Venezia
+          + Campagne grafiche
+               o Materiale Stampa
+               o Diffondi
+     * Aderisci
+          + Adesioni 2022
+          + Regolamento Adesioni
+     * Parlamento
+          + FdI Senato
+          + FdI Camera
+          + FdI Europa
+     * Contatti
+          + Contattaci
+          + Sede Nazionale
+          + Sede Legale
+     * Login
+     * Gadget
+     * SOSTIENICI
+     * [ECR_Party_logo3.png]
+     * FdI Mondo
+     * 2xmille
+
+Tor Sapienza, Rampelli: Spaccio, prostituzione, degrado. Così si vive in
+periferia. Le vedette avvisano i criminali quando arriva la polizia
+
+     * Home
+     * Dal territorio
+     * Pagina corrente
+
+   [degrado-716x393.jpg]
+     * 22 Settembre 2022
+     * Dal territorio, Lazio
+     * 3 3
+
+   “A Tor Sapienza le cose non sono cambiate rispetto ad alcuni anni fa,
+   quando il quartiere stava sui tg nazional: il campo nomadi nel pieno
+   degrado, il  palazzo con 500 immigrati, l’area dedicata alla
+   prostituzione divisa tra rumeni e nigeriani. E poi delinquenza diffusa,
+   inaccessibilità dei sotterranei delle case popolari sul cui Stato
+   d’abbandono Zingaretti conserva responsabilità oggettive ed enormi. I
+   comitati dei cittadini sono l’unica nota positiva di questo orrore,
+   innamorati delle case in cui vivono e gestori scrupolosi degli spazi
+   verdi”.
+
+   È quanto ha dichiarato il vicepresidente della Camera dei deputati
+   Fabio Rampelli di Fratelli d’Italia accompagnato dal consigliere del V
+   municipio Daniele Rinaldi nel corso di una visita a Tor Sapienza (video
+   in allegato).
+   “Siamo passati – ha aggiunto Rampelli – attraverso zone  abbandonate
+   con spazi comuni parzialmente demoliti perché la Regione Lazio pare ci
+   abbia ripensato e così la stecca di servizi Ater lascia intravvedere
+   mozziconi di cemento armato recintati e ricoperti di frigoriferi,
+   copertoni di auto, materassi, poltrone sfasciate, una vera discarica a
+   cielo aperto”.
+   “Gravissima – ha proseguito –  la responsabilità di Comune e Regione
+   che non hanno fatto la necessaria manutenzione delle case, molte delle
+   quali con infiltrazioni, impianti di riscaldamento rotti e ascensori
+   guasti.
+   Le Forze dell’Ordine sono insufficienti, quando si avvicinano agli
+   edifici scatta l’allarme dato dalle vedette delle case popolari agli
+   spacciatori. Quando arrivano gli arresti, come al solito, non si fanno
+   un solo giorno di galera”.
+   Infine un centro sociale per anziani, luce nel deserto, chiuso per
+   lavori di manutenzione assegnati a una tal impresa Ceccarelli. Tempi di
+   consegna scaduti, nessun operaio in giro, nessuna vigilanza del
+   Municipio.
+
+   Abbiamo chiesto ai cittadini il loro giudizio sulla nostra storica
+   proposta delle case a riscatto, dare le case in proprietà scalando le
+   rate di affitto pagate e responsabilizzare sulla gestione.
+   La destra rafforzerà il presidio di polizia, realizzerà la caserma dei
+   Carabinieri. Le  periferie saranno al centro dell’attenzione del nuovo
+   governo con un dipartimento dedicato esclusivamente alla loro
+   rinascita”.
+
+
+   Condividi
+
+Tags
+
+   Roma Tor Sapienza
+   ____________________ ____________________ Start search
+
+   Generic selectors
+
+   [ ] Exact matches only
+   Exact matches only
+   [X] Search in title
+   Search in title
+   [X] Search in content
+   Search in content
+   [X] Search in excerpt
+
+   Post Type Selectors
+
+   [X] Hidden
+   [X] Hidden
+
+Facebook
+
+     Fratelli d'Italia
+
+Twitter
+
+   Tweets by FratellidItalia
+
+NEWSLETTER
+
+   Nome ____________________
+   Cognome ____________________
+   Email ____________________
+   Autorizzo l’invio di informazioni sulle iniziative associative e
+   politiche del Movimento[AUTORIZZO____]
+   [ ]  Ho letto ed ho preso visione dell’informativa sulla privacy
+   PROCEDI
+
+Social
+
+Facebook
+
+     Fratelli d'Italia
+
+Twitter
+
+   Tweets by FratellidItalia
+
+Instagram
+
+   Il divieto imposto a queste navi Ong di sostare in Il divieto imposto a
+   queste navi Ong di sostare in acque italiano è giustificato e
+   legittimo.
+   La legalità tornerà ad essere centrale nella nos La legalità tornerà ad
+   essere centrale nella nostra azione di governo. Tutti dovranno
+   rispettare le regole.
+   Buon lavoro a Lucio Malan nuovo Capogruppo al Sena Buon lavoro a Lucio
+   Malan nuovo Capogruppo al Senato di Fratelli d’Italia.
+   Buon lavoro a Tommaso Foti eletto Capogruppo di Fr Buon lavoro a
+   Tommaso Foti eletto Capogruppo di Fratelli d’Italia alla Camera.
+   Il 9 novembre 1989, dopo quasi trent'anni dalla su Il 9 novembre 1989,
+   dopo quasi trent'anni dalla sua costruzione, cadeva il Muro di Berlino,
+   simbolo dell'oppressione e della dittatura comunista. Oggi come allora,
+   continuiamo a costruire un'Europa libera, sovrana e lontana da ogni
+   odio ideologico.
+   Con il governo Meloni, l’Italia difende i suoi c Con il governo Meloni,
+   l’Italia difende i suoi confini.
+   Un cambio di passo rispetto alla passata gestione Un cambio di passo
+   rispetto alla passata gestione del fenomeno migratorio. Difendere i
+   confini nazionali è un dovere.
+   L’intervento di Giorgia Meloni al vertice sul cl L’intervento di
+   Giorgia Meloni al vertice sul clima. L’Italia farà la sua parte con
+   realismo e determinazione.
+   La finta solidarietà di certa sinistra e di alcun La finta solidarietà
+   di certa sinistra e di alcune ONG. Ascoltate le parole di Mario
+   Giordano.
+   🔵 Facciamo chiarezza. 🔵 Facciamo chiarezza.
+   Faremo rispettare le regole Ascoltate l’O!n. @g Faremo rispettare le
+   regole Ascoltate l’O!n. @giovadonze
+   Il Governo Meloni risponde in fretta alle emergenz Il Governo Meloni
+   risponde in fretta alle emergenze. Ascoltate le parole del
+   Sottosegretario alla Difesa Isabella Rauti
+   Carica altro… Segui su Instagram
+
+Galleria
+
+   Foto Conferenza
+
+   Informativa Privacy / Cookie ©2022 Fratelli d'Italia - Credit
+
+   (BUTTON)
+
+Dona ora
+
+     *
+
+   (BUTTON)
+
+Donazioni
+
+Dona con Paypal o carta di credito (Si ricorda che ai sensi della L.3/2019
+per i contributi in denaro, complessivamente superiori nell'anno a euro
+500,00, s'intende prestato il consenso alla pubblicità online dei dati del
+soggetto erogatore.)
+
+     * €10 (*)
+     * €20 ( )
+     * €30 ( )
+     * €40 ( )
+     * €50 ( )
+     * €60 ( )
+     * €100 ( )
+     * €200 ( )
+     * €500 ( )
+     * €1000 ( )
+
+   or
+   € ____________________ Dona ora
+
+   [ribbon.gif]

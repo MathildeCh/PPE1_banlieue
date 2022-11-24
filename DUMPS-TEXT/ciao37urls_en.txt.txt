@@ -1,0 +1,38 @@
+   guce
+
+Vos informations, votre expérience
+
+   Nous, Yahoo, faisons partie de la famille de marques Yahoo.
+
+   En cliquant sur ‘Accepter tout’, vous acceptez que Yahoo et nos
+   partenaires traitent vos informations personnelles et utilisent des
+   technologies telles que les cookies pour afficher des publicités et des
+   contenus personnalisés, et à des fins de mesure des publicités et des
+   contenus, d’étude des audiences et de développement de produit.
+
+Informations personnelles pouvant être utilisées
+
+     * Informations sur votre appareil et sur votre connexion Internet, y
+       compris votre adresse IP
+     * Navigation et recherche lors de l’utilisation des sites Web et
+       applications Yahoo
+     * Votre position exacte
+
+   En cliquant sur Refuser tout, vous refusez tous les cookies non
+   essentiels et technologies similaires, mais Yahoo continuera à utiliser
+   les cookies essentiels et des technologies similaires. Sélectionnez
+   Gérer les paramètres pour gérer vos préférences.
+
+   Pour en savoir plus sur notre utilisation de vos informations, veuillez
+   consulter notre Politique relative à la vie privée et notre Politique
+   en matière de cookies. Vous pouvez modifier vos choix à tout moment en
+   consultant vos paramètres de vie privée.
+   (agree) Accepter tout (reject) Refuser tout Gérer les paramètres
+   (BUTTON) Aller à la fin
+
+   [beacon?tag&#x3D;TCF2&amp;step&#x3D;Layer1-View&amp;brandDomain&#x3D;ne
+   ws.yahoo.com&amp;brandBid&#x3D;&amp;userType&#x3D;nonreg&amp;sdk&#x3D;f
+   alse&amp;tos&#x3D;fr-FR&amp;country&#x3D;FR&amp;sessionId&#x3D;3_cc-ses
+   sion_842ddb0a-1b44-46dc-9698-58330784f9b4]
+   [beacon?tag=code72&step=Layer1-View&sessionId=3_cc-session_842ddb0a-1b4
+   4-46dc-9698-58330784f9b4]

@@ -1,0 +1,405 @@
+    #Syndiquer tout le site
+
+   Accéder directement au contenu
+     * Abonnez-vous
+     * Facebook
+     * Twitter
+
+     * Qui sommes-nous ?
+     * Contactez-nous
+     * Soutenez-nous
+
+   Our sister journal
+   Metropolitics
+   Métropolitiques
+   Faites un don : Soutenez-nous
+
+     * Terrains
+     * Commentaires
+     * Essais
+     * Débats
+     * Entretiens
+     * Read Metropolitics
+     * Qui sommes-nous ?
+     * Contactez-nous
+     * Soutenez-nous
+
+   Rechercher : __________
+
+   Photo : Daniel Tafjord/Unsplash
+   Terrains
+
+La dégradation des relations entre les habitants des quartiers pauvres et la
+police se lit aussi dans les chiffres
+
+   Laurent Mucchielli - 17 juin 2020
+
+   À l’heure d’importantes mobilisations contre les violences policières,
+   Laurent Mucchielli montre que les chiffres de la délinquance témoignent
+   de la dégradation des relations entre habitants et police, et du
+   durcissement des politiques sécuritaires dans les banlieues populaires.
+
+   Covid-19 / police / quartiers populaires / banlieue / coronavirus
+   Télécharger au format PDF
+
+   Dès le début du confinement, on a assisté à la multiplication des
+   « incidents » relatés par la presse et les réseaux sociaux concernant
+   les contrôles de police occasionnés par la surveillance du respect des
+   règles de confinement. À lire ces articles de presse, il est tentant
+   pour certains de croire en substance qu’une fois de plus, ces
+   « sauvageons » de banlieues prouvent qu’ils ne respectent rien. C’est
+   évidemment ce que l’extrême droite et la fachosphère s’empressent de
+   crier [1]. C’est malheureusement aussi ce que disent une partie des
+   policiers [2], dont certains partagent clairement ces idées
+   politiques [3]. Mais c’est aussi ce que beaucoup de commentateurs du
+   débat public disent implicitement en relayant, même de façon neutre, ce
+   qui est souvent dénommé « incidents en banlieues » (Le Parisien, 22
+   avril 2020). Ce faisant, ils accréditent l’idée qu’il s’agirait là
+   d’une spécificité de ces quartiers et de leurs habitants. Or, rien
+   n’est plus contestable. Qu’ils soient simplement naïfs ou politiquement
+   intéressés, ces commentaires sont aveugles à trois autres séries de
+   faits.
+
+   1) Les conditions de vie d’une famille nombreuse (voire très nombreuse)
+   dans une tour HLM de vingt étages ne sont pas du tout les mêmes que
+   celles d’un couple parisien avec ses un ou deux enfants ayant chacun
+   leur chambre, leur ordinateur et leur smartphone. Le rapport au travail
+   et au salaire du travail est également radicalement différent, entre un
+   cadre supérieur pouvant se confiner en télétravail et travailler par
+   visioconférences et des employés de service ou des petits commerçants
+   pour qui la cessation temporaire d’activité est une catastrophe
+   économique ; 2) Des libertés prises avec les règles du confinement
+   s’observent également dans les quartiers des villes et des villages où
+   habitent des membres des classes moyennes et des classes supérieures.
+   Mais cela ne fait guère l’objet d’articles de presse [4] ; 3) La façon
+   de faire la police n’est pas la même dans les quartiers prioritaires de
+   la politique de la ville et dans le reste du territoire.
+
+   Sans négliger l’importance des points 1 et 2 [5], nous allons plutôt
+   produire ici quelques données qui nourrissent la réflexion sur le
+   troisième. En analysant les statistiques de police et de gendarmerie
+   dans plusieurs dizaines de communes d’Île-de-France, nous avons, en
+   effet, constaté d’abord que ces chiffres (qui résultent de
+   l’enregistrement des procès-verbaux pour crimes et délits) diffèrent
+   totalement selon les territoires, ensuite que ces différences procèdent
+   non pas simplement de dissemblances en matière de comportements parmi
+   les populations des quartiers populaires, mais repose aussi sur les
+   façons de faire de la police.
+
+L’activité différenciée de la police selon les territoires
+
+   À l’occasion d’une étude commanditée par une collectivité territoriale,
+   un petit cabinet d’étude avait sollicité il y a quelques mois notre
+   expertise sur les statistiques de police et de gendarmerie. Les données
+   statistiques en question nous ont été communiquées sous réserve d’un
+   engagement de confidentialité, on ne citera donc pas les noms des
+   communes concernées, ni même celui du département. On peut juste
+   indiquer qu’on est ici dans la région Île-de-France, dans des
+   territoires où se situent à quelques kilomètres de distance, d’une part
+   des zones résidentielles périurbaines, voire rurales, constituées de
+   villages et de petites villes habités principalement par des membres
+   des classes sociales supérieures, d’autre part des villes moyennes
+   abritant d’importants « quartiers prioritaires de la politique de la
+   ville » où résident les classes sociales les plus défavorisées (les
+   « cités de banlieues » dans le langage médiatique). Certains de ces
+   quartiers ont une réputation nationale, ayant notamment été le théâtre
+   d’émeutes à plusieurs reprises au cours des quarante dernières années
+   (Bachmann et Leguennec 1996 ; Kokoreff 2008 ; Mucchielli 2010).
+
+   La différenciation spatiale de l’activité policière peut être mise en
+   évidence en observant les différences entre deux communes de ce
+   territoire. La première (« commune A ») est une petite ville d’un peu
+   plus de 6 000 habitants, située en zone de gendarmerie, qui n’a pas de
+   réputation particulière et abrite une population globalement aisée. La
+   seconde (« commune B ») est une ville moyenne de plus de 30 000
+   habitants, qui compte plusieurs grands quartiers très pauvres, dont
+   trois sont réputés particulièrement « sensibles ». Au total, près de
+   40 % de sa population communale réside dans les quartiers prioritaires.
+
+   Dans le tableau qui suit, nous avons cumulé les enregistrements
+   d’infractions sur deux années (2017 et 2018) et les avons ventilés
+   selon leurs principales catégories (dans le détail, il en existe une
+   centaine). Les chiffres bruts sont évidemment très différents, on
+   s’attachera donc plutôt à regarder les pourcentages pour voir
+   apparaître les différences entre les deux communes.
+
+   Figure 1. Infractions constatées en 2017-2018 dans les communes A (zone
+                       gendarmerie) et B (zone police)
+
+     Source : ministère de l’Intérieur, Direction départementale de la
+     sécurité publique (DDSP).
+     Notes de lecture :
+     * CBV = coups et violences volontaires (non mortels)
+     ** VAMA = vol à main armée (arme à feu)
+     *** on regroupe ici les menaces, chantages, atteintes à la dignité
+     et à la personnalité.
+
+   Dans la commune A, on constate que l’ensemble des vols et des
+   cambriolages constitue le cœur de la délinquance enregistrée. On
+   remarque cependant aussi un nombre élevé de procédures pour vols à
+   l’étalage, escroqueries et abus de confiance, falsifications et usages
+   de chèques ou de cartes de crédit volés ainsi que pour travail
+   clandestin et emplois d’étrangers sans titre de séjour ou autorisation
+   de travail. Le commandant de la brigade de gendarmerie (interviewé)
+   l’explique par la présence sur la commune d’une grande zone d’activité
+   économique (qui génère beaucoup de vols à l’étalage, d’escroqueries et
+   de fraudes sur les moyens de paiement) et par le croisement de deux
+   autoroutes qui offrent autant de possibilités de fuites pour les
+   auteurs des vols. Les gendarmes procèdent donc en permanence à des
+   contrôles aux entrées et sorties des bretelles d’autoroute. Et c’est à
+   ces occasions qu’ils découvrent des situations de travail clandestin,
+   de même que des usages ou possessions de stupéfiants.
+
+   Dans la commune B, les homicides ainsi que les braquages à main armée
+   sont autant absents (un homicide en deux ans, une affaire privée) que
+   les vols avec violence y restent limités comparativement à d’autres
+   communes proches. On trouve cependant presque trois fois plus de
+   « coups et blessures volontaires », différence que le commissaire de
+   police (interviewé) explique principalement par la problématique des
+   bagarres entre groupes d’adolescents affiliés à des quartiers rivaux.
+   La police enregistre en revanche proportionnellement beaucoup moins de
+   vols simples, de cambriolages et de vols dans et sur les voitures.
+   Enfin, et c’est là l’essentiel, il apparaît dans ces statistiques un
+   ensemble d’infractions qui sont quasiment absentes côté gendarmerie
+   alors qu’elles sont centrales côté police. Ce sont d’une part des
+   destructions-dégradations ainsi que des incendies volontaires qui
+   témoignent notamment de l’hostilité envers les institutions publiques
+   d’une partie de la population. D’autre part, le nombre incroyablement
+   élevé des procédures faites pour simples usages de stupéfiants (et non
+   trafics), ainsi que pour outrages et rébellions (et dans une moindre
+   mesure pour ports d’armes prohibées, découvertes lors des fouilles à
+   corps), témoignent de la grande dureté des contrôles opérés par les
+   policiers (Boucher, Belqasmi et Marlière 2013 ; Gauthier et Jobard
+   2018) [6]. L’ensemble forme un groupe d’infractions typiquement liées
+   aux quartiers précarisés en forte tension et où les relations avec la
+   police sont extrêmement dégradées (c’est « une poudrière qui peut
+   s’embraser à tout moment », nous dit le commissaire). En 2017, on a
+   atteint ici un sommet. Cette année-là, le sous-total constitué par
+   l’addition de seulement cinq sous-ensembles d’infractions
+   (destructions-dégradations, incendies volontaires, usages de
+   stupéfiants, outrages et rébellions, ports d’armes prohibées)
+   représente à lui seul 43 % du total des infractions enregistrées dans
+   toute l’année sur l’ensemble de la ville. C’est presque cinq fois plus
+   que dans la commune gérée par la gendarmerie (où on se situe autour de
+   9 %).
+
+   En d’autres termes, dans ce territoire typique des « cités sensibles »
+   qui défrayent la chronique depuis la fin des années 1970, la vie des
+   habitants, leurs relations aux institutions et le comportement de ces
+   institutions à leur égard sont tellement dégradés, que presque la
+   moitié de l’activité procédurale de la police consiste en fin de compte
+   à enregistrer les conséquences de cette dégradation. C’est là un
+   « serpent de mer » de la politique publique de sécurité en France
+   (Monjardet 1996 ; Mouhanna 2011) comme en Grande-Bretagne et en
+   Amérique du Nord (Brodeur 2003 ; Reiner 2010 ; Jobard et Maillard
+   2015). Loin d’avoir abouti à des réformes profondes permettant de
+   développer le Community policing, les intenses débats des années 1980
+   et 1990 ont été enterrés avec l’expérience avortée de la « police de
+   proximité ». Depuis, l’on assiste au contraire à un durcissement
+   croissant du contrôle policier des quartiers populaires, parallèle
+   d’ailleurs à celui du maintien de l’ordre, ainsi que la répression des
+   manifestations contre la « loi travail » en 2016 puis du mouvement des
+   gilets jaunes en 2018-2019 l’a abondamment montré (Mucchielli 2020).
+
+   Bibliographie
+     * Bachmann, C. et Leguennec, N. 1996. Violences urbaines. Ascension
+       et chute des classes moyennes à travers cinquante ans de politique
+       de la ville, Paris : Albin Michel.
+     * Boucher, M., Belqasmi, M. et Marlière, E. 2013. Casquettes contre
+       képis. Enquête sur la police de rue et les usages de la force dans
+       les quartiers populaires, Paris : L’Harmattan.
+     * Brodeur, J.-P. 2003. Les Visages de la police. Pratiques et
+       perceptions, Montréal : Presses de l’Université de Montréal.
+     * Gauthier, J. et Jobard, F. 2018. Police. Questions sensibles,
+       Paris : Presses universitaires de France.
+     * Jobard, F. et Maillard de, J. 2015. Sociologie de la police.
+       Politiques, organisations, réformes, Paris : Armand Colin.
+     * Kokoreff, M. 2008. Sociologie des émeutes, Paris : Payot.
+     * Monjardet, D. 1996. Ce que fait la police. Sociologie de la force
+       publique, Paris : La Découverte.
+     * Mouhanna, C. 2011. La Police contre les citoyens, Nîmes : Champ
+       social.
+     * Mucchielli, L. 2010. « Pour une sociologie politique des émeutes
+       urbaines en France », in J.-L. Olive, L. Mucchielli et D. Gaband
+       (dir.), État d’émeutes, État d’exception : retour à la question
+       centrale des périphéries, Perpignan : Presses de l’Université de
+       Perpignan, p. 127-174.
+     * Mucchielli, L. 2020. « Peut-on parler de dérive sécuritaire de
+       l’État ? », in S. Paugam (dir.), 50 questions de sociologie,
+       Paris : Presses universitaires de France (sous presse).
+     * Reiner, R. 2010. The Politics of the Police, Oxford : Oxford
+       University Press.
+
+Faites un don
+
+   Soutenez
+   Métropolitiques
+   Soutenez-nous
+   Covid-19 police quartiers populaires banlieue coronavirus
+
+Pour citer cet article :
+
+   Laurent Mucchielli, « La dégradation des relations entre les habitants
+   des quartiers pauvres et la police se lit aussi dans les chiffres »,
+   Métropolitiques, 17 juin 2020.
+   URL : https://metropolitiques.eu/La-degradation-des-relations-entre-les
+   -habitants-des-quartiers-pauvres-et-la.html
+     __________________________________________________________________
+
+   [1] Lire L. Delaporte, « Coronavirus : l’extrême droite cible les
+   quartiers populaires », Mediapart, 24 mars 2020. URL :
+   www.mediapart.fr/journal/france/240320/coronavirus-l-extreme-droite-cib
+   le-les-quartiers-populaires (sur abonnement).
+
+   [2] C. Polloni, « Confinement : dans les quartiers populaires,
+   attention aux contrôles sous tension », Mediapart, 28 mars 2020. URL :
+   www.mediapart.fr/journal/france/280320/confinement-dans-les-quartiers-p
+   opulaires-attention-aux-controles-sous-tension (sur abonnement).
+
+   [3] R. Parreira, « Quand l’extrême droite prolifère dans la police »,
+   Mediapart, 2 mai 2020. URL :
+   https://blogs.mediapart.fr/ricardo-parreira/blog/230520/quand-l-extreme
+   -droite-prolifere-dans-la-police.
+
+   [4] J. Suaudeau, « Déconfinement sauvage : le séparatisme n’est pas où
+   l’on croit », Slate, 28 avril 2020. URL :
+   www.slate.fr/story/190005/deconfinement-sauvage-fracture-inegalites-vio
+   lences-policieres-france-etats-unis.
+
+   [5] Voir par exemple P. Gilbert, « Le Covid-19, la guerre et les
+   quartiers populaires », Métropolitiques, 16 avril 2020. URL :
+   www.metropolitiques.eu/Le-Covid-19-la-guerre-et-les-quartiers-populaire
+   s.html.
+
+   [6] En langage administratif policier, ce sont les « infractions
+   révélées par l’action des services » (IRAS).
+
+0 commentaire : Voir/commenter
+
+Un message, un commentaire ?
+
+   Forum sur abonnement
+
+   Pour participer à ce forum, vous devez vous enregistrer au préalable.
+   Merci d’indiquer ci-dessous l’identifiant personnel qui vous a été
+   fourni. Si vous n’êtes pas enregistré, vous devez vous inscrire.
+
+   Connexion | s’inscrire | mot de passe oublié ?
+
+   Forum sur abonnement
+
+   Pour participer à ce forum, vous devez vous enregistrer au préalable.
+   Merci d’indiquer ci-dessous l’identifiant personnel qui vous a été
+   fourni. Si vous n’êtes pas enregistré, vous devez vous inscrire.
+
+   Connexion | s’inscrire | mot de passe oublié ?
+
+Lire aussi
+
+   Débats
+
+L’« exode urbain », extension du domaine de la rente
+
+   Aurélie Delage & Max Rousseau - 4 juillet 2022
+   La thématique de l’exode urbain s’est imposée dans les médias comme
+   l’une des conséquences de la pandémie de Covid-19....
+   Terrains
+
+Garder la paix en pandémie
+
+   Marion Guenot - 23 juin 2022
+   Pendant le premier confinement, l’attention s’est focalisée sur les
+   inégalités touchant les travailleurs de première...
+   Entretiens
+
+La santé au cœur des luttes de quartier
+
+   Fabien Maguin - 19 mai 2022
+   Implantée dans un quartier populaire de Toulouse, la Case de santé
+   promeut avec succès une approche communautaire...
+   Commentaires
+
+Les votes en milieux populaires : diversité électorale et hétérogénéité
+sociale
+
+   Pierre Wadlow - 18 avril 2022
+   Dans l’ouvrage Votes populaires !, le collectif Focale propose une
+   analyse localisée des comportements électoraux lors...
+   Terrains
+
+Des métropoles incapables de redistribuer ?
+
+   Antoine Lévêque - 21 mars 2022
+   L’enquête socio-historique menée par Antoine Lévêque décrypte la
+   manière dont les décisions prises par des élus, à...
+   Commentaires
+
+Covid, réchauffement climatique : la résistance des villes
+
+   Jacques Jullien - 14 mars 2022
+   Jacques Jullien, ancien élu et professionnel de l’aménagement, rend
+   compte des analyses réunies par Guy Burgel sur la...
+
+Ailleurs sur le net
+
+Nouveauté ! | Politiques cyclables : quelles leçons tirer de...
+
+   Forum Vies Mobiles
+   21 novembre 2022, par Ricardo Marqués Le cas de Séville est unique : en
+   un seul grand chantier, entre 2006 et 2010,...
+
+Archive | Strasbourg, un exemple de ville cyclable
+
+   Forum Vies Mobiles
+   27 septembre 2021, par Frédéric Héran Strasbourg, première ville
+   cyclable de France, est une source d’inspiration...
+
+Archive | Système vélo
+
+   Forum Vies Mobiles
+   28 mai 2018, par Frédéric Héran Le système vélo est l’ensemble des
+   aménagements, des matériels, des services, des...
+
+Lu / L’Illusion du vote bobo. Configurations électorales et...
+
+   Urbanités
+   Alors que le succès politico-médiatique de la géographie électorale bat
+   son plein au printemps 2022 afin d’expliquer...
+
+La valeur du foncier
+
+   La Vie des idées
+   Les terres bâties représentent une valeur patrimoniale considérable,
+   mais méconnue. Alain Trannoy et Étienne Wasmer la...
+
+Lu / The Accidental Ecosystem : People and Wildlife in American...
+
+   Urbanités
+   Depuis les années 1990, l’écologie urbaine prend de l’ampleur en lien
+   avec l’accélération de l’urbanisation à l’échelle...
+
+Newsletter
+
+   Recevez gratuitement notre newsletter
+   Je m'inscris
+
+La rédaction publie
+
+   Retrouvez les ouvrages de la rédaction
+   Accéder
+
+Faites un don
+
+   Soutenez
+   Métropolitiques
+   Soutenez-nous
+
+   Centre national de recherche scientifique
+   Revue soutenue par l’Institut des Sciences Humaines et Sociales du CNRS
+
+Partenaires
+
+   2010 - 2022 Métropolitiques
+   Les textes publiés sur Métropolitiques sont protégés par le droit
+   d'auteur. Toute reproduction interdite sans autorisation.
+   Plan du site / Se connecter / Mentions légales / RSS 2.0

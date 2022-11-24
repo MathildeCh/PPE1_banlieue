@@ -1,0 +1,351 @@
+     * Ouvrir les outils d'accessibilité
+     * Aller au menu principal
+     * Aller au contenu principal
+
+   Accueil
+   (BUTTON) Menu (BUTTON) Menu
+   (BUTTON) Toggle Main Navigation Menu
+     * Perspectives
+     * Programmes nationaux
+       (BUTTON) Fermer Programmes nationaux (BUTTON) Fermer Programmes
+       nationaux
+          + Tous nos programmes
+               o Action Coeur de Ville
+               o Avenir Montagnes
+               o Démonstrateurs de la Ville Durable
+               o Petites villes de demain
+               o Quartiers de la Politique de la Ville
+               o Territoires d'industrie
+               o Territoires d'innovation
+          + France 2030
+          + France Services
+          + Plans de relance
+               o Commerce
+               o Inclusion numérique
+               o Logement
+               o Reconquête industrielle
+               o Santé et médico-social
+               o Tourisme
+               o Transition écologique et énergétique
+               o Très Haut Débit
+       Filière automobile
+       AMI - Rebond Industriel
+       AAP - Territoires intelligents et durables
+       AMI - Innovation dans la forme scolaire
+     * Offres et services
+       (BUTTON) Fermer Offres et services (BUTTON) Fermer Offres et
+       services
+          + Conseiller
+               o Conseil en développement territorial
+               o Accompagnement juridique et financier
+               o Autres accompagnements
+               o Outils
+          + Financer
+               o Prêts long terme
+               o Prêts court et moyen terme
+               o Fonds propres et quasi fonds propres
+               o Autres financements
+          + Opérer
+               o Services bancaires
+               o Lignes de trésorerie
+               o Garanties et sécurisation de fonds
+               o Autres services
+          + Les plans de relance
+               o Pour le commerce
+               o Pour l'habitat
+               o Pour l'inclusion numérique
+               o Pour la reconquête industrielle
+               o Pour la santé et le médico-social
+               o Pour le tourisme
+               o Pour la transition écologique et énergétique
+               o Pour le Très Haut Débit
+          + Localtis
+               o L'édition du jour
+               o Présentation
+               o Localtis Mag
+          + Le Hub des Territoires
+       Terrïtrains
+       OFFRE - TerriTrains : Solution innovante de financement,…
+       OFFRE - Ciclade.fr : rechercher et récupérer des avoirs en…
+       AMI - « Constructions Vertes »
+     * Ressources
+       (BUTTON) Fermer Ressources (BUTTON) Fermer Ressources
+          + Toutes nos ressources
+          + Chartes et conventions
+          + Comptes-rendus
+          + Guides et supports pédagogiques
+          + Etudes et livres blancs
+               o Publications sur l’habitat et les territoires
+               o Toutes les études et livres blancs
+          + Questions & réponses
+          + Dossiers
+          + Retours d'expérience
+               o Réalisations Banque des Territoires
+               o Expériences Territoires Conseils
+               o Expériences Smart City
+       Faire renaître l’industrie dans les territoires : les clés du
+       succès
+       LIVRE BLANC - Faire renaître l’industrie dans les…
+       LIVRE BLANC - Accompagnement du développement des EnR dans…
+       ETUDE - Eclairages n°27 - Un panorama de la vente de…
+     * Qui sommes-nous ?
+       (BUTTON) Fermer Qui sommes-nous ? (BUTTON) Fermer Qui sommes-nous ?
+          + Notre identité
+               o Notre identité
+               o Tous engagés
+               o Notre gouvernance
+          + Nos missions
+          + Agir pour la relance
+          + Espace presse
+          + Nos réalisations
+          + Actualités et événements
+               o Actualités de la Banque des Territoires
+               o Evénements de la Banque des Territoires
+          + Vos contacts en région
+          + Nos filiales et partenaires
+       Plénière numérique
+       EVENEMENT - Printemps des Territoires 2022 : revivez les…
+       REALISATION - Construction du groupe scolaire Doulon…
+       REALISATION - Lutte contre les îlots de chaleur :…
+     * (BUTTON) Espaces
+       (BUTTON) Espaces
+          + Collectivités locales
+          + Entreprises Publiques Locales
+          + Habitat social
+          + Professions juridiques
+          + Entreprises et acteurs financiers
+
+     * Directions régionales
+     * Contact
+     * (BUTTON) Accessibilité
+
+     * (BUTTON) Rechercher (BUTTON) Rechercher
+       (BUTTON) Close Search Window
+       Que recherchez vous ? ____________________
+       (BUTTON) Rechercher
+     * Connexion Connexion
+
+   Espace Collectivités locales Entreprises Publiques Locales Habitat
+   social Professions juridiques Entreprises et acteurs financiers
+
+   Retour
+     * Collectivités locales
+     * Entreprises Publiques Locales
+     * Habitat social
+     * Professions juridiques
+     * Entreprises et acteurs financiers
+
+   Collectivités locales Entreprises Publiques Locales Habitat social
+   Professions juridiques Entreprises et acteurs financiers
+     * Bienvenue
+     * Solutions sur mesure
+     * Thématiques prioritaires
+     * Outils
+
+     * Bienvenue
+     * Solutions sur mesure
+     * Thématiques prioritaires
+     * Outils
+
+     * Bienvenue
+     * Solutions sur mesure
+     * Thématiques prioritaires
+     * Outils
+     * Accéder à mes prêts
+
+     * Bienvenue
+     * Solutions sur mesure
+     * Thématiques prioritaires
+     * Outils
+     * Banque en ligne
+
+     * Bienvenue
+     * Solutions sur mesure
+     * Thématiques prioritaires
+     * Outils
+
+   Nos espaces
+
+   No Space selected
+     * Collectivités locales
+     * Entreprises Publiques Locales
+     * Habitat social
+     * Professions juridiques
+     * Entreprises et acteurs financiers
+
+     * Directions régionales
+     * Contact
+     * (BUTTON) Accessibilité
+
+     * Accueil
+     * (BUTTON) ...
+     * Offres et services
+     * Localtis
+     * Plus d'éducateurs ou plus de policiers dans...
+
+   Localtis
+     * L'édition du jour
+     * Présentation
+
+     * Print (BUTTON) Lancer l'impression
+     * Partager sur
+          + Facebook
+          + Linkedin
+          + Twitter
+          + Email
+
+Politique de la ville - Plus d'éducateurs ou plus de policiers dans les
+banlieues ? Les Français sont partagés
+
+   Publié le 6 novembre 2015
+   Politique de la ville,  Sécurité
+
+   50% des Français estiment que "renforcer la présence des éducateurs
+   dans les quartiers" permettrait d'améliorer la situation dans les
+   banlieues et 45% pensent qu'il faudrait pour cela "renforcer la
+   présence policière". La question posée par l'Ifop (*) prévoyait deux
+   réponses possibles, si bien qu'une part non négligeable des personnes
+   interrogées - 18% exactement - ont répondu qu'il faudrait à la fois,
+   selon eux, "renforcer la présence des éducateurs dans les quartiers" et
+   "renforcer la présence policière".
+   D'autres propositions de réponse étaient suggérées. Celle de
+   "construire de nouveaux logements et sortir des grands ensembles" a été
+   plébiscitée par 38% des personnes interrogées. "Faire en sorte que ce
+   soit les professeurs les plus expérimentés qui enseignent dans les
+   quartiers" recueille 25% et "rendre le vote obligatoire pour que les
+   habitants de ces quartiers participent à la chose publique" 19%.
+
+"Un territoire plus violent que le reste du pays"
+
+   Par ailleurs, 75% des personnes interrogées estiment que la banlieue
+   est aujourd'hui "un territoire plus violent que le reste du pays".
+   Jérôme Fourquet, directeur du département Opinion et Stratégies
+   d'entreprise à l'Ifop, relève que "ce sont les habitants des communes
+   rurales, les plus éloignés des banlieues, qui en ont l'image la plus
+   violente (82%) alors les habitants de l'agglomération qui vivent à
+   proximité et aussi en banlieue sont un peu moins catégoriques (69%). Et
+   de la même façon, plus l'interviewé est âgé, plus il a tendance à
+   percevoir la banlieue comme violente". A noter également que 96%
+   pensent que les épisodes de violence de 2005 sont susceptibles de se
+   reproduire.
+   Pour les personnes interrogées, les raisons qui expliqueraient les
+   violences dans les banlieues ne sont plus les mêmes que celles évoquées
+   9 ans auparavant. "La question du trafic de drogue s'est
+   progressivement imposée comme principale cause perçue des violences en
+   banlieues (qui seraient donc de plus en plus sous l'emprise de tels
+   réseaux selon les Français). En 2006, un an après les émeutes, ce thème
+   ne se plaçait qu'en troisième position derrière la démission des
+   parents et le chômage des jeunes", observe Jérôme Fourquet.
+
+Bandes organisées et trafic de drogue
+
+   La principale cause évoquée est en effet "la présence de bandes
+   organisées et le trafic de drogue" (56% contre 29% en octobre 2006),
+   puis le chômage des jeunes (30%, contre 33%), suivi de la démission des
+   parents (27% contre 44 %). Sont également cités : "la présence d'un
+   nombre important d'immigrés dans ces villes ou ces quartiers" (26%
+   contre 23%), les discriminations vécues par les habitants de ces
+   quartiers (14% contre 11%), les défaillances du système éducatif (10%
+   contre 14%), le manque de mixité sociale (10%, la question n'avait pas
+   été posée en 2006), les tensions entre les jeunes et la police (9%
+   contre 11%), le logement et l'urbanisme des quartiers concernés (5%
+   contre 7%), le manque de moyens alloués aux associations et la présence
+   insuffisante de travailleurs sociaux (5% contre 10%).
+   Enfin, 57% pensent que "les banlieues sont des territoires perdus de la
+   République" (62% des hommes interrogés et 51% des femmes).
+
+   Valérie Liquet
+
+   (*) L'Ifop a mené l'enquête sur "Les Français et la situation dans les
+   banlieues 10 ans après les émeutes de 2005", pour la Fondation Jean
+   Jaurès, auprès d'un échantillon représentatif de 969 personnes, entre
+   le 26 et le 28 octobre 2015.
+
+
+Abonnez-vous à Localtis !
+
+   Recevez le détail de notre édition quotidienne ou notre synthèse
+   hebdomadaire sur l’actualité des politiques publiques. Merci de
+   confirmer votre abonnement dans le mail que vous recevrez suite à votre
+   inscription.
+
+   Découvrir Localtis
+
+   * champs obligatoires
+   You must have JavaScript enabled to use this form.
+
+   Choix du format
+
+   [ ] Quotidienne
+   [ ] Hebdomadaire
+
+   Votre adresse mail
+   ____________________________________________________________
+   Activité [Votre secteur d'activité�]
+
+
+   Pour en savoir plus sur le traitement de vos données nous vous invitons
+   à consulter notre Politique de protection des données à caractère
+   personnelle
+   Abonnez-vous
+   Leave this field blank ____________________
+   Back to Top of the Page
+
+   Banque des Territoires, Groupe Caisse des dépôts
+     * Plan du site
+     * Espace presse
+     * Contact
+     * Réclamation
+
+     * Caisse des Dépôts
+     * Ciclade
+     * CDC-Net
+     * Consignations
+     * Portail Open Data CDC
+
+   Restez connectés
+     * Twitter
+     * LinkedIn
+     * Youtube
+     * Instagram
+     * RSS
+
+     * Mentions légales
+     * CGU
+     * Données personnelles
+     * Accessibilité : non conforme
+     * DSP2
+     * Instruments financiers
+     * Gestion des cookies
+
+   © Banque des Territoires 2022. Tous droits réservés.
+
+Accessibilité
+
+   (BUTTON) Fermer
+
+   Contraste
+
+   (*) Par défaut
+   ( ) Renforcé
+   ( ) Inversé
+
+   Police (dyslexie)
+
+   (*) Par défaut
+   ( ) Adaptée
+
+   Interlignage
+
+   (*) Par défaut
+   ( ) Adaptée
+
+Votre navigateur n'est pas adapté
+
+   (BUTTON) Fermer
+
+   Vous utilisez actuellement Internet Explorer et certaines
+   fonctionnalités ne sont pas disponibles sur ce navigateur. Pour
+   poursuivre votre parcours dans les meilleures conditions, nous vous
+   invitons a utiliser un autre navigateur, comme Google Chrome ou
+   Firefox.

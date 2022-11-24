@@ -1,0 +1,24 @@
+
+
+Potential automated action detected!
+
+  Newscorp Australia are trialling new security software on our mastheads. If
+  you receive "Potential automated action detected!" please try these steps
+  first:
+
+    1. Temporarily disable any AdBlockers / pop-up blockers / script
+       blockers you have enabled
+    2. Add this site in to the allowed list for any AdBlockers / pop-up
+       blockers / script blockers you have enabled
+    3. Ensure your browser supports JavaScript (this can be done via
+       accessing
+       https://www.whatismybrowser.com/detect/is-javascript-enabled in
+       your browser)
+    4. Ensure you are using the latest version of your web browser
+
+   If you need to be unblocked please e-mail us at
+   accessissues@news.com.au and provide the IP address and reference
+   number shown here along with why you require access. News Corp
+   Australia.
+   Your IP address is: 77.130.42.192 | Your reference number is:
+   0.2cbed717.1669323650.2c9d1018

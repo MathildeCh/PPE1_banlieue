@@ -1,0 +1,646 @@
+   #Syndiquer tout le site
+
+     * Aller au menu principal
+     * Aller au contenu principal
+     * Aller au pied de page
+
+   🦣 Mastodon | Twitter | Instagram | Facebook | Youtube | Linkedin Books
+   & Ideas
+   La Vie des idées
+   Recherche
+   Rechercher : _________________________ 
+   Navigation
+     * Politique
+     * Société
+     * Économie
+     * Arts
+     * International
+     * Philosophie
+     * Histoire
+     * Sciences
+     * Essais
+     * Recensions
+     * Entretiens
+     * Books & Ideas
+
+   Manifestation lycéenne, Paris, avril 2008
+
+   Essai Politique
+
+   L’art français de la déviance policière
+     __________________________________________________________________
+
+   par Jérémie Gauthier , le 3 mars 2017
+   violence , police , racisme
+   Télécharger l'article : PDF
+
+   L’interpellation violente de Théo à Aulnay-sous-Bois révèle les limites
+   d’une police prompte à cibler certaines catégories de la population.
+   Elle montre aussi que ces déviances policières ont des sources
+   structurelles, largement ignorées par le Ministère de l’Intérieur.
+
+   « Négro, bamboula, salope » : la violences des assignations raciales et
+   sexuelles prononcées par les policiers qui ont interpellé Théo, 22 ans,
+   résidant à la Cité des 3000, le 2 février 2017 à la suite d’un contrôle
+   d’identité, s’est accompagnée d’un tabassage à coup de poings, de pieds
+   et de matraque télescopique. Cette dernière a également été utilisée
+   pour provoquer une « grave blessure rectale » constatée par un médecin
+   de l’hôpital Robert-Ballanger à Aulnay. À la violence verbale et
+   physique s’ajoute donc un viol commis avec une arme de service [1].
+   Sans ambigüité, la force, la soumission et la dégradation se sont
+   substituées au droit. Dans les jours qui suivent, une procédure
+   judiciaire est engagée, tandis qu’à Aulnay et dans d’autres communes
+   alternent émeutes et mobilisations pacifiques organisées par les
+   proches du jeune homme et des collectifs mobilisés contre les violences
+   policières. Fait inhabituel, l’affaire est également rapidement relayée
+   dans le champ politique. On notera la prise de position en faveur de la
+   victime, a priori étonnante de la part d’un ancien syndicaliste
+   policier, du maire Les Républicains d’Aulnay-sous-Bois Bruno Beschizza,
+   ainsi que le déplacement du président de la République François
+   Hollande au chevet de la victime. Cette « cérémonie de
+   dégradation » [2], rendue visible par la caméra de surveillance, est
+   donc devenue une affaire judiciaire, médiatique et politique.
+
+   Les violences perpétrées à Aulnay-sous-Bois peuvent être rapprochées
+   des faits qui se sont déroulés à la fin de l’année 2015 dans le 12^e
+   arrondissement de Paris, où 18 adolescent.e.s ont porté plainte contre
+   des policiers d’une brigade de proximité pour « violences volontaires
+   aggravées », « agression sexuelle aggravée », « discrimination » et
+   « abus d’autorité ». Comme dans le cas de Théo à Aulnay, l’affaire du
+   12^e arrondissement confronte des adolescent.e.s et de jeunes adultes
+   issus des immigrations postcoloniales au triptyque de la violence
+   d’État, du racisme et des violences sexuelles. Ces cas de déviances
+   policières laissent apparaître deux dynamiques qui seront
+   successivement analysées dans ce qui suit : d’un côté, la domination
+   d’un style policier répressif dans les quartiers de banlieue et, d’un
+   autre côté, la structuration et l’élargissement de la critique des
+   déviances policières.
+
+Une répression de proximité
+
+   La police, comme toute institution, est le produit des histoires
+   nationales. En France, les techniques policières de contrôle
+   s’inscrivent dans une histoire de l’encadrement policier de populations
+   décrites comme « indésirables », comme les prostituées, les mendiants
+   et les vagabonds. Lors de la guerre d’Algérie, ces techniques de
+   contrôle (contrôles d’identité, rafles, création de brigades
+   spécialisées) ont été utilisées pour cibler les « Nord-Africains » en
+   métropole : dissoutes en 1944 puis réactivées en 1953 sous le nom de
+   Brigade des agressions et violences, les Brigades Nord-africaines ont
+   eu massivement recours aux contrôles d’identité et aux rafles à
+   l’encontre des immigrés algériens en métropole, Français de droit
+   depuis 1944 (Blanchard, 2006). Dans les décennies qui ont suivi, le
+   souvenir des violences policières de l’époque, notamment celui de la
+   répression de la manifestation du 17 octobre 1961, est régulièrement
+   réactivé par les militants, comme lors de la Marche de l’égalité en
+   1983, ou lors de l’état d’urgence décrété par le Premier ministre
+   Dominique de Villepin en réponse aux émeutes de l’automne 2005. Ce
+   ciblage policier des anciennes populations colonisées trouve des
+   prolongements dans les insultes (« négro », « bamboula ») comme dans
+   les pratiques policières mises en cause à Aulnay et dans le 12^e
+   arrondissement.
+
+   Les politiques contemporaines de contrôle policier des quartiers
+   pauvres offrent de fait un cadre propice à la réactivation de ces
+   héritages coloniaux. Il existe en effet différentes manières de penser
+   et de mettre en œuvre les politiques de sécurité, chacune d’elles
+   privilégiant telle ou telle technique policière. Le choix d’un style de
+   police est le produit conjoint du pouvoir d’orientation du politique
+   (de Maillard et Jobard, 2016) et de la marge de manœuvre propre à
+   l’institution policière (Monjardet, 2002). Les stratégies dites d’
+   « anti-criminalité » reposent sur le pari que les contrôles
+   discrétionnaires réalisés lors des maraudes permettront de détecter des
+   infractions en flagrant délit [3]. D’autres utilisations de la police
+   de sécurité publique font appel à sa capacité à répondre à la demande
+   sociale : résolution de conflits, médiation, communication, traitement
+   des plaintes, etc. Depuis plusieurs décennies, ce clivage oppose au
+   sommet de l’État, les tenants de la « police de proximité » à ceux de
+   la « politique du chiffre ». Il joue aussi entre les élus locaux, qui
+   demandent des ilotiers visibles pour empêcher le crime, et les acteurs
+   policiers et préfectoraux, qui réclament des BAC et des unités
+   spécialisées discrètes (Monjardet, 1999). Dans les banlieues
+   paupérisées, où la seconde conception s’est imposée, la capacité à
+   interpeller en flagrant délit est considérée comme centrale dans la
+   définition de l’efficacité policière, et le contrôle d’identité, comme
+   son moyen privilégié (Gauthier, 2015 ; Fassin, 2011).
+
+   La multiplication de brigades spécialisées dans l’anti-criminalité
+   permet l’épanouissement d’une identité professionnelle du policier
+   comme « chasseur » [4]. Dans le 12^e arrondissement comme à
+   Aulnay-sous-Bois, les policiers mis en cause travaillent dans des
+   brigades spécialisées qui sont « fidélisées sur un territoire », selon
+   la terminologie policière. Dans le 12^e, l’unité mise en cause est une
+   Brigade de soutien de quartier (BSQ), qui s’auto-désigne par
+   l’appellation virile « les Tigres ». À Aulnay-sous-Bois, le quatuor de
+   policiers qui se sont acharnés sur le jeune Théo appartient à une
+   Brigade Spécialisée de Terrain (BST). Ces unités, composées de
+   policiers en tenue, ont été créées en 2010 par Brice Hortefeux pour
+   remplacer les UTeQ (Unités Territoriales de Quartier) et implantées,
+   comme ces dernières, dans les quartiers dits « sensibles » en milieu
+   urbain. À partir du retour des socialistes au pouvoir en 2012, les BST
+   deviennent un instrument privilégié de la politique dite des « Zones de
+   sécurité prioritaires » (ZSP) mise en œuvre par le ministre de
+   l’Intérieur Manuel Valls.
+
+   En pratique, les policiers des BST sont de jeunes gardiens de la
+   paix [5], ayant éventuellement reçu une brève formation, encadrés par
+   un brigadier. Composées majoritairement d’hommes, ces brigades
+   disposent en principe d’un équipement spécial (uniforme noir,
+   jambières, casques balistiques, flashball, caméras portatives fixées à
+   l’uniforme) destiné à l’usage ou à la démonstration de force physique.
+   Cette valorisation des tâches associées à l’usage de la force consacre
+   l’entre-soi masculin et explique la domination de normes de genre
+   valorisant la masculinité hétérosexuelle virile, tant dans les
+   sociabilités policières que vis-à-vis des populations-cibles (Darley et
+   Gauthier, 2014).
+
+     Quelle est la doctrine de la BST ?
+     C’est une police qui ressemble un peu à jadis la police de proximité
+     mais dans un but plus répressif que préventif. On est là pour faire
+     de l’anti-criminalité, de la lutte contre le deal de rue, les rodéos
+     de scooters et de motos. On a un deuxième gros objectif : être une
+     police connue de la population du secteur, avoir des relations
+     privilégiées avec les gens pour avoir un max d’infos qui remontent.
+     (F., Chef d’une BST de l’est de la France, 2013.) [6]
+
+   À l’instar des BAC, les BST se perçoivent comme le fer de lance de
+   l’anti-criminalité, à la recherche active de la « belle affaire »,
+   c’est-à-dire des stupéfiants ou des armes, au gré des maraudes et des
+   contrôles d’identité (Darley et Gauthier, 2015). Derrière l’emploi de
+   ce type de brigades spécialisées se dessine une vision sécuritaire de
+   la « proximité » policière à destination des territoires urbains
+   paupérisés et de leurs habitants.
+
+   Chaque unité spécialisée est encadrée par un brigadier ayant bien
+   souvent la main sur les recrutements, qui s’opèrent donc par
+   cooptation. C’est également lui qui imprime un style et un état
+   d’esprit particuliers à la brigade spécialisée et qui, en fonction de
+   ses inclinations personnelles, va rendre possible le développement de
+   pratiques violentes, discriminatoires et/ou racistes. À cet égard, la
+   tolérance ou l’ignorance coupable des cadres policiers dans le 12^e
+   arrondissement constitue une dimension cruciale au sein d’une
+   institution qui aime à se présenter comme fortement hiérarchisée. À
+   Aulnay-sous-Bois, le commissaire divisionnaire, lorsqu’il était chef de
+   la BAC-nuit parisienne avait été condamné en 2008 pour « abstention
+   volontaire d’empêcher un crime ou un délit » dans une affaire de
+   violence sexuelle commise par un de ses subordonnés sur un individu
+   interpellé à l’issue d’une course-poursuite.
+
+Comment expliquer la centralité des contrôles d’identité ?
+
+   Les unités spécialisées, comme les BST, les Brigades anti-criminalité
+   (BAC), les Unités de sécurisation (US) ou encore des Compagnie
+   départementales d’intervention (CDI), sont perçues comme l’élite des
+   commissariats et sont de ce fait très prisées par les jeunes policiers
+   du bas de l’échelle hiérarchique (Gauthier, 2015). Dans ce contexte,
+   « faire de l’anti-crime » constitue à la fois un idéal professionnel et
+   une fausse promesse pour les jeunes recrues. En effet, la majorité des
+   policiers dans les services de sécurité publique n’ont pas le temps, la
+   formation ni les moyens d’effectuer un travail de police judiciaire.
+   C’est ce décalage entre la réalité du terrain et une vision idéalisée
+   de la profession, encouragée par les politiques publiques, qui rend la
+   pratique du contrôle d’identité et de la « chasse au voyou » si
+   populaire parmi les policiers, au détriment d’autres définitions du
+   travail policier (service au public, résolution de conflits ou encore
+   médiation). Dans ce contexte, beaucoup de policiers estiment que le
+   contrôle d’identité discrétionnaire constitue le seul moyen de détecter
+   une infraction :
+
+     Ce n’est qu’en contrôlant qu’on peut tomber sur des affaires, si on
+     attend que ça vienne, on n’aura rien du tout [...] Donc on essaie de
+     tourner au maximum là où on pense qu’il pourrait y avoir quelque
+     chose. (Julien, 23 ans, Gardien de la paix, Unité de police de
+     proximité, Banlieue parisienne, juin 2006.)
+
+   Or, à rebours de cette croyance policière, les données disponibles
+   montrent que la détection d’une infraction lors des contrôles est peu
+   fréquente. Selon une enquête sur les contrôles d’identité à Paris,
+   seuls 14 % des personnes contrôlées ont fait l’objet d’une conduite au
+   commissariat (Jobard et Lévy, 2010). Dans l’enquête récente du
+   Défenseur des Droits, seules 5,9 % des personnes contrôlées rapportent
+   avoir été emmenées au poste de police à la suite du dernier contrôle
+   d’identité (Défenseur des Droits, 2016) [7]. Une enquête de l’Agence
+   Européenne pour les Droits Fondamentaux permet de préciser ces données
+   en fonction de l’apparence des personnes : parmi les personnes
+   contrôlées dans les douze derniers mois, 18 % des « majoritaires », 9 %
+   des « Nord-Africains » et 8 % des « Subsahariens » repartent avec une
+   amende ; 1 % des « majoritaires », 3 % des « Nord-Africains » et 7 %
+   des « Subsahariens » font l’objet d’une interpellation (FRA, 2009).
+   Enfin, la Direction Générale de la Police Nationale (DGPN) a elle-même
+   expérimenté, du 1^er avril au 30 septembre 2014, la comptabilisation
+   des contrôles d’identité dans deux départements. Le bilan est sans
+   appel : dans l’Héraut, environ 95 % des 8 919 contrôles effectués n’ont
+   eu « aucune suite » ; dans le Val d’Oise, c’est le cas d’environ 93 %
+   des 10 683 contrôles effectués (DGPN, 2014). Ces chiffres soulignent la
+   faible rentabilité pénale des contrôles d’identité. Un enregistrement
+   administratif des contrôles permettrait, entre autres choses, d’en
+   évaluer l’impact en terme de lutte contre la délinquance.
+
+   Cependant, dans les territoires caractérisés par de fortes tensions
+   entre la police et les habitants, les contrôles d’identité poursuivent
+   d’autres objectifs que la détection d’infraction (Gauthier, 2015). Il
+   peut tout d’abord s’agir de contrôles disciplinaires visant à déloger
+   d’un endroit donné, à empêcher la réunion, ou bien à « calmer » des
+   jeunes en instaurant un rapport de force physique. Ces contrôles sont
+   destinés à affirmer le pouvoir policier auprès d’individus n’ayant pas
+   forcément commis d’infraction mais mettant à l’épreuve l’autorité des
+   policiers. Dans ces situations, l’autorité prime sur le droit, comme le
+   remarquait déjà le sociologue américain Howard Becker : « Une bonne
+   part de l’activité du policier ne consiste pas directement à faire
+   appliquer la loi mais bien à contraindre les gens dont il s’occupe à le
+   respecter lui-même » (Becker, 1985). Les contrôles disciplinaires
+   permettent de comprendre le recours au contrôle sur des personnes déjà
+   connues par les policiers ainsi que la déconnexion fréquente entre
+   contrôle et infraction.
+
+   Enfin, les contrôles visent également à recueillir des informations sur
+   les populations-cibles de l’action policière. Les interactions répétées
+   avec certains jeunes sont destinées, aux dires des policiers, à
+   améliorer la « connaissance de la circonscription » et à obtenir du
+   « renseignement ». En pratique, les informations obtenues sur la voie
+   publique prennent le statut de renseignement lorsqu’elles acquièrent
+   une valeur d’usage pour les services de police judiciaire. À ce titre,
+   les BAC sont pensées par leur hiérarchie comme un maillon de
+   renseignement intermédiaire entre la police de sécurité publique et la
+   police judiciaire (Gauthier, 2015).
+
+   Ces trois rationalités du contrôle (pénalité, discipline et
+   renseignement) sont particulièrement mises en œuvre au sein des
+   brigades spécialisées dans l’anti-criminalité. Leur organisation
+   favorise en effet la pratique de la « chasse » car elles sont exemptées
+   d’une grande partie des missions de police-secours. Les membres de ce
+   type d’unités agissent aussi relativement loin des regards de leur
+   hiérarchie, notamment des officiers et des commissaires. Disposant
+   d’une grande marge de manœuvre sur le terrain, les brigades
+   spécialisées ont donc tout loisir de s’adonner à la chasse aux voyous,
+   principalement par le biais de contrôles d’identité qui ne font pas
+   l’objet d’enregistrement administratif. Un policier d’une BST
+   expliquait lors d’une patrouille que nombre de contrôles étaient
+   réalisés en « free style », euphémisme pour désigner le relâchement des
+   règles déontologiques.
+
+   Ces aménagements policiers avec la loi sont rendus possibles par le
+   flou qui entoure la définition des contrôles d’identité dans le Code de
+   procédure pénale et qui ouvre le champ au ciblage fondé sur la couleur
+   de peau.
+
+     Comment décidez-vous de contrôler une personne ?
+     En général, c’est lié à une infraction, un signalement par radio, un
+     mec qui fume un joint, un mec qui nous voit et qui se barre. Faut
+     toujours qu’il y ait un cadre légal. Tu n’as pas le droit de
+     contrôler à la tronche, c’est interdit par la loi, le délit de
+     faciès ça n’existe pas. Même si nous on s’en sert pour trouver
+     quelque chose à la base, la loi ne le détermine pas. (Ben, 37 ans,
+     Brigadier, Banlieue sud de Paris, mars 2009.)
+
+   La remarque de ce brigadier souligne le caractère routinier et
+   l’ambivalence de l’usage des catégories d’apparence (la tronche, le
+   faciès) qui constituent une ressource bien que leur usage soit proscrit
+   par la loi : c’est « interdit par la loi » donc « ça n’existe pas »
+   mais « on s’en sert ». Malgré l’interdit de la loi, l’apparence est à
+   la fois une compétence professionnelle et une catégorie d’action dans
+   le quotidien policier [8].
+
+   Évidemment, tous les policiers ne se comportent pas comme ceux de la
+   BST d’Aulnay-sous-Bois ou comme les « Tigres » du 12^e arrondissement
+   de Paris. Le monde policier est un univers clivé où différentes
+   conceptions du métier, du rapport à la loi et du rapport aux
+   gouverné.e.s s’opposent (Monjardet, 1994 ; Coulangeon et al. 2012). Les
+   logiques internes de concurrence, voire de rivalité, entre les services
+   et les brigades viennent renforcer l’hétérogénéité de la profession.
+   Néanmoins, les quelques arguments évoqués plus haut font comprendre
+   comment il est possible, dans un État de droit, que certaines équipes
+   de police violentes et racistes exercent leur métier sur le mode du
+   harcèlement et de la ratonade. En effet, les actes individuels des
+   policiers prennent place dans une organisation normée et hiérarchisée.
+   Par conséquent, on ne peut analyser le déchaînement des violences
+   policières individuelles sans prendre en compte leurs causes
+   structurelles [9].
+
+Interventions et mobilisations contre les déviances policières
+
+   Face à cette inertie de l’institution policière qui ne veut, ou ne
+   peut, réformer ses routines, des contre-feux ont émergé depuis le
+   milieu des années 2000. On retiendra ici trois aspects : la
+   structuration de l’activisme, la production de données en sciences
+   sociales et les avancées sur le plan juridique.
+
+   Depuis le début des années 1980, les protestations contre les violences
+   policières dans les territoires urbains paupérisés ont le plus souvent
+   pris la forme de « rébellions urbaines » (Hajjat, 2014), c’est-à-dire
+   d’affrontements entre des jeunes hommes et des policiers. Si ces heurts
+   ont toujours lieu (comme ce fut le cas à Beaumont-sur-Oise ou à
+   Aulnay-sous-Bois), le répertoire d’action de la lutte contre les
+   violences policières s’est considérablement élargi, notamment depuis la
+   mort de Zyed Benna et Bouna Traoré à Clichy-sous-Bois en 2005. Un front
+   militant a ainsi vu le jour autour des familles et des proches des
+   victimes, qui se sont appropriés les répertoires d’action légitimes de
+   la contestation : pétition, manifestations, recours au droit, aux
+   médias et aux réseaux sociaux. Ces « militants de l’incertitude » se
+   sont ainsi politisés au gré des violences policières (Jobard, 2002).
+   Récemment, l’activisme de la famille Traoré, relayé par différents
+   collectifs (Stop le contrôle au faciès et Urgence notre police
+   assassine notamment), est parvenu à donner un certain écho médiatique à
+   l’affaire du décès d’Adama Traoré entre les mains des gendarmes le
+   19 juillet 2016 à Beaumont-sur-Oise. Cette configuration militante
+   élargie a permis de porter la cause des victimes des violences
+   policières hors des quartiers populaires, et à faire le lien avec des
+   organisations politiques plus traditionnelles. Parallèlement, les
+   sciences sociales et le droit se sont saisis de la question.
+
+   Depuis une dizaine d’années, les avancées des travaux en sciences
+   sociales permettent de mieux cerner les dysfonctionnements de
+   l’institution policière. Des enquêtes de terrain auprès des policiers
+   ou des habitants des quartiers de relégation, des analyses
+   comparatives [10], des enquêtes quantitatives par questionnaires ou par
+   observation directe des contrôles offrent désormais un corpus de
+   données fiables, même si celles-ci gagneraient évidemment à être
+   complétées [11]. Comme il est d’usage dans le champ scientifique, ces
+   travaux font l’objet de débats entre chercheurs, tant sur les
+   méthodologies que sur l’interprétation des résultats. Néanmoins la
+   majorité des enquêtes pointe la surreprésentation, parmi les cibles des
+   contrôles policiers, des jeunes hommes urbains issus des immigrations
+   postcoloniales et appartenant aux catégories populaires, toutes choses
+   égales par ailleurs. Les recherches soulignent également la rareté des
+   violences policières mais pointent que, lorsqu’elles ont lieu, elles
+   s’exercent quasi systématiquement sur ce groupe. Les travaux soulignent
+   par ailleurs la faible efficacité des contrôles dans la détection
+   d’infractions. Enfin, les enquêtes internationales comparatives mettent
+   en lumière le style particulièrement répressif de la police française,
+   ainsi que son ciblage des personnes issues des immigrations africaines
+   et nord-africaines (Lévy, 2016). Le rapport récent du Défenseur des
+   droits, Jacques Toubon, dresse le même constat (Défenseur des droits,
+   2017).
+
+   Du côté du droit, la condamnation de l’État pour « faute lourde » par
+   la cour d’appel de Paris en 2015, qui avait estimé que des contrôles
+   policiers avaient été réalisés en fonction de l’apparence physique et
+   l’appartenance, vraie ou supposée, à une ethnie ou une race, constitue
+   une jurisprudence sans précédent en France. La décision d’attaquer
+   l’État au civil, et non au pénal, a permis d’alléger la charge de la
+   preuve pour le requérant : ce n’est pas à ce dernier de prouver le
+   caractère discriminatoire du contrôle d’identité, il lui appartient
+   seulement d’apporter les éléments de nature à établir une
+   discrimination. L’État, pour sa part, doit prouver que le contrôle subi
+   est étranger à toute discrimination. Le travail des avocats, appuyé par
+   des rapports et des recherches en sciences sociales puis relayé par
+   l’intervention du Défenseur des droits, a conduit à la condamnation de
+   l’État dans trois dossiers de contrôles policiers. L’arrêt établit que
+   les policiers doivent respecter les principes d’égalité et de
+   non-discrimination. La Cour de cassation a confirmé la décision
+   initiale le 9 novembre 2016, en condamnant définitivement l’État et en
+   considérant qu’ « un contrôle d’identité fondé sur des caractéristiques
+   physiques associées à une origine réelle ou supposée, sans aucune
+   justification objective préalable, est discriminatoire : il s’agit
+   d’une faute lourde ». Enfin, le 24 janvier 2017, le Conseil
+   constitutionnel a statué sur deux questions prioritaires de
+   constitutionnalité (QCP) portant sur les contrôles d’identité menés
+   dans le cadre de réquisitions du procureur de la République [12]. S’ils
+   en valident le principe, les Sages émettent toutefois trois réserves :
+   les lieux et les périodes des contrôles doivent être en lien avec des
+   recherches d’infraction ; un cumul de réquisitions contrevient au
+   respect de la liberté d’aller et venir ; les réquisitions ne peuvent
+   avoir pour finalité le contrôle de la régularité du séjour des
+   étrangers. Ces décisions sur l’usage abusif et sur l’encadrement des
+   contrôles sur réquisition ne doivent cependant pas faire oublier les
+   difficultés et la lenteur de traitement des affaires de violences
+   policières par la justice.
+
+   Dans le contexte des violences policières qui ont eu lieu à
+   Aulnay-sous-Bois, cet article met au jour deux dynamiques opposées :
+   face aux évolutions de la société civile, du droit et de la recherche,
+   le ministère de l’Intérieur campe sur une position de déni des causes
+   structurelles des déviances policières. Arc-boutée sur la prétendue
+   nécessité des contrôles d’identité dans la lutte contre la délinquance,
+   qu’elle ne peut démontrer par aucune statistique faute
+   d’enregistrement, la hiérarchie policière valorise l’ethos
+   professionnel d’une partie des policiers de terrain, qui voient dans la
+   pratique débridée du contrôle un des seuls moyens d’incarner la posture
+   du « vrai flic ». À Aulnay-sous-Bois et ailleurs, certains policiers
+   semblent y avoir perçu un blanc-seing pour le déchaînement de la
+   violence raciste. C’est cette rencontre entre la déviance individuelle
+   de certains policiers et des causes structurelles qui a rendu possible
+   l’agression raciste et sexuelle du jeune Théo.
+
+   par Jérémie Gauthier, le 3 mars 2017
+     __________________________________________________________________
+
+Gardons le contact
+
+   Mastodon Twitter Facebook Instagram Youtube Linkedin
+     __________________________________________________________________
+
+Aller plus loin
+
+   -  Howard Becker, Outsiders, Paris, Métailier, 1985.
+   -  Emmanuel Blanchard, « Des cérémonies de dégradation. À propos des
+   contrôles d’identité au faciès », 2017.
+   -  Emmanuel Blanchard, « Police judiciaire et pratiques d’exception
+   pendant la guerre d’Algérie », Vingtième Siècle. Revue d’histoire, vol.
+   2, n° 90, 2006, p. 61-72.
+   -  Commission Nationale Consultative des Droits de l’Hommes, Avis sur
+   la prévention des pratiques de contrôles d’identité abusives et/ou
+   discriminatoires.
+   -  Philippe Coulangeon, Geneviève Pruvost et Ionela Roharik, « Les
+   idéologies professionnelles. Une analyse en classes latentes des
+   opinions policières sur le rôle de la police », Revue française de
+   sociologie, vol. 2, n° 53, 2002, p. 493-527.
+   -  Mathilde Darley, Jérémie Gauthier, « Une virilité interpellée ? En
+   quête de genre au commissariat », Genèses, vol. 4, n° 97, p. 67-86.
+   -  Mathilde Darley, Jérémie Gauthier, « La police face à la réforme.
+   L’exemple des Zones de Sécurité Prioritaires », Conférence au CNAM,
+   Paris, 2015.
+   -   Défenseur des Droits, Rapport relatif aux relations police/citoyens
+   et aux contrôles d’identité, 2016.
+   -  Direction Générale de la Police Nationale, Bilan de
+   l’expérimentation de la comptabilisation des contrôles d’identité
+   requis par le préfet menée dans les départements de l’Hérault et du Val
+   d’Oise du 1^er avril au 30 septembre 2014, 2014.
+   -  European Union Agency for Fundamental Rights, 2009 EU-MIDIS
+   Technical Report, Methodology, Sampling and Fieldwork.
+   -  Didier Fassin, La force de l’ordre, Paris, Seuil, 2011.
+   -  Jérémie Gauthier, « Origines contrôlées. Police et minorités en
+   France et en Allemagne », Sociétés contemporaines, vol. 97, n° 1, 2015,
+   p. 101-127.
+   -  Abdellali Hajjat, « Rébellions urbaines et déviances policières.
+   Approche configurationnelle des relations entre les “jeunes” des
+   Minguettes et la police (1981-1983) », Cultures et Conflits, vol. 1,
+   n° 93, 2014, p. 11-34.
+   -  Fabien Jobard, « Dammarie-lès-Lys : les militants de
+   l’incertitude », Vacarme, n° 21, 2002.
+   -  Fabien Jobard, René Lévy, « Les contrôles d’identité à Paris »,
+   Questions pénales, CNRS-Ministère de la Justice, 2010, 23 (1), p. 1-4.
+   -  Fabien Jobard et Olivier Fillieule, « Un splendide isolement », La
+   Vie des idées, 2016.
+   -  René Lévy, « La police française à la lumière de la théorie de la
+   justice procédurale », Déviance et Société, vol. 40, n° 2, 2016, p.
+   139-164.
+   -  Jacques de Maillard, Fabien Jobard, Sociologie de la police, Paris,
+   Armand Colin, 2015.
+   -  Jacques de Maillard, Daniela Hunold, Sébastian Roché, Dietrich
+   Oberwittler et Matthieu Zagrodzki, « Les logiques professionnelles et
+   politiques du contrôle. Des styles de police différents en France et en
+   Allemagne », Revue française de science politique, vol. 66, n° 2, 2016,
+   p. 271-293.
+   -  Dominique Monjardet, « L’insécurité politique : police et sécurité
+   dans l’arène électorale », Sociologie du travail, vol. 44, n° 4, 2002,
+   p. 543-555.
+   -  Dominique Monjardet, « Réinventer la police urbaine. Le travail
+   policier à la question dans les quartiers », Annales de la recherche
+   urbaine, n° 83-84, 1999, p. 15-22.
+   -  Dominique Monjardet, Ce que fait la police, La Découverte, Paris,
+   1996.
+   -  Sébastian Roché, De la police en démocratie, Grasset, Paris, 2016.
+   -  Terranova, Police et population : pour des relations de confiance.
+
+   Abonnez-vous gratuitement à notre newsletter hebdomadaire :
+   S'abonner
+
+Pour citer cet article :
+
+   Jérémie Gauthier, « L’art français de la déviance policière », La Vie
+   des idées , 3 mars 2017. ISSN : 2105-3030.
+   URL : https://laviedesidees.fr/L-art-francais-de-la-deviance-policiere.
+   html
+
+Nota bene :
+
+   Si vous souhaitez critiquer ou développer cet article, vous êtes invité
+   à proposer un texte au comité de rédaction (redaction chez
+   laviedesidees.fr). Nous vous répondrons dans les meilleurs délais.
+
+À lire aussi
+
+     * Essai
+
+La non-violence est-elle possible ?
+       par Sylvie Laurent, le 23 juillet 2010
+       Gandhi, King, Mandela
+     * Essai
+
+Renouer la confiance entre citoyens et policiers ?
+       par Florian Couveinhes Matsumoto , le 15 janvier 2021
+       Autour de la loi « Sécurité globale »
+     * Recension
+
+Anthropologie de la matraque
+       par Fabien Jobard, le 29 novembre 2011
+       À propos de : D. Fassin, La Force de l’ordre. Une anthropologie de
+       la police des quartiers, Le Seuil.
+     * Essai
+
+La police et les indésirables
+       par Magda Boutros, le 14 septembre 2018
+       Les pratiques policières de contrôles-éviction, visant à évincer
+       certaines populations de l’espace public, participent aux...
+
+Notes
+
+   [1] Sur ce point, des spécialistes des violences de genre ont
+   salutairement précisé : « Le Code pénal est sans ambiguïté : selon
+   l’article 222-23, « tout acte de pénétration sexuelle, de quelque
+   nature qu’il soit, commis sur la personne d’autrui par violence,
+   contrainte, menace ou surprise est un viol. » Et le fait qu’il soit
+   « commis par une personne qui abuse de l’autorité que lui confèrent ses
+   fonctions » est un facteur aggravant ».
+
+   [2] D’après une expression du sociologue américain Harold Garfinkel.
+   Pour une analyse dans ce sens des contrôles policiers, voir Blanchard,
+   2017.
+
+   [3] Les stratégies de prévention et de désescalade en Allemagne
+   privilégient quant à elles des techniques policières de renseignement,
+   de surveillance et de communication (Gauthier, 2015 ; Jobard et
+   Fillieule, 2016).
+
+   [4] « Les policiers de BAC, c’est des chasseurs, quand on met en BAC,
+   ça réveille l’instinct chasseur. Déjà, on va les recruter en fonction
+   de ça justement, faut qu’ils aient l’instinct chasseur », Entretien
+   avec un brigadier d’une BAC de banlieue parisienne, 2004.
+
+   [5] Le policier mis en cause pour viol a 27 ans et quatre ans
+   d’ancienneté, deux de ses collègues ont 24 et 28 ans, et ont été
+   titularisés un an avant les faits, selon Le Parisien.
+
+   [6] Les extraits d’entretiens sont issus d’enquêtes menées par l’auteur
+   entre 2004 et 2013
+
+   [7] Concernant les enquêtes qualitatives, voir Fassin, 2011 ; Gauthier,
+   2015 ; de Maillard, 2015.
+
+   [8] René Lévy notait déjà en 1987 que « même chez les policiers qui ne
+   professent pas ouvertement des convictions racistes, le recours à des
+   catégorisations fondées sur l’appartenance ethnique est fréquent. Elles
+   constituent en quelque sorte des instruments de travail et font partie
+   de cet ensemble de connaissances pratiques qui forment l’arrière-plan,
+   la référence du travail policier, y compris dans des domaines où
+   l’attribut ethnique ne constitue pas le seul indice d’un illégalisme
+   potentiel » (Lévy, 1987, 31).
+
+   [9] Comme le montrent des rapports récents réalisés en dialogue avec
+   l’institution policière. Voir par exemple les rapports de Terranova
+   (2016) et de la Commission Nationale Consultative des Droits de l’Homme
+   (2016).
+
+   [10] Concernant l’Allemagne, voir Gauthier, 2015, de Maillard et al.,
+   2016 et Roché, 2016.
+
+   [11] Pour une synthèse, voir Lévy, 2016.
+
+   [12] Selon l’article 78-2-2 du Code de procédure pénale selon lequel
+   « les policiers peuvent, sur réquisitions écrites du procureur de la
+   République, dans les lieux et pour la période de temps que ce magistrat
+   détermine et qui ne peut excéder vingt-quatre heures […] procéder non
+   seulement aux contrôles d’identité prévus au sixième alinéa de
+   l’article 78-2 mais aussi à la visite des véhicules circulant, arrêtés
+   ou stationnant sur la voie publique ou dans des lieux accessibles au
+   public ».
+
+Nos partenaires
+
+Articles les plus lus
+          + La démocratie représentative est-elle réellement
+            démocratique ?
+          + Un splendide isolement
+          + Sortie de confinement, ou la somme de tous les dangers
+          + Savoir et prévoir
+          + Lettre aux professeurs d’histoire-géographie
+          + Internet, un outil de la démocratie ?
+          + Le mythe de la dédiabolisation du FN
+
+Thématiques
+          + Politique
+          + Société
+          + Économie
+          + Arts
+          + International
+          + Philosophie
+          + Histoire
+          + Sciences
+
+Catégories
+          + Essais
+          + Recensions
+          + Entretiens
+          + Dossiers
+
+À propos
+          + Qui sommes-nous ?
+          + Équipe
+          + Contact
+          + Soumettre un article
+          + Contributeurs
+          + Liens
+          + Plan du site
+
+Réseaux
+          + Newsletter
+          + Instagram
+          + Twitter
+          + Facebook
+          + Linkedin
+          + SeenThis
+          + Fil RSS
+
+   © laviedesidees.fr - Toute reproduction interdite sans autorisation
+   explicite de la rédaction - Mentions légales - webdesign : Abel Poucet
