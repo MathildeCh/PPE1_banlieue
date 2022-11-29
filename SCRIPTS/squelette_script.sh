@@ -8,13 +8,12 @@ then
 fi
 
 ##ETAPE 1: lecture
-##fichiers de donnees en entree (FICHIER OU DOSSIER??)
+#fichiers de donnees en entree 
 dirURLs=$1
-# #nom du fichier de sortie -
-# #Pas compris si il s'agit d'un argument ou si on doit créer un fichier et spécifier son chemin ici, et pourquoi?
-# #option 1 : URL_TEXT=$2
-# #option 2 : URL_TEXT=chemin/vers/fichier/url_text.txt
+#nom du fichier de sortie -
 # URL_TEXT=$2
+
+echo $dirURLs
 
 ##ETAPE 2: pour chaque fichier d'urls
 for fichier in $(ls $dirURLs)
@@ -34,7 +33,7 @@ do
                     <th>code HTTP</th>
                     <th>charset</th>
                     <th>n_occurrence_mot</th>
-                </tr>" > /home/diego/Desktop/Master_TAL/Corsi/M1_S1_Programmation_et_projet_encadré_1/RepoCommun/PPE1_banlieue/TABLEAUX/tableau_$fichier.html;
+                </tr>" > $dirURLs/../TABLEAUX/tableau_$fichier.html;
 
                 # Ici faut mettre chacun le parcours vers le dossier TABLEAUX dans locale
 
@@ -43,7 +42,7 @@ do
     do
         occurences_mot=$NONE
         compteur=$(($compteur+1))
-        codeHTTP=$(curl -s -L -w '%{http_code}\n' -o /home/diego/Desktop/Master_TAL/Corsi/M1_S1_Programmation_et_projet_encadré_1/RepoCommun/PPE1_banlieue/ASPIRATIONS/ciao$compteur$fichier.html $line)
+        codeHTTP=$(curl -s -L -w '%{http_code}\n' -o $dirURLs/../ASPIRATIONS/ciao$compteur$fichier.html $line)
         encodage=$(curl -Is -L -w '%{content_type}\n' $line | grep -i -P -o "charset=\S+" | cut -d= -f2 | head -n1)
 
 
@@ -62,7 +61,7 @@ do
                 then
                 unset occurences_mot 
                 occurences_mot=$(lynx -dump -nolist $line | egrep -o -c "\b(suburbs?|periferi(a|e)|banlieues?)\b")
-                lynx -dump -nolist $line > /home/diego/Desktop/Master_TAL/Corsi/M1_S1_Programmation_et_projet_encadré_1/RepoCommun/PPE1_banlieue/DUMPS-TEXT/ciao$compteur$fichier.txt
+                lynx -dump -nolist $line > $dirURLs/../DUMPS-TEXT/ciao$compteur$fichier.txt
             fi 
         fi
 
@@ -74,15 +73,15 @@ do
             <td>$codeHTTP</td>
             <td>$encodage</td>
             <td>$occurences_mot</td>
-        </tr>" >> /home/diego/Desktop/Master_TAL/Corsi/M1_S1_Programmation_et_projet_encadré_1/RepoCommun/PPE1_banlieue/TABLEAUX/tableau_$fichier.html;
+        </tr>" >> $dirURLs/../TABLEAUX/tableau_$fichier.html;
     done < $dirURLs/$fichier;
 
     echo "
             </table>
         </body>
-    </html>" >> /home/diego/Desktop/Master_TAL/Corsi/M1_S1_Programmation_et_projet_encadré_1/RepoCommun/PPE1_banlieue/TABLEAUX/tableau_$fichier.html;
+    </html>" >> $dirURLs/../TABLEAUX/tableau_$fichier.html;
 
-        ##Si URL OK #TODO
+        ##Si URL OK
         # if [[ $responseHTTP == 200 OR 3xx ]]
         #then
             ##Si l'encodage est UTF8
@@ -90,7 +89,7 @@ do
                 # then
                 ##extraire le tx
                 ##écrie le résultat dans tableau
-            #else
+            #else 
                 ##faire qqchose... (convertir?)
             # fi
         #else
