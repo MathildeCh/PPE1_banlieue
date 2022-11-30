@@ -64,7 +64,7 @@ do
                 unset occurences_mot
                 occurences_mot=$(lynx -dump -nolist $line | egrep -o -c "\b(suburbs?|periferi(a|e)|banlieues?|προ(ά|α)στ.+)\b")
                 lynx -dump -nolist $line > ./DUMPS-TEXT/ciao$compteur$fichier.txt
-                # contexte=$(lynx)
+                contexte=$(lynx -dump -nolist $line)
             fi
         fi
 
