@@ -72,11 +72,11 @@
 
    Watchlist
    Investing Club
-     * Trade Alerts
-     * Jim's Morning Thoughts
-     * Analysis
-     * Morning Meeting
      * Trust Portfolio
+     * Analysis
+     * Trade Alerts
+     * Video
+     * Education
 
    PRO
      * Pro News

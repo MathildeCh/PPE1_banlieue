@@ -8,7 +8,7 @@
 
      * Nous contacter
      * Se connecter
-     * Écrire un billet Écrire un billet
+     * Écrire un billet de blog Écrire un billet de blog
      * Journal
      * Rechercher
      * (BUTTON) Menu
@@ -26,7 +26,7 @@
    Titre du logo Journal Mediapart (BUTTON) Fermer
    S’abonner au journal Se connecter
      * À la Une
-       Édition du soir
+       Édition du matin
      * Vidéos
      * Enquêtes
      * Dossiers
@@ -287,101 +287,91 @@ Hitler » (Godard)
    Abonnez-vous à partir de 1€ et écrivez votre premier billet
    Je m’abonne
    Les articles les plus lus
+   Journal — Violences sexistes et sexuelles
+   Affaire Sofiane Bennacer : la présomption d’innocence n’est pas une
+   assignation au silence
+   Journal — Migrations
+   Étrangers sous OQTF exclus de l’hébergement d’urgence : la justice
+   recadre la préfecture de Seine-Maritime
    Journal
-   La censure préalable d’une enquête de Mediapart provoque un tollé et
-   une proposition de loi
-   Journal — Protection de l’enfance : une mission sacrifiée
-   Anas, 13 mois, mort sous les coups malgré des alertes : les raisons
-   d’un naufrage collectif
-   Journal
-   Un magistrat ordonne la censure préalable d’une enquête de Mediapart
-   Journal — France
-   Violences policières : le parquet de Marseille cautionne les mensonges
-   de policiers
-   Journal
-   Une nouvelle peine de prison ferme pour Claude Guéant
+   Défiant la répression, les Chinois descendent dans la rue sur l’air de
+   « L’Internationale »
+   Journal — Défense et diplomatie
+   Ukraine : cette gauche qui n’a rien appris
+   Journal — Transports publics, le délitement
+   RER B : voyage sur la ligne qui déraille
    Recommandés par nos abonné·es
    Billet de blog
-   La fable du plein emploi
+   Soutien inconditionnel à Annie Ernaux
    Billet de blog
-   Conférence de presse suite à la censure préalable d’une enquête de
-   Mediapart
+   « Économiser ils disent ? Je le faisais déjà ! »
    Billet de blog
-   [Zone]
+   Noémie Calais, éleveuse : ne pas trahir l’animal
 
    À la Une de Mediapart
+   Journal — Violences sexistes et sexuelles
+   Le youtubeur Léo Grasset visé par une enquête pour viol
+   Selon nos informations, une étudiante a déposé plainte à Paris. Elle
+   accuse de « viol » le célèbre vulgarisateur scientifique et youtubeur,
+   déjà visé par une enquête préliminaire pour « harcèlement sexuel ». De
+   nouveaux témoignages font état de « problèmes de respect du
+   consentement », mais également d’« emprise ».
+   par Sophie Boutboul et Lénaïg Bredoux
    Journal
-   L’Assemblée nationale dit oui à l’inscription du droit à l’avortement
-   dans la Constitution
-   Lors de sa « niche parlementaire », La France insoumise a réussi à
-   créer un large consensus autour de sa proposition de loi sur la
-   constitutionnalisation de l’avortement, votée main dans la main avec la
-   majorité. Reste à passer le Sénat, puis un éventuel référendum. À moins
-   que Macron ne se décide à agir.
-   par Pauline Graulle
-   Journal
-   IVG : le Rassemblement national, comme sa cheffe Marine Le Pen, louvoie
-   L’inscription du droit à l’interruption volontaire de grossesse dans la
-   Constitution a été largement adoptée jeudi à l’Assemblée. Rattrapé par
-   ses vieux démons, le parti d’extrême droite s’est fracturé sur le
-   texte.
-   par Christophe Gueugneau
-   Journal — Europe
-   Ukraine : le port d’Odessa, privé de grand large, devient terre
-   d’arrivée des réfugiés
-   La destruction d’une bonne partie des infrastructures énergétiques par
-   les bombardements russes a plongé les habitants dans le noir. Freinée
-   par la quasi-mise à l’arrêt de ses activités portuaires, la ville se
-   réinvente en lieu d’accueil des déplacés internes du sud du pays, et
-   échafaude des parades face à la guerre qui dure.
-   par Mathilde Goanec
-   Journal — Justice
-   Devoir de vigilance des entreprises : la France sape les ambitions de
-   la directive européenne
-   Le projet de directive européenne sur le devoir de vigilance des
-   entreprises entre dans sa phase finale d’élaboration, vendredi
-   25 novembre. Mais selon les informations de Mediapart, Paris a fait
-   pression et obtenu gain de cause pour réduire la portée du texte.
+   Harcèlement, violences, faux en écriture publique : des policiers
+   brisent « l’omerta »
+   Dans un livre à paraître jeudi 1er décembre, six fonctionnaires de
+   police sortent de l’anonymat pour dénoncer, à visage découvert, les
+   infractions dont ils ont été témoins et victimes de la part de leurs
+   collègues. Une lourde charge contre « un système policier à
+   l’agonie ».
+   par Camille Polloni
+   Journal — Énergies
+   Une livraison d’uranium russe repérée à Dunkerque malgré la guerre en
+   Ukraine
+   Mediapart a assisté mardi, sur le port du Nord, au déchargement de
+   dizaines de conteneurs et de fûts de substances radioactives en
+   provenance de Russie. C’est la première fois depuis février 2022 qu’une
+   cargaison d’uranium naturel russe est photographiée en France.
    par Jade Lindgaard
+   Journal
+   Les auteurs des attentats de Bruxelles vont enfin être jugés
+   Après un faux départ qui a entraîné un retard de deux mois, le procès
+   des attentats du 22-Mars démarre. Les principaux acteurs du procès des
+   attentats du 13-Novembre, dont Salah Abdeslam et Mohamed Abrini, sont
+   encore une fois dans le box des accusés.
+   par Matthieu Suc
 
    La sélection du Club
    Billet de blog
-   L’arme que je sais manier, c’est mon appareil photo
-   Il était de nos invités pour l’édition consacrée à Kyiv, en 2017. Nous
-   voulions savoir s’il allait bien. Voici la réponse-témoignage du
-   photographe Alexander Chekmenev.
-   par Festival Un week-end à l’Est
+   Dieu Arc-en-Ciel
+   « Au nom du Dieu Arc-en-ciel ». C'est ainsi que Kian Pirfalak (10 ans)
+   commençait sa vidéo devenue virale depuis sa mort, où il montrait son
+   invention. Tué à Izeh par les forces du régime le 16 Novembre. Sa mère
+   a dû faire du porte-à-porte pour rassembler assez de glaçons et
+   conserver ainsi la dépouille de son fils à la maison pour ne pas que
+   son corps soit volé par les forces de l’ordre à la morgue.
+   par moineau persan
    Billet de blog
-   Le droit de résister : manifeste féministe
-   [Rediffusion] Depuis février, la voix collective des féministes
-   ukrainiennes n’a pas été entendue. Dans un manifeste, elles exhortent
-   les féministes du monde entier « à la solidarité avec la résistance du
-   peuple ukrainien contre cette guerre impérialiste prédatrice ». Alors
-   que l'agression impérialiste russe « met en péril les acquis des
-   féministes ukrainiennes dans la lutte contre l'oppression », elles
-   appellent à défendre le droit des femmes d'y résister et de déterminer
-   de manière autonome leur stratégie politique face au gouvernement
-   ukrainien.
-   par Les invités de Mediapart
+   Révolution kurde en Iran ? Genèse d’un mouvement révolutionnaire
+   Retour sur la révolte en Iran et surtout au Rojhelat (Kurdistan de
+   l’Est, Ouest de l’Iran) qui a initié le mouvement et qui est réprimé
+   violemment par le régime iranien dernièrement (plus de 40 morts en
+   quelques jours). Pourquoi ? Voici les faits.
+   par Front de Libération Décolonial
    Billet de blog
-   « Voici le portrait d'une ville en guerre »
-   La légèreté d’été à Kyiv forme un paradoxe intéressant. La ville paraît
-   si estivale et même superficielle… Quand on se plonge dans les
-   conversations, il n'est pourtant question que des alertes, d'une vie
-   réglée par le couvre-feu, et la mémoire des morts, dans presque chaque
-   famille ou communautés d'amis.
-   par Iryna Slavinska
+   Témoignage d'une amie Iranienne sur la révolution en Iran
+   Témoignage brut d'une amie Iranienne avec qui j'étais lorsque la
+   révolution a débuté en Iran. Ses mots ont été prononcés 4 jours après
+   l'assassinat de Masha Amini, jeune femme Kurde de 22 ans tuée par la
+   police des moeurs car elle ne portait pas bien son hijab.
+   par maelissma
    Billet de blog
-   Russie : un blog pour faire vivre les dissidences et leurs luttes
-   Si l’agression de l'Ukraine par la Russie a un impact terrible d’abord
-   et avant tout sur l’Ukraine, celle-ci a bougé bien des lignes pour
-   toute la région de l’Europe, libérant un déchainement de violence, mais
-   aussi une résistance sans précédent. Mediapart, en partenariat avec une
-   constellation de ces dissident·es, lance un blog pour faire entendre et
-   croiser leur voix, et mieux comprendre la crise profonde que traverse
-   la société civile russe traquée et dispersée, leurs luttes, leur
-   désespoirs mais aussi leurs espoirs.
-   par Russie - les voix de la dissidence d'aujourd'hui
+   Voix d'Iran : la question du mariage forcé (et du viol) en prison
+   Ce texte est une réponse à la question que j'ai relayée à plusieurs de
+   mes proches, concernant les rumeurs de mariages forcés (suivis de
+   viols) des jeunes filles condamnées à mort.
+   par sirine.alkonost
 
    Newsletters
 

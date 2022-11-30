@@ -53,6 +53,7 @@
           + Interactive Traffic Map
           + This is Community
           + Our Journalists
+          + Holidays 2022
           + Contact Us
 
    ____________________
@@ -94,6 +95,7 @@
           + Interactive Traffic Map
           + This is Community
           + Our Journalists
+          + Holidays 2022
           + Contact Us
 
    × Set Weather Location
