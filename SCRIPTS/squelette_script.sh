@@ -29,6 +29,7 @@ do
                 <tr>
                     <th>ligne</th>
                     <th>code HTTP</th>
+                    <th>titre</th>
                     <th>URLS $fichier</th>
                     <th>Encodage</th>
                     <th>dump html</th>
@@ -45,9 +46,15 @@ do
         occurences_mot=$NONE
         contexte=$NONE
         compteur=$(($compteur+1))
-        codeHTTP=$(curl -s -L -w '%{http_code}\n' -o $dirURLs/../ASPIRATIONS/ciao$compteur$fichier.html $line)
+        codeHTTP=$(curl -b --cookie -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:107.0) Gecko/20100101 Firefox/107.0"  -L -w '%{http_code}\n' -o $dirURLs/../ASPIRATIONS/ciao$compteur$fichier.html $line)
+        # codeHTTP=$(curl -s -L -w '%{http_code}\n' -o $dirURLs/../ASPIRATIONS/ciao$compteur$fichier.html $line)
         encodage=$(curl -Is -L -w '%{content_type}\n' $line | grep -i -P -o "charset=\S+" | cut -d= -f2 | head -n1)
-
+        xmllint --html --xmlout $dirURLs/../ASPIRATIONS/ciao$compteur$fichier.html > ciao.xhtml
+            header=$(grep -m 1 "<title>" ciao.xhtml | cut -d\> -f2 | cut -d\< -f1)
+            if [ $header=="" ]
+            then
+                header=$(xmlstarlet select -T --template  --value-of /html/head/title --nl ciao.xhtml)
+            fi
 
 
         # Ici on teste si l'encodage est bien en utf-8. Si aucun encodage est relevé on suppose utf-8.
@@ -67,7 +74,7 @@ do
                 lynx -dump -nolist $line > ./DUMPS-TEXT/ciao$compteur$fichier.txt
                 contexte=$(lynx -dump -nolist $line | egrep -B 1 -A 1  "\b(suburbs?|periferi(a|e)|banlieues?|προ(ά|α)στ.+)\b")
                 lynx -dump -nolist $line | egrep -B 1 -A 1  "\b(suburbs?|periferi(a|e)|banlieues?|προ(ά|α)στ.+)\b" > ./CONTEXTES/contexte_$compteur$fichier.txt
-                
+                contexte=$(lynx -dump -nolist $dirURLs/../ASPIRATIONS/ciao$compteur$fichier.html)
             fi
         fi
 
@@ -76,6 +83,7 @@ do
         <tr>
             <td>$compteur</td>
             <td>$codeHTTP</td>
+            <td>$header</td>
             <td><a href="$line">$line</a></td>
             <td>$encodage</td>
             <td><a href="../ASPIRATIONS/ciao$compteur$fichier.html">html</a></td>
