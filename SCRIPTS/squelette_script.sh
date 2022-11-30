@@ -34,6 +34,7 @@ do
                     <th>dump html</th>
                     <th>dump text</th>
                     <th>n_occurrence_mot</th>
+                    <th>contexte</th>
                 </tr>" > ./TABLEAUX/tableau_$fichier.html;
 
                 # Ici faut mettre chacun le parcours vers le dossier TABLEAUX dans locale
@@ -64,7 +65,9 @@ do
                 unset occurences_mot
                 occurences_mot=$(lynx -dump -nolist $line | egrep -o -c "\b(suburbs?|periferi(a|e)|banlieues?|προ(ά|α)στ.+)\b")
                 lynx -dump -nolist $line > ./DUMPS-TEXT/ciao$compteur$fichier.txt
-                contexte=$(lynx -dump -nolist $line)
+                contexte=$(lynx -dump -nolist $line | egrep -B 1 -A 1  "\b(suburbs?|periferi(a|e)|banlieues?|προ(ά|α)στ.+)\b")
+                lynx -dump -nolist $line | egrep -B 1 -A 1  "\b(suburbs?|periferi(a|e)|banlieues?|προ(ά|α)στ.+)\b" > ./CONTEXTES/contexte_$compteur$fichier.txt
+                
             fi
         fi
 
@@ -78,7 +81,7 @@ do
             <td><a href="../ASPIRATIONS/ciao$compteur$fichier.html">html</a></td>
             <td><a href="../DUMPS-TEXT/ciao$compteur$fichier.txt">text</a></td>
             <td>$occurences_mot</td>
-            <td><a href="../CONTEXTES/">contexte</a></td>
+            <td><a href="../CONTEXTES/contexte_$compteur$fichier.txt">contexte</a></td>
         </tr>" >> ./TABLEAUX/tableau_$fichier.html;
     done < $dirURLs/$fichier;
 
