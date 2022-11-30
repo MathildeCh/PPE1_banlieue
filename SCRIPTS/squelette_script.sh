@@ -62,7 +62,7 @@ do
                 then
                 unset occurences_mot
                 occurences_mot=$(lynx -dump -nolist $line | egrep -o -c "\b(suburbs?|periferi(a|e)|banlieues?|προ(ά|α)στ.+)\b")
-                lynx -dump -nolist $line > $dirURLs/../DUMPS-TEXT/ciao$compteur$fichier.txt
+                lynx -dump -nolist $line > ./DUMPS-TEXT/ciao$compteur$fichier.txt
             fi
         fi
 
@@ -73,7 +73,7 @@ do
             <td>$codeHTTP</td>
             <td><a href="$line">$line</a></td>
             <td>$encodage</td>
-            <td><a href="../ASPIRATIONS/ciao$compteur$fichier.html">$html</a></td>
+            <td><a href="../ASPIRATIONS/ciao$compteur$fichier.html">html</a></td>
             <td><a href="../DUMPS-TEXT/ciao$compteur$fichier.txt">text</a></td>
             <td>$occurences_mot</td>
         </tr>" >> ./TABLEAUX/tableau_$fichier.html;
