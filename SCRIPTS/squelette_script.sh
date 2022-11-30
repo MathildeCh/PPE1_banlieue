@@ -60,7 +60,7 @@ do
             if [[ $encodage == "UTF-8" || "uft-8" ]]
                 then
                 unset occurences_mot 
-                occurences_mot=$(lynx -dump -nolist $line | egrep -o -c "\b(suburbs?|periferi(a|e)|banlieues?)\b")
+                occurences_mot=$(lynx -dump -nolist $line | egrep -o -c "\b(suburbs?|periferi(a|e)|banlieues?|προ(ά|α)στ.+)\b")
                 lynx -dump -nolist $line > $dirURLs/../DUMPS-TEXT/ciao$compteur$fichier.txt
             fi 
         fi
