@@ -73,7 +73,7 @@ do
             <td>$codeHTTP</td>
             <td><a href="$line">$line</a></td>
             <td>$encodage</td>
-            <td><a href=".">$line</a></td>
+            <td><a href="../ASPIRATIONS/ciao$compteur$fichier.html">$html</a></td>
             <td><a href="../DUMPS-TEXT/ciao$compteur$fichier.txt">text</a></td>
             <td>$occurences_mot</td>
         </tr>" >> ./TABLEAUX/tableau_$fichier.html;
