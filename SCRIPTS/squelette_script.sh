@@ -8,12 +8,11 @@ then
 fi
 
 ##ETAPE 1: lecture
-#fichiers de donnees en entree 
+#fichiers de donnees en entree
 dirURLs=$1
 #nom du fichier de sortie -
 # URL_TEXT=$2
 
-echo $dirURLs
 
 ##ETAPE 2: pour chaque fichier d'urls
 for fichier in $(ls $dirURLs)
@@ -33,7 +32,8 @@ do
                     <th>code HTTP</th>
                     <th>charset</th>
                     <th>n_occurrence_mot</th>
-                </tr>" > $dirURLs/../TABLEAUX/tableau_$fichier.html;
+                    <th>fichier dump</th>
+                </tr>" > ./TABLEAUX/tableau_$fichier.html;
 
                 # Ici faut mettre chacun le parcours vers le dossier TABLEAUX dans locale
 
@@ -59,10 +59,17 @@ do
             then
             if [[ $encodage == "UTF-8" || "uft-8" ]]
                 then
+<<<<<<< HEAD
                 unset occurences_mot 
                 occurences_mot=$(lynx -dump -nolist $line | egrep -o -c "\b(suburbs?|periferi(a|e)|banlieues?|προ(ά|α)στ.+)\b")
                 lynx -dump -nolist $line > $dirURLs/../DUMPS-TEXT/ciao$compteur$fichier.txt
             fi 
+=======
+                unset occurences_mot
+                occurences_mot=$(lynx -dump -nolist $line | egrep -o -c "\b(suburbs?|periferi(a|e)|banlieues?)\b")
+                lynx -dump -nolist $line > ./DUMPS-TEXT/ciao$compteur$fichier.txt
+            fi
+>>>>>>> c9ca564 (ajout des liens dump)
         fi
 
         ##pour chaque urls
@@ -73,13 +80,14 @@ do
             <td>$codeHTTP</td>
             <td>$encodage</td>
             <td>$occurences_mot</td>
-        </tr>" >> $dirURLs/../TABLEAUX/tableau_$fichier.html;
+            <td><a href="../DUMPS-TEXT/ciao$compteur$fichier.txt">text</a></td>
+        </tr>" >> ./TABLEAUX/tableau_$fichier.html;
     done < $dirURLs/$fichier;
 
     echo "
             </table>
         </body>
-    </html>" >> $dirURLs/../TABLEAUX/tableau_$fichier.html;
+    </html>" >> ./TABLEAUX/tableau_$fichier.html;
 
         ##Si URL OK
         # if [[ $responseHTTP == 200 OR 3xx ]]
@@ -89,7 +97,7 @@ do
                 # then
                 ##extraire le tx
                 ##écrie le résultat dans tableau
-            #else 
+            #else
                 ##faire qqchose... (convertir?)
             # fi
         #else

@@ -10,9 +10,9 @@
    (BUTTON)
    Subscribe
      * My News
-     * Home
+     * HOME
 
-     * Home Page
+     * 🏠 Home Page
      * Login
      * My Account
      * Newsletters – Signup and Preferences
@@ -142,10 +142,10 @@
 
    (BUTTON)
    ____________________
-   November 29, 2022 (BUTTON) Subscribe (BUTTON) Login
+   November 30, 2022 (BUTTON) Subscribe (BUTTON) Login
 
-     * Home
-          + Home Page
+     * HOME
+          + 🏠 Home Page
           + Login
           + My Account
           + Newsletters – Signup and Preferences
@@ -334,14 +334,13 @@ More Around the Region
 
 Most Recent View All
 
-Lava from Hawaii volcano lights night sky amid warnings
+State sues tobacco companies over settlement payments
 
-Morris Udeze, Lobos pick up individual, team accolades
+Could EV charging stations become targets?
 
-Nursing home found negligent in resident's choking death after videotapes
-destroyed
+NMSU coach 'apologetic' about deadly shooting
 
-CYFD facing familiar issues, despite changes and a budget boost
+Saint Mary's to challenge unbeaten Lobos in a way few teams can
 
 Taboola right rail story
 
