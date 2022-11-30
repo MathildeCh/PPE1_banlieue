@@ -42,6 +42,7 @@ do
     while read -r line;
     do
         occurences_mot=$NONE
+        contexte=$NONE
         compteur=$(($compteur+1))
         codeHTTP=$(curl -s -L -w '%{http_code}\n' -o $dirURLs/../ASPIRATIONS/ciao$compteur$fichier.html $line)
         encodage=$(curl -Is -L -w '%{content_type}\n' $line | grep -i -P -o "charset=\S+" | cut -d= -f2 | head -n1)
@@ -63,6 +64,7 @@ do
                 unset occurences_mot
                 occurences_mot=$(lynx -dump -nolist $line | egrep -o -c "\b(suburbs?|periferi(a|e)|banlieues?|προ(ά|α)στ.+)\b")
                 lynx -dump -nolist $line > ./DUMPS-TEXT/ciao$compteur$fichier.txt
+                # contexte=$(lynx)
             fi
         fi
 
@@ -76,6 +78,7 @@ do
             <td><a href="../ASPIRATIONS/ciao$compteur$fichier.html">html</a></td>
             <td><a href="../DUMPS-TEXT/ciao$compteur$fichier.txt">text</a></td>
             <td>$occurences_mot</td>
+            <td><a href="../CONTEXTES/">contexte</a></td>
         </tr>" >> ./TABLEAUX/tableau_$fichier.html;
     done < $dirURLs/$fichier;
 
