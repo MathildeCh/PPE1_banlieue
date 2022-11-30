@@ -27,12 +27,13 @@ do
         <body>
             <table border="solid" width="100%">
                 <tr>
-                    <th>N°</th>
-                    <th>URLS $fichier</th>
+                    <th>ligne</th>
                     <th>code HTTP</th>
-                    <th>charset</th>
+                    <th>URLS $fichier</th>
+                    <th>Encodage</th>
+                    <th>dump html</th>
+                    <th>dump text</th>
                     <th>n_occurrence_mot</th>
-                    <th>fichier dump</th>
                 </tr>" > ./TABLEAUX/tableau_$fichier.html;
 
                 # Ici faut mettre chacun le parcours vers le dossier TABLEAUX dans locale
@@ -59,28 +60,22 @@ do
             then
             if [[ $encodage == "UTF-8" || "uft-8" ]]
                 then
-<<<<<<< HEAD
-                unset occurences_mot 
+                unset occurences_mot
                 occurences_mot=$(lynx -dump -nolist $line | egrep -o -c "\b(suburbs?|periferi(a|e)|banlieues?|προ(ά|α)στ.+)\b")
                 lynx -dump -nolist $line > $dirURLs/../DUMPS-TEXT/ciao$compteur$fichier.txt
-            fi 
-=======
-                unset occurences_mot
-                occurences_mot=$(lynx -dump -nolist $line | egrep -o -c "\b(suburbs?|periferi(a|e)|banlieues?)\b")
-                lynx -dump -nolist $line > ./DUMPS-TEXT/ciao$compteur$fichier.txt
             fi
->>>>>>> c9ca564 (ajout des liens dump)
         fi
 
         ##pour chaque urls
         echo "
         <tr>
             <td>$compteur</td>
-            <td>$line</td>
             <td>$codeHTTP</td>
+            <td><a href="$line">$line</a></td>
             <td>$encodage</td>
-            <td>$occurences_mot</td>
+            <td><a href=".">$line</a></td>
             <td><a href="../DUMPS-TEXT/ciao$compteur$fichier.txt">text</a></td>
+            <td>$occurences_mot</td>
         </tr>" >> ./TABLEAUX/tableau_$fichier.html;
     done < $dirURLs/$fichier;
 
