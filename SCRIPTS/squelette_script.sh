@@ -46,8 +46,14 @@ do
         occurences_mot=$NONE
         contexte=$NONE
         compteur=$(($compteur+1))
-        codeHTTP=$(curl -s -L -w '%{http_code}\n' -o $dirURLs/../ASPIRATIONS/ciao$compteur$fichier.html $line)
-        encodage=$(curl -Is -L -w '%{content_type}\n' $line | grep -i -P -o "charset=\S+" | cut -d= -f2 | head -n1)
+        codeHTTP=$(curl -b --cookie -A "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:107.0) Gecko/20100101 Firefox/107.0"  -L -w '%{http_code}\n' -o $dirURLs/../ASPIRATIONS/ciao$compteur$fichier.html $line)
+        encodage=$(curl -Is -L -w '%{content_type}\n' $dirURLs/../ASPIRATIONS/ciao$compteur$fichier.html | grep -i -P -o "charset=\S+" | cut -d= -f2 | head -n1)
+        xmllint --html --xmlout $dirURLs/../ASPIRATIONS/ciao$compteur$fichier.html > ciao.xhtml
+            header=$(grep -m 1 "<title>" ciao.xhtml | cut -d\> -f2 | cut -d\< -f1)
+            if [ $header=="" ]
+            then
+                header=$(xmlstarlet select -T --template  --value-of /html/head/title --nl ciao.xhtml)
+            fi
 
 
 
@@ -75,15 +81,14 @@ do
             if [[ $encodage == "UTF-8" || "uft-8" ]]
                 then
                 unset occurences_mot
-                occurences_mot=$(lynx -dump -nolist $line | egrep -o -c "\b(suburbs?|periferi(a|e)|banlieues?|προ(ά|α)στ.+)\b")
-                lynx -dump -nolist $line > ./DUMPS-TEXT/ciao$compteur$fichier.txt
-                contexte=$(lynx -dump -nolist $line | egrep -B 1 -A 1  "\b(suburbs?|periferi(a|e)|banlieues?|προ(ά|α)στ.+)\b")
-                lynx -dump -nolist $line | egrep -B 1 -A 1  "\b(suburbs?|periferi(a|e)|banlieues?|προ(ά|α)στ.+)\b" > ./CONTEXTES/contexte_$compteur$fichier.txt
-                
+                lynx -dump -nolist ./ASPIRATIONS/ciao$compteur$fichier.html > ./DUMPS-TEXT/ciao$compteur$fichier.txt
+                occurences_mot=$(egrep -o -c "\b(suburbs?|periferi(a|e)|banlieues?|προ(ά|α)στ.+)\b" ./DUMPS-TEXT/ciao$compteur$fichier.txt)
+                lynx -dump -nolist $line | egrep -B 1 -A 1  "\b(suburbs?|periferi(a|e)|banlieues?|προ(ά|α)στ.+)\b" > ./CONTEXTES/contexte_$compteur$fichier.txt                
                 occurences_mot=$(lynx -dump -nolist $dirURLs/../ASPIRATIONS/ciao$compteur$fichier.html | egrep -o -c "\b(suburbs?|periferi(a|e)|banlieues?|προ(ά|α)στ.+)\b")
                 lynx -dump -nolist $dirURLs/../ASPIRATIONS/ciao$compteur$fichier.html > ./DUMPS-TEXT/ciao$compteur$fichier.txt
                 contexte=$(lynx -dump -nolist $dirURLs/../ASPIRATIONS/ciao$compteur$fichier.html)
-            fi
+                # ICI NE MARCHE PAS. DANS LES TABLEAUX NE S'AFFICHE PAS BIEN
+                contexte=$(egrep -B 1 -A 1  "\b(suburbs?|periferi(a|e)|banlieues?|προ(ά|α)στ.+)\b" ./DUMPS-TEXT/ciao$compteur$fichier.txt)            fi
         fi
 
         ##pour chaque urls
