@@ -2,8 +2,8 @@
    alternate alternate
 
    REFRESH(25 sec):
-   https://www.thepresident.gr/2022/10/27/paiderastes-me-ithiko-pleonektim
-   a-grafei-o-thanos-tzimeros/
+   file://localhost/mnt/c/Users/Lilas/Desktop/M1_TAL/Projet_encadre/PPE1/P
+   PE1_banlieue/ASPIRATIONS/ciao30urls_gr.txt.html
    [tr?id=434552387766472&ev=PageView&noscript=1]
 
      * ΠΟΛΙΤΙΚΗ
@@ -346,6 +346,8 @@
 
 ΣΧΕΤΙΚΑ ΑΡΘΡΑΠΕΡΙΣΣΟΤΕΡΑ ΑΠΟ ΤΟΝ ΔΗΜΙΟΥΡΓΟ
 
+Νομοθετώντας υπέρ της Κολοβού – Γράφει ο Θάνος Τζήμερος
+
 Άβαφη ρίζα, με διαταγή Άδωνι! Γράφει ο Θάνος Τζήμερος
 
 Είναι Έλληνας ο Giannis; Γράφει ο Θάνος Τζήμερος
@@ -367,8 +369,6 @@
 Αγαπητέ ανεμβολίαστε… Γράφει ο Θάνος Τζήμερος
 
 Να πώς ξοδεύονται, φορολογούμενε, τα λεφτά σου! Γράφει ο Θάνος Τζήμερος
-
-Ανθρωπιστές Ανθρωποφάγοι – Γράφει ο Θάνος Τζήμερος
 
    ____________________ Αναζήτηση
 

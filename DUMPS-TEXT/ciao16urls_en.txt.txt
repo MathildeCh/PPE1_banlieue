@@ -24,8 +24,8 @@
    Public Service
    Sport
    Top Sport StoriesLocal SportRaidersBrumbiesNational
-   SportNRLAFLRugbySoccerCricketCapitalsUnitedFIFA World
-   CupRacingTennisScores and Draws
+   SportNRLAFLRugbySoccerCricketCapitalsFIFA World
+   CupUnitedRacingTennisScores and Draws
    What's On
    Things to doFood & WineTV GuideMoviesStage and theatreVisual
    artMusicCompetitions
@@ -33,10 +33,10 @@
    Comment
    Letters to the EditorEditorialOpinionCartoons
    Life & Style
-   LifeMoneyPuzzlesBooksRecipesCelebrity
+   LifeMoneyBooksPuzzlesRecipesCelebrity
    Jobs
    Classifieds
-   TributesCelebrationsAllhomesPlace a Job AdPlace a Classifieds AdGarage
+   TributesCelebrationsAllhomesPlace a Classifieds AdPlace a Job AdGarage
    Sales
    Recommended
    FeaturesSpecial PublicationsPartner ContentSponsorships
@@ -145,125 +145,143 @@ Sydney engineer 'confessed' murder to cops
    FacebookTwitterWhatsappEmail
    (BUTTON) Copy
    More from Latest News
-   Task force embeds NSW coercive control law
-   NSW Attorney-General Mark Speakman said the task force was key to
-   implementing coercive control law. (Dan Himbrechts/AAP PHOTOS)
-   WA toughens child worker checks
-   The system will automatically flag people convicted of a sexual or
-   violent offence against children. (Lukas Coch/AAP PHOTOS)
-   Egyptians want Rosetta Stone back from UK
-   The Rosetta Stone is one of more than 100,000 relics housed in the
-   British Museum. (AP PHOTO)
-   Mother continues to battle after trans daughter's 'horrible assault' at
-   men's prison
-   Rosemary Harwood and her grandsons. Picture supplied
+   Harry and Meghan honoured for activism
+   The Duke and Duchess of Sussex have been recognised for their racial
+   justice and mental health work. (AP PHOTO)
+   Electric vehicle chargers get a boost
+   At least 80 new electric vehicle chargers will be installed in shopping
+   centres, office buildings. (James Ross/AAP PHOTOS)
+   Human remains found under Qld unit complex
+   A crime scene has been set up at a unit block in Brisbane's north where
+   human remains were found. (Joel Carrett/AAP PHOTOS)
+   'Pay the price of preparedness' as US troop numbers increaseNo comments
+   Deputy Prime Minister Richard Marles, Foreign Minister Penny Wong, US
+   Secretary of State Antony Blinken and US Secretary of Defense Lloyd
+   Austin. Picture Getty Images
    More from Latest News
-   Task force embeds NSW coercive control law
-   NSW Attorney-General Mark Speakman said the task force was key to
-   implementing coercive control law. (Dan Himbrechts/AAP PHOTOS)
-   WA toughens child worker checks
-   The system will automatically flag people convicted of a sexual or
-   violent offence against children. (Lukas Coch/AAP PHOTOS)
-   Egyptians want Rosetta Stone back from UK
-   The Rosetta Stone is one of more than 100,000 relics housed in the
-   British Museum. (AP PHOTO)
-   Mother continues to battle after trans daughter's 'horrible assault' at
-   men's prison
-   Rosemary Harwood and her grandsons. Picture supplied
-   'Sorry saga': Government backflips on Senate estimates cutsNo comments
-   Senator Simon Birmingham. Picture by Elesa Kurtz
-   Walker inquest hears of NT teen's trauma
-   The inquest into Kumanjayi Walker's death has heard from its final
-   witness for the year. (PR HANDOUT IMAGE PHOTO)
+   Harry and Meghan honoured for activism
+   The Duke and Duchess of Sussex have been recognised for their racial
+   justice and mental health work. (AP PHOTO)
+   Electric vehicle chargers get a boost
+   At least 80 new electric vehicle chargers will be installed in shopping
+   centres, office buildings. (James Ross/AAP PHOTOS)
+   Human remains found under Qld unit complex
+   A crime scene has been set up at a unit block in Brisbane's north where
+   human remains were found. (Joel Carrett/AAP PHOTOS)
+   'Pay the price of preparedness' as US troop numbers increaseNo comments
+   Deputy Prime Minister Richard Marles, Foreign Minister Penny Wong, US
+   Secretary of State Antony Blinken and US Secretary of Defense Lloyd
+   Austin. Picture Getty Images
+   Ukraine and Russia: what you need to know
+   Ukrainian President Volodymyr Zelenskiy has visited troops close to the
+   front lines in Donbas. (AP PHOTO)
+   Stolen at age 4: Aunty Adelaide tells story of strength, survival
+   Cordeaux Heights author Julie-Anne Jones felt compelled to write Stolen
+   Generations survivor Aunty Adelaide Wenberg's story. It took the pair
+   five years and countless cups of tea - but on Saturday Cootamundra Girl
+   will finally be launched in Wollongong. Picture by Adam McLean.
    More from Latest News
-   Task force embeds NSW coercive control law
-   NSW Attorney-General Mark Speakman said the task force was key to
-   implementing coercive control law. (Dan Himbrechts/AAP PHOTOS)
-   WA toughens child worker checks
-   The system will automatically flag people convicted of a sexual or
-   violent offence against children. (Lukas Coch/AAP PHOTOS)
-   Egyptians want Rosetta Stone back from UK
-   The Rosetta Stone is one of more than 100,000 relics housed in the
-   British Museum. (AP PHOTO)
-   Mother continues to battle after trans daughter's 'horrible assault' at
-   men's prison
-   Rosemary Harwood and her grandsons. Picture supplied
-   'Sorry saga': Government backflips on Senate estimates cutsNo comments
-   Senator Simon Birmingham. Picture by Elesa Kurtz
-   Walker inquest hears of NT teen's trauma
-   The inquest into Kumanjayi Walker's death has heard from its final
-   witness for the year. (PR HANDOUT IMAGE PHOTO)
+   Harry and Meghan honoured for activism
+   The Duke and Duchess of Sussex have been recognised for their racial
+   justice and mental health work. (AP PHOTO)
+   Electric vehicle chargers get a boost
+   At least 80 new electric vehicle chargers will be installed in shopping
+   centres, office buildings. (James Ross/AAP PHOTOS)
+   Human remains found under Qld unit complex
+   A crime scene has been set up at a unit block in Brisbane's north where
+   human remains were found. (Joel Carrett/AAP PHOTOS)
+   'Pay the price of preparedness' as US troop numbers increaseNo comments
+   Deputy Prime Minister Richard Marles, Foreign Minister Penny Wong, US
+   Secretary of State Antony Blinken and US Secretary of Defense Lloyd
+   Austin. Picture Getty Images
+   Ukraine and Russia: what you need to know
+   Ukrainian President Volodymyr Zelenskiy has visited troops close to the
+   front lines in Donbas. (AP PHOTO)
+   Stolen at age 4: Aunty Adelaide tells story of strength, survival
+   Cordeaux Heights author Julie-Anne Jones felt compelled to write Stolen
+   Generations survivor Aunty Adelaide Wenberg's story. It took the pair
+   five years and countless cups of tea - but on Saturday Cootamundra Girl
+   will finally be launched in Wollongong. Picture by Adam McLean.
 
    Advertisement
    Ad
    Local News
-   Prisoner had 'no forethought' in 'short-lived' escape with fiancée
-   Prison escapee Kane Quinn, right, was freed from custody for a few
-   hours in 2021 by fiancée Lila Walto, left. Pictures: Facebook
-   Judge slams 'magnet for crime' Mooseheads as 'brazen' dancefloor rapist
-   jailed
-   Dancefloor rapist Parker Bellette outside court. Picture by Blake Foden
-   It was not zero, not net zeroNo comments
-   The sky writing on Monday as seen from Wanniassa. Picture by Megan
-   Doherty
-   Saying goodbye to 30 years of butter chickenNo comments
-   Venkatesh and Anandi Ramachandran say farewell to their favourite wall
-   at Indian Accent. Picture by Karleen Minney.
-   Local News
-   Prisoner had 'no forethought' in 'short-lived' escape with fiancée
-   Prison escapee Kane Quinn, right, was freed from custody for a few
-   hours in 2021 by fiancée Lila Walto, left. Pictures: Facebook
-   Judge slams 'magnet for crime' Mooseheads as 'brazen' dancefloor rapist
-   jailed
-   Dancefloor rapist Parker Bellette outside court. Picture by Blake Foden
-   It was not zero, not net zeroNo comments
-   The sky writing on Monday as seen from Wanniassa. Picture by Megan
-   Doherty
-   Saying goodbye to 30 years of butter chickenNo comments
-   Venkatesh and Anandi Ramachandran say farewell to their favourite wall
-   at Indian Accent. Picture by Karleen Minney.
-   Five things to do in Canberra this weekendNo comments
-   Lisa Maza portrays the poet Emilia in her later years. Picture supplied
-   Local News
-   Prisoner had 'no forethought' in 'short-lived' escape with fiancée
-   Prison escapee Kane Quinn, right, was freed from custody for a few
-   hours in 2021 by fiancée Lila Walto, left. Pictures: Facebook
-   Judge slams 'magnet for crime' Mooseheads as 'brazen' dancefloor rapist
-   jailed
-   Dancefloor rapist Parker Bellette outside court. Picture by Blake Foden
-   It was not zero, not net zeroNo comments
-   The sky writing on Monday as seen from Wanniassa. Picture by Megan
-   Doherty
-   Saying goodbye to 30 years of butter chickenNo comments
-   Venkatesh and Anandi Ramachandran say farewell to their favourite wall
-   at Indian Accent. Picture by Karleen Minney.
-   Five things to do in Canberra this weekendNo comments
-   Lisa Maza portrays the poet Emilia in her later years. Picture supplied
-   ACT learner drivers will get access to online first-aid courseNo
+   'Illegal immigrant' faces court for alleged assault of anti-China
+   protester
+   Kang Zhao faced the ACT Magistrates Court on Wednesday. Picture ACT
+   Policing
+   Calvary Hospital emergency department operating as usual after fire and
+   evacuationNo comments
+   Calvary Hospital was on fire at midday Tuesday, forcing evacuated
+   patients to wait outside. Picture by Regina Procter, inset supplied
+   Reprieve for Russian embassy in stoush with National Capital Authority
+   Land allocated to Russia for a new embassy. Picture by Sitthixay
+   Ditthavong
+   Developer resumes plans for former Canberra City Bowling Club siteNo
    comments
-   Val Dempsey, the 2022 Senior Australian of the Year, presents to the
-   National General Assembly of Local Government in June. Picture by Elesa
-   Kurtz
    Local News
-   Prisoner had 'no forethought' in 'short-lived' escape with fiancée
-   Prison escapee Kane Quinn, right, was freed from custody for a few
-   hours in 2021 by fiancée Lila Walto, left. Pictures: Facebook
-   Judge slams 'magnet for crime' Mooseheads as 'brazen' dancefloor rapist
-   jailed
-   Dancefloor rapist Parker Bellette outside court. Picture by Blake Foden
-   It was not zero, not net zeroNo comments
-   The sky writing on Monday as seen from Wanniassa. Picture by Megan
-   Doherty
-   Saying goodbye to 30 years of butter chickenNo comments
-   Venkatesh and Anandi Ramachandran say farewell to their favourite wall
-   at Indian Accent. Picture by Karleen Minney.
-   Five things to do in Canberra this weekendNo comments
-   Lisa Maza portrays the poet Emilia in her later years. Picture supplied
-   ACT learner drivers will get access to online first-aid courseNo
+   'Illegal immigrant' faces court for alleged assault of anti-China
+   protester
+   Kang Zhao faced the ACT Magistrates Court on Wednesday. Picture ACT
+   Policing
+   Calvary Hospital emergency department operating as usual after fire and
+   evacuationNo comments
+   Calvary Hospital was on fire at midday Tuesday, forcing evacuated
+   patients to wait outside. Picture by Regina Procter, inset supplied
+   Reprieve for Russian embassy in stoush with National Capital Authority
+   Land allocated to Russia for a new embassy. Picture by Sitthixay
+   Ditthavong
+   Developer resumes plans for former Canberra City Bowling Club siteNo
    comments
-   Val Dempsey, the 2022 Senior Australian of the Year, presents to the
-   National General Assembly of Local Government in June. Picture by Elesa
-   Kurtz
+   New Biodiversity Council to tackle Australia's extinction crisisNo
+   comments
+   Tanya Plibersek, Minister for the Environment and Water, addresses the
+   National Press Club of Australia for her State of the environment
+   address. Picture by James Croucher
+   Local News
+   'Illegal immigrant' faces court for alleged assault of anti-China
+   protester
+   Kang Zhao faced the ACT Magistrates Court on Wednesday. Picture ACT
+   Policing
+   Calvary Hospital emergency department operating as usual after fire and
+   evacuationNo comments
+   Calvary Hospital was on fire at midday Tuesday, forcing evacuated
+   patients to wait outside. Picture by Regina Procter, inset supplied
+   Reprieve for Russian embassy in stoush with National Capital Authority
+   Land allocated to Russia for a new embassy. Picture by Sitthixay
+   Ditthavong
+   Developer resumes plans for former Canberra City Bowling Club siteNo
+   comments
+   New Biodiversity Council to tackle Australia's extinction crisisNo
+   comments
+   Tanya Plibersek, Minister for the Environment and Water, addresses the
+   National Press Club of Australia for her State of the environment
+   address. Picture by James Croucher
+   Wanted man last seen leaving Canberra Hospital arrested in Sydney
+   Mohammadiman Aghahosseini was arrested in Sydney on December 5 before
+   being extradited to the ACT. Picture supplied
+   Local News
+   'Illegal immigrant' faces court for alleged assault of anti-China
+   protester
+   Kang Zhao faced the ACT Magistrates Court on Wednesday. Picture ACT
+   Policing
+   Calvary Hospital emergency department operating as usual after fire and
+   evacuationNo comments
+   Calvary Hospital was on fire at midday Tuesday, forcing evacuated
+   patients to wait outside. Picture by Regina Procter, inset supplied
+   Reprieve for Russian embassy in stoush with National Capital Authority
+   Land allocated to Russia for a new embassy. Picture by Sitthixay
+   Ditthavong
+   Developer resumes plans for former Canberra City Bowling Club siteNo
+   comments
+   New Biodiversity Council to tackle Australia's extinction crisisNo
+   comments
+   Tanya Plibersek, Minister for the Environment and Water, addresses the
+   National Press Club of Australia for her State of the environment
+   address. Picture by James Croucher
+   Wanted man last seen leaving Canberra Hospital arrested in Sydney
+   Mohammadiman Aghahosseini was arrested in Sydney on December 5 before
+   being extradited to the ACT. Picture supplied
 
 Get the latest Canberra news in your inbox
 

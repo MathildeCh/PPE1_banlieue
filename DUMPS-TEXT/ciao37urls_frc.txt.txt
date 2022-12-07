@@ -1,6 +1,6 @@
    REFRESH(900 sec):
-   https://www.challenges.fr/politique/incidents-en-banlieue-le-fn-lance-u
-   ne-petition-pour-soutenir-la-police_454117
+   file://localhost/mnt/c/Users/Lilas/Desktop/M1_TAL/Projet_encadre/PPE1/P
+   PE1_banlieue/ASPIRATIONS/ciao37urls_frc.txt.html
    #A la une
 
    IFRAME: https://www.googletagmanager.com/ns.html?id=GTM-5R3RG2H
@@ -78,8 +78,8 @@
           + S’abonner dès 1€
           + Connexion
 
-   Challenges Audio Espace débat Salaires 2022 Grandes Écoles Cybersecu
-   FOF 2022
+   Challenges Audio Espace débat Sommet de l'Economie Grandes Écoles
+   Cybersecu FOF 2022
 
    Partager
 
@@ -144,8 +144,8 @@ Incidents en banlieue : Le FN lance une pétition "pour soutenir la police"
    Réagir
    Pour réagir, veuillez vous connecter en cliquant ici
 
-     * Bourse Le 24/11 à 18H05
-     * CAC 40 6707,32 +0,42%
+     * Bourse Le 07/12 à 09H06
+     * CAC 40 6687,09 -0,01%
      * Rechercher une valeur ____________________
 
    Newsletter Challenges
@@ -162,16 +162,13 @@ Incidents en banlieue : Le FN lance une pétition "pour soutenir la police"
    Je m'abonne
    Votre inscription a bien été prise en compte
    Politique
-     * La France insoumise dans la tourmente IVG, corrida : la niche
-       parlementaire en demi-teinte des Insoumis
-     * Affaire des loyers capitalisés : Attal accuse Paris d’escroquerie,
-       Hidalgo porte plainte
-     * Bercy soupçonné de sous-estimer massivement l'impôt sur les
-       superprofits
-     * Impôt sur le revenu : sa généralisation séduit Pradié (LR) comme
-       LFI
-     * Escroquerie de frais de campagne : Claude Guéant condamné à six
-       mois de prison ferme aménagés
+     * Retailleau, comme Ciotti, est contre un rapprochement avec Emmanuel
+       Macron. Primaire LR : Retailleau propose un référendum interne sur
+       une alliance avec Macron
+     * Prix du pass Navigo : l'Etat va verser 200 millions d'euros
+     * Immigration : Macron espère dégager un consensus avec l'opposition
+     * Energies et climat : débat houleux sur le projet de loi
+     * Nicolas Sarkozy pourrait-il finir en prison ?
 
    Tous les articles Politique
    à la une cette semaine
@@ -222,8 +219,8 @@ Incidents en banlieue : Le FN lance une pétition "pour soutenir la police"
    Votre inscription a bien été prise en compte
    Suivez-nous
 
-   Challenges Audio Espace débat Salaires 2022 Grandes Écoles Cybersecu
-   FOF 2022
+   Challenges Audio Espace débat Sommet de l'Economie Grandes Écoles
+   Cybersecu FOF 2022
      __________________________________________________________________
 
    ClassementsLes 500 plus grandes fortunes de FranceLes prix de

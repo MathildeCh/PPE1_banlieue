@@ -1,24 +1,620 @@
 
+   Best Shopping Deals
+   In the know quiz
 
-Potential automated action detected!
+   Sign Up
+   Log In
+   (BUTTON)
+     * My account
+     * Sign Out
 
-  Newscorp Australia are trialling new security software on our mastheads. If
-  you receive "Potential automated action detected!" please try these steps
-  first:
+   news.com.au — Australia’s leading news site
 
-    1. Temporarily disable any AdBlockers / pop-up blockers / script
-       blockers you have enabled
-    2. Add this site in to the allowed list for any AdBlockers / pop-up
-       blockers / script blockers you have enabled
-    3. Ensure your browser supports JavaScript (this can be done via
-       accessing
-       https://www.whatismybrowser.com/detect/is-javascript-enabled in
-       your browser)
-    4. Ensure you are using the latest version of your web browser
+     * National
+          + Breaking News
+          + Politics
+          + Crime
+          + Courts & Law
+          + NSW & ACT
+               o Politics
+               o Crime
+               o Courts & Law
+          + Queensland
+               o Politics
+               o Crime
+               o Courts & Law
+          + Victoria
+               o Politics
+               o Crime
+               o Courts & Law
+          + South Australia
+          + Western Australia
+          + Northern Territory
+          + Tasmania
+     * World
+          + Breaking News
+          + Pacific
+          + Asia
+          + North America
+               o US Politics
+          + South America
+          + Africa
+          + Middle East
+          + Europe
+               o UK Politics
+          + Coronavirus
+               o Australia
+               o Global
+               o Economy
+               o Health
+               o Closures
+     * Lifestyle
+          + Health
+               o Health Problems
+               o Mental Health
+               o Wellbeing
+               o Diet
+          + Fitness
+               o Inspiration
+               o Weight Loss
+               o Exercise
+          + Parenting
+               o Pregnancy
+               o Babies
+               o Kids
+               o Teens
+               o School Life
+          + Food
+               o Eat
+               o Drink
+               o Restaurants & Bars
+               o Food Warnings
+          + Relationships
+               o Dating
+               o Sex
+               o The Sealed Section
+               o Marriage
+               o Family & Friends
+          + Fashion
+               o Fashion Shows
+               o Designers
+               o Fashion Trends
+               o Celebrity
+          + Beauty
+               o Face & Body
+               o Cosmetic Surgery
+          + Home
+               o Interiors
+               o Outdoors
+               o DIY
+               o Pets
+          + Real Life
+               o True Stories
+               o Good News
+               o News Life
+          + Lifestyle Videos
+          + Horoscopes
+     * Travel
+          + Travel Ideas
+               o Cruises
+               o Luxury
+               o Adventure
+               o Short Breaks
+               o Ski & Snow
+               o Road Trips
+               o Food & Drinks
+          + Destinations
+               o Pacific
+               o Asia
+               o North America
+               o Europe
+               o New Zealand
+               o Africa
+               o Middle East
+               o Central America
+               o South America
+          + Travel Advice
+               o Tips & Tricks
+               o Flights
+               o Accommodation
+               o Money
+               o Airports
+          + Australian Holidays
+               o NSW & ACT
+               o Northern Territory
+               o Queensland
+               o South Australia
+               o Tasmania
+               o Victoria
+               o Western Australia
+          + Travel Videos
+     * Entertainment
+          + Celebrity Life
+               o Hook Ups & Break ups
+               o Celebrity Photos
+               o Celebrity Kids
+               o Celebrity Deaths
+               o Royals
+          + Celebrity Style
+               o Red Carpet
+          + TV & Radio
+               o TV Shows
+               o Reality TV
+               o Streaming
+               o Radio
+               o Morning Shows
+               o Current Affairs
+               o Flashback
+          + Movies
+               o Upcoming Movies
+               o New Movies
+               o Movies Reviews
+          + Music
+               o Music Festivals
+               o Tours
+          + Books & Magazines
+               o Books
+               o Magazines
+          + Awards
+               o Oscars
+               o Golden Globes
+               o Grammys
+               o ARIAS
+               o Logies
+               o Emmys
+          + Entertainment Videos
+     * Technology
+          + Online
+               o Social Media
+               o Security
+               o Internet
+               o Hacking
+          + Gadgets
+               o Mobile Phones
+               o Tablets
+               o Cameras
+               o Wearables
+          + Home Entertainment
+               o TV
+               o Computers
+               o Audio
+          + Gaming
+          + Science
+               o Space
+               o Archaeology
+               o Human Body
+               o Animals
+          + Environment
+               o Climate Change
+               o Sustainability
+               o Natural Wonders
+          + Innovation
+               o Inventions
+               o Design
+          + Motoring
+               o Motoring News
+               o New Cars
+               o Luxury
+               o HiTech
+               o Car Advice
+               o On the Road
+          + Technology Videos
+     * Finance
+          + Work
+               o At Work
+               o Careers
+               o Leaders
+          + Business
+               o Breaking News
+               o Technology
+               o Banking
+               o Travel
+               o Retail
+               o Mining
+               o Manufacturing
+               o Media
+               o Other Industries
+          + Money
+               o Costs
+               o Investing
+               o Budgeting
+               o Wealth
+               o Tax
+          + Economy
+               o Australian Economy
+               o World Economy
+               o Interest Rates
+               o Federal Budget
+          + Real Estate
+               o Selling
+               o Buying
+               o Renting
+               o Sydney & NSW
+               o Brisbane & QLD
+               o Melbourne & VIC
+               o Adelaide & SA
+               o Perth & WA
+          + Markets
+               o Australian Markets
+               o World Markets
+               o Australian Dollar
+          + Small Business
+          + Superannuation
+          + Finance Videos
+     * Sport
+          + Football
+               o World Cup
+               o A-League
+               o EPL
+          + Cricket
+               o Cricket Live Scores
+          + Tennis
+          + AFL
+          + NRL
+          + Sports Life
+               o Champions
+               o History
+          + American Sports
+               o NBA
+               o NFL
+          + Boxing
+          + UFC
+          + Motorsport
+               o F1
+               o V8 Supercars
+               o Moto GP
+          + Basketball
+          + Golf
+          + Horse Racing
+               o Expert Opinion
+               o Tips
+               o NSW Racing
+               o VIC Racing
+               o QLD Racing
+               o SA Racing
+               o WA Racing
+               o Punter's Life
+          + Rugby
+               o Wallabies
+          + Cycling
+          + More Sports
+          + Sport Videos
+     * More
+          + Compare Money
+          + In The Know quiz
+          + Podcasts
+          + Competitions
+          + Newsletters
+          + Coupons & Deals
+          + Horoscopes
+          + Our team
+          + Best of shopping
+               o Sales and Deals
+               o Home
+               o Electronics
+               o Beauty
+               o Fashion
+               o Travel
+               o Sports
+               o Gifts
 
-   If you need to be unblocked please e-mail us at
-   accessissues@news.com.au and provide the IP address and reference
-   number shown here along with why you require access. News Corp
-   Australia.
-   Your IP address is: 195.221.72.173 | Your reference number is:
-   0.60a51002.1669799003.4cf4267
+   ____________________ (BUTTON)
+
+     * National
+     * NSW & ACT
+     * Crime
+
+‘Tent city’ in affluent Sydney suburb Dee Why goes up in flames, police
+arrest two men and seize machete
+
+   Two men have been arrested after an “explosion” at a makeshift campsite
+   in an affluent Sydney suburb. Now locals are split over what should
+   happen next.
+   Jack Evans Jack Evans
+   @Jackevansreport
+   4 min read
+   October 4, 2022 - 5:34PM
+   Man arrested after ‘Tent city’ in elite Sydney suburb up in flames
+   More from nsw act crime
+   ‘Cover up’ fear over pedo preacher: court
+
+‘Cover up’ fear over pedo preacher: court
+
+   Brother’s fear cops would kill NRL star
+
+Brother’s fear cops would kill NRL star
+
+   Mirvac exec accused of taxi heist
+
+Mirvac exec accused of taxi heist
+
+   A ‘tent city’ in an affluent Sydney suburb has been disbanded after an
+   incident involving “violence and fire” over the long weekend proved to
+   be the straw that broke the camel’s back.
+
+   Two homeless men were arrested on Monday after a tent at a makeshift
+   Northern Beaches camp was allegedly set ablaze.
+
+   While the shanty settlement had been set up in the dunes of Dee Why for
+   some years now, Northern Beaches Council today confirmed the camp was
+   being pulled down.
+
+   “A violent incident and fire in the dunes at Dee Why this weekend has
+   left Council, with the assistance of NSW Police, with little other
+   option but to disband the camp and remove the growing accumulation of
+   rubbish and other materials which are posing an ongoing fire and safety
+   risk,” Northern Beaches Council CEO Ray Brownlee told news.com.au.
+
+   Stream your news live & on demand with Flash. From CNN International,
+   Al Jazeera, Sky News, BBC World, CNBC & more. New to Flash? Try 1 month
+   free. Offer ends 31 October, 2022 >
+   Police were called to reports of a fire in the sand dunes near Dee Why
+   Lagoon on Monday afternoon. Picture: Luke Gavahan/ @lukegavahanmedia
+   Police were called to reports of a fire in the sand dunes near Dee Why
+   Lagoon on Monday afternoon. Picture: Luke Gavahan/ @lukegavahanmedia
+
+   The chaos on Monday, which also saw a police officer allegedly kicked
+   in the head, began about 4.30pm when authorities were called to a tent
+   alight in the Dee Why sand dunes.
+
+   “Police were also told a man, allegedly armed with a machete and a gas
+   lighter, had been seen chasing another man towards the carpark about
+   the same time,” a NSW Police spokesman said.
+   A makeshift homeless camp, dubbed a ‘tent city’, reportedly appeared in
+   the area about two years ago. Picture: Facebook
+   A makeshift homeless camp, dubbed a ‘tent city’, reportedly appeared in
+   the area about two years ago. Picture: Facebook
+
+   Shortly after arriving on scene, officers from Northern Beaches command
+   were allegedly assaulted while trying to arrest a 35-year-old man at a
+   nearby service station.
+
+   The man was pepper sprayed after allegedly kicking a police officer in
+   the head.
+
+   He was then taken to was taken to Manly Police Station where he has
+   been charged with damage property by fire, use offensive weapon with
+   intent to commit indictable offence, assault police, and resist, hinder
+   police.
+
+   A second man, 43, was arrested nearby and charged with one count each
+   of assault police and intimidate police.
+   Police used pepper spray and an officer was allegedly kicked in the
+   head during Monday’s incident. Picture: Facebook
+   Police used pepper spray and an officer was allegedly kicked in the
+   head during Monday’s incident. Picture: Facebook
+   One witness reported an ‘explosion’ before the two chaotic arrests
+   occurred. Picture: Luke Gavahan/ @lukegavahanmedia
+   One witness reported an ‘explosion’ before the two chaotic arrests
+   occurred. Picture: Luke Gavahan/ @lukegavahanmedia
+
+   A search of the area allegedly uncovered a machete and a butane gas
+   lighter which have been taken for forensic analysis.
+
+   The men, both Dee Why locals, were refused bail to face Manly Local
+   Court on Monday.
+
+   A local who witnessed the incident and one of the arrests described
+   “black smoke” and an “explosion” as the tent was allegedly set ablaze.
+
+   “So, I go for a walk between Dee Why Beach and the lagoon and discover
+   shanty homes hidden in the bushes,” the local posted online.
+   A gas canister and machete were found near when one man was arrested.
+   Picture: Facebook
+   A gas canister and machete were found near when one man was arrested.
+   Picture: Facebook
+
+   “As I was walking back home, I could see black smoke and explosions
+   from one shanty home.
+
+   “(I) went in to have a look and was confronted by one very stirred-up
+   guy, got the hell out of there and phoned the fireys.
+
+   “Got back to the carpark to find a massive knife and torch thrower,
+   called the cops. Dee Why is usually quite peaceful,” he concluded on
+   the post which has since been taken down.
+   Footage showed one of the alleged fleeing police before he was caught
+   shortly after in nearby bushland. Picture: Luke Gavahan/
+   @lukegavahanmedia
+   Footage showed one of the alleged fleeing police before he was caught
+   shortly after in nearby bushland. Picture: Luke Gavahan/
+   @lukegavahanmedia
+
+   Locals split over dune dwellings
+
+   Despite the presence of homelessness in their community, locals have
+   largely empathised with those sleeping rough in the sand dune ‘tent
+   city’.
+
+   Hundreds flooded a local Facebook forum to share their thoughts after
+   the incident.
+
+   While a few aired their frustrations with the alleged arson attack and
+   the ‘tent city’ more broadly, the majority believed it was a symptom of
+   the economic climate.
+   Locals are split over the homeless people living in tents at Dee Why.
+   Picture: Facebook
+   Locals are split over the homeless people living in tents at Dee Why.
+   Picture: Facebook
+
+   “I really hope the community helps this poor man get back on his feet,
+   clearly in a tough position,” one person wrote.
+
+   “Poor buggers are having a hard enough life as it is without nosy
+   people poking around,” wrote another.
+
+   “They have no where else to go. They can’t afford rent and some are
+   mentally incapable of working,” another wrote on a separate forum.
+
+   A local barista, Ewan Lund, previously told the Daily Mail the
+   residents of the makeshift campsite kept to themselves for the most
+   part.
+
+   “We know they’re there, but you can’t see them or the tents from the
+   pathway,” he said.
+
+   “One time we had a guy come in and ask for money, but otherwise you
+   never see them.”
+
+   Another anonymous local previously told northern beaches publication,
+   the Manly Observer, the homeless were mostly unseen but there had been
+   reports of issues.
+   Northern Beaches Council has previously said it was not planning to
+   move people on from the site.
+   Northern Beaches Council has previously said it was not planning to
+   move people on from the site.
+
+   “Almost no one knows that they’re there unless they’ve had issues with
+   them. There has been council and police going there but they can’t do
+   anything and I think they prefer to have them contained there so
+   they’re not causing issues anywhere else,’ the resident was reported
+   saying.
+
+   “Two ladies you see before sunrise rain or shine walk up and down Dee
+   Why Beach collect every piece of rubbish. They do it out of love for
+   the area.
+
+   “Apparently they came out of the camp and threatened the two ladies to
+   go away for getting too close.”
+
+   The bush dwellings were in stark contrast to the homes of the
+   multimillion suburb of Dee Why, nestled among some of the most
+   expensive localities in the country – including Manly and Palm Beach.
+
+   With a median house price of $2.8 million, Dee Why also hosts a slim
+   vacancy rate at just 1.7 per cent and median rental prices of $925 per
+   week for a home, $865 for a townhouse and $585 for a unit.
+
+   The Northern Beaches Council, which is responsible for the area, has
+   previously stated it was aware of the dwellings but had not considering
+   moving the residents on.
+
+   “We have been working with relevant homeless support agencies in a
+   continual effort to provide assistance to those living in the dunes at
+   Dee Why for a number of years now,” Mr Brownlee said.
+
+   “Homelessness is a complex issue and we have sought to approach those
+   involved with understanding and compassion.
+
+   “Council is continuing to facilitate assistance to those impacted
+   through welfare and housing agencies and communicate support options
+   available to them.”
+
+   News.com.au understand while the council has some positive outcomes
+   previous residents of the camp, the current residents had repeatedly
+   rejected offers of support.
+
+More Coverage
+
+   Seeking a roof while the kids are at schoolExtreme solution to Aussie
+   crisis‘Sad story’: Eels premiership winner’s tragic spiral into
+   homelessness revealed
+
+   Possessions removed from the site will be secured and available for
+   collection by their owners.
+
+   More to this story? Email jack.evans@news.com.au
+     *
+     *
+     *
+
+   Read related topics:Sydney
+   Join the conversation
+
+Add your comment to this story
+
+   To join the conversation, please log in. Don't have an account?
+   Register
+
+   Join the conversation, you are commenting as Logout
+   More related stories
+   ‘Cover up’ fear over pedo preacher: court
+   NSW / ACT Courts & Law
+
+‘Cover up’ fear over pedo preacher: court
+
+   A pastor has told the court she did not disclose disgraced preacher
+   Frank Houston’s sexual abuse of a child because she was sworn to
+   secrecy by the victim’s family.
+   Read more
+   Brother’s fear cops would kill NRL star
+   NRL
+
+Brother’s fear cops would kill NRL star
+
+   An NRL star’s brother told a court he thought police officers were
+   going to kill the player when they repeatedly punched him in the face
+   and the ribs.
+   Read more
+   Mirvac exec accused of taxi heist
+   NSW / ACT Courts & Law
+
+Mirvac exec accused of taxi heist
+
+   A man from Sydney’s exclusive eastern suburbs has denied threatening a
+   taxi driver and stealing his car while drunk in the city.
+   Read more
+
+   news
+     *
+     *
+     *
+     *
+     *
+     *
+
+     * Sign Up
+     * Log In
+
+     * Sign Up
+          + Registration
+          + Connect
+          + In The Know Quiz
+          + Newsletters
+     * About us
+          + Welcome to news.com.au
+          + The Team
+          + Our Values
+          + Code of Conduct
+          + Shopping
+          + Coupons
+     * Help & Support
+          + Contact us
+          + FAQ
+          + General Feedback
+          + Advertise with us
+          + Site Map
+          + Content Licensing
+     * Our News Network
+          + Kids News
+          + The Daily Telegraph
+          + Herald Sun
+          + The Courier Mail
+     * Our Partners
+          + Kidspot
+          + Body+Soul
+          + realestate.com.au
+          + FoxSports
+
+   Our Apps
+     *
+     *
+
+   A NOTE ABOUT RELEVANT ADVERTISING: We collect information about the
+   content (including ads) you use across this site and use it to make
+   both advertising and content more relevant to you on our network and
+   other sites. Find out more about our policy and your choices, including
+   how to opt-out.Sometimes our articles will try to help you find the
+   right product at the right price. We may receive payment from third
+   parties for publishing this content or when you make a purchase through
+   the links on our sites.
+     * Privacy policy
+     * Relevant ads opt-out
+     * Cookie policy
+     * Terms of use
+
+   Nationwide News Pty Ltd © 2022. All times AEDT (GMT +11). Powered by
+   WordPress.com VIP
+
+   [pixel_50977daa?a=dD00NTgxNGQ3ZWRjMTQ3ZDg0ZjlkZGEyYzRlYTI3NTAyYjliMDk4N
+   GQ5JmpzPW9mZg==]

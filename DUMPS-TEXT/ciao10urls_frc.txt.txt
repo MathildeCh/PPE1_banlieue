@@ -1,7 +1,6 @@
    REFRESH(600 sec):
-   https://www.valeursactuelles.com/societe/delinquance-il-faut-arreter-de
-   -faire-croire-que-la-police-opprime-les-jeunes-de-banlieue-affirme-davi
-   d-le-bars-secretaire-general-scpn-unsa
+   file://localhost/mnt/c/Users/Lilas/Desktop/M1_TAL/Projet_encadre/PPE1/P
+   PE1_banlieue/ASPIRATIONS/ciao10urls_frc.txt.html
    #Valeurs actuelles » Flux Valeurs actuelles » Flux des commentaires
    Valeurs actuelles » Délinquance : « Il faut arrêter de faire croire que
    la police opprime les jeunes de banlieue », affirme David Le Bars,

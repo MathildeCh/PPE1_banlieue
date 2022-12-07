@@ -1,27 +1,72 @@
    REFRESH(3600 sec):
-   https://lecourrier.vn/australie-un-mort-dans-les-inondations-les-pluies
-   -sattenuent/1076761.html
+   file://localhost/mnt/c/Users/Lilas/Desktop/M1_TAL/Projet_encadre/PPE1/P
+   PE1_banlieue/ASPIRATIONS/ciao43urls_frc.txt.html
    #alternate
+
+   mercredi 07/12/2022
+     * ____________________ icon search
 
 Lecourrier.vn
 
-   ____________________ icon search
+   Consulter
+   le magazine
      * home
      * Politique
-     * Société
      * Économie
+          + Agriculture
+          + Entreprises
+          + Investissements
+     * Société
+          + Éducation
+          + Environnement
+          + E-transformation
+          + Santé
+          + Sciences
+          + Scènes de vie
      * Tourisme
      * Culture
      * Portraits
      * Sports
      * ASEAN
      * International
+          + Politique
+          + Société
+          + Économie
+          + Culture
+          + Sports
      * Francophonie
      * Opinion
      * Diaspora
 
-   mask
-   International / Société
+     * Politique
+     * Économie
+          + Agriculture
+          + Entreprises
+          + Investissements
+     * Société
+          + Éducation
+          + Environnement
+          + E-transformation
+          + Santé
+          + Sciences
+          + Scènes de vie
+     * Tourisme
+     * Culture
+     * Portraits
+     * Sports
+     * ASEAN
+     * International
+          + Politique
+          + Société
+          + Économie
+          + Culture
+          + Sports
+     * Francophonie
+     * Opinion
+     * Diaspora
+
+     * International
+     * Société
 
    Australie : un mort dans les inondations, les pluies s'atténuent
    15/10/2022 14:36
@@ -122,10 +167,17 @@ Créer des mini-organes pour soigner les maladies
 
 Près de 70% de la faune sauvage a disparu depuis 1970, selon le WWF
 
+   back to top
+
      * qui sommes-nous
-     * Écrivez-nous
+     * ÉCRIVEZ-NOUS
      * abonnement
      * publicité
+
+Lecourrier.vn
+
+   Copyright : Le Courrier du Vietnam, tous droits réservés, Agence
+   Vietnamienne d'Information (AVI)
 
    Rédactrice en chef : Nguyễn Hồng Nga
 
@@ -134,4 +186,3 @@ Près de 70% de la faune sauvage a disparu depuis 1970, selon le WWF
    Tél : (+84) 24 38 25 20 96
 
    E-mail : courrier@vnanet.vn, courrier.cvn@gmail.com
-   back to top

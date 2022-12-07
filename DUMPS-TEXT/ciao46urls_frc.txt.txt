@@ -8,7 +8,7 @@
    Recherche (BUTTON) Mode Newsletters
 
    Photo
-   Climat, la génération qui s'y colle
+   Faut-il légaliser la cocaïne ?
    Je m’abonne à partir de 1€
 
    La France vue de l’étranger Géopolitique Économie Société Politique
@@ -16,8 +16,8 @@
    Podcasts Infographies Réveil Courrier Tous les hebdos Tous les pays Nos
    sources Horoscope
 
-   Réveil Courrier Coupe du monde 2022 Guerre en Ukraine Manifestations en
-   Iran La France vue de l'étranger L’hebdo Horoscope
+   Réveil Courrier Chine Guerre en Ukraine Iran Coupe du monde 2022
+   L’hebdo Horoscope
 
      * La France vue de l'étranger
      * Banlieues
@@ -213,34 +213,33 @@ Un exemple pour le pays
    photos et les articles de la presse étrangère qui ont marqué 2022.
    Je commande mon hors-série →
    Photo
-   Saga Baldoria
-   Vos compétences en italien se résument à « pizza, parmigiano reggiano,
-   gelato e pasta per favore » ? Envie d’en apprendre plus, et envie de
-   saliver ?
-   Je teste mes connaissances →
+   Prix Sakharov
+   Face à la guerre : s’opposer, résister, protéger.
+   Assister à la conférence-débat →
    Photo
-   Mois du film documentaire et Universciné
-   Tentez de remporter un code pour découvrir Little Palestine, journal
-   d’un siège sur Universciné.
-   Je reçois mon code →
+   Gymglish
+   C’est bientôt Noël ! Révisez vos connaissances et épatez vos convives
+   autour du sapin Noël
+   Je fais le test →
    Photo
-   Bibliocité
-   Assistez à la conférence « Avortement : quel futur pour nos droits ? »
-   le 1er décembre à 19h, à la médiathèque Françoise Sagan.
-   Je réserve ma place →
+   Festival international des Jeux de Cannes
+   Tentez de remporter deux pass VIP pour le Festival International des
+   Jeux de Cannes.
+   Je tente ma chance →
 
    Les plus lus
 
-   Analyse. “Le règne de l’Allemagne est révolu, l’heure de l’Europe de
-   l’Est a sonné”
+   Emploi. En Suisse, la pénurie de main-d’œuvre qualifiée atteint un
+   niveau record
 
-   Astrologie. L’horoscope de Rob Brezsny pour la semaine du 24 au 30
-   novembre
+   Vu de Russie. Les attaques contre des aérodromes russes pourraient
+   mener à l’escalade nucléaire
 
-   Guerre en Ukraine. La Russie est-elle à court de munitions ?
+   Vu des États-Unis. Les naissances en baisse en France, l’un des pays
+   “les plus féconds d’Europe”
 
-   Guerre en Ukraine. Les “septembristes”, ces femmes russes dont les
-   compagnons ont fui la mobilisation
+   Vu de l'étranger. Garanties pour la Russie : “Quelle mouche a piqué le
+   président Macron ? ”
 
    Nos services
    Photo
@@ -249,21 +248,19 @@ Un exemple pour le pays
    photos et les articles de la presse étrangère qui ont marqué 2022.
    Je commande mon hors-série →
    Photo
-   Saga Baldoria
-   Vos compétences en italien se résument à « pizza, parmigiano reggiano,
-   gelato e pasta per favore » ? Envie d’en apprendre plus, et envie de
-   saliver ?
-   Je teste mes connaissances →
+   Prix Sakharov
+   Face à la guerre : s’opposer, résister, protéger.
+   Assister à la conférence-débat →
    Photo
-   Mois du film documentaire et Universciné
-   Tentez de remporter un code pour découvrir Little Palestine, journal
-   d’un siège sur Universciné.
-   Je reçois mon code →
+   Gymglish
+   C’est bientôt Noël ! Révisez vos connaissances et épatez vos convives
+   autour du sapin Noël
+   Je fais le test →
    Photo
-   Bibliocité
-   Assistez à la conférence « Avortement : quel futur pour nos droits ? »
-   le 1er décembre à 19h, à la médiathèque Françoise Sagan.
-   Je réserve ma place →
+   Festival international des Jeux de Cannes
+   Tentez de remporter deux pass VIP pour le Festival International des
+   Jeux de Cannes.
+   Je tente ma chance →
 
    (BUTTON) (BUTTON) (BUTTON)
    (BUTTON) (BUTTON)
@@ -275,7 +272,7 @@ Un exemple pour le pays
 
    Newsletters (BUTTON) Applications
    Photo
-   Hebdo Climat, la génération qui s'y colle
+   Hebdo Faut-il légaliser la cocaïne ?
    Photo
    Hors-série Best-of 2022
 

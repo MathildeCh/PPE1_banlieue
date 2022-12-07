@@ -19,7 +19,6 @@
           + Statuto
           + Codice Etico
           + Programma Ecr Party
-          + Candidati elezioni 2022
           + Elezioni Trasparenti
                o Elezioni 2022
                     # Elezioni Politiche
@@ -369,12 +368,6 @@
           + Patto per il turismo 2022
      * Media
           + Attività Territorio
-               o Firma per l’Italia
-               o Materiali Banchetti
-               o #vogliamovotare
-               o #ElezioniSubito
-               o No Fattura Elettronica
-               o Gazebo in tutta Italia
           + Video
           + Fotografie
                o Foto Conferenza Programmatica
@@ -392,30 +385,36 @@
                     # Italia Sovrana
                     # Referendum Propositivo
                     # #MeloniSindaco
+                    # Firma per l’Italia
                o Archivio Foto2
                     # Roma nun te vole
                     # 24 maggio: Piave
                     # Difendo ciò che amo
                     # Io Voto Italiano
                     # Bologna #Liberiamoci
+                    # Materiali Banchetti
                o Archivio Foto3
                     # Petizione Primarie
                     # Politiche 2013
                     # Amministrative 2013
                     # Blitz di Prato
                     # Roma Senza Paura
+                    # #vogliamovotare
                o Archivio Foto4
                     # Congresso Nazionale
                     # Vendita Bankitalia
                     # Contro Bankitalia
                     # Rifare l’Italia
                     # Staffetta per l’Italia
+                    # #ElezioniSubito
+                    # No Fattura Elettronica
                o Archivio Foto5
                     # Convegno Marò
                     # Primarie delle Idee
                     # Dai Territori
                     # Terrazza del Pincio
                     # 7 marzo Venezia
+                    # Gazebo in tutta Italia
           + Campagne grafiche
                o Materiale Stampa
                o Diffondi
@@ -447,7 +446,7 @@ periferia. Le vedette avvisano i criminali quando arriva la polizia
    [degrado-716x393.jpg]
      * 22 Settembre 2022
      * Dal territorio, Lazio
-     * 3 3
+     * 4 4
 
    “A Tor Sapienza le cose non sono cambiate rispetto ad alcuni anni fa,
    quando il quartiere stava sui tg nazional: il campo nomadi nel pieno
