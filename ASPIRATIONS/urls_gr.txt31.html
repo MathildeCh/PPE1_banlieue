@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>
+<html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>
+<html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>
+<html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->
+
+<html lang="el" xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+<style>
+.popup_popup--F-wqr 
+{
+display:none !important;
+}
+
+.tn-social-like-post
+{
+	display:none;
+}
+</style>
+
+<!-- Quantcast Choice. Consent Manager Tag v2.0 (for TCF 2.0) -->
+<script type="text/javascript" async=true data-cfasync="false">
+(function() {
+  var host = window.location.hostname;
+  var element = document.createElement('script');
+  var firstScript = document.getElementsByTagName('script')[0];
+  var url = 'https://cmp.quantcast.com'
+    .concat('/choice/', 'QCAyv1E8ZE9uQ', '/', host, '/choice.js')
+  var uspTries = 0;
+  var uspTriesLimit = 3;
+  element.async = true;
+  element.type = 'text/javascript';
+  element.src = url;
+
+  firstScript.parentNode.insertBefore(element, firstScript);
+
+  function makeStub() {
+    var TCF_LOCATOR_NAME = '__tcfapiLocator';
+    var queue = [];
+    var win = window;
+    var cmpFrame;
+
+    function addFrame() {
+      var doc = win.document;
+      var otherCMP = !!(win.frames[TCF_LOCATOR_NAME]);
+
+      if (!otherCMP) {
+        if (doc.body) {
+          var iframe = doc.createElement('iframe');
+
+          iframe.style.cssText = 'display:none';
+          iframe.name = TCF_LOCATOR_NAME;
+          doc.body.appendChild(iframe);
+        } else {
+          setTimeout(addFrame, 5);
+        }
+      }
+      return !otherCMP;
+    }
+
+    function tcfAPIHandler() {
+      var gdprApplies;
+      var args = arguments;
+
+      if (!args.length) {
+        return queue;
+      } else if (args[0] === 'setGdprApplies') {
+        if (
+          args.length > 3 &&
+          args[2] === 2 &&
+          typeof args[3] === 'boolean'
+        ) {
+          gdprApplies = args[3];
+          if (typeof args[2] === 'function') {
+            args[2]('set', true);
+          }
+        }
+      } else if (args[0] === 'ping') {
+        var retr = {
+          gdprApplies: gdprApplies,
+          cmpLoaded: false,
+          cmpStatus: 'stub'
+        };
+
+        if (typeof args[2] === 'function') {
+          args[2](retr);
+        }
+      } else {
+        queue.push(args);
+      }
+    }
+
+    function postMessageEventHandler(event) {
+      var msgIsString = typeof event.data === 'string';
+      var json = {};
+
+      try {
+        if (msgIsString) {
+          json = JSON.parse(event.data);
+        } else {
+          json = event.data;
+        }
+      } catch (ignore) {}
+
+      var payload = json.__tcfapiCall;
+
+      if (payload) {
+        window.__tcfapi(
+          payload.command,
+          payload.version,
+          function(retValue, success) {
+            var returnMsg = {
+              __tcfapiReturn: {
+                returnValue: retValue,
+                success: success,
+                callId: payload.callId
+              }
+            };
+            if (msgIsString) {
+              returnMsg = JSON.stringify(returnMsg);
+            }
+            event.source.postMessage(returnMsg, '*');
+          },
+          payload.parameter
+        );
+      }
+    }
+
+    while (win) {
+      try {
+        if (win.frames[TCF_LOCATOR_NAME]) {
+          cmpFrame = win;
+          break;
+        }
+      } catch (ignore) {}
+
+      if (win === window.top) {
+        break;
+      }
+      win = win.parent;
+    }
+    if (!cmpFrame) {
+      addFrame();
+      win.__tcfapi = tcfAPIHandler;
+      win.addEventListener('message', postMessageEventHandler, false);
+    }
+  };
+
+  makeStub();
+
+  var uspStubFunction = function() {
+    var arg = arguments;
+    if (typeof window.__uspapi !== uspStubFunction) {
+      setTimeout(function() {
+        if (typeof window.__uspapi !== 'undefined') {
+          window.__uspapi.apply(window.__uspapi, arg);
+        }
+      }, 500);
+    }
+  };
+
+  var checkIfUspIsReady = function() {
+    uspTries++;
+    if (window.__uspapi === uspStubFunction && uspTries < uspTriesLimit) {
+      console.warn('USP is not accessible');
+    } else {
+      clearInterval(uspInterval);
+    }
+  };
+
+  if (typeof window.__uspapi === 'undefined') {
+    window.__uspapi = uspStubFunction;
+    var uspInterval = setInterval(checkIfUspIsReady, 6000);
+  }
+})();
+</script>
+<!-- End Quantcast Choice. Consent Manager Tag v2.0 (for TCF 2.0) -->
+
+<script async="async" src="//cdn.orangeclickmedia.com/tech/libs/ocm_iab_compliance.js"></script>
+<script src="//cdn.orangeclickmedia.com/tech/makeleio.gr/ocm.js" async="async"></script>
+<script async='async' src='//securepubads.g.doubleclick.net/tag/js/gpt.js'></script>
+<script>
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+</script>
+
+<script>
+  googletag.cmd.push(function() {
+
+	var ros_header = googletag.sizeMapping()
+    .addSize([0,0], [[320,50]])
+    .addSize([340,0], [[336,280],[320,50]])
+	.addSize([768,0], [[336,280]])
+    .addSize([1024,0],[[728,90],[336,280]])
+    .build();
+
+	var article1 = googletag.sizeMapping()
+    .addSize([0,0], [[300,600],[300,250]])
+    .addSize([340,0], [[300,600],[336,280],[300,250]])
+	.addSize([768,0], [[336,280],[300,250]])
+    .addSize([1024,0],[[336,280],[300,250]])
+    .build();
+
+	var article2 = googletag.sizeMapping()
+    .addSize([0,0], [[300,250],[320,50]])
+    .addSize([340,0], [[336,280],[300,250],[320,50]])
+	.addSize([768,0], [[336,280],[300,250]])
+    .addSize([1024,0],[[336,280],[300,250]])
+    .build();
+
+	var article3 = googletag.sizeMapping()
+    .addSize([0,0], [[300,250]])
+    .addSize([340,0], [[336,280],[300,250]])
+	.addSize([768,0], [[336,280],[300,250]])
+    .addSize([1024,0],[[336,280],[300,250]])
+    .build();
+
+	googletag.defineSlot('/75351959/makeleio.gr/ros_header',[[728,90],[336,280],[320,50]],'ros_header').defineSizeMapping(ros_header).addService(googletag.pubads());
+	googletag.defineSlot('/75351959/makeleio.gr/ros_artRHS_A',[[300,600],[336,280],[300,250]],'ros_artRHS_A').defineSizeMapping(article1).addService(googletag.pubads());
+	googletag.defineSlot('/75351959/makeleio.gr/ros_artRHS_B',[[300,600],[336,280],[300,250]],'ros_artRHS_B').defineSizeMapping(article1).addService(googletag.pubads());
+	googletag.defineSlot('/75351959/makeleio.gr/ros_artEnd_A',[[336,280],[300,250],[320,50]],'ros_artEnd_A').defineSizeMapping(article2).addService(googletag.pubads());
+	googletag.defineSlot('/75351959/makeleio.gr/ros_artEnd_B',[[336,280],[300,250],[320,50]],'ros_artEnd_B').defineSizeMapping(article2).addService(googletag.pubads());
+	googletag.defineSlot('/75351959/makeleio.gr/ros_artUnderImage',[[336,280],[300,250]],'ros_artUnderImage').defineSizeMapping(article3).addService(googletag.pubads());
+
+	googletag.pubads().collapseEmptyDivs(true);
+	googletag.pubads().setCentering(true);
+	googletag.pubads().disableInitialLoad();
+	googletag.pubads().enableSingleRequest();
+    googletag.enableServices();
+
+  });
+</script>
+
+
+
+<!--<script type='text/javascript' src='https://static.amp.services/clients/Makeleio/Makeleio.js'></script>-->
+
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({
+          google_ad_client: "ca-pub-7560807182724971",
+          enable_page_level_ads: true
+     });
+</script>
+
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+
+
+<!-- mobile Specific meta -->
+<link rel="profile" href="https://gmpg.org/xfn/11">
+<link rel="alternate" type="text/xml" title="RSS .92" href="https://www.makeleio.gr/feed/rss/" />
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="https://www.makeleio.gr/feed/" />
+<link rel="pingback" href="https://www.makeleio.gr/xmlrpc.php">
+<link rel='stylesheet' href='https://www.makeleio.gr/wp-content/themes/maxblog/style.css' type='text/css' media='screen'/>
+<link rel="stylesheet" href="https://www.makeleio.gr/Fonts/fonts.css" media="all">
+<script language='javascript'>
+function ontop()
+{
+window.scrollTo(0, 0);
+}
+</script>
+    <title>Παλαιό Φάληρο: Ανθρωποκυνηγητό για τον «βιαστή με το τατουάζ» &#8211; Αποπειράθηκε να βιάσει και 2η γυναίκα &#8211; Makeleio.gr</title>
+                        <script>
+                            /* You can add more configuration options to webfontloader by previously defining the WebFontConfig with your options */
+                            if ( typeof WebFontConfig === "undefined" ) {
+                                WebFontConfig = new Object();
+                            }
+                            WebFontConfig['google'] = {families: ['Helvetica,+Arial,+sans-serif', 'Roboto:400,700']};
+
+                            (function() {
+                                var wf = document.createElement( 'script' );
+                                wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.5.3/webfont.js';
+                                wf.type = 'text/javascript';
+                                wf.async = 'true';
+                                var s = document.getElementsByTagName( 'script' )[0];
+                                s.parentNode.insertBefore( wf, s );
+                            })();
+                        </script>
+                        <link rel='dns-prefetch' href='//www.makeleio.gr'>
+<link rel='dns-prefetch' href='//s.w.org'>
+<link rel="alternate" type="application/rss+xml" title="Ροή RSS &raquo; Makeleio.gr" href="https://www.makeleio.gr/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Κανάλι σχολίων &raquo; Makeleio.gr" href="https://www.makeleio.gr/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Κανάλι σχολίων Παλαιό Φάληρο: Ανθρωποκυνηγητό για τον «βιαστή με το τατουάζ» &#8211; Αποπειράθηκε να βιάσει και 2η γυναίκα &raquo; Makeleio.gr" href="https://www.makeleio.gr/%ce%b5%cf%80%ce%b9%ce%ba%ce%b1%ce%b9%cf%81%ce%bf%cf%84%ce%b7%cf%84%ce%b1/%ce%a0%ce%b1%ce%bb%ce%b1%ce%b9%cf%8c-%ce%a6%ce%ac%ce%bb%ce%b7%cf%81%ce%bf-%ce%91%ce%bd%ce%b8%cf%81%cf%89%cf%80%ce%bf%ce%ba%cf%85%ce%bd%ce%b7%ce%b3%ce%b7%cf%84%cf%8c-%ce%b3%ce%b9%ce%b1-%cf%84%ce%bf/feed/" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/www.makeleio.gr\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.6-beta4-38142"}};
+			!function(a,b,c){function d(a){var c,d,e,f=b.createElement("canvas"),g=f.getContext&&f.getContext("2d"),h=String.fromCharCode;if(!g||!g.fillText)return!1;switch(g.textBaseline="top",g.font="600 32px Arial",a){case"flag":return g.fillText(h(55356,56806,55356,56826),0,0),f.toDataURL().length>3e3;case"diversity":return g.fillText(h(55356,57221),0,0),c=g.getImageData(16,16,1,1).data,d=c[0]+","+c[1]+","+c[2]+","+c[3],g.fillText(h(55356,57221,55356,57343),0,0),c=g.getImageData(16,16,1,1).data,e=c[0]+","+c[1]+","+c[2]+","+c[3],d!==e;case"simple":return g.fillText(h(55357,56835),0,0),0!==g.getImageData(16,16,1,1).data[0];case"unicode8":return g.fillText(h(55356,57135),0,0),0!==g.getImageData(16,16,1,1).data[0];case"unicode9":return g.fillText(h(55358,56631),0,0),0!==g.getImageData(16,16,1,1).data[0]}return!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g,h,i;for(i=Array("simple","flag","unicode8","diversity","unicode9"),c.supports={everything:!0,everythingExceptFlag:!0},h=0;h<i.length;h++)c.supports[i[h]]=d(i[h]),c.supports.everything=c.supports.everything&&c.supports[i[h]],"flag"!==i[h]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[i[h]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='wa_chpcs_style-css'  href='https://www.makeleio.gr/wp-content/plugins/carousel-horizontal-posts-content-slider/assets/css/custom-style.css?ver=4.6-beta4-38142' type='text/css' media='all' />
+<link rel='stylesheet' id='tn-style-css'  href='https://www.makeleio.gr/wp-content/themes/maxblog/style.css?ver=9.1' type='text/css' media='all' />
+<link rel='stylesheet' id='tn-extend-css-css'  href='https://www.makeleio.gr/wp-content/themes/maxblog/lib/extend-lib/css/extend-lib.css?ver=9.1' type='text/css' media='all' />
+<link rel='stylesheet' id='tn-style-css-css'  href='https://www.makeleio.gr/wp-content/themes/maxblog/assets/css/tn-style.min.css?ver=9.1' type='text/css' media='all' />
+<script type='text/javascript' src='https://www.makeleio.gr/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<script type='text/javascript' src='https://www.makeleio.gr/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
+<script type='text/javascript' src='https://www.makeleio.gr/wp-content/plugins/carousel-horizontal-posts-content-slider/assets/js/caroufredsel/jquery.transit.min.js?ver=4.6-beta4-38142'></script>
+<script type='text/javascript' src='https://www.makeleio.gr/wp-content/plugins/carousel-horizontal-posts-content-slider/assets/js/caroufredsel/jquery.carouFredSel-6.2.1-packed.js?ver=4.6-beta4-38142'></script>
+<script type='text/javascript' src='https://www.makeleio.gr/wp-content/plugins/carousel-horizontal-posts-content-slider/assets/js/caroufredsel/jquery.touchSwipe.min.js?ver=4.6-beta4-38142'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var chpcsArgs = {"auto_scroll":"false","circular":"true","easing_effect":"linear","item_align":"center","direction":"left","touch_swipe":"false","item_width":"260","time_out":"3000","css_transition":"false","infinite":"true","fx":"fade"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.makeleio.gr/wp-content/plugins/carousel-horizontal-posts-content-slider/assets/js/script.js?ver=4.6-beta4-38142'></script>
+<link rel='https://api.w.org/' href='https://www.makeleio.gr/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.makeleio.gr/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://www.makeleio.gr/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Ομολογία Ζελένσκι: Το Ισραήλ μας δίνει πληροφορίες για τα ιρανικά drones' href='https://www.makeleio.gr/%ce%b5%cf%80%ce%b9%ce%ba%ce%b1%ce%b9%cf%81%ce%bf%cf%84%ce%b7%cf%84%ce%b1/%ce%9f%ce%bc%ce%bf%ce%bb%ce%bf%ce%b3%ce%af%ce%b1-%ce%96%ce%b5%ce%bb%ce%ad%ce%bd%cf%83%ce%ba%ce%b9-%ce%a4%ce%bf-%ce%99%cf%83%cf%81%ce%b1%ce%ae%ce%bb-%ce%bc%ce%b1%cf%82-%ce%b4%ce%af%ce%bd%ce%b5%ce%b9/' />
+<link rel='next' title='Γιώργος Ματαράγκας: «Όλα αυτά που λέει ο Χρήστος Πολίτης για την “Λάμψη” δεν υπήρχαν»' href='https://www.makeleio.gr/%ce%b5%cf%80%ce%b9%ce%ba%ce%b1%ce%b9%cf%81%ce%bf%cf%84%ce%b7%cf%84%ce%b1/%ce%93%ce%b9%cf%8e%cf%81%ce%b3%ce%bf%cf%82-%ce%9c%ce%b1%cf%84%ce%b1%cf%81%ce%ac%ce%b3%ce%ba%ce%b1%cf%82-%ce%8c%ce%bb%ce%b1-%ce%b1%cf%85%cf%84%ce%ac-%cf%80%ce%bf%cf%85-%ce%bb%ce%ad%ce%b5%ce%b9/' />
+<meta name="generator" content="WordPress 4.6-beta4-38142" />
+<link rel="canonical" href="https://www.makeleio.gr/%ce%b5%cf%80%ce%b9%ce%ba%ce%b1%ce%b9%cf%81%ce%bf%cf%84%ce%b7%cf%84%ce%b1/%ce%a0%ce%b1%ce%bb%ce%b1%ce%b9%cf%8c-%ce%a6%ce%ac%ce%bb%ce%b7%cf%81%ce%bf-%ce%91%ce%bd%ce%b8%cf%81%cf%89%cf%80%ce%bf%ce%ba%cf%85%ce%bd%ce%b7%ce%b3%ce%b7%cf%84%cf%8c-%ce%b3%ce%b9%ce%b1-%cf%84%ce%bf/" />
+<link rel='shortlink' href='https://www.makeleio.gr/?p=4265711' />
+<link rel="alternate" type="application/json+oembed" href="https://www.makeleio.gr/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fwww.makeleio.gr%2F%25ce%25b5%25cf%2580%25ce%25b9%25ce%25ba%25ce%25b1%25ce%25b9%25cf%2581%25ce%25bf%25cf%2584%25ce%25b7%25cf%2584%25ce%25b1%2F%25ce%25a0%25ce%25b1%25ce%25bb%25ce%25b1%25ce%25b9%25cf%258c-%25ce%25a6%25ce%25ac%25ce%25bb%25ce%25b7%25cf%2581%25ce%25bf-%25ce%2591%25ce%25bd%25ce%25b8%25cf%2581%25cf%2589%25cf%2580%25ce%25bf%25ce%25ba%25cf%2585%25ce%25bd%25ce%25b7%25ce%25b3%25ce%25b7%25cf%2584%25cf%258c-%25ce%25b3%25ce%25b9%25ce%25b1-%25cf%2584%25ce%25bf%2F" />
+<meta property="og:title" content="Παλαιό Φάληρο: Ανθρωποκυνηγητό για τον «βιαστή με το τατουάζ» &#8211; Αποπειράθηκε να βιάσει και 2η γυναίκα"/><meta property="og:type" content="article"/><meta property="og:url" content="https://www.makeleio.gr/%ce%b5%cf%80%ce%b9%ce%ba%ce%b1%ce%b9%cf%81%ce%bf%cf%84%ce%b7%cf%84%ce%b1/%ce%a0%ce%b1%ce%bb%ce%b1%ce%b9%cf%8c-%ce%a6%ce%ac%ce%bb%ce%b7%cf%81%ce%bf-%ce%91%ce%bd%ce%b8%cf%81%cf%89%cf%80%ce%bf%ce%ba%cf%85%ce%bd%ce%b7%ce%b3%ce%b7%cf%84%cf%8c-%ce%b3%ce%b9%ce%b1-%cf%84%ce%bf/"/><meta property="og:site_name" content="Makeleio.gr"/><meta property="og:description" content="Οι Αρχές έχουν εξαπολύσει ανθρωποκυνηγητό για να εντοπίσουν και να συλλάβουν τον άνδρα με το τατουάζ που άρπαξε μια 34χρονη από στάση λεωφορείου στο Παλαιό Φάληρο και την βίασε σε παρακείμενο παρκάκι. Το συμβάν έλαβε χώρα τα ξημερώματα της Κυριακής σε στάση λεωφορείου στην Αγία Σκέπη. Ο άγνωστος πλησίασε την κοπέλα, τη βίασε και στη..."/><meta property="og:image" content="https://www.makeleio.gr/wp-content/uploads/2022/09/ΒΙΑΣΜΟΣ.jpg"/>        <style type='text/css' media="all">
+
+            /* menu top */
+                        .tn-navbar, .menu-nav-top .sub-menu {
+                background: #252525;
+            }
+
+            .menu-nav-top .sub-menu {
+                border-left: 0;
+                border-bottom: 0;
+            }
+
+            .menu-nav-top .sub-menu li a {
+                border-bottom-color: inherit;
+            }
+            
+            
+            
+            /* menu main */
+            
+            
+            /* footer */
+            
+            
+            /* copyright */
+            
+            
+
+            /* body font */
+                        body  {
+            font-family:Helvetica, Arial, sans-serif;font-size:14px; }
+            
+            /* title font */
+                        .block-title,.single-style1-title,.single-style2-title,.author-title,.search-submit,.single-nav-title-wrap,
+            .review-widget-post-title,.review-widget-score,.single-review-element,.single-review-summary h3,.block-big-slider-title,
+            .big-carousel-inner,.logo-404,.single-aside-social-wrap .share-title,.social-count-wrap .num-count,.twitter-widget-title h3,
+            .block-feature2-slider-title,#main-content .widget .module5-wrap .col-sm-4 .block4-wrap .block-title, #main-content .single-related-wrap .col-sm-4 .block4-wrap .block-title,
+            .page-title-wrap,.title-logo, .woocommerce div.product .product_title, .woocommerce .page-title  {
+                font-family:Verdana, Geneva, sans-serif;font-weight:400;text-transform:none;font-size:24px;line-height:32px; }
+            
+            /* small title font */
+                        .block6-wrap .block-title, .block11-wrap .block-title, .block8-wrap .block-title, .single-tags-source-wrap,
+            .widget_categories ul, .widget_pages ul, .single-social-wrap, .widget_nav_menu ul, .widget_archive ul,
+            .block9-wrap .block-title, .module-ticker-wrap .block-title, .big-slider-carousel-title, #menu-main .block-title,
+            #main-content .widget .col-sm-4 .block4-wrap .block-title, .page-numbers, .block11-wrap .review-score,
+            .block11-score-separation, .woocommerce ul.cart_list .product-title, .woocommerce ul.product_list_widget .product-title,
+            .woocommerce ul.cart_list li a, .woocommerce ul.product_list_widget li a, .cart_item .product-name a {
+            font-family:Verdana, Geneva, sans-serif;font-weight:400;text-transform:none;font-size:18px;line-height:19px; }
+            
+            /* meta tags font */
+                        .post-meta, .sub-cate-wrap, .breadcrumbs-bar-wrap, .author-widget-content, .post-categories,
+            .rememberme, .register-links, .meta-thumb-wrap, .review-score {
+            font-family:Roboto;font-weight:400;text-transform:uppercase;font-size:10px; }
+            
+            /* menu font */
+                        #menu-main > ul > li > a, .tn-sub-menu-wrap, .menu-nav-top, #main-mobile-menu,
+            .module-ticker-wrap .block-title {
+            font-family:Roboto;font-weight:700;font-size:14px; }
+            
+            /* header title font */
+                        .widget-title h3, .cate-title, .search-page-title, .archive-page-title,
+            .side-dock-title h3, .comment-title h3, .related.products h2 {
+            font-family:Roboto;font-weight:700;font-size:14px; }
+            
+            /*header style */
+            
+            /* sidebar position */
+            
+                        /* color text */
+            .tn-mega-menu-col > .tn-sub-menu-wrap > ul > li > ul > li > a:hover, .tn-sub-menu li a:hover, .cat-item a:before, .widget_pages .page_item a:before, .widget_meta li:before, .widget_archive li a:before,
+            .widget_nav_menu .menu-main-nav-container > ul > li > a:before, .widget_rss ul li a, .about-widget-name span, .title-logo a::first-letter,
+            .block11-wrap:before, .logo-404 h1, .post-content-wrap a, .post-content-wrap a:hover, .post-content-wrap a:focus, .comment-form .logged-in-as a, .prev-article, .next-article,
+             #close-side-dock:hover, .single-review-score, .post-categories li:hover a, .post-categories li:focus a, #recentcomments a, #footer .post-categories a:hover,#footer .post-categories a:focus,
+            #main-mobile-menu .current-menu-item a, #main-mobile-menu li a:hover, .block11-score-separation, .block11-wrap .review-score, .single-review-as, .menu-nav-top .sub-menu li a:hover,
+            .woocommerce div.product .woocommerce-tabs ul.tabs li.active a, .woocommerce .page-wrap .star-rating span {
+                color: #bd0311;
+            }
+
+            /* selector */
+            ::selection {
+                background: #bd0311;
+                color: #fff;
+            }
+
+            ::-moz-selection {
+                background: #bd0311;
+                color: #fff;
+            }
+
+            /* background */
+            #menu-main > ul > li.current-menu-item > a, #menu-main > ul > li > a:hover, .tn-mega-menu-col > .tn-sub-menu-wrap > ul > li > a,
+            .ajax-search-icon:hover, .ajax-search-icon:focus, .menu-nav-top li a:hover, .block-big-slider-cate-tag li, .review-score, .drop-caps,
+            #comment-submit, .form-submit #submit, .score-bar, .top-score-bar, #toTop i, .no-thumb, .widget-title h3:before, .close-mobile-menu-wrap,
+            .tn-ajax-loadmore:hover, .tn-ajax-loadmore:focus, .page-numbers.current, .page-numbers:hover, .page-numbers:focus, .meta-thumb-element:hover,
+            .meta-thumb-element:focus, #mobile-button-nav-open:hover, #mobile-button-nav-open:focus, .widget_product_search input[type="submit"]:hover, .widget_product_search input[type="submit"]:focus,
+            .woocommerce span.onsale, .woocommerce #respond input#submit:hover, .woocommerce a.button:hover, .woocommerce button.button:hover, .woocommerce input.button:hover,
+            .related.products h2:before, .woocommerce .widget_price_filter .ui-slider .ui-slider-handle, .woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover {
+                background: #bd0311;
+            }
+
+            .woocommerce nav.woocommerce-pagination ul li a:focus, .woocommerce nav.woocommerce-pagination ul li a:hover, .woocommerce nav.woocommerce-pagination ul li span.current {
+                background: #bd0311 !important;
+            }
+
+            /* border */
+            .post-content-wrap blockquote, pre, .cate-title, .search-page-title, .archive-page-title, .post-categories,
+            .author-title, .big-carousel-inner, .woocommerce div.product .woocommerce-tabs ul.tabs li.active a, .tn-share-to-email-popup {
+                border-color: #bd0311;
+               color:  #bd0311;
+               font-weight: bold !important;
+               font-size:10px;
+            }
+
+
+          .post-categories li {
+               font-weight: bold !important;
+               color: 
+          }
+
+            .tn-mega-menu, .tn-navbar, .tn-mega-menu-col, .tn-dropdown-menu, #menu-main ul li .tn-dropdown-menu ul li ul.tn-sub-menu,
+            #menu-main ul li div.tn-dropdown-menu ul li ul.tn-sub-menu, .ajax-form {
+                border-top-color: #bd0311            }
+
+            
+            /* layout */
+            
+            
+            /*right title line height fix */
+            
+            /* multi category color */
+            
+            /*content width */
+                        .full-width-mode .post-content-wrap {
+                max-width: 1030px;
+                margin: 0 auto;
+            }
+            
+            /*custom css */
+            .OPP-powered-by-div{display:none;}
+        </style>
+    <!--[if lt IE 9]><script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->		<script type="text/javascript">
+			var tn_ajax_url = 'https://www.makeleio.gr/wp-admin/admin-ajax.php';
+		</script>
+	<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-29720929-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script><link rel="shortcut icon" href="https://www.makeleio.gr/wp-content/uploads/2019/07/favicon.ico" type="image/x-icon" /><meta name="description" content="Το Site των Μεγάλων αποκαλύψεων">
+<!-- Start Alexa Certify Javascript -->
+<script type="text/javascript">
+_atrk_opts = { atrk_acct:"zovtk1acBb00Mm", domain:"makeleio.gr",dynamic: true};
+(function() { var as = document.createElement('script'); as.type = 'text/javascript'; as.async = true; as.src = "https://d31qbv1cthcecs.cloudfront.net/atrk.js"; var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(as, s); })();
+</script>
+<noscript><img src="https://d5nxst8fruw4z.cloudfront.net/atrk.gif?account=zovtk1acBb00Mm" style="display:none" height="1" width="1" alt="" /></noscript>
+<!-- End Alexa Certify Javascript -->  
+
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MHBEDFZ2KM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-MHBEDFZ2KM');
+</script>
+
+
+</head><!-- #header-->
+
+<body data-rsssl=1 onload="loadfunction()" class="single single-post postid-4265711 single-format-standard tn-body-class">
+<ins class="55fe3eb4" data-key="51f50a3432be80d129c6f1433b2e99e1"></ins>
+<script async src="https://asrv.dalecta.com/0e697b03.js"></script>
+<div class="tn-main-page-wrap">
+
+    <div id="main-mobile-menu" class="menu-main-nav-container"><ul id="menu-main-nav" class="menu"><li id="menu-item-11382" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-11382"><a title=" Το Site των Μεγάλων αποκαλύψεων" href="https://www.makeleio.gr/">ΑΡΧΙΚΗ</a></li>
+<li id="menu-item-2438" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-2438 tn-menu-category-4"><a href="https://www.makeleio.gr/%ce%b5%cf%80%ce%b9%ce%ba%ce%b1%ce%b9%cf%81%ce%bf%cf%84%ce%b7%cf%84%ce%b1/">ΕΠΙΚΑΙΡΟΤΗΤΑ</a></li>
+<li id="menu-item-2440" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-2440 tn-menu-category-7"><a href="https://www.makeleio.gr/%ce%b1%cf%83%cf%84%cf%85%ce%bd%ce%bf%ce%bc%ce%b9%ce%ba%ce%bf/">ΑΣΤΥΝΟΜΙΚΟ</a></li>
+<li id="menu-item-407131" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-407131 tn-menu-category-14874"><a href="https://www.makeleio.gr/%ce%bf%ce%b9%ce%ba%ce%bf%ce%bd%ce%bf%ce%bc%ce%b9%ce%b1/">ΟΙΚΟΝΟΜΙΑ</a></li>
+<li id="menu-item-2441" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2441 tn-menu-category-14"><a href="https://www.makeleio.gr/%ce%ba%ce%bf%cf%83%ce%bc%ce%bf%cf%82/">ΚΟΣΜΟΣ</a></li>
+<li id="menu-item-2442" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2442 tn-menu-category-9"><a href="https://www.makeleio.gr/%ce%ba%ce%b1%cf%84%ce%b1%ce%b3%ce%b3%ce%b5%ce%bb%ce%b9%ce%b5%cf%82/">ΚΑΤΑΓΓΕΛΙΕΣ</a></li>
+<li id="menu-item-325163" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-325163 tn-menu-category-23"><a href="https://www.makeleio.gr/lifestyle/">LIFESTYLE</a></li>
+<li id="menu-item-2443" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2443 tn-menu-category-5"><a href="https://www.makeleio.gr/%ce%b1%cf%80%ce%bf%ce%ba%ce%b1%ce%bb%cf%85%cf%88%ce%b7/">ΑΠΟΚΑΛΥΨΗ</a></li>
+<li id="menu-item-325181" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-325181 tn-menu-category-14567"><a href="https://www.makeleio.gr/%ce%b1%cf%85%cf%84%ce%bf%ce%ba%ce%b9%ce%bd%ce%b7%cf%84%ce%bf/">ΑΥΤΟΚΙΝΗΤΟ</a></li>
+<li id="menu-item-593001" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-593001 tn-menu-category-15942"><a href="https://www.makeleio.gr/%ce%b5%cf%86%ce%b7%ce%bc%ce%b5%cf%81%ce%b9%ce%b4%ce%b1/">ΕΦΗΜΕΡΙΔΑ</a></li>
+<li id="menu-item-593002" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-593002"><a href="#">ΠΕΡΙΣΣΟΤΕΡΑ</a>
+<ul class="sub-menu">
+	<li id="menu-item-592920" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-592920 tn-menu-category-2995"><a href="https://www.makeleio.gr/%cf%81%ce%b5%cf%80%ce%bf%cf%81%cf%84%ce%b1%ce%b6/">ΡΕΠΟΡΤΑΖ</a></li>
+	<li id="menu-item-592919" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-592919 tn-menu-category-6"><a href="https://www.makeleio.gr/%ce%bd%cf%84%ce%bf%ce%ba%ce%bf%cf%85%ce%bc%ce%b5%ce%bd%cf%84%ce%bf/">ΝΤΟΚΟΥΜΕΝΤΟ</a></li>
+	<li id="menu-item-592918" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-592918 tn-menu-category-10"><a href="https://www.makeleio.gr/%ce%b4%ce%b9%ce%ba%ce%b1%cf%83%cf%84%ce%b9%ce%ba%ce%bf/">ΔΙΚΑΣΤΙΚΟ</a></li>
+	<li id="menu-item-592916" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-592916 tn-menu-category-26"><a href="https://www.makeleio.gr/editorial/">EDITORIAL</a></li>
+	<li id="menu-item-592917" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-592917 tn-menu-category-6652"><a href="https://www.makeleio.gr/media/">MEDIA</a></li>
+	<li id="menu-item-592921" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-592921 tn-menu-category-283"><a href="https://www.makeleio.gr/%cf%85%ce%b3%ce%b5%ce%b9%ce%b1/">ΥΓΕΙΑ</a></li>
+	<li id="menu-item-611957" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-611957 tn-menu-category-15944"><a href="https://www.makeleio.gr/%ce%b5%ce%ba%cf%80%ce%bf%ce%bc%cf%80%ce%b5%cf%83/">EΚΠΟΜΠΕΣ</a></li>
+	<li id="menu-item-1117758" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1117758 tn-menu-category-19096"><a href="https://www.makeleio.gr/%ce%b1%ce%bc%cf%85%ce%bd%ce%b1-%ce%ba%ce%b1%ce%b9-%ce%b5%ce%b8%ce%bd%ce%b9%ce%ba%ce%b1-%ce%b8%ce%b5%ce%bc%ce%b1%cf%84%ce%b1/">ΑΜΥΝΑ ΚΑΙ ΕΘΝΙΚΑ ΘΕΜΑΤΑ</a></li>
+	<li id="menu-item-1083636" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1083636 tn-menu-category-18034"><a href="https://www.makeleio.gr/%ce%bf%cf%81%ce%b8%ce%bf%ce%b4%ce%bf%ce%be%ce%b9%ce%b1/">ΟΡΘΟΔΟΞΙΑ</a></li>
+	<li id="menu-item-2003502" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2003502 tn-menu-category-23997"><a href="https://www.makeleio.gr/%ce%ba%cf%85%cf%80%cf%81%ce%bf%cf%82-%ce%b5%ce%b9%ce%b4%ce%b7%cf%83%ce%b5%ce%b9%cf%82/">ΚΥΠΡΟΣ ΕΙΔΗΣΕΙΣ</a></li>
+	<li id="menu-item-1535717" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1535717 tn-menu-category-23679"><a href="https://www.makeleio.gr/%ce%b1%ce%b8%ce%bb%ce%b7%cf%84%ce%b9%ce%ba%ce%b1/">ΑΘΛΗΤΙΚΑ</a></li>
+	<li id="menu-item-3445458" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3445458 tn-menu-category-27414"><a href="https://www.makeleio.gr/%ce%a0%ce%b1%cf%81%ce%b1%cf%80%ce%bf%ce%bb%ce%b9%cf%84%ce%b9%ce%ba%ce%ac/">ΠΑΡΑΠΟΛΙΤΙΚΑ</a></li>
+</ul>
+</li>
+</ul></div><!--#mobile aside nav -->
+
+    <div class="tn-main-container">
+    	<header class="clearfix">
+							<div class="tn-navbar clearfix">
+				<div class="tn-container">
+					<img style='width: 25px;
+    margin-top: 5px;
+    float: left;
+    margin-left: 40px;' src='https://www.makeleio.gr/calendar.png'</><span style='float:left;margin-left:5px;font-family: TitloiMedium;
+    color: white;
+    font-size: 0.8em;'>07/12/2022</span>				<span style="    float: left;
+    margin-left: 30px;
+    font-family: TitloiMedium;
+    color: white;
+    font-size: 1.0em;">Τηλέφωνο καταγγελιών: 694 635 77 33 - 698 632 33 23 | email: <a style="cursor:pointer;" href="mailto:info@makeleio.gr" target="_blank">info@makeleio.gr</a> |   <a style="cursor:pointer;" href="mailto:kataggelies@makeleio.gr" target="_blank">kataggelies@makeleio.gr</a></span>	<div class="menu-top-right">
+							<div class="social-bar-wrapper"><a title="Facebook" href="https://www.facebook.com/makeleionew/" target="_blank"><i class="fa fa-facebook color-facebook"></i></a><a title="Twitter" href="https://twitter.com/makeleio_gr" target="_blank"><i class="fa fa-twitter color-twitter"></i></a><a title="Vimeo" href="https://rumble.com/user/makeleio" target="_blank"><i class="fa fa-vimeo-square color-vimeo"></i></a></div>						</div>
+									</div><!-- #tn-container -->
+			</div><!-- #tn-nav bar -->
+				<div class="tn-container clearfix">
+
+			<div id="main-header">
+				<div class="site-logo" role="banner" itemscope="itemscope" itemtype="http://schema.org/Organization">
+					                                                    <a itemprop="url" href="https://www.makeleio.gr"><img data-no-retina src="https://www.makeleio.gr/wp-content/uploads/2019/07/maklogokalo.png" alt="Makeleio.gr"></a>
+                            <meta itemprop="name" content="Makeleio.gr">
+                        									</div><!-- #logo -->
+
+													<div class="header-ads-wrap">
+					<div style="margin-top:10px;margin-bottom:10px;" id="ads_under_image"><a href=" https://www.infobeto.com/mundial-2022 " target="_blank"><img src="https://www.makeleio.gr/wp-content/uploads/2022/11/infobeto-GENERIC-700x100-px.gif" /></a>
+
+<!-- /86693265/ros_header -->
+<div id="ros_header" style="display: none;"><script type='text/javascript'>
+      googletag.cmd.push(function() { googletag.display('ros_header'); });
+    </script></div></div> 					</div><!-- #custom ads -->
+								<!--#header ads -->
+			</div><!-- #main header -->
+
+        </div><!--#tn container -->
+
+        <nav id="main-nav" role="navigation" itemscope="itemscope" itemtype="http://schema.org/SiteNavigationElement" class="clearfix">
+            <div id="tn-main-nav-wrap" class="main-nav-wrap">
+                <div class="tn-container">
+                    <div class="main-nav-inner">
+
+                        <div class="mobile-menu-nav">
+                            <a href="#" id="mobile-button-nav-open" onclick="ontop();"  class="mobile-nav-button"><i class="menu-button fa fa-th"></i></a>
+                        </div><!-- #mobile nav wrap -->
+
+                        <div id="menu-main" class="menu-main-nav-container"><ul id="menu-main-nav-1" class="menu"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-11382"><a title=" Το Site των Μεγάλων αποκαλύψεων" href="https://www.makeleio.gr/">ΑΡΧΙΚΗ</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-2438 tn-menu-category-4"><a href="https://www.makeleio.gr/%ce%b5%cf%80%ce%b9%ce%ba%ce%b1%ce%b9%cf%81%ce%bf%cf%84%ce%b7%cf%84%ce%b1/">ΕΠΙΚΑΙΡΟΤΗΤΑ</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-2440 tn-menu-category-7"><a href="https://www.makeleio.gr/%ce%b1%cf%83%cf%84%cf%85%ce%bd%ce%bf%ce%bc%ce%b9%ce%ba%ce%bf/">ΑΣΤΥΝΟΜΙΚΟ</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-407131 tn-menu-category-14874"><a href="https://www.makeleio.gr/%ce%bf%ce%b9%ce%ba%ce%bf%ce%bd%ce%bf%ce%bc%ce%b9%ce%b1/">ΟΙΚΟΝΟΜΙΑ</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2441 tn-menu-category-14"><a href="https://www.makeleio.gr/%ce%ba%ce%bf%cf%83%ce%bc%ce%bf%cf%82/">ΚΟΣΜΟΣ</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2442 tn-menu-category-9"><a href="https://www.makeleio.gr/%ce%ba%ce%b1%cf%84%ce%b1%ce%b3%ce%b3%ce%b5%ce%bb%ce%b9%ce%b5%cf%82/">ΚΑΤΑΓΓΕΛΙΕΣ</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-325163 tn-menu-category-23"><a href="https://www.makeleio.gr/lifestyle/">LIFESTYLE</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2443 tn-menu-category-5"><a href="https://www.makeleio.gr/%ce%b1%cf%80%ce%bf%ce%ba%ce%b1%ce%bb%cf%85%cf%88%ce%b7/">ΑΠΟΚΑΛΥΨΗ</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-325181 tn-menu-category-14567"><a href="https://www.makeleio.gr/%ce%b1%cf%85%cf%84%ce%bf%ce%ba%ce%b9%ce%bd%ce%b7%cf%84%ce%bf/">ΑΥΤΟΚΙΝΗΤΟ</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-593001 tn-menu-category-15942"><a href="https://www.makeleio.gr/%ce%b5%cf%86%ce%b7%ce%bc%ce%b5%cf%81%ce%b9%ce%b4%ce%b1/">ΕΦΗΜΕΡΙΔΑ</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-593002"><a href="#">ΠΕΡΙΣΣΟΤΕΡΑ</a><div class="tn-dropdown-menu"><div class="tn-sub-menu-wrap"><ul class="tn-sub-menu clearfix">	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-592920 tn-menu-category-2995"><a href="https://www.makeleio.gr/%cf%81%ce%b5%cf%80%ce%bf%cf%81%cf%84%ce%b1%ce%b6/">ΡΕΠΟΡΤΑΖ</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-592919 tn-menu-category-6"><a href="https://www.makeleio.gr/%ce%bd%cf%84%ce%bf%ce%ba%ce%bf%cf%85%ce%bc%ce%b5%ce%bd%cf%84%ce%bf/">ΝΤΟΚΟΥΜΕΝΤΟ</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-592918 tn-menu-category-10"><a href="https://www.makeleio.gr/%ce%b4%ce%b9%ce%ba%ce%b1%cf%83%cf%84%ce%b9%ce%ba%ce%bf/">ΔΙΚΑΣΤΙΚΟ</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-592916 tn-menu-category-26"><a href="https://www.makeleio.gr/editorial/">EDITORIAL</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-592917 tn-menu-category-6652"><a href="https://www.makeleio.gr/media/">MEDIA</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-592921 tn-menu-category-283"><a href="https://www.makeleio.gr/%cf%85%ce%b3%ce%b5%ce%b9%ce%b1/">ΥΓΕΙΑ</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-611957 tn-menu-category-15944"><a href="https://www.makeleio.gr/%ce%b5%ce%ba%cf%80%ce%bf%ce%bc%cf%80%ce%b5%cf%83/">EΚΠΟΜΠΕΣ</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1117758 tn-menu-category-19096"><a href="https://www.makeleio.gr/%ce%b1%ce%bc%cf%85%ce%bd%ce%b1-%ce%ba%ce%b1%ce%b9-%ce%b5%ce%b8%ce%bd%ce%b9%ce%ba%ce%b1-%ce%b8%ce%b5%ce%bc%ce%b1%cf%84%ce%b1/">ΑΜΥΝΑ ΚΑΙ ΕΘΝΙΚΑ ΘΕΜΑΤΑ</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1083636 tn-menu-category-18034"><a href="https://www.makeleio.gr/%ce%bf%cf%81%ce%b8%ce%bf%ce%b4%ce%bf%ce%be%ce%b9%ce%b1/">ΟΡΘΟΔΟΞΙΑ</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2003502 tn-menu-category-23997"><a href="https://www.makeleio.gr/%ce%ba%cf%85%cf%80%cf%81%ce%bf%cf%82-%ce%b5%ce%b9%ce%b4%ce%b7%cf%83%ce%b5%ce%b9%cf%82/">ΚΥΠΡΟΣ ΕΙΔΗΣΕΙΣ</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1535717 tn-menu-category-23679"><a href="https://www.makeleio.gr/%ce%b1%ce%b8%ce%bb%ce%b7%cf%84%ce%b9%ce%ba%ce%b1/">ΑΘΛΗΤΙΚΑ</a></li>
+	<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3445458 tn-menu-category-27414"><a href="https://www.makeleio.gr/%ce%a0%ce%b1%cf%81%ce%b1%cf%80%ce%bf%ce%bb%ce%b9%cf%84%ce%b9%ce%ba%ce%ac/">ΠΑΡΑΠΟΛΙΤΙΚΑ</a></li>
+</ul></div></div></li>
+</ul></div>
+                        <div class="ajax-search-wrap"><a href="#" id="ajax-form-search" class="ajax-search-icon"><i class="fa fa-search"></i></a><form class="ajax-form" role="search" method="get" action="https://www.makeleio.gr/"><fieldset><input id="search-form-text" type="text" autocomplete="off" class="field" name="s" value="" placeholder="Search this Site..."></fieldset> <div id="ajax-search-result"></div></form></div><!--#ajax search -->
+
+                    </div><!--#main nav inner -->
+                </div><!--#tn container -->
+            </div><!--#main nav wrap-->
+        </nav><!--# main nav -->
+
+                <div class="breadcrumbs-bar-wrap"><div class="breadcrumbs-bar-inner tn-container"><span itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a href="https://www.makeleio.gr/" rel="v:url" property="v:title"  itemprop="url" title="Home"><span itemprop="title">Home</span></a></span><i class="fa fa-angle-right next-breadcrumbs"></i><span typeof="v:Breadcrumb" itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><a rel="v:url" property="v:title" itemprop="url" href="https://www.makeleio.gr/%ce%b1%cf%83%cf%84%cf%85%ce%bd%ce%bf%ce%bc%ce%b9%ce%ba%ce%bf/"><span itemprop="title">ΑΣΤΥΝΟΜΙΚΟ</span></a></span><i class="fa fa-angle-right next-breadcrumbs"></i><span class="breadcrumbs-current" itemscope itemtype="http://data-vocabulary.org/Breadcrumb"><span itemprop="title">Παλαιό Φάληρο: Ανθρωποκυνηγητό για τον «βιαστή με το τατουάζ» &#8211; Αποπειράθηκε να βιάσει και 2η γυναίκα</span></span></div></div><!--#breadcrumbs-->
+	</header><!-- header -->
+
+
+
+
+<script>
+var timer;
+var started = 0;
+function loadfunction(){
+console.log('siteloaded');
+var isOnDiv=false;
+try
+{
+//debugger;
+//document.getElementById("module-slider-widget-7").addEventListener("mouseenter", function(  ) {isOnDiv=true;});
+//document.getElementById("module-slider-widget-7").addEventListener("mouseout", function(  ) {isOnDiv=false;});
+
+window.ev = false;
+
+document.getElementById('module-slider-widget-7').onmouseover = function () {
+    window.ev = true;
+started =0;
+slidestop();
+
+}
+
+document.getElementById('module-slider-widget-7').onmouseout = function () {
+    window.ev = false;
+if(started==0)
+{
+started=1;
+slidestart();
+}
+
+}
+
+
+}
+
+catch (e){
+
+}
+if(started ==0)
+{
+started =1;
+slidestart();
+}
+//module-slider-wrap
+
+}
+
+
+var timer;
+
+function slidestart() {
+if(started==0)
+{
+return;
+}
+    timer = setTimeout(function(){ 
+
+try {
+document.querySelector('.tn-next').click();
+
+slidestart();
+
+}
+catch (e){}
+
+}, 4000);
+}
+
+function slidestop() {
+started =0;
+    clearTimeout(timer);
+}
+
+</script>
+<div id="main-wrapper" class="tn-container"><div class="row  container-fluid"><div class="row tn-section-content-wrap cleafix"><article id="main-content" class="tn-content-wrap col-sm-8 col-xs-12" role="main" itemscope itemtype="http://schema.org/Article"><div class="single-style1-wrap"><div class="single-style1-meta-tag tn-category-7"><ul class="post-categories"><li><a href="https://www.makeleio.gr/%ce%b1%cf%83%cf%84%cf%85%ce%bd%ce%bf%ce%bc%ce%b9%ce%ba%ce%bf/" title="ΑΣΤΥΝΟΜΙΚΟ">ΑΣΤΥΝΟΜΙΚΟ</a></li><li><a href="https://www.makeleio.gr/%ce%b5%cf%80%ce%b9%ce%ba%ce%b1%ce%b9%cf%81%ce%bf%cf%84%ce%b7%cf%84%ce%b1/" title="ΕΠΙΚΑΙΡΟΤΗΤΑ">ΕΠΙΚΑΙΡΟΤΗΤΑ</a></li></ul><ul class="post-meta"><li class="date-post-meta"><span></span><time itemprop="dateCreated" datetime="2022-10-27T12:04:06+03:00" >27|10|2022 12:04</time></li><li><span>/</span><a itemprop="author" href = "https://www.makeleio.gr/author/sofia/" >Athina</a></li><li class="view-post-meta"><span>/</span>621 views </li></ul> <meta itemprop="interactionCount" content="UserComments:2"/></div><div class="single-style1-title"><h1 itemprop="name">Παλαιό Φάληρο: Ανθρωποκυνηγητό για τον «βιαστή με το τατουάζ» &#8211; Αποπειράθηκε να βιάσει και 2η γυναίκα</h1></div><div class="single-top-social-wrap single-social-wrap"><span class="single-social-title">Κοινοποίηση:</span><a class="share-to-social color-facebook" href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.makeleio.gr%2F%25ce%25b5%25cf%2580%25ce%25b9%25ce%25ba%25ce%25b1%25ce%25b9%25cf%2581%25ce%25bf%25cf%2584%25ce%25b7%25cf%2584%25ce%25b1%2F%25ce%25a0%25ce%25b1%25ce%25bb%25ce%25b1%25ce%25b9%25cf%258c-%25ce%25a6%25ce%25ac%25ce%25bb%25ce%25b7%25cf%2581%25ce%25bf-%25ce%2591%25ce%25bd%25ce%25b8%25cf%2581%25cf%2589%25cf%2580%25ce%25bf%25ce%25ba%25cf%2585%25ce%25bd%25ce%25b7%25ce%25b3%25ce%25b7%25cf%2584%25cf%258c-%25ce%25b3%25ce%25b9%25ce%25b1-%25cf%2584%25ce%25bf%2F" onclick="window.open(this.href, 'mywin',
+'left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-facebook"></i><span class="share-title">Facebook</span></a><a class="share-to-social color-twitter" href="https://twitter.com/intent/tweet?text=%CE%A0%CE%B1%CE%BB%CE%B1%CE%B9%CF%8C+%CE%A6%CE%AC%CE%BB%CE%B7%CF%81%CE%BF%3A+%CE%91%CE%BD%CE%B8%CF%81%CF%89%CF%80%CE%BF%CE%BA%CF%85%CE%BD%CE%B7%CE%B3%CE%B7%CF%84%CF%8C+%CE%B3%CE%B9%CE%B1+%CF%84%CE%BF%CE%BD+%C2%AB%CE%B2%CE%B9%CE%B1%CF%83%CF%84%CE%AE+%CE%BC%CE%B5+%CF%84%CE%BF+%CF%84%CE%B1%CF%84%CE%BF%CF%85%CE%AC%CE%B6%C2%BB+%26%238211%3B+%CE%91%CF%80%CE%BF%CF%80%CE%B5%CE%B9%CF%81%CE%AC%CE%B8%CE%B7%CE%BA%CE%B5+%CE%BD%CE%B1+%CE%B2%CE%B9%CE%AC%CF%83%CE%B5%CE%B9+%CE%BA%CE%B1%CE%B9+2%CE%B7+%CE%B3%CF%85%CE%BD%CE%B1%CE%AF%CE%BA%CE%B1&amp;url=https%3A%2F%2Fwww.makeleio.gr%2F%25ce%25b5%25cf%2580%25ce%25b9%25ce%25ba%25ce%25b1%25ce%25b9%25cf%2581%25ce%25bf%25cf%2584%25ce%25b7%25cf%2584%25ce%25b1%2F%25ce%25a0%25ce%25b1%25ce%25bb%25ce%25b1%25ce%25b9%25cf%258c-%25ce%25a6%25ce%25ac%25ce%25bb%25ce%25b7%25cf%2581%25ce%25bf-%25ce%2591%25ce%25bd%25ce%25b8%25cf%2581%25cf%2589%25cf%2580%25ce%25bf%25ce%25ba%25cf%2585%25ce%25bd%25ce%25b7%25ce%25b3%25ce%25b7%25cf%2584%25cf%258c-%25ce%25b3%25ce%25b9%25ce%25b1-%25cf%2584%25ce%25bf%2F&amp;via=Makeleio.gr" onclick="window.open(this.href, 'mywin',
+'left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-twitter"></i><span class="share-title">Twitter</span></a> <a class="share-to-social color-google" href="http://plus.google.com/share?url=https%3A%2F%2Fwww.makeleio.gr%2F%25ce%25b5%25cf%2580%25ce%25b9%25ce%25ba%25ce%25b1%25ce%25b9%25cf%2581%25ce%25bf%25cf%2584%25ce%25b7%25cf%2584%25ce%25b1%2F%25ce%25a0%25ce%25b1%25ce%25bb%25ce%25b1%25ce%25b9%25cf%258c-%25ce%25a6%25ce%25ac%25ce%25bb%25ce%25b7%25cf%2581%25ce%25bf-%25ce%2591%25ce%25bd%25ce%25b8%25cf%2581%25cf%2589%25cf%2580%25ce%25bf%25ce%25ba%25cf%2585%25ce%25bd%25ce%25b7%25ce%25b3%25ce%25b7%25cf%2584%25cf%258c-%25ce%25b3%25ce%25b9%25ce%25b1-%25cf%2584%25ce%25bf%2F" onclick="window.open(this.href, 'mywin',
+'left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-google-plus"></i><span class="share-title">Google +</span></a><div class="share-to-mail-wrap"><a class="share-to-social share-to-email color-email" href="#" data_post_id="4265711"><i class="fa fa-envelope"></i><span class="share-title">Email</span></a><div class="tn-share-to-email-popup" style="display: none"><form method="post"><label for="target-email">Send to Email Address:</label><input type="text" name="target-email" id="target-email" value="" /><label for="source-name">Your Name</label><input type="text" name="source-name" id="source-name" value="" /><label for="source-email">Your Email Address</label><input type="text" name="source-email" id="source-email" value="" /></form><div class="share-errors" style="display: none;">Email check failed, please try again</div><div class="share-loading" style="display: none;"></div><input class="share-mail-send"  type="submit" value="Send Email" /><a href="#" class="share-mail-cancel">Cancel</a></div><!--#email popup --></div></div><div class="single-style1-content single-content clearfix"><div class="thumb-wrap"><img width="647" height="431"  itemprop="image" src="https://www.makeleio.gr/wp-content/uploads/2022/09/ΒΙΑΣΜΟΣ.jpg" class="attachment-blog_classic_thumb size-blog_classic_thumb wp-post-image" alt="ΒΙΑΣΜΟΣ" /></div><center><div style="margin-top:10px;margin-bottom:10px;" id="ads_under_image"><!-- /86693265/ros_artUnderImage -->
+<div id="ros_artUnderImage"><script type='text/javascript'>
+      googletag.cmd.push(function() { googletag.display('ros_artUnderImage'); });
+    </script></div>
+<h2></h2>
+</div></center><div class="post-content-wrap"><p>Οι Αρχές έχουν εξαπολύσει ανθρωποκυνηγητό για να εντοπίσουν και να συλλάβουν τον άνδρα με το τατουάζ που άρπαξε μια 34χρονη από στάση λεωφορείου στο Παλαιό Φάληρο και την βίασε σε παρακείμενο παρκάκι.</p>
+<p>Το συμβάν έλαβε χώρα τα ξημερώματα της Κυριακής σε στάση λεωφορείου στην Αγία Σκέπη. Ο άγνωστος πλησίασε την κοπέλα, τη βίασε και στη συνέχεια της ζήτησε το τηλέφωνό της, προκειμένου να γίνουν ζευγάρι.</p>
+<p>Η κοπέλα, που ήταν σε σοκ, ξαναπήγε στη στάση, και στη στάση του λεωφορείου βρισκόταν ένας νεαρός που περίμενε, ωστόσο δεν του είπε τι συνέβη, καθώς ντράπηκε και δεν αποκάλυψε το περιστατικό.</p>
+<p>Αμέσως η νεαρή κοπέλα κάλεσε την αστυνομία κι ομάδα ΔΙΑΣ μετέβη στο σημείο. Η αστυνομία αναζητά τον άνθρωπο που βίασε την κοπέλα και μάλιστα υπάρχει και μία δεύτερη καταγγελία.</p>
+<p>Σύμφωνα με την καταγγελία μία ακόμα κοπέλα έπεσε θύμα του συγκεκριμένου ατόμου και με βάση τις περιγραφές που έδωσε η κοπέλα που βιάστηκε.</p>
+<p>Πρόκειται για έναν εύσωμο άνδρα με χαρακτηριστικό τατουάζ στο χέρι, λευκό δέρμα, οποίος φορούσε μαύρα ρούχα. Οι Αρχές έχουν εξαπολύσει ανθρωποκυνηγητό προκειμένου να τον εντοπίσουν και να προχωρήσουν στη σύλληψή του.</p>
+</div><!--#post content --></div></div><center><div style="margin-top:10px;margin-bottom:10px;" id="ads_under_image"></div></center>            <div class="single-social-wrap">
+                <span class="single-social-title">ΚΟΙΝΟΠΟΗΣΗ:</span>
+                <a class="share-to-social color-facebook" href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.makeleio.gr%2F%25ce%25b5%25cf%2580%25ce%25b9%25ce%25ba%25ce%25b1%25ce%25b9%25cf%2581%25ce%25bf%25cf%2584%25ce%25b7%25cf%2584%25ce%25b1%2F%25ce%25a0%25ce%25b1%25ce%25bb%25ce%25b1%25ce%25b9%25cf%258c-%25ce%25a6%25ce%25ac%25ce%25bb%25ce%25b7%25cf%2581%25ce%25bf-%25ce%2591%25ce%25bd%25ce%25b8%25cf%2581%25cf%2589%25cf%2580%25ce%25bf%25ce%25ba%25cf%2585%25ce%25bd%25ce%25b7%25ce%25b3%25ce%25b7%25cf%2584%25cf%258c-%25ce%25b3%25ce%25b9%25ce%25b1-%25cf%2584%25ce%25bf%2F" onclick="window.open(this.href, 'mywin',
+'left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-facebook"></i><span class="share-title">Facebook</span></a><a class="share-to-social color-twitter" href="https://twitter.com/intent/tweet?text=%CE%A0%CE%B1%CE%BB%CE%B1%CE%B9%CF%8C+%CE%A6%CE%AC%CE%BB%CE%B7%CF%81%CE%BF%3A+%CE%91%CE%BD%CE%B8%CF%81%CF%89%CF%80%CE%BF%CE%BA%CF%85%CE%BD%CE%B7%CE%B3%CE%B7%CF%84%CF%8C+%CE%B3%CE%B9%CE%B1+%CF%84%CE%BF%CE%BD+%C2%AB%CE%B2%CE%B9%CE%B1%CF%83%CF%84%CE%AE+%CE%BC%CE%B5+%CF%84%CE%BF+%CF%84%CE%B1%CF%84%CE%BF%CF%85%CE%AC%CE%B6%C2%BB+%26%238211%3B+%CE%91%CF%80%CE%BF%CF%80%CE%B5%CE%B9%CF%81%CE%AC%CE%B8%CE%B7%CE%BA%CE%B5+%CE%BD%CE%B1+%CE%B2%CE%B9%CE%AC%CF%83%CE%B5%CE%B9+%CE%BA%CE%B1%CE%B9+2%CE%B7+%CE%B3%CF%85%CE%BD%CE%B1%CE%AF%CE%BA%CE%B1&amp;url=https%3A%2F%2Fwww.makeleio.gr%2F%25ce%25b5%25cf%2580%25ce%25b9%25ce%25ba%25ce%25b1%25ce%25b9%25cf%2581%25ce%25bf%25cf%2584%25ce%25b7%25cf%2584%25ce%25b1%2F%25ce%25a0%25ce%25b1%25ce%25bb%25ce%25b1%25ce%25b9%25cf%258c-%25ce%25a6%25ce%25ac%25ce%25bb%25ce%25b7%25cf%2581%25ce%25bf-%25ce%2591%25ce%25bd%25ce%25b8%25cf%2581%25cf%2589%25cf%2580%25ce%25bf%25ce%25ba%25cf%2585%25ce%25bd%25ce%25b7%25ce%25b3%25ce%25b7%25cf%2584%25cf%258c-%25ce%25b3%25ce%25b9%25ce%25b1-%25cf%2584%25ce%25bf%2F&amp;via=Makeleio.gr" onclick="window.open(this.href, 'mywin',
+'left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-twitter"></i><span class="share-title">Twitter</span></a> <a class="share-to-social color-google" href="http://plus.google.com/share?url=https%3A%2F%2Fwww.makeleio.gr%2F%25ce%25b5%25cf%2580%25ce%25b9%25ce%25ba%25ce%25b1%25ce%25b9%25cf%2581%25ce%25bf%25cf%2584%25ce%25b7%25cf%2584%25ce%25b1%2F%25ce%25a0%25ce%25b1%25ce%25bb%25ce%25b1%25ce%25b9%25cf%258c-%25ce%25a6%25ce%25ac%25ce%25bb%25ce%25b7%25cf%2581%25ce%25bf-%25ce%2591%25ce%25bd%25ce%25b8%25cf%2581%25cf%2589%25cf%2580%25ce%25bf%25ce%25ba%25cf%2585%25ce%25bd%25ce%25b7%25ce%25b3%25ce%25b7%25cf%2584%25cf%258c-%25ce%25b3%25ce%25b9%25ce%25b1-%25cf%2584%25ce%25bf%2F" onclick="window.open(this.href, 'mywin',
+'left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-google-plus"></i><span class="share-title">Google +</span></a><div class="share-to-mail-wrap"><a class="share-to-social share-to-email color-email" href="#" data_post_id="4265711"><i class="fa fa-envelope"></i><span class="share-title">Email</span></a><div class="tn-share-to-email-popup" style="display: none"><form method="post"><label for="target-email">Send to Email Address:</label><input type="text" name="target-email" id="target-email" value="" /><label for="source-name">Your Name</label><input type="text" name="source-name" id="source-name" value="" /><label for="source-email">Your Email Address</label><input type="text" name="source-email" id="source-email" value="" /></form><div class="share-errors" style="display: none;">Email check failed, please try again</div><div class="share-loading" style="display: none;"></div><input class="share-mail-send"  type="submit" value="Send Email" /><a href="#" class="share-mail-cancel">Cancel</a></div><!--#email popup --></div>            </div>
+        <div class="tn-social-like-post"><ul><li class="tn-like-post-twitter"><a href="https://twitter.com/share" class="twitter-share-button" data-url="https://www.makeleio.gr/%ce%b5%cf%80%ce%b9%ce%ba%ce%b1%ce%b9%cf%81%ce%bf%cf%84%ce%b7%cf%84%ce%b1/%ce%a0%ce%b1%ce%bb%ce%b1%ce%b9%cf%8c-%ce%a6%ce%ac%ce%bb%ce%b7%cf%81%ce%bf-%ce%91%ce%bd%ce%b8%cf%81%cf%89%cf%80%ce%bf%ce%ba%cf%85%ce%bd%ce%b7%ce%b3%ce%b7%cf%84%cf%8c-%ce%b3%ce%b9%ce%b1-%cf%84%ce%bf/" data-text="Παλαιό Φάληρο: Ανθρωποκυνηγητό για τον «βιαστή με το τατουάζ» &#8211; Αποπειράθηκε να βιάσει και 2η γυναίκα" data-via="Makeleio.gr" data-lang="en">tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></li><li class="tn-like-post-facebook"><iframe src="https://www.facebook.com/plugins/like.php?href=https://www.makeleio.gr/%ce%b5%cf%80%ce%b9%ce%ba%ce%b1%ce%b9%cf%81%ce%bf%cf%84%ce%b7%cf%84%ce%b1/%ce%a0%ce%b1%ce%bb%ce%b1%ce%b9%cf%8c-%ce%a6%ce%ac%ce%bb%ce%b7%cf%81%ce%bf-%ce%91%ce%bd%ce%b8%cf%81%cf%89%cf%80%ce%bf%ce%ba%cf%85%ce%bd%ce%b7%ce%b3%ce%b7%cf%84%cf%8c-%ce%b3%ce%b9%ce%b1-%cf%84%ce%bf/&amp;layout=button_count&amp;show_faces=false&amp;width=105&amp;action=like&amp;colorscheme=light&amp;height=21" style="border:none; overflow:hidden; width:105px; height:21px; background-color:transparent;"></iframe></li><li  class="tn-like-post-google">
+                    <div class="g-plusone" data-size="medium" data-href="https://www.makeleio.gr/%ce%b5%cf%80%ce%b9%ce%ba%ce%b1%ce%b9%cf%81%ce%bf%cf%84%ce%b7%cf%84%ce%b1/%ce%a0%ce%b1%ce%bb%ce%b1%ce%b9%cf%8c-%ce%a6%ce%ac%ce%bb%ce%b7%cf%81%ce%bf-%ce%91%ce%bd%ce%b8%cf%81%cf%89%cf%80%ce%bf%ce%ba%cf%85%ce%bd%ce%b7%ce%b3%ce%b7%cf%84%cf%8c-%ce%b3%ce%b9%ce%b1-%cf%84%ce%bf/"></div>
+                    <script type="text/javascript">
+                        (function() {
+                            var po = document.createElement("script"); po.type = "text/javascript"; po.async = true;
+                            po.src = "https://apis.google.com/js/plusone.js";
+                            var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(po, s);
+                        })();
+                    </script>
+                    </li></ul></div><center><div style="margin-top:10px;margin-bottom:10px;" id="ads_under_image"><div id="SC_TBlock_131278"></div>
+<script type="text/javascript">
+            (sc_adv_out = window.sc_adv_out || []).push({
+                id : "131278",
+                domain : "n.ads5-adnow.com",
+                no_div: false
+            });
+        </script>
+        <script async type="text/javascript" src="//st-n.ads5-adnow.com/js/a.js"></script>
+
+
+
+<div id="ENGAGEYA_WIDGET_121738"></div>
+<script data-cfasync="false">
+
+(function(E,n,G,A,g,Y,a){E['EngageyaObject']=g;E[g]=E[g]||function(){ (E[g].q=E[g].q||[]).push(arguments)},E[g].l=1*new Date();Y=n.createElement(G), a=n.getElementsByTagName(G)[0];Y.async=1;Y.src=A;a.parentNode.insertBefore(Y,a)})(window,document,'script','//widget.engageya.com/engageya_loader.js','__engWidget');
+
+__engWidget('createWidget',{wwei:'ENGAGEYA_WIDGET_121738',pubid:188610,webid:185787,wid:121738});
+
+</script></div></center><div class="single-related-wrap clearfix"><div class="single-title-wrap widget-title"><h3>Σχετικά Άρθρα</h3></div><div class="single-related-content-wrap"><div class="row-fluid clearfix"><!--row fluid --><div class="col-sm-4 col-xs-12"><div class="block4-wrap tn-block-wrap tn-category-23 clearfix" itemscope itemtype="http://schema.org/Article"><meta itemprop="author" content = "Athina"><div class="thumb-wrap" style="height:140px;"><a href="https://www.makeleio.gr/%ce%b5%cf%80%ce%b9%ce%ba%ce%b1%ce%b9%cf%81%ce%bf%cf%84%ce%b7%cf%84%ce%b1/%ce%a3%cf%85%ce%b3%ce%ba%ce%b9%ce%bd%ce%b5%ce%af-%ce%bf-%ce%9d%cf%84%ce%af%ce%bd%ce%bf%cf%82-%ce%9a%ce%b1%cf%81%cf%8d%ce%b4%ce%b7%cf%82-%ce%91%ce%bd-%ce%b4%ce%b5%ce%bd-%ce%ae%cf%84%ce%b1%ce%bd-%ce%b7/" title="Συγκινεί ο Ντίνος Καρύδης: Αν δεν ήταν η Σμαράγδα, δεν θα είχα ούτε για το νοίκι" rel="bookmark" ><span class="post-format"><i class="fa fa-file-text"></i></span><img width="267" height="180"  itemprop="image" src="https://www.makeleio.gr/wp-content/uploads/2022/12/ΚΑΡΥΔΗ.png" class="attachment-module_medium_thumb size-module_medium_thumb wp-post-image" alt="ΚΑΡΥΔΗ" /></a><div class="meta-thumb-wrap"><div class="meta-thumb-element meta-thumb-views"><i class="fa fa-share"></i><span>ΚΟΙΝΟΠΟΙΗΣΗ</span></div></div><!--# meta thumb wrap --><div class="shares-to-social-thumb-wrap share-invisible"><div class="shares-to-social-thumb-inner"><a class="share-to-social" href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.makeleio.gr%2F%25ce%25b5%25cf%2580%25ce%25b9%25ce%25ba%25ce%25b1%25ce%25b9%25cf%2581%25ce%25bf%25cf%2584%25ce%25b7%25cf%2584%25ce%25b1%2F%25ce%25a3%25cf%2585%25ce%25b3%25ce%25ba%25ce%25b9%25ce%25bd%25ce%25b5%25ce%25af-%25ce%25bf-%25ce%259d%25cf%2584%25ce%25af%25ce%25bd%25ce%25bf%25cf%2582-%25ce%259a%25ce%25b1%25cf%2581%25cf%258d%25ce%25b4%25ce%25b7%25cf%2582-%25ce%2591%25ce%25bd-%25ce%25b4%25ce%25b5%25ce%25bd-%25ce%25ae%25cf%2584%25ce%25b1%25ce%25bd-%25ce%25b7%2F" onclick="window.open(this.href, 'mywin',
+'left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-facebook color-facebook"></i></a><a class="share-to-social" href="https://twitter.com/intent/tweet?text=%CE%A3%CF%85%CE%B3%CE%BA%CE%B9%CE%BD%CE%B5%CE%AF+%CE%BF+%CE%9D%CF%84%CE%AF%CE%BD%CE%BF%CF%82+%CE%9A%CE%B1%CF%81%CF%8D%CE%B4%CE%B7%CF%82%3A+%CE%91%CE%BD+%CE%B4%CE%B5%CE%BD+%CE%AE%CF%84%CE%B1%CE%BD+%CE%B7+%CE%A3%CE%BC%CE%B1%CF%81%CE%AC%CE%B3%CE%B4%CE%B1%2C+%CE%B4%CE%B5%CE%BD+%CE%B8%CE%B1+%CE%B5%CE%AF%CF%87%CE%B1+%CE%BF%CF%8D%CF%84%CE%B5+%CE%B3%CE%B9%CE%B1+%CF%84%CE%BF+%CE%BD%CE%BF%CE%AF%CE%BA%CE%B9&amp;url=https%3A%2F%2Fwww.makeleio.gr%2F%25ce%25b5%25cf%2580%25ce%25b9%25ce%25ba%25ce%25b1%25ce%25b9%25cf%2581%25ce%25bf%25cf%2584%25ce%25b7%25cf%2584%25ce%25b1%2F%25ce%25a3%25cf%2585%25ce%25b3%25ce%25ba%25ce%25b9%25ce%25bd%25ce%25b5%25ce%25af-%25ce%25bf-%25ce%259d%25cf%2584%25ce%25af%25ce%25bd%25ce%25bf%25cf%2582-%25ce%259a%25ce%25b1%25cf%2581%25cf%258d%25ce%25b4%25ce%25b7%25cf%2582-%25ce%2591%25ce%25bd-%25ce%25b4%25ce%25b5%25ce%25bd-%25ce%25ae%25cf%2584%25ce%25b1%25ce%25bd-%25ce%25b7%2F&amp;via=Makeleio.gr" onclick="window.open(this.href, 'mywin',
+'left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-twitter color-twitter"></i></a> <a class="share-to-social" href="http://plus.google.com/share?url=https%3A%2F%2Fwww.makeleio.gr%2F%25ce%25b5%25cf%2580%25ce%25b9%25ce%25ba%25ce%25b1%25ce%25b9%25cf%2581%25ce%25bf%25cf%2584%25ce%25b7%25cf%2584%25ce%25b1%2F%25ce%25a3%25cf%2585%25ce%25b3%25ce%25ba%25ce%25b9%25ce%25bd%25ce%25b5%25ce%25af-%25ce%25bf-%25ce%259d%25cf%2584%25ce%25af%25ce%25bd%25ce%25bf%25cf%2582-%25ce%259a%25ce%25b1%25cf%2581%25cf%258d%25ce%25b4%25ce%25b7%25cf%2582-%25ce%2591%25ce%25bd-%25ce%25b4%25ce%25b5%25ce%25bd-%25ce%25ae%25cf%2584%25ce%25b1%25ce%25bd-%25ce%25b7%2F" onclick="window.open(this.href, 'mywin',
+'left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-google-plus color-google"></i></a></div></div></div><!--#thumb wrap --><div class="block4-content"><div class="block4-meta-tag"><div class="block4-left-meta-tag"><ul class="post-categories"><li><a href="https://www.makeleio.gr/lifestyle/" title="LIFESTYLE">LIFESTYLE</a></li></ul><ul class="post-meta"><li class="date-post-meta"><span></span><time itemprop="dateCreated" datetime="2022-12-07T11:10:35+02:00" >07|12|2022 11:10</time></li></ul> <meta itemprop="interactionCount" content="UserComments:0"/></div><div class="block4-right-meta-tag"><ul class="post-meta"> <li class="comment-post-meta"><span>/</span><a href="https://www.makeleio.gr/%ce%b5%cf%80%ce%b9%ce%ba%ce%b1%ce%b9%cf%81%ce%bf%cf%84%ce%b7%cf%84%ce%b1/%ce%a3%cf%85%ce%b3%ce%ba%ce%b9%ce%bd%ce%b5%ce%af-%ce%bf-%ce%9d%cf%84%ce%af%ce%bd%ce%bf%cf%82-%ce%9a%ce%b1%cf%81%cf%8d%ce%b4%ce%b7%cf%82-%ce%91%ce%bd-%ce%b4%ce%b5%ce%bd-%ce%ae%cf%84%ce%b1%ce%bd-%ce%b7/#respond" >0 ΣΧΟΛΙΑ</a></li></ul> <meta itemprop="interactionCount" content="UserComments:0"/></div></div><h3 itemprop="name" class="block-title" style="font-family:TitloiMedium;font-size:1.054em !important;line-height:120%;"><a itemprop="url" href="https://www.makeleio.gr/%ce%b5%cf%80%ce%b9%ce%ba%ce%b1%ce%b9%cf%81%ce%bf%cf%84%ce%b7%cf%84%ce%b1/%ce%a3%cf%85%ce%b3%ce%ba%ce%b9%ce%bd%ce%b5%ce%af-%ce%bf-%ce%9d%cf%84%ce%af%ce%bd%ce%bf%cf%82-%ce%9a%ce%b1%cf%81%cf%8d%ce%b4%ce%b7%cf%82-%ce%91%ce%bd-%ce%b4%ce%b5%ce%bd-%ce%ae%cf%84%ce%b1%ce%bd-%ce%b7/" title="Συγκινεί ο Ντίνος Καρύδης: Αν δεν ήταν η Σμαράγδα, δεν θα είχα ούτε για το νοίκι">Συγκινεί ο Ντίνος Καρύδης: Αν δεν ήταν η Σμαράγδα, δεν θα είχα...</a></h3></div></div></div><div class="col-sm-4 col-xs-12"><div class="block4-wrap tn-block-wrap tn-category-4 clearfix" itemscope itemtype="http://schema.org/Article"><meta itemprop="author" content = "Athina"><div class="thumb-wrap" style="height:140px;"><a href="https://www.makeleio.gr/%ce%b5%cf%80%ce%b9%ce%ba%ce%b1%ce%b9%cf%81%ce%bf%cf%84%ce%b7%cf%84%ce%b1/%ce%88%cf%84%cf%83%ce%b9-%ce%b8%ce%b1-%ce%b5%cf%80%ce%b9%cf%83%cf%84%cf%81%ce%ad%cf%88%ce%bf%cf%85%ce%bd-%ce%bf%ce%b9-%ce%b1%ce%bd%ce%b5%ce%bc%ce%b2%ce%bf%ce%bb%ce%af%ce%b1%cf%83%cf%84%ce%bf%ce%b9/" title="Έτσι θα επιστρέψουν οι ανεμβολίαστοι υγειονομικοί στα νοσοκομεία" rel="bookmark" ><span class="post-format"><i class="fa fa-file-text"></i></span><img width="299" height="180"  itemprop="image" src="https://www.makeleio.gr/wp-content/uploads/2022/10/ΝΟΣΟΚΟΜΕΙΟ-ΡΕΘΥΜΝΟΥ-1.jpg" class="attachment-module_medium_thumb size-module_medium_thumb wp-post-image" alt="ΝΟΣΟΚΟΜΕΙΟ-ΡΕΘΥΜΝΟΥ-1" /></a><div class="meta-thumb-wrap"><div class="meta-thumb-element meta-thumb-views"><i class="fa fa-share"></i><span>ΚΟΙΝΟΠΟΙΗΣΗ</span></div></div><!--# meta thumb wrap --><div class="shares-to-social-thumb-wrap share-invisible"><div class="shares-to-social-thumb-inner"><a class="share-to-social" href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.makeleio.gr%2F%25ce%25b5%25cf%2580%25ce%25b9%25ce%25ba%25ce%25b1%25ce%25b9%25cf%2581%25ce%25bf%25cf%2584%25ce%25b7%25cf%2584%25ce%25b1%2F%25ce%2588%25cf%2584%25cf%2583%25ce%25b9-%25ce%25b8%25ce%25b1-%25ce%25b5%25cf%2580%25ce%25b9%25cf%2583%25cf%2584%25cf%2581%25ce%25ad%25cf%2588%25ce%25bf%25cf%2585%25ce%25bd-%25ce%25bf%25ce%25b9-%25ce%25b1%25ce%25bd%25ce%25b5%25ce%25bc%25ce%25b2%25ce%25bf%25ce%25bb%25ce%25af%25ce%25b1%25cf%2583%25cf%2584%25ce%25bf%25ce%25b9%2F" onclick="window.open(this.href, 'mywin',
+'left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-facebook color-facebook"></i></a><a class="share-to-social" href="https://twitter.com/intent/tweet?text=%CE%88%CF%84%CF%83%CE%B9+%CE%B8%CE%B1+%CE%B5%CF%80%CE%B9%CF%83%CF%84%CF%81%CE%AD%CF%88%CE%BF%CF%85%CE%BD+%CE%BF%CE%B9+%CE%B1%CE%BD%CE%B5%CE%BC%CE%B2%CE%BF%CE%BB%CE%AF%CE%B1%CF%83%CF%84%CE%BF%CE%B9+%CF%85%CE%B3%CE%B5%CE%B9%CE%BF%CE%BD%CE%BF%CE%BC%CE%B9%CE%BA%CE%BF%CE%AF+%CF%83%CF%84%CE%B1+%CE%BD%CE%BF%CF%83%CE%BF%CE%BA%CE%BF%CE%BC%CE%B5%CE%AF%CE%B1&amp;url=https%3A%2F%2Fwww.makeleio.gr%2F%25ce%25b5%25cf%2580%25ce%25b9%25ce%25ba%25ce%25b1%25ce%25b9%25cf%2581%25ce%25bf%25cf%2584%25ce%25b7%25cf%2584%25ce%25b1%2F%25ce%2588%25cf%2584%25cf%2583%25ce%25b9-%25ce%25b8%25ce%25b1-%25ce%25b5%25cf%2580%25ce%25b9%25cf%2583%25cf%2584%25cf%2581%25ce%25ad%25cf%2588%25ce%25bf%25cf%2585%25ce%25bd-%25ce%25bf%25ce%25b9-%25ce%25b1%25ce%25bd%25ce%25b5%25ce%25bc%25ce%25b2%25ce%25bf%25ce%25bb%25ce%25af%25ce%25b1%25cf%2583%25cf%2584%25ce%25bf%25ce%25b9%2F&amp;via=Makeleio.gr" onclick="window.open(this.href, 'mywin',
+'left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-twitter color-twitter"></i></a> <a class="share-to-social" href="http://plus.google.com/share?url=https%3A%2F%2Fwww.makeleio.gr%2F%25ce%25b5%25cf%2580%25ce%25b9%25ce%25ba%25ce%25b1%25ce%25b9%25cf%2581%25ce%25bf%25cf%2584%25ce%25b7%25cf%2584%25ce%25b1%2F%25ce%2588%25cf%2584%25cf%2583%25ce%25b9-%25ce%25b8%25ce%25b1-%25ce%25b5%25cf%2580%25ce%25b9%25cf%2583%25cf%2584%25cf%2581%25ce%25ad%25cf%2588%25ce%25bf%25cf%2585%25ce%25bd-%25ce%25bf%25ce%25b9-%25ce%25b1%25ce%25bd%25ce%25b5%25ce%25bc%25ce%25b2%25ce%25bf%25ce%25bb%25ce%25af%25ce%25b1%25cf%2583%25cf%2584%25ce%25bf%25ce%25b9%2F" onclick="window.open(this.href, 'mywin',
+'left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-google-plus color-google"></i></a></div></div></div><!--#thumb wrap --><div class="block4-content"><div class="block4-meta-tag"><div class="block4-left-meta-tag"><ul class="post-categories"><li><a href="https://www.makeleio.gr/%ce%b5%cf%80%ce%b9%ce%ba%ce%b1%ce%b9%cf%81%ce%bf%cf%84%ce%b7%cf%84%ce%b1/" title="ΕΠΙΚΑΙΡΟΤΗΤΑ">ΕΠΙΚΑΙΡΟΤΗΤΑ</a></li></ul><ul class="post-meta"><li class="date-post-meta"><span></span><time itemprop="dateCreated" datetime="2022-12-07T11:00:23+02:00" >07|12|2022 11:00</time></li></ul> <meta itemprop="interactionCount" content="UserComments:0"/></div><div class="block4-right-meta-tag"><ul class="post-meta"> <li class="comment-post-meta"><span>/</span><a href="https://www.makeleio.gr/%ce%b5%cf%80%ce%b9%ce%ba%ce%b1%ce%b9%cf%81%ce%bf%cf%84%ce%b7%cf%84%ce%b1/%ce%88%cf%84%cf%83%ce%b9-%ce%b8%ce%b1-%ce%b5%cf%80%ce%b9%cf%83%cf%84%cf%81%ce%ad%cf%88%ce%bf%cf%85%ce%bd-%ce%bf%ce%b9-%ce%b1%ce%bd%ce%b5%ce%bc%ce%b2%ce%bf%ce%bb%ce%af%ce%b1%cf%83%cf%84%ce%bf%ce%b9/#respond" >0 ΣΧΟΛΙΑ</a></li></ul> <meta itemprop="interactionCount" content="UserComments:0"/></div></div><h3 itemprop="name" class="block-title" style="font-family:TitloiMedium;font-size:1.054em !important;line-height:120%;"><a itemprop="url" href="https://www.makeleio.gr/%ce%b5%cf%80%ce%b9%ce%ba%ce%b1%ce%b9%cf%81%ce%bf%cf%84%ce%b7%cf%84%ce%b1/%ce%88%cf%84%cf%83%ce%b9-%ce%b8%ce%b1-%ce%b5%cf%80%ce%b9%cf%83%cf%84%cf%81%ce%ad%cf%88%ce%bf%cf%85%ce%bd-%ce%bf%ce%b9-%ce%b1%ce%bd%ce%b5%ce%bc%ce%b2%ce%bf%ce%bb%ce%af%ce%b1%cf%83%cf%84%ce%bf%ce%b9/" title="Έτσι θα επιστρέψουν οι ανεμβολίαστοι υγειονομικοί στα νοσοκομεία">Έτσι θα επιστρέψουν οι ανεμβολίαστοι υγειονομικοί στα νοσοκομεία</a></h3></div></div></div><div class="col-sm-4 col-xs-12"><div class="block4-wrap tn-block-wrap tn-category-4 clearfix" itemscope itemtype="http://schema.org/Article"><meta itemprop="author" content = "Athina"><div class="thumb-wrap" style="height:140px;"><a href="https://www.makeleio.gr/%ce%b5%cf%80%ce%b9%ce%ba%ce%b1%ce%b9%cf%81%ce%bf%cf%84%ce%b7%cf%84%ce%b1/%ce%93%ce%b1%ce%bb%ce%bb%ce%af%ce%b1-%ce%95%cf%80%ce%af%ce%b4%ce%bf%ce%bc%ce%b1-%ce%ba%ce%b1%cf%85%cf%83%ce%af%ce%bc%cf%89%ce%bd-100-%ce%b5%cf%85%cf%81%cf%8e-%ce%b3%ce%b9%ce%b1-%ce%bd%ce%b1-%cf%80/" title="Γαλλία: Επίδομα καυσίμων 100 ευρώ για να πηγαίνουν οι ευάλωτοι πολίτες στη δουλειά τους" rel="bookmark" ><span class="post-format"><i class="fa fa-file-text"></i></span><img width="302" height="180"  itemprop="image" src="https://www.makeleio.gr/wp-content/uploads/2022/10/ΚΑΥΣΙΜΑ.jpg" class="attachment-module_medium_thumb size-module_medium_thumb wp-post-image" alt="ΚΑΥΣΙΜΑ" /></a><div class="meta-thumb-wrap"><div class="meta-thumb-element meta-thumb-views"><i class="fa fa-share"></i><span>ΚΟΙΝΟΠΟΙΗΣΗ</span></div></div><!--# meta thumb wrap --><div class="shares-to-social-thumb-wrap share-invisible"><div class="shares-to-social-thumb-inner"><a class="share-to-social" href="http://www.facebook.com/sharer.php?u=https%3A%2F%2Fwww.makeleio.gr%2F%25ce%25b5%25cf%2580%25ce%25b9%25ce%25ba%25ce%25b1%25ce%25b9%25cf%2581%25ce%25bf%25cf%2584%25ce%25b7%25cf%2584%25ce%25b1%2F%25ce%2593%25ce%25b1%25ce%25bb%25ce%25bb%25ce%25af%25ce%25b1-%25ce%2595%25cf%2580%25ce%25af%25ce%25b4%25ce%25bf%25ce%25bc%25ce%25b1-%25ce%25ba%25ce%25b1%25cf%2585%25cf%2583%25ce%25af%25ce%25bc%25cf%2589%25ce%25bd-100-%25ce%25b5%25cf%2585%25cf%2581%25cf%258e-%25ce%25b3%25ce%25b9%25ce%25b1-%25ce%25bd%25ce%25b1-%25cf%2580%2F" onclick="window.open(this.href, 'mywin',
+'left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-facebook color-facebook"></i></a><a class="share-to-social" href="https://twitter.com/intent/tweet?text=%CE%93%CE%B1%CE%BB%CE%BB%CE%AF%CE%B1%3A+%CE%95%CF%80%CE%AF%CE%B4%CE%BF%CE%BC%CE%B1+%CE%BA%CE%B1%CF%85%CF%83%CE%AF%CE%BC%CF%89%CE%BD+100+%CE%B5%CF%85%CF%81%CF%8E+%CE%B3%CE%B9%CE%B1+%CE%BD%CE%B1+%CF%80%CE%B7%CE%B3%CE%B1%CE%AF%CE%BD%CE%BF%CF%85%CE%BD+%CE%BF%CE%B9+%CE%B5%CF%85%CE%AC%CE%BB%CF%89%CF%84%CE%BF%CE%B9+%CF%80%CE%BF%CE%BB%CE%AF%CF%84%CE%B5%CF%82+%CF%83%CF%84%CE%B7+%CE%B4%CE%BF%CF%85%CE%BB%CE%B5%CE%B9%CE%AC+%CF%84%CE%BF%CF%85%CF%82&amp;url=https%3A%2F%2Fwww.makeleio.gr%2F%25ce%25b5%25cf%2580%25ce%25b9%25ce%25ba%25ce%25b1%25ce%25b9%25cf%2581%25ce%25bf%25cf%2584%25ce%25b7%25cf%2584%25ce%25b1%2F%25ce%2593%25ce%25b1%25ce%25bb%25ce%25bb%25ce%25af%25ce%25b1-%25ce%2595%25cf%2580%25ce%25af%25ce%25b4%25ce%25bf%25ce%25bc%25ce%25b1-%25ce%25ba%25ce%25b1%25cf%2585%25cf%2583%25ce%25af%25ce%25bc%25cf%2589%25ce%25bd-100-%25ce%25b5%25cf%2585%25cf%2581%25cf%258e-%25ce%25b3%25ce%25b9%25ce%25b1-%25ce%25bd%25ce%25b1-%25cf%2580%2F&amp;via=Makeleio.gr" onclick="window.open(this.href, 'mywin',
+'left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-twitter color-twitter"></i></a> <a class="share-to-social" href="http://plus.google.com/share?url=https%3A%2F%2Fwww.makeleio.gr%2F%25ce%25b5%25cf%2580%25ce%25b9%25ce%25ba%25ce%25b1%25ce%25b9%25cf%2581%25ce%25bf%25cf%2584%25ce%25b7%25cf%2584%25ce%25b1%2F%25ce%2593%25ce%25b1%25ce%25bb%25ce%25bb%25ce%25af%25ce%25b1-%25ce%2595%25cf%2580%25ce%25af%25ce%25b4%25ce%25bf%25ce%25bc%25ce%25b1-%25ce%25ba%25ce%25b1%25cf%2585%25cf%2583%25ce%25af%25ce%25bc%25cf%2589%25ce%25bd-100-%25ce%25b5%25cf%2585%25cf%2581%25cf%258e-%25ce%25b3%25ce%25b9%25ce%25b1-%25ce%25bd%25ce%25b1-%25cf%2580%2F" onclick="window.open(this.href, 'mywin',
+'left=50,top=50,width=600,height=350,toolbar=0'); return false;"><i class="fa fa-google-plus color-google"></i></a></div></div></div><!--#thumb wrap --><div class="block4-content"><div class="block4-meta-tag"><div class="block4-left-meta-tag"><ul class="post-categories"><li><a href="https://www.makeleio.gr/%ce%b5%cf%80%ce%b9%ce%ba%ce%b1%ce%b9%cf%81%ce%bf%cf%84%ce%b7%cf%84%ce%b1/" title="ΕΠΙΚΑΙΡΟΤΗΤΑ">ΕΠΙΚΑΙΡΟΤΗΤΑ</a></li></ul><ul class="post-meta"><li class="date-post-meta"><span></span><time itemprop="dateCreated" datetime="2022-12-07T10:51:10+02:00" >07|12|2022 10:51</time></li></ul> <meta itemprop="interactionCount" content="UserComments:0"/></div><div class="block4-right-meta-tag"><ul class="post-meta"> <li class="comment-post-meta"><span>/</span><a href="https://www.makeleio.gr/%ce%b5%cf%80%ce%b9%ce%ba%ce%b1%ce%b9%cf%81%ce%bf%cf%84%ce%b7%cf%84%ce%b1/%ce%93%ce%b1%ce%bb%ce%bb%ce%af%ce%b1-%ce%95%cf%80%ce%af%ce%b4%ce%bf%ce%bc%ce%b1-%ce%ba%ce%b1%cf%85%cf%83%ce%af%ce%bc%cf%89%ce%bd-100-%ce%b5%cf%85%cf%81%cf%8e-%ce%b3%ce%b9%ce%b1-%ce%bd%ce%b1-%cf%80/#respond" >0 ΣΧΟΛΙΑ</a></li></ul> <meta itemprop="interactionCount" content="UserComments:0"/></div></div><h3 itemprop="name" class="block-title" style="font-family:TitloiMedium;font-size:1.054em !important;line-height:120%;"><a itemprop="url" href="https://www.makeleio.gr/%ce%b5%cf%80%ce%b9%ce%ba%ce%b1%ce%b9%cf%81%ce%bf%cf%84%ce%b7%cf%84%ce%b1/%ce%93%ce%b1%ce%bb%ce%bb%ce%af%ce%b1-%ce%95%cf%80%ce%af%ce%b4%ce%bf%ce%bc%ce%b1-%ce%ba%ce%b1%cf%85%cf%83%ce%af%ce%bc%cf%89%ce%bd-100-%ce%b5%cf%85%cf%81%cf%8e-%ce%b3%ce%b9%ce%b1-%ce%bd%ce%b1-%cf%80/" title="Γαλλία: Επίδομα καυσίμων 100 ευρώ για να πηγαίνουν οι ευάλωτοι πολίτες στη δουλειά τους">Γαλλία: Επίδομα καυσίμων 100 ευρώ για να πηγαίνουν οι ευάλωτοι πολίτες στη...</a></h3></div></div></div></div><!--#row fluid --></div></div><div id="comments" class="comments-area">
+            <div class="comment-title widget-title">
+            <h3>
+                2 Σχόλια            </h3>
+        </div>
+        
+        <ol class="comment-list clearfix">
+            		<li id="comment-3298890" class="comment even thread-even depth-1">
+			<article id="div-comment-3298890" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+												Ο/Η <b class="fn">καρολοσ τησ νορβηγιασ</b> <span class="says">λέει:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://www.makeleio.gr/%ce%b5%cf%80%ce%b9%ce%ba%ce%b1%ce%b9%cf%81%ce%bf%cf%84%ce%b7%cf%84%ce%b1/%ce%a0%ce%b1%ce%bb%ce%b1%ce%b9%cf%8c-%ce%a6%ce%ac%ce%bb%ce%b7%cf%81%ce%bf-%ce%91%ce%bd%ce%b8%cf%81%cf%89%cf%80%ce%bf%ce%ba%cf%85%ce%bd%ce%b7%ce%b3%ce%b7%cf%84%cf%8c-%ce%b3%ce%b9%ce%b1-%cf%84%ce%bf/#comment-3298890">
+							<time datetime="2022-10-27T16:18:23+03:00">
+								27|10|2022 στις 16:18							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>να βγαλουν τα παγκακια λεει απο το παρκο.  αει καλα</p>
+				</div><!-- .comment-content -->
+
+							</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-3298715" class="comment odd alt thread-odd thread-alt depth-1">
+			<article id="div-comment-3298715" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+												Ο/Η <b class="fn">Όλοι σφυρίζουν αδιάφορα.</b> <span class="says">λέει:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="https://www.makeleio.gr/%ce%b5%cf%80%ce%b9%ce%ba%ce%b1%ce%b9%cf%81%ce%bf%cf%84%ce%b7%cf%84%ce%b1/%ce%a0%ce%b1%ce%bb%ce%b1%ce%b9%cf%8c-%ce%a6%ce%ac%ce%bb%ce%b7%cf%81%ce%bf-%ce%91%ce%bd%ce%b8%cf%81%cf%89%cf%80%ce%bf%ce%ba%cf%85%ce%bd%ce%b7%ce%b3%ce%b7%cf%84%cf%8c-%ce%b3%ce%b9%ce%b1-%cf%84%ce%bf/#comment-3298715">
+							<time datetime="2022-10-27T12:35:02+03:00">
+								27|10|2022 στις 12:35							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Στο παρκάκι στον Άλιμο στην Αγίας Άννης (στο αδιέξοδο) ακούμε ανά τακτά χρονικά διαστήματα &#8216;βοήθεια&#8217;. Μαζεύεται κάθε καρυδιάς καρύδι. Διαμαρτυρηθήκαμε στο δήμο και ο αντιδήμαρχος μάς είπα ότι το παρκάκι έχει αναβαθμίσει την περιοχή. Δεν λέει εννοείται, ότι έχει απλώς αναβαθμίσει της τσέπες τους καθώς τα πήρανε από την κατασκευή που έχουν κάνει και από τα όργανα γυμναστικής που έχουν τοποθετήσει. Οι κάτοικοι ζητάμε να ξηλώσει τα παγκάκια μπας και απαλλαγούμε αλλά εκείνος έστειλε πρόσφατα και τα βάψανε. Μόλις πάρεις το 100 και πεις οτι κάποιος ουρλιάζει σου λένε &#8216;στο παρκάκι στο αδιέξοδο?&#8217;  Θέλω να πω ότι απόπειρες βιασμού γίνοται σε όλη την περιοχή, η αστυνομία γνωρίζει αλλά δεν στέλνει κανέναν να ελέγξει ποτέ. Υπάρχει σε όλα τα Ν. προάστια τεράστιο πρόβλημα αλλά όλοι κάνουν το παγώνι.</p>
+				</div><!-- .comment-content -->
+
+							</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+        </ol><!-- .comment-list -->
+
+        
+    
+            <p class="no-comments">Comments are closed.</p>
+            
+</div><!-- #comments -->
+</article><!--#end article-->    <div id="sidebar" class="tn-sidebar-wrap col-sm-4 col-xs-12" role="complementary" itemscope="itemscope" itemtype="http://schema.org/WPSideBar">
+        <div class="tn-sidebar-sticky">
+    <div class="widget-area">
+        <aside id="tn_text-20" class="sidebar-widget widget text-widget">        <div class="text-content-wrapper" style="text-align: left">
+            <p><a href="https://eshop.makeleio.gr/product-category/t-shirt/" target="_blank" 
+onClick="_gaq.push(['_trackEvent', 't-shirt', 'Click', 't-shirt',1,true])"><br />
+<img src="https://www.makeleio.gr/wp-content/uploads/2022/05/e_shop_T-Shirt_300X250.jpg"></a></p>
+<p><a href="https://myfotou.gr/" target="_blank" 
+onClick="_gaq.push(['_trackEvent', 'Fotou', 'Click', 'Fotou',1,true])"><br />
+<img src="https://www.makeleio.gr/wp-content/uploads/2022/10/fotou-2.jpg"></a></p>
+<p><a href="https://www.happines.gr/" target="_blank" 
+onClick="_gaq.push(['_trackEvent', 'Happines', 'Click', 'Happines',1,true])"><br />
+<img src="https://www.makeleio.gr/wp-content/uploads/2022/10/happines-1.jpg"></a></p>
+<p><a href="https://members.makeleio.gr/" target="_blank" 
+onClick="_gaq.push(['_trackEvent', 'Sindromi', 'Click', 'Sindromi',1,true])"><br />
+<img src="https://www.makeleio.gr/wp-content/uploads/2020/06/efimerida-makeleio-se-pdf.jpg"></a></p>
+<p><a href="https://eshop.makeleio.gr/" target="_blank" ><br />
+<img src="https://www.makeleio.gr/wp-content/uploads/2021/11/makeleio-eshop-mobile.jpg"></a></p>
+<div id='ros_artRHS_A' >
+    <script type='text/javascript'>
+      googletag.cmd.push(function() { googletag.display('ros_artRHS_A'); });
+    </script>
+  </div>
+<div id='ros_artRHS_B' >
+    <script type='text/javascript'>
+      googletag.cmd.push(function() { googletag.display('ros_artRHS_B'); });
+    </script>
+  </div>
+<p><div class="video-wrap thumb-wrap"><iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fmakeleionew%2F&#038;tabs&#038;width=300&#038;height=214&#038;small_header=false&#038;adapt_container_width=true&#038;hide_cover=false&#038;show_facepile=true&#038;appId" width="300" height="214" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe></div></p>
+        </div>
+        </aside>    </div><!--# widget area-->
+</div><!-- #sidebar sticky -->
+    </div><!-- #blog sidebar -->
+
+</div><!-- #row -->
+</div></div><footer id="footer" class="clearfix">
+	<div class="tn-container">
+		<div class="row footer-sidebar-wrap clearfix">
+            <div class="footer-sidebar widget-area col-sm-4 col-xs-12" role="complementary">
+            <aside id="tn_text-16" class="footer-widget widget text-widget footerblock">        <div class="text-content-wrapper" style="text-align: left">
+            <p><img src="https://www.makeleio.gr/wp-content/uploads/2016/04/foot1.png" alt="Makeleio" style="width:250px;height:60px;margin-top:20px;"></p>
+        </div>
+        </aside>        </div>
+    
+            <div class="footer-sidebar widget-area  col-sm-4 col-xs-12" role="complementary">
+            <aside id="tn_text-17" class="footer-widget widget text-widget footerblock">        <div class="text-content-wrapper" style="text-align: left">
+            <p><img src="https://www.makeleio.gr/wp-content/uploads/2016/04/foot2.png" alt="Makeleio" style="width:330px;height:53px;margin-top:20px;"></p>
+        </div>
+        </aside>        </div>
+    
+            <div class="footer-sidebar widget-area col-sm-4 col-xs-12" role="complementary">
+            <aside id="tn_text-18" class="footer-widget widget text-widget footerblock">        <div class="text-content-wrapper" style="text-align: left">
+            <p><img src="https://www.makeleio.gr/banners/footemail.png" alt="Makeleio" style="width:253px;height:52px;margin-top:21px;"></p>
+        </div>
+        </aside>        </div>
+    </div><!--#footer sidebar -->	</div><!-- #tn container -->
+		<div class="copyright-wrap">
+			<div class="tn-container">
+                				<div class="copyright-inner clearfix">
+                    <div class="copyright">Copyright © 2016 Makeleio.gr. Designed by <a href="http://activedialer.activesolutions.gr/#contact">ActiveSolutions</a></div><!--copy right --><div class="menu-footer-wrap"><ul id="menu-top-menu" class="menu-footer"><li id="menu-item-592923" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-592923"><a href="https://www.makeleio.gr">Home</a></li>
+<li id="menu-item-592924" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-592924"><a href="https://www.makeleio.gr/%cf%8c%cf%81%ce%bf%ce%b9-%cf%87%cf%81%ce%ae%cf%83%ce%b7%cf%82/">Όροι Χρήσης</a></li>
+<li id="menu-item-592925" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-592925"><a href="https://www.makeleio.gr/%cf%80%ce%bf%ce%bb%ce%b9%cf%84%ce%b9%ce%ba%ce%ae-%ce%b1%cf%83%cf%86%ce%b1%ce%bb%ce%b5%ce%af%ce%b1%cf%82/">Πολιτική Ασφαλείας</a></li>
+</ul></div>				</div><!--#copyright inner -->
+                			</div><!--#tn-container -->
+		</div><!--#copy right wrap -->
+</footer><!--#footer -->
+</div> <!-- #tn main container -->
+</div><!--#main page wrap-->
+<script type='text/javascript' src='https://www.makeleio.gr/wp-content/themes/maxblog/lib/extend-lib/js/extend-lib.js?ver=9.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var tn_to_top = "1";
+var tn_smooth_display = [""];
+var tn_sticky_navigation = "1";
+var tn_sidebar_sticky_enable = "1";
+var tn_ticker_title = "\u03a1\u039f\u0397 \u0395\u0399\u0394\u0397\u03a3\u0395\u03a9\u039d";
+var tn_rtl = [""];
+var tn_smooth_scroll_data = "1";
+var tn_close_mobile_menu_text = "\u039a\u039b\u0395\u0399\u03a3\u0399\u039c\u039f";
+var tn_single_image_popup = "1";
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://www.makeleio.gr/wp-content/themes/maxblog/assets/js/tn-script.min.js?ver=9.1'></script>
+<script type='text/javascript' src='https://www.makeleio.gr/wp-content/themes/maxblog/inc/tn-ajax/js/module-ajax.js?ver=4.6-beta4-38142'></script>
+<script type='text/javascript' src='https://www.makeleio.gr/wp-includes/js/wp-embed.min.js?ver=4.6-beta4-38142'></script>
+
+    <style>
+.qc-cmp-table-header {
+background:unset !important;
+}
+
+.qc-cmp-table-row {
+background:unset !important;
+
+}
+    </style>
+	
+
+
+
+
+
+</body><!--#body -->
+</html><!--#html -->
+
