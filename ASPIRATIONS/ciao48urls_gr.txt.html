@@ -59,12 +59,13 @@
 
 var pageType = 'single',
     isLongForm = '',
+    isBestHouse = false,
     isTributePage = false,
+    isRealEstateCategory = false,
     singlePostTotalInlineAds = '2',
     gptAdSlots = [],
     mappingSizes = [],
     ocm_page_type = pageType == 'home' ? 'home' : ( pageType == 'term' ? 'Category' : ( pageType == 'single' ? 'Article' : '' ) );
-
 
 var getSlots = function( mappingSizes ){
 
@@ -109,39 +110,65 @@ var getSlots = function( mappingSizes ){
   googletag.defineSlot('/150500112/Prestitial', [1, 1], 'ros_prestitial').addService(googletag.pubads());
 
 
-  
+  if( isRealEstateCategory ){
+
+    gptAdSlots.push( googletag.defineSlot('/150500112/Mobile_1', [ [300,250],[300,600] ], 'mobile_1_ad' )
+            .defineSizeMapping( mappingSizes['mapping4'] )
+            .addService(googletag.pubads()) );
+
+      gptAdSlots.push( googletag.defineSlot('/150500112/Mobile_2', [ [300,250],[300,600] ], 'mobile_2_ad' )
+              .defineSizeMapping( mappingSizes['mapping4'] )
+              .addService(googletag.pubads()) );
+
+      gptAdSlots.push(googletag.defineSlot( '/150500112/Side_1', [ [300,250],[300,600] ], 'side_1_ad' )
+             .defineSizeMapping( mappingSizes['mapping6'] )
+             .addService(googletag.pubads()));
+
+      gptAdSlots.push(googletag.defineSlot( '/150500112/Side_2', [ [300,250],[300,600] ], 'side_2_ad' )
+             .defineSizeMapping( mappingSizes['mapping6'] )
+             .addService(googletag.pubads()));
+
+
+    return gptAdSlots;
+
+  }
+
+
+
 
   // gptAdSlots.push(googletag.defineSlot( '/150500112/noupou_rds_HP_pushdown_billboard', [ [1360, 200] ], 'pushdown_billboard_ad' )
   //             .addService(googletag.pubads()));
   //
-
-  gptAdSlots.push( googletag.defineSlot('/150500112/Mobile_1', [ [300,250],[300,600] ], 'mobile_1_ad' )
-           .defineSizeMapping( mappingSizes['mapping4'] )
-           .addService(googletag.pubads()) );
+    if( !isLongForm ) {
 
 
-  // if( pageType != 'guide_archive' ){
-
-    // gptAdSlots.push(googletag.defineSlot( '/150500112/Headbanner', [ [970,90],[970,250],[728,90] ], 'headbanner_ad' )
-    //            .defineSizeMapping( mappingSizes['mapping1'] )
-    //            .addService(googletag.pubads()));
-
-  // }
-
-  // if( pageType != 'single' ){
-
-    gptAdSlots.push( googletag.defineSlot('/150500112/Mobile_2', [ [300,250],[300,600] ], 'mobile_2_ad' )
-             .defineSizeMapping( mappingSizes['mapping4'] )
-             .addService(googletag.pubads()) );
-
-    gptAdSlots.push( googletag.defineSlot('/150500112/Mobile_3', [ [300,250],[300,600] ], 'mobile_3_ad' )
-             .defineSizeMapping( mappingSizes['mapping4'] )
-             .addService(googletag.pubads()) );
-  // }
+        gptAdSlots.push(googletag.defineSlot('/150500112/Mobile_1', [[300, 250], [300, 600]], 'mobile_1_ad')
+            .defineSizeMapping(mappingSizes['mapping4'])
+            .addService(googletag.pubads()));
 
 
+        // if( pageType != 'guide_archive' ){
 
-  if( [ 'home', 'guide_archive', 'single_guide' ].indexOf( pageType ) !== -1 ){
+        // gptAdSlots.push(googletag.defineSlot( '/150500112/Headbanner', [ [970,90],[970,250],[728,90] ], 'headbanner_ad' )
+        //            .defineSizeMapping( mappingSizes['mapping1'] )
+        //            .addService(googletag.pubads()));
+
+        // }
+
+        // if( pageType != 'single' ){
+
+        gptAdSlots.push(googletag.defineSlot('/150500112/Mobile_2', [[300, 250], [300, 600]], 'mobile_2_ad')
+            .defineSizeMapping(mappingSizes['mapping4'])
+            .addService(googletag.pubads()));
+
+        gptAdSlots.push(googletag.defineSlot('/150500112/Mobile_3', [[300, 250], [300, 600]], 'mobile_3_ad')
+            .defineSizeMapping(mappingSizes['mapping4'])
+            .addService(googletag.pubads()));
+        // }
+    }
+
+
+  if( [ 'home', 'guide_archive', 'single_guide' ].indexOf( pageType ) !== -1 || isLongForm || isBestHouse ){
 
     gptAdSlots.push(googletag.defineSlot( '/150500112/Homepage_Horizontal_1', [ [970,90],[970,250],[728,90] ], 'homepage_horizontal_1_ad' )
                  .defineSizeMapping( mappingSizes['mapping1'] )
@@ -153,9 +180,8 @@ var getSlots = function( mappingSizes ){
 
   }
 
-  // all except guide: archive / single
-  if( [ 'term', 'single', 'home' ].indexOf( pageType ) !== -1 ){
-
+  // all except guide: archive / single and not longform / besthouse
+  if( [ 'term', 'single', 'home' ].indexOf( pageType ) !== -1 && !isLongForm && !isBestHouse ){
 
     gptAdSlots.push(googletag.defineSlot( '/150500112/Side_1', [ [300,250],[300,600] ], 'side_1_ad' )
              .defineSizeMapping( mappingSizes['mapping6'] )
@@ -167,7 +193,7 @@ var getSlots = function( mappingSizes ){
   }
 
 
-  if( pageType == 'term' || pageType == 'single' || pageType == 'home' ){
+  if( ( pageType == 'term' || pageType == 'single' || pageType == 'home' ) && !isLongForm && !isBestHouse ){
 
       gptAdSlots.push(googletag.defineSlot( '/150500112/Dekstop_Incontent_1', [ [300,250] ], 'desktop_incontent_1_ad' )
                .defineSizeMapping( mappingSizes['mapping2'] )
@@ -183,17 +209,11 @@ var getSlots = function( mappingSizes ){
   }
 
 
-  if( pageType == 'single' && singlePostTotalInlineAds > 0 ){
+  if( pageType == 'single' && singlePostTotalInlineAds > 0 && !isLongForm && !isBestHouse ){
 
-    // gptAdSlots.push( googletag.defineSlot( '/150500112/Mobile_2', [ [300,250],[300,600] ], 'mobile_2_ad' )
-    //      .defineSizeMapping( mappingSizes['mapping4'] )
-    //      .addService(googletag.pubads()) );
-    //
    gptAdSlots.push(googletag.defineSlot( '/150500112/Dekstop_Incontent_2', [ [300,250] ], 'desktop_incontent_2_ad' )
             .defineSizeMapping( mappingSizes['mapping2'] )
             .addService(googletag.pubads()));
-
-
   }
 
   return gptAdSlots;
@@ -259,7 +279,7 @@ googletag.pubads().setTargeting("lang","el");    googletag.enableServices();
 
 
  <script async src="//patgsrv.com/c/nou-pou.gr.js"></script>
-
+ 
 
 
         <!-- Meta Pixel Code -->
@@ -311,8 +331,8 @@ googletag.pubads().setTargeting("lang","el");    googletag.enableServices();
 body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
 </style>
 <link rel='stylesheet' id='cff-css'  href='https://www.nou-pou.gr/wp-content/plugins/custom-facebook-feed-pro/assets/css/cff-style.css?ver=4.0.3' type='text/css' media='all' />
-<link rel='stylesheet' id='tempstyles-css'  href='https://www.nou-pou.gr/wp-content/themes/noupou_rebranding/style.css?v=1669323884&#038;ver=6.0.2' type='text/css' media='all' />
-<link rel='stylesheet' id='mainstyle-css'  href='https://www.nou-pou.gr/wp-content/themes/noupou_rebranding/assets/css/style.css?v=1669323884&#038;ver=6.0.2' type='text/css' media='all' />
+<link rel='stylesheet' id='tempstyles-css'  href='https://www.nou-pou.gr/wp-content/themes/noupou_rebranding/style.css?v=1670401612&#038;ver=6.0.2' type='text/css' media='all' />
+<link rel='stylesheet' id='mainstyle-css'  href='https://www.nou-pou.gr/wp-content/themes/noupou_rebranding/assets/css/style.css?v=1670401612&#038;ver=6.0.2' type='text/css' media='all' />
 <script type='text/javascript' src='https://www.nou-pou.gr/wp-includes/js/jquery/jquery.min.js?ver=3.6.0' id='jquery-core-js'></script>
 <script type='text/javascript' src='https://www.nou-pou.gr/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
 <script type='text/javascript' id='wpml-cookie-js-extra'>
@@ -355,7 +375,7 @@ var cfflinkhashtags = "false";
       
       <div class="global_wrapper">
 
-        
+            
 
 
 
@@ -1396,33 +1416,36 @@ var cfflinkhashtags = "false";
         <div class="one_col_posts_list__row wrapper">
 
           
-<article class="article">
+<article class="article post_type__post">
 
   <div class="article--medium">
 
             <figure class="bg_post__image">
 
-          <div class="inner">
-                          <a title="Τα σουβλάκια των 3Β που αξίζει να δοκιμάσεις" class="bg_container lazyload" href="https://www.nou-pou.gr/guides/ta-souvlakia-ton-3v-pou-axizei-na-dokimaseis/"
-                  data-bg="https://www.nou-pou.gr/wp-content/uploads/2022/02/souvlaki-zaxos-990x770.jpg" >
-              </a>
+		
+        <div class="inner">
+                              <a title="Τα Χριστουγεννιάτικα Bazaars της Αμυμώνης" class="bg_container lazyload" href="https://www.nou-pou.gr/life/ta-xristougenniatika-bazaars-tis-amimonis/"
+                    data-bg="https://www.nou-pou.gr/wp-content/uploads/2022/12/dwra-xristougenna2--990x770.jpg" >
+                </a>
                       </div>
 
       </figure>
       
       <div class="post__content">
 
+          <!-- Caption & interviewee name -->
                 <div class="caption">
-            <a title="Noupou Guides" href="/guides">
-              GUIDES
-            </a>
-          </div>
+            <a title="Life" href="https://www.nou-pou.gr/life/">
+                LIFE            </a>
+        </div>
         
         <h3 class="post__title">
-          <a title="Τα σουβλάκια των 3Β που αξίζει να δοκιμάσεις" href="https://www.nou-pou.gr/guides/ta-souvlakia-ton-3v-pou-axizei-na-dokimaseis/">
-            Τα σουβλάκια των 3Β που αξίζει να δοκιμάσεις            </a>
+            <a title="Τα Χριστουγεννιάτικα Bazaars της Αμυμώνης" href="https://www.nou-pou.gr/life/ta-xristougenniatika-bazaars-tis-amimonis/">
+              Τα Χριστουγεννιάτικα Bazaars της Αμυμώνης            </a>
         </h3>
 
+        <!-- latest_sponsor -->
+		
       </div>
   </div>
 
@@ -1430,33 +1453,36 @@ var cfflinkhashtags = "false";
   
 </article>
 
-<article class="article">
+<article class="article post_type__post">
 
   <div class="article--medium">
 
             <figure class="bg_post__image">
 
-          <div class="inner">
-                          <a title="GABBA: To denim brand που αγαπούν οι Έλληνες" class="bg_container lazyload" href="https://www.nou-pou.gr/style-beauty/gabba-to-denim-brand-pou-agapoun-oi-ellines/"
-                  data-bg="https://www.nou-pou.gr/wp-content/uploads/2022/11/gabba4-990x770.jpg" >
-              </a>
+		
+        <div class="inner">
+                              <a title="Τρώμε μαμαδίστικα φαγητά στο Οβελιστήριον Γνήσιον" class="bg_container lazyload" href="https://www.nou-pou.gr/food-drink/taverna/trome-mamadistika-fagita-sto-ovelistirion-gnision/"
+                    data-bg="https://www.nou-pou.gr/wp-content/uploads/2022/11/gnisio-990x770.jpg" >
+                </a>
                       </div>
 
       </figure>
       
       <div class="post__content">
 
-                  <div class="caption">
-            <a title="Style &amp; Beauty" href="https://www.nou-pou.gr/style-beauty/">
-                  STYLE &AMP; BEAUTY              </a>
-          </div>
-
-          
+          <!-- Caption & interviewee name -->
+                <div class="caption">
+            <a title="Taverna" href="https://www.nou-pou.gr/food-drink/taverna/">
+                TAVERNA            </a>
+        </div>
+        
         <h3 class="post__title">
-          <a title="GABBA: To denim brand που αγαπούν οι Έλληνες" href="https://www.nou-pou.gr/style-beauty/gabba-to-denim-brand-pou-agapoun-oi-ellines/">
-            GABBA: To denim brand που αγαπούν οι Έλληνες            </a>
+            <a title="Τρώμε μαμαδίστικα φαγητά στο Οβελιστήριον Γνήσιον" href="https://www.nou-pou.gr/food-drink/taverna/trome-mamadistika-fagita-sto-ovelistirion-gnision/">
+              Τρώμε μαμαδίστικα φαγητά στο Οβελιστήριον Γνήσιον            </a>
         </h3>
 
+        <!-- latest_sponsor -->
+		
       </div>
   </div>
 
@@ -1464,33 +1490,36 @@ var cfflinkhashtags = "false";
   
 </article>
 
-<article class="article">
+<article class="article post_type__post">
 
   <div class="article--medium">
 
             <figure class="bg_post__image">
 
-          <div class="inner">
-                          <a title="Maestro: Τι θα δούμε στο επεισόδιο της Πέμπτης 24/11" class="bg_container lazyload" href="https://www.nou-pou.gr/culture/tileorasi/maestro-ti-tha-doume-sto-epeisodio-tis-pemptis-24-11/"
-                  data-bg="https://www.nou-pou.gr/wp-content/uploads/2022/09/maestro-mega-4-990x683.jpg" >
-              </a>
+		
+        <div class="inner">
+                              <a title="Η Χριστουγεννιάτικη Ιστορία του Καρόλου Ντίκενς γίνεται ροκ μιούζικαλ στο Μέγαρο" class="bg_container lazyload" href="https://www.nou-pou.gr/culture/theatro/i-xristougenniatiki-istoria-tou-karolou-ntikens-ginetai-rok-miouzikal-sto-megaro/"
+                    data-bg="https://www.nou-pou.gr/wp-content/uploads/2022/12/Scrooge_Panos_Mouzourakis_FF_06520-3-933x14001-1.jpg" >
+                </a>
                       </div>
 
       </figure>
       
       <div class="post__content">
 
-                  <div class="caption">
-            <a title="Τηλεόραση" href="https://www.nou-pou.gr/culture/tileorasi/">
-                  ΤΗΛΕΟΡΑΣΗ              </a>
-          </div>
-
-          
+          <!-- Caption & interviewee name -->
+                <div class="caption">
+            <a title="Θέατρο" href="https://www.nou-pou.gr/culture/theatro/">
+                ΘΕΑΤΡΟ            </a>
+        </div>
+        
         <h3 class="post__title">
-          <a title="Maestro: Τι θα δούμε στο επεισόδιο της Πέμπτης 24/11" href="https://www.nou-pou.gr/culture/tileorasi/maestro-ti-tha-doume-sto-epeisodio-tis-pemptis-24-11/">
-            Maestro: Τι θα δούμε στο επεισόδιο της Πέμπτης 24/11            </a>
+            <a title="Η Χριστουγεννιάτικη Ιστορία του Καρόλου Ντίκενς γίνεται ροκ μιούζικαλ στο Μέγαρο" href="https://www.nou-pou.gr/culture/theatro/i-xristougenniatiki-istoria-tou-karolou-ntikens-ginetai-rok-miouzikal-sto-megaro/">
+              Η Χριστουγεννιάτικη Ιστορία του Καρόλου Ντίκενς γίνεται ροκ μιούζικαλ στο Μέγαρο            </a>
         </h3>
 
+        <!-- latest_sponsor -->
+		
       </div>
   </div>
 
@@ -1498,33 +1527,36 @@ var cfflinkhashtags = "false";
   
 </article>
 
-<article class="article">
+<article class="article post_type__post">
 
   <div class="article--medium">
 
             <figure class="bg_post__image">
 
-          <div class="inner">
-                          <a title="International Metropolitan School: Ένα Δημοτικό σχολείο με επίκεντρο την έμπνευση" class="bg_container lazyload" href="https://www.nou-pou.gr/kids/ekpaidefsi/international-metropolitan-school-ena-dimotiko-sxoleio-me-epikentro-tin-empnefsi/"
-                  data-bg="https://www.nou-pou.gr/wp-content/uploads/2022/09/international-metropolitan-school-990x770.jpg" >
-              </a>
+		
+        <div class="inner">
+                              <a title="Αργυρούπολη: Ποινική δίωξη στον συνταγματάρχη για τις ληστείες σε τράπεζες" class="bg_container lazyload" href="https://www.nou-pou.gr/newsroom/astinomiko/argiroupoli-poiniki-dioxi-ston-sintagmatarxi-gia-tis-listeies-se-trapezes/"
+                    data-bg="https://www.nou-pou.gr/wp-content/uploads/2022/12/palaio-faliro-listis-1200x641-1-990x641.png" >
+                </a>
                       </div>
 
       </figure>
       
       <div class="post__content">
 
-                  <div class="caption">
-            <a title="Εκπαίδευση" href="https://www.nou-pou.gr/kids/ekpaidefsi/">
-                  ΕΚΠΑΙΔΕΥΣΗ              </a>
-          </div>
-
-          
+          <!-- Caption & interviewee name -->
+                <div class="caption">
+            <a title="Αστυνομικό" href="https://www.nou-pou.gr/newsroom/astinomiko/">
+                ΑΣΤΥΝΟΜΙΚΟ            </a>
+        </div>
+        
         <h3 class="post__title">
-          <a title="International Metropolitan School: Ένα Δημοτικό σχολείο με επίκεντρο την έμπνευση" href="https://www.nou-pou.gr/kids/ekpaidefsi/international-metropolitan-school-ena-dimotiko-sxoleio-me-epikentro-tin-empnefsi/">
-            International Metropolitan School: Ένα Δημοτικό σχολείο με επίκεντρο την έμπνευση            </a>
+            <a title="Αργυρούπολη: Ποινική δίωξη στον συνταγματάρχη για τις ληστείες σε τράπεζες" href="https://www.nou-pou.gr/newsroom/astinomiko/argiroupoli-poiniki-dioxi-ston-sintagmatarxi-gia-tis-listeies-se-trapezes/">
+              Αργυρούπολη: Ποινική δίωξη στον συνταγματάρχη για τις ληστείες σε τράπεζες            </a>
         </h3>
 
+        <!-- latest_sponsor -->
+		
       </div>
   </div>
 
@@ -1532,33 +1564,36 @@ var cfflinkhashtags = "false";
   
 </article>
 
-<article class="article">
+<article class="article post_type__post">
 
   <div class="article--medium">
 
             <figure class="bg_post__image">
 
-          <div class="inner">
-                          <a title="Lamda Development: Ξεπέρασε το 1 δισ. η αξία των εμπορικών κέντρων" class="bg_container lazyload" href="https://www.nou-pou.gr/real-estate/lamda-development-xeperase-to-1-dis-i-axia-ton-emporikon-kentron/"
-                  data-bg="https://www.nou-pou.gr/wp-content/uploads/2022/11/272738412_10158206275551857_4897845658013243987_n-990x770.jpg" >
-              </a>
+		
+        <div class="inner">
+                              <a title="ΑΟ Τερψιθέας Γλυφάδας: Η ιστορία και οι άνθρωποι της ομάδας" class="bg_container lazyload" href="https://www.nou-pou.gr/stories/south-stories/ao-terpsitheas-glifadas-i-istoria-kai-oi-anthropoi-tis-omadas/"
+                    data-bg="https://www.nou-pou.gr/wp-content/uploads/2022/11/DSC_4327-990x770.jpg" >
+                </a>
                       </div>
 
       </figure>
       
       <div class="post__content">
 
-                  <div class="caption">
-            <a title="Real Estate" href="https://www.nou-pou.gr/real-estate/">
-                  REAL ESTATE              </a>
-          </div>
-
-          
+          <!-- Caption & interviewee name -->
+                <div class="caption">
+            <a title="South Stories" href="https://www.nou-pou.gr/stories/south-stories/">
+                SOUTH STORIES            </a>
+        </div>
+        
         <h3 class="post__title">
-          <a title="Lamda Development: Ξεπέρασε το 1 δισ. η αξία των εμπορικών κέντρων" href="https://www.nou-pou.gr/real-estate/lamda-development-xeperase-to-1-dis-i-axia-ton-emporikon-kentron/">
-            Lamda Development: Ξεπέρασε το 1 δισ. η αξία των εμπορικών κέντρων            </a>
+            <a title="ΑΟ Τερψιθέας Γλυφάδας: Η ιστορία και οι άνθρωποι της ομάδας" href="https://www.nou-pou.gr/stories/south-stories/ao-terpsitheas-glifadas-i-istoria-kai-oi-anthropoi-tis-omadas/">
+              ΑΟ Τερψιθέας Γλυφάδας: Η ιστορία και οι άνθρωποι της ομάδας            </a>
         </h3>
 
+        <!-- latest_sponsor -->
+		
       </div>
   </div>
 
@@ -1566,33 +1601,36 @@ var cfflinkhashtags = "false";
   
 </article>
 
-<article class="article">
+<article class="article post_type__post">
 
   <div class="article--medium">
 
             <figure class="bg_post__image">
 
-          <div class="inner">
-                          <a title="Ο ΣΠΑΖ μας προσκαλεί στο 35ο Χριστουγεννιάτικο bazaar στη Γλυφάδα" class="bg_container lazyload" href="https://www.nou-pou.gr/pets/o-spaz-mas-proskalei-sto-35o-xristougenniatiko-bazaar-tou-sti-glifada/"
-                  data-bg="https://www.nou-pou.gr/wp-content/uploads/2018/05/o-skylos-den-erxetai-me-karta-allaghs-4.jpg" >
-              </a>
+		
+        <div class="inner">
+                              <a title="Όλος ο κόσμος του καφέ στα Coffee Business Awards 2022" class="bg_container lazyload" href="https://www.nou-pou.gr/food-drink/gia-kafe/olos-o-kosmos-tou-kafe-sta-coffee-business-awards-2022/"
+                    data-bg="https://www.nou-pou.gr/wp-content/uploads/2022/12/COBA22_TIMITIKES-990x770.jpg" >
+                </a>
                       </div>
 
       </figure>
       
       <div class="post__content">
 
-                  <div class="caption">
-            <a title="Pets" href="https://www.nou-pou.gr/pets/">
-                  PETS              </a>
-          </div>
-
-          
+          <!-- Caption & interviewee name -->
+                <div class="caption">
+            <a title="Καφές" href="https://www.nou-pou.gr/food-drink/gia-kafe/">
+                ΚΑΦΕΣ            </a>
+        </div>
+        
         <h3 class="post__title">
-          <a title="Ο ΣΠΑΖ μας προσκαλεί στο 35ο Χριστουγεννιάτικο bazaar στη Γλυφάδα" href="https://www.nou-pou.gr/pets/o-spaz-mas-proskalei-sto-35o-xristougenniatiko-bazaar-tou-sti-glifada/">
-            Ο ΣΠΑΖ μας προσκαλεί στο 35ο Χριστουγεννιάτικο bazaar στη Γλυφάδα            </a>
+            <a title="Όλος ο κόσμος του καφέ στα Coffee Business Awards 2022" href="https://www.nou-pou.gr/food-drink/gia-kafe/olos-o-kosmos-tou-kafe-sta-coffee-business-awards-2022/">
+              Όλος ο κόσμος του καφέ στα Coffee Business Awards 2022            </a>
         </h3>
 
+        <!-- latest_sponsor -->
+		
       </div>
   </div>
 
@@ -1600,33 +1638,36 @@ var cfflinkhashtags = "false";
   
 </article>
 
-<article class="article">
+<article class="article post_type__post">
 
   <div class="article--medium">
 
             <figure class="bg_post__image">
 
-          <div class="inner">
-                          <a title="Ελληνικό: Πουλήθηκαν ήδη 9 στις 10 κατοικίες και οικόπεδα" class="bg_container lazyload" href="https://www.nou-pou.gr/real-estate/elliniko-kaparo-gia-9-stis-10-katoikies-kai-oikopeda/"
-                  data-bg="https://www.nou-pou.gr/wp-content/uploads/2022/09/The-Ellinikon-spitia-990x770.webp" >
-              </a>
+		
+        <div class="inner">
+                              <a title="Τo Ellinikon Experience Park φωταγωγείται για τα Χριστούγεννα στις 9 Δεκεμβρίου" class="bg_container lazyload" href="https://www.nou-pou.gr/life/to-ellinikon-experience-park-fotagogeitai-gia-ta-xristougenna-stis-9-dekemvriou/"
+                    data-bg="https://www.nou-pou.gr/wp-content/uploads/2022/02/The-Ellinikon-Experience-Park-1-990x770.jpg" >
+                </a>
                       </div>
 
       </figure>
       
       <div class="post__content">
 
-                  <div class="caption">
-            <a title="Real Estate" href="https://www.nou-pou.gr/real-estate/">
-                  REAL ESTATE              </a>
-          </div>
-
-          
+          <!-- Caption & interviewee name -->
+                <div class="caption">
+            <a title="Life" href="https://www.nou-pou.gr/life/">
+                LIFE            </a>
+        </div>
+        
         <h3 class="post__title">
-          <a title="Ελληνικό: Πουλήθηκαν ήδη 9 στις 10 κατοικίες και οικόπεδα" href="https://www.nou-pou.gr/real-estate/elliniko-kaparo-gia-9-stis-10-katoikies-kai-oikopeda/">
-            Ελληνικό: Πουλήθηκαν ήδη 9 στις 10 κατοικίες και οικόπεδα            </a>
+            <a title="Τo Ellinikon Experience Park φωταγωγείται για τα Χριστούγεννα στις 9 Δεκεμβρίου" href="https://www.nou-pou.gr/life/to-ellinikon-experience-park-fotagogeitai-gia-ta-xristougenna-stis-9-dekemvriou/">
+              Τo Ellinikon Experience Park φωταγωγείται για τα Χριστούγεννα στις 9 Δεκεμβρίου            </a>
         </h3>
 
+        <!-- latest_sponsor -->
+		
       </div>
   </div>
 
@@ -1634,33 +1675,36 @@ var cfflinkhashtags = "false";
   
 </article>
 
-<article class="article">
+<article class="article post_type__post">
 
   <div class="article--medium">
 
             <figure class="bg_post__image">
 
-          <div class="inner">
-                          <a title="Ηλιούπολη: Φωτιά σε ΙΧ" class="bg_container lazyload" href="https://www.nou-pou.gr/newsroom/genikes-eidiseis/ilioupoli-fotia-se-ix/"
-                  data-bg="https://www.nou-pou.gr/wp-content/uploads/2022/08/pyrosvestiki6-990x770.jpg" >
-              </a>
+		
+        <div class="inner">
+                              <a title="Στον ΒΕΝΕΡΗ τα Χριστούγεννα έχουν τη γεύση και το άρωμα των αγνών υλικών" class="bg_container lazyload" href="https://www.nou-pou.gr/food-drink/glyko/ston-veneri-ta-xristougenna-exoun-ti-gefsi-kai-to-aroma-ton-agnon-ilikon/"
+                    data-bg="https://www.nou-pou.gr/wp-content/uploads/2013/11/veneris4-1-990x770.jpg" >
+                </a>
                       </div>
 
       </figure>
       
       <div class="post__content">
 
-                  <div class="caption">
-            <a title="Γενικές Ειδήσεις" href="https://www.nou-pou.gr/newsroom/genikes-eidiseis/">
-                  ΓΕΝΙΚΕΣ ΕΙΔΗΣΕΙΣ              </a>
-          </div>
-
-          
+          <!-- Caption & interviewee name -->
+                <div class="caption">
+            <a title="Γλυκό" href="https://www.nou-pou.gr/food-drink/glyko/">
+                ΓΛΥΚΟ            </a>
+        </div>
+        
         <h3 class="post__title">
-          <a title="Ηλιούπολη: Φωτιά σε ΙΧ" href="https://www.nou-pou.gr/newsroom/genikes-eidiseis/ilioupoli-fotia-se-ix/">
-            Ηλιούπολη: Φωτιά σε ΙΧ            </a>
+            <a title="Στον ΒΕΝΕΡΗ τα Χριστούγεννα έχουν τη γεύση και το άρωμα των αγνών υλικών" href="https://www.nou-pou.gr/food-drink/glyko/ston-veneri-ta-xristougenna-exoun-ti-gefsi-kai-to-aroma-ton-agnon-ilikon/">
+              Στον ΒΕΝΕΡΗ τα Χριστούγεννα έχουν τη γεύση και το άρωμα των αγνών υλικών            </a>
         </h3>
 
+        <!-- latest_sponsor -->
+		
       </div>
   </div>
 
@@ -1675,7 +1719,6 @@ var cfflinkhashtags = "false";
 
 
 
-	
 <div class="scrollup">
 
 	<div id="lottie_icon_back_to_top"
@@ -1793,6 +1836,7 @@ var cfflinkhashtags = "false";
 
 
 
+
 		
 		
 		
@@ -1807,7 +1851,7 @@ var cffOptions = {"placeholder":"https:\/\/www.nou-pou.gr\/wp-content\/plugins\/
 /* ]]> */
 </script>
 <script type='text/javascript' src='https://www.nou-pou.gr/wp-content/plugins/custom-facebook-feed-pro/assets/js/cff-scripts.js?ver=4.0.3' id='cffscripts-js'></script>
-<script type='text/javascript' src='https://www.nou-pou.gr/wp-content/themes/noupou_rebranding/assets/js/bodymovin.js?ver=1669323884' id='bodymovin-js'></script>
+<script type='text/javascript' src='https://www.nou-pou.gr/wp-content/themes/noupou_rebranding/assets/js/bodymovin.js?ver=1670401612' id='bodymovin-js'></script>
 <script type='text/javascript' src='https://www.nou-pou.gr/wp-includes/js/underscore.min.js?ver=1.13.3' id='underscore-js'></script>
 <script type='text/javascript' id='wp-util-js-extra'>
 /* <![CDATA[ */
@@ -1817,10 +1861,10 @@ var _wpUtilSettings = {"ajax":{"url":"\/wp-admin\/admin-ajax.php"}};
 <script type='text/javascript' src='https://www.nou-pou.gr/wp-includes/js/wp-util.min.js?ver=6.0.2' id='wp-util-js'></script>
 <script type='text/javascript' id='scripts_min_js-js-extra'>
 /* <![CDATA[ */
-var BTW = {"ajaxUrl":"https:\/\/www.nou-pou.gr\/wp-admin\/admin-ajax.php","ajaxErrorMsg":"\u03a5\u03c0\u03ae\u03c1\u03be\u03b5 \u03ba\u03ac\u03c0\u03bf\u03b9\u03bf \u03c0\u03c1\u03cc\u03b2\u03bb\u03b7\u03bc\u03b1. \u03a0\u03b1\u03c1\u03b1\u03ba\u03b1\u03bb\u03ce \u03b4\u03bf\u03ba\u03b9\u03bc\u03ac\u03c3\u03c4\u03b5 \u03b1\u03c1\u03b3\u03cc\u03c4\u03b5\u03c1\u03b1, \u03ae \u03b5\u03c0\u03b9\u03ba\u03bf\u03b9\u03bd\u03c9\u03bd\u03ae\u03c3\u03c4\u03b5 \u03bc\u03b5 \u03c4\u03bf\u03bd \u03b4\u03b9\u03b1\u03c7\u03b5\u03b9\u03c1\u03b9\u03c3\u03c4\u03ae.","animation_data_url":"https:\/\/www.nou-pou.gr\/wp-content\/themes\/noupou_rebranding\/assets\/js\/icon_animation_data\/","search":{"search_base_url":"https:\/\/www.nou-pou.gr\/?s=","min_characters":3,"nonce":"c5aea9fc88","search_min_chars_text":"\u0393\u03c1\u03ac\u03c8\u03c4\u03b5 \u03c4\u03bf\u03c5\u03bb\u03ac\u03c7\u03b9\u03c3\u03c4\u03bf\u03bd 3 \u03c7\u03b1\u03c1\u03b1\u03ba\u03c4\u03ae\u03c1\u03b5\u03c2","search_no_results_text":"\u0394\u03b5\u03bd \u03b2\u03c1\u03ad\u03b8\u03b7\u03ba\u03b1\u03bd \u03b1\u03c0\u03bf\u03c4\u03b5\u03bb\u03ad\u03c3\u03bc\u03b1\u03c4\u03b1","search_view_allResults_text":"\u0394\u0395\u03a3 \u03a0\u0395\u03a1\u0399\u03a3\u03a3\u039f\u03a4\u0395\u03a1\u0391"},"is_home":"","isSingleVideo":"","is_single":"1","is_longform":"","keenslider_icons":{"close":"\n  <svg class=\"icon_font color_white\">\n    <use class=\"icon_close\" xlink:href=\"https:\/\/www.nou-pou.gr\/wp-content\/themes\/noupou_rebranding\/assets\/fonts\/iconfont-v2.svg#icon_close\"><\/use>\n  <\/svg>\n\n","arrow":"\n  <svg class=\"icon_font color_white\">\n    <use class=\"icon_arrow\" xlink:href=\"https:\/\/www.nou-pou.gr\/wp-content\/themes\/noupou_rebranding\/assets\/fonts\/iconfont-v2.svg#icon_arrow\"><\/use>\n  <\/svg>\n\n"},"slick_icons":{"close":"\n  <svg class=\"icon_font color_black\">\n    <use class=\"icon_close\" xlink:href=\"https:\/\/www.nou-pou.gr\/wp-content\/themes\/noupou_rebranding\/assets\/fonts\/iconfont-v2.svg#icon_close\"><\/use>\n  <\/svg>\n\n","arrow":"\n  <svg class=\"icon_font color_black\">\n    <use class=\"icon_arrow\" xlink:href=\"https:\/\/www.nou-pou.gr\/wp-content\/themes\/noupou_rebranding\/assets\/fonts\/iconfont-v2.svg#icon_arrow\"><\/use>\n  <\/svg>\n\n","arrowDropDown":"\n  <svg class=\"icon_font color_black\">\n    <use class=\"icon_dropdown\" xlink:href=\"https:\/\/www.nou-pou.gr\/wp-content\/themes\/noupou_rebranding\/assets\/fonts\/iconfont-v2.svg#icon_dropdown\"><\/use>\n  <\/svg>\n\n","slide":"\n  <svg class=\"icon_font color_blue\">\n    <use class=\"icon_slide\" xlink:href=\"https:\/\/www.nou-pou.gr\/wp-content\/themes\/noupou_rebranding\/assets\/fonts\/iconfont-v2.svg#icon_slide\"><\/use>\n  <\/svg>\n\n"}};
+var BTW = {"ajaxUrl":"https:\/\/www.nou-pou.gr\/wp-admin\/admin-ajax.php","ajaxErrorMsg":"\u03a5\u03c0\u03ae\u03c1\u03be\u03b5 \u03ba\u03ac\u03c0\u03bf\u03b9\u03bf \u03c0\u03c1\u03cc\u03b2\u03bb\u03b7\u03bc\u03b1. \u03a0\u03b1\u03c1\u03b1\u03ba\u03b1\u03bb\u03ce \u03b4\u03bf\u03ba\u03b9\u03bc\u03ac\u03c3\u03c4\u03b5 \u03b1\u03c1\u03b3\u03cc\u03c4\u03b5\u03c1\u03b1, \u03ae \u03b5\u03c0\u03b9\u03ba\u03bf\u03b9\u03bd\u03c9\u03bd\u03ae\u03c3\u03c4\u03b5 \u03bc\u03b5 \u03c4\u03bf\u03bd \u03b4\u03b9\u03b1\u03c7\u03b5\u03b9\u03c1\u03b9\u03c3\u03c4\u03ae.","animation_data_url":"https:\/\/www.nou-pou.gr\/wp-content\/themes\/noupou_rebranding\/assets\/js\/icon_animation_data\/","search":{"search_base_url":"https:\/\/www.nou-pou.gr\/?s=","min_characters":3,"nonce":"619d2971fa","search_min_chars_text":"\u0393\u03c1\u03ac\u03c8\u03c4\u03b5 \u03c4\u03bf\u03c5\u03bb\u03ac\u03c7\u03b9\u03c3\u03c4\u03bf\u03bd 3 \u03c7\u03b1\u03c1\u03b1\u03ba\u03c4\u03ae\u03c1\u03b5\u03c2","search_no_results_text":"\u0394\u03b5\u03bd \u03b2\u03c1\u03ad\u03b8\u03b7\u03ba\u03b1\u03bd \u03b1\u03c0\u03bf\u03c4\u03b5\u03bb\u03ad\u03c3\u03bc\u03b1\u03c4\u03b1","search_view_allResults_text":"\u0394\u0395\u03a3 \u03a0\u0395\u03a1\u0399\u03a3\u03a3\u039f\u03a4\u0395\u03a1\u0391"},"is_home":"","isSingleVideo":"","is_single":"1","is_longform":"","keenslider_icons":{"close":"\n  <svg class=\"icon_font color_white\">\n    <use class=\"icon_close\" xlink:href=\"https:\/\/www.nou-pou.gr\/wp-content\/themes\/noupou_rebranding\/assets\/fonts\/iconfont-v2.svg#icon_close\"><\/use>\n  <\/svg>\n\n","arrow":"\n  <svg class=\"icon_font color_white\">\n    <use class=\"icon_arrow\" xlink:href=\"https:\/\/www.nou-pou.gr\/wp-content\/themes\/noupou_rebranding\/assets\/fonts\/iconfont-v2.svg#icon_arrow\"><\/use>\n  <\/svg>\n\n"},"slick_icons":{"close":"\n  <svg class=\"icon_font color_black\">\n    <use class=\"icon_close\" xlink:href=\"https:\/\/www.nou-pou.gr\/wp-content\/themes\/noupou_rebranding\/assets\/fonts\/iconfont-v2.svg#icon_close\"><\/use>\n  <\/svg>\n\n","arrow":"\n  <svg class=\"icon_font color_black\">\n    <use class=\"icon_arrow\" xlink:href=\"https:\/\/www.nou-pou.gr\/wp-content\/themes\/noupou_rebranding\/assets\/fonts\/iconfont-v2.svg#icon_arrow\"><\/use>\n  <\/svg>\n\n","arrowDropDown":"\n  <svg class=\"icon_font color_black\">\n    <use class=\"icon_dropdown\" xlink:href=\"https:\/\/www.nou-pou.gr\/wp-content\/themes\/noupou_rebranding\/assets\/fonts\/iconfont-v2.svg#icon_dropdown\"><\/use>\n  <\/svg>\n\n","slide":"\n  <svg class=\"icon_font color_blue\">\n    <use class=\"icon_slide\" xlink:href=\"https:\/\/www.nou-pou.gr\/wp-content\/themes\/noupou_rebranding\/assets\/fonts\/iconfont-v2.svg#icon_slide\"><\/use>\n  <\/svg>\n\n"}};
 /* ]]> */
 </script>
-<script type='text/javascript' src='https://www.nou-pou.gr/wp-content/themes/noupou_rebranding/assets/js/scripts.min.js?ver=1669323884' id='scripts_min_js-js'></script>
+<script type='text/javascript' src='https://www.nou-pou.gr/wp-content/themes/noupou_rebranding/assets/js/scripts.min.js?ver=1670401612' id='scripts_min_js-js'></script>
 
 		
 		
@@ -1906,5 +1950,6 @@ var BTW = {"ajaxUrl":"https:\/\/www.nou-pou.gr\/wp-admin\/admin-ajax.php","ajaxE
 
 
 </script>
+
 	</body>
 </html>

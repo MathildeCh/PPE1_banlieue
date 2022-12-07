@@ -460,11 +460,21 @@ body.has_domination .section-header{margin:0 auto}
 .main-nav nav{position:relative;margin-left:auto;margin-right:auto}
 .main-nav ul{list-style:none;margin:0;padding:0}
 .main-nav li{position:relative}
+.main-nav li[data-menu-static]{position:static}
 .main-nav a{display:block;color:#1a1a1a;text-decoration:none}
 .main-nav a.has-dropdown{position:relative}
 .main-nav a.has-dropdown:before{content:"";position:absolute;right:16px;top:50%;-webkit-transform:translateY(-50%);-ms-transform:translateY(-50%);transform:translateY(-50%);display:block;z-index:2;background-image:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz4KPHN2ZyB3aWR0aD0iMTRweCIgaGVpZ2h0PSI4cHgiIHZpZXdCb3g9IjAgMCAxNCA4IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPgogICAgPHRpdGxlPlNoYXBlPC90aXRsZT4KICAgIDxnIGlkPSJQYWdlLTEiIHN0cm9rZT0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIxIiBmaWxsPSJub25lIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCI+CiAgICAgICAgPGcgaWQ9Ikdyb3VwIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxLjAwMDAwMCwgMS4wMDAwMDApIiBzdHJva2U9IiMwNzM4NjAiIHN0cm9rZS13aWR0aD0iMiI+CiAgICAgICAgICAgIDxwYXRoIGQ9Ik0xMiwwIEw2LDYgTTYsNiBMMCwwIiBpZD0iU2hhcGUiPjwvcGF0aD4KICAgICAgICA8L2c+CiAgICA8L2c+Cjwvc3ZnPg==);background-position:center center;background-repeat:no-repeat;background-size:14px 8px;width:14px;height:8px;pointer-events:none}
 .main-nav a.has-dropdown.is-sub-open:before{-webkit-transform:rotate(180deg);-ms-transform:rotate(180deg);transform:rotate(180deg)}
 .main-nav__list{position:relative}
+.main-nav__list__cities.is-sub-open .main-nav__list__cities-items{opacity:1;-webkit-transform:translateY(10px);-ms-transform:translateY(10px);transform:translateY(10px);pointer-events:all}
+.main-nav__list__cities-index{margin:0;padding:0;list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(32px,1fr));grid-auto-rows:32px;gap:4px;position:sticky;padding:16px 16px 0 16px;top:83px;font-weight:700;text-align:center;text-transform:uppercase;z-index:1;background-color:#ecf4fa}
+.main-nav__list__cities-index li{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;position:relative}
+.main-nav__list__cities-index li button{background-color:#fff;border:1px solid #cad8e2;border-radius:3px;color:#073860;display:block;font-size:13px;font-weight:700;font-family:'Noto Sans','Helvetica Neue',Helvetica,sans-serif;line-height:.8;padding:10px 12px;-webkit-transition:.2s;-o-transition:.2s;transition:.2s}
+.main-nav__list__cities-index li button:disabled{opacity:.3}
+.main-nav__list__cities-index li button .main-nav__list__cities-items [data-menu-target]{scroll-margin-top:200px;scroll-snap-margin-top:200px}
+.main-nav__list__cities-items [data-menu-target]:before{content:attr(data-menu-target);display:block;padding:8px 16px 0 16px;font-size:1.3em;font-weight:700}
+.main-nav__list__cities-items ol{margin:0;padding:0;list-style:none}
+.main-nav__list__cities-items li a{white-space:nowrap;border-bottom:1px solid rgba(200,215,225,.5)}
 .main-nav__search__button{position:absolute;right:16px;top:8px}
 .main-nav__search__button svg{width:24px;display:block}
 .main-nav__search__form{display:none}
@@ -522,6 +532,21 @@ body.has_domination .ls-page-footer{max-width:996px}
 .main-nav a{padding-right:8px}
 .main-nav a.has-dropdown{padding-right:20px}
 .main-nav a.has-dropdown:before{right:0;background-size:12px 6px;background-position:0 2px}
+.main-nav__list__cities-index{display:none}
+.main-nav__list__cities-items [data-menu-target]:before{display:none}
+.main-nav__list__cities-items{padding:0;list-style:none;position:absolute;top:auto;left:0;right:0;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;background-color:#fff;border-radius:3px;border:1px solid rgba(200,215,225,.5);-webkit-box-shadow:0 5px 8px 0 rgba(223,223,223,.5);box-shadow:0 5px 8px 0 rgba(223,223,223,.5);z-index:999;pointer-events:none;opacity:0;-webkit-transform:translateY(-10px);-ms-transform:translateY(-10px);transform:translateY(-10px);-webkit-transition:opacity .2s ease,-webkit-transform .2s ease;transition:opacity .2s ease,-webkit-transform .2s ease;-o-transition:opacity .2s ease,transform .2s ease;transition:opacity .2s ease,transform .2s ease;transition:opacity .2s ease,transform .2s ease,-webkit-transform .2s ease}
+.main-nav__list__cities-items:before{content:'';display:block;position:absolute;top:-14px;left:6px;right:auto;width:0;height:0;border-color:transparent transparent rgba(200,215,225,.5) transparent;border-style:solid;border-width:7px}
+.main-nav__list__cities-items:after{content:'';display:block;position:absolute;top:-13px;left:6px;right:auto;width:0;height:0;border-color:transparent transparent #fff transparent;border-style:solid;border-width:7px}
+.main-nav__list__cities-items>li{position:relative}
+.main-nav__list__cities-items>li:not(:first-child)>a{border-top:1px solid rgba(200,215,225,.5)}
+.main-nav__list__cities-items>li>a{white-space:nowrap;padding:4px 12px;display:block;-webkit-transition:all .1s ease;-o-transition:all .1s ease;transition:all .1s ease}
+.main-nav__list__cities-items>li>a:hover{background-color:#f2f6f9}
+.main-nav__list__cities-items>ol{display:block;-webkit-columns:6;-moz-columns:6;columns:6;-webkit-column-gap:0;-moz-column-gap:0;column-gap:0;left:0;right:0}
+.main-nav__list__cities-items>ol:after{left:6px;right:auto}
+.main-nav__list__cities-items>ol:before{left:6px;right:auto}
+.main-nav__list__cities-items>ol>li:not(:first-child)>a{border-top:0}
+.main-nav__list__cities-items>ol>li>a{border-bottom:1px solid rgba(200,215,225,.5);white-space:nowrap;padding:4px 12px;display:block;-webkit-transition:all .1s ease;-o-transition:all .1s ease;transition:all .1s ease}
+.main-nav__list__cities-items ol li:first-child a{padding-left:8px}
 .main-nav__sublist{padding:0;list-style:none;position:absolute;top:auto;right:0;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;background-color:#fff;border-radius:3px;border:1px solid rgba(200,215,225,.5);-webkit-box-shadow:0 5px 8px 0 rgba(223,223,223,.5);box-shadow:0 5px 8px 0 rgba(223,223,223,.5);z-index:999;pointer-events:none;opacity:0;-webkit-transform:translateY(-10px);-ms-transform:translateY(-10px);transform:translateY(-10px);-webkit-transition:opacity .2s ease,-webkit-transform .2s ease;transition:opacity .2s ease,-webkit-transform .2s ease;-o-transition:opacity .2s ease,transform .2s ease;transition:opacity .2s ease,transform .2s ease;transition:opacity .2s ease,transform .2s ease,-webkit-transform .2s ease}
 .main-nav__sublist.is-sub-open{opacity:1;-webkit-transform:translateY(10px);-ms-transform:translateY(10px);transform:translateY(10px);pointer-events:all}
 .main-nav__sublist:before{content:'';display:block;position:absolute;top:-14px;right:6px;left:auto;width:0;height:0;border-color:transparent transparent rgba(200,215,225,.5) transparent;border-style:solid;border-width:7px}
@@ -609,6 +634,10 @@ html.is-nav-open .section-header__brand-logo:before{-webkit-transform:rotate(180
 .main-nav a{padding:16px}
 .main-nav__list{display:none}
 html.is-nav-open .main-nav__list{display:block}
+.main-nav__list__cities{display:none}
+.main-nav__list__cities.is-sub-open{display:block;margin-top:-1px}
+.main-nav__list__cities-items ol li:first-child a{border-top:0}
+.main-nav__list__cities-items ol li:not(:last-child) a{border-top:0}
 .main-nav__sublist{display:none}
 .main-nav__sublist.is-sub-open{display:block;margin-top:-1px}
 .section-header--centered .section-header__brand{padding-top:8px;padding-bottom:8px}
@@ -904,6 +933,7 @@ gdwc-gallery p[slot=summary]{font-style:italic;color:#fff;padding:0 16px 24px}
 .liveblog__index.is-open .liveblog__index__list{max-height:1000px;-webkit-transition:.5s linear;transition:.5s linear}
 .liveblog__index.is-open .liveblog__index__list:after{content:none}
 .liveblog__index__list li{list-style:square;margin-bottom:10px;font-size:16px;line-height:1.2}
+.liveblog__index__content p,h2.liveblog__post__title p{margin-bottom:0}
 .liveblog__index__list li:before{content:"⦿";line-height:14px;color:#2c5c8b;margin-right:2px}
 .aside-signature__title:before,.aside-signatures__label a:before,.aside-stories__label a:before{content:"";z-index:1;height:1px;position:absolute}
 .liveblog__index__list a{color:#000}
@@ -1011,7 +1041,7 @@ vf-conversations{display:block;width:64px;height:64px;border-radius:50%;border:6
 .most-commented li:before{content:counter(commentIndex);font:400 40px/1 ptserif,Georgia,Times,'Times New Roman',serif;vertical-align:middle;color:#103760;position:absolute;left:0}
 .most-commented li a{padding-left:16px;display:block}
 .story__content img{width:100%;height:auto;display:block}
-.bottom-wrapper{position:relative;max-width:996px;padding-top:30px}
+.bottom-wrapper{position:relative;max-width:996px}
 .bottom-wrapper+.bottom-wrapper{background-color:#f2f6f9}
 .main-content{padding-left:16px;padding-right:16px}
 .is-full-width .main-content,.main-content.is-full-width{-ms-flex-preferred-size:100%;flex-basis:100%;max-width:100%}
@@ -1130,7 +1160,7 @@ body.native .dossier-header__content:after,body.native .section-header__wrap:aft
 body.has_domination .bottom-wrapper:before,body.native .section-header__search{display:none}
 body.native #adv-x20{position:absolute;top:0;bottom:0;right:16px;z-index:10;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
 body.native:not(.has_x20) #adv-x20:after{font-size:14px}
-.bottom-wrapper{-ms-flex-wrap:wrap;flex-wrap:wrap}
+.bottom-wrapper{padding-top:30px;-ms-flex-wrap:wrap;flex-wrap:wrap}
 .bottom-wrapper:before{position:absolute;top:0;bottom:0;z-index:-1}
 .bottom-wrapper+.bottom-wrapper:before{background-color:#f2f6f9}
 .sidebar{padding-right:16px;-ms-flex-preferred-size:33.33333333%;flex-basis:33.33333333%;max-width:33.33333333%}
@@ -1266,7 +1296,8 @@ gdwc-gallery p[slot=summary]{font-size:16px;line-height:24px}
 .limio-fr-related gdwc-recommendations{--gdwc-recommendations-article-border-bottom:1px solid #3c8ebc;--gdwc-recommendations-article-padding:20px 0px;--gdwc-recommendations-first-article-padding:20px 0px;--gdwc-recommendations-label-padding:20px 0px;--gdwc-recommendations-label-margin:0px;--gdwc-recommendations-articles-direction:column;--gdwc-recommendations-title-font-line-height:1.4}
 #social-share-top{background:#ecf4fa;border-top:1px solid #c8d7e1;border-right:1px solid #c8d7e1;margin-left:0;padding:10px 10px 10px 0;position:fixed;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;left:0;right:0;bottom:0;z-index:20;height:54px}
 body.native .dossier-header__content:after,body.native .section-header__content:after{content:"Contenuto Sponsorizzato";display:block;font-size:11px;line-height:22px;color:#999;background-color:#f7f7f7;text-align:center}
-.bottom-wrapper{padding-top:0}
+.bottom-wrapper{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column}
+.sidebar{-webkit-box-ordinal-group:6;-ms-flex-order:5;order:5}
 .ph-audio-paywall{background-color:#e7e7e7;-webkit-box-orient:horizontal;-webkit-box-direction:reverse;-ms-flex-direction:row-reverse;flex-direction:row-reverse;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding:12px}
 .ph-audio-paywall svg{width:50px}
 }
@@ -2041,9 +2072,9 @@ to{opacity:1}
     <!-- focus -->
 	<span>Video del giorno</span>
     <figure>
-        <div id="player_ex_12257936" class="responsive-video">         
-            <div class="snappedPlaceholder" id="player_img_12257936">             
-                <img class="lazyload" data-src="https://www.repstatic.it/video/photo/2022/11/23/867700/867700-thumb-rep-s221123_lamborghini_ok.jpg" width="735" height="416">
+        <div id="player_ex_12397227" class="responsive-video">         
+            <div class="snappedPlaceholder" id="player_img_12397227">             
+                <img class="lazyload" data-src="https://www.repstatic.it/video/photo/2022/12/06/869670/869670-thumb-rep-s221206_ladriauto.jpg" width="735" height="416">
             </div>
         </div>
         <script>
@@ -2054,14 +2085,14 @@ to{opacity:1}
             var adrefUrl = window.location.href.toString().split("?")[0];
             var iframeUrl = "";
             if(webtrekk_noad_manager.noAdvMode == true) {
-                iframeUrl = "https://www.lastampa.it/embed/cronaca/2022/11/23/video/avellino_distrugge_a_300_kmh_una_lamborghini_huracan_da_200_mila_euro_salvi_i_passeggeri-12257936/?adref="+adrefUrl+"&autostart=false&responsive=true&pm=true&pl_listen=true&el=player_ex_12257936&mode=embed";  
+                iframeUrl = "https://www.lastampa.it/embed/esteri/2022/12/06/video/la_rapina_perfetta_rubano_quattro_auto_extralusso_da_800_mila_euro_e_non_ci_sono_colpevoli-12397227/?adref="+adrefUrl+"&autostart=false&responsive=true&pm=true&pl_listen=true&el=player_ex_12397227&mode=embed";  
                 console.log("[WIDGET PLAYER] ### NOADV user => won't autoplay mute", window.kwdnt, window.kw_tlh.hasOwnProperty("adsetup"));
             } else {
                 if(window.kwdnt !== -1 && window.kw_tlh.hasOwnProperty("adsetup") === true && !window.kw_isBigPlayerInAutoplay) {
-                    iframeUrl = "https://www.lastampa.it/embed/cronaca/2022/11/23/video/avellino_distrugge_a_300_kmh_una_lamborghini_huracan_da_200_mila_euro_salvi_i_passeggeri-12257936/?adref="+adrefUrl+"&autostart=false&responsive=true&pm=true&pl_listen=true&el=player_ex_12257936&mode=embed&wpm&dp&nomzvpl";
+                    iframeUrl = "https://www.lastampa.it/embed/esteri/2022/12/06/video/la_rapina_perfetta_rubano_quattro_auto_extralusso_da_800_mila_euro_e_non_ci_sono_colpevoli-12397227/?adref="+adrefUrl+"&autostart=false&responsive=true&pm=true&pl_listen=true&el=player_ex_12397227&mode=embed&wpm&dp&nomzvpl";
                     console.log("[WIDGET PLAYER] Infoprivacy not visible => will autoplay mute", window.kwdnt, window.kw_isBigPlayerInAutoplay);
                 } else {
-                    iframeUrl = "https://www.lastampa.it/embed/cronaca/2022/11/23/video/avellino_distrugge_a_300_kmh_una_lamborghini_huracan_da_200_mila_euro_salvi_i_passeggeri-12257936/?adref="+adrefUrl+"&autostart=false&responsive=true&pm=true&pl_listen=true&el=player_ex_12257936&mode=embed";  
+                    iframeUrl = "https://www.lastampa.it/embed/esteri/2022/12/06/video/la_rapina_perfetta_rubano_quattro_auto_extralusso_da_800_mila_euro_e_non_ci_sono_colpevoli-12397227/?adref="+adrefUrl+"&autostart=false&responsive=true&pm=true&pl_listen=true&el=player_ex_12397227&mode=embed";  
                     console.log("[WIDGET PLAYER] ### Infoprivacy visible (#1) or ADBLOCK CASE (#2) => won't autoplay mute or big top player is in autoplay sticky mode", window.kwdnt, window.kw_tlh.hasOwnProperty("adsetup"), window.kw_isBigPlayerInAutoplay);
                 }
             }
@@ -2078,9 +2109,9 @@ to{opacity:1}
             }else {
                 VideoEmbed.main("#contentPage"); 
             }
-            VideoEmbed.createIframe("player_ex_12257936", iframeUrl, 735, 416, false, false);
+            VideoEmbed.createIframe("player_ex_12397227", iframeUrl, 735, 416, false, false);
             try {
-                iframe_controller.iframes['player_ex_12257936'].configuration.playerstateHandler = function() {
+                iframe_controller.iframes['player_ex_12397227'].configuration.playerstateHandler = function() {
                     if(arguments[3] === "READY") {
                         console.log("[WIDGET PLAYER] PLAYER READY -> Setting scroll listener", arguments);
                         window.addEventListener("scroll", window.widgetVideoPlayer.kw_widgetvideo_isScrolledIntoView);
@@ -2114,7 +2145,7 @@ to{opacity:1}
             if(window.widgetVideoPlayer.kw_widgetVideoPlayer_active === false) {
                 return;        
             }
-            var el = document.getElementById("player_ifr_12257936");
+            var el = document.getElementById("player_ifr_12397227");
             if(el !== null) {
                 var rect = el.getBoundingClientRect();
                 var status = false;
@@ -2137,7 +2168,7 @@ to{opacity:1}
                     console.log ("[WIDGET PLAYER] DISABLING SCROLL LISTENER");
                     window.widgetVideoPlayer.kw_widgetVideoPlayer_active = false;
                     window.removeEventListener("scroll", window.widgetVideoPlayer.kw_widgetvideo_isScrolledIntoView);
-                    iframe_controller.sendMsgToIframe("player_ex_12257936", "gelepmv:2,internal:manualstart,el:player_ex_12257936");
+                    iframe_controller.sendMsgToIframe("player_ex_12397227", "gelepmv:2,internal:manualstart,el:player_ex_12397227");
                 }
             }
         }
@@ -2151,7 +2182,7 @@ to{opacity:1}
         }
         </script>
     </figure>
-    <h2><a href="https://www.lastampa.it/cronaca/2022/11/23/video/avellino_distrugge_a_300_kmh_una_lamborghini_huracan_da_200_mila_euro_salvi_i_passeggeri-12257936/" title="Avellino, distrugge a 300 km/h una Lamborghini Huracán da 200 mila euro e ne esce illeso">Avellino, distrugge a 300 km/h una Lamborghini Huracán da 200 mila euro e ne esce illeso</a></h2>
+    <h2><a href="https://www.lastampa.it/esteri/2022/12/06/video/la_rapina_perfetta_rubano_quattro_auto_extralusso_da_800_mila_euro_e_non_ci_sono_colpevoli-12397227/" title="La &quot;rapina perfetta&quot;, rubano quattro auto extralusso da oltre 800 mila euro e non ci sono colpevoli">La "rapina perfetta", rubano quattro auto extralusso da oltre 800 mila euro e non ci sono colpevoli</a></h2>
 </article></div>
 
 <style>
@@ -2265,36 +2296,36 @@ to{opacity:1}
         
 
         
-            <article slot="article" class="aside-story" data-item="gnn:lastampa:12260576">
+            <article slot="article" class="aside-story" data-item="gnn:lastampa:12398022">
                 
                     <figure class="aside-story__media">
                         
-                            <a href="https://www.lastampa.it/asti/2022/11/24/news/scatta_il_bagna_cauda_day_antico_rituale_allinsegna_dellamicizia_e_della_convivialita-12260576/?ref=ST-LA-1">
+                            <a href="https://www.lastampa.it/asti/2022/12/07/news/guarda_il_cielo_a_testa_in_giu-12398022/?ref=ST-LA-1">
                         
                         <picture>
-                            <source data-srcset="https://www.gelestatic.it/thimg/8fd1-W_DwU0zRz-ku-S2s9vJIaE=/290x163/smart/filters:format(webp)/https%3A//www.gedistatic.it/content/gnn/img/lastampa/2022/11/24/213755034-a69fbac3-4934-44d3-8487-6b31d4619097.jpg" type="image/webp">
-                            <img data-src="https://www.gelestatic.it/thimg/Y9mJEc_gZwOTS95suY_c2bc5ppk=/290x163/smart/https%3A//www.gedistatic.it/content/gnn/img/lastampa/2022/11/24/213755034-a69fbac3-4934-44d3-8487-6b31d4619097.jpg" alt="Scatta il Bagna Cauda Day, antico rituale all’insegna dell’amicizia e della convivialità" class="lazyload" width="auto" height="70">
-                            <noscript><img src="https://www.gelestatic.it/thimg/Y9mJEc_gZwOTS95suY_c2bc5ppk=/290x163/smart/https%3A//www.gedistatic.it/content/gnn/img/lastampa/2022/11/24/213755034-a69fbac3-4934-44d3-8487-6b31d4619097.jpg" alt="Scatta il Bagna Cauda Day, antico rituale all’insegna dell’amicizia e della convivialità"></noscript>
+                            <source data-srcset="https://www.gelestatic.it/thimg/gz0IEHBrz2_QooSbSm-QESR1ERw=/290x163/smart/filters:format(webp)/https%3A//www.gedistatic.it/content/gnn/img/lastampa/2022/12/06/201321321-8b3ce21d-847e-4aff-ab16-7954ac3e62a7.jpg" type="image/webp">
+                            <img data-src="https://www.gelestatic.it/thimg/k9FV3qNiRPze08tZmRLcJY-R7-8=/290x163/smart/https%3A//www.gedistatic.it/content/gnn/img/lastampa/2022/12/06/201321321-8b3ce21d-847e-4aff-ab16-7954ac3e62a7.jpg" alt="“Guarda il cielo a testa in giù”" class="lazyload" width="auto" height="70">
+                            <noscript><img src="https://www.gelestatic.it/thimg/k9FV3qNiRPze08tZmRLcJY-R7-8=/290x163/smart/https%3A//www.gedistatic.it/content/gnn/img/lastampa/2022/12/06/201321321-8b3ce21d-847e-4aff-ab16-7954ac3e62a7.jpg" alt="“Guarda il cielo a testa in giù”"></noscript>
                         </picture>
                       </a>
                     </figure>
                 
                 <h4 class="aside-story__title">
-                    <a href="https://www.lastampa.it/asti/2022/11/24/news/scatta_il_bagna_cauda_day_antico_rituale_allinsegna_dellamicizia_e_della_convivialita-12260576/?ref=ST-LA-1">Scatta il Bagna Cauda Day, antico rituale all’insegna dell’amicizia e della convivialità</a>
+                    <a href="https://www.lastampa.it/asti/2022/12/07/news/guarda_il_cielo_a_testa_in_giu-12398022/?ref=ST-LA-1">“Guarda il cielo a testa in giù”</a>
                 </h4>
             </article>
         
-            <article slot="article" class="aside-story" data-item="gnn:lastampa:12259772">
+            <article slot="article" class="aside-story" data-item="gnn:lastampa:12397904">
                 
                 <h4 class="aside-story__title">
-                    <a href="https://www.lastampa.it/asti/2022/11/24/news/delitto_di_canelli_il_padre_che_ha_ucciso_il_figlio_e_in_psichiatria-12259772/?ref=ST-LA-2">Delitto di Canelli, il padre che ha ucciso il figlio è in Psichiatria</a>
+                    <a href="https://www.lastampa.it/asti/2022/12/07/news/asti_la_palazzina_dimenticata_di_via_allende-12397904/?ref=ST-LA-2">Asti, la palazzina dimenticata di via Allende</a>
                 </h4>
             </article>
         
-            <article slot="article" class="aside-story" data-item="gnn:lastampa:12259092">
+            <article slot="article" class="aside-story" data-item="gnn:lastampa:12397996">
                 
                 <h4 class="aside-story__title">
-                    <a href="https://www.lastampa.it/asti/2022/11/24/video/ferrari_f430_falsa_scoperta_dalla_finanza_ad_asti_26enne_aveva_trasformato_la_sua_toyota_coupe_in_una_supercar-12259092/?ref=ST-LA-3">Ferrari F430 falsa scoperta dalla Finanza ad Asti, 26enne trasforma la sua Toyota nella supercar</a>
+                    <a href="https://www.lastampa.it/asti/2022/12/07/news/un_bagna_cauda_day_da_record_premia_le_caparbie_teste_daj-12397996/?ref=ST-LA-3">Un Bagna Cauda Day da record premia le caparbie Teste d’Aj</a>
                 </h4>
             </article>
         
@@ -2493,11 +2524,11 @@ senza alcuna variazione del prezzo finale.</span>
     
 
     <article class="widget-sponsor__main-item">
-        <figure class="widget-sponsor__main-figure"><a href="https://www.consigli.it/black-friday/?ref=112" target="_blank"><img src="https://consigli.b-cdn.net/Black-friday-2022/vetrine-black-friday-2022-prodotti-v01.jpg"></a>
+        <figure class="widget-sponsor__main-figure"><a href="https://www.consigli.it/migliori-offerte-del-giorno/?ref=116" target="_blank"><img src="https://consigli.b-cdn.net/eBay/imperdibli-offerte/vetrine/vetrine-imperdibili-ebay-v03.jpg"></a>
         </figure>
         <div class="widget-sponsor__main-content">
-            <span class="widget-sponsor__main-overtitle"><a href="https://www.consigli.it/black-friday/?ref=112" target="_blank">SCONTI FINO AL 70%</a></span>
-            <h4 class="widget-sponsor__main-title"><a href="https://www.consigli.it/black-friday/?ref=112" target="_blank">Black Friday: ecco la selezione delle migliori offerte
+            <span class="widget-sponsor__main-overtitle"><a href="https://www.consigli.it/migliori-offerte-del-giorno/?ref=116" target="_blank">OFFERTE A TEMPO LIMITATO</a></span>
+            <h4 class="widget-sponsor__main-title"><a href="https://www.consigli.it/migliori-offerte-del-giorno/?ref=116" target="_blank">Ecco le offerte imperdibili della settimana. Sconti fino all'80%
             </a></h4>
         </div>
         
@@ -2507,11 +2538,11 @@ senza alcuna variazione del prezzo finale.</span>
     
 
     <article class="widget-sponsor__main-item">
-        <figure class="widget-sponsor__main-figure"><a href="https://www.consigli.it/friggitrice-ad-aria/?ref=110" target="_blank"><img src="https://consigli.b-cdn.net/friggitrice-aria-amazon/vetrine-friggitrici-tutte-insieme.jpg"></a>
+        <figure class="widget-sponsor__main-figure"><a href="https://www.consigli.it/yankee-candle/?ref=117" target="_blank"><img src="https://consigli.b-cdn.net/yankee-candle/vetrine/vetrine-yankee-candle-v01.jpg"></a>
         </figure>
         <div class="widget-sponsor__main-content">
-            <span class="widget-sponsor__main-overtitle"><a href="https://www.consigli.it/friggitrice-ad-aria/?ref=110" target="_blank">SCEGLI LA PIù ADATTA ALLE TUE ESIGENZE</a></span>
-            <h4 class="widget-sponsor__main-title"><a href="https://www.consigli.it/friggitrice-ad-aria/?ref=110" target="_blank">Le migliori friggitrici ad aria: confronto a 5
+            <span class="widget-sponsor__main-overtitle"><a href="https://www.consigli.it/yankee-candle/?ref=117" target="_blank">PROFUMA E DECORA CON STILE</a></span>
+            <h4 class="widget-sponsor__main-title"><a href="https://www.consigli.it/yankee-candle/?ref=117" target="_blank">Yankee Candle: le candele profumate più famose del mondo
             </a></h4>
         </div>
         
@@ -2591,77 +2622,86 @@ senza alcuna variazione del prezzo finale.</span>
     <!-- include/common/footer -->
 <footer class="ls-page-footer" role="contentinfo">
 
-  <div class="ls-page-footer__wrap">
+    <div class="ls-page-footer__wrap">
 
-    <div class="ls-page-footer__navigation">
+        <div class="ls-page-footer__navigation">
 
-      <ul>
-        <li><a href="//www.lastampa.it/cronaca/" title="Cronaca">Cronaca</a></li>
-        <li><a href="//www.lastampa.it/economia/" title="Economia">Economia</a></li>
-        <li><a href="//www.lastampa.it/esteri/" title="Esteri">Esteri</a></li>
-        <li><a href="//www.lastampa.it/politica/" title="Politica">Politica</a></li>
-        <li><a href="//www.lastampa.it/sport/" title="Sport">Sport</a></li>
-        <li><a href="//www.lastampa.it/torino/" title="Torino">Torino</a></li>
-      </ul>
+            <ul>
+                <li><a href="//www.lastampa.it/cronaca/" title="Cronaca">Cronaca</a></li>
+                <li><a href="//www.lastampa.it/economia/" title="Economia">Economia</a></li>
+                <li><a href="//www.lastampa.it/esteri/" title="Esteri">Esteri</a></li>
+                <li><a href="//www.lastampa.it/politica/" title="Politica">Politica</a></li>
+                <li><a href="//www.lastampa.it/sport/" title="Sport">Sport</a></li>
+                <li><a href="//www.lastampa.it/torino/" title="Torino">Torino</a></li>
+            </ul>
 
-      <ul>
-        <li>
-          <a href="//www.lastampa.it/utility/2022/04/06/news/scrivi_alla_redazione-2918224/?ref=LSHFT-SR" title="Scrivi alla redazione" data-tracking="f-redazione">Scrivi alla redazione</a>
-        </li>
-        <li>
-          <a href="//www.lastampa.it/utility/2022/04/04/news/pubblicita_-2916878/?ref=LSHFT-PB" title="Pubblicità" data-tracking="f-pubblicita">Pubblicità</a>
-        </li>
-        <li>
-          <a href="//www.lastampa.it/utility/2022/04/04/news/dati_societari-2916846/?ref=LSHFT-DS" title="Dati Societari" data-tracking="f-datisocietari">Dati Societari</a>
-        </li>
-        <li>
-          <a href="//www.lastampa.it/edicola/assistenza/richiesta.jsp?ref=LSHFT-CN" title="Contatti" data-tracking="f-contatti">Contatti</a>
-        </li>
+            <ul>
+                <li>
+                    <a href="//www.lastampa.it/utility/2022/04/06/news/scrivi_alla_redazione-2918224/?ref=LSHFT-SR" title="Scrivi alla redazione" data-tracking="f-redazione">Scrivi
+                        alla redazione</a>
+                </li>
 
-        <li>
-          <a href="javascript:void(0);" id="kw-cookie-link" title="Cookie Policy">Cookie Policy</a>
-        </li>
+                <!-- <li>
+                    <a href="//www.lastampa.it/utility/2022/04/04/news/pubblicita_-2916878/?ref=LSHFT-PB" title="Pubblicit&agrave;"
+                        data-tracking="f-pubblicita">Pubblicit&agrave;</a>
+                </li> -->
 
-        <li>
-          <a href="javascript:void(0);" id="kw-privacy-link" title="Privacy">Privacy</a>
-        </li>
+                <li>
+                    <a href="https://www.manzoniadvertising.com/it" title="Pubblicità" data-tracking="f-pubblicita">Pubblicità</a>
+                </li>
 
-        <li>
-          <a href="//wwww.lastampa.it/utility/2022/04/06/news/sedi-2918025/?ref=LSHFT-SD" title="Sede" data-tracking="f-sede">Sede</a>
-        </li>
-        <li>
-          <a href="//www.lastampa.it/static/policy//?ref=LSHFT-CE" title="Codice Etico" data-tracking="f-ce">Codice Etico</a>
-        </li>
-      </ul>
+                <li>
+                    <a href="//www.lastampa.it/utility/2022/04/04/news/dati_societari-2916846/?ref=LSHFT-DS" title="Dati Societari" data-tracking="f-datisocietari">Dati
+                        Societari</a>
+                </li>
+                <li>
+                    <a href="//www.lastampa.it/edicola/assistenza/richiesta.jsp?ref=LSHFT-CN" title="Contatti" data-tracking="f-contatti">Contatti</a>
+                </li>
+
+                <li>
+                    <a href="javascript:void(0);" id="kw-cookie-link" title="Cookie Policy">Cookie Policy</a>
+                </li>
+
+                <li>
+                    <a href="javascript:void(0);" id="kw-privacy-link" title="Privacy">Privacy</a>
+                </li>
+
+                <li>
+                    <a href="//wwww.lastampa.it/utility/2022/04/06/news/sedi-2918025/?ref=LSHFT-SD" title="Sede" data-tracking="f-sede">Sede</a>
+                </li>
+                <li>
+                    <a href="//www.lastampa.it/static/policy//?ref=LSHFT-CE" title="Codice Etico" data-tracking="f-ce">Codice Etico</a>
+                </li>
+            </ul>
+
+        </div>
+
+        <div class="ls-page-footer__brand">
+
+            <a class="ls-page-footer__logo" href="javascript:void(0);">
+
+                <svg viewbox="0 0 216 26">
+                    <path d="M23.46 25.188V15.15h-3.462c0 3.971-.708 6.802-5.177 6.802h-4.059V5.518c0-.92.522-1.47 1.453-1.47h2.308V.812H0v3.236h2.309c.931 0 1.452.551 1.452 1.47v14.963c0 .92-.521 1.471-1.452 1.471H.037v3.235H23.46zM35.115.813l-6.206 18.382c-.744 2.243-1.264 2.758-2.565 2.758H25.08v3.235h10.927v-3.235h-1.078c-1.004 0-2.304-.11-2.304-.699 0-.515.148-1.066.557-2.353l.446-1.47h7.582l.78 2.646c.15.552.187.956.187 1.324 0 .405-.93.552-2.044.552h-1.115v3.235h13.567v-3.235h-1.263c-1.301 0-1.822-.515-2.565-2.758L42.55.812h-7.435zM37.559 6.5h.079l2.811 8.125h-5.662L37.559 6.5zM79.677.406h-3.078l-.667 1.739C73.818.813 71.408 0 68.887 0c-5.116 0-10.64 1.664-10.64 7.766 0 10.613 16.054 6.324 16.054 11.613 0 2.108-2.336 3.18-4.264 3.18-4.375 0-7.601-2.7-8.082-6.581h-3.449v9.69h3.115l.964-1.96C64.92 25.407 67.813 26 70.667 26c5.117 0 10.232-1.997 10.232-7.914 0-10.54-16.054-6.805-16.054-11.464 0-2.478 2.002-3.18 4.153-3.18 3.263 0 6.711 2.182 7.267 6.064h3.411V.41l.001-.003zm6.237 9.742c0-3.75 1.097-6.101 5.3-6.101v16.435c0 .919-.511 1.47-1.425 1.47h-2.267v3.235h14.184v-3.234h-2.193c-.914 0-1.426-.552-1.426-1.472V4.047c4.204 0 5.3 2.354 5.3 6.106h3.4V.813h-24.27v9.34h3.4l-.003-.005zM112.777.813l-6.207 18.382c-.743 2.243-1.264 2.758-2.564 2.758h-1.264v3.235h10.927v-3.235h-1.078c-1.004 0-2.304-.11-2.304-.699 0-.515.148-1.066.557-2.353l.446-1.47h7.582l.78 2.646c.15.552.187.956.187 1.324 0 .405-.93.552-2.045.552h-1.114v3.235h13.567v-3.235h-1.263c-1.301 0-1.822-.515-2.565-2.758L120.21.812h-7.433zm1.636 5.687h.079l2.811 8.125h-5.663l2.773-8.125zM131.056.813V4.05h2.241c.934 0 1.457.551 1.457 1.47v14.962c0 .92-.523 1.472-1.457 1.472h-2.24v3.234h10.795v-3.235h-1.568c-.935 0-1.457-.55-1.457-1.47V4.6h.075l5.826 20.587h5.453l5.864-20.22h.075v15.513c0 .92-.523 1.47-1.457 1.47h-1.568v3.235h13.557v-3.235h-2.054c-.934 0-1.457-.55-1.457-1.47V5.518c0-.92.522-1.47 1.457-1.47h2.054V.813h-13.297l-4.407 14.963h-.075L144.579.813h-13.522zm40.939 19.668c0 .92-.517 1.471-1.439 1.471h-2.25v3.235h14.531v-3.235h-2.47c-.923 0-1.44-.551-1.44-1.471v-5.81h4.058c6.785 0 10.363-1.911 10.363-6.947S189.771.812 183.722.812H168.27v3.236h2.286c.922 0 1.439.552 1.439 1.471v14.962zm6.792-16.418h3.658c2.009 0 3.622 1.42 3.622 3.675s-1.685 3.637-4.196 3.637h-3.084V4.062v.001zM198.53.813l-6.207 18.382c-.744 2.243-1.264 2.758-2.565 2.758h-1.264v3.235h10.927v-3.235h-1.077c-1.004 0-2.304-.11-2.304-.699 0-.515.148-1.066.557-2.353l.446-1.47h7.583l.78 2.646c.149.552.186.956.186 1.324 0 .405-.93.552-2.045.552h-1.115v3.235H216v-3.235h-1.264c-1.3 0-1.82-.515-2.564-2.758L205.965.812h-7.435zm1.636 5.687h.078l2.812 8.125h-5.663l2.773-8.125z" fill="#fff" fill-rule="nonzero"></path>
+                </svg>
+
+            </a>
+
+            <p class="ls-page-footer__claim">
+                GEDI NEWS NETWORK S.P.A <br>
+                Via Ernesto Lugaro n. 15 00126 Torino - P.I. 01578251009 Società soggetta all'attività di direzione e coordinamento di GEDI Gruppo Editoriale S.p.A.
+            </p>
+
+        </div>
+
+        <div class="ls-page-footer__bottom">
+
+            <p class="ls-page-footer__copyrights">
+                I diritti delle immagini e dei testi sono riservati. È espressamente vietata la loro riproduzione con qualsiasi mezzo e l'adattamento totale o parziale.
+            </p>
+
+        </div>
 
     </div>
-
-    <div class="ls-page-footer__brand">
-
-      <a class="ls-page-footer__logo" href="javascript:void(0);">
-
-        <svg viewbox="0 0 216 26">
-          <path d="M23.46 25.188V15.15h-3.462c0 3.971-.708 6.802-5.177 6.802h-4.059V5.518c0-.92.522-1.47 1.453-1.47h2.308V.812H0v3.236h2.309c.931 0 1.452.551 1.452 1.47v14.963c0 .92-.521 1.471-1.452 1.471H.037v3.235H23.46zM35.115.813l-6.206 18.382c-.744 2.243-1.264 2.758-2.565 2.758H25.08v3.235h10.927v-3.235h-1.078c-1.004 0-2.304-.11-2.304-.699 0-.515.148-1.066.557-2.353l.446-1.47h7.582l.78 2.646c.15.552.187.956.187 1.324 0 .405-.93.552-2.044.552h-1.115v3.235h13.567v-3.235h-1.263c-1.301 0-1.822-.515-2.565-2.758L42.55.812h-7.435zM37.559 6.5h.079l2.811 8.125h-5.662L37.559 6.5zM79.677.406h-3.078l-.667 1.739C73.818.813 71.408 0 68.887 0c-5.116 0-10.64 1.664-10.64 7.766 0 10.613 16.054 6.324 16.054 11.613 0 2.108-2.336 3.18-4.264 3.18-4.375 0-7.601-2.7-8.082-6.581h-3.449v9.69h3.115l.964-1.96C64.92 25.407 67.813 26 70.667 26c5.117 0 10.232-1.997 10.232-7.914 0-10.54-16.054-6.805-16.054-11.464 0-2.478 2.002-3.18 4.153-3.18 3.263 0 6.711 2.182 7.267 6.064h3.411V.41l.001-.003zm6.237 9.742c0-3.75 1.097-6.101 5.3-6.101v16.435c0 .919-.511 1.47-1.425 1.47h-2.267v3.235h14.184v-3.234h-2.193c-.914 0-1.426-.552-1.426-1.472V4.047c4.204 0 5.3 2.354 5.3 6.106h3.4V.813h-24.27v9.34h3.4l-.003-.005zM112.777.813l-6.207 18.382c-.743 2.243-1.264 2.758-2.564 2.758h-1.264v3.235h10.927v-3.235h-1.078c-1.004 0-2.304-.11-2.304-.699 0-.515.148-1.066.557-2.353l.446-1.47h7.582l.78 2.646c.15.552.187.956.187 1.324 0 .405-.93.552-2.045.552h-1.114v3.235h13.567v-3.235h-1.263c-1.301 0-1.822-.515-2.565-2.758L120.21.812h-7.433zm1.636 5.687h.079l2.811 8.125h-5.663l2.773-8.125zM131.056.813V4.05h2.241c.934 0 1.457.551 1.457 1.47v14.962c0 .92-.523 1.472-1.457 1.472h-2.24v3.234h10.795v-3.235h-1.568c-.935 0-1.457-.55-1.457-1.47V4.6h.075l5.826 20.587h5.453l5.864-20.22h.075v15.513c0 .92-.523 1.47-1.457 1.47h-1.568v3.235h13.557v-3.235h-2.054c-.934 0-1.457-.55-1.457-1.47V5.518c0-.92.522-1.47 1.457-1.47h2.054V.813h-13.297l-4.407 14.963h-.075L144.579.813h-13.522zm40.939 19.668c0 .92-.517 1.471-1.439 1.471h-2.25v3.235h14.531v-3.235h-2.47c-.923 0-1.44-.551-1.44-1.471v-5.81h4.058c6.785 0 10.363-1.911 10.363-6.947S189.771.812 183.722.812H168.27v3.236h2.286c.922 0 1.439.552 1.439 1.471v14.962zm6.792-16.418h3.658c2.009 0 3.622 1.42 3.622 3.675s-1.685 3.637-4.196 3.637h-3.084V4.062v.001zM198.53.813l-6.207 18.382c-.744 2.243-1.264 2.758-2.565 2.758h-1.264v3.235h10.927v-3.235h-1.077c-1.004 0-2.304-.11-2.304-.699 0-.515.148-1.066.557-2.353l.446-1.47h7.583l.78 2.646c.149.552.186.956.186 1.324 0 .405-.93.552-2.045.552h-1.115v3.235H216v-3.235h-1.264c-1.3 0-1.82-.515-2.564-2.758L205.965.812h-7.435zm1.636 5.687h.078l2.812 8.125h-5.663l2.773-8.125z" fill="#fff" fill-rule="nonzero"></path>
-        </svg>
-
-      </a>
-
-      <p class="ls-page-footer__claim">
-        GEDI NEWS NETWORK S.P.A <br>
-        Via Ernesto Lugaro n. 15 00126 Torino - P.I. 01578251009 Società soggetta all'attività di direzione e coordinamento di GEDI Gruppo Editoriale S.p.A.
-      </p>
-
-    </div>
-
-    <div class="ls-page-footer__bottom">
-
-      <p class="ls-page-footer__copyrights">
-        I diritti delle immagini e dei testi sono riservati. È espressamente vietata la loro riproduzione con qualsiasi mezzo e l'adattamento totale o parziale.
-      </p>
-
-    </div>
-
-  </div>
 
 </footer>
 <!-- #end include/common/footer -->
@@ -2717,7 +2757,7 @@ senza alcuna variazione del prezzo finale.</span>
 })(3);
 </script><script type="text/javascript">
   if (!window.Zephr) window.Zephr = {};
-  window.Zephr.accessDetails = {"isAuthenticated":false,"accessDecisions":{"Xsrad4CCSpxfUclqXstadKK7e8trbpgw":false},"entitlements":{},"credits":{},"meters":{"5MJFuQ":{"isUsedInDecision":false,"isDecrementedInDecision":false,"totalCredits":2,"remainingCredits":2},"D6mZC9":{"isUsedInDecision":false,"isDecrementedInDecision":false,"totalCredits":2,"remainingCredits":2},"LCI8sr":{"isUsedInDecision":false,"isDecrementedInDecision":false,"totalCredits":2,"remainingCredits":2},"OWRU0M":{"isUsedInDecision":false,"isDecrementedInDecision":false,"totalCredits":3,"remainingCredits":3},"ZPgSHh":{"isUsedInDecision":false,"isDecrementedInDecision":false,"totalCredits":3,"remainingCredits":3},"WF7c49":{"isUsedInDecision":false,"isDecrementedInDecision":false,"totalCredits":2,"remainingCredits":2}},"trials":{},"trialTrackingDetails":[{"creditsUsedKey":"rlc_used1","creditsRemainingKey":"rlc_rema1","entitlementId":"1obPAs","entitlementType":"meter"},{"creditsUsedKey":"l_rep_tcu","creditsRemainingKey":"l_rep_tcr","entitlementId":"7pDWsg","entitlementType":"meter"},{"creditsUsedKey":"rep_mcu","creditsRemainingKey":"rep_mcr","entitlementId":"D6mZC9","entitlementType":"meter"},{"creditsUsedKey":"crter_1","creditsRemainingKey":"crter_2","entitlementId":"IwKC30","entitlementType":"meter"},{"creditsUsedKey":"rlc10_used1","creditsRemainingKey":"rlc10_rema1","entitlementId":"NM1VNs","entitlementType":"meter"},{"creditsUsedKey":"l_rep_mcu","creditsRemainingKey":"l_rep_mcr","entitlementId":"v3w9PY","entitlementType":"meter"},{"creditsUsedKey":"rep_rtcu","creditsRemainingKey":"rep_rtcr","entitlementId":"WF7c49","entitlementType":"meter"}],"testGroups":{"0ceb39bc-1dce-45a4-9c98-98cb27112aab":"B","6fdc4d8c-0866-4f9f-80b0-b826d640da01":"B","803eb1b6-d3d6-416c-8ade-b33c8368c40a":"B","878679bf-19c9-4977-889c-4207334282bd":"C","a49dcf27-70af-47c1-ac39-2a85bed62e59":"A","b6f3b988-5679-4740-a303-34daefd8681e":"A","d4caece8-b073-435c-95a3-4e7d096872c7":"A","ff1abf78-62b8-4dec-b9b9-bda0c0d26bec":"B","03acccb8-8418-469c-9413-94e4af8c6962":"B","04268b89-337b-4373-bfd6-456a7df94e6c":"A","0b3fca1e-46fb-4fb4-bd88-b6423d9d8c62":"A","12ad6c0a-93b6-4d09-ba35-72bedfa2d71f":"B","1b101ffa-95d3-40f0-bf7b-1b1034843850":"B","2136ee66-a6ee-4eda-9d70-d5e082d0080e":"A","3ef018f4-33fa-4036-82f3-9e0a100d35d1":"B","43b150ff-41b2-4e29-b03d-00ef61491e61":"B","497f71d5-14dd-4448-8e85-e23a3feacc14":"A","4ffbe8f6-2dcc-4c3a-a6dd-df35ea9f1575":"B","51885a1a-d12e-4313-bb8b-ebf2fd2e0720":"B","5413e28c-f496-4979-a490-7a3f8758fab4":"A","61e3a934-aad5-4d9f-87c3-0092a1f0a6ea":"B","6575d3f2-2bb2-4641-ab18-55a71f76c6ff":"A","7024e44c-0a15-46d1-aa2a-33dce1ee5c29":"A","70913037-b04b-4cdb-a319-2c18ef8ce2e4":"D","7190b360-8e12-46a1-9716-46fc6c322d13":"A","71abd2d3-1af8-40da-9043-352c6aa2c3a6":"B","746fb34e-7416-479f-a38e-2cb4c88b49c9":"A","7c36653e-a25d-4acd-b90f-377708b86530":"A","7d0552dd-bca3-4653-a764-10b44d672f16":"A","866a771a-f916-4dab-b13f-314a7a19302c":"B","89b08766-b0fd-4346-a5f7-67befc7d5696":"A","8a1e6bc2-bf44-445b-82ec-9282461bbbc4":"B","8c5d5081-cd8e-42a2-8a1d-57c2d644f5a4":"A","98568817-9ddf-4b4e-9f39-ba5e98d55a5a":"B","a4a7e675-f5c5-4a26-a906-de573fe989e3":"B","aa9f545a-811d-4d19-a765-1f54aaf14157":"A","ae8b6b6e-6db8-4cac-8ab5-58e56a5e8063":"A","affbdc21-5fcc-4719-be37-b0565e610d45":"B","b0135bc5-16cb-423d-b71a-c17d5f8e9df5":"A","b7cf3a85-8d05-4704-ae1e-98400fd012d2":"A","c2b70a46-767a-44ba-9951-e60904c0805f":"B","c58e96b6-49cc-470e-a0b9-b9a4f8f029be":"A","c5e4569d-833f-4fba-9ed4-83e13a3cf89f":"A","ee6b7c8e-8b85-46f3-a362-2e0feca04260":"B","f87dfb18-d532-4d98-bf91-f068c33ad3af":"B"},"activeProducts":[]};
+  window.Zephr.accessDetails = {"isAuthenticated":false,"accessDecisions":{"Xsrad4CCSpxfUclqXstadKK7e8trbpgw":false},"entitlements":{},"credits":{},"meters":{"5MJFuQ":{"isUsedInDecision":false,"isDecrementedInDecision":false,"totalCredits":2,"remainingCredits":2},"D6mZC9":{"isUsedInDecision":false,"isDecrementedInDecision":false,"totalCredits":2,"remainingCredits":2},"LCI8sr":{"isUsedInDecision":false,"isDecrementedInDecision":false,"totalCredits":2,"remainingCredits":2},"OWRU0M":{"isUsedInDecision":false,"isDecrementedInDecision":false,"totalCredits":3,"remainingCredits":3},"ZPgSHh":{"isUsedInDecision":false,"isDecrementedInDecision":false,"totalCredits":3,"remainingCredits":3},"WF7c49":{"isUsedInDecision":false,"isDecrementedInDecision":false,"totalCredits":2,"remainingCredits":2}},"trials":{"6RA6Qc":{"isUsedInDecision":false}},"trialTrackingDetails":[{"creditsUsedKey":"rlc_used1","creditsRemainingKey":"rlc_rema1","entitlementId":"1obPAs","entitlementType":"meter"},{"creditsUsedKey":"l_rep_tcu","creditsRemainingKey":"l_rep_tcr","entitlementId":"7pDWsg","entitlementType":"meter"},{"creditsUsedKey":"rep_mcu","creditsRemainingKey":"rep_mcr","entitlementId":"D6mZC9","entitlementType":"meter"},{"creditsUsedKey":"crter_1","creditsRemainingKey":"crter_2","entitlementId":"IwKC30","entitlementType":"meter"},{"creditsUsedKey":"rlc10_used1","creditsRemainingKey":"rlc10_rema1","entitlementId":"NM1VNs","entitlementType":"meter"},{"creditsUsedKey":"l_rep_mcu","creditsRemainingKey":"l_rep_mcr","entitlementId":"v3w9PY","entitlementType":"meter"},{"creditsUsedKey":"rep_rtcu","creditsRemainingKey":"rep_rtcr","entitlementId":"WF7c49","entitlementType":"meter"}],"testGroups":{"0ceb39bc-1dce-45a4-9c98-98cb27112aab":"C","6fdc4d8c-0866-4f9f-80b0-b826d640da01":"B","803eb1b6-d3d6-416c-8ade-b33c8368c40a":"C","878679bf-19c9-4977-889c-4207334282bd":"C","a49dcf27-70af-47c1-ac39-2a85bed62e59":"B","b6f3b988-5679-4740-a303-34daefd8681e":"B","d4caece8-b073-435c-95a3-4e7d096872c7":"A","ff1abf78-62b8-4dec-b9b9-bda0c0d26bec":"B","03acccb8-8418-469c-9413-94e4af8c6962":"A","04268b89-337b-4373-bfd6-456a7df94e6c":"B","0b3fca1e-46fb-4fb4-bd88-b6423d9d8c62":"A","12ad6c0a-93b6-4d09-ba35-72bedfa2d71f":"A","1b101ffa-95d3-40f0-bf7b-1b1034843850":"A","2136ee66-a6ee-4eda-9d70-d5e082d0080e":"A","3ef018f4-33fa-4036-82f3-9e0a100d35d1":"A","43b150ff-41b2-4e29-b03d-00ef61491e61":"A","497f71d5-14dd-4448-8e85-e23a3feacc14":"B","4ffbe8f6-2dcc-4c3a-a6dd-df35ea9f1575":"A","51885a1a-d12e-4313-bb8b-ebf2fd2e0720":"A","5413e28c-f496-4979-a490-7a3f8758fab4":"B","61e3a934-aad5-4d9f-87c3-0092a1f0a6ea":"C","6575d3f2-2bb2-4641-ab18-55a71f76c6ff":"B","7024e44c-0a15-46d1-aa2a-33dce1ee5c29":"B","70913037-b04b-4cdb-a319-2c18ef8ce2e4":"B","7190b360-8e12-46a1-9716-46fc6c322d13":"C","71abd2d3-1af8-40da-9043-352c6aa2c3a6":"A","746fb34e-7416-479f-a38e-2cb4c88b49c9":"B","7c36653e-a25d-4acd-b90f-377708b86530":"B","7d0552dd-bca3-4653-a764-10b44d672f16":"B","866a771a-f916-4dab-b13f-314a7a19302c":"B","89b08766-b0fd-4346-a5f7-67befc7d5696":"A","8a1e6bc2-bf44-445b-82ec-9282461bbbc4":"B","8c5d5081-cd8e-42a2-8a1d-57c2d644f5a4":"A","98568817-9ddf-4b4e-9f39-ba5e98d55a5a":"B","a4a7e675-f5c5-4a26-a906-de573fe989e3":"A","aa9f545a-811d-4d19-a765-1f54aaf14157":"A","ae8b6b6e-6db8-4cac-8ab5-58e56a5e8063":"B","affbdc21-5fcc-4719-be37-b0565e610d45":"A","b0135bc5-16cb-423d-b71a-c17d5f8e9df5":"B","b7cf3a85-8d05-4704-ae1e-98400fd012d2":"B","c2b70a46-767a-44ba-9951-e60904c0805f":"B","c58e96b6-49cc-470e-a0b9-b9a4f8f029be":"A","c5e4569d-833f-4fba-9ed4-83e13a3cf89f":"B","ee6b7c8e-8b85-46f3-a362-2e0feca04260":"B","f87dfb18-d532-4d98-bf91-f068c33ad3af":"A"},"activeProducts":[]};
 </script>
 <script type="text/javascript">
   window.Zephr = window.Zephr || {};

@@ -23,10 +23,10 @@
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="/template/mobile/styles/css/mobile.css?v=1.1">
-    <link href="/css/custom_m.css?v=1.1" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="/template/desktop/styles/css/desktop.css?v=1.1">
+    <link href="/css/custom.css?v=1.1" rel="stylesheet" />
     
-    <link rel="stylesheet" type="text/css" href="/template/mobile/styles/css/m-audio-player.css">
+    <link rel="stylesheet" type="text/css" href="/template/desktop/styles/css/d-audio-player.css">
 
     <style type="text/css">
         br {
@@ -34,21 +34,15 @@
         }
 
         /*.author {
-            text-align: right;*/
-        /*font-weight: bold;*/
-        /*}*/
+            text-align: right;
+            font-weight: bold;
+        }*/
 
         iframe {
             border: 0;
         }
     </style>
 
-    <style type="text/css">
-
-        iframe {
-            border: 0;
-        }
-    </style>
     <!--Google Analytics-->
     <script type="text/javascript">
         var _gaq = _gaq || [];
@@ -65,223 +59,401 @@
     <div class="wrapper-page">
         <!-- site header -->
         <header class="page-header">
-            <div class="container">
-                <h1 class="region-logo" style="background: url(../template/mobile/styles/img/logo.png) center center/93px 30px no-repeat;">
-                    <a href="/" class="logo">Lecourrier.vn</a>
-                </h1>
-                <div class="hamburger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
+            <div class="top-header">
+                <div class="container">
+                    <div class="wrapper">
+                        <a class="wrap-menu">
+                            <!-- <p class="text">Danh mục</p> -->
+                            <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" data-svg="navbar-toggle-icon">
+                                <rect y="9" width="20" height="2"></rect>
+                                <rect y="3" width="20" height="2"></rect>
+                                <rect y="15" width="20" height="2"></rect>
+                            </svg>
+                        </a>
+                        <time class="top-header__left">mercredi 07/12/2022 </time>
+                    </div>
+                    <ul class="top-header__right">
+                        <li class="search-wrapper">
+                            <input id="txtSearchDefault" type="text" placeholder="Rechercher" onkeydown="searchDataDefaultEnter(this)">
+                            <a onclick="searchDataDefault()"><span class="icon icon-search">icon search</span></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="logo-wrapper">
+                <div class="container">
+                    <h1 class="logo" style="background: url(/template/desktop/styles/img/lecourrier-logo.png) center center/270px no-repeat;">
+                        <a href="/">Lecourrier.vn</a>
+                    </h1>
+                    <div class="wrapper">
+                        <div class="wrapper">
+    <a href="">
+        <img src="/template/desktop/styles/img/consulter-le-journal.png" alt="">
+    </a>
+    <a href="https://imagelecourrier.vnanet.vn/MediaUpload/Media/2022/12/07/141906-tarif-phat-hanh-online-so-50-2022.pdf" class="text" target="_blank"><span>Consulter <br />le magazine</span></a>
+</div>
+                    </div>
+                    <div class="banner-top">
+                        
+<a href='https://lecourrier.vn/topic/concours-2022/120.html' onclick='writeLogging("adv","https://lecourrier.vn/topic/concours-2022/120.html",233)' target='_blank'><img style='width:auto; height:120px' class='lazyload' data-src='https://imagelecourrier.vnanet.vn/MediaUpload/Media/2022/09/14/092644-rightheader.png' alt=''></a>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-wrapper sticky">
+                <div class="container">
+                    <ul class="menu d-flex">
+    <li><a href="/" class="icon icon-home">home</a></li>
+            <li><a href="https://lecourrier.vn/politique/1.cvn">Politique</a></li>
+            <li>
+                <a href="https://lecourrier.vn/economie/2.cvn">&#xC9;conomie
+                </a>
+                <ul class="sub-menu">
+                        <li><a href="https://lecourrier.vn/agriculture/25.cvn">Agriculture</a></li>
+                        <li><a href="https://lecourrier.vn/entreprises/67.cvn">Entreprises</a></li>
+                        <li><a href="https://lecourrier.vn/investissements/6.cvn">Investissements</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="https://lecourrier.vn/societe/3.cvn">Soci&#xE9;t&#xE9;
+                </a>
+                <ul class="sub-menu">
+                        <li><a href="https://lecourrier.vn/education/20.cvn">&#xC9;ducation</a></li>
+                        <li><a href="https://lecourrier.vn/environnement/22.cvn">Environnement</a></li>
+                        <li><a href="https://lecourrier.vn/etransformation/125.cvn">E-transformation</a></li>
+                        <li><a href="https://lecourrier.vn/sante/21.cvn">Sant&#xE9;</a></li>
+                        <li><a href="https://lecourrier.vn/sciences/23.cvn">Sciences</a></li>
+                        <li><a href="https://lecourrier.vn/scenesdevie/126.cvn">Sc&#xE8;nes de vie</a></li>
+                </ul>
+            </li>
+            <li><a href="https://lecourrier.vn/tourisme/49.cvn">Tourisme</a></li>
+            <li><a href="https://lecourrier.vn/culture/4.cvn">Culture</a></li>
+            <li><a href="https://lecourrier.vn/portraits/32.cvn">Portraits</a></li>
+            <li><a href="https://lecourrier.vn/sports/29.cvn">Sports</a></li>
+            <li><a href="https://lecourrier.vn/asean/76.cvn">ASEAN</a></li>
+            <li>
+                <a href="https://lecourrier.vn/international/5.cvn">International
+                </a>
+                <ul class="sub-menu">
+                        <li><a href="https://lecourrier.vn/politique/33.cvn">Politique</a></li>
+                        <li><a href="https://lecourrier.vn/societe/34.cvn">Soci&#xE9;t&#xE9;</a></li>
+                        <li><a href="https://lecourrier.vn/economie/35.cvn">&#xC9;conomie</a></li>
+                        <li><a href="https://lecourrier.vn/culture/36.cvn">Culture</a></li>
+                        <li><a href="https://lecourrier.vn/sports/37.cvn">Sports</a></li>
+                </ul>
+            </li>
+            <li><a href="https://lecourrier.vn/francophonie/9.cvn">Francophonie</a></li>
+            <li><a href="https://lecourrier.vn/opinion/11.cvn">Opinion</a></li>
+            <li><a href="https://lecourrier.vn/diaspora/10.cvn">Diaspora</a></li>
+</ul>
+
+
+
+
                 </div>
             </div>
         </header>
-
-        <div class="navigation">
-            <div class="region-search">
-                <input id="txtSearchDefault" type="text" class="search" placeholder="Rechercher" onkeydown="searchDataDefaultEnter(this)">
-                <a onclick="searchDataDefault()"><span class="icon icon-search">icon search</span></a>
-            </div>
-            <ul class="menu">
-    <li><a href="/" class="icon icon-home">home</a></li>
+        <!-- navigation -->
+        <nav class="region-nav">
+            <div class="nav-wrapper scroll">
+                <ul class="menu-1">
         <li><a href="https://lecourrier.vn/politique/1.cvn">Politique</a></li>
-        <li><a href="https://lecourrier.vn/societe/3.cvn">Soci&#xE9;t&#xE9;</a></li>
-        <li><a href="https://lecourrier.vn/economie/2.cvn">&#xC9;conomie</a></li>
+    <li>
+        <a href="https://lecourrier.vn/economie/2.cvn">&#xC9;conomie</a>
+        <i class="fal fa-chevron-right"></i>
+        <ul class="sub-menu">
+                <li><a href="https://lecourrier.vn/agriculture/25.cvn">Agriculture</a></li>
+                <li><a href="https://lecourrier.vn/entreprises/67.cvn">Entreprises</a></li>
+                <li><a href="https://lecourrier.vn/investissements/6.cvn">Investissements</a></li>
+        </ul>
+    </li>
+    <li>
+        <a href="https://lecourrier.vn/societe/3.cvn">Soci&#xE9;t&#xE9;</a>
+        <i class="fal fa-chevron-right"></i>
+        <ul class="sub-menu">
+                <li><a href="https://lecourrier.vn/education/20.cvn">&#xC9;ducation</a></li>
+                <li><a href="https://lecourrier.vn/environnement/22.cvn">Environnement</a></li>
+                <li><a href="https://lecourrier.vn/etransformation/125.cvn">E-transformation</a></li>
+                <li><a href="https://lecourrier.vn/sante/21.cvn">Sant&#xE9;</a></li>
+                <li><a href="https://lecourrier.vn/sciences/23.cvn">Sciences</a></li>
+                <li><a href="https://lecourrier.vn/scenesdevie/126.cvn">Sc&#xE8;nes de vie</a></li>
+        </ul>
+    </li>
         <li><a href="https://lecourrier.vn/tourisme/49.cvn">Tourisme</a></li>
         <li><a href="https://lecourrier.vn/culture/4.cvn">Culture</a></li>
         <li><a href="https://lecourrier.vn/portraits/32.cvn">Portraits</a></li>
         <li><a href="https://lecourrier.vn/sports/29.cvn">Sports</a></li>
         <li><a href="https://lecourrier.vn/asean/76.cvn">ASEAN</a></li>
-        <li><a href="https://lecourrier.vn/international/5.cvn">International</a></li>
+    <li>
+        <a href="https://lecourrier.vn/international/5.cvn">International</a>
+        <i class="fal fa-chevron-right"></i>
+        <ul class="sub-menu">
+                <li><a href="https://lecourrier.vn/politique/33.cvn">Politique</a></li>
+                <li><a href="https://lecourrier.vn/societe/34.cvn">Soci&#xE9;t&#xE9;</a></li>
+                <li><a href="https://lecourrier.vn/economie/35.cvn">&#xC9;conomie</a></li>
+                <li><a href="https://lecourrier.vn/culture/36.cvn">Culture</a></li>
+                <li><a href="https://lecourrier.vn/sports/37.cvn">Sports</a></li>
+        </ul>
+    </li>
         <li><a href="https://lecourrier.vn/francophonie/9.cvn">Francophonie</a></li>
         <li><a href="https://lecourrier.vn/opinion/11.cvn">Opinion</a></li>
         <li><a href="https://lecourrier.vn/diaspora/10.cvn">Diaspora</a></li>
+   
 </ul>
 
 
-            <div class="mask">mask</div>
-        </div>
+            </div>
+        </nav>
         <!-- site body -->
         <div class="site-body">
-            <div class="container">
-    <!-- code -->
-    <div class="wrap-breadcrumb">
-        <a href="https://lecourrier.vn/international/5.cvn" class="active">International   / </a> 
-            <a href="https://lecourrier.vn/societe/34.cvn" class="active">Soci&#xE9;t&#xE9;</a>
-        <ul class="breadcrumb">
+            
+<div class="site-body article-page">
+    <div class="container">
+        <!-- code -->
+        <ul class="breadcrumb-wrapper">
+                <li><a href="https://lecourrier.vn/international/5.cvn">International</a></li>
+                <li><a href="https://lecourrier.vn/societe/34.cvn" class="active">Soci&#xE9;t&#xE9;</a></li>
         </ul>
-    </div>
+        <div class="col-wrapper">
+            <div class="main-col">
+                <div class="article" id="printArticle">
+                    <div class="article__title">
+                        Australie : un mort dans les inondations, les pluies s'atténuent
+                    </div>
+                    <div class="article__meta">
+                        <time class="time">15/10/2022 14:36</time>
+                        <div class="wrapper">
+                            <div class="social">
+                                <a href="https://www.facebook.com/lecourrier.vn" target="_blank" class="fb">
+                                    <i class="icon-fb"></i>
+                                </a>
+                                <a style="cursor:pointer" onclick="printdiv('printArticle')">
+                                    <i class="icon-print"></i>
+                                </a>
+                            </div>
+                            <iframe src="https://www.facebook.com/plugins/like.php?href=https://lecourrier.vn/australie-un-mort-dans-les-inondations-les-pluies-sattenuent/1076761.html&width=150&layout=button_count&action=like&size=small&share=true&height=20&&locale=fr_FR" width="150" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
 
-    <div class="article">
-        <div class="article__title">
-            Australie : un mort dans les inondations, les pluies s'atténuent
-        </div>
-        <div class="article__meta">
-            <time class="time">15/10/2022 14:36</time>
-            <iframe src="https://www.facebook.com/plugins/like.php?href=https://lecourrier.vn/australie-un-mort-dans-les-inondations-les-pluies-sattenuent/1076761.html&width=150&layout=button_count&action=like&size=small&share=true&height=20&&locale=fr_FR" width="150" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                        </div>
+                    </div>
+                    <div class="article__sapo">
 
-        </div>
-        <div class="article__sapo">
 <p style='text-align:'>Les pluies diluviennes qui s'abattent sur le Sud-Est de l'Australie depuis plusieurs jours ont commencé samedi 15 octobre à s'atténuer, mais les inondations qu'elles ont causé ont fait apparemment un mort, selon la police.</p>
+
+                    </div>
+                    <div class="article__body">
+                                <p><a href="https://lecourrier.vn/inondations-en-australie-12-morts-les-pluies-se-dirigent-vers-sydney/969206.html" title="Inondations en Australie : 12 morts, les pluies se dirigent vers Sydney ">>> Inondations en Australie : 12 morts, les pluies se dirigent vers Sydney </a></p>
+                                <p><a href="https://lecourrier.vn/inondations-en-australie-200000-personnes-priees-devacuer/969299.html" title="Inondations en Australie : 200.000 personnes pri&#233;es d&#39;&#233;vacuer">>> Inondations en Australie : 200.000 personnes priées d'évacuer</a></p>
+                                <p><a href="https://lecourrier.vn/inondations-en-australie-des-milliers-de-personnes-appelees-a-evacuer/1076719.html" title="Inondations en Australie: des milliers de personnes appel&#233;es &#224; &#233;vacuer">>> Inondations en Australie: des milliers de personnes appelées à évacuer</a></p>
+<table class='picture' align=''><tbody><tr><td class='pic'><img class='lazyload' data-src='https://imagelecourrier.vnanet.vn/MediaUpload/Org/2022/10/15/133325-1.jpg' src='~/images/vnn.jpg' alt=''></td></tr><tr><td class='caption'>Des sauveteurs en canot pneumatique dans une rue inondée de Maribyrnong, dans la banlieue de Melbourne, le 14 octobre 2022 en Australie.</td></tr><tr align='right'><td class='author'>Photo : AFP/VNA/CVN</td></tr></tbody></table><p style='text-align:left'>Un homme de 71 ans a été "<i>retrouvé mort dans les eaux de crue dans l'arrière-cour" </i>de sa propriété à Rochester, une petite ville au nord de Melbourne, a indiqué la police locale, précisant que les circonstances exactes du décès restaient à déterminer.</p><p style='text-align:left'>Dans trois États du Sud-Est de l'Australie, les eaux ont submergé des voitures et inondé des maisons, les banlieues de Melbourne étant parmi les plus touchées.</p><p style='text-align:left'>Samedi 15 octobre, les précipitations s'atténuant, les habitants des zones affectées pateaugeaient dans des rues boueuses et jonchées de débris en tout genre et d'épaves de voitures.</p><p style='text-align:left'>Des ordres d'évacuation restent en place pour des dizaines de localités.</p><p style='text-align:left'>"<i>C'est sérieux, c'est potentiellement très, très dangereux",</i> a averti le Premier ministre de l'État de Victoria, Dan Andrews.</p><p style='text-align:left'>La côte orientale de l'Australie est affectée depuis deux ans par des phénomènes météorologiques extrêmes à répétition.</p><p style='text-align:left'>En mars, la région avait été durement frappée par de graves inondations, qui avaient fait 20 morts.</p><p style='text-align:left'>Et en juillet, des milliers d'habitants de Sydney avaient été contraints de quitter leurs domiciles à la suite de pluies diluviennes.</p><p style='text-align:left'>L'Australie est en première ligne face aux conséquences du dérèglement climatique, avec des inondations, des feux de brousse, des cyclones et des sécheresses qui deviennent plus fréquents et plus intenses à mesure que la planète se réchauffe, préviennent les scientifiques.</p><p style='text-align:right'><b>AFP/VNA/CVN</b></p>
+                    </div>
+
+                   
+
+                </div>
+                <div class="article">
+                        <div class="related-news">
+                                <article class="story">
+                                    <figure class="story__thumb">
+                                        <a href="https://lecourrier.vn/inondations-en-australie-12-morts-les-pluies-se-dirigent-vers-sydney/969206.html" title="Inondations en Australie : 12 morts, les pluies se dirigent vers Sydney "><img width="200" height="134" class="lazyload" data-src="https://imagelecourrier.vnanet.vn/uploaded/2022/3/2/1625047631.jpg" src="/images/vnn.jpg" alt=""></a>
+                                    </figure>
+                                    <h5 class="story__heading"><a href="https://lecourrier.vn/inondations-en-australie-12-morts-les-pluies-se-dirigent-vers-sydney/969206.html">Inondations en Australie : 12 morts, les pluies se dirigent vers Sydney </a></h5>
+                                </article>
+                                <article class="story">
+                                    <figure class="story__thumb">
+                                        <a href="https://lecourrier.vn/inondations-en-australie-200000-personnes-priees-devacuer/969299.html" title="Inondations en Australie : 200.000 personnes pri&#233;es d&#39;&#233;vacuer"><img width="200" height="134" class="lazyload" data-src="https://imagelecourrier.vnanet.vn/uploaded/2022/3/3/154958147afp1.jpg" src="/images/vnn.jpg" alt=""></a>
+                                    </figure>
+                                    <h5 class="story__heading"><a href="https://lecourrier.vn/inondations-en-australie-200000-personnes-priees-devacuer/969299.html">Inondations en Australie : 200.000 personnes priées d'évacuer</a></h5>
+                                </article>
+                                <article class="story">
+                                    <figure class="story__thumb">
+                                        <a href="https://lecourrier.vn/inondations-en-australie-des-milliers-de-personnes-appelees-a-evacuer/1076719.html" title="Inondations en Australie: des milliers de personnes appel&#233;es &#224; &#233;vacuer"><img width="200" height="134" class="lazyload" data-src="https://imagelecourrier.vnanet.vn/MediaUpload/Medium/2022/10/14/142149-1.jpg" src="/images/vnn.jpg" alt=""></a>
+                                    </figure>
+                                    <h5 class="story__heading"><a href="https://lecourrier.vn/inondations-en-australie-des-milliers-de-personnes-appelees-a-evacuer/1076719.html">Inondations en Australie: des milliers de personnes appelées à évacuer</a></h5>
+                                </article>
+                        </div>
+
+                        <div class="article__tag">
+                            <div class="box-content">
+                                    <a href="https://lecourrier.vn/inondations/1076761.tag">#Inondations</a>
+                                    <a href="https://lecourrier.vn/australie/1076761.tag">#Australie</a>
+                                    <a href="https://lecourrier.vn/mort/1076761.tag">#mort</a>
+                                    <a href="https://lecourrier.vn/pluies/1076761.tag">#pluies</a>
+                                    <a href="https://lecourrier.vn/sattenuent/1076761.tag">#s&#x27;att&#xE9;nuent</a>
+                            </div>
+                        </div>
+                    <script>
+
+                        function resizeIframe(obj) {
+                            obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
+                        }
+
+                    </script>
+                    <iframe width="100%" height="100%" id="parent-iframe" name="parent-iframe" class="lazyload" data-src="https://lecourrier.vn/ApiData/PostComment?id=1076761&url=https://lecourrier.vn/australie-un-mort-dans-les-inondations-les-pluies-sattenuent/1076761.html&total=0"
+                            scrolling="no"
+                            onload="this.height=this.contentWindow.document.documentElement.scrollHeight"
+                            onresize="this.height=this.contentWindow.document.documentElement.scrollHeight"></iframe>
+
+                        <div class="see-also">
+                            <div class="box-heading">
+                                <h3 class="wrap-heading">
+                                    <a href="#" class="heading">Autres articles</a>
+                                </h3>
+                            </div>
+                            <div class="box-content">
+                                    <article class="story">
+                                        <h5 class="story__heading"><a href="https://lecourrier.vn/explosion-dans-une-mine-en-turquie-28-morts-des-dizaines-douvriers-pieges-sous-terre/1076755.html">Explosion dans une mine en Turquie : 28 morts, des dizaines d'ouvriers piégés sous terre</a></h5>
+
+                                    </article>
+                                    <article class="story">
+                                        <h5 class="story__heading"><a href="https://lecourrier.vn/venezuela-lonu-visite-la-ville-devastee-par-le-glissement-de-terrain-qui-enterre-ses-morts/1076753.html">Venezuela : l'ONU visite la ville dévastée par le glissement de terrain qui enterre ses morts</a></h5>
+
+                                    </article>
+                                    <article class="story">
+                                        <h5 class="story__heading"><a href="https://lecourrier.vn/saigontourist-pour-la-communaute-un-milliard-de-dongs-de-bourses-detudes/1076651.html">"Saigontourist pour la communauté" : un milliard de dôngs de bourses d’études</a></h5>
+
+                                    </article>
+                                    <article class="story">
+                                        <h5 class="story__heading"><a href="https://lecourrier.vn/vienne-capitale-ou-leau-coule-de-source/1076517.html">Vienne, capitale où l’eau coule de source</a></h5>
+
+                                    </article>
+                                    <article class="story">
+                                        <h5 class="story__heading"><a href="https://lecourrier.vn/carburants-greves-reconduites-chez-totalenergies-apres-un-compromis-sans-la-cgt/1076733.html">Carburants: grèves reconduites chez TotalEnergies après un compromis sans la CGT</a></h5>
+
+                                    </article>
+                                    <article class="story">
+                                        <h5 class="story__heading"><a href="https://lecourrier.vn/le-secretaire-general-de-lonu-souhaite-creer-un-systeme-universel-dalerte-precoce-pour-les-catastrophes-climatiques/1076728.html">Le secrétaire général de l'ONU souhaite créer un système universel d'alerte précoce pour les catastrophes climatiques</a></h5>
+
+                                    </article>
+                                    <article class="story">
+                                        <h5 class="story__heading"><a href="https://lecourrier.vn/les-armes-a-feu-imprimees-en-3d-du-fantasme-a-la-menace-potentielle/1076721.html">Les armes à feu imprimées en 3D, du fantasme à la menace potentielle</a></h5>
+
+                                    </article>
+                                    <article class="story">
+                                        <h5 class="story__heading"><a href="https://lecourrier.vn/inondations-en-australie-des-milliers-de-personnes-appelees-a-evacuer/1076719.html">Inondations en Australie: des milliers de personnes appelées à évacuer</a></h5>
+
+                                    </article>
+                                    <article class="story">
+                                        <h5 class="story__heading"><a href="https://lecourrier.vn/au-cap-corse-la-mer-seul-recours-pour-avoir-assez-deau-douce/1076687.html">Au Cap Corse, la mer, seul recours pour avoir assez d'eau douce</a></h5>
+
+                                    </article>
+                                    <article class="story">
+                                        <h5 class="story__heading"><a href="https://lecourrier.vn/malaisie-hausse-de-la-mortalite-en-2021-a-cause-du-nouveau-coronavirus/1076679.html">Malaisie : hausse de la mortalité en 2021 à cause du nouveau coronavirus</a></h5>
+
+                                    </article>
+                                    <article class="story">
+                                        <h5 class="story__heading"><a href="https://lecourrier.vn/creer-des-mini-organes-pour-soigner-les-maladies/1076642.html">Créer des mini-organes pour soigner les maladies</a></h5>
+
+                                    </article>
+                                    <article class="story">
+                                        <h5 class="story__heading"><a href="https://lecourrier.vn/pres-de-70-de-la-faune-sauvage-a-disparu-depuis-1970-selon-le-wwf/1076603.html">Près de 70% de la faune sauvage a disparu depuis 1970, selon le WWF</a></h5>
+
+                                    </article>
+                            </div>
+
+                        </div>
+                </div>
+            </div>
+            <div class="sub-col">
+                <div id="adv_category_right_top">
+<div class='banner'><a href='https://lecourrier.xembao.vn/' onclick='writeLogging("adv","https://lecourrier.xembao.vn/",202)' target='_blank'><img style='width:auto; height:auto' class='lazyload' data-src='https://imagelecourrier.vnanet.vn/uploaded//Adv/2014/7/31/anh dong E-Paper.gif' alt=''></a></div><div class='banner'><a href='https://www.francophonie.org/' onclick='writeLogging("adv","https://www.francophonie.org/",235)' target='_blank'><img style='width:auto; height:auto' class='lazyload' data-src='https://imagelecourrier.vnanet.vn/MediaUpload/Media/2022/09/16/152411-logo-oif_rvb.jpg' alt=''></a></div><div class='banner'><a href='http://www.wbi.be/hanoi' onclick='writeLogging("adv","http://www.wbi.be/hanoi",238)' target='_blank'><img style='width:auto; height:auto' class='lazyload' data-src='https://imagelecourrier.vnanet.vn/MediaUpload/Media/2022/10/05/171135-wbi_logo_new-del-vietnam.jpg' alt=''></a></div><div class='banner'><a href='http://www.vietnamtourism.gov.vn/' onclick='writeLogging("adv","http://www.vietnamtourism.gov.vn/",200)' target='_blank'><img style='width:auto; height:auto' class='lazyload' data-src='https://imagelecourrier.vnanet.vn/uploaded//Adv/2014/7/31/logodulich.JPG' alt=''></a></div><div class='banner'><a href='https://saigontourist.com.vn/' onclick='writeLogging("adv","https://saigontourist.com.vn/",206)' target='_blank'><img style='width:auto; height:auto' class='lazyload' data-src='https://imagelecourrier.vnanet.vn/uploaded//Adv/2022/5/30/logo-saigontouristpng153616442.png' alt=''></a></div><div class='banner'><a href='https://lecourrier.vn' onclick='writeLogging("adv","https://lecourrier.vn",236)' target='_blank'><img style='width:auto; height:auto' class='lazyload' data-src='https://imagelecourrier.vnanet.vn/MediaUpload/Media/2022/09/22/144337-logo-vj-trangnendo.png' alt=''></a></div><div class='banner'><a href='https://vingroup.net/' onclick='writeLogging("adv","https://vingroup.net/",239)' target='_blank'><img style='width:auto; height:auto' class='lazyload' data-src='https://imagelecourrier.vnanet.vn/MediaUpload/Media/2022/10/21/165759-logo-vingroup.jpg' alt=''></a></div>
+                </div>
+                <div id="adv_category_right_bottom">
+<div class='banner'><a href='http://www.cap-vietnam.com/' onclick='writeLogging("adv","http://www.cap-vietnam.com/",193)' target='_blank'><img style='width:auto; height:auto' class='lazyload' data-src='https://imagelecourrier.vnanet.vn/uploaded//Adv/2012/1/2/pubcourrier.png' alt=''></a></div><div class='banner'><a href='https://imagelecourrier.vnanet.vn/MediaUpload/Media/2022/12/07/141906-tarif-phat-hanh-online-so-50-2022.pdf' onclick='writeLogging("adv","https://imagelecourrier.vnanet.vn/MediaUpload/Media/2022/12/07/141906-tarif-phat-hanh-online-so-50-2022.pdf",207)' target='_blank'><img style='width:auto; height:auto' class='lazyload' data-src='https://imagelecourrier.vnanet.vn/MediaUpload/Media/2022/12/07/141832-bao-dien-tu-trang-1.jpg' alt=''></a></div><div class='banner'><a href='http://itaxa.vn' onclick='writeLogging("adv","http://itaxa.vn",214)' target='_blank'><img style='width:auto; height:auto' class='lazyload' data-src='https://imagelecourrier.vnanet.vn/uploaded//Video/2016/8/2/logo-itaxajpg101606151.jpg' alt=''></a></div><div class='banner'><a href='http://vinadataxa.vn/' onclick='writeLogging("adv","http://vinadataxa.vn/",219)' target='_blank'><img style='width:auto; height:auto' class='lazyload' data-src='https://imagelecourrier.vnanet.vn/uploaded//Adv/2018/4/27/logo-cong-ty-vinadataxa1-1jpg131805160.jpg' alt=''></a></div>
+                </div>
+               
+            </div>
         </div>
-        <div class="article__body">
-                    <p><a href="https://lecourrier.vn/inondations-en-australie-12-morts-les-pluies-se-dirigent-vers-sydney/969206.html" title="Inondations en Australie : 12 morts, les pluies se dirigent vers Sydney ">>> Inondations en Australie : 12 morts, les pluies se dirigent vers Sydney </a></p>
-                    <p><a href="https://lecourrier.vn/inondations-en-australie-200000-personnes-priees-devacuer/969299.html" title="Inondations en Australie : 200.000 personnes pri&#233;es d&#39;&#233;vacuer">>> Inondations en Australie : 200.000 personnes priées d'évacuer</a></p>
-                    <p><a href="https://lecourrier.vn/inondations-en-australie-des-milliers-de-personnes-appelees-a-evacuer/1076719.html" title="Inondations en Australie: des milliers de personnes appel&#233;es &#224; &#233;vacuer">>> Inondations en Australie: des milliers de personnes appelées à évacuer</a></p>
-<table class='picture' align=''><tbody><tr><td class='pic'><img class='lazyload' data-src='https://imagelecourrier.vnanet.vn/MediaUpload/Org/2022/10/15/133325-1.jpg' src='~/images/vnn.jpg' alt=''></td></tr><tr><td class='caption'>Des sauveteurs en canot pneumatique dans une rue inondée de Maribyrnong, dans la banlieue de Melbourne, le 14 octobre 2022 en Australie.</td></tr><tr><td align='right' class='author'>Photo : AFP/VNA/CVN</td></tr></tbody></table><p style='text-align:left'>Un homme de 71 ans a été "<i>retrouvé mort dans les eaux de crue dans l'arrière-cour" </i>de sa propriété à Rochester, une petite ville au nord de Melbourne, a indiqué la police locale, précisant que les circonstances exactes du décès restaient à déterminer.</p><p style='text-align:left'>Dans trois États du Sud-Est de l'Australie, les eaux ont submergé des voitures et inondé des maisons, les banlieues de Melbourne étant parmi les plus touchées.</p><p style='text-align:left'>Samedi 15 octobre, les précipitations s'atténuant, les habitants des zones affectées pateaugeaient dans des rues boueuses et jonchées de débris en tout genre et d'épaves de voitures.</p><p style='text-align:left'>Des ordres d'évacuation restent en place pour des dizaines de localités.</p><p style='text-align:left'>"<i>C'est sérieux, c'est potentiellement très, très dangereux",</i> a averti le Premier ministre de l'État de Victoria, Dan Andrews.</p><p style='text-align:left'>La côte orientale de l'Australie est affectée depuis deux ans par des phénomènes météorologiques extrêmes à répétition.</p><p style='text-align:left'>En mars, la région avait été durement frappée par de graves inondations, qui avaient fait 20 morts.</p><p style='text-align:left'>Et en juillet, des milliers d'habitants de Sydney avaient été contraints de quitter leurs domiciles à la suite de pluies diluviennes.</p><p style='text-align:left'>L'Australie est en première ligne face aux conséquences du dérèglement climatique, avec des inondations, des feux de brousse, des cyclones et des sécheresses qui deviennent plus fréquents et plus intenses à mesure que la planète se réchauffe, préviennent les scientifiques.</p><p style='text-align:right'><b>AFP/VNA/CVN</b></p>
-        </div>
-            <div class="related-news">
-                    <article class="story">
-                        <figure class="story__thumb">
-                            <a href="https://lecourrier.vn/inondations-en-australie-12-morts-les-pluies-se-dirigent-vers-sydney/969206.html" title="Inondations en Australie : 12 morts, les pluies se dirigent vers Sydney "><img width="200" height="134" class="lazyload" data-src="https://imagelecourrier.vnanet.vn/uploaded/2022/3/2/1625047631.jpg" src="/images/vnn.jpg" alt=""></a>
-                        </figure>
-                        <h5 class="story__heading"><a href="https://lecourrier.vn/inondations-en-australie-12-morts-les-pluies-se-dirigent-vers-sydney/969206.html">Inondations en Australie : 12 morts, les pluies se dirigent vers Sydney </a></h5>
-                    </article>
-                    <article class="story">
-                        <figure class="story__thumb">
-                            <a href="https://lecourrier.vn/inondations-en-australie-200000-personnes-priees-devacuer/969299.html" title="Inondations en Australie : 200.000 personnes pri&#233;es d&#39;&#233;vacuer"><img width="200" height="134" class="lazyload" data-src="https://imagelecourrier.vnanet.vn/uploaded/2022/3/3/154958147afp1.jpg" src="/images/vnn.jpg" alt=""></a>
-                        </figure>
-                        <h5 class="story__heading"><a href="https://lecourrier.vn/inondations-en-australie-200000-personnes-priees-devacuer/969299.html">Inondations en Australie : 200.000 personnes priées d'évacuer</a></h5>
-                    </article>
-                    <article class="story">
-                        <figure class="story__thumb">
-                            <a href="https://lecourrier.vn/inondations-en-australie-des-milliers-de-personnes-appelees-a-evacuer/1076719.html" title="Inondations en Australie: des milliers de personnes appel&#233;es &#224; &#233;vacuer"><img width="200" height="134" class="lazyload" data-src="https://imagelecourrier.vnanet.vn/MediaUpload/Medium/2022/10/14/142149-1.jpg" src="/images/vnn.jpg" alt=""></a>
-                        </figure>
-                        <h5 class="story__heading"><a href="https://lecourrier.vn/inondations-en-australie-des-milliers-de-personnes-appelees-a-evacuer/1076719.html">Inondations en Australie: des milliers de personnes appelées à évacuer</a></h5>
-                    </article>
-
-            </div>
-
-            <div class="article__tag">
-                <div class="box-content">
-                        <a href="https://lecourrier.vn/inondations/1076761.tag">#Inondations</a>
-                        <a href="https://lecourrier.vn/australie/1076761.tag">#Australie</a>
-                        <a href="https://lecourrier.vn/mort/1076761.tag">#mort</a>
-                        <a href="https://lecourrier.vn/pluies/1076761.tag">#pluies</a>
-                        <a href="https://lecourrier.vn/sattenuent/1076761.tag">#s&#x27;att&#xE9;nuent</a>
-                </div>
-            </div>
-        <script>
-            function resizeIframe(obj) {
-                obj.style.height = obj.contentWindow.document.documentElement.scrollHeight + 'px';
-            }
-        </script>
-        <iframe width="100%" height="100%" id="parent-iframe" name="parent-iframe" class="lazyload" data-src="https://lecourrier.vn/ApiData/PostComment?id=1076761&url=https://lecourrier.vn/australie-un-mort-dans-les-inondations-les-pluies-sattenuent/1076761.html&total=0"
-                scrolling="no"
-                onload="this.height=this.contentWindow.document.documentElement.scrollHeight"
-                onresize="this.height=this.contentWindow.document.documentElement.scrollHeight"></iframe>
-            <div class="see-also">
-                <div class="box-heading">
-                    <h3 class="wrap-heading">
-                        <a href="" class="heading">Autres articles</a>
-                    </h3>
-                </div>
-                <div class="box-content">
-                        <article class="story">
-                            <h5 class="story__heading"><a href="https://lecourrier.vn/explosion-dans-une-mine-en-turquie-28-morts-des-dizaines-douvriers-pieges-sous-terre/1076755.html">Explosion dans une mine en Turquie : 28 morts, des dizaines d'ouvriers piégés sous terre</a></h5>
-
-                        </article>
-                        <article class="story">
-                            <h5 class="story__heading"><a href="https://lecourrier.vn/venezuela-lonu-visite-la-ville-devastee-par-le-glissement-de-terrain-qui-enterre-ses-morts/1076753.html">Venezuela : l'ONU visite la ville dévastée par le glissement de terrain qui enterre ses morts</a></h5>
-
-                        </article>
-                        <article class="story">
-                            <h5 class="story__heading"><a href="https://lecourrier.vn/saigontourist-pour-la-communaute-un-milliard-de-dongs-de-bourses-detudes/1076651.html">"Saigontourist pour la communauté" : un milliard de dôngs de bourses d’études</a></h5>
-
-                        </article>
-                        <article class="story">
-                            <h5 class="story__heading"><a href="https://lecourrier.vn/vienne-capitale-ou-leau-coule-de-source/1076517.html">Vienne, capitale où l’eau coule de source</a></h5>
-
-                        </article>
-                        <article class="story">
-                            <h5 class="story__heading"><a href="https://lecourrier.vn/carburants-greves-reconduites-chez-totalenergies-apres-un-compromis-sans-la-cgt/1076733.html">Carburants: grèves reconduites chez TotalEnergies après un compromis sans la CGT</a></h5>
-
-                        </article>
-                        <article class="story">
-                            <h5 class="story__heading"><a href="https://lecourrier.vn/le-secretaire-general-de-lonu-souhaite-creer-un-systeme-universel-dalerte-precoce-pour-les-catastrophes-climatiques/1076728.html">Le secrétaire général de l'ONU souhaite créer un système universel d'alerte précoce pour les catastrophes climatiques</a></h5>
-
-                        </article>
-                        <article class="story">
-                            <h5 class="story__heading"><a href="https://lecourrier.vn/les-armes-a-feu-imprimees-en-3d-du-fantasme-a-la-menace-potentielle/1076721.html">Les armes à feu imprimées en 3D, du fantasme à la menace potentielle</a></h5>
-
-                        </article>
-                        <article class="story">
-                            <h5 class="story__heading"><a href="https://lecourrier.vn/inondations-en-australie-des-milliers-de-personnes-appelees-a-evacuer/1076719.html">Inondations en Australie: des milliers de personnes appelées à évacuer</a></h5>
-
-                        </article>
-                        <article class="story">
-                            <h5 class="story__heading"><a href="https://lecourrier.vn/au-cap-corse-la-mer-seul-recours-pour-avoir-assez-deau-douce/1076687.html">Au Cap Corse, la mer, seul recours pour avoir assez d'eau douce</a></h5>
-
-                        </article>
-                        <article class="story">
-                            <h5 class="story__heading"><a href="https://lecourrier.vn/malaisie-hausse-de-la-mortalite-en-2021-a-cause-du-nouveau-coronavirus/1076679.html">Malaisie : hausse de la mortalité en 2021 à cause du nouveau coronavirus</a></h5>
-
-                        </article>
-                        <article class="story">
-                            <h5 class="story__heading"><a href="https://lecourrier.vn/creer-des-mini-organes-pour-soigner-les-maladies/1076642.html">Créer des mini-organes pour soigner les maladies</a></h5>
-
-                        </article>
-                        <article class="story">
-                            <h5 class="story__heading"><a href="https://lecourrier.vn/pres-de-70-de-la-faune-sauvage-a-disparu-depuis-1970-selon-le-wwf/1076603.html">Près de 70% de la faune sauvage a disparu depuis 1970, selon le WWF</a></h5>
-
-                        </article>
-
-                </div>
-            </div>
 
     </div>
-
 </div>
-<!-- modal vote -->
-
 <div id="ModalVoteReload"></div>
 
-
-            <!-- site body -->
-            <footer class="page-footer">
-                <div class="container">
-                    <ul class="cate-wrapper">
-                        <li><a href="/quisommesnous.html">qui sommes-nous</a></li>
-                        <li><a href="mailto:courrier@vnanet.vn ">Écrivez-nous</a></li>
-                        <li><a href="/abonnement.html">abonnement</a></li>
-                        <li><a href="/publicite.html">publicité </a></li>
-                    </ul>
-                    <div class="text-wrapper">
-                        <p class="bold">Rédactrice en chef : Nguyễn Hồng Nga</p>
-                        <p>
-                            Adresse : 79, rue Ly Thuong Kiêt,
-                            Hanoï, Vietnam.
-                        </p>
-                        <p>Tél : (+84) 24 38 25 20 96</p>
-                        <p>
-                            E-mail : courrier@vnanet.vn,
-                            courrier.cvn@gmail.com
-                        </p>
-                    </div>
-                </div>
-            </footer>
-
         </div>
+        <div class="site-body">
+            <div class="container">
+                <div class="brand-wrapper">
+                    <a href="https://vnanet.vn">
+                        <img src="/images/ttxvn.png" alt="">
+                    </a>
+                    <a href="https://vietnamplus.vn">
+                        <img src="/images/vnplus.png" alt="">
+                    </a>
+                    <a href="https://vietnam.vnanet.vn">
+                        <img src="/images/baoanhvietnam.jpg" alt="">
+                    </a>
+                    <a href="https://bnews.vn">
+                        <img src="/images/b-news.png" alt="">
+                    </a>
+                    <a href="https://vietnamlawmagazine.vn/">
+                        <img src="/images/vn-law.png" alt="">
+                    </a>
+                    <a href="https://vnews.gov.vn">
+                        <img src="/images/v-news.png" alt="">
+                    </a>
+                    <a href="https://baotintuc.vn">
+                        <img src="/images/baotintuc.png" alt="">
+                    </a>
+                    <a href="https://thethaovanhoa.vn">
+                        <img src="/images/ttvh.png" alt="">
+                    </a>
+                    <a href="https://vietnamnews.vn">
+                        <img src="/images/vietnamnews.png" alt="">
+                    </a>
+                    <a href="https://dantocmiennui.vn">
+                        <img src="/images/dantocmiennui.png" alt="">
+                    </a>
+                </div>
+                
+
+            </div>
+        </div>
+        <!-- back to top -->
         <div class="wrap-to-top">
             <div class="back-to-top">
                 back to top
             </div>
             <div class="social">
-                <a href="" class="fb">
+                <a href="https://www.facebook.com/lecourrier.vn" class="fb">
                     <i class="icon-fb"></i>
                 </a>
             </div>
         </div>
-        <!-- JS Global Compulsory -->
+        <footer class="page-footer">
+            <div class="container">
+                <ul class="cate-wrapper">
+                    <li><a href="/quisommesnous.html">qui sommes-nous</a></li>
+                    <li><a href="mailto:courrier@vnanet.vn ">ÉCRIVEZ-NOUS</a></li>  
+                    <li><a href="/abonnement.html">abonnement</a></li>
+                    <li><a href="/publicite.html">publicité </a></li>
+                </ul>
+
+                <div class="wrapper">
+                    <div class="pri-wrapper">
+                        <h2 class="logo-footer">
+                            <a href="">Lecourrier.vn</a>
+                        </h2>
+                        <p class="text">
+                            Copyright : Le Courrier du Vietnam, tous droits réservés, Agence Vietnamienne
+                            d'Information (AVI)
+                        </p>
+                    </div>
+                    <div class="second-wrapper">
+                        <p class="bold">Rédactrice en chef : Nguyễn Hồng Nga</p>
+                        <p>Adresse : 79, rue Ly Thuong Kiêt, Hanoï, Vietnam. </p>
+                        <p>Tél : (+84) 24 38 25 20 96</p>
+                        <p>E-mail : courrier@vnanet.vn, courrier.cvn@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
     <!-- JS Global Compulsory -->
-    <script src="/template/mobile/js/jquery-3.6.1.min.js"></script>
-    <script src="/template/mobile/js/slick.min.js"></script>
-    <script src="/template/mobile/js/bootstrap.min.js"></script>
-    <script src="/template/mobile/js/ui.js?v=1.1"></script>
-    <script async src="/js/search.js"></script>
+    <script src="/template/desktop/js/jquery-3.6.1.min.js"></script>
+    <script src="/template/desktop/js/slick.min.js"></script>
+    <script src="/template/desktop/js/bootstrap.min.js"></script>
     <script async src="/js/lazysizes.min.js"></script>
+    <script async src="/js/search.js"></script>
     <script src="/lib/jsnlog/jsnlog.js"></script>
+
     <script>
         const defaultLoggingUrl = window.location.origin + '/logging';
         JL.setOptions({
@@ -294,14 +466,26 @@
 
         }
     </script>
+    <script src="/template/desktop/js/ui.js?v=1.1"></script>
     
-    <script src="/template/mobile/js/popper.min.js"></script>
+    <script src="/template/desktop/js/popper.min.js"></script>
 
     <script type="text/javascript">
         writeLogging('news', 'https://lecourrier.vn/australie-un-mort-dans-les-inondations-les-pluies-sattenuent/1076761.html',1076761);
     </script>
     <script>
-           
+        function printdiv(printdivname) {
+            var headstr = "<html><head><title>Booking Details</title></head><body>";
+            var footstr = "</body>";
+            var newstr = document.getElementById(printdivname).innerHTML;
+            var oldstr = document.body.innerHTML;
+            document.body.innerHTML = headstr + newstr + footstr;
+            window.print();
+            document.body.innerHTML = oldstr;
+            return false;
+        }
+
+       
         function showVote(id) {
 
             $.ajax({

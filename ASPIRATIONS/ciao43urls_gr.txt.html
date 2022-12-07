@@ -20,9 +20,9 @@
 
             
                 googletag.pubads().enableLazyLoad({
-                    fetchMarginPercent: 400,
+                    fetchMarginPercent: 250,
                     renderMarginPercent: 150,
-                    mobileScaling: 2,
+                    mobileScaling: 1,
                 });
             
 
@@ -571,13 +571,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 
-<span id='4009a101-d250-4537-948f-acd851d08422' style='display:none'></span>
+<span id='2b235f71-4dc6-4959-a4eb-b970f179f318' style='display:none'></span>
 <script>window.ptScriptManager.addOnLoadDelayed(2000, function() {  return `
 &lt;!-- Google Tag Manager (noscript) --&gt;&lt;noscript&gt;&lt;iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MCT5PH9" height="0" width="0" style="display:none;visibility:hidden"&gt;&lt;/iframe&gt;&lt;/noscript&gt;
-`; }, '4009a101-d250-4537-948f-acd851d08422');</script>
+`; }, '2b235f71-4dc6-4959-a4eb-b970f179f318');</script>
 
 
-<span id='dce15f01-f016-44f6-85f1-42d16777052e' style='display:none'></span>
+<span id='9e764a27-711d-4d22-adb5-7bb7d7aff379' style='display:none'></span>
 <script>window.ptScriptManager.addOnLoadDelayed(2000, function() {  return `
 &lt;!-- phaistos adman --&gt;
 &lt;script data-cmp-src="https://static.adman.gr/adman.js"&gt;&lt;/script&gt;
@@ -585,11 +585,73 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 // &lt;![CDATA[
 window.AdmanQueue=window.AdmanQueue||[];AdmanQueue.push(function(){Adman.adunit({id:313,h:'https://x.grxchange.gr',inline:true})});
 // ]]&gt;
-&lt;/script&gt;`; }, 'dce15f01-f016-44f6-85f1-42d16777052e');</script>
+&lt;/script&gt;`; }, '9e764a27-711d-4d22-adb5-7bb7d7aff379');</script>
 
     
     
+<div data-plugin-openmodal>
+    
+    
+    <div id="banner-div-1f00ffa0-3de1-4c36-a499-8b10059bb1e5" class="banner-container b1x1">
 
+    </div>
+    <script type="text/javascript">
+        googletag.cmd.push(function () {
+
+            var definedSlot;
+            var code = "/1050137/Prestitial_1x1_Special";
+            var size = [[1,1]];
+            var divId = "banner-div-1f00ffa0-3de1-4c36-a499-8b10059bb1e5";
+            var sizes = [{"ScreenWidth":0,"ScreenHeight":0,"BannerWidth":1,"BannerHeight":1}];
+
+            var refreshIntervalInSec = 0;
+            var autoRefresh = refreshIntervalInSec > 30 ? true : false;
+            var REFRESH_KEY = 'refreshOnView';
+            var REFRESH_VALUE = autoRefresh ? 'yes' : 'no';
+
+			if (sizes) {
+                definedSlot = googletag.defineSlot(code, size, divId)
+                    .setTargeting(REFRESH_KEY, REFRESH_VALUE)
+                    .addService(googletag.pubads())
+                    .defineSizeMapping(getSizeMapping(googletag, sizes));
+            }
+            else {
+                definedSlot = googletag.defineSlot(code, size, divId)
+                    .setTargeting(REFRESH_KEY, REFRESH_VALUE)
+                    .addService(googletag.pubads());
+            }
+
+            if (autoRefresh) {
+                console.log(`refresh of ${code} registered. Will trigger once in viewport `)
+                googletag.pubads().addEventListener('impressionViewable', function (event) {
+                    if (event.slot === definedSlot) {
+                        console.log(event.slot, event.slot.getSlotElementId())
+                        if ((event.slot.getTargeting(REFRESH_KEY) || '').indexOf('yes') > -1) {
+                            console.log(`${code} viewable. Refreshing in ${refreshIntervalInSec} seconds. `, event.slot.getTargeting(REFRESH_KEY))
+                            setTimeout(function () {
+                                definedSlot.clearTargeting(REFRESH_KEY);
+                                console.log('refreshing', code, definedSlot.getTargeting(REFRESH_KEY))
+                                googletag.pubads().refresh([definedSlot]);
+                                console.log('refreshed', code, definedSlot.getTargeting(REFRESH_KEY))
+                            }, refreshIntervalInSec * 1000);
+                        } else {
+                            console.log(`refresh of ${code} ignored. Already refreshed. `, event.slot.getTargeting(REFRESH_KEY))
+                        }
+                    }
+                });
+            } else {
+                console.log(`refresh of ${code} ignored. `)
+            }
+        });
+
+        setTimeout(() => {
+            googletag.cmd.push(function () {
+                googletag.display("banner-div-1f00ffa0-3de1-4c36-a499-8b10059bb1e5");
+            })
+        }, 1000);
+    </script>
+
+</div>
 <div class="outer">
     <div class="backToTop icon-arrow-up" data-plugin-gototop></div>
 
@@ -999,7 +1061,7 @@ window.AdmanQueue=window.AdmanQueue||[];AdmanQueue.push(function(){Adman.adunit(
     <div class="bannerCnt bannerWrp__inner">
        
 
-    <div id="banner-div-0f414e35-a9af-4f41-8b40-9550af8e7a69" class="banner-container b300x250">
+    <div id="banner-div-58bd7293-0e6a-4372-a696-cfb7be270a00" class="banner-container b300x250">
 
     </div>
     <script type="text/javascript">
@@ -1008,7 +1070,7 @@ window.AdmanQueue=window.AdmanQueue||[];AdmanQueue.push(function(){Adman.adunit(
             var definedSlot;
             var code = "/1050137/Mobile_Article_1";
             var size = [[300,250],[300,600],[336,280]];
-            var divId = "banner-div-0f414e35-a9af-4f41-8b40-9550af8e7a69";
+            var divId = "banner-div-58bd7293-0e6a-4372-a696-cfb7be270a00";
             var sizes = [{"ScreenWidth":0,"ScreenHeight":0,"BannerWidth":300,"BannerHeight":250},{"ScreenWidth":0,"ScreenHeight":0,"BannerWidth":300,"BannerHeight":600},{"ScreenWidth":480,"ScreenHeight":0,"BannerWidth":300,"BannerHeight":250},{"ScreenWidth":1024,"ScreenHeight":0,"BannerWidth":null,"BannerHeight":null},{"ScreenWidth":0,"ScreenHeight":0,"BannerWidth":336,"BannerHeight":280},{"ScreenWidth":480,"ScreenHeight":0,"BannerWidth":336,"BannerHeight":280}];
 
             var refreshIntervalInSec = 0;
@@ -1053,7 +1115,7 @@ window.AdmanQueue=window.AdmanQueue||[];AdmanQueue.push(function(){Adman.adunit(
 
         setTimeout(() => {
             googletag.cmd.push(function () {
-                googletag.display("banner-div-0f414e35-a9af-4f41-8b40-9550af8e7a69");
+                googletag.display("banner-div-58bd7293-0e6a-4372-a696-cfb7be270a00");
             })
         }, 1000);
     </script>
@@ -1163,7 +1225,7 @@ window.AdmanQueue=window.AdmanQueue||[];AdmanQueue.push(function(){Adman.adunit(
     <div class="bannerCnt bannerWrp__inner">
        
 
-    <div id="banner-div-6dd5e475-7760-4339-ab0d-56dbdb0b7334" class="banner-container b400x300">
+    <div id="banner-div-85896ee2-95ff-450c-af6e-b649513b8783" class="banner-container b400x300">
 
     </div>
         <div class="bannerWrp__close" data-plugin-closebanner="">Κλείσιμο<i class="icon-close"></i></div>
@@ -1173,7 +1235,7 @@ window.AdmanQueue=window.AdmanQueue||[];AdmanQueue.push(function(){Adman.adunit(
             var definedSlot;
             var code = "/1050137/In_Article_Video_Dekstop";
             var size = [[400,300],[640,360],[480,320],[533,300]];
-            var divId = "banner-div-6dd5e475-7760-4339-ab0d-56dbdb0b7334";
+            var divId = "banner-div-85896ee2-95ff-450c-af6e-b649513b8783";
             var sizes = [{"ScreenWidth":0,"ScreenHeight":0,"BannerWidth":400,"BannerHeight":300},{"ScreenWidth":1280,"ScreenHeight":0,"BannerWidth":533,"BannerHeight":300}];
 
             var refreshIntervalInSec = 0;
@@ -1218,7 +1280,7 @@ window.AdmanQueue=window.AdmanQueue||[];AdmanQueue.push(function(){Adman.adunit(
 
         setTimeout(() => {
             googletag.cmd.push(function () {
-                googletag.display("banner-div-6dd5e475-7760-4339-ab0d-56dbdb0b7334");
+                googletag.display("banner-div-85896ee2-95ff-450c-af6e-b649513b8783");
             })
         }, 1000);
     </script>
@@ -1251,45 +1313,38 @@ window.AdmanQueue=window.AdmanQueue||[];AdmanQueue.push(function(){Adman.adunit(
     
 
 <article>
-        <a href="https://track.adform.net/C/?bn=59719995" target="_blank" class="mainLink"></a>
-    <script>
-
-var img = new Image();
-
-img.src = 'https://track.adform.net/adfserve/?bn=59719995;1x1inv=1;srctype=3;ord=' + (new Date()).getTime();
-
-img.style.display = 'none';
-
-</script>            <figure data-image-mode="article">
-            <a href="https://track.adform.net/C/?bn=59719995" target="_blank" class="">
+        <a href="https://www.protothema.gr/greece/article/1313580/ena-futorio-neon-piloton-apo-tin-aegean/" class="mainLink"></a>
+                <figure data-image-mode="article">
+            <a href="https://www.protothema.gr/greece/article/1313580/ena-futorio-neon-piloton-apo-tin-aegean/" class="">
                 
 
 <picture >
 
     <!--[if IE 9]><video style="display: none;"><![endif]-->
-            <source data-srcset="https://i1.prth.gr/images/360x203/_webp/files/2022-11-23/36331079_m-1-copy.jpg" type="image/webp" />
-            <source data-srcset="https://i1.prth.gr/images/360x203/_jp2/files/2022-11-23/36331079_m-1-copy.jpg" type="image/jp2" />
-            <source data-srcset="https://i1.prth.gr/images/360x203/files/2022-11-23/36331079_m-1-copy.jpg" type="image/jpeg" />
+            <source data-srcset="https://i1.prth.gr/images/360x203/_webp/files/2022-12-06/pilots.jpg" type="image/webp" />
+            <source data-srcset="https://i1.prth.gr/images/360x203/_jp2/files/2022-12-06/pilots.jpg" type="image/jp2" />
+            <source data-srcset="https://i1.prth.gr/images/360x203/files/2022-12-06/pilots.jpg" type="image/jpeg" />
     <!--[if IE 9]></video><![endif]-->
-        <img src="https://i1.prth.gr/images/360x203/files/thema.png" data-src="https://i1.prth.gr/images/360x203/files/2022-11-23/36331079_m-1-copy.jpg" fetchpriority="" alt="Το app που μού άλλαξε την καθημερινότητα" class="lazyload" />
+        <img src="https://i1.prth.gr/images/360x203/files/thema.png" data-src="https://i1.prth.gr/images/360x203/files/2022-12-06/pilots.jpg" fetchpriority="" alt="Ένα «φυτώριο» νεων πιλότων από την ΑEGEAN" class="lazyload" />
 </picture>
             </a>
                     </figure>
     <div class="desc">
                 <div class="heading">
             <h3>
-                <a href="https://track.adform.net/C/?bn=59719995" target="_blank">Το app που μού άλλαξε την καθημερινότητα</a>
+                <a href="https://www.protothema.gr/greece/article/1313580/ena-futorio-neon-piloton-apo-tin-aegean/">Ένα &#171;φυτώριο&#187; νεων πιλότων από την ΑEGEAN</a>
             </h3>
         </div>
             <div class="txt">
                 <p>
-                    Έκανα download την εφαρμογή payzy by COSMOTE και μου άνοιξε ένα νέο κόσμο πληρωμών από το κινητό μου
+                    <p>Mετά το πρώτο πρόγραμμα υποτροφιών από το 2018 με τους πρώτους πιλότους να βρίσκονται ήδη στα πιλοτήριά του, ο όμιλος προχωρά τώρα με το νέο τριετές πρόγραμμα υποτροφιών, ύψους 7 εκατ. ευρώ&nbsp; για 120 νέους και νέες.</p>
+<p></p>
                 </p>
             </div>
                     <div class="wrp">
                 
                 <span class="update_well">
-<time data-plugin-timeago="" datetime="2022-11-23T10:56:00+02:00">23.11.2022, 10:56</time>                                    </span>
+<time data-plugin-timeago="" datetime="2022-12-05T10:49:00+02:00">05.12.2022, 10:49</time>                                    </span>
             </div>
             </div>
 </article>
@@ -1298,22 +1353,31 @@ img.style.display = 'none';
     
 
 <article>
-        <a href="https://www.protothema.gr/ugeia/article/1310543/i-black-friday-xekinaei-apo-to-spiti/" class="mainLink"></a>
-            <div class="desc">
+        <a href="https://track.adform.net/C/?bn=60003793" target="_blank" class="mainLink"></a>
+    <script>
+
+var img = new Image();
+
+img.src = 'https://track.adform.net/adfserve/?bn=60003793;1x1inv=1;srctype=3;ord=' + (new Date()).getTime();
+
+img.style.display = 'none';
+
+</script>        <div class="desc">
                 <div class="heading">
             <h3>
-                <a href="https://www.protothema.gr/ugeia/article/1310543/i-black-friday-xekinaei-apo-to-spiti/">Η Black Friday ξεκινάει από το σπίτι</a>
+                <a href="https://track.adform.net/C/?bn=60003793" target="_blank">Τέταρτη στον κόσμο η ελληνική αποστολή στην Παγκόσμια Ολυμπιάδα Ρομποτικής 2022</a>
             </h3>
         </div>
             <div class="txt">
                 <p>
-                    Η Black Friday, το μεγαλύτερο καταναλωτικό γεγονός της χρονιάς, περνάει μέσα από τη JYSK και τις υπέροχες προτάσεις της για το σπίτι, σε ασυναγώνιστες τιμές προσφοράς στις ήδη χαμηλές τιμές που διατηρεί όλον το χρόνο
+                    -1 αργυρό μετάλλιο και πέντε διακρίσεις για τις ελληνικές ομάδες<br>
+ - H COSMOTE στηρίζει την ανάπτυξη των ψηφιακών δεξιοτήτων των νέων ως στρατηγικός συνεργάτης του WRO Hellas
                 </p>
             </div>
                     <div class="wrp">
                 
                 <span class="update_well">
-<time data-plugin-timeago="" datetime="2022-11-23T16:39:00+02:00">23.11.2022, 16:39</time>                                    </span>
+<time data-plugin-timeago="" datetime="2022-12-05T10:51:00+02:00">05.12.2022, 10:51</time>                                    </span>
             </div>
             </div>
 </article>
@@ -1321,33 +1385,22 @@ img.style.display = 'none';
 
 
 <article>
-        <a href="https://track.adform.net/C/?bn=59740116" target="_blank" class="mainLink"></a>
-    <script>
-
-var img = new Image();
-
-img.src = 'https://track.adform.net/adfserve/?bn=59740116;1x1inv=1;srctype=3;ord=' + (new Date()).getTime();
-
-img.style.display = 'none';
-
-document.body.appendChild(img);
-
-</script>        <div class="desc">
+        <a href="https://longform.protothema.gr/premium/dynati-mia-alithini-istoria-gia-tin-technologia-kai-ton-anthropo/" target="_blank" class="mainLink"></a>
+            <div class="desc">
                 <div class="heading">
             <h3>
-                <a href="https://track.adform.net/C/?bn=59740116" target="_blank">Το Πρόγραμμα που χαρίζει εξωστρέφεια, ανταγωνιστικότητα και ανάπτυξη στις ΜμΕ</a>
+                <a href="https://longform.protothema.gr/premium/dynati-mia-alithini-istoria-gia-tin-technologia-kai-ton-anthropo/" target="_blank">&#171;ΔΥΝΑΤΗ. Μια αληθινή ιστορία για την τεχνολογία και τον άνθρωπο&#187;   </a>
             </h3>
         </div>
             <div class="txt">
                 <p>
-                    <p><strong>Μεγάλο το ενδιαφέρον για τα νέα τμήματα του #GrowYourBusiness- Certification Program, που σχεδιάστηκε από το Εργαστήριο Ηλεκτρονικού Εμπορίου (ELTRUN) του Οικονομικού Πανεπιστημίου Αθηνών, σε συνεργασία με την COSMOTE.</strong></p>
-<p></p>
+                    Η Κωτσόβολος παρουσιάζει ένα ντοκιμαντέρ για ένα παιδί της ΕΛΕΠΑΠ, τη μικρή Κωνσταντίνα,&nbsp; που με το πρωτοποριακό αμαξίδιο Ladd//roller είδε τη ζωή της να γίνεται καλύτερη
                 </p>
             </div>
                     <div class="wrp">
                 
                 <span class="update_well">
-<time data-plugin-timeago="" datetime="2022-11-23T10:53:00+02:00">23.11.2022, 10:53</time>                                    </span>
+<time data-plugin-timeago="" datetime="2022-12-01T14:05:00+02:00">01.12.2022, 14:05</time>                                    </span>
             </div>
             </div>
 </article>
@@ -1366,7 +1419,7 @@ document.body.appendChild(img);
 <div class="bannerWrp">
     <div class="bannerWrp__inner">
         
-    <div id="banner-div-20a050b0-a13b-4cd6-9b20-df768fb5fcbd" class="banner-container b300x250">
+    <div id="banner-div-c31cf800-09c5-41a1-8268-3bc005d9d04b" class="banner-container b300x250">
 
     </div>
     <script type="text/javascript">
@@ -1375,7 +1428,7 @@ document.body.appendChild(img);
             var definedSlot;
             var code = "/1050137/Side_1";
             var size = [[300,250],[300,600]];
-            var divId = "banner-div-20a050b0-a13b-4cd6-9b20-df768fb5fcbd";
+            var divId = "banner-div-c31cf800-09c5-41a1-8268-3bc005d9d04b";
             var sizes = [{"ScreenWidth":0,"ScreenHeight":0,"BannerWidth":null,"BannerHeight":null},{"ScreenWidth":1024,"ScreenHeight":500,"BannerWidth":300,"BannerHeight":250},{"ScreenWidth":1024,"ScreenHeight":500,"BannerWidth":300,"BannerHeight":600}];
 
             var refreshIntervalInSec = 60;
@@ -1420,7 +1473,7 @@ document.body.appendChild(img);
 
         setTimeout(() => {
             googletag.cmd.push(function () {
-                googletag.display("banner-div-20a050b0-a13b-4cd6-9b20-df768fb5fcbd");
+                googletag.display("banner-div-c31cf800-09c5-41a1-8268-3bc005d9d04b");
             })
         }, 1000);
     </script>
@@ -1439,7 +1492,7 @@ document.body.appendChild(img);
 <div class="bannerWrp">
     <div class="bannerWrp__inner">
         
-    <div id="banner-div-59202a8d-bde9-451d-96ad-1c5c43b13939" class="banner-container b300x250">
+    <div id="banner-div-4ced090c-87b8-40db-b88d-7d3f2282306a" class="banner-container b300x250">
 
     </div>
     <script type="text/javascript">
@@ -1448,7 +1501,7 @@ document.body.appendChild(img);
             var definedSlot;
             var code = "/1050137/Side_2";
             var size = [[300,250],[300,600]];
-            var divId = "banner-div-59202a8d-bde9-451d-96ad-1c5c43b13939";
+            var divId = "banner-div-4ced090c-87b8-40db-b88d-7d3f2282306a";
             var sizes = [{"ScreenWidth":0,"ScreenHeight":0,"BannerWidth":null,"BannerHeight":null},{"ScreenWidth":1024,"ScreenHeight":500,"BannerWidth":300,"BannerHeight":250},{"ScreenWidth":1024,"ScreenHeight":500,"BannerWidth":300,"BannerHeight":600}];
 
             var refreshIntervalInSec = 60;
@@ -1493,7 +1546,7 @@ document.body.appendChild(img);
 
         setTimeout(() => {
             googletag.cmd.push(function () {
-                googletag.display("banner-div-59202a8d-bde9-451d-96ad-1c5c43b13939");
+                googletag.display("banner-div-4ced090c-87b8-40db-b88d-7d3f2282306a");
             })
         }, 1000);
     </script>
@@ -1528,18 +1581,17 @@ document.body.appendChild(img);
 
 
 <article>
-        <a href="https://www.protothema.gr/moudial-2022/article/1311121/moudial-2022-vrazilia-servia-2-0-tous-horepse-saba-o-ritsarlison/" class="mainLink"></a>
+        <a href="https://bit.ly/3VD4aP0" target="_blank" class="mainLink"></a>
             <div class="desc">
                 <div class="heading">
             <h3>
-                <a href="https://www.protothema.gr/moudial-2022/article/1311121/moudial-2022-vrazilia-servia-2-0-tous-horepse-saba-o-ritsarlison/">Μουντιάλ 2022, Βραζιλία-Σερβία 2-0: Τους χόρεψε σάμπα ο Ριτσάρλισον </a>
+                <a href="https://bit.ly/3VD4aP0" target="_blank">Can America stop Turkey’s assault on northern Syria?</a>
             </h3>
         </div>
                     <div class="wrp">
-                    <div class="liveUpd"><span>LIVE UPDATE</span></div>
                 
                 <span class="update_well">
-<time data-plugin-timeago="" datetime="2022-11-24T22:57:00+02:00">24.11.2022, 22:57</time>                                    </span>
+<time data-plugin-timeago="" datetime="2022-12-07T10:21:00+02:00">07.12.2022, 10:21</time>                                    </span>
             </div>
             </div>
 </article>
@@ -1547,17 +1599,17 @@ document.body.appendChild(img);
 
 
 <article>
-        <a href="https://www.protothema.gr/world/article/1311229/italia-osta-apo-arkoudes-kai-ailouroeidi-vrethikan-sto-apoheteutiko-sustima-kato-apo-to-kolossaio/" class="mainLink"></a>
+        <a href="https://www.olivemagazine.gr/recipe/kanelonia-gemista-me-spanaki-manitaria-kai-arseniko-naxou/" target="_blank" class="mainLink"></a>
             <div class="desc">
                 <div class="heading">
             <h3>
-                <a href="https://www.protothema.gr/world/article/1311229/italia-osta-apo-arkoudes-kai-ailouroeidi-vrethikan-sto-apoheteutiko-sustima-kato-apo-to-kolossaio/">Οστά από αρκούδες και αιλουροειδή βρέθηκαν στο αποχετευτικό σύστημα κάτω από το Κολοσσαίο</a>
+                <a href="https://www.olivemagazine.gr/recipe/kanelonia-gemista-me-spanaki-manitaria-kai-arseniko-naxou/" target="_blank">Κανελόνια γεμιστά με σπανάκι, μανιτάρια και αρσενικό Νάξου</a>
             </h3>
         </div>
                     <div class="wrp">
                 
                 <span class="update_well">
-<time data-plugin-timeago="" datetime="2022-11-24T22:55:00+02:00">24.11.2022, 22:55</time>                                    </span>
+<time data-plugin-timeago="" datetime="2022-12-07T10:20:00+02:00">07.12.2022, 10:20</time>                                    </span>
             </div>
             </div>
 </article>
@@ -1565,17 +1617,17 @@ document.body.appendChild(img);
 
 
 <article>
-        <a href="https://www.protothema.gr/life-style/article/1311217/cardi-b-paradehetai-pos-einai-megali-thaumastria-tis-prigipissas-margaritas/" class="mainLink"></a>
+        <a href="https://www.protothema.gr/greece/article/1315696/pleuris-epistrefodai-anadromika-ta-prostima-se-osous-ano-ton-60-den-emvoliastikan-poioi-einai-oi-oroi/" class="mainLink"></a>
             <div class="desc">
                 <div class="heading">
             <h3>
-                <a href="https://www.protothema.gr/life-style/article/1311217/cardi-b-paradehetai-pos-einai-megali-thaumastria-tis-prigipissas-margaritas/">Η Cardi B παραδέχεται πως είναι μεγάλη θαυμάστρια της πριγκίπισσας Μαργαρίτας</a>
+                <a href="https://www.protothema.gr/greece/article/1315696/pleuris-epistrefodai-anadromika-ta-prostima-se-osous-ano-ton-60-den-emvoliastikan-poioi-einai-oi-oroi/">Επιστρέφονται αναδρομικά τα πρόστιμα σε όσους άνω των 60 δεν εμβολιάστηκαν - Ποιοι είναι οι όροι</a>
             </h3>
         </div>
                     <div class="wrp">
                 
                 <span class="update_well">
-<time data-plugin-timeago="" datetime="2022-11-24T22:50:00+02:00">24.11.2022, 22:50</time>                                    </span>
+<time data-plugin-timeago="" datetime="2022-12-07T10:16:00+02:00">07.12.2022, 10:16</time>                                    </span>
             </div>
             </div>
 </article>
@@ -1583,17 +1635,17 @@ document.body.appendChild(img);
 
 
 <article>
-        <a href="https://www.protothema.gr/world/article/1311221/klimatiki-allagi-perissoteroi-apo-20000-thanatoi-sti-dutiki-europi-sundeodai-me-tous-therinous-kausones/" class="mainLink"></a>
+        <a href="https://www.protothema.gr/economy/article/1315695/plakiotakis-idruodai-duo-nees-akadimies-eborikou-nautikou-stin-peloponniso/" class="mainLink"></a>
             <div class="desc">
                 <div class="heading">
             <h3>
-                <a href="https://www.protothema.gr/world/article/1311221/klimatiki-allagi-perissoteroi-apo-20000-thanatoi-sti-dutiki-europi-sundeodai-me-tous-therinous-kausones/">Πάνω από 20.000 οι νεκροί φέτος από τον καύσωνα σε μόλις τέσσερις χώρες της Ευρώπης</a>
+                <a href="https://www.protothema.gr/economy/article/1315695/plakiotakis-idruodai-duo-nees-akadimies-eborikou-nautikou-stin-peloponniso/"> Ιδρύονται δύο νέες Ακαδημίες Εμπορικού Ναυτικού στην Πελοπόννησο</a>
             </h3>
         </div>
                     <div class="wrp">
                 
                 <span class="update_well">
-<time data-plugin-timeago="" datetime="2022-11-24T22:45:23+02:00">24.11.2022, 22:45</time>                                    </span>
+<time data-plugin-timeago="" datetime="2022-12-07T10:15:00+02:00">07.12.2022, 10:15</time>                                    </span>
             </div>
             </div>
 </article>
@@ -1601,17 +1653,17 @@ document.body.appendChild(img);
 
 
 <article>
-        <a href="https://www.protothema.gr/economy/article/1311228/to-paraskinio-piso-apo-to-bloko-ton-15-sti-sunodo-tis-ee-gia-to-fusiko-aerio/" class="mainLink"></a>
+        <a href="https://www.protothema.gr/greece/article/1315693/okto-hronia-kukloforousan-eleutheroi-oi-para-ligo-dolofonoi/" class="mainLink"></a>
             <div class="desc">
                 <div class="heading">
             <h3>
-                <a href="https://www.protothema.gr/economy/article/1311228/to-paraskinio-piso-apo-to-bloko-ton-15-sti-sunodo-tis-ee-gia-to-fusiko-aerio/">Οι χώρες που &#171;φρέναραν&#187; τις Βρυξέλλες για το πλαφόν στο φυσικό αέριο</a>
+                <a href="https://www.protothema.gr/greece/article/1315693/okto-hronia-kukloforousan-eleutheroi-oi-para-ligo-dolofonoi/">Οκτώ χρόνια κυκλοφορούσαν ελεύθεροι οι παρά λίγο δολοφόνοι</a>
             </h3>
         </div>
                     <div class="wrp">
                 
                 <span class="update_well">
-<time data-plugin-timeago="" datetime="2022-11-24T22:38:00+02:00">24.11.2022, 22:38</time>                                    </span>
+<time data-plugin-timeago="" datetime="2022-12-07T10:12:00+02:00">07.12.2022, 10:12</time>                                    </span>
             </div>
             </div>
 </article>
@@ -1619,17 +1671,17 @@ document.body.appendChild(img);
 
 
 <article>
-        <a href="https://www.protothema.gr/moudial-2022/article/1311226/moudial-2022-koreates-stin-exedra-foresan-maskes-gia-subarastasi-ston-son/" class="mainLink"></a>
+        <a href="https://www.protothema.gr/life-style/article/1315692/dinos-karudis-an-den-itan-i-smaragda-den-tha-eiha-oute-gia-to-noiki/" class="mainLink"></a>
             <div class="desc">
                 <div class="heading">
             <h3>
-                <a href="https://www.protothema.gr/moudial-2022/article/1311226/moudial-2022-koreates-stin-exedra-foresan-maskes-gia-subarastasi-ston-son/">Μουντιάλ 2022: Κορεάτες στην εξέδρα φόρεσαν μάσκες για συμπαράσταση στον Σον </a>
+                <a href="https://www.protothema.gr/life-style/article/1315692/dinos-karudis-an-den-itan-i-smaragda-den-tha-eiha-oute-gia-to-noiki/">Ντίνος Καρύδης: Αν δεν ήταν η Σμαράγδα, δεν θα είχα ούτε για το νοίκι</a>
             </h3>
         </div>
                     <div class="wrp">
                 
                 <span class="update_well">
-<time data-plugin-timeago="" datetime="2022-11-24T22:37:00+02:00">24.11.2022, 22:37</time>                                    </span>
+<time data-plugin-timeago="" datetime="2022-12-07T10:10:51+02:00">07.12.2022, 10:10</time>                                    </span>
             </div>
             </div>
 </article>
@@ -1637,17 +1689,17 @@ document.body.appendChild(img);
 
 
 <article>
-        <a href="https://www.protothema.gr/greece/article/1311227/kukloforiakes-ruthmiseis-tin-kuriaki-to-proi-sta-notia-proastia-tis-athinas/" class="mainLink"></a>
+        <a href="https://www.marieclaire.gr/fashion/trends/lampsi-apo-to-proi-mechri-to-vradi-5-looks-apefthias-apo-tis-pasareles/" target="_blank" class="mainLink"></a>
             <div class="desc">
                 <div class="heading">
             <h3>
-                <a href="https://www.protothema.gr/greece/article/1311227/kukloforiakes-ruthmiseis-tin-kuriaki-to-proi-sta-notia-proastia-tis-athinas/">Κυκλοφοριακές ρυθμίσεις την Κυριακή το πρωί στα νότια προάστια της Αθήνας</a>
+                <a href="https://www.marieclaire.gr/fashion/trends/lampsi-apo-to-proi-mechri-to-vradi-5-looks-apefthias-apo-tis-pasareles/" target="_blank">5 σύνολα για να είστε λαμπερή από το πρωί μέχρι το βράδυ</a>
             </h3>
         </div>
                     <div class="wrp">
                 
                 <span class="update_well">
-<time data-plugin-timeago="" datetime="2022-11-24T22:33:00+02:00">24.11.2022, 22:33</time>                                    </span>
+<time data-plugin-timeago="" datetime="2022-12-07T10:03:07+02:00">07.12.2022, 10:03</time>                                    </span>
             </div>
             </div>
 </article>
@@ -1655,17 +1707,17 @@ document.body.appendChild(img);
 
 
 <article>
-        <a href="https://bit.ly/3QLMO05" target="_blank" class="mainLink"></a>
+        <a href="https://www.protothema.gr/greece/article/1315691/larisa-diarriktes-piran-hrimatokivotio-apo-sholeio-eihe-ta-lefta-gia-tin-5imeri-sti-romi/" class="mainLink"></a>
             <div class="desc">
                 <div class="heading">
             <h3>
-                <a href="https://bit.ly/3QLMO05" target="_blank">Zoos: Cruel cages or compassionate conservation?</a>
+                <a href="https://www.protothema.gr/greece/article/1315691/larisa-diarriktes-piran-hrimatokivotio-apo-sholeio-eihe-ta-lefta-gia-tin-5imeri-sti-romi/">Διαρρήκτες πήραν χρηματοκιβώτιο από λύκειο στη Λάρισα - Είχε τα λεφτά για την 5ήμερη στη Ρώμη</a>
             </h3>
         </div>
                     <div class="wrp">
                 
                 <span class="update_well">
-<time data-plugin-timeago="" datetime="2022-11-24T22:30:00+02:00">24.11.2022, 22:30</time>                                    </span>
+<time data-plugin-timeago="" datetime="2022-12-07T10:03:00+02:00">07.12.2022, 10:03</time>                                    </span>
             </div>
             </div>
 </article>
@@ -1673,17 +1725,17 @@ document.body.appendChild(img);
 
 
 <article>
-        <a href="https://www.protothema.gr/sports/article/1311120/euroleague-olubiakos-alba-86-76-katharisan-vezenkof-papanikolaou/" class="mainLink"></a>
+        <a href="https://www.protothema.gr/sports/article/1315689/aek-upodehetai-ti-retzio-emilia-me-stoho-to-vima-prokrisis-stin-epomeni-fasi-tou-bcl/" class="mainLink"></a>
             <div class="desc">
                 <div class="heading">
             <h3>
-                <a href="https://www.protothema.gr/sports/article/1311120/euroleague-olubiakos-alba-86-76-katharisan-vezenkof-papanikolaou/">Euroleague, Ολυμπιακός - Άλμπα 86-76: &#171;Καθάρισαν&#187; Βεζένκοφ, Παπανικολάου</a>
+                <a href="https://www.protothema.gr/sports/article/1315689/aek-upodehetai-ti-retzio-emilia-me-stoho-to-vima-prokrisis-stin-epomeni-fasi-tou-bcl/">ΑΕΚ: Υποδέχεται τη Ρέτζιο Εμίλια με στόχο το βήμα πρόκρισης στην επόμενη φάση του BCL</a>
             </h3>
         </div>
                     <div class="wrp">
                 
                 <span class="update_well">
-<time data-plugin-timeago="" datetime="2022-11-24T22:29:00+02:00">24.11.2022, 22:29</time>                                    </span>
+<time data-plugin-timeago="" datetime="2022-12-07T10:01:32+02:00">07.12.2022, 10:01</time>                                    </span>
             </div>
             </div>
 </article>
@@ -1691,17 +1743,17 @@ document.body.appendChild(img);
 
 
 <article>
-        <a href="https://www.protothema.gr/moudial-2022/article/1311201/moudial-2022-o-tores-afierose-to-gol-stin-kori-tou-proponiti-tis-ispanias-pou-einai-i-kopela-tou/" class="mainLink"></a>
+        <a href="https://www.protothema.gr/life-style/article/1315688/eleonora-meleti-to-xekatharisma-tis-den-eho-ti-folia-mou-leromeni-ta-filia-mou-sti-stamatina/" class="mainLink"></a>
             <div class="desc">
                 <div class="heading">
             <h3>
-                <a href="https://www.protothema.gr/moudial-2022/article/1311201/moudial-2022-o-tores-afierose-to-gol-stin-kori-tou-proponiti-tis-ispanias-pou-einai-i-kopela-tou/">Ο Τόρες σκόραρε και αφιέρωσε το γκολ στην κοπέλα του, κόρη του Λουίς Ενρίκε</a>
+                <a href="https://www.protothema.gr/life-style/article/1315688/eleonora-meleti-to-xekatharisma-tis-den-eho-ti-folia-mou-leromeni-ta-filia-mou-sti-stamatina/">Το &#171;ξεκαθάρισμα&#187; της Ελεονώρας Μελέτη - &#171;Δεν έχω τη φωλιά μου λερωμένη, τα φιλιά μου στη Σταματίνα&#187;</a>
             </h3>
         </div>
                     <div class="wrp">
                 
                 <span class="update_well">
-<time data-plugin-timeago="" datetime="2022-11-24T22:26:00+02:00">24.11.2022, 22:26</time>                                    </span>
+<time data-plugin-timeago="" datetime="2022-12-07T10:00:08+02:00">07.12.2022, 10:00</time>                                    </span>
             </div>
             </div>
 </article>
@@ -1715,17 +1767,17 @@ document.body.appendChild(img);
 
 
 <article>
-        <a href="https://www.protothema.gr/greece/article/1310926/thessaloniki-paradothike-o-26hronos-gia-tin-parasursi-tis-21hronis/" class="mainLink"></a>
+        <a href="https://www.protothema.gr/moudial-2022/article/1315617/moudial-2022-ronaldo-hakimi-to-tetarto-radevou-stous-8-theia-diki-gia-tin-ispania/" class="mainLink"></a>
             <div class="desc">
                 <div class="heading">
             <h3>
-                <a href="https://www.protothema.gr/greece/article/1310926/thessaloniki-paradothike-o-26hronos-gia-tin-parasursi-tis-21hronis/">Παραδόθηκε ο 26χρονος για την παράσυρση της 21χρονης στη Θεσσαλονίκη</a>
+                <a href="https://www.protothema.gr/moudial-2022/article/1315617/moudial-2022-ronaldo-hakimi-to-tetarto-radevou-stous-8-theia-diki-gia-tin-ispania/">Ρονάλντο-Χακίμι έδωσαν ραντεβού στους &#171;8&#187; του Μουντιάλ, &#171;θεία δίκη&#187; για Ισπανία</a>
             </h3>
         </div>
                     <div class="wrp">
                 
                 <span class="update_well">
-<time data-plugin-timeago="" datetime="2022-11-24T11:03:00+02:00">24.11.2022, 11:03</time>                                    </span>
+<time data-plugin-timeago="" datetime="2022-12-07T07:12:00+02:00">07.12.2022, 07:12</time>                                    </span>
             </div>
             </div>
 </article>
@@ -1733,17 +1785,17 @@ document.body.appendChild(img);
 
 
 <article>
-        <a href="https://www.protothema.gr/greece/article/1310942/diki-filippidi-eihe-anaptuxei-emmoni-me-ti-drosaki-katethese-i-katia-dandoulaki/" class="mainLink"></a>
+        <a href="https://www.protothema.gr/greece/article/1315604/kairos-erhetai-nea-ishuri-kakokairia-protes-ektimiseis-gia-hristougenna-kai-protohronia/" class="mainLink"></a>
             <div class="desc">
                 <div class="heading">
             <h3>
-                <a href="https://www.protothema.gr/greece/article/1310942/diki-filippidi-eihe-anaptuxei-emmoni-me-ti-drosaki-katethese-i-katia-dandoulaki/">&#171;Ο Πέτρος Φιλιππίδης είχε εμμονή με τη Δροσάκη&#187; κατέθεσε η Κάτια Δανδουλάκη</a>
+                <a href="https://www.protothema.gr/greece/article/1315604/kairos-erhetai-nea-ishuri-kakokairia-protes-ektimiseis-gia-hristougenna-kai-protohronia/">Έρχεται ισχυρή κακοκαιρία - Οι πρώτες εκτιμήσεις για Χριστούγεννα και Πρωτοχρονιά</a>
             </h3>
         </div>
                     <div class="wrp">
                 
                 <span class="update_well">
-<time data-plugin-timeago="" datetime="2022-11-24T11:37:00+02:00">24.11.2022, 11:37</time>                                    </span>
+<time data-plugin-timeago="" datetime="2022-12-07T06:20:00+02:00">07.12.2022, 06:20</time>                                    </span>
             </div>
             </div>
 </article>
@@ -1751,17 +1803,17 @@ document.body.appendChild(img);
 
 
 <article>
-        <a href="https://www.protothema.gr/greece/article/1310958/kivotos-tou-kosmou-o-irakinos-dexi-heri-tou-patera-adoniou-zouse-hlidati-zoi/" class="mainLink"></a>
+        <a href="https://www.protothema.gr/greece/article/1315620/menidi-10-astunomikoi-traumatistikan-sta-epeisodia-apo-tous-roma-oi-tesseris-apo-skagia/" class="mainLink"></a>
             <div class="desc">
                 <div class="heading">
             <h3>
-                <a href="https://www.protothema.gr/greece/article/1310958/kivotos-tou-kosmou-o-irakinos-dexi-heri-tou-patera-adoniou-zouse-hlidati-zoi/">Ο Ιρακινός &#171;δεξί χέρι&#187; του πατέρα Αντωνίου ζούσε χλιδάτη ζωή μέσω της &#171;Κιβωτού&#187;</a>
+                <a href="https://www.protothema.gr/greece/article/1315620/menidi-10-astunomikoi-traumatistikan-sta-epeisodia-apo-tous-roma-oi-tesseris-apo-skagia/">Ρομά πυροβόλησαν με κυνηγετικά όπλα αστυνομικούς στα επεισόδια στο Μενίδι - 10 τραυματίες από την ΕΛ.ΑΣ</a>
             </h3>
         </div>
                     <div class="wrp">
                 
                 <span class="update_well">
-<time data-plugin-timeago="" datetime="2022-11-24T11:54:00+02:00">24.11.2022, 11:54</time>                                    </span>
+<time data-plugin-timeago="" datetime="2022-12-07T07:22:00+02:00">07.12.2022, 07:22</time>                                    </span>
             </div>
             </div>
 </article>
@@ -1769,17 +1821,17 @@ document.body.appendChild(img);
 
 
 <article>
-        <a href="https://www.protothema.gr/world/article/1310952/eutuhos-den-einai-omofulofilos-leei-o-pateras-tou-22hronou-pou-skotose-5-atoma-se-gei-bar/" class="mainLink"></a>
+        <a href="https://www.protothema.gr/politics/article/1315614/ipa-kogreso-gia-uperptiseis-tourkias-den-tha-prepei-na-ginodai/" class="mainLink"></a>
             <div class="desc">
                 <div class="heading">
             <h3>
-                <a href="https://www.protothema.gr/world/article/1310952/eutuhos-den-einai-omofulofilos-leei-o-pateras-tou-22hronou-pou-skotose-5-atoma-se-gei-bar/">&#171;Ευτυχώς δεν είναι ομοφυλόφιλος&#187; λέει ο πατέρας του 22χρονου που σκότωσε 5 άτομα σε γκέι μπαρ!</a>
+                <a href="https://www.protothema.gr/politics/article/1315614/ipa-kogreso-gia-uperptiseis-tourkias-den-tha-prepei-na-ginodai/">Μήνυμα από τις ΗΠΑ για τις υπερπτήσεις της Τουρκίας: Δεν θα πρέπει να γίνονται</a>
             </h3>
         </div>
                     <div class="wrp">
                 
                 <span class="update_well">
-<time data-plugin-timeago="" datetime="2022-11-24T11:49:00+02:00">24.11.2022, 11:49</time>                                    </span>
+<time data-plugin-timeago="" datetime="2022-12-07T06:55:00+02:00">07.12.2022, 06:55</time>                                    </span>
             </div>
             </div>
 </article>
@@ -1787,17 +1839,17 @@ document.body.appendChild(img);
 
 
 <article>
-        <a href="https://www.protothema.gr/greece/article/1310940/arhisminias-tis-polemikis-aeroporias-o-nekros-apo-to-trohaio-sti-mesogeion/" class="mainLink"></a>
+        <a href="https://www.protothema.gr/politics/article/1315613/epithesi-filias-rama-se-mitsotaki-i-bala-sto-gipedo-tis-alvanias-gia-na-pame-sti-hagi/" class="mainLink"></a>
             <div class="desc">
                 <div class="heading">
             <h3>
-                <a href="https://www.protothema.gr/greece/article/1310940/arhisminias-tis-polemikis-aeroporias-o-nekros-apo-to-trohaio-sti-mesogeion/">Αρχισμηνίας της Πολεμικής Αεροπορίας ο νεκρός από το τροχαίο στη Μεσογείων</a>
+                <a href="https://www.protothema.gr/politics/article/1315613/epithesi-filias-rama-se-mitsotaki-i-bala-sto-gipedo-tis-alvanias-gia-na-pame-sti-hagi/">&#171;Επίθεση φιλίας&#187; Ράμα σε Μητσοτάκη - Η μπάλα στο γήπεδο της Αλβανίας για να πάμε στη Χάγη</a>
             </h3>
         </div>
                     <div class="wrp">
                 
                 <span class="update_well">
-<time data-plugin-timeago="" datetime="2022-11-24T17:48:30+02:00">24.11.2022, 17:48</time>                                    </span>
+<time data-plugin-timeago="" datetime="2022-12-07T06:50:00+02:00">07.12.2022, 06:50</time>                                    </span>
             </div>
             </div>
 </article>
@@ -1805,17 +1857,17 @@ document.body.appendChild(img);
 
 
 <article>
-        <a href="https://www.protothema.gr/politics/article/1311033/olga-gerovasili-epese-thuma-ilektronikis-epithesis-tis-afairesan-hrimata-apo-ton-logariasmo/" class="mainLink"></a>
+        <a href="https://www.protothema.gr/greece/article/1315609/thessaloniki-vomvardismeno-topio-i-olubiados-meta-ta-epeisodia-sto-heirourgeio-astunomikos/" class="mainLink"></a>
             <div class="desc">
                 <div class="heading">
             <h3>
-                <a href="https://www.protothema.gr/politics/article/1311033/olga-gerovasili-epese-thuma-ilektronikis-epithesis-tis-afairesan-hrimata-apo-ton-logariasmo/">Έπεσε θύμα ηλεκτρονικής επίθεσης η Όλγα Γεροβασίλη - Της αφαίρεσαν χρήματα από τον λογαριασμό</a>
+                <a href="https://www.protothema.gr/greece/article/1315609/thessaloniki-vomvardismeno-topio-i-olubiados-meta-ta-epeisodia-sto-heirourgeio-astunomikos/">&#171;Βομβαρδισμένο&#187; τοπίο μετά τα επεισόδια στη Θεσσαλονίκη - Στο χειρουργείο αστυνομικός</a>
             </h3>
         </div>
                     <div class="wrp">
                 
                 <span class="update_well">
-<time data-plugin-timeago="" datetime="2022-11-24T14:08:00+02:00">24.11.2022, 14:08</time>                                    </span>
+<time data-plugin-timeago="" datetime="2022-12-07T06:28:00+02:00">07.12.2022, 06:28</time>                                    </span>
             </div>
             </div>
 </article>
@@ -1823,17 +1875,17 @@ document.body.appendChild(img);
 
 
 <article>
-        <a href="https://www.protothema.gr/greece/article/1311041/thessaloniki-prokalei-o-odigos-tou-ih-pou-paresure-tin-21hroni-an-pernouse-apo-diavasi-den-tha-eihe-sumvei-tipota/" class="mainLink"></a>
+        <a href="https://www.protothema.gr/gala/article/1315533/ira-porou-to-modeling-oikogeneiaki-tis-upothesi-i-oraia-tis-imeras/" class="mainLink"></a>
             <div class="desc">
                 <div class="heading">
             <h3>
-                <a href="https://www.protothema.gr/greece/article/1311041/thessaloniki-prokalei-o-odigos-tou-ih-pou-paresure-tin-21hroni-an-pernouse-apo-diavasi-den-tha-eihe-sumvei-tipota/">Χωρίς άδεια παραμονής ο 26χρονος Αλβανός που παρέσυρε την 21χρονη στη Θεσσαλονίκη</a>
+                <a href="https://www.protothema.gr/gala/article/1315533/ira-porou-to-modeling-oikogeneiaki-tis-upothesi-i-oraia-tis-imeras/">Hera Coll: Η πανέμορφη κόρη του Σπύρου Πώρου κάνει καριέρα στο μόντελινγκ </a>
             </h3>
         </div>
                     <div class="wrp">
                 
                 <span class="update_well">
-<time data-plugin-timeago="" datetime="2022-11-24T16:01:00+02:00">24.11.2022, 16:01</time>                                    </span>
+<time data-plugin-timeago="" datetime="2022-12-07T06:46:00+02:00">07.12.2022, 06:46</time>                                    </span>
             </div>
             </div>
 </article>
@@ -1841,17 +1893,17 @@ document.body.appendChild(img);
 
 
 <article>
-        <a href="https://www.protothema.gr/world/article/1310976/ereuna-apokaluptei-ti-anagnorizoun-kai-ti-ohi-oi-andres-os-sexoualiki-parenohlisi-ston-horo-ergasias/" class="mainLink"></a>
+        <a href="https://www.protothema.gr/greece/article/1315570/afroditi-manou-elena-akrita-dinoun-radevou-sta-gounaradika/" class="mainLink"></a>
             <div class="desc">
                 <div class="heading">
             <h3>
-                <a href="https://www.protothema.gr/world/article/1310976/ereuna-apokaluptei-ti-anagnorizoun-kai-ti-ohi-oi-andres-os-sexoualiki-parenohlisi-ston-horo-ergasias/">Τι θεωρούν οι άνδρες &#171;σεξουαλική παρενόχληση&#187; στο χώρο εργασίας - Αποκαλυπτική έρευνα</a>
+                <a href="https://www.protothema.gr/greece/article/1315570/afroditi-manou-elena-akrita-dinoun-radevou-sta-gounaradika/">Στα &#171;άκρα&#187; η κόντρα Αφροδίτης Μάνου - Έλενας Ακρίτα - Δίνουν &#171;ραντεβού στα... γουναράδικα&#187;!</a>
             </h3>
         </div>
                     <div class="wrp">
                 
                 <span class="update_well">
-<time data-plugin-timeago="" datetime="2022-11-24T12:23:00+02:00">24.11.2022, 12:23</time>                                    </span>
+<time data-plugin-timeago="" datetime="2022-12-06T22:19:00+02:00">06.12.2022, 22:19</time>                                    </span>
             </div>
             </div>
 </article>
@@ -1859,17 +1911,17 @@ document.body.appendChild(img);
 
 
 <article>
-        <a href="https://www.protothema.gr/life-style/article/1310995/katerina-kainourgiou-gia-dimitri-ouggarezo-opou-paei-tsakonetai/" class="mainLink"></a>
+        <a href="https://www.protothema.gr/moudial-2022/article/1315623/kristiano-ronaldo-moudial-2022-efuge-monos-tou-apo-to-gipedo-eno-oi-subaihtes-tou-panigurizan-tin-prokrisi-stous-8/" class="mainLink"></a>
             <div class="desc">
                 <div class="heading">
             <h3>
-                <a href="https://www.protothema.gr/life-style/article/1310995/katerina-kainourgiou-gia-dimitri-ouggarezo-opou-paei-tsakonetai/">Κατερίνα Καινούργιου για Δημήτρη Ουγγαρέζο: &#171;Όπου πάει τσακώνεται&#187;</a>
+                <a href="https://www.protothema.gr/moudial-2022/article/1315623/kristiano-ronaldo-moudial-2022-efuge-monos-tou-apo-to-gipedo-eno-oi-subaihtes-tou-panigurizan-tin-prokrisi-stous-8/">Δείτε βίντεο: O Κριστιάνο Ρονάλντο έφυγε μόνος του από το γήπεδο ενώ οι Πορτογάλοι πανηγύριζαν την πρόκριση </a>
             </h3>
         </div>
                     <div class="wrp">
                 
                 <span class="update_well">
-<time data-plugin-timeago="" datetime="2022-11-24T12:51:00+02:00">24.11.2022, 12:51</time>                                    </span>
+<time data-plugin-timeago="" datetime="2022-12-07T07:39:00+02:00">07.12.2022, 07:39</time>                                    </span>
             </div>
             </div>
 </article>
@@ -1877,17 +1929,17 @@ document.body.appendChild(img);
 
 
 <article>
-        <a href="https://www.protothema.gr/life-style/article/1311020/giannis-vogiatzis-i-mairi-hronopoulou-me-evgale-apo-ti-fulaki/" class="mainLink"></a>
+        <a href="https://www.protothema.gr/world/article/1315610/energeiaki-krisi-skliro-poker-gia-to-rosiko-petrelaio-peftoun-oi-times-foudonoun-oi-adidraseis/" class="mainLink"></a>
             <div class="desc">
                 <div class="heading">
             <h3>
-                <a href="https://www.protothema.gr/life-style/article/1311020/giannis-vogiatzis-i-mairi-hronopoulou-me-evgale-apo-ti-fulaki/">Γιάννης Βογιατζής: Η Μαίρη Χρονοπούλου με έβγαλε από τη φυλακή</a>
+                <a href="https://www.protothema.gr/world/article/1315610/energeiaki-krisi-skliro-poker-gia-to-rosiko-petrelaio-peftoun-oi-times-foudonoun-oi-adidraseis/">&#171;Πόκερ&#187; για το ρωσικό πετρέλαιο - Πέφτουν οι τιμές, φουντώνουν οι αντιδράσεις</a>
             </h3>
         </div>
                     <div class="wrp">
                 
                 <span class="update_well">
-<time data-plugin-timeago="" datetime="2022-11-24T13:47:53+02:00">24.11.2022, 13:47</time>                                    </span>
+<time data-plugin-timeago="" datetime="2022-12-07T06:30:00+02:00">07.12.2022, 06:30</time>                                    </span>
             </div>
             </div>
 </article>
@@ -1900,17 +1952,17 @@ document.body.appendChild(img);
 
 
 <article>
-        <a href="https://www.protothema.gr/greece/article/1310823/thessaloniki-afados-o-odigos-pou-paresure-tin-21hroni-exairetika-krisimi-i-katastasi-tis/" class="mainLink"></a>
+        <a href="https://www.protothema.gr/greece/article/1315620/menidi-10-astunomikoi-traumatistikan-sta-epeisodia-apo-tous-roma-oi-tesseris-apo-skagia/" class="mainLink"></a>
             <div class="desc">
                 <div class="heading">
             <h3>
-                <a href="https://www.protothema.gr/greece/article/1310823/thessaloniki-afados-o-odigos-pou-paresure-tin-21hroni-exairetika-krisimi-i-katastasi-tis/">Συνελήφθη 19χρονη για το τροχαίο με την παράσυρση της 21χρονης στη Θεσσαλονίκη</a>
+                <a href="https://www.protothema.gr/greece/article/1315620/menidi-10-astunomikoi-traumatistikan-sta-epeisodia-apo-tous-roma-oi-tesseris-apo-skagia/">Ρομά πυροβόλησαν με κυνηγετικά όπλα αστυνομικούς στα επεισόδια στο Μενίδι - 10 τραυματίες από την ΕΛ.ΑΣ</a>
             </h3>
         </div>
                     <div class="wrp">
                 
                 <span class="update_well">
-<time data-plugin-timeago="" datetime="2022-11-24T07:03:00+02:00">24.11.2022, 07:03</time>                                    </span>
+<time data-plugin-timeago="" datetime="2022-12-07T07:22:00+02:00">07.12.2022, 07:22</time>                                    </span>
             </div>
             </div>
 </article>
@@ -1918,17 +1970,17 @@ document.body.appendChild(img);
 
 
 <article>
-        <a href="https://www.protothema.gr/greece/article/1310926/thessaloniki-paradothike-o-26hronos-gia-tin-parasursi-tis-21hronis/" class="mainLink"></a>
+        <a href="https://www.protothema.gr/greece/article/1315292/thessaloniki-pire-prothesmia-gia-tin-paraskeui-o-astunomikos-purovolisa-enstiktodos-pros-ta-kato-eipe/" class="mainLink"></a>
             <div class="desc">
                 <div class="heading">
             <h3>
-                <a href="https://www.protothema.gr/greece/article/1310926/thessaloniki-paradothike-o-26hronos-gia-tin-parasursi-tis-21hronis/">Παραδόθηκε ο 26χρονος για την παράσυρση της 21χρονης στη Θεσσαλονίκη</a>
+                <a href="https://www.protothema.gr/greece/article/1315292/thessaloniki-pire-prothesmia-gia-tin-paraskeui-o-astunomikos-purovolisa-enstiktodos-pros-ta-kato-eipe/">&#171;Πυροβόλησα ενστικτωδώς προς τα κάτω&#187; είπε ο αστυνομικός</a>
             </h3>
         </div>
                     <div class="wrp">
                 
                 <span class="update_well">
-<time data-plugin-timeago="" datetime="2022-11-24T11:03:00+02:00">24.11.2022, 11:03</time>                                    </span>
+<time data-plugin-timeago="" datetime="2022-12-06T11:33:00+02:00">06.12.2022, 11:33</time>                                    </span>
             </div>
             </div>
 </article>
@@ -1936,17 +1988,17 @@ document.body.appendChild(img);
 
 
 <article>
-        <a href="https://www.protothema.gr/politics/article/1311033/olga-gerovasili-epese-thuma-ilektronikis-epithesis-tis-afairesan-hrimata-apo-ton-logariasmo/" class="mainLink"></a>
+        <a href="https://www.protothema.gr/greece/article/1315413/omades-roma-spane-kai-kaine-sti-thessaloniki-deite-video/" class="mainLink"></a>
             <div class="desc">
                 <div class="heading">
             <h3>
-                <a href="https://www.protothema.gr/politics/article/1311033/olga-gerovasili-epese-thuma-ilektronikis-epithesis-tis-afairesan-hrimata-apo-ton-logariasmo/">Έπεσε θύμα ηλεκτρονικής επίθεσης η Όλγα Γεροβασίλη - Της αφαίρεσαν χρήματα από τον λογαριασμό</a>
+                <a href="https://www.protothema.gr/greece/article/1315413/omades-roma-spane-kai-kaine-sti-thessaloniki-deite-video/">Ομάδες Ρομά σπάνε και καίνε στη Θεσσαλονίκη - Δείτε βίντεο</a>
             </h3>
         </div>
                     <div class="wrp">
                 
                 <span class="update_well">
-<time data-plugin-timeago="" datetime="2022-11-24T14:08:00+02:00">24.11.2022, 14:08</time>                                    </span>
+<time data-plugin-timeago="" datetime="2022-12-06T16:05:00+02:00">06.12.2022, 16:05</time>                                    </span>
             </div>
             </div>
 </article>
@@ -1954,17 +2006,17 @@ document.body.appendChild(img);
 
 
 <article>
-        <a href="https://www.protothema.gr/greece/article/1310822/mesogeion-nekros-o-pezos-pou-parasurthike-apo-duo-autokinita/" class="mainLink"></a>
+        <a href="https://www.protothema.gr/politics/article/1315310/mevlout-tsavousoglou-an-den-kanei-piso-i-ellada-gia-ta-nisia-tha-kanoume-oti-einai-aparaitito/" class="mainLink"></a>
             <div class="desc">
                 <div class="heading">
             <h3>
-                <a href="https://www.protothema.gr/greece/article/1310822/mesogeion-nekros-o-pezos-pou-parasurthike-apo-duo-autokinita/">Νεκρός ο πεζός που παρασύρθηκε από δύο αυτοκίνητα στη Μεσογείων</a>
+                <a href="https://www.protothema.gr/politics/article/1315310/mevlout-tsavousoglou-an-den-kanei-piso-i-ellada-gia-ta-nisia-tha-kanoume-oti-einai-aparaitito/">Απειλεί ο Τσαβούσογλου: Αν δεν κάνει πίσω η Ελλάδα για τα νησιά, θα κάνουμε ό,τι είναι απαραίτητο</a>
             </h3>
         </div>
                     <div class="wrp">
                 
                 <span class="update_well">
-<time data-plugin-timeago="" datetime="2022-11-24T07:32:00+02:00">24.11.2022, 07:32</time>                                    </span>
+<time data-plugin-timeago="" datetime="2022-12-06T12:11:00+02:00">06.12.2022, 12:11</time>                                    </span>
             </div>
             </div>
 </article>
@@ -1972,17 +2024,17 @@ document.body.appendChild(img);
 
 
 <article>
-        <a href="https://www.protothema.gr/greece/article/1310958/kivotos-tou-kosmou-o-irakinos-dexi-heri-tou-patera-adoniou-zouse-hlidati-zoi/" class="mainLink"></a>
+        <a href="https://www.protothema.gr/life-style/article/1315489/bofiliou-gia-alexandro-grigoropoulo-kathe-tetoia-mera-skeftomai-enan-aderfo-mou-sti-thesi-tou/" class="mainLink"></a>
             <div class="desc">
                 <div class="heading">
             <h3>
-                <a href="https://www.protothema.gr/greece/article/1310958/kivotos-tou-kosmou-o-irakinos-dexi-heri-tou-patera-adoniou-zouse-hlidati-zoi/">Ο Ιρακινός &#171;δεξί χέρι&#187; του πατέρα Αντωνίου ζούσε χλιδάτη ζωή μέσω της &#171;Κιβωτού&#187;</a>
+                <a href="https://www.protothema.gr/life-style/article/1315489/bofiliou-gia-alexandro-grigoropoulo-kathe-tetoia-mera-skeftomai-enan-aderfo-mou-sti-thesi-tou/">Μετά τον &#171;σάλο&#187; για το Λονδίνο, η Μποφίλιου γράφει για τον Γρηγορόπουλο: &#171;Κάθε τέτοια μέρα, σκέφτομαι έναν αδερφό μου στη θέση του&#187;</a>
             </h3>
         </div>
                     <div class="wrp">
                 
                 <span class="update_well">
-<time data-plugin-timeago="" datetime="2022-11-24T11:54:00+02:00">24.11.2022, 11:54</time>                                    </span>
+<time data-plugin-timeago="" datetime="2022-12-06T18:35:00+02:00">06.12.2022, 18:35</time>                                    </span>
             </div>
             </div>
 </article>
@@ -1990,17 +2042,17 @@ document.body.appendChild(img);
 
 
 <article>
-        <a href="https://www.protothema.gr/world/article/1310952/eutuhos-den-einai-omofulofilos-leei-o-pateras-tou-22hronou-pou-skotose-5-atoma-se-gei-bar/" class="mainLink"></a>
+        <a href="https://www.protothema.gr/greece/article/1315570/afroditi-manou-elena-akrita-dinoun-radevou-sta-gounaradika/" class="mainLink"></a>
             <div class="desc">
                 <div class="heading">
             <h3>
-                <a href="https://www.protothema.gr/world/article/1310952/eutuhos-den-einai-omofulofilos-leei-o-pateras-tou-22hronou-pou-skotose-5-atoma-se-gei-bar/">&#171;Ευτυχώς δεν είναι ομοφυλόφιλος&#187; λέει ο πατέρας του 22χρονου που σκότωσε 5 άτομα σε γκέι μπαρ!</a>
+                <a href="https://www.protothema.gr/greece/article/1315570/afroditi-manou-elena-akrita-dinoun-radevou-sta-gounaradika/">Στα &#171;άκρα&#187; η κόντρα Αφροδίτης Μάνου - Έλενας Ακρίτα - Δίνουν &#171;ραντεβού στα... γουναράδικα&#187;!</a>
             </h3>
         </div>
                     <div class="wrp">
                 
                 <span class="update_well">
-<time data-plugin-timeago="" datetime="2022-11-24T11:49:00+02:00">24.11.2022, 11:49</time>                                    </span>
+<time data-plugin-timeago="" datetime="2022-12-06T22:19:00+02:00">06.12.2022, 22:19</time>                                    </span>
             </div>
             </div>
 </article>
@@ -2008,17 +2060,17 @@ document.body.appendChild(img);
 
 
 <article>
-        <a href="https://www.protothema.gr/greece/article/1311041/thessaloniki-prokalei-o-odigos-tou-ih-pou-paresure-tin-21hroni-an-pernouse-apo-diavasi-den-tha-eihe-sumvei-tipota/" class="mainLink"></a>
+        <a href="https://www.protothema.gr/greece/article/1315342/deite-video-roma-petoun-petres-se-astunomikous-sto-nomismatokopeio/" class="mainLink"></a>
             <div class="desc">
                 <div class="heading">
             <h3>
-                <a href="https://www.protothema.gr/greece/article/1311041/thessaloniki-prokalei-o-odigos-tou-ih-pou-paresure-tin-21hroni-an-pernouse-apo-diavasi-den-tha-eihe-sumvei-tipota/">Χωρίς άδεια παραμονής ο 26χρονος Αλβανός που παρέσυρε την 21χρονη στη Θεσσαλονίκη</a>
+                <a href="https://www.protothema.gr/greece/article/1315342/deite-video-roma-petoun-petres-se-astunomikous-sto-nomismatokopeio/">Δείτε βίντεο: Ρομά πετούν πέτρες σε αστυνομικούς στο Νομισματοκοπείο</a>
             </h3>
         </div>
                     <div class="wrp">
                 
                 <span class="update_well">
-<time data-plugin-timeago="" datetime="2022-11-24T16:01:00+02:00">24.11.2022, 16:01</time>                                    </span>
+<time data-plugin-timeago="" datetime="2022-12-06T14:30:29+02:00">06.12.2022, 14:30</time>                                    </span>
             </div>
             </div>
 </article>
@@ -2026,17 +2078,17 @@ document.body.appendChild(img);
 
 
 <article>
-        <a href="https://www.protothema.gr/blogs/fofi-giotaki/article/1310817/i-sfaira-ton-eklogon-efuge/" class="mainLink"></a>
+        <a href="https://www.protothema.gr/greece/article/1315482/haos-meta-ta-epeisodia-ton-roma-sti-thessaloniki-ta-ekanan-gis-madiam-stin-podou/" class="mainLink"></a>
             <div class="desc">
                 <div class="heading">
             <h3>
-                <a href="https://www.protothema.gr/blogs/fofi-giotaki/article/1310817/i-sfaira-ton-eklogon-efuge/">Η σφαίρα των εκλογών έφυγε</a>
+                <a href="https://www.protothema.gr/greece/article/1315482/haos-meta-ta-epeisodia-ton-roma-sti-thessaloniki-ta-ekanan-gis-madiam-stin-podou/">Χάος μετά τα επεισόδια των Ρομά στη Θεσσαλονίκη - Τα έκαναν &#171;Γης Μαδιάμ&#187; στην Πόντου</a>
             </h3>
         </div>
                     <div class="wrp">
                 
                 <span class="update_well">
-<time data-plugin-timeago="" datetime="2022-11-24T06:03:09+02:00">24.11.2022, 06:03</time>                                    </span>
+<time data-plugin-timeago="" datetime="2022-12-06T18:20:00+02:00">06.12.2022, 18:20</time>                                    </span>
             </div>
             </div>
 </article>
@@ -2044,17 +2096,17 @@ document.body.appendChild(img);
 
 
 <article>
-        <a href="https://www.protothema.gr/greece/article/1310900/foititis-sto-panepistimio-thessalias-kataggellei-oti-kinduneuei-na-min-parei-ptuhio-logo-hreous-stin-foititiki-estia/" class="mainLink"></a>
+        <a href="https://www.protothema.gr/greece/article/1315331/serres-suglonizoun-oi-summathites-tou-11hronou-kade-horo-ekei-psila-erhetai-na-paixei-o-vasilis/" class="mainLink"></a>
             <div class="desc">
                 <div class="heading">
             <h3>
-                <a href="https://www.protothema.gr/greece/article/1310900/foititis-sto-panepistimio-thessalias-kataggellei-oti-kinduneuei-na-min-parei-ptuhio-logo-hreous-stin-foititiki-estia/">Φοιτητής στο Πανεπιστήμιο Θεσσαλίας καταγγέλλει ότι κινδυνεύει να μην πάρει πτυχίο λόγω χρέους στην φοιτητική εστία</a>
+                <a href="https://www.protothema.gr/greece/article/1315331/serres-suglonizoun-oi-summathites-tou-11hronou-kade-horo-ekei-psila-erhetai-na-paixei-o-vasilis/">Συγκλονίζουν οι συμμαθητές του 11χρονου στις Σέρρες: &#171;Κάντε χώρο εκεί ψηλά, έρχεται να παίξει ο Βασίλης&#187;</a>
             </h3>
         </div>
                     <div class="wrp">
                 
                 <span class="update_well">
-<time data-plugin-timeago="" datetime="2022-11-24T10:01:00+02:00">24.11.2022, 10:01</time>                                    </span>
+<time data-plugin-timeago="" datetime="2022-12-06T12:50:00+02:00">06.12.2022, 12:50</time>                                    </span>
             </div>
             </div>
 </article>
@@ -2062,17 +2114,17 @@ document.body.appendChild(img);
 
 
 <article>
-        <a href="https://www.protothema.gr/greece/article/1310907/kivotos-tou-kosmou-mustirio-me-to-adeiasma-thuridas-apo-proin-stelehos/" class="mainLink"></a>
+        <a href="https://www.protothema.gr/greece/article/1315306/ekopsan-to-poto-oi-ellines-i-thesi-ekplixi-sti-lista-gia-tin-katanalosi-alkool-stin-europi/" class="mainLink"></a>
             <div class="desc">
                 <div class="heading">
             <h3>
-                <a href="https://www.protothema.gr/greece/article/1310907/kivotos-tou-kosmou-mustirio-me-to-adeiasma-thuridas-apo-proin-stelehos/">Πρώην στέλεχος της Κιβωτού του Κόσμου άδειασε θυρίδα με άκρα μυστικότητα</a>
+                <a href="https://www.protothema.gr/greece/article/1315306/ekopsan-to-poto-oi-ellines-i-thesi-ekplixi-sti-lista-gia-tin-katanalosi-alkool-stin-europi/">Έκοψαν το ποτό οι Έλληνες: Εκπλήξεις στη λίστα χρήσης αλκοόλ στην Ευρώπη</a>
             </h3>
         </div>
                     <div class="wrp">
                 
                 <span class="update_well">
-<time data-plugin-timeago="" datetime="2022-11-24T10:17:00+02:00">24.11.2022, 10:17</time>                                    </span>
+<time data-plugin-timeago="" datetime="2022-12-06T12:06:00+02:00">06.12.2022, 12:06</time>                                    </span>
             </div>
             </div>
 </article>
@@ -2102,32 +2154,32 @@ document.body.appendChild(img);
                     
 
 <article>
-        <a href="https://www.ygeiamou.gr/fitness-wellbeing/307670/sas-perni-o-ipnos-ston-kanape-kathe-vradi-tris-logi-pou-prepi-na-to-kopsete/" target="_blank" class="mainLink"></a>
+        <a href="https://www.ygeiamou.gr/%ce%b5%cf%80%ce%b9%cf%83%cf%84%ce%b7%ce%bc%ce%bf%ce%bd%ce%b9%ce%ba%ce%ad%cf%82-%ce%b5%ce%be%ce%b5%ce%bb%ce%af%ce%be%ce%b5%ce%b9%cf%82/310215/apistefto-i-ichi-sto-wc-apokaliptoun-poso-igies-ine-to-entero/" target="_blank" class="mainLink"></a>
                 <figure data-image-mode="article">
-            <a href="https://www.ygeiamou.gr/fitness-wellbeing/307670/sas-perni-o-ipnos-ston-kanape-kathe-vradi-tris-logi-pou-prepi-na-to-kopsete/" target="_blank" class="">
+            <a href="https://www.ygeiamou.gr/%ce%b5%cf%80%ce%b9%cf%83%cf%84%ce%b7%ce%bc%ce%bf%ce%bd%ce%b9%ce%ba%ce%ad%cf%82-%ce%b5%ce%be%ce%b5%ce%bb%ce%af%ce%be%ce%b5%ce%b9%cf%82/310215/apistefto-i-ichi-sto-wc-apokaliptoun-poso-igies-ine-to-entero/" target="_blank" class="">
                 
 
 <picture >
 
     <!--[if IE 9]><video style="display: none;"><![endif]-->
-            <source data-srcset="https://i1.prth.gr/images/488x275/_webp/files/2022-11-24/221121193524_sleeping_on_the_couch.jpg" type="image/webp" />
-            <source data-srcset="https://i1.prth.gr/images/488x275/_jp2/files/2022-11-24/221121193524_sleeping_on_the_couch.jpg" type="image/jp2" />
-            <source data-srcset="https://i1.prth.gr/images/488x275/files/2022-11-24/221121193524_sleeping_on_the_couch.jpg" type="image/jpeg" />
+            <source data-srcset="https://i1.prth.gr/images/488x275/_webp/files/2022-12-07/190507161112_surprised.jpg" type="image/webp" />
+            <source data-srcset="https://i1.prth.gr/images/488x275/_jp2/files/2022-12-07/190507161112_surprised.jpg" type="image/jp2" />
+            <source data-srcset="https://i1.prth.gr/images/488x275/files/2022-12-07/190507161112_surprised.jpg" type="image/jpeg" />
     <!--[if IE 9]></video><![endif]-->
-        <img src="https://i1.prth.gr/images/488x275/files/thema.png" data-src="https://i1.prth.gr/images/488x275/files/2022-11-24/221121193524_sleeping_on_the_couch.jpg" fetchpriority="" alt="Σας παίρνει ο ύπνος στον καναπέ κάθε βράδυ; Τρεις λόγοι που πρέπει να το «κόψετε»" class="lazyload" />
+        <img src="https://i1.prth.gr/images/488x275/files/thema.png" data-src="https://i1.prth.gr/images/488x275/files/2022-12-07/190507161112_surprised.jpg" fetchpriority="" alt="Απίστευτο: Οι ήχοι στο WC αποκαλύπτουν πόσο υγιές είναι το έντερο" class="lazyload" />
 </picture>
             </a>
                     </figure>
     <div class="desc">
                 <div class="heading">
             <h3>
-                <a href="https://www.ygeiamou.gr/fitness-wellbeing/307670/sas-perni-o-ipnos-ston-kanape-kathe-vradi-tris-logi-pou-prepi-na-to-kopsete/" target="_blank">Σας παίρνει ο ύπνος στον καναπέ κάθε βράδυ; Τρεις λόγοι που πρέπει να το &#171;κόψετε&#187;</a>
+                <a href="https://www.ygeiamou.gr/%ce%b5%cf%80%ce%b9%cf%83%cf%84%ce%b7%ce%bc%ce%bf%ce%bd%ce%b9%ce%ba%ce%ad%cf%82-%ce%b5%ce%be%ce%b5%ce%bb%ce%af%ce%be%ce%b5%ce%b9%cf%82/310215/apistefto-i-ichi-sto-wc-apokaliptoun-poso-igies-ine-to-entero/" target="_blank">Απίστευτο: Οι ήχοι στο WC αποκαλύπτουν πόσο υγιές είναι το έντερο</a>
             </h3>
         </div>
                     <div class="wrp">
                 
                 <span class="update_well">
-<time data-plugin-timeago="" datetime="2022-11-24T19:10:00+02:00">24.11.2022, 19:10</time>                                    </span>
+<time data-plugin-timeago="" datetime="2022-12-07T09:21:00+02:00">07.12.2022, 09:21</time>                                    </span>
             </div>
             </div>
 </article>
@@ -2138,32 +2190,32 @@ document.body.appendChild(img);
                     
 
 <article>
-        <a href="https://www.newsauto.gr/news/idou-to-aftokinito-tou-pater-antoniou-tis-kivotou-tou-kosmou/" target="_blank" class="mainLink"></a>
+        <a href="https://www.newsauto.gr/news/pou-fortizo-stin-athina-ilektriko-ke-poso-kostizi/" target="_blank" class="mainLink"></a>
                 <figure data-image-mode="article">
-            <a href="https://www.newsauto.gr/news/idou-to-aftokinito-tou-pater-antoniou-tis-kivotou-tou-kosmou/" target="_blank" class="">
+            <a href="https://www.newsauto.gr/news/pou-fortizo-stin-athina-ilektriko-ke-poso-kostizi/" target="_blank" class="">
                 
 
 <picture >
 
     <!--[if IE 9]><video style="display: none;"><![endif]-->
-            <source data-srcset="https://i1.prth.gr/images/488x275/_webp/files/2022-11-24/Στιγμιοτυπο_οθονης_2022-11-24__11_13_03_πμ.png" type="image/webp" />
-            <source data-srcset="https://i1.prth.gr/images/488x275/_jp2/files/2022-11-24/Στιγμιοτυπο_οθονης_2022-11-24__11_13_03_πμ.png" type="image/jp2" />
-            <source data-srcset="https://i1.prth.gr/images/488x275/files/2022-11-24/Στιγμιοτυπο_οθονης_2022-11-24__11_13_03_πμ.png" type="image/png" />
+            <source data-srcset="https://i1.prth.gr/images/488x275/_webp/files/2022-10-21/Στιγμιοτυπο_2022-10-21__12_23_35_μμ.png" type="image/webp" />
+            <source data-srcset="https://i1.prth.gr/images/488x275/_jp2/files/2022-10-21/Στιγμιοτυπο_2022-10-21__12_23_35_μμ.png" type="image/jp2" />
+            <source data-srcset="https://i1.prth.gr/images/488x275/files/2022-10-21/Στιγμιοτυπο_2022-10-21__12_23_35_μμ.png" type="image/png" />
     <!--[if IE 9]></video><![endif]-->
-        <img src="https://i1.prth.gr/images/488x275/files/thema.png" data-src="https://i1.prth.gr/images/488x275/files/2022-11-24/Στιγμιοτυπο_οθονης_2022-11-24__11_13_03_πμ.png" fetchpriority="" alt="Ιδού το αυτοκίνητο του πατέρα Αντώνιου της Κιβωτού" class="lazyload" />
+        <img src="https://i1.prth.gr/images/488x275/files/thema.png" data-src="https://i1.prth.gr/images/488x275/files/2022-10-21/Στιγμιοτυπο_2022-10-21__12_23_35_μμ.png" fetchpriority="" alt="Πού φορτίζω στην Αθήνα και πόσο κοστίζει..." class="lazyload" />
 </picture>
             </a>
                     </figure>
     <div class="desc">
                 <div class="heading">
             <h3>
-                <a href="https://www.newsauto.gr/news/idou-to-aftokinito-tou-pater-antoniou-tis-kivotou-tou-kosmou/" target="_blank">Ιδού το αυτοκίνητο του πατέρα Αντώνιου της Κιβωτού</a>
+                <a href="https://www.newsauto.gr/news/pou-fortizo-stin-athina-ilektriko-ke-poso-kostizi/" target="_blank">Πού φορτίζω στην Αθήνα και πόσο κοστίζει...</a>
             </h3>
         </div>
                     <div class="wrp">
                 
                 <span class="update_well">
-<time data-plugin-timeago="" datetime="2022-11-24T11:13:55+02:00">24.11.2022, 11:13</time>                                    </span>
+<time data-plugin-timeago="" datetime="2022-12-07T07:08:05+02:00">07.12.2022, 07:08</time>                                    </span>
             </div>
             </div>
 </article>
@@ -2174,32 +2226,32 @@ document.body.appendChild(img);
                     
 
 <article>
-        <a href="https://www.olivemagazine.gr/peristasi-eidos-kouzinas/gia-to-paidi/afti-einai-i-pitsa-pou-latrevoun-ta-paidia-stin-italia/" target="_blank" class="mainLink"></a>
+        <a href="https://www.olivemagazine.gr/chrisima/symvoules/soupermarket-i-aploustati-symvouli-gia-na-echete-panta-to-budget-ypo-elegcho/" target="_blank" class="mainLink"></a>
                 <figure data-image-mode="article">
-            <a href="https://www.olivemagazine.gr/peristasi-eidos-kouzinas/gia-to-paidi/afti-einai-i-pitsa-pou-latrevoun-ta-paidia-stin-italia/" target="_blank" class="">
+            <a href="https://www.olivemagazine.gr/chrisima/symvoules/soupermarket-i-aploustati-symvouli-gia-na-echete-panta-to-budget-ypo-elegcho/" target="_blank" class="">
                 
 
 <picture >
 
     <!--[if IE 9]><video style="display: none;"><![endif]-->
-            <source data-srcset="https://i1.prth.gr/images/488x275/_webp/files/2022-11-23/net_pizza_bambini.jpg" type="image/webp" />
-            <source data-srcset="https://i1.prth.gr/images/488x275/_jp2/files/2022-11-23/net_pizza_bambini.jpg" type="image/jp2" />
-            <source data-srcset="https://i1.prth.gr/images/488x275/files/2022-11-23/net_pizza_bambini.jpg" type="image/jpeg" />
+            <source data-srcset="https://i1.prth.gr/images/488x275/_webp/files/2022-12-07/net_supermarket.jpg" type="image/webp" />
+            <source data-srcset="https://i1.prth.gr/images/488x275/_jp2/files/2022-12-07/net_supermarket.jpg" type="image/jp2" />
+            <source data-srcset="https://i1.prth.gr/images/488x275/files/2022-12-07/net_supermarket.jpg" type="image/jpeg" />
     <!--[if IE 9]></video><![endif]-->
-        <img src="https://i1.prth.gr/images/488x275/files/thema.png" data-src="https://i1.prth.gr/images/488x275/files/2022-11-23/net_pizza_bambini.jpg" fetchpriority="" alt="Αυτή είναι η πίτσα που λατρεύουν τα παιδιά στην Ιταλία" class="lazyload" />
+        <img src="https://i1.prth.gr/images/488x275/files/thema.png" data-src="https://i1.prth.gr/images/488x275/files/2022-12-07/net_supermarket.jpg" fetchpriority="" alt="Σουπερμάρκετ: Η απλούστατη συμβουλή για να έχετε πάντα το budget υπό έλεγχο" class="lazyload" />
 </picture>
             </a>
                     </figure>
     <div class="desc">
                 <div class="heading">
             <h3>
-                <a href="https://www.olivemagazine.gr/peristasi-eidos-kouzinas/gia-to-paidi/afti-einai-i-pitsa-pou-latrevoun-ta-paidia-stin-italia/" target="_blank">Αυτή είναι η πίτσα που λατρεύουν τα παιδιά στην Ιταλία</a>
+                <a href="https://www.olivemagazine.gr/chrisima/symvoules/soupermarket-i-aploustati-symvouli-gia-na-echete-panta-to-budget-ypo-elegcho/" target="_blank">Σουπερμάρκετ: Η απλούστατη συμβουλή για να έχετε πάντα το budget υπό έλεγχο</a>
             </h3>
         </div>
                     <div class="wrp">
                 
                 <span class="update_well">
-<time data-plugin-timeago="" datetime="2022-11-23T16:00:00+02:00">23.11.2022, 16:00</time>                                    </span>
+<time data-plugin-timeago="" datetime="2022-12-07T09:50:00+02:00">07.12.2022, 09:50</time>                                    </span>
             </div>
             </div>
 </article>
@@ -2210,36 +2262,36 @@ document.body.appendChild(img);
                         
 
 <article>
-        <a href="https://www.marieclaire.gr/horoscope/toxotis-ta-dinata-ke-adinata-simia-tou-zodiou-tou-mina-me-pious-teriazi-perissotero/" target="_blank" class="mainLink"></a>
+        <a href="https://www.marieclaire.gr/horoscope/afti-ine-i-pio-romantiki-imera-tou-dekemvriou-ti-simeni-gia-kathe-zodio/" target="_blank" class="mainLink"></a>
                 <figure data-image-mode="article">
-            <a href="https://www.marieclaire.gr/horoscope/toxotis-ta-dinata-ke-adinata-simia-tou-zodiou-tou-mina-me-pious-teriazi-perissotero/" target="_blank" class="">
+            <a href="https://www.marieclaire.gr/horoscope/afti-ine-i-pio-romantiki-imera-tou-dekemvriou-ti-simeni-gia-kathe-zodio/" target="_blank" class="">
                 
 
 <picture >
 
     <!--[if IE 9]><video style="display: none;"><![endif]-->
-            <source data-srcset="https://i1.prth.gr/images/488x275/_webp/files/2022-11-24/sagittarius_zodiac_sign.jpg" type="image/webp" />
-            <source data-srcset="https://i1.prth.gr/images/488x275/_jp2/files/2022-11-24/sagittarius_zodiac_sign.jpg" type="image/jp2" />
-            <source data-srcset="https://i1.prth.gr/images/488x275/files/2022-11-24/sagittarius_zodiac_sign.jpg" type="image/jpeg" />
+            <source data-srcset="https://i1.prth.gr/images/488x275/_webp/files/2022-12-06/couple_romantic_day_thema.jpg" type="image/webp" />
+            <source data-srcset="https://i1.prth.gr/images/488x275/_jp2/files/2022-12-06/couple_romantic_day_thema.jpg" type="image/jp2" />
+            <source data-srcset="https://i1.prth.gr/images/488x275/files/2022-12-06/couple_romantic_day_thema.jpg" type="image/jpeg" />
     <!--[if IE 9]></video><![endif]-->
-        <img src="https://i1.prth.gr/images/488x275/files/thema.png" data-src="https://i1.prth.gr/images/488x275/files/2022-11-24/sagittarius_zodiac_sign.jpg" fetchpriority="" alt="Τοξότης: Τα δυνατά και αδύνατα σημεία του ζωδίου του μήνα – Με ποιους ταιριάζει περισσότερο" class="lazyload" />
+        <img src="https://i1.prth.gr/images/488x275/files/thema.png" data-src="https://i1.prth.gr/images/488x275/files/2022-12-06/couple_romantic_day_thema.jpg" fetchpriority="" alt="Αυτή είναι η πιο ρομαντική ημέρα του Δεκεμβρίου – Τι σημαίνει για κάθε ζώδιο" class="lazyload" />
 </picture>
             </a>
                     </figure>
             <div class="wrp wrp--mobile">
             <span class="update_well">
-<time data-plugin-timeago="" datetime="2022-11-24T18:22:00+02:00">24.11.2022, 18:22</time>                            </span>
+<time data-plugin-timeago="" datetime="2022-12-06T12:33:00+02:00">06.12.2022, 12:33</time>                            </span>
         </div>
     <div class="desc">
                 <div class="heading">
             <h3>
-                <a href="https://www.marieclaire.gr/horoscope/toxotis-ta-dinata-ke-adinata-simia-tou-zodiou-tou-mina-me-pious-teriazi-perissotero/" target="_blank">Τοξότης: Τα δυνατά και αδύνατα σημεία του ζωδίου του μήνα – Με ποιους ταιριάζει περισσότερο</a>
+                <a href="https://www.marieclaire.gr/horoscope/afti-ine-i-pio-romantiki-imera-tou-dekemvriou-ti-simeni-gia-kathe-zodio/" target="_blank">Αυτή είναι η πιο ρομαντική ημέρα του Δεκεμβρίου – Τι σημαίνει για κάθε ζώδιο</a>
             </h3>
         </div>
                     <div class="wrp">
                 
                 <span class="update_well">
-<time data-plugin-timeago="" datetime="2022-11-24T18:22:00+02:00">24.11.2022, 18:22</time>                                    </span>
+<time data-plugin-timeago="" datetime="2022-12-06T12:33:00+02:00">06.12.2022, 12:33</time>                                    </span>
             </div>
             </div>
 </article>
@@ -2250,36 +2302,36 @@ document.body.appendChild(img);
                         
 
 <article>
-        <a href="https://www.ygeiamou.gr/fitness-wellbeing/307686/ponos-sti-mesi-epta-vimata-pou-anakoufizoun-tin-osfialgia/" target="_blank" class="mainLink"></a>
+        <a href="https://www.newsauto.gr/news/oristiko-pote-tha-miothoun-ta-diodia-stin-attiki-odo/" target="_blank" class="mainLink"></a>
                 <figure data-image-mode="article">
-            <a href="https://www.ygeiamou.gr/fitness-wellbeing/307686/ponos-sti-mesi-epta-vimata-pou-anakoufizoun-tin-osfialgia/" target="_blank" class="">
+            <a href="https://www.newsauto.gr/news/oristiko-pote-tha-miothoun-ta-diodia-stin-attiki-odo/" target="_blank" class="">
                 
 
 <picture >
 
     <!--[if IE 9]><video style="display: none;"><![endif]-->
-            <source data-srcset="https://i1.prth.gr/images/488x275/_webp/files/2022-11-24/221121202104_back-pain.jpg" type="image/webp" />
-            <source data-srcset="https://i1.prth.gr/images/488x275/_jp2/files/2022-11-24/221121202104_back-pain.jpg" type="image/jp2" />
-            <source data-srcset="https://i1.prth.gr/images/488x275/files/2022-11-24/221121202104_back-pain.jpg" type="image/jpeg" />
+            <source data-srcset="https://i1.prth.gr/images/488x275/_webp/files/2022-12-06/Στιγμιοτυπο_οθονης_2022-12-06__3_08_51_μμ.png" type="image/webp" />
+            <source data-srcset="https://i1.prth.gr/images/488x275/_jp2/files/2022-12-06/Στιγμιοτυπο_οθονης_2022-12-06__3_08_51_μμ.png" type="image/jp2" />
+            <source data-srcset="https://i1.prth.gr/images/488x275/files/2022-12-06/Στιγμιοτυπο_οθονης_2022-12-06__3_08_51_μμ.png" type="image/png" />
     <!--[if IE 9]></video><![endif]-->
-        <img src="https://i1.prth.gr/images/488x275/files/thema.png" data-src="https://i1.prth.gr/images/488x275/files/2022-11-24/221121202104_back-pain.jpg" fetchpriority="" alt="Πόνος στη μέση: Επτά βήματα που ανακουφίζουν την οσφυαλγία" class="lazyload" />
+        <img src="https://i1.prth.gr/images/488x275/files/thema.png" data-src="https://i1.prth.gr/images/488x275/files/2022-12-06/Στιγμιοτυπο_οθονης_2022-12-06__3_08_51_μμ.png" fetchpriority="" alt="Πότε θα μειωθούν τα διόδια στην Αττική Οδό;" class="lazyload" />
 </picture>
             </a>
                     </figure>
             <div class="wrp wrp--mobile">
             <span class="update_well">
-<time data-plugin-timeago="" datetime="2022-11-24T16:55:00+02:00">24.11.2022, 16:55</time>                            </span>
+<time data-plugin-timeago="" datetime="2022-12-07T09:55:21+02:00">07.12.2022, 09:55</time>                            </span>
         </div>
     <div class="desc">
                 <div class="heading">
             <h3>
-                <a href="https://www.ygeiamou.gr/fitness-wellbeing/307686/ponos-sti-mesi-epta-vimata-pou-anakoufizoun-tin-osfialgia/" target="_blank">Πόνος στη μέση: Επτά βήματα που ανακουφίζουν την οσφυαλγία</a>
+                <a href="https://www.newsauto.gr/news/oristiko-pote-tha-miothoun-ta-diodia-stin-attiki-odo/" target="_blank">Πότε θα μειωθούν τα διόδια στην Αττική Οδό;</a>
             </h3>
         </div>
                     <div class="wrp">
                 
                 <span class="update_well">
-<time data-plugin-timeago="" datetime="2022-11-24T16:55:00+02:00">24.11.2022, 16:55</time>                                    </span>
+<time data-plugin-timeago="" datetime="2022-12-07T09:55:21+02:00">07.12.2022, 09:55</time>                                    </span>
             </div>
             </div>
 </article>
@@ -2290,36 +2342,36 @@ document.body.appendChild(img);
                         
 
 <article>
-        <a href="https://www.protothema.gr/greece/article/1308419/black-friday-edo-tha-vreite-hiliades-papoutsia-eos-kai-90/" class="mainLink"></a>
+        <a href="https://ygeiamou.gr/%ce%b5%cf%80%ce%b9%cf%83%cf%84%ce%b7%ce%bc%ce%bf%ce%bd%ce%b9%ce%ba%ce%ad%cf%82-%ce%b5%ce%be%ce%b5%ce%bb%ce%af%ce%be%ce%b5%ce%b9%cf%82/37733/na-pii-argoun-na-gerasoun-ke-to-derma-tous-fenete-neaniko/" target="_blank" class="mainLink"></a>
                 <figure data-image-mode="article">
-            <a href="https://www.protothema.gr/greece/article/1308419/black-friday-edo-tha-vreite-hiliades-papoutsia-eos-kai-90/" class="">
+            <a href="https://ygeiamou.gr/%ce%b5%cf%80%ce%b9%cf%83%cf%84%ce%b7%ce%bc%ce%bf%ce%bd%ce%b9%ce%ba%ce%ad%cf%82-%ce%b5%ce%be%ce%b5%ce%bb%ce%af%ce%be%ce%b5%ce%b9%cf%82/37733/na-pii-argoun-na-gerasoun-ke-to-derma-tous-fenete-neaniko/" target="_blank" class="">
                 
 
 <picture >
 
     <!--[if IE 9]><video style="display: none;"><![endif]-->
-            <source data-srcset="https://i1.prth.gr/images/488x275/_webp/files/2022-11-17/featured2.jpg" type="image/webp" />
-            <source data-srcset="https://i1.prth.gr/images/488x275/_jp2/files/2022-11-17/featured2.jpg" type="image/jp2" />
-            <source data-srcset="https://i1.prth.gr/images/488x275/files/2022-11-17/featured2.jpg" type="image/jpeg" />
+            <source data-srcset="https://i1.prth.gr/images/488x275/_webp/files/2019-10-04/neo_skin.jpg" type="image/webp" />
+            <source data-srcset="https://i1.prth.gr/images/488x275/_jp2/files/2019-10-04/neo_skin.jpg" type="image/jp2" />
+            <source data-srcset="https://i1.prth.gr/images/488x275/files/2019-10-04/neo_skin.jpg" type="image/jpeg" />
     <!--[if IE 9]></video><![endif]-->
-        <img src="https://i1.prth.gr/images/488x275/files/thema.png" data-src="https://i1.prth.gr/images/488x275/files/2022-11-17/featured2.jpg" fetchpriority="" alt="Black Friday: Εδώ θα βρείτε χιλιάδες παπούτσια με εκπτώσεις από 50% και πάνω" class="lazyload" />
+        <img src="https://i1.prth.gr/images/488x275/files/thema.png" data-src="https://i1.prth.gr/images/488x275/files/2019-10-04/neo_skin.jpg" fetchpriority="" alt="Να ποιοι αργούν να γεράσουν και το δέρμα τους φαίνεται νεανικό" class="lazyload" />
 </picture>
             </a>
                     </figure>
             <div class="wrp wrp--mobile">
             <span class="update_well">
-<time data-plugin-timeago="" datetime="2022-11-24T10:55:31+02:00">24.11.2022, 10:55</time>                            </span>
+<time data-plugin-timeago="" datetime="2022-12-07T09:45:13+02:00">07.12.2022, 09:45</time>                            </span>
         </div>
     <div class="desc">
                 <div class="heading">
             <h3>
-                <a href="https://www.protothema.gr/greece/article/1308419/black-friday-edo-tha-vreite-hiliades-papoutsia-eos-kai-90/">Black Friday: Εδώ θα βρείτε χιλιάδες παπούτσια με εκπτώσεις από 50% και πάνω</a>
+                <a href="https://ygeiamou.gr/%ce%b5%cf%80%ce%b9%cf%83%cf%84%ce%b7%ce%bc%ce%bf%ce%bd%ce%b9%ce%ba%ce%ad%cf%82-%ce%b5%ce%be%ce%b5%ce%bb%ce%af%ce%be%ce%b5%ce%b9%cf%82/37733/na-pii-argoun-na-gerasoun-ke-to-derma-tous-fenete-neaniko/" target="_blank">Να ποιοι αργούν να γεράσουν και το δέρμα τους φαίνεται νεανικό</a>
             </h3>
         </div>
                     <div class="wrp">
                 
                 <span class="update_well">
-<time data-plugin-timeago="" datetime="2022-11-24T10:55:31+02:00">24.11.2022, 10:55</time>                                    </span>
+<time data-plugin-timeago="" datetime="2022-12-07T09:45:13+02:00">07.12.2022, 09:45</time>                                    </span>
             </div>
             </div>
 </article>
@@ -2330,36 +2382,36 @@ document.body.appendChild(img);
                         
 
 <article>
-        <a href="https://www.protothema.gr/advertorial/article/1310309/odigos-black-friday-2022-kefalaio-asfaleia-autokinitou/" class="mainLink"></a>
+        <a href="https://www.gazzetta.gr/plus/2176463/nayagio-toy-irakleion-sti-falkonera-me-ta-250-thymata-giati-den-sothike-kamia-gynaika" target="_blank" class="mainLink"></a>
                 <figure data-image-mode="article">
-            <a href="https://www.protothema.gr/advertorial/article/1310309/odigos-black-friday-2022-kefalaio-asfaleia-autokinitou/" class="">
+            <a href="https://www.gazzetta.gr/plus/2176463/nayagio-toy-irakleion-sti-falkonera-me-ta-250-thymata-giati-den-sothike-kamia-gynaika" target="_blank" class="">
                 
 
 <picture >
 
     <!--[if IE 9]><video style="display: none;"><![endif]-->
-            <source data-srcset="https://i1.prth.gr/images/488x275/_webp/files/2022-11-22/Screenshot_62.png" type="image/webp" />
-            <source data-srcset="https://i1.prth.gr/images/488x275/_jp2/files/2022-11-22/Screenshot_62.png" type="image/jp2" />
-            <source data-srcset="https://i1.prth.gr/images/488x275/files/2022-11-22/Screenshot_62.png" type="image/png" />
+            <source data-srcset="https://i1.prth.gr/images/488x275/_webp/files/2022-12-07/g1-nayagio.jpg" type="image/webp" />
+            <source data-srcset="https://i1.prth.gr/images/488x275/_jp2/files/2022-12-07/g1-nayagio.jpg" type="image/jp2" />
+            <source data-srcset="https://i1.prth.gr/images/488x275/files/2022-12-07/g1-nayagio.jpg" type="image/jpeg" />
     <!--[if IE 9]></video><![endif]-->
-        <img src="https://i1.prth.gr/images/488x275/files/thema.png" data-src="https://i1.prth.gr/images/488x275/files/2022-11-22/Screenshot_62.png" fetchpriority="" alt="Οδηγός Black Friday 2022: κεφάλαιο ασφάλεια αυτοκινήτου " class="lazyload" />
+        <img src="https://i1.prth.gr/images/488x275/files/thema.png" data-src="https://i1.prth.gr/images/488x275/files/2022-12-07/g1-nayagio.jpg" fetchpriority="" alt="Το ναυάγιο του «Ηράκλειον» στη Φαλκονέρα με τα 250 θύματα: Γιατί δεν σώθηκε καμία γυναίκα και κανένα παιδί" class="lazyload" />
 </picture>
             </a>
                     </figure>
             <div class="wrp wrp--mobile">
             <span class="update_well">
-<time data-plugin-timeago="" datetime="2022-11-24T11:46:21+02:00">24.11.2022, 11:46</time>                            </span>
+<time data-plugin-timeago="" datetime="2022-12-07T09:14:19+02:00">07.12.2022, 09:14</time>                            </span>
         </div>
     <div class="desc">
                 <div class="heading">
             <h3>
-                <a href="https://www.protothema.gr/advertorial/article/1310309/odigos-black-friday-2022-kefalaio-asfaleia-autokinitou/">Οδηγός Black Friday 2022: κεφάλαιο ασφάλεια αυτοκινήτου </a>
+                <a href="https://www.gazzetta.gr/plus/2176463/nayagio-toy-irakleion-sti-falkonera-me-ta-250-thymata-giati-den-sothike-kamia-gynaika" target="_blank">Το ναυάγιο του &#171;Ηράκλειον&#187; στη Φαλκονέρα με τα 250 θύματα: Γιατί δεν σώθηκε καμία γυναίκα και κανένα παιδί</a>
             </h3>
         </div>
                     <div class="wrp">
                 
                 <span class="update_well">
-<time data-plugin-timeago="" datetime="2022-11-24T11:46:21+02:00">24.11.2022, 11:46</time>                                    </span>
+<time data-plugin-timeago="" datetime="2022-12-07T09:14:19+02:00">07.12.2022, 09:14</time>                                    </span>
             </div>
             </div>
 </article>
@@ -2370,36 +2422,36 @@ document.body.appendChild(img);
                         
 
 <article>
-        <a href="https://www.gazzetta.gr/plus/2172508/arhiepiskopos-dietaxe-na-kaei-o-bomos-ekklisias-epeidi-epiasan-mesa-merakli-ierea-se" target="_blank" class="mainLink"></a>
+        <a href="https://www.gazzetta.gr/plus/2176376/h-pio-treli-theoria-synomosias-stin-ellada-telika-yparhei-kilkis" target="_blank" class="mainLink"></a>
                 <figure data-image-mode="article">
-            <a href="https://www.gazzetta.gr/plus/2172508/arhiepiskopos-dietaxe-na-kaei-o-bomos-ekklisias-epeidi-epiasan-mesa-merakli-ierea-se" target="_blank" class="">
+            <a href="https://www.gazzetta.gr/plus/2176376/h-pio-treli-theoria-synomosias-stin-ellada-telika-yparhei-kilkis" target="_blank" class="">
                 
 
 <picture >
 
     <!--[if IE 9]><video style="display: none;"><![endif]-->
-            <source data-srcset="https://i1.prth.gr/images/488x275/_webp/files/2022-11-24/trio00.jpg" type="image/webp" />
-            <source data-srcset="https://i1.prth.gr/images/488x275/_jp2/files/2022-11-24/trio00.jpg" type="image/jp2" />
-            <source data-srcset="https://i1.prth.gr/images/488x275/files/2022-11-24/trio00.jpg" type="image/jpeg" />
+            <source data-srcset="https://i1.prth.gr/images/488x275/_webp/files/2022-12-07/g2-kiklis.jpg" type="image/webp" />
+            <source data-srcset="https://i1.prth.gr/images/488x275/_jp2/files/2022-12-07/g2-kiklis.jpg" type="image/jp2" />
+            <source data-srcset="https://i1.prth.gr/images/488x275/files/2022-12-07/g2-kiklis.jpg" type="image/jpeg" />
     <!--[if IE 9]></video><![endif]-->
-        <img src="https://i1.prth.gr/images/488x275/files/thema.png" data-src="https://i1.prth.gr/images/488x275/files/2022-11-24/trio00.jpg" fetchpriority="" alt="Αρχιεπίσκοπος διέταξε να καεί ο βωμός εκκλησίας επειδή «έπιασαν» μέσα μερακλή ιερέα σε ερωτικό τρίγωνο" class="lazyload" />
+        <img src="https://i1.prth.gr/images/488x275/files/thema.png" data-src="https://i1.prth.gr/images/488x275/files/2022-12-07/g2-kiklis.jpg" fetchpriority="" alt="H πιο τρελή θεωρία συνωμοσίας στην Ελλάδα: «Τελικά υπάρχει το Κιλκίς;»" class="lazyload" />
 </picture>
             </a>
                     </figure>
             <div class="wrp wrp--mobile">
             <span class="update_well">
-<time data-plugin-timeago="" datetime="2022-11-24T22:02:32+02:00">24.11.2022, 22:02</time>                            </span>
+<time data-plugin-timeago="" datetime="2022-12-07T09:18:32+02:00">07.12.2022, 09:18</time>                            </span>
         </div>
     <div class="desc">
                 <div class="heading">
             <h3>
-                <a href="https://www.gazzetta.gr/plus/2172508/arhiepiskopos-dietaxe-na-kaei-o-bomos-ekklisias-epeidi-epiasan-mesa-merakli-ierea-se" target="_blank">Αρχιεπίσκοπος διέταξε να καεί ο βωμός εκκλησίας επειδή &#171;έπιασαν&#187; μέσα μερακλή ιερέα σε ερωτικό τρίγωνο</a>
+                <a href="https://www.gazzetta.gr/plus/2176376/h-pio-treli-theoria-synomosias-stin-ellada-telika-yparhei-kilkis" target="_blank">H πιο τρελή θεωρία συνωμοσίας στην Ελλάδα: &#171;Τελικά υπάρχει το Κιλκίς;&#187;</a>
             </h3>
         </div>
                     <div class="wrp">
                 
                 <span class="update_well">
-<time data-plugin-timeago="" datetime="2022-11-24T22:02:32+02:00">24.11.2022, 22:02</time>                                    </span>
+<time data-plugin-timeago="" datetime="2022-12-07T09:18:32+02:00">07.12.2022, 09:18</time>                                    </span>
             </div>
             </div>
 </article>
@@ -2410,36 +2462,42 @@ document.body.appendChild(img);
                         
 
 <article>
-        <a href="https://www.marieclaire.gr/celebrities/evelina-papoulia-me-skourochromo-denim-ke-lefko-poukamiso-meta-to-telos-tis-parastasis-tis/" target="_blank" class="mainLink"></a>
+        <a href="https://www.olivemagazine.gr/estiatoria-bars/reportaz-estiatoria-bars/ta-kalytera-galaktoboureka-tis-athinas-kai-tis-thessalonikis/" target="_blank" class="mainLink"></a>
                 <figure data-image-mode="article">
-            <a href="https://www.marieclaire.gr/celebrities/evelina-papoulia-me-skourochromo-denim-ke-lefko-poukamiso-meta-to-telos-tis-parastasis-tis/" target="_blank" class="">
+            <a href="https://www.olivemagazine.gr/estiatoria-bars/reportaz-estiatoria-bars/ta-kalytera-galaktoboureka-tis-athinas-kai-tis-thessalonikis/" target="_blank" class="">
                 
 
 <picture >
 
     <!--[if IE 9]><video style="display: none;"><![endif]-->
-            <source data-srcset="https://i1.prth.gr/images/488x275/_webp/files/2022-11-24/ΕΒΕΛΙΝΑ2.jpg" type="image/webp" />
-            <source data-srcset="https://i1.prth.gr/images/488x275/_jp2/files/2022-11-24/ΕΒΕΛΙΝΑ2.jpg" type="image/jp2" />
-            <source data-srcset="https://i1.prth.gr/images/488x275/files/2022-11-24/ΕΒΕΛΙΝΑ2.jpg" type="image/jpeg" />
+            <source data-srcset="https://i1.prth.gr/images/488x275/_webp/files/2022-10-27/net_galaktompoureko.jpg" type="image/webp" />
+            <source data-srcset="https://i1.prth.gr/images/488x275/_jp2/files/2022-10-27/net_galaktompoureko.jpg" type="image/jp2" />
+            <source data-srcset="https://i1.prth.gr/images/488x275/files/2022-10-27/net_galaktompoureko.jpg" type="image/jpeg" />
     <!--[if IE 9]></video><![endif]-->
-        <img src="https://i1.prth.gr/images/488x275/files/thema.png" data-src="https://i1.prth.gr/images/488x275/files/2022-11-24/ΕΒΕΛΙΝΑ2.jpg" fetchpriority="" alt="H Εβελίνα Παπούλια χορεύει με κορμάκι και κολάν πάνω στη σκηνή - Το 80s outfit" class="lazyload" />
+        <img src="https://i1.prth.gr/images/488x275/files/thema.png" data-src="https://i1.prth.gr/images/488x275/files/2022-10-27/net_galaktompoureko.jpg" fetchpriority="" alt="Τα καλύτερα γαλακτομπούρεκα της Αθήνας και της Θεσσαλονίκης" class="lazyload" />
 </picture>
             </a>
                     </figure>
             <div class="wrp wrp--mobile">
             <span class="update_well">
-<time data-plugin-timeago="" datetime="2022-11-24T16:54:00+02:00">24.11.2022, 16:54</time>                            </span>
+<time data-plugin-timeago="" datetime="2022-12-06T17:00:00+02:00">06.12.2022, 17:00</time>                                    <a href="https://www.olivemagazine.gr/estiatoria-bars/reportaz-estiatoria-bars/ta-kalytera-galaktoboureka-tis-athinas-kai-tis-thessalonikis/" target="_blank" class="comment">
+                        1
+                    </a>
+            </span>
         </div>
     <div class="desc">
                 <div class="heading">
             <h3>
-                <a href="https://www.marieclaire.gr/celebrities/evelina-papoulia-me-skourochromo-denim-ke-lefko-poukamiso-meta-to-telos-tis-parastasis-tis/" target="_blank">H Εβελίνα Παπούλια χορεύει με κορμάκι και κολάν πάνω στη σκηνή - Το 80s outfit</a>
+                <a href="https://www.olivemagazine.gr/estiatoria-bars/reportaz-estiatoria-bars/ta-kalytera-galaktoboureka-tis-athinas-kai-tis-thessalonikis/" target="_blank">Τα καλύτερα γαλακτομπούρεκα της Αθήνας και της Θεσσαλονίκης</a>
             </h3>
         </div>
                     <div class="wrp">
                 
                 <span class="update_well">
-<time data-plugin-timeago="" datetime="2022-11-24T16:54:00+02:00">24.11.2022, 16:54</time>                                    </span>
+<time data-plugin-timeago="" datetime="2022-12-06T17:00:00+02:00">06.12.2022, 17:00</time>                                            <a href="https://www.olivemagazine.gr/estiatoria-bars/reportaz-estiatoria-bars/ta-kalytera-galaktoboureka-tis-athinas-kai-tis-thessalonikis/" target="_blank" class="comment">
+                            1
+                        </a>
+                </span>
             </div>
             </div>
 </article>
@@ -2475,38 +2533,39 @@ document.body.appendChild(img);
                     
 
 <article>
-        <a href="https://www.protothema.gr/greece/article/1311227/kukloforiakes-ruthmiseis-tin-kuriaki-to-proi-sta-notia-proastia-tis-athinas/" class="mainLink"></a>
+        <a href="https://www.protothema.gr/greece/article/1315696/pleuris-epistrefodai-anadromika-ta-prostima-se-osous-ano-ton-60-den-emvoliastikan-poioi-einai-oi-oroi/" class="mainLink"></a>
                 <figure data-image-mode="article">
-            <a href="https://www.protothema.gr/greece/article/1311227/kukloforiakes-ruthmiseis-tin-kuriaki-to-proi-sta-notia-proastia-tis-athinas/" class="">
+            <a href="https://www.protothema.gr/greece/article/1315696/pleuris-epistrefodai-anadromika-ta-prostima-se-osous-ano-ton-60-den-emvoliastikan-poioi-einai-oi-oroi/" class="playVideo">
+                    <i class="icon-play videoIcon sml"></i>
                 
 
 <picture >
 
     <!--[if IE 9]><video style="display: none;"><![endif]-->
-            <source data-srcset="https://i1.prth.gr/images/640x360/_webp/files/2022-11-24/5730708.jpg" type="image/webp" media="(max-width: 640px)" />
-            <source data-srcset="https://i1.prth.gr/images/640x360/_jp2/files/2022-11-24/5730708.jpg" type="image/jp2" media="(max-width: 640px)" />
-            <source data-srcset="https://i1.prth.gr/images/640x360/files/2022-11-24/5730708.jpg" type="image/jpeg" media="(max-width: 640px)" />
-            <source data-srcset="https://i1.prth.gr/images/595x335/_webp/files/2022-11-24/5730708.jpg" type="image/webp" media="(max-width: 1279px)" />
-            <source data-srcset="https://i1.prth.gr/images/595x335/_jp2/files/2022-11-24/5730708.jpg" type="image/jp2" media="(max-width: 1279px)" />
-            <source data-srcset="https://i1.prth.gr/images/595x335/files/2022-11-24/5730708.jpg" type="image/jpeg" media="(max-width: 1279px)" />
-            <source data-srcset="https://i1.prth.gr/images/750x422/_webp/files/2022-11-24/5730708.jpg" type="image/webp" media="(min-width: 1280px)" />
-            <source data-srcset="https://i1.prth.gr/images/750x422/_jp2/files/2022-11-24/5730708.jpg" type="image/jp2" media="(min-width: 1280px)" />
-            <source data-srcset="https://i1.prth.gr/images/750x422/files/2022-11-24/5730708.jpg" type="image/jpeg" media="(min-width: 1280px)" />
+            <source data-srcset="https://i1.prth.gr/images/640x360/_webp/files/2022-12-07/emvoliasmos-prostima.jpg" type="image/webp" media="(max-width: 640px)" />
+            <source data-srcset="https://i1.prth.gr/images/640x360/_jp2/files/2022-12-07/emvoliasmos-prostima.jpg" type="image/jp2" media="(max-width: 640px)" />
+            <source data-srcset="https://i1.prth.gr/images/640x360/files/2022-12-07/emvoliasmos-prostima.jpg" type="image/jpeg" media="(max-width: 640px)" />
+            <source data-srcset="https://i1.prth.gr/images/595x335/_webp/files/2022-12-07/emvoliasmos-prostima.jpg" type="image/webp" media="(max-width: 1279px)" />
+            <source data-srcset="https://i1.prth.gr/images/595x335/_jp2/files/2022-12-07/emvoliasmos-prostima.jpg" type="image/jp2" media="(max-width: 1279px)" />
+            <source data-srcset="https://i1.prth.gr/images/595x335/files/2022-12-07/emvoliasmos-prostima.jpg" type="image/jpeg" media="(max-width: 1279px)" />
+            <source data-srcset="https://i1.prth.gr/images/750x422/_webp/files/2022-12-07/emvoliasmos-prostima.jpg" type="image/webp" media="(min-width: 1280px)" />
+            <source data-srcset="https://i1.prth.gr/images/750x422/_jp2/files/2022-12-07/emvoliasmos-prostima.jpg" type="image/jp2" media="(min-width: 1280px)" />
+            <source data-srcset="https://i1.prth.gr/images/750x422/files/2022-12-07/emvoliasmos-prostima.jpg" type="image/jpeg" media="(min-width: 1280px)" />
     <!--[if IE 9]></video><![endif]-->
-        <img src="https://i1.prth.gr/images/750x422/files/thema.png" data-src="https://i1.prth.gr/images/750x422/files/2022-11-24/5730708.jpg" fetchpriority="" alt="Κυκλοφοριακές ρυθμίσεις την Κυριακή το πρωί στα νότια προάστια της Αθήνας" class="lazyload" />
+        <img src="https://i1.prth.gr/images/750x422/files/thema.png" data-src="https://i1.prth.gr/images/750x422/files/2022-12-07/emvoliasmos-prostima.jpg" fetchpriority="" alt="Πλεύρης: Επιστρέφονται αναδρομικά τα πρόστιμα σε όσους άνω των 60 δεν εμβολιάστηκαν - Ποιοι είναι οι όροι" class="lazyload" />
 </picture>
             </a>
                     </figure>
     <div class="desc">
                 <div class="heading">
             <h3>
-                <a href="https://www.protothema.gr/greece/article/1311227/kukloforiakes-ruthmiseis-tin-kuriaki-to-proi-sta-notia-proastia-tis-athinas/">Κυκλοφοριακές ρυθμίσεις την Κυριακή το πρωί στα νότια προάστια της Αθήνας</a>
+                <a href="https://www.protothema.gr/greece/article/1315696/pleuris-epistrefodai-anadromika-ta-prostima-se-osous-ano-ton-60-den-emvoliastikan-poioi-einai-oi-oroi/">Επιστρέφονται αναδρομικά τα πρόστιμα σε όσους άνω των 60 δεν εμβολιάστηκαν - Ποιοι είναι οι όροι</a>
             </h3>
         </div>
                     <div class="wrp">
                 
                 <span class="update_well">
-<time data-plugin-timeago="" datetime="2022-11-24T22:33:00+02:00">24.11.2022, 22:33</time>                                    </span>
+<time data-plugin-timeago="" datetime="2022-12-07T10:16:00+02:00">07.12.2022, 10:16</time>                                    </span>
             </div>
             </div>
 </article>
@@ -2517,38 +2576,38 @@ document.body.appendChild(img);
                     
 
 <article>
-        <a href="https://www.protothema.gr/greece/article/1311225/neo-tzak-pot-stin-klirosi-tou-tzoker-deite-tous-arithmous/" class="mainLink"></a>
+        <a href="https://www.protothema.gr/greece/article/1315693/okto-hronia-kukloforousan-eleutheroi-oi-para-ligo-dolofonoi/" class="mainLink"></a>
                 <figure data-image-mode="article">
-            <a href="https://www.protothema.gr/greece/article/1311225/neo-tzak-pot-stin-klirosi-tou-tzoker-deite-tous-arithmous/" class="">
+            <a href="https://www.protothema.gr/greece/article/1315693/okto-hronia-kukloforousan-eleutheroi-oi-para-ligo-dolofonoi/" class="">
                 
 
 <picture >
 
     <!--[if IE 9]><video style="display: none;"><![endif]-->
-            <source data-srcset="https://i1.prth.gr/images/640x360/_webp/files/2022-10-16/tzoker__1_.jpg" type="image/webp" media="(max-width: 640px)" />
-            <source data-srcset="https://i1.prth.gr/images/640x360/_jp2/files/2022-10-16/tzoker__1_.jpg" type="image/jp2" media="(max-width: 640px)" />
-            <source data-srcset="https://i1.prth.gr/images/640x360/files/2022-10-16/tzoker__1_.jpg" type="image/jpeg" media="(max-width: 640px)" />
-            <source data-srcset="https://i1.prth.gr/images/595x335/_webp/files/2022-10-16/tzoker__1_.jpg" type="image/webp" media="(max-width: 1279px)" />
-            <source data-srcset="https://i1.prth.gr/images/595x335/_jp2/files/2022-10-16/tzoker__1_.jpg" type="image/jp2" media="(max-width: 1279px)" />
-            <source data-srcset="https://i1.prth.gr/images/595x335/files/2022-10-16/tzoker__1_.jpg" type="image/jpeg" media="(max-width: 1279px)" />
-            <source data-srcset="https://i1.prth.gr/images/750x422/_webp/files/2022-10-16/tzoker__1_.jpg" type="image/webp" media="(min-width: 1280px)" />
-            <source data-srcset="https://i1.prth.gr/images/750x422/_jp2/files/2022-10-16/tzoker__1_.jpg" type="image/jp2" media="(min-width: 1280px)" />
-            <source data-srcset="https://i1.prth.gr/images/750x422/files/2022-10-16/tzoker__1_.jpg" type="image/jpeg" media="(min-width: 1280px)" />
+            <source data-srcset="https://i1.prth.gr/images/640x360/_webp/files/2022-10-26/xeiropedes_andras_maketa.jpg" type="image/webp" media="(max-width: 640px)" />
+            <source data-srcset="https://i1.prth.gr/images/640x360/_jp2/files/2022-10-26/xeiropedes_andras_maketa.jpg" type="image/jp2" media="(max-width: 640px)" />
+            <source data-srcset="https://i1.prth.gr/images/640x360/files/2022-10-26/xeiropedes_andras_maketa.jpg" type="image/jpeg" media="(max-width: 640px)" />
+            <source data-srcset="https://i1.prth.gr/images/595x335/_webp/files/2022-10-26/xeiropedes_andras_maketa.jpg" type="image/webp" media="(max-width: 1279px)" />
+            <source data-srcset="https://i1.prth.gr/images/595x335/_jp2/files/2022-10-26/xeiropedes_andras_maketa.jpg" type="image/jp2" media="(max-width: 1279px)" />
+            <source data-srcset="https://i1.prth.gr/images/595x335/files/2022-10-26/xeiropedes_andras_maketa.jpg" type="image/jpeg" media="(max-width: 1279px)" />
+            <source data-srcset="https://i1.prth.gr/images/750x422/_webp/files/2022-10-26/xeiropedes_andras_maketa.jpg" type="image/webp" media="(min-width: 1280px)" />
+            <source data-srcset="https://i1.prth.gr/images/750x422/_jp2/files/2022-10-26/xeiropedes_andras_maketa.jpg" type="image/jp2" media="(min-width: 1280px)" />
+            <source data-srcset="https://i1.prth.gr/images/750x422/files/2022-10-26/xeiropedes_andras_maketa.jpg" type="image/jpeg" media="(min-width: 1280px)" />
     <!--[if IE 9]></video><![endif]-->
-        <img src="https://i1.prth.gr/images/750x422/files/thema.png" data-src="https://i1.prth.gr/images/750x422/files/2022-10-16/tzoker__1_.jpg" fetchpriority="" alt="Νέο τζακ ποτ στην κλήρωση του Τζόκερ - €4,2 εκατομμύρια μοιράζει την Κυριακή" class="lazyload" />
+        <img src="https://i1.prth.gr/images/750x422/files/thema.png" data-src="https://i1.prth.gr/images/750x422/files/2022-10-26/xeiropedes_andras_maketa.jpg" fetchpriority="" alt="Οκτώ χρόνια κυκλοφορούσαν ελεύθεροι οι παρά λίγο δολοφόνοι" class="lazyload" />
 </picture>
             </a>
                     </figure>
     <div class="desc">
                 <div class="heading">
             <h3>
-                <a href="https://www.protothema.gr/greece/article/1311225/neo-tzak-pot-stin-klirosi-tou-tzoker-deite-tous-arithmous/">Νέο τζακ ποτ στην κλήρωση του Τζόκερ - €4,2 εκατομμύρια μοιράζει την Κυριακή</a>
+                <a href="https://www.protothema.gr/greece/article/1315693/okto-hronia-kukloforousan-eleutheroi-oi-para-ligo-dolofonoi/">Οκτώ χρόνια κυκλοφορούσαν ελεύθεροι οι παρά λίγο δολοφόνοι</a>
             </h3>
         </div>
                     <div class="wrp">
                 
                 <span class="update_well">
-<time data-plugin-timeago="" datetime="2022-11-24T22:11:00+02:00">24.11.2022, 22:11</time>                                    </span>
+<time data-plugin-timeago="" datetime="2022-12-07T10:12:00+02:00">07.12.2022, 10:12</time>                                    </span>
             </div>
             </div>
 </article>
@@ -2559,41 +2618,38 @@ document.body.appendChild(img);
                     
 
 <article>
-        <a href="https://www.protothema.gr/greece/article/1311214/kivotos-tou-kosmou-eida-stelehos-na-vazei-to-heri-mesa-sto-magio-tou-19hronou-apokaluptei-18hroni/" class="mainLink"></a>
+        <a href="https://www.protothema.gr/greece/article/1315691/larisa-diarriktes-piran-hrimatokivotio-apo-sholeio-eihe-ta-lefta-gia-tin-5imeri-sti-romi/" class="mainLink"></a>
                 <figure data-image-mode="article">
-            <a href="https://www.protothema.gr/greece/article/1311214/kivotos-tou-kosmou-eida-stelehos-na-vazei-to-heri-mesa-sto-magio-tou-19hronou-apokaluptei-18hroni/" class="">
+            <a href="https://www.protothema.gr/greece/article/1315691/larisa-diarriktes-piran-hrimatokivotio-apo-sholeio-eihe-ta-lefta-gia-tin-5imeri-sti-romi/" class="">
                 
 
 <picture >
 
     <!--[if IE 9]><video style="display: none;"><![endif]-->
-            <source data-srcset="https://i1.prth.gr/images/640x360/_webp/files/2022-11-24/kivwtos-m2.jpg" type="image/webp" media="(max-width: 640px)" />
-            <source data-srcset="https://i1.prth.gr/images/640x360/_jp2/files/2022-11-24/kivwtos-m2.jpg" type="image/jp2" media="(max-width: 640px)" />
-            <source data-srcset="https://i1.prth.gr/images/640x360/files/2022-11-24/kivwtos-m2.jpg" type="image/jpeg" media="(max-width: 640px)" />
-            <source data-srcset="https://i1.prth.gr/images/595x335/_webp/files/2022-11-24/kivwtos-m2.jpg" type="image/webp" media="(max-width: 1279px)" />
-            <source data-srcset="https://i1.prth.gr/images/595x335/_jp2/files/2022-11-24/kivwtos-m2.jpg" type="image/jp2" media="(max-width: 1279px)" />
-            <source data-srcset="https://i1.prth.gr/images/595x335/files/2022-11-24/kivwtos-m2.jpg" type="image/jpeg" media="(max-width: 1279px)" />
-            <source data-srcset="https://i1.prth.gr/images/750x422/_webp/files/2022-11-24/kivwtos-m2.jpg" type="image/webp" media="(min-width: 1280px)" />
-            <source data-srcset="https://i1.prth.gr/images/750x422/_jp2/files/2022-11-24/kivwtos-m2.jpg" type="image/jp2" media="(min-width: 1280px)" />
-            <source data-srcset="https://i1.prth.gr/images/750x422/files/2022-11-24/kivwtos-m2.jpg" type="image/jpeg" media="(min-width: 1280px)" />
+            <source data-srcset="https://i1.prth.gr/images/640x360/_webp/files/2022-12-07/likeio-larisa-diarrixii.jpg" type="image/webp" media="(max-width: 640px)" />
+            <source data-srcset="https://i1.prth.gr/images/640x360/_jp2/files/2022-12-07/likeio-larisa-diarrixii.jpg" type="image/jp2" media="(max-width: 640px)" />
+            <source data-srcset="https://i1.prth.gr/images/640x360/files/2022-12-07/likeio-larisa-diarrixii.jpg" type="image/jpeg" media="(max-width: 640px)" />
+            <source data-srcset="https://i1.prth.gr/images/595x335/_webp/files/2022-12-07/likeio-larisa-diarrixii.jpg" type="image/webp" media="(max-width: 1279px)" />
+            <source data-srcset="https://i1.prth.gr/images/595x335/_jp2/files/2022-12-07/likeio-larisa-diarrixii.jpg" type="image/jp2" media="(max-width: 1279px)" />
+            <source data-srcset="https://i1.prth.gr/images/595x335/files/2022-12-07/likeio-larisa-diarrixii.jpg" type="image/jpeg" media="(max-width: 1279px)" />
+            <source data-srcset="https://i1.prth.gr/images/750x422/_webp/files/2022-12-07/likeio-larisa-diarrixii.jpg" type="image/webp" media="(min-width: 1280px)" />
+            <source data-srcset="https://i1.prth.gr/images/750x422/_jp2/files/2022-12-07/likeio-larisa-diarrixii.jpg" type="image/jp2" media="(min-width: 1280px)" />
+            <source data-srcset="https://i1.prth.gr/images/750x422/files/2022-12-07/likeio-larisa-diarrixii.jpg" type="image/jpeg" media="(min-width: 1280px)" />
     <!--[if IE 9]></video><![endif]-->
-        <img src="https://i1.prth.gr/images/750x422/files/thema.png" data-src="https://i1.prth.gr/images/750x422/files/2022-11-24/kivwtos-m2.jpg" fetchpriority="" alt="Κιβωτός του Κόσμου: «Είδα στέλεχος να βάζει το χέρι μέσα στο μαγιό του 19χρονου», αποκαλύπτει 18χρονη" class="lazyload" />
+        <img src="https://i1.prth.gr/images/750x422/files/thema.png" data-src="https://i1.prth.gr/images/750x422/files/2022-12-07/likeio-larisa-diarrixii.jpg" fetchpriority="" alt="Λάρισα: Διαρρήκτες πήραν χρηματοκιβώτιο από σχολείο - Είχε τα λεφτά για την 5ήμερη στη Ρώμη" class="lazyload" />
 </picture>
             </a>
                     </figure>
     <div class="desc">
                 <div class="heading">
             <h3>
-                <a href="https://www.protothema.gr/greece/article/1311214/kivotos-tou-kosmou-eida-stelehos-na-vazei-to-heri-mesa-sto-magio-tou-19hronou-apokaluptei-18hroni/">&#171;Είδα στέλεχος της Κιβωτού να βάζει το χέρι μέσα στο μαγιό του 19χρονου&#187;, αποκαλύπτει 18χρονη</a>
+                <a href="https://www.protothema.gr/greece/article/1315691/larisa-diarriktes-piran-hrimatokivotio-apo-sholeio-eihe-ta-lefta-gia-tin-5imeri-sti-romi/">Διαρρήκτες πήραν χρηματοκιβώτιο από λύκειο στη Λάρισα - Είχε τα λεφτά για την 5ήμερη στη Ρώμη</a>
             </h3>
         </div>
                     <div class="wrp">
                 
                 <span class="update_well">
-<time data-plugin-timeago="" datetime="2022-11-24T21:40:00+02:00">24.11.2022, 21:40</time>                                            <a href="https://www.protothema.gr/greece/article/1311214/kivotos-tou-kosmou-eida-stelehos-na-vazei-to-heri-mesa-sto-magio-tou-19hronou-apokaluptei-18hroni/" class="comment">
-                            4
-                        </a>
-                </span>
+<time data-plugin-timeago="" datetime="2022-12-07T10:03:00+02:00">07.12.2022, 10:03</time>                                    </span>
             </div>
             </div>
 </article>
@@ -2604,38 +2660,38 @@ document.body.appendChild(img);
                     
 
 <article>
-        <a href="https://www.protothema.gr/greece/article/1311199/thessaloniki/" class="mainLink"></a>
+        <a href="https://www.protothema.gr/greece/article/1315683/thessaloniki-fotizetai-simera-to-hristougenniatiko-dedro-350000-labakia-ston-axona-tis-aristotelous/" class="mainLink"></a>
                 <figure data-image-mode="article">
-            <a href="https://www.protothema.gr/greece/article/1311199/thessaloniki/" class="">
+            <a href="https://www.protothema.gr/greece/article/1315683/thessaloniki-fotizetai-simera-to-hristougenniatiko-dedro-350000-labakia-ston-axona-tis-aristotelous/" class="">
                 
 
 <picture >
 
     <!--[if IE 9]><video style="display: none;"><![endif]-->
-            <source data-srcset="https://i1.prth.gr/images/640x360/_webp/files/2022-11-24/ipisodia.jpg" type="image/webp" media="(max-width: 640px)" />
-            <source data-srcset="https://i1.prth.gr/images/640x360/_jp2/files/2022-11-24/ipisodia.jpg" type="image/jp2" media="(max-width: 640px)" />
-            <source data-srcset="https://i1.prth.gr/images/640x360/files/2022-11-24/ipisodia.jpg" type="image/jpeg" media="(max-width: 640px)" />
-            <source data-srcset="https://i1.prth.gr/images/595x335/_webp/files/2022-11-24/ipisodia.jpg" type="image/webp" media="(max-width: 1279px)" />
-            <source data-srcset="https://i1.prth.gr/images/595x335/_jp2/files/2022-11-24/ipisodia.jpg" type="image/jp2" media="(max-width: 1279px)" />
-            <source data-srcset="https://i1.prth.gr/images/595x335/files/2022-11-24/ipisodia.jpg" type="image/jpeg" media="(max-width: 1279px)" />
-            <source data-srcset="https://i1.prth.gr/images/750x422/_webp/files/2022-11-24/ipisodia.jpg" type="image/webp" media="(min-width: 1280px)" />
-            <source data-srcset="https://i1.prth.gr/images/750x422/_jp2/files/2022-11-24/ipisodia.jpg" type="image/jp2" media="(min-width: 1280px)" />
-            <source data-srcset="https://i1.prth.gr/images/750x422/files/2022-11-24/ipisodia.jpg" type="image/jpeg" media="(min-width: 1280px)" />
+            <source data-srcset="https://i1.prth.gr/images/640x360/_webp/files/2022-12-07/thessaloniki-dentro.jpg" type="image/webp" media="(max-width: 640px)" />
+            <source data-srcset="https://i1.prth.gr/images/640x360/_jp2/files/2022-12-07/thessaloniki-dentro.jpg" type="image/jp2" media="(max-width: 640px)" />
+            <source data-srcset="https://i1.prth.gr/images/640x360/files/2022-12-07/thessaloniki-dentro.jpg" type="image/jpeg" media="(max-width: 640px)" />
+            <source data-srcset="https://i1.prth.gr/images/595x335/_webp/files/2022-12-07/thessaloniki-dentro.jpg" type="image/webp" media="(max-width: 1279px)" />
+            <source data-srcset="https://i1.prth.gr/images/595x335/_jp2/files/2022-12-07/thessaloniki-dentro.jpg" type="image/jp2" media="(max-width: 1279px)" />
+            <source data-srcset="https://i1.prth.gr/images/595x335/files/2022-12-07/thessaloniki-dentro.jpg" type="image/jpeg" media="(max-width: 1279px)" />
+            <source data-srcset="https://i1.prth.gr/images/750x422/_webp/files/2022-12-07/thessaloniki-dentro.jpg" type="image/webp" media="(min-width: 1280px)" />
+            <source data-srcset="https://i1.prth.gr/images/750x422/_jp2/files/2022-12-07/thessaloniki-dentro.jpg" type="image/jp2" media="(min-width: 1280px)" />
+            <source data-srcset="https://i1.prth.gr/images/750x422/files/2022-12-07/thessaloniki-dentro.jpg" type="image/jpeg" media="(min-width: 1280px)" />
     <!--[if IE 9]></video><![endif]-->
-        <img src="https://i1.prth.gr/images/750x422/files/thema.png" data-src="https://i1.prth.gr/images/750x422/files/2022-11-24/ipisodia.jpg" fetchpriority="" alt="Θεσσαλονίκη: Αθωώθηκε οπαδός που είχε κατηγορηθεί για συμμετοχή σε επεισόδια σε πορεία πριν το ΠΑΟΚ-ΑΕΚ το 2018" class="lazyload" />
+        <img src="https://i1.prth.gr/images/750x422/files/thema.png" data-src="https://i1.prth.gr/images/750x422/files/2022-12-07/thessaloniki-dentro.jpg" fetchpriority="" alt="Θεσσαλονίκη: Φωτίζεται σήμερα το χριστουγεννιάτικο δέντρο - 350.000 λαμπάκια στον άξονα της Αριστοτέλους" class="lazyload" />
 </picture>
             </a>
                     </figure>
     <div class="desc">
                 <div class="heading">
             <h3>
-                <a href="https://www.protothema.gr/greece/article/1311199/thessaloniki/">Αθωώθηκε οπαδός που είχε κατηγορηθεί για συμμετοχή σε επεισόδια σε πορεία πριν το ΠΑΟΚ-ΑΕΚ το 2018</a>
+                <a href="https://www.protothema.gr/greece/article/1315683/thessaloniki-fotizetai-simera-to-hristougenniatiko-dedro-350000-labakia-ston-axona-tis-aristotelous/">Φωτίζεται σήμερα το χριστουγεννιάτικο δέντρο της Θεσσαλονίκης - 350.000 λαμπάκια στον άξονα της Αριστοτέλους</a>
             </h3>
         </div>
                     <div class="wrp">
                 
                 <span class="update_well">
-<time data-plugin-timeago="" datetime="2022-11-24T21:03:43+02:00">24.11.2022, 21:03</time>                                    </span>
+<time data-plugin-timeago="" datetime="2022-12-07T09:52:00+02:00">07.12.2022, 09:52</time>                                    </span>
             </div>
             </div>
 </article>
@@ -2651,7 +2707,7 @@ document.body.appendChild(img);
                                 <div class="bannerWrp">
                                     <div class="bannerWrp__inner">
                                         
-    <div id="banner-div-b1b14586-cba1-4174-bd82-b7ff5479339c" class="banner-container b300x250">
+    <div id="banner-div-a5593a31-f162-4ad8-b8f5-f83f520d48c4" class="banner-container b300x250">
 
     </div>
     <script type="text/javascript">
@@ -2660,7 +2716,7 @@ document.body.appendChild(img);
             var definedSlot;
             var code = "/1050137/Side_infinite";
             var size = [[300,250],[300,600]];
-            var divId = "banner-div-b1b14586-cba1-4174-bd82-b7ff5479339c";
+            var divId = "banner-div-a5593a31-f162-4ad8-b8f5-f83f520d48c4";
             var sizes = [{"ScreenWidth":0,"ScreenHeight":0,"BannerWidth":null,"BannerHeight":null},{"ScreenWidth":1024,"ScreenHeight":500,"BannerWidth":300,"BannerHeight":250},{"ScreenWidth":1024,"ScreenHeight":500,"BannerWidth":300,"BannerHeight":600}];
 
             var refreshIntervalInSec = 0;
@@ -2705,7 +2761,7 @@ document.body.appendChild(img);
 
         setTimeout(() => {
             googletag.cmd.push(function () {
-                googletag.display("banner-div-b1b14586-cba1-4174-bd82-b7ff5479339c");
+                googletag.display("banner-div-a5593a31-f162-4ad8-b8f5-f83f520d48c4");
             })
         }, 1000);
     </script>
@@ -2722,114 +2778,36 @@ document.body.appendChild(img);
             
 
 <article>
-        <a href="https://www.protothema.gr/greece/article/1311200/kivotos-tou-kosmou-bainoun-amesa-oi-orkotoi-elegtes-kai-xeskonizoun-tameia-kai-logariasmous/" class="mainLink"></a>
+        <a href="https://www.protothema.gr/greece/article/1315680/ston-anakriti-o-sudagmatarhis-listis-trapezon-o-ti-ekana-to-ekana-gia-tin-oikogeneia-mou/" class="mainLink"></a>
                 <figure data-image-mode="article">
-            <a href="https://www.protothema.gr/greece/article/1311200/kivotos-tou-kosmou-bainoun-amesa-oi-orkotoi-elegtes-kai-xeskonizoun-tameia-kai-logariasmous/" class="">
+            <a href="https://www.protothema.gr/greece/article/1315680/ston-anakriti-o-sudagmatarhis-listis-trapezon-o-ti-ekana-to-ekana-gia-tin-oikogeneia-mou/" class="">
                 
 
 <picture >
 
     <!--[if IE 9]><video style="display: none;"><![endif]-->
-            <source data-srcset="https://i1.prth.gr/images/282x159/_webp/files/2022-11-24/kivwtos-m.jpg" type="image/webp" media="(max-width: 639px)" />
-            <source data-srcset="https://i1.prth.gr/images/282x159/_jp2/files/2022-11-24/kivwtos-m.jpg" type="image/jp2" media="(max-width: 639px)" />
-            <source data-srcset="https://i1.prth.gr/images/282x159/files/2022-11-24/kivwtos-m.jpg" type="image/jpeg" media="(max-width: 639px)" />
-            <source data-srcset="https://i1.prth.gr/images/360x203/_webp/files/2022-11-24/kivwtos-m.jpg" type="image/webp" media="(min-width: 640px)" />
-            <source data-srcset="https://i1.prth.gr/images/360x203/_jp2/files/2022-11-24/kivwtos-m.jpg" type="image/jp2" media="(min-width: 640px)" />
-            <source data-srcset="https://i1.prth.gr/images/360x203/files/2022-11-24/kivwtos-m.jpg" type="image/jpeg" media="(min-width: 640px)" />
+            <source data-srcset="https://i1.prth.gr/images/282x159/_webp/files/2022-12-07/listeia_syntagmatarxis_xr.jpg" type="image/webp" media="(max-width: 639px)" />
+            <source data-srcset="https://i1.prth.gr/images/282x159/_jp2/files/2022-12-07/listeia_syntagmatarxis_xr.jpg" type="image/jp2" media="(max-width: 639px)" />
+            <source data-srcset="https://i1.prth.gr/images/282x159/files/2022-12-07/listeia_syntagmatarxis_xr.jpg" type="image/jpeg" media="(max-width: 639px)" />
+            <source data-srcset="https://i1.prth.gr/images/360x203/_webp/files/2022-12-07/listeia_syntagmatarxis_xr.jpg" type="image/webp" media="(min-width: 640px)" />
+            <source data-srcset="https://i1.prth.gr/images/360x203/_jp2/files/2022-12-07/listeia_syntagmatarxis_xr.jpg" type="image/jp2" media="(min-width: 640px)" />
+            <source data-srcset="https://i1.prth.gr/images/360x203/files/2022-12-07/listeia_syntagmatarxis_xr.jpg" type="image/jpeg" media="(min-width: 640px)" />
     <!--[if IE 9]></video><![endif]-->
-        <img src="https://i1.prth.gr/images/360x203/files/thema.png" data-src="https://i1.prth.gr/images/360x203/files/2022-11-24/kivwtos-m.jpg" fetchpriority="" alt="Κιβωτός του Κόσμου: Μπαίνουν άμεσα οι ορκωτοί ελεγκτές και «ξεσκονίζουν» ταμεία και λογαριασμούς" class="lazyload" />
+        <img src="https://i1.prth.gr/images/360x203/files/thema.png" data-src="https://i1.prth.gr/images/360x203/files/2022-12-07/listeia_syntagmatarxis_xr.jpg" fetchpriority="" alt="Στον ανακριτή ο συνταγματάρχης ληστής τραπεζών - «Δεν είχα να πληρώσω την κηδεία»" class="lazyload" />
 </picture>
             </a>
                     </figure>
     <div class="desc">
                 <div class="heading">
             <h3>
-                <a href="https://www.protothema.gr/greece/article/1311200/kivotos-tou-kosmou-bainoun-amesa-oi-orkotoi-elegtes-kai-xeskonizoun-tameia-kai-logariasmous/">Μπαίνουν άμεσα στην Κιβωτό οι ορκωτοί ελεγκτές, &#171;ξεσκονίζουν&#187; ταμεία και λογαριασμούς</a>
+                <a href="https://www.protothema.gr/greece/article/1315680/ston-anakriti-o-sudagmatarhis-listis-trapezon-o-ti-ekana-to-ekana-gia-tin-oikogeneia-mou/">&#171;Δεν είχα να πληρώσω την κηδεία της μητέρας μου&#187;, δικαιολογείται ο συνταγματάρχης ληστής τραπεζών </a>
             </h3>
         </div>
                     <div class="wrp">
                 
                 <span class="update_well">
-<time data-plugin-timeago="" datetime="2022-11-24T20:52:00+02:00">24.11.2022, 20:52</time>                                    </span>
-            </div>
-            </div>
-</article>
-
-
-        </div>
-        <div class="article inlineContent medium">
-            
-
-<article>
-        <a href="https://www.protothema.gr/greece/article/1311202/viasmos-12hronis-o-mihos-dinei-ton-giorgo-os-mastropo-kai-viasti-tou-koritsiou/" class="mainLink"></a>
-                <figure data-image-mode="article">
-            <a href="https://www.protothema.gr/greece/article/1311202/viasmos-12hronis-o-mihos-dinei-ton-giorgo-os-mastropo-kai-viasti-tou-koritsiou/" class="">
-                
-
-<picture >
-
-    <!--[if IE 9]><video style="display: none;"><![endif]-->
-            <source data-srcset="https://i1.prth.gr/images/282x159/_webp/files/2022-10-12/viastis_kolonos_new_xr.jpg" type="image/webp" media="(max-width: 639px)" />
-            <source data-srcset="https://i1.prth.gr/images/282x159/_jp2/files/2022-10-12/viastis_kolonos_new_xr.jpg" type="image/jp2" media="(max-width: 639px)" />
-            <source data-srcset="https://i1.prth.gr/images/282x159/files/2022-10-12/viastis_kolonos_new_xr.jpg" type="image/jpeg" media="(max-width: 639px)" />
-            <source data-srcset="https://i1.prth.gr/images/360x203/_webp/files/2022-10-12/viastis_kolonos_new_xr.jpg" type="image/webp" media="(min-width: 640px)" />
-            <source data-srcset="https://i1.prth.gr/images/360x203/_jp2/files/2022-10-12/viastis_kolonos_new_xr.jpg" type="image/jp2" media="(min-width: 640px)" />
-            <source data-srcset="https://i1.prth.gr/images/360x203/files/2022-10-12/viastis_kolonos_new_xr.jpg" type="image/jpeg" media="(min-width: 640px)" />
-    <!--[if IE 9]></video><![endif]-->
-        <img src="https://i1.prth.gr/images/360x203/files/thema.png" data-src="https://i1.prth.gr/images/360x203/files/2022-10-12/viastis_kolonos_new_xr.jpg" fetchpriority="" alt="Βιασμός 12χρονης: Ο Μίχος «δίνει» τον «Γιώργο» ως μαστροπό και βιαστή του κοριτσιού" class="lazyload" />
-</picture>
-            </a>
-                    </figure>
-    <div class="desc">
-                <div class="heading">
-            <h3>
-                <a href="https://www.protothema.gr/greece/article/1311202/viasmos-12hronis-o-mihos-dinei-ton-giorgo-os-mastropo-kai-viasti-tou-koritsiou/">Ο Μίχος &#171;δίνει&#187; τον &#171;Γιώργο&#187; ως μαστροπό και βιαστή της 12χρονης</a>
-            </h3>
-        </div>
-                    <div class="wrp">
-                
-                <span class="update_well">
-<time data-plugin-timeago="" datetime="2022-11-24T20:46:00+02:00">24.11.2022, 20:46</time>                                    </span>
-            </div>
-            </div>
-</article>
-
-
-        </div>
-        <div class="article inlineContent medium">
-            
-
-<article>
-        <a href="https://www.protothema.gr/greece/article/1311197/kivotos-tou-kosmou-i-presvutera-einai-to-prosopo-pou-adeiase-trapeziki-thurida-upo-akra-mustikotita/" class="mainLink"></a>
-                <figure data-image-mode="article">
-            <a href="https://www.protothema.gr/greece/article/1311197/kivotos-tou-kosmou-i-presvutera-einai-to-prosopo-pou-adeiase-trapeziki-thurida-upo-akra-mustikotita/" class="">
-                
-
-<picture >
-
-    <!--[if IE 9]><video style="display: none;"><![endif]-->
-            <source data-srcset="https://i1.prth.gr/images/282x159/_webp/files/2022-11-24/presvitera.jpg" type="image/webp" media="(max-width: 639px)" />
-            <source data-srcset="https://i1.prth.gr/images/282x159/_jp2/files/2022-11-24/presvitera.jpg" type="image/jp2" media="(max-width: 639px)" />
-            <source data-srcset="https://i1.prth.gr/images/282x159/files/2022-11-24/presvitera.jpg" type="image/jpeg" media="(max-width: 639px)" />
-            <source data-srcset="https://i1.prth.gr/images/360x203/_webp/files/2022-11-24/presvitera.jpg" type="image/webp" media="(min-width: 640px)" />
-            <source data-srcset="https://i1.prth.gr/images/360x203/_jp2/files/2022-11-24/presvitera.jpg" type="image/jp2" media="(min-width: 640px)" />
-            <source data-srcset="https://i1.prth.gr/images/360x203/files/2022-11-24/presvitera.jpg" type="image/jpeg" media="(min-width: 640px)" />
-    <!--[if IE 9]></video><![endif]-->
-        <img src="https://i1.prth.gr/images/360x203/files/thema.png" data-src="https://i1.prth.gr/images/360x203/files/2022-11-24/presvitera.jpg" fetchpriority="" alt="Κιβωτός του Κόσμου - Η πρεσβυτέρα είναι το πρόσωπο που «άδειασε» τραπεζική θυρίδα υπό άκρα μυστικότητα" class="lazyload" />
-</picture>
-            </a>
-                    </figure>
-    <div class="desc">
-                <div class="heading">
-            <h3>
-                <a href="https://www.protothema.gr/greece/article/1311197/kivotos-tou-kosmou-i-presvutera-einai-to-prosopo-pou-adeiase-trapeziki-thurida-upo-akra-mustikotita/">Η πρεσβυτέρα &#171;άδειασε&#187; τραπεζική θυρίδα της Κιβωτού υπό άκρα μυστικότητα</a>
-            </h3>
-        </div>
-                    <div class="wrp">
-                
-                <span class="update_well">
-<time data-plugin-timeago="" datetime="2022-11-24T20:39:00+02:00">24.11.2022, 20:39</time>                                            <a href="https://www.protothema.gr/greece/article/1311197/kivotos-tou-kosmou-i-presvutera-einai-to-prosopo-pou-adeiase-trapeziki-thurida-upo-akra-mustikotita/" class="comment">
-                            11
+<time data-plugin-timeago="" datetime="2022-12-07T09:52:00+02:00">07.12.2022, 09:52</time>                                            <a href="https://www.protothema.gr/greece/article/1315680/ston-anakriti-o-sudagmatarhis-listis-trapezon-o-ti-ekana-to-ekana-gia-tin-oikogeneia-mou/" class="comment">
+                            1
                         </a>
                 </span>
             </div>
@@ -2842,35 +2820,117 @@ document.body.appendChild(img);
             
 
 <article>
-        <a href="https://www.protothema.gr/greece/article/1311193/hairstyling-poia-einai-i-pio-voliki-suskeui-gia-kathe-htenisma/" class="mainLink"></a>
+        <a href="https://www.protothema.gr/greece/article/1315672/irakleio-gronthokopise-erixe-sto-dromo-kai-travouse-apo-ta-mallia-ti-suzugo-tou/" class="mainLink"></a>
                 <figure data-image-mode="article">
-            <a href="https://www.protothema.gr/greece/article/1311193/hairstyling-poia-einai-i-pio-voliki-suskeui-gia-kathe-htenisma/" class="">
+            <a href="https://www.protothema.gr/greece/article/1315672/irakleio-gronthokopise-erixe-sto-dromo-kai-travouse-apo-ta-mallia-ti-suzugo-tou/" class="">
                 
 
 <picture >
 
     <!--[if IE 9]><video style="display: none;"><![endif]-->
-            <source data-srcset="https://i1.prth.gr/images/282x159/_webp/files/2022-11-24/female-hairdresser-making-hairstyle-blonde-woman-beauty-salon.jpg" type="image/webp" media="(max-width: 639px)" />
-            <source data-srcset="https://i1.prth.gr/images/282x159/_jp2/files/2022-11-24/female-hairdresser-making-hairstyle-blonde-woman-beauty-salon.jpg" type="image/jp2" media="(max-width: 639px)" />
-            <source data-srcset="https://i1.prth.gr/images/282x159/files/2022-11-24/female-hairdresser-making-hairstyle-blonde-woman-beauty-salon.jpg" type="image/jpeg" media="(max-width: 639px)" />
-            <source data-srcset="https://i1.prth.gr/images/360x203/_webp/files/2022-11-24/female-hairdresser-making-hairstyle-blonde-woman-beauty-salon.jpg" type="image/webp" media="(min-width: 640px)" />
-            <source data-srcset="https://i1.prth.gr/images/360x203/_jp2/files/2022-11-24/female-hairdresser-making-hairstyle-blonde-woman-beauty-salon.jpg" type="image/jp2" media="(min-width: 640px)" />
-            <source data-srcset="https://i1.prth.gr/images/360x203/files/2022-11-24/female-hairdresser-making-hairstyle-blonde-woman-beauty-salon.jpg" type="image/jpeg" media="(min-width: 640px)" />
+            <source data-srcset="https://i1.prth.gr/images/282x159/_webp/files/2022-11-25/endooikogeneiaki_via_via_kakopoiisi.jpg" type="image/webp" media="(max-width: 639px)" />
+            <source data-srcset="https://i1.prth.gr/images/282x159/_jp2/files/2022-11-25/endooikogeneiaki_via_via_kakopoiisi.jpg" type="image/jp2" media="(max-width: 639px)" />
+            <source data-srcset="https://i1.prth.gr/images/282x159/files/2022-11-25/endooikogeneiaki_via_via_kakopoiisi.jpg" type="image/jpeg" media="(max-width: 639px)" />
+            <source data-srcset="https://i1.prth.gr/images/360x203/_webp/files/2022-11-25/endooikogeneiaki_via_via_kakopoiisi.jpg" type="image/webp" media="(min-width: 640px)" />
+            <source data-srcset="https://i1.prth.gr/images/360x203/_jp2/files/2022-11-25/endooikogeneiaki_via_via_kakopoiisi.jpg" type="image/jp2" media="(min-width: 640px)" />
+            <source data-srcset="https://i1.prth.gr/images/360x203/files/2022-11-25/endooikogeneiaki_via_via_kakopoiisi.jpg" type="image/jpeg" media="(min-width: 640px)" />
     <!--[if IE 9]></video><![endif]-->
-        <img src="https://i1.prth.gr/images/360x203/files/thema.png" data-src="https://i1.prth.gr/images/360x203/files/2022-11-24/female-hairdresser-making-hairstyle-blonde-woman-beauty-salon.jpg" fetchpriority="" alt="Hairstyling: Ποια είναι η πιο βολική συσκευή για κάθε χτένισμα" class="lazyload" />
+        <img src="https://i1.prth.gr/images/360x203/files/thema.png" data-src="https://i1.prth.gr/images/360x203/files/2022-11-25/endooikogeneiaki_via_via_kakopoiisi.jpg" fetchpriority="" alt="Ηράκλειο: Γρονθοκόπησε, έριξε στο δρόμο και τραβούσε από τα μαλλιά τη σύζυγό του" class="lazyload" />
 </picture>
             </a>
                     </figure>
     <div class="desc">
                 <div class="heading">
             <h3>
-                <a href="https://www.protothema.gr/greece/article/1311193/hairstyling-poia-einai-i-pio-voliki-suskeui-gia-kathe-htenisma/">Hairstyling: Ποια είναι η πιο βολική συσκευή για κάθε χτένισμα</a>
+                <a href="https://www.protothema.gr/greece/article/1315672/irakleio-gronthokopise-erixe-sto-dromo-kai-travouse-apo-ta-mallia-ti-suzugo-tou/">Ηράκλειο: Γρονθοκόπησε, έριξε στο δρόμο και τραβούσε από τα μαλλιά τη σύζυγό του</a>
             </h3>
         </div>
                     <div class="wrp">
                 
                 <span class="update_well">
-<time data-plugin-timeago="" datetime="2022-11-24T20:18:35+02:00">24.11.2022, 20:18</time>                                    </span>
+<time data-plugin-timeago="" datetime="2022-12-07T09:33:00+02:00">07.12.2022, 09:33</time>                                    </span>
+            </div>
+            </div>
+</article>
+
+
+        </div>
+        <div class="article inlineContent medium">
+            
+
+<article>
+        <a href="https://www.protothema.gr/greece/article/1315670/kinisi-stous-dromous-botiliarisma-se-kifisias-kai-kifiso-deite-live/" class="mainLink"></a>
+                <figure data-image-mode="article">
+            <a href="https://www.protothema.gr/greece/article/1315670/kinisi-stous-dromous-botiliarisma-se-kifisias-kai-kifiso-deite-live/" class="">
+                
+
+<picture >
+
+    <!--[if IE 9]><video style="display: none;"><![endif]-->
+            <source data-srcset="https://i1.prth.gr/images/282x159/_webp/files/2022-12-07/kifisias.png" type="image/webp" media="(max-width: 639px)" />
+            <source data-srcset="https://i1.prth.gr/images/282x159/_jp2/files/2022-12-07/kifisias.png" type="image/jp2" media="(max-width: 639px)" />
+            <source data-srcset="https://i1.prth.gr/images/282x159/files/2022-12-07/kifisias.png" type="image/png" media="(max-width: 639px)" />
+            <source data-srcset="https://i1.prth.gr/images/360x203/_webp/files/2022-12-07/kifisias.png" type="image/webp" media="(min-width: 640px)" />
+            <source data-srcset="https://i1.prth.gr/images/360x203/_jp2/files/2022-12-07/kifisias.png" type="image/jp2" media="(min-width: 640px)" />
+            <source data-srcset="https://i1.prth.gr/images/360x203/files/2022-12-07/kifisias.png" type="image/png" media="(min-width: 640px)" />
+    <!--[if IE 9]></video><![endif]-->
+        <img src="https://i1.prth.gr/images/360x203/files/thema.png" data-src="https://i1.prth.gr/images/360x203/files/2022-12-07/kifisias.png" fetchpriority="" alt="Κίνηση στους δρόμους: Μποτιλιάρισμα σε Κηφισίας και Κηφισό - Δείτε Live" class="lazyload" />
+</picture>
+            </a>
+                    </figure>
+    <div class="desc">
+                <div class="heading">
+            <h3>
+                <a href="https://www.protothema.gr/greece/article/1315670/kinisi-stous-dromous-botiliarisma-se-kifisias-kai-kifiso-deite-live/">Mποτιλιάρισμα σε Κηφισίας, Κατεχάκη και Κηφισό - Πού θα συναντήσετε κίνηση τώρα στο κέντρο</a>
+            </h3>
+        </div>
+                    <div class="wrp">
+                
+                <span class="update_well">
+<time data-plugin-timeago="" datetime="2022-12-07T09:32:00+02:00">07.12.2022, 09:32</time>                                    </span>
+            </div>
+            </div>
+</article>
+
+
+        </div>
+        <div class="article inlineContent medium">
+            
+
+<article>
+        <a href="https://www.protothema.gr/greece/article/1315669/serres-eleutheroi-oi-duo-sullifthedes-gia-ti-foniki-ekrixi-sto-dimotiko-sholeio/" class="mainLink"></a>
+                <figure data-image-mode="article">
+            <a href="https://www.protothema.gr/greece/article/1315669/serres-eleutheroi-oi-duo-sullifthedes-gia-ti-foniki-ekrixi-sto-dimotiko-sholeio/" class="playVideo">
+                    <i class="icon-play videoIcon sml"></i>
+                
+
+<picture >
+
+    <!--[if IE 9]><video style="display: none;"><![endif]-->
+            <source data-srcset="https://i1.prth.gr/images/282x159/_webp/files/2022-12-07/serres_mnm_xr.jpg" type="image/webp" media="(max-width: 639px)" />
+            <source data-srcset="https://i1.prth.gr/images/282x159/_jp2/files/2022-12-07/serres_mnm_xr.jpg" type="image/jp2" media="(max-width: 639px)" />
+            <source data-srcset="https://i1.prth.gr/images/282x159/files/2022-12-07/serres_mnm_xr.jpg" type="image/jpeg" media="(max-width: 639px)" />
+            <source data-srcset="https://i1.prth.gr/images/360x203/_webp/files/2022-12-07/serres_mnm_xr.jpg" type="image/webp" media="(min-width: 640px)" />
+            <source data-srcset="https://i1.prth.gr/images/360x203/_jp2/files/2022-12-07/serres_mnm_xr.jpg" type="image/jp2" media="(min-width: 640px)" />
+            <source data-srcset="https://i1.prth.gr/images/360x203/files/2022-12-07/serres_mnm_xr.jpg" type="image/jpeg" media="(min-width: 640px)" />
+    <!--[if IE 9]></video><![endif]-->
+        <img src="https://i1.prth.gr/images/360x203/files/thema.png" data-src="https://i1.prth.gr/images/360x203/files/2022-12-07/serres_mnm_xr.jpg" fetchpriority="" alt="Σέρρες: Ελεύθεροι οι δύο συλληφθέντες για την έκρηξη που σκότωσε τον 11χρονο" class="lazyload" />
+</picture>
+            </a>
+                    </figure>
+    <div class="desc">
+                <div class="heading">
+            <h3>
+                <a href="https://www.protothema.gr/greece/article/1315669/serres-eleutheroi-oi-duo-sullifthedes-gia-ti-foniki-ekrixi-sto-dimotiko-sholeio/">Ελεύθεροι οι δύο συλληφθέντες για την έκρηξη που σκότωσε τον 11χρονο στις Σέρρες!</a>
+            </h3>
+        </div>
+                    <div class="wrp">
+                
+                <span class="update_well">
+<time data-plugin-timeago="" datetime="2022-12-07T09:27:00+02:00">07.12.2022, 09:27</time>                                            <a href="https://www.protothema.gr/greece/article/1315669/serres-eleutheroi-oi-duo-sullifthedes-gia-ti-foniki-ekrixi-sto-dimotiko-sholeio/" class="comment">
+                            11
+                        </a>
+                </span>
             </div>
             </div>
 </article>
@@ -2971,7 +3031,7 @@ document.body.appendChild(img);
 
 
 
-<span id='7d479828-02bf-4864-b7c8-68d849dba799' style='display:none'></span>
+<span id='44e39cde-0260-4168-ac09-4d47f057d632' style='display:none'></span>
 <script>window.ptScriptManager.addOnLoadDelayed(2000, function() {  return `
 &lt;!-- Google Code for Remarketing Tag --&gt;
 &lt;script &gt;
@@ -2980,17 +3040,17 @@ var google_conversion_id = 984475590;
 var google_custom_params = window.google_tag_params;
 var google_remarketing_only = true;
 /* ]]&gt; */
-&lt;/script&gt;`; }, '7d479828-02bf-4864-b7c8-68d849dba799');</script>
+&lt;/script&gt;`; }, '44e39cde-0260-4168-ac09-4d47f057d632');</script>
 
 
-<span id='1b7553bd-2d94-4956-94d7-96293f199519' style='display:none'></span>
+<span id='ce3b47d1-081d-4b65-80f5-a9ff87ea4601' style='display:none'></span>
 <script>window.ptScriptManager.addOnLoadDelayed(2000, function() {  return `
 &lt;!-- googleadservices conversion script --&gt;
 &lt;script async="async" data-cmp-src="//www.googleadservices.com/pagead/conversion.js"&gt;&lt;/script&gt;&lt;noscript&gt;
 &lt;div style="display:inline;"&gt;
 &lt;img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/984475590/?value=0&amp;guid=ON&amp;script=0"/&gt;
 &lt;/div&gt;
-&lt;/noscript&gt;`; }, '1b7553bd-2d94-4956-94d7-96293f199519');</script>
+&lt;/noscript&gt;`; }, 'ce3b47d1-081d-4b65-80f5-a9ff87ea4601');</script>
 
     
 </body>

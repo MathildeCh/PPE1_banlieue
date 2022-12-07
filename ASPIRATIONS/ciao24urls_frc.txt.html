@@ -88,7 +88,14 @@ body.custom-background { background-color: #cc0000; }
     display: none;
 }
 
-		</style>
+/* faire en sorte que les pdf ne cassent pas l'affichage */
+.entry-content > :not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.wp-block-separator):not(.woocommerce), .entry-content > .wp-block-pdfemb-pdf-embedder-viewer {
+	max-width: 580px !important;
+}
+
+div.pdfemb-viewer {
+	margin: auto !important;
+}		</style>
 		
 	</head>
 
@@ -348,3 +355,12 @@ tablet{}mobile{}
 
 	</body>
 </html>
+
+<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/
+
+Mise en cache objet de 44/85 objets utilisant disk
+Mise en cache de page à l’aide de disk: enhanced 
+
+Served from: agauche.org @ 2022-12-07 09:01:44 by W3 Total Cache
+-->

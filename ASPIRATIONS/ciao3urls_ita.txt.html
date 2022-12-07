@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 
-<html data-style="" lang="it" data-dw-cb="20221124-01-042" class="js-no">
+<html data-style="" lang="it" data-dw-cb="20221201-01-042" class="js-no">
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -48,8 +48,8 @@
 
 
 	<!-- PRELOAD STYLES -->
-	<link rel="preload" href="/css/bundle.min.css?_=20221124-01-042" as="style" />
-		<link rel="preload" href="/css/content.min.css?_=20221124-01-042" as="style" />
+	<link rel="preload" href="/css/bundle.min.css?_=20221201-01-042" as="style" />
+		<link rel="preload" href="/css/content.min.css?_=20221201-01-042" as="style" />
 
 	
 	<!-- FAVICON -->
@@ -396,7 +396,7 @@ r.parentNode.insertBefore(t, r);
 </script>
 
 	
-<script src="/js/webtrekk/webtrekk_v3.min.js?_=20221124-01-042"></script>
+<script src="/js/webtrekk/webtrekk_v3.min.js?_=20221201-01-042"></script>
 
 	
 <!-- EVOLUTION ADV -->
@@ -410,12 +410,12 @@ r.parentNode.insertBefore(t, r);
 
 
 
-	<link rel="stylesheet" href="/css/bundle.min.css?_=20221124-01-042" />
+	<link rel="stylesheet" href="/css/bundle.min.css?_=20221201-01-042" />
 
 
 
-		<link rel="preload" href="/css/typography.min.css?_=20221124-01-042" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="/css/typography.min.css?_=20221124-01-042"></noscript>
-		<link rel="preload" href="/css/content.min.css?_=20221124-01-042" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="/css/content.min.css?_=20221124-01-042"></noscript>
+		<link rel="preload" href="/css/typography.min.css?_=20221201-01-042" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="/css/typography.min.css?_=20221201-01-042"></noscript>
+		<link rel="preload" href="/css/content.min.css?_=20221201-01-042" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="/css/content.min.css?_=20221201-01-042"></noscript>
 
 <!-- FLUID IMAGE CSS DEFINITION -->
 <style>img.op_7_7_1_1 { object-position: 1% 1%; }
@@ -470,13 +470,13 @@ img.op_7_7_7_7 { object-position: 99% 99%; }
 </style>
 
 <!-- HIGH CONTRAST -->
-<link rel="stylesheet" href="/css/hi-contrast.min.css?_=20221124-01-042" media="screen and (prefers-contrast: more)" />
+<link rel="stylesheet" href="/css/hi-contrast.min.css?_=20221201-01-042" media="screen and (prefers-contrast: more)" />
 
 <!-- PRINT -->
-<link rel="stylesheet" href="/css/print.min.css?_=20221124-01-042" media="only print" />
+<link rel="stylesheet" href="/css/print.min.css?_=20221201-01-042" media="only print" />
 
 <!-- IE 11 -->
-<link rel="stylesheet" href="/css/ie11.min.css?_=20221124-01-042" media="screen and (min-width:0\0)" />
+<link rel="stylesheet" href="/css/ie11.min.css?_=20221201-01-042" media="screen and (min-width:0\0)" />
 
 <!-- DEBUG STYLES -->
 
@@ -580,7 +580,7 @@ img.op_7_7_7_7 { object-position: 99% 99%; }
 
 <body class="signed-out opt-cls" data-cnt-type="news" data-cnt-id="1778129">
 	<a href="#main-content" class="skip-link">Vai al contenuto principale</a>
-	<div class="ga4-datalayer-events" id="ga4-datalayer-events" data-ga4-event-node-id="1778129" data-ga4-event-content-type="news" data-ga4-event-days-life="1119" data-ga4-event-first-author="Federico Giuliani" data-ga4-event-section="Mondo" data-ga4-event-parent-section="" data-ga4-event-special="" data-ga4-event-native-campaign="" data-ga4-event-native-customer="" data-ga4-event-is-paper="False"></div>
+	<div class="ga4-datalayer-events" id="ga4-datalayer-events" data-ga4-event-content-id="1778129" data-ga4-event-super-type="node" data-ga4-event-content-type="news" data-ga4-event-term-name="" data-ga4-event-days-life="1131" data-ga4-event-first-author="Federico Giuliani" data-ga4-event-section="Mondo" data-ga4-event-parent-section="" data-ga4-event-special="" data-ga4-event-native-campaign="" data-ga4-event-native-customer="" data-ga4-event-is-paper="False"></div>
 	
 
 <!-- GTM -->
@@ -596,8 +596,13 @@ img.op_7_7_7_7 { object-position: 99% 99%; }
 
 	window.$ilg_ga4 = {
 		utils: {
-			logGA4: function (text, obj) {
+			log: function (text, obj) {
 				console.log('%c' + text, 'background: #333; color: #bada55; border:solid 1px #bada55', obj);
+			},
+			pushToDataLayer: function (dlObj) {
+				if (window.dataLayer) {
+					dataLayer.push(dlObj);
+				}
 			}
 		}
 	};
@@ -609,7 +614,9 @@ img.op_7_7_7_7 { object-position: 99% 99%; }
 		};
 
 		var _content_id = null;
-		var _content_type = null;
+		var _content_type = 'page';
+		var _super_type = 'page';
+		var _term_name = null;
 		var _section = null;
 		var _parentSection = null;
 		var _native_campaign = null;
@@ -621,18 +628,22 @@ img.op_7_7_7_7 { object-position: 99% 99%; }
 		var _isPaper = false;
 
 		if (location.pathname == '/') {
-			_content_type = "hp";
+			_content_type = "homepage";
+		} else if (location.pathname == '/cerca.html') {
+			_content_type = "search_page";
 		} else {
 			var _ga4DataLayerEl = document.querySelector('.ga4-datalayer-events');
 			if (_ga4DataLayerEl) {
-				_content_id = parseInt(_ga4DataLayerEl.getAttribute('data-ga4-event-node-id')) || 0;
+				_content_id = parseInt(_ga4DataLayerEl.getAttribute('data-ga4-event-content-id')) || 0;
 				_content_type = _ga4DataLayerEl.getAttribute('data-ga4-event-content-type') || 'page';
+				_super_type = _ga4DataLayerEl.getAttribute('data-ga4-event-super-type') || 'page';
+				_term_name = _ga4DataLayerEl.getAttribute('data-ga4-event-term-name') || null;
 				_section = _ga4DataLayerEl.getAttribute('data-ga4-event-section') || '';
 				_parentSection = _ga4DataLayerEl.getAttribute('data-ga4-event-parent-section') || '';
 				_native_campaign = _ga4DataLayerEl.getAttribute('data-ga4-event-native-campaign') || '';;
 				_native_customer = _ga4DataLayerEl.getAttribute('data-ga4-event-native-customer') || '';;
 				_special = _ga4DataLayerEl.getAttribute('data-ga4-event-special') || '';
-				_daysLife = parseInt(_ga4DataLayerEl.getAttribute('data-ga4-event-days-life')) || 0;
+				_daysLife = parseInt(_ga4DataLayerEl.getAttribute('data-ga4-event-days-life')) || null;
 				_firstAuthor = _ga4DataLayerEl.getAttribute('data-ga4-event-first-author') || '';
 				_secondAuthor = _ga4DataLayerEl.getAttribute('data-ga4-event-second-author') || '';
 				var isPaperAttr = _ga4DataLayerEl.getAttribute('data-ga4-event-is-paper');
@@ -641,13 +652,16 @@ img.op_7_7_7_7 { object-position: 99% 99%; }
 		}
 
 		switch (eventName) {
-			case 'page_view':
-				_res = {..._res, ...{ 'content_type': _content_type }};
-				break;
-			case 'node_view':
+			//case 'page_view':
+			//	_res = {..._res, ...{ 'content_type': _content_type }};
+			//	break;
+			case 'content_view':
 				_res = {..._res,
 						...{
-							'node_id': _content_id,
+							'content_id': _content_id,
+							'content_type': _content_type,
+							'super_type': _super_type,
+							'term_name': _term_name,
 							'days_life': _daysLife,
 							'first_topic': _parentSection,
 							'second_topic': _section,
@@ -656,15 +670,16 @@ img.op_7_7_7_7 { object-position: 99% 99%; }
 							'first_author': _firstAuthor,
 							'second_author': _secondAuthor,
 							'special': _special,
-							'paper': _isPaper
+							'paper': _isPaper,
+							'has_video': document.querySelectorAll('.ilg_video_embed').length > 0
 						}
 					}
 				;
 				break;
-			case 'social_share':
+			case 'share':
 				_res = {..._res,
 						...{
-							'node_id': _content_id,
+							'content_id': _content_id,
 							'first_topic': _parentSection,
 							'second_topic': _section,
 							'first_author': _firstAuthor,
@@ -680,18 +695,18 @@ img.op_7_7_7_7 { object-position: 99% 99%; }
 	document.addEventListener('DOMContentLoaded', function () {
 
 		var _dlObjects = new Array();
-		_dlObjects.push(collectGA4DataLayerObjectData('page_view'));
-		_dlObjects.push(collectGA4DataLayerObjectData('node_view'));
-		//_dlObjects.forEach(_dlObj => dataLayer.push(_dlObj));
-		$ilg_ga4.utils.logGA4('ILG - GA4 - BASIC EVENTs: ', _dlObjects);
+		//_dlObjects.push(collectGA4DataLayerObjectData('page_view'));
+		_dlObjects.push(collectGA4DataLayerObjectData('content_view'));
+		_dlObjects.forEach(_dlObj => $ilg_ga4.utils.pushToDataLayer(_dlObj));
+		$ilg_ga4.utils.log('ILG - GA4 - BASIC EVENTs: ', _dlObjects);
 
 		var _socialShareElements = document.querySelectorAll('.social-share a');
 		if (_socialShareElements) {
 			_socialShareElements.forEach(function (el) {
 				el.addEventListener('click', function (e) {
-					var _dlObj = collectGA4DataLayerObjectData('social_share', {'social': el.getAttribute('data-social')});
-					//dataLayer.push(_dlObj);
-					$ilg_ga4.utils.logGA4('ILG - GA4: SOCIAL SHARE: ', _dlObj);
+					var _dlObj = collectGA4DataLayerObjectData('share', {'method': el.getAttribute('data-social')});
+					$ilg_ga4.utils.pushToDataLayer(_dlObj);
+					$ilg_ga4.utils.log('ILG - GA4: SOCIAL SHARE: ', _dlObj);
 				});
 			});
 		}
@@ -789,13 +804,13 @@ img.op_7_7_7_7 { object-position: 99% 99%; }
 
 	
 
+<a href="/news/calcio/mondiali-qatar-2022-risultati-giorno-giorno-2088135.html"  >Qatar 2022: risultati</a>
+	
+
 <a href="/persone/giorgia-meloni-134874.html"  >Giorgia Meloni</a>
 	
 
-<a href="/news/calcio/mondiali-qatar-2022-risultati-giorno-giorno-2088135.html"  >Qatar 2022: i risultati</a>
-	
-
-<a href="/tag/consigli-lacquisto-166847.html"  >Speciale Black Friday</a>
+<a href="/tag/consigli-lacquisto-166847.html"  >Le offerte del Giornale</a>
 	
 
 <a href="/sezioni/auto-moto-motori.html"  >Automotive</a>
@@ -885,9 +900,9 @@ img.op_7_7_7_7 { object-position: 99% 99%; }
 	</summary>
 	<div class="header__main__account__panel">
 		<nav aria-label="navigazione utente">
-			<!-- PDF PREMIUM -->
-			<a href="/pdf-premium.html" target="_blank" rel="noopener" class="link-pdf-premium" title="PDF Premium">
-				PDF Premium <i class="fal fa-fw fa-newspaper"></i>
+			<!-- IL GIORNALE DIGITALE -->
+            <a href="/ilgiornaledigitale.html" target="_blank" rel="noopener" class="link-pdf-premium" title="il Giornale Digitale">
+				il Giornale Digitale <i class="fal fa-fw fa-newspaper"></i>
 			</a>
 			<div class="js-no-only">
 				<!-- JS -->
@@ -970,13 +985,13 @@ img.op_7_7_7_7 { object-position: 99% 99%; }
 
 	
 
+<a href="/news/calcio/mondiali-qatar-2022-risultati-giorno-giorno-2088135.html"  >Qatar 2022: risultati</a>
+	
+
 <a href="/persone/giorgia-meloni-134874.html"  >Giorgia Meloni</a>
 	
 
-<a href="/news/calcio/mondiali-qatar-2022-risultati-giorno-giorno-2088135.html"  >Qatar 2022: i risultati</a>
-	
-
-<a href="/tag/consigli-lacquisto-166847.html"  >Speciale Black Friday</a>
+<a href="/tag/consigli-lacquisto-166847.html"  >Le offerte del Giornale</a>
 	
 
 <a href="/sezioni/auto-moto-motori.html"  >Automotive</a>
@@ -1128,12 +1143,6 @@ img.op_7_7_7_7 { object-position: 99% 99%; }
 
 
 					
-<div class="strip-article--top">
-	<div class="banner">
-		<div class="gptslot evo-ilgiornale-strip-articolo-top" data-adunitid="36"></div>
-	</div>
-</div>
-
 
 					
 
@@ -1143,12 +1152,6 @@ img.op_7_7_7_7 { object-position: 99% 99%; }
 					</div>
 
 					
-<div class="strip-article--bottom">
-	<div class="banner">
-		<div class="gptslot evo-ilgiornale-strip" data-adunitid="33"></div>
-	</div>
-</div>
-
 
 					
 
@@ -1166,8 +1169,8 @@ img.op_7_7_7_7 { object-position: 99% 99%; }
 
 						
 
-<link rel="preload" href="/tribute/tribute.min.css?_=20221124-01-042" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="/tribute/tribute.min.css?_=20221124-01-042"></noscript>
-<script src="/tribute/tribute.min.js?_=20221124-01-042"></script>
+<link rel="preload" href="/tribute/tribute.min.css?_=20221201-01-042" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="/tribute/tribute.min.css?_=20221201-01-042"></noscript>
+<script src="/tribute/tribute.min.js?_=20221201-01-042"></script>
 
 <style>
 	.tribute-container {
@@ -1632,7 +1635,7 @@ img.op_7_7_7_7 { object-position: 99% 99%; }
 
 
 
-	<script src="/js/bundle.min.js?_=20221124-01-042" fetchpriority="high"></script>
+	<script src="/js/bundle.min.js?_=20221201-01-042" fetchpriority="high"></script>
 
 
 

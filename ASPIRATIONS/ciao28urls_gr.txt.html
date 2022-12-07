@@ -267,10 +267,11 @@ var site_path = '';
   googletag.cmd.push(function() {
     googletag.defineSlot('/21885431718/vradini_300x250A', [[300, 250], [300, 600], [300, 100]], 'vradini_A').addService(googletag.pubads());
     googletag.defineSlot('/21885431718/vradini_300x250B', [[300, 250], [300, 600], [300, 100]], 'vradini_B').addService(googletag.pubads());
-	googletag.defineSlot('/21885431718/vradini_300x250C', [[300, 600], [300, 100], [300, 250]], 'vradini_C').addService(googletag.pubads());
+	googletag.defineSlot('/21885431718/vradini_300x250C', [[300, 250]], 'vradini_C').addService(googletag.pubads());
     googletag.defineSlot('/21885431718/vradini_300x250C-2', [300, 250], 'vradini_C2').addService(googletag.pubads());
 	googletag.defineSlot('/21885431718/vradini_300x250D', [[300, 600], [300, 100], [300, 250]], 'vradini_D').addService(googletag.pubads());
     googletag.defineSlot('/21885431718/vradini_300x250D-2', [300, 250], 'vradini_D2').addService(googletag.pubads());
+    googletag.defineSlot('/21885431718/vradini_300x250_E', [300, 250], 'vradini_E').addService(googletag.pubads());
 	googletag.defineSlot('/21885431718/vradini_300x250PR', [[300, 100], [300, 250], [300, 600]], 'vradini_PR').addService(googletag.pubads());
     googletag.defineSlot('/21885431718/vradini_300x250PR-2', [300, 250], 'vradini_PR2').addService(googletag.pubads());
 	googletag.defineSlot('/21885431718/vradini_300x250PR_B', [300, 250], 'vradini_PRB').addService(googletag.pubads());
@@ -297,7 +298,22 @@ var site_path = '';
 </script>	
     
 	
-    
+<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '512550390833263');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" src="https://www.facebook.com/tr?id=512550390833263&ev=PageView&noscript=1"/></noscript>
+<!-- End Facebook Pixel Code -->
+	
 <link rel="canonical" href="https://www.vradini.gr/article/ellada/676654-b-proastia-psaxnoyn-th-symmoria-poy-eksapata-hlikiwmenoys-paristanontas-toys-hlektrologoys" />
 
 </head>
@@ -331,19 +347,19 @@ var site_path = '';
 
 							});	
 						})</script>
-												<img id="weather_icon" data-bs-toggle="tooltip" data-bs-title="Κατά τόπους συννεφιά" data-bs-placement="bottom" src="https://www.vradini.gr/style/images/weather/night/116.png" alt="Κατά τόπους συννεφιά"> <span id="weather_label">13</span> &#8451;
+												<img id="weather_icon" data-bs-toggle="tooltip" data-bs-title="Κατά τόπους συννεφιά" data-bs-placement="bottom" src="https://www.vradini.gr/style/images/weather/day/116.png" alt="Κατά τόπους συννεφιά"> <span id="weather_label">15</span> &#8451;
 						
                         <div class="dropdown weather d-inline-block ms-1">
                           <button class="btn btn-darkblue dropdown-toggle" type="button" id="weather_selector" data-bs-toggle="dropdown" aria-expanded="false">Αθήνα</button>
                           <ul class="dropdown-menu" aria-labelledby="weather_selector">
-                            <li><a class="dropdown-item change_city" data-title="Κατά τόπους συννεφιά" data-src="https://www.vradini.gr/style/images/weather/night/116.png" data-id="athens" data-temp="13" href="#athens">Αθήνα</a></li>
-                            <li><a class="dropdown-item change_city" data-title="Κατά τόπους συννεφιά" data-src="https://www.vradini.gr/style/images/weather/night/116.png" data-id="thessaloniki" data-temp="13" href="#thessaloniki">Θεσσαλονίκη</a></li>
+                            <li><a class="dropdown-item change_city" data-title="Κατά τόπους συννεφιά" data-src="https://www.vradini.gr/style/images/weather/day/116.png" data-id="athens" data-temp="15" href="#athens">Αθήνα</a></li>
+                            <li><a class="dropdown-item change_city" data-title="Ομίχλη" data-src="https://www.vradini.gr/style/images/weather/day/143.png" data-id="thessaloniki" data-temp="11" href="#thessaloniki">Θεσσαλονίκη</a></li>
 							  
                           </ul>
                         </div>
                         
                         <span class="date ms-3">
-                            <i class="fal fa-clock me-1"></i> Πέμπτη, 24 Νοεμβρίου 2022                        </span>
+                            <i class="fal fa-clock me-1"></i> Τετάρτη, 07 Δεκεμβρίου 2022                        </span>
                         
                     </div><!-- /.weather_date -->
                     <div class="col-lg-6 col-12 text-lg-end text-center socialsearch">
@@ -427,35 +443,16 @@ var site_path = '';
 									<li><a href="/tag/kibwtos-toy-kosmoy">Κιβωτός του Κόσμου</a></li>
 									<li><a href="/tag/kolwnos">Κολωνός</a></li>
 									<li><a href="/tag/ellhnotoyrkika">Ελληνοτουρκικά</a></li>
-									<li><a href="/tag/energeia">Ενέργεια</a></li>
 									<li><a href="/tag/patra">Πάτρα</a></li>
+									<li><a href="/tag/energeia">Ενέργεια</a></li>
 			                    </ul>
                 </div><!-- /.container -->
             </div><!-- /#tagsline -->
             
 		</header>
-     
-        <script>
-        $(function(){
-            $('#alert_news ul').bind('beforeStarting', function () {
-
-            }).marquee({
-                duration: 50000,
-                gap: 0,
-                delayBeforeStart: 1500,
-                direction: 'left',
-                duplicated: true,
-                startVisible: true,
-                pauseOnHover: true
-            });
-
-        });
-        </script>
-        		<div id="alert_news">
+		<div id="alert_news">
 			<ul style="overflow: hidden">
-				<li>ΒΡΑΖΙΛΙΑ - ΣΕΡΒΙΑ 2-0 B΄ΗΜΙΧΡΟΝΟ</li>
-				<li><a href="https://www.vradini.gr/article/spor/681906-moyntial-2022-kardioxtyphse-h-portogalia">ΠΟΡΤΟΓΑΛΙΑ - ΓΚΑΝΑ 3-2 ΤΕΛ</a></li>
-				<li><a href="https://www.vradini.gr/article/spor/681883-moyntial-2022-dyo-dokaria-h-seleste-mia-eykaria-h-n-korea">Μουντιάλ 2022: ΟΥΡΟΥΓΟΥΑΗ - ΝΟΤΙΑ ΚΟΡΕΑ 0-0 ΤΕΛ</a></li>
+				<li><a href="https://www.vradini.gr/article/ellada/683779-kinhsh-kykloforiako-komfoyzio-stoys-perissoteroys-dromoys-ths-athhnas">Η κίνηση στους δρόμους της Αθήνας - Δείτε ποιοί δρόμοι είναι μποτιλιαρισμένοι</a></li>
 			</ul>
 		</div><!-- /#alert_news -->
         <div id="small_menu" class="sticky-top">
@@ -617,8 +614,8 @@ $(function(){
                     <li><a href="/tag/kibwtos-toy-kosmoy">#Κιβωτός του Κόσμου</a></li>
                     <li><a href="/tag/kolwnos">#Κολωνός</a></li>
                     <li><a href="/tag/ellhnotoyrkika">#Ελληνοτουρκικά</a></li>
-                    <li><a href="/tag/energeia">#Ενέργεια</a></li>
                     <li><a href="/tag/patra">#Πάτρα</a></li>
+                    <li><a href="/tag/energeia">#Ενέργεια</a></li>
                     
                 </ul>
             </li>
@@ -629,7 +626,7 @@ $(function(){
        
 		<main>
             
-			<img src="/ajax/pin/RTQrVm9FWkxkR1BZS0xJYXE3MlZpL2NIWUhMVjgvQ05DUkNON1MvM3JPZEJxNVJNZWk1Q3FqclVJeUJKMmJURUx6SmxZMFpVVlRZMloxaFpSV2g2UWl0WFRuZFVkejA5" style="position:absolute;left:-9999999px;"/>	
+			<img src="/ajax/pin/aE1DSzl4VkRKWmlES2IzbE92eHlvd2pIeUIwZWsxaG90RzBTK2g2ZzVRWEFsTXNLMWloazVzMEFGRUZRWWxLMGEwRllOMVpoTVVwVE5Vd3JURUZGU1VzMk9YWkpRVDA5" style="position:absolute;left:-9999999px;"/>	
 <script>
 var MODULE = 'articles';
 var waypoints_bind;
@@ -950,228 +947,228 @@ $(function(){
 
             <article>
         <div class="cover">
-            <figure><img src="https://www.vradini.gr/style/images/nopic.jpg" data-src="https://www.vradini.gr/photos/c_300px_300px/articles/2022/11/sky_express_athens_airport__21.jpg" alt="SKY express: Η εταιρεία με τη μεγαλύτερη αύξηση πτητικού έργου στην Ευρώπη το 2022"  class="img-fluid lazyload"/></figure>                        
-        </div>
-        <span class="category"><a href="https://www.vradini.gr/article/business" style="color:#8bade8">Business</a></span>
-        <time datetime="2022-11-24T23:00:00.000Z" title="24/11/2022, 23:00">πριν 4 λεπτά</time>
-        <h3>SKY express: Η εταιρεία με τη μεγαλύτερη αύξηση πτητικού έργου στην Ευρώπη το 2022</h3>
-        <a href="https://www.vradini.gr/article/business/681904-sky-express-h-etaireia-me-th-megalyterh-aykshsh-pthtikoy-ergoy-se-olh-thn-eyrwph-gia-to-2022" class="stretched-link" aria-label="SKY express: Η εταιρεία με τη μεγαλύτερη αύξηση πτητικού έργου στην Ευρώπη το 2022"></a>
-    </article>
-        <article>
-        <div class="cover">
-            <figure><img src="https://www.vradini.gr/style/images/nopic.jpg" data-src="https://www.vradini.gr/photos/c_300px_300px/articles/2022/11/4e0058_tzoker.jpg" alt="Νέο τζακ ποτ στην κλήρωση του Τζόκερ"  class="img-fluid lazyload"/></figure>                        
+            <figure><img src="https://www.vradini.gr/style/images/nopic.jpg" data-src="https://www.vradini.gr/photos/c_300px_300px/articles/2022/12/1_ekri.jpg" alt="Σέρρες:Ελεύθεροι οι δύο συλληφθέντες -«Δεν διαπιστώσαμε πρόβλημα στον καυστήρα»,είπε"  class="img-fluid lazyload"/></figure>                        
         </div>
         <span class="category"><a href="https://www.vradini.gr/article/ellada" style="color:#3198ff">Ελλάδα</a></span>
-        <time datetime="2022-11-24T22:40:00.000Z" title="24/11/2022, 22:40">πριν 24 λεπτά</time>
-        <h3>Νέο τζακ ποτ στην κλήρωση του Τζόκερ</h3>
-        <a href="https://www.vradini.gr/article/ellada/681919-neo-tzak-pot-sthn-klhrwsh-toy-tzoker" class="stretched-link" aria-label="Νέο τζακ ποτ στην κλήρωση του Τζόκερ"></a>
+        <time datetime="2022-12-07T10:09:00.000Z" title="07/12/2022, 10:09">πριν 17 λεπτά</time>
+        <h3>Σέρρες:Ελεύθεροι οι δύο συλληφθέντες -«Δεν διαπιστώσαμε πρόβλημα στον καυστήρα»,είπε</h3>
+        <a href="https://www.vradini.gr/article/ellada/683782-serres-eleytheroi-oi-dyo-syllhfthentes-gia-thn-ekrhksh-oi-apokalypseis-toy-theioy-toy-11xronoy" class="stretched-link" aria-label="Σέρρες:Ελεύθεροι οι δύο συλληφθέντες -«Δεν διαπιστώσαμε πρόβλημα στον καυστήρα»,είπε"></a>
     </article>
         <article>
         <div class="cover">
-            <figure><img src="https://www.vradini.gr/style/images/nopic.jpg" data-src="https://www.vradini.gr/photos/c_300px_300px/articles/2022/11/5c3973_1.jpg" alt="Θεσσαλονίκη: Του έσπασε το αυτοκίνητο επειδή δεν ανταποκρινόταν στον έρωτα της"  class="img-fluid lazyload"/></figure>                        
+            <figure><img src="https://www.vradini.gr/style/images/nopic.jpg" data-src="https://www.vradini.gr/photos/c_300px_300px/articles/2022/12/26557306.jpg" alt="ΗΠΑ:Ο Τζο Μπάιντεν ενισχυμένος στη Γερουσία απο τις χθεσινές εκλογές στη Τζόρτζια"  class="img-fluid lazyload"/></figure>                        
+        </div>
+        <span class="category"><a href="https://www.vradini.gr/article/kosmos" style="color:#1bc576">Κόσμος</a></span>
+        <time datetime="2022-12-07T10:08:00.000Z" title="07/12/2022, 10:08">πριν 18 λεπτά</time>
+        <h3>ΗΠΑ:Ο Τζο Μπάιντεν ενισχυμένος στη Γερουσία απο τις χθεσινές εκλογές στη Τζόρτζια</h3>
+        <a href="https://www.vradini.gr/article/kosmos/683772-hpa-o-tzo-mpainten-blepei-na-enisxyetai-h-pleiopshfia-ths-paratakshs-toy-sth-geroysia" class="stretched-link" aria-label="ΗΠΑ:Ο Τζο Μπάιντεν ενισχυμένος στη Γερουσία απο τις χθεσινές εκλογές στη Τζόρτζια"></a>
+    </article>
+        <article>
+        <div class="cover">
+            <figure><img src="https://www.vradini.gr/style/images/nopic.jpg" data-src="https://www.vradini.gr/photos/c_300px_300px/articles/2022/12/telh_kykloforias_2.jpg" alt="Τέλη κυκλοφορίας 2023: Πότε λήγει η προθεσμία για την πληρωμή τους"  class="img-fluid lazyload"/></figure>                        
         </div>
         <span class="category"><a href="https://www.vradini.gr/article/ellada" style="color:#3198ff">Ελλάδα</a></span>
-        <time datetime="2022-11-24T22:17:00.000Z" title="24/11/2022, 22:17">πριν 47 λεπτά</time>
-        <h3>Θεσσαλονίκη: Του έσπασε το αυτοκίνητο επειδή δεν ανταποκρινόταν στον έρωτα της</h3>
-        <a href="https://www.vradini.gr/article/ellada/681918-thessalonikh-toy-espase-to-aytokinhto-epeidh-den-antapokrinotan-ston-erwta-ths" class="stretched-link" aria-label="Θεσσαλονίκη: Του έσπασε το αυτοκίνητο επειδή δεν ανταποκρινόταν στον έρωτα της"></a>
+        <time datetime="2022-12-07T09:56:00.000Z" title="07/12/2022, 09:56">πριν 30 λεπτά</time>
+        <h3>Τέλη κυκλοφορίας 2023: Πότε λήγει η προθεσμία για την πληρωμή τους</h3>
+        <a href="https://www.vradini.gr/article/ellada/683773-telh-kykloforias-2023-pote-lhgei-h-prothesmia-gia-thn-plhrwmh-toys" class="stretched-link" aria-label="Τέλη κυκλοφορίας 2023: Πότε λήγει η προθεσμία για την πληρωμή τους"></a>
     </article>
         <article>
         <div class="cover">
-            <figure><img src="https://www.vradini.gr/style/images/nopic.jpg" data-src="https://www.vradini.gr/photos/c_300px_300px/articles/2022/11/b96702_gold.jpg" alt="Συνεχίζει ανοδικά ο χρυσός"  class="img-fluid lazyload"/></figure>                        
+            <figure><img src="https://www.vradini.gr/style/images/nopic.jpg" data-src="https://www.vradini.gr/photos/c_300px_300px/articles/2022/12/emvolia_2.jpg" alt="Θεσσαλονίκη: Παιδίατρος διακινούσε παράνομα εμβόλια -Συνεργαζόταν με φαρμακείο "  class="img-fluid lazyload"/></figure>                        
+        </div>
+        <span class="category"><a href="https://www.vradini.gr/article/ellada" style="color:#3198ff">Ελλάδα</a></span>
+        <time datetime="2022-12-07T09:48:00.000Z" title="07/12/2022, 09:48">πριν 38 λεπτά</time>
+        <h3>Θεσσαλονίκη: Παιδίατρος διακινούσε παράνομα εμβόλια -Συνεργαζόταν με φαρμακείο </h3>
+        <a href="https://www.vradini.gr/article/ellada/683771-thessalonikh-paidiatros-diakinoyse-paranoma-embolia-synergazotan-me-farmakeio" class="stretched-link" aria-label="Θεσσαλονίκη: Παιδίατρος διακινούσε παράνομα εμβόλια -Συνεργαζόταν με φαρμακείο "></a>
+    </article>
+        <article>
+        <div class="cover">
+            <figure><img src="https://www.vradini.gr/style/images/nopic.jpg" data-src="https://www.vradini.gr/photos/c_300px_300px/articles/2022/12/26557101.jpg" alt="Κριστιάνο Ρονάλντο : Έφυγε ενώ οι συμπαίχτες του πανηγυρίζαν την πρόκριση στους «8»"  class="img-fluid lazyload"/></figure>                        
+        </div>
+        <span class="category"><a href="https://www.vradini.gr/article/spor" style="color:#00d46e">Σπορ</a></span>
+        <time datetime="2022-12-07T09:38:00.000Z" title="07/12/2022, 09:38">πριν 48 λεπτά</time>
+        <h3>Κριστιάνο Ρονάλντο: Έφυγε ενώ οι συμπαίχτες του πανηγυρίζαν την πρόκριση στους «8»</h3>
+        <a href="https://www.vradini.gr/article/spor/683769-kristiano-ronalnto-moyntial-2022-efyge-monos-toy-apo-to-ghpedo-enw-oi-sympaixtes-toy-panhgyrizan-thn-prokrish-stoys-8" class="stretched-link" aria-label="Κριστιάνο Ρονάλντο: Έφυγε ενώ οι συμπαίχτες του πανηγυρίζαν την πρόκριση στους «8»"></a>
+    </article>
+        <article>
+        <div class="cover">
+            <figure><img src="https://www.vradini.gr/style/images/nopic.jpg" data-src="https://www.vradini.gr/photos/c_300px_300px/articles/2022/12/khfisia_.jpg" alt="Κίνηση: Κυκλοφοριακό κομφούζιο στους περισσότερους δρόμους της Αθήνας "  class="img-fluid lazyload"/></figure>                        
+        </div>
+        <span class="category"><a href="https://www.vradini.gr/article/ellada" style="color:#3198ff">Ελλάδα</a></span>
+        <time datetime="2022-12-07T09:32:00.000Z" title="07/12/2022, 09:32">πριν 54 λεπτά</time>
+        <h3>Κίνηση: Κυκλοφοριακό κομφούζιο στους περισσότερους δρόμους της Αθήνας </h3>
+        <a href="https://www.vradini.gr/article/ellada/683779-kinhsh-kykloforiako-komfoyzio-stoys-perissoteroys-dromoys-ths-athhnas" class="stretched-link" aria-label="Κίνηση: Κυκλοφοριακό κομφούζιο στους περισσότερους δρόμους της Αθήνας "></a>
+    </article>
+        <article>
+        <div class="cover">
+            <figure><img src="https://www.vradini.gr/style/images/nopic.jpg" data-src="https://www.vradini.gr/photos/c_300px_300px/articles/2022/12/1920patriot.jpg" alt="Πόλεμος στην Ουκρανία: Νέα στρατιωτική βοήθεια 800 εκατ. δολαρίων από τις ΗΠΑ"  class="img-fluid lazyload"/></figure>                        
+        </div>
+        <span class="category"><a href="https://www.vradini.gr/article/kosmos" style="color:#1bc576">Κόσμος</a></span>
+        <time datetime="2022-12-07T09:28:00.000Z" title="07/12/2022, 09:28">πριν 58 λεπτά</time>
+        <h3>Πόλεμος στην Ουκρανία: Νέα στρατιωτική βοήθεια 800 εκατ. δολαρίων από τις ΗΠΑ</h3>
+        <a href="https://www.vradini.gr/article/kosmos/683767-nea-stratiwtikh-bohtheia-sthn-oykrania-apo-tis-hpa" class="stretched-link" aria-label="Πόλεμος στην Ουκρανία: Νέα στρατιωτική βοήθεια 800 εκατ. δολαρίων από τις ΗΠΑ"></a>
+    </article>
+        <article>
+        <div class="cover">
+            <figure><img src="https://www.vradini.gr/style/images/nopic.jpg" data-src="https://www.vradini.gr/photos/c_300px_300px/articles/2022/12/26552246.jpg" alt="ΗΠΑ- ενδιάμεσες εκλογές: Νίκη για τους Δημοκρατικούς στην Τζόρτζια"  class="img-fluid lazyload"/></figure>                        
+        </div>
+        <span class="category"><a href="https://www.vradini.gr/article/kosmos" style="color:#1bc576">Κόσμος</a></span>
+        <time datetime="2022-12-07T09:08:00.000Z" title="07/12/2022, 09:08">πριν 1 ώρα</time>
+        <h3>ΗΠΑ- Ενδιάμεσες εκλογές: Νίκη για τους Δημοκρατικούς στην Τζόρτζια</h3>
+        <a href="https://www.vradini.gr/article/kosmos/683766-hpa-endiameses-ekloges-nikh-gia-toys-dhmokratikoys-sthn-tzortzia" class="stretched-link" aria-label="ΗΠΑ- Ενδιάμεσες εκλογές: Νίκη για τους Δημοκρατικούς στην Τζόρτζια"></a>
+    </article>
+        <article>
+        <div class="cover">
+            <figure><img src="https://www.vradini.gr/style/images/nopic.jpg" data-src="https://www.vradini.gr/photos/c_300px_300px/articles/2022/12/5539607.jpg" alt="«Ανακαινίζω – Ενοικιάζω»: Ποίοι μπορούν να λάβουν επιδότηση έως 10.000 ευρώ"  class="img-fluid lazyload"/></figure>                        
         </div>
         <span class="category"><a href="https://www.vradini.gr/article/oikonomia" style="color:#ff7f0f">Οικονομία</a></span>
-        <time datetime="2022-11-24T22:00:00.000Z" title="24/11/2022, 22:00">πριν 1 ώρα</time>
-        <h3>Συνεχίζει ανοδικά ο χρυσός</h3>
-        <a href="https://www.vradini.gr/article/oikonomia/681916-synexizei-anodika-o-xrysos" class="stretched-link" aria-label="Συνεχίζει ανοδικά ο χρυσός"></a>
+        <time datetime="2022-12-07T09:00:00.000Z" title="07/12/2022, 09:00">πριν 1 ώρα</time>
+        <h3>«Ανακαινίζω – Ενοικιάζω»: Ποιοί μπορούν να λάβουν επιδότηση έως 10.000 ευρώ</h3>
+        <a href="https://www.vradini.gr/article/oikonomia/683774-anakainizw-ndash-enoikiazw-me-epidothsh-ews-10-000-eyrw" class="stretched-link" aria-label="«Ανακαινίζω – Ενοικιάζω»: Ποιοί μπορούν να λάβουν επιδότηση έως 10.000 ευρώ"></a>
     </article>
         <article>
         <div class="cover">
-            <figure><img src="https://www.vradini.gr/style/images/nopic.jpg" data-src="https://www.vradini.gr/photos/c_300px_300px/articles/2022/11/ypourgiko.jpg" alt="Συνεδριάζει αύριο το υπουργικό συμβούλιο "  class="img-fluid lazyload"/></figure>                        
-        </div>
-        <span class="category"><a href="https://www.vradini.gr/article/politiki" style="color:#ff4d36">Πολιτική</a></span>
-        <time datetime="2022-11-24T21:40:00.000Z" title="24/11/2022, 21:40">πριν 1 ώρα</time>
-        <h3>Συνεδριάζει αύριο το υπουργικό συμβούλιο </h3>
-        <a href="https://www.vradini.gr/article/politiki/681914-to-ayriano-programma-toy-prwthypoyrgoy" class="stretched-link" aria-label="Συνεδριάζει αύριο το υπουργικό συμβούλιο "></a>
-    </article>
-        <article>
-        <div class="cover">
-            <figure><img src="https://www.vradini.gr/style/images/nopic.jpg" data-src="https://www.vradini.gr/photos/c_300px_300px/articles/2022/11/113114_negprwsism221280.jpg" alt="Υπουργείο Υγείας: Εγκαίνια 48 κλινών αρνητικής πίεσης στο Σισμανόγλειο"  class="img-fluid lazyload"/></figure>                        
-        </div>
-        <span class="category"><a href="https://www.vradini.gr/article/ygeia" style="color:#90c418">Υγεία</a></span>
-        <time datetime="2022-11-24T20:46:00.000Z" title="24/11/2022, 20:46">πριν 2 ώρες</time>
-        <h3>Υπουργείο Υγείας: Εγκαίνια 48 κλινών αρνητικής πίεσης στο Σισμανόγλειο</h3>
-        <a href="https://www.vradini.gr/article/ygeia/681908-ypoyrgeio-ygeias-egkainia-48-klinwn-arnhtikhs-pieshs-sto-sismanogleio" class="stretched-link" aria-label="Υπουργείο Υγείας: Εγκαίνια 48 κλινών αρνητικής πίεσης στο Σισμανόγλειο"></a>
-    </article>
-        <article>
-        <div class="cover">
-            <figure><img src="https://www.vradini.gr/style/images/nopic.jpg" data-src="https://www.vradini.gr/photos/c_300px_300px/articles/2022/11/kalpi1.jpg" alt="Δημοσκόπηση Metron: Προβάδισμα 8 μονάδων της ΝΔ έναντι του ΣΥΡΙΖΑ"  class="img-fluid lazyload"/></figure>                        
-        </div>
-        <span class="category"><a href="https://www.vradini.gr/article/politiki" style="color:#ff4d36">Πολιτική</a></span>
-        <time datetime="2022-11-24T20:32:00.000Z" title="24/11/2022, 20:32">πριν 3 ώρες</time>
-        <h3>Δημοσκόπηση Metron: Προβάδισμα 8 μονάδων της ΝΔ έναντι του ΣΥΡΙΖΑ</h3>
-        <a href="https://www.vradini.gr/article/politiki/681907-dhmoskophsh-metron-probadisma-8-monadwn-ths-nd-enanti-toy-syriza" class="stretched-link" aria-label="Δημοσκόπηση Metron: Προβάδισμα 8 μονάδων της ΝΔ έναντι του ΣΥΡΙΖΑ"></a>
-    </article>
-        <article>
-        <div class="cover">
-            <figure><img src="https://www.vradini.gr/style/images/nopic.jpg" data-src="https://www.vradini.gr/photos/c_300px_300px/articles/2022/11/portogal.jpg" alt="Μουντιάλ 2022: «Καρδιοχτύπησε» αλλά νίκησε η Πορτογαλία"  class="img-fluid lazyload"/></figure>                        
-        </div>
-        <span class="category"><a href="https://www.vradini.gr/article/spor" style="color:#00d46e">Σπορ</a></span>
-        <time datetime="2022-11-24T20:26:00.000Z" title="24/11/2022, 20:26">πριν 3 ώρες</time>
-        <h3>Μουντιάλ 2022: «Καρδιοχτύπησε» αλλά νίκησε η Πορτογαλία</h3>
-        <a href="https://www.vradini.gr/article/spor/681906-moyntial-2022-kardioxtyphse-h-portogalia" class="stretched-link" aria-label="Μουντιάλ 2022: «Καρδιοχτύπησε» αλλά νίκησε η Πορτογαλία"></a>
-    </article>
-        <article>
-        <div class="cover">
-            <figure><img src="https://www.vradini.gr/style/images/nopic.jpg" data-src="https://www.vradini.gr/photos/c_300px_300px/articles/2022/11/giatroi_giatros_apergia_nosokomoi.jpg" alt="Νομοσχέδιο για την υγεία: Με απεργιακές κινητοποιήσεις απαντούν οι εργαζόμενοι στα δημόσια νοσοκομεία"  class="img-fluid lazyload"/></figure>                        
-        </div>
-        <span class="category"><a href="https://www.vradini.gr/article/ygeia" style="color:#90c418">Υγεία</a></span>
-        <time datetime="2022-11-24T19:40:00.000Z" title="24/11/2022, 19:40">πριν 3 ώρες</time>
-        <h3>Νομοσχέδιο για την υγεία:Με απεργίες  απαντούν οι εργαζόμενοι στα δημόσια νοσοκομεία</h3>
-        <a href="https://www.vradini.gr/article/ygeia/681899-nomosxedio-gia-thn-ygeia-me-apergiakes-kinhtopoihseis-apantoyn-oi-ergazomenoi-sta-dhmosia-nosokomeia" class="stretched-link" aria-label="Νομοσχέδιο για την υγεία:Με απεργίες  απαντούν οι εργαζόμενοι στα δημόσια νοσοκομεία"></a>
-    </article>
-        <article>
-        <div class="cover">
-            <figure><img src="https://www.vradini.gr/style/images/nopic.jpg" data-src="https://www.vradini.gr/photos/c_300px_300px/articles/2022/11/thanos.jpg" alt="Θ. Πλεύρης:Προσωρινό φρένο στους ανεμβολίαστους υγειονομικούς από τον υπουργό υγείας"  class="img-fluid lazyload"/></figure>                        
-        </div>
-        <span class="category"><a href="https://www.vradini.gr/article/ygeia" style="color:#90c418">Υγεία</a></span>
-        <time datetime="2022-11-24T19:33:00.000Z" title="24/11/2022, 19:33">πριν 4 ώρες</time>
-        <h3>Θ. Πλεύρης:Προσωρινό φρένο στους ανεμβολίαστους υγειονομικούς από τον υπουργό υγείας</h3>
-        <a href="https://www.vradini.gr/article/ygeia/681903-thanos-pleyrhs-freno-stoys-anemboliastoys-ygeionomikoys" class="stretched-link" aria-label="Θ. Πλεύρης:Προσωρινό φρένο στους ανεμβολίαστους υγειονομικούς από τον υπουργό υγείας"></a>
-    </article>
-        <article>
-        <div class="cover">
-            <figure><img src="https://www.vradini.gr/style/images/nopic.jpg" data-src="https://www.vradini.gr/photos/c_300px_300px/articles/2022/11/oukrania_rusia.jpg" alt="Ανταλλαγή 100 αιχμαλώτων πολέμου Ρωσίας - Ουκρανίας"  class="img-fluid lazyload"/></figure>                        
-        </div>
-        <span class="category"><a href="https://www.vradini.gr/article/kosmos" style="color:#1bc576">Κόσμος</a></span>
-        <time datetime="2022-11-24T19:30:00.000Z" title="24/11/2022, 19:30">πριν 4 ώρες</time>
-        <h3>Ανταλλαγή 100 αιχμαλώτων πολέμου Ρωσίας - Ουκρανίας</h3>
-        <a href="https://www.vradini.gr/article/kosmos/681898-rwsia-oykrania-mosxa-kai-kiebo-anthllaksan-100-aixmalwtoys-polemoy" class="stretched-link" aria-label="Ανταλλαγή 100 αιχμαλώτων πολέμου Ρωσίας - Ουκρανίας"></a>
-    </article>
-        <article>
-        <div class="cover">
-            <figure><img src="https://www.vradini.gr/style/images/nopic.jpg" data-src="https://www.vradini.gr/photos/c_300px_300px/articles/2022/11/____________2022__eurokinissi_.jpg" alt="Αθήνα: Αύξηση 4% στην πληρότητα των ξενοδοχείων τον Οκτώβριο"  class="img-fluid lazyload"/></figure>                        
-        </div>
-        <span class="category"><a href="https://www.vradini.gr/article/toyrismos" style="color:#3dd0e3">Τουρισμός</a></span>
-        <time datetime="2022-11-24T19:25:00.000Z" title="24/11/2022, 19:25">πριν 4 ώρες</time>
-        <h3>Αθήνα: Αύξηση 4% στην πληρότητα των ξενοδοχείων τον Οκτώβριο</h3>
-        <a href="https://www.vradini.gr/article/toyrismos/681897-athhna-aykshsh-4-sthn-plhrothta-twn-ksenodoxeiwn-ton-oktwbrio" class="stretched-link" aria-label="Αθήνα: Αύξηση 4% στην πληρότητα των ξενοδοχείων τον Οκτώβριο"></a>
-    </article>
-        <article>
-        <div class="cover">
-            <figure><img src="https://www.vradini.gr/style/images/nopic.jpg" data-src="https://www.vradini.gr/photos/c_300px_300px_ct/articles/2022/11/09b723_1_antonios.jpg" alt="Αυτοί είναι οι τρεις δικηγόροι του πατέρα Αντλωνιου - Ποιά η υπερασπιστική γραμμή"  class="img-fluid lazyload"/></figure>                        
-        </div>
-        <span class="category"><a href="https://www.vradini.gr/article/ellada" style="color:#3198ff">Ελλάδα</a></span>
-        <time datetime="2022-11-24T19:20:00.000Z" title="24/11/2022, 19:20">πριν 4 ώρες</time>
-        <h3>Αυτοί είναι οι τρεις δικηγόροι του πατέρα Αντώνιου - Ποιά η υπερασπιστική γραμμή</h3>
-        <a href="https://www.vradini.gr/article/ellada/681902-aytoi-einai-oi-treis-dikhgoroi-toy-patera-antlwnioy-poia-h-yperaspistikh-grammh" class="stretched-link" aria-label="Αυτοί είναι οι τρεις δικηγόροι του πατέρα Αντώνιου - Ποιά η υπερασπιστική γραμμή"></a>
-    </article>
-        <article>
-        <div class="cover">
-            <figure><img src="https://www.vradini.gr/style/images/nopic.jpg" data-src="https://www.vradini.gr/photos/c_300px_300px/articles/2022/11/mhtsotakkk.jpeg" alt="Συνάντηση Μητσοτάκη με μαθητές από μειονοτικά σχολεία της Ροδόπης"  class="img-fluid lazyload"/></figure>                        
-        </div>
-        <span class="category"><a href="https://www.vradini.gr/article/politiki" style="color:#ff4d36">Πολιτική</a></span>
-        <time datetime="2022-11-24T19:15:00.000Z" title="24/11/2022, 19:15">πριν 4 ώρες</time>
-        <h3>Συνάντηση Μητσοτάκη με μαθητές από μειονοτικά σχολεία της Ροδόπης</h3>
-        <a href="https://www.vradini.gr/article/politiki/681901-synanthsh-mhtsotakh-me-mathhtes-apo-meionotika-sxoleia-ths-rodophs" class="stretched-link" aria-label="Συνάντηση Μητσοτάκη με μαθητές από μειονοτικά σχολεία της Ροδόπης"></a>
-    </article>
-        <article>
-        <div class="cover">
-            <figure><img src="https://www.vradini.gr/style/images/nopic.jpg" data-src="https://www.vradini.gr/photos/c_300px_300px/articles/2022/11/photo_1__2_.jpg" alt="ΕΕΚΤ: Πώς να προφυλαχτείτε από τις απάτες μέσω κινητών τηλεφώνων"  class="img-fluid lazyload"/></figure>                        
-        </div>
-        <span class="category"><a href="https://www.vradini.gr/article/ellada" style="color:#3198ff">Ελλάδα</a></span>
-        <time datetime="2022-11-24T19:10:00.000Z" title="24/11/2022, 19:10">πριν 4 ώρες</time>
-        <h3>ΕΕΚΤ: Πώς να προφυλαχτείτε από τις απάτες μέσω κινητών τηλεφώνων</h3>
-        <a href="https://www.vradini.gr/article/ellada/681892-eekt-pws-na-profylaxteite-apo-tis-apates-mesw-kinhtwn-thlefwnwn" class="stretched-link" aria-label="ΕΕΚΤ: Πώς να προφυλαχτείτε από τις απάτες μέσω κινητών τηλεφώνων"></a>
-    </article>
-        <article>
-        <div class="cover">
-            <figure><img src="https://www.vradini.gr/style/images/nopic.jpg" data-src="https://www.vradini.gr/photos/c_300px_300px/articles/2022/11/1_26_9.jpg" alt="«Ξαφνικά πετάχτηκε μπροστά μου»-Τί υποστηρίζει ο 26χρονος Αλβανός οδηγός"  class="img-fluid lazyload"/></figure>                        
-        </div>
-        <span class="category"><a href="https://www.vradini.gr/article/ellada" style="color:#3198ff">Ελλάδα</a></span>
-        <time datetime="2022-11-24T19:09:00.000Z" title="24/11/2022, 19:09">πριν 4 ώρες</time>
-        <h3>«Ξαφνικά πετάχτηκε μπροστά μου»-Τί υποστηρίζει ο 26χρονος Αλβανός οδηγός</h3>
-        <a href="https://www.vradini.gr/article/ellada/681900-ksafnika-petaxthke-mprosta-kai-moy-ksefyge-to-amaksi-ti-yposthrizei-o-26xronos-albanos-odhgos" class="stretched-link" aria-label="«Ξαφνικά πετάχτηκε μπροστά μου»-Τί υποστηρίζει ο 26χρονος Αλβανός οδηγός"></a>
-    </article>
-        <article>
-        <div class="cover">
-            <figure><img src="https://www.vradini.gr/style/images/nopic.jpg" data-src="https://www.vradini.gr/photos/c_300px_300px/articles/2022/11/maestro_6__1_.jpg" alt=" «Maestro»: Δείτε βίντεο από τα γυρίσματα του επεισοδίου"  class="img-fluid lazyload"/></figure>                        
+            <figure><img src="https://www.vradini.gr/style/images/nopic.jpg" data-src="https://www.vradini.gr/photos/c_300px_300px/articles/2022/12/_odo__1_.jpg" alt="«Μαύρο Ρόδο»: Συλλαμβάνεται ο Πέτρος"  class="img-fluid lazyload"/></figure>                        
         </div>
         <span class="category"><a href="https://www.vradini.gr/article/media" style="color:#00B2FF">Media</a></span>
-        <time datetime="2022-11-24T19:00:00.000Z" title="24/11/2022, 19:00">πριν 4 ώρες</time>
-        <h3>«Maestro»: Δείτε βίντεο από τα γυρίσματα του επεισοδίου</h3>
-        <a href="https://www.vradini.gr/article/media/681888-maestro-deite-binteo-apo-ta-gyrismata-toy-epeisodioy" class="stretched-link" aria-label="«Maestro»: Δείτε βίντεο από τα γυρίσματα του επεισοδίου"></a>
+        <time datetime="2022-12-07T09:00:00.000Z" title="07/12/2022, 09:00">πριν 1 ώρα</time>
+        <h3>«Μαύρο Ρόδο»: Συλλαμβάνεται ο Πέτρος</h3>
+        <a href="https://www.vradini.gr/article/media/683739-mayro-rodo-syllambanetai-o-petros" class="stretched-link" aria-label="«Μαύρο Ρόδο»: Συλλαμβάνεται ο Πέτρος"></a>
     </article>
         <article>
         <div class="cover">
-            <figure><img src="https://www.vradini.gr/style/images/nopic.jpg" data-src="https://www.vradini.gr/photos/c_300px_300px/articles/2022/11/316836875_664614625199914_6544332111682072734_n.jpg" alt="Λένα Δροσάκη: «Αν δεν μου κάτσεις, δεν θα περάσεις» μου είπε ο Φιλιππίδης"  class="img-fluid lazyload"/></figure>                        
+            <figure><img src="https://www.vradini.gr/style/images/nopic.jpg" data-src="https://www.vradini.gr/photos/c_300px_300px/articles/2022/12/grhgoropoulos_.jpg" alt="Αθήνα: Χιλιάδες στην πορεία για την επέτειο  δολοφονίας του Αλέξανδρου Γρηγορόπουλου"  class="img-fluid lazyload"/></figure>                        
         </div>
         <span class="category"><a href="https://www.vradini.gr/article/ellada" style="color:#3198ff">Ελλάδα</a></span>
-        <time datetime="2022-11-24T18:56:00.000Z" title="24/11/2022, 18:56">πριν 4 ώρες</time>
-        <h3>Λένα Δροσάκη: «'Αν δεν μου κάτσεις, δεν θα περάσεις' μου είπε ο Φιλιππίδης»</h3>
-        <a href="https://www.vradini.gr/article/ellada/681895-lena-drosakh-039-an-den-moy-katseis-den-tha-peraseis-039-moy-eipe-o-filippidhs" class="stretched-link" aria-label="Λένα Δροσάκη: «'Αν δεν μου κάτσεις, δεν θα περάσεις' μου είπε ο Φιλιππίδης»"></a>
+        <time datetime="2022-12-07T08:58:00.000Z" title="07/12/2022, 08:58">πριν 1 ώρα</time>
+        <h3>Αθήνα: Χιλιάδες στην πορεία για την επέτειο  δολοφονίας του Αλέξανδρου Γρηγορόπουλου</h3>
+        <a href="https://www.vradini.gr/article/ellada/683765-athhna-xiliades-sthn-poreia-gia-thn-epeteio-dolofonias-toy-aleksandroy-grhgoropoyloy" class="stretched-link" aria-label="Αθήνα: Χιλιάδες στην πορεία για την επέτειο  δολοφονίας του Αλέξανδρου Γρηγορόπουλου"></a>
     </article>
         <article>
         <div class="cover">
-            <figure><img src="https://www.vradini.gr/style/images/nopic.jpg" data-src="https://www.vradini.gr/photos/c_300px_300px/articles/2022/11/316737376_530539355633319_1537329068925649082_n.jpg" alt="Νίκος Μουτσινάς: «Γίνεται τηλεοπτικό δικαστήριο, δικάζουν οι παρουσιαστές»"  class="img-fluid lazyload"/></figure>                        
+            <figure><img src="https://www.vradini.gr/style/images/nopic.jpg" data-src="https://www.vradini.gr/photos/c_300px_300px/articles/2022/12/gh_ths_elias___ep._60_65__1_.jpg" alt="«Η Γη της Ελιάς»: Η Ειρήνη προσπαθεί να προσεγγίσει τον Φίλιππο"  class="img-fluid lazyload"/></figure>                        
         </div>
         <span class="category"><a href="https://www.vradini.gr/article/media" style="color:#00B2FF">Media</a></span>
-        <time datetime="2022-11-24T18:50:00.000Z" title="24/11/2022, 18:50">πριν 4 ώρες</time>
-        <h3>Νίκος Μουτσινάς: «Γίνεται τηλεοπτικό δικαστήριο, δικάζουν οι παρουσιαστές»</h3>
-        <a href="https://www.vradini.gr/article/media/681881-nikos-moytsinas-ginetai-thleoptiko-dikasthrio-dikazoyn-oi-paroysiastes" class="stretched-link" aria-label="Νίκος Μουτσινάς: «Γίνεται τηλεοπτικό δικαστήριο, δικάζουν οι παρουσιαστές»"></a>
+        <time datetime="2022-12-07T08:50:00.000Z" title="07/12/2022, 08:50">πριν 2 ώρες</time>
+        <h3>«Η Γη της Ελιάς»: Η Ειρήνη προσπαθεί να προσεγγίσει τον Φίλιππο</h3>
+        <a href="https://www.vradini.gr/article/media/683738-h-gh-ths-elias-h-eirhnh-prospathei-na-proseggisei-ton-filippo" class="stretched-link" aria-label="«Η Γη της Ελιάς»: Η Ειρήνη προσπαθεί να προσεγγίσει τον Φίλιππο"></a>
     </article>
         <article>
         <div class="cover">
-            <figure><img src="https://www.vradini.gr/style/images/nopic.jpg" data-src="https://www.vradini.gr/photos/c_300px_300px/articles/2022/11/sminias2.jpg" alt="Τροχαίο Λεωφόρος Μεσογείων: Έτρεχε να προλάβει το λεωφορείο ο αρχισμηνίας "  class="img-fluid lazyload"/></figure>                        
+            <figure><img src="https://www.vradini.gr/style/images/nopic.jpg" data-src="https://www.vradini.gr/photos/c_300px_300px/articles/2022/12/d3d0b5_5749564.jpg" alt="Κλειστή παραμένει η περιφερειακή Αιγάλεω λόγω αντικειμένων που έχουν πετάξει οι Ρομά"  class="img-fluid lazyload"/></figure>                        
         </div>
         <span class="category"><a href="https://www.vradini.gr/article/ellada" style="color:#3198ff">Ελλάδα</a></span>
-        <time datetime="2022-11-24T18:48:00.000Z" title="24/11/2022, 18:48">πριν 4 ώρες</time>
-        <h3>Τροχαίο Λεωφόρος Μεσογείων: Έτρεχε να προλάβει το λεωφορείο ο αρχισμηνίας </h3>
-        <a href="https://www.vradini.gr/article/ellada/681896-troxaio-l-mesogeiwn-etrexe-na-prolabei-to-lewforeio" class="stretched-link" aria-label="Τροχαίο Λεωφόρος Μεσογείων: Έτρεχε να προλάβει το λεωφορείο ο αρχισμηνίας "></a>
+        <time datetime="2022-12-07T08:49:00.000Z" title="07/12/2022, 08:49">πριν 2 ώρες</time>
+        <h3>Κλειστή παραμένει η περιφερειακή Αιγάλεω λόγω αντικειμένων που έχουν πετάξει οι Ρομά</h3>
+        <a href="https://www.vradini.gr/article/ellada/683775-kleisth-paramenei-h-perifereiakh-aigalew-logw-twn-epeisodiwn-roma" class="stretched-link" aria-label="Κλειστή παραμένει η περιφερειακή Αιγάλεω λόγω αντικειμένων που έχουν πετάξει οι Ρομά"></a>
     </article>
         <article>
         <div class="cover">
-            <figure><img src="https://www.vradini.gr/style/images/nopic.jpg" data-src="https://www.vradini.gr/photos/c_300px_300px/articles/2022/11/18986884.jpg" alt="Πέθανε η κόρη του πρώην προπονητή του Ολυμπιακού, Όσκαρ Γκαρθία"  class="img-fluid lazyload"/></figure>                        
+            <figure><img src="https://www.vradini.gr/style/images/nopic.jpg" data-src="https://www.vradini.gr/photos/c_300px_300px/articles/2022/12/1_epidoma_xristougenon_doro_1920.jpg" alt="Επιταγή ακρίβειας 250 ευρώ στις 20 Δεκεμβρίου – Οι δικαιούχοι"  class="img-fluid lazyload"/></figure>                        
         </div>
-        <span class="category"><a href="https://www.vradini.gr/article/spor" style="color:#00d46e">Σπορ</a></span>
-        <time datetime="2022-11-24T18:40:00.000Z" title="24/11/2022, 18:40">πριν 4 ώρες</time>
-        <h3>Πέθανε η κόρη του πρώην προπονητή του Ολυμπιακού, Όσκαρ Γκαρθία</h3>
-        <a href="https://www.vradini.gr/article/spor/681880-pethane-h-korh-toy-prwhn-proponhth-toy-olympiakoy-oskar-gkarthia" class="stretched-link" aria-label="Πέθανε η κόρη του πρώην προπονητή του Ολυμπιακού, Όσκαρ Γκαρθία"></a>
+        <span class="category"><a href="https://www.vradini.gr/article/oikonomia" style="color:#ff7f0f">Οικονομία</a></span>
+        <time datetime="2022-12-07T08:48:00.000Z" title="07/12/2022, 08:48">πριν 2 ώρες</time>
+        <h3>Επιταγή ακρίβειας: Ποιοί θα λάβουν 250 ευρώ στις 20 Δεκεμβρίου</h3>
+        <a href="https://www.vradini.gr/article/oikonomia/683764-epitagh-akribeias-250-eyrw-stis-20-dekembrioy-ndash-oi-dikaioyxoi" class="stretched-link" aria-label="Επιταγή ακρίβειας: Ποιοί θα λάβουν 250 ευρώ στις 20 Δεκεμβρίου"></a>
     </article>
         <article>
         <div class="cover">
-            <figure><img src="https://www.vradini.gr/style/images/nopic.jpg" data-src="https://www.vradini.gr/photos/c_300px_300px/articles/2022/11/kikilias___skai_24.11.2022__1_.jpg" alt="Κικίλιας: «Τα ταξιδιωτικά έσοδα θα υπερβούν τον στόχο του προϋπολογισμού κατά 3 δις»"  class="img-fluid lazyload"/></figure>                        
+            <figure><img src="https://www.vradini.gr/style/images/nopic.jpg" data-src="https://www.vradini.gr/photos/c_300px_300px/articles/2022/12/frank_sinatra_2fff.jpg" alt="Φρανκ Σινάτρα: Η ζωή του γίνεται μιούζικαλ στο Μπρόντγουεϊ"  class="img-fluid lazyload"/></figure>                        
         </div>
-        <span class="category"><a href="https://www.vradini.gr/article/toyrismos" style="color:#3dd0e3">Τουρισμός</a></span>
-        <time datetime="2022-11-24T18:35:00.000Z" title="24/11/2022, 18:35">πριν 4 ώρες</time>
-        <h3>Κικίλιας: «Τα ταξιδιωτικά έσοδα θα υπερβούν τον στόχο του προϋπολογισμού κατά 3 δις»</h3>
-        <a href="https://www.vradini.gr/article/toyrismos/681890-b-kikilias-ta-taksidiwtika-esoda-tha-yperbei-ton-stoxo-toy-proypologismoy-kata-3-dis-eyrw" class="stretched-link" aria-label="Κικίλιας: «Τα ταξιδιωτικά έσοδα θα υπερβούν τον στόχο του προϋπολογισμού κατά 3 δις»"></a>
+        <span class="category"><a href="https://www.vradini.gr/article/people-style" style="color:#4a61fb">People & Style</a></span>
+        <time datetime="2022-12-07T08:40:00.000Z" title="07/12/2022, 08:40">πριν 2 ώρες</time>
+        <h3>Φρανκ Σινάτρα: Η ζωή του γίνεται μιούζικαλ στο Μπρόντγουεϊ</h3>
+        <a href="https://www.vradini.gr/article/people-style/683690-frank-sinatra-h-zwh-toy-ginetai-mioyzikal-sto-mprontgoyei" class="stretched-link" aria-label="Φρανκ Σινάτρα: Η ζωή του γίνεται μιούζικαλ στο Μπρόντγουεϊ"></a>
     </article>
         <article>
         <div class="cover">
-            <figure><img src="https://www.vradini.gr/style/images/nopic.jpg" data-src="https://www.vradini.gr/photos/c_300px_300px/articles/2022/11/3_ki_3.jpg" alt="Κιβωτός του Κόσμου: Στο μικροσκόπιο της Οικονομικής αστυνομίας όλες οι δομές"  class="img-fluid lazyload"/></figure>                        
+            <figure><img src="https://www.vradini.gr/style/images/nopic.jpg" data-src="https://www.vradini.gr/photos/c_300px_300px/articles/2022/12/5748623.jpg" alt="Σέρρες: Τα εγκληματικά λάθη του εργολάβου και του ηλεκτρολόγου συντήρησης"  class="img-fluid lazyload"/></figure>                        
         </div>
         <span class="category"><a href="https://www.vradini.gr/article/ellada" style="color:#3198ff">Ελλάδα</a></span>
-        <time datetime="2022-11-24T18:34:00.000Z" title="24/11/2022, 18:34">πριν 5 ώρες</time>
-        <h3>Κιβωτός του Κόσμου: Στο μικροσκόπιο της Οικονομικής αστυνομίας όλες οι δομές</h3>
-        <a href="https://www.vradini.gr/article/ellada/681894-kibwtos-toy-kosmoy-sto-mikroskopio-ths-oikonomikhs-astynomias-oles-oi-domes" class="stretched-link" aria-label="Κιβωτός του Κόσμου: Στο μικροσκόπιο της Οικονομικής αστυνομίας όλες οι δομές"></a>
+        <time datetime="2022-12-07T08:37:00.000Z" title="07/12/2022, 08:37">πριν 2 ώρες</time>
+        <h3>Σέρρες: Τα εγκληματικά λάθη του εργολάβου και του ηλεκτρολόγου συντήρησης</h3>
+        <a href="https://www.vradini.gr/article/ellada/683770-serres-ta-egklhmatika-lathh-toy-ergolaboy-kai-toy-hlektrologoy-synthrhshs" class="stretched-link" aria-label="Σέρρες: Τα εγκληματικά λάθη του εργολάβου και του ηλεκτρολόγου συντήρησης"></a>
     </article>
         <article>
         <div class="cover">
-            <figure><img src="https://www.vradini.gr/style/images/nopic.jpg" data-src="https://www.vradini.gr/photos/c_300px_300px/articles/2022/11/merkel.jpg" alt="Μέρκελ: «Στο τέλος της θητείας μου δεν είχα πλέον ισχύ για να επιβληθώ στον Πούτιν»"  class="img-fluid lazyload"/></figure>                        
+            <figure><img src="https://www.vradini.gr/style/images/nopic.jpg" data-src="https://www.vradini.gr/photos/c_300px_300px/articles/2022/12/rsz_1cathreen_zeta_jodddddd.jpg" alt="Κάθριν Ζέτα Τζόουνς: Καμαρώνει με τον 22χρονο γιο της στο κόκκινο χαλί"  class="img-fluid lazyload"/></figure>                        
+        </div>
+        <span class="category"><a href="https://www.vradini.gr/article/social-life" style="color:#9a4cff">Social</a></span>
+        <time datetime="2022-12-07T08:30:00.000Z" title="07/12/2022, 08:30">πριν 2 ώρες</time>
+        <h3>Κάθριν Ζέτα Τζόουνς: Περπατά στο κόκκινο χαλί δίπλα στον 22χρονο γιο της</h3>
+        <a href="https://www.vradini.gr/article/social-life/683671-kathrin-zeta-tzooyns-perpata-sto-kokkino-xali-dipla-ston-22xrono-gio-ths" class="stretched-link" aria-label="Κάθριν Ζέτα Τζόουνς: Περπατά στο κόκκινο χαλί δίπλα στον 22χρονο γιο της"></a>
+    </article>
+        <article>
+        <div class="cover">
+            <figure><img src="https://www.vradini.gr/style/images/nopic.jpg" data-src="https://www.vradini.gr/photos/c_300px_300px/articles/2022/12/w07_64057w0760949w02103523w0493211920.jpg" alt="ΗΠΑ στην Τουρκία - Στοπ στις υπερπτήσεις σε εναέριους χώρους άλλων συμμαχικών χωρών"  class="img-fluid lazyload"/></figure>                        
         </div>
         <span class="category"><a href="https://www.vradini.gr/article/kosmos" style="color:#1bc576">Κόσμος</a></span>
-        <time datetime="2022-11-24T18:30:00.000Z" title="24/11/2022, 18:30">πριν 5 ώρες</time>
-        <h3>Μέρκελ: «Στο τέλος της θητείας μου δεν είχα πλέον ισχύ για να επιβληθώ στον Πούτιν»</h3>
-        <a href="https://www.vradini.gr/article/kosmos/681875-merkel-sto-telos-ths-thhteias-moy-den-eixa-pleon-isxy-gia-na-epiblhthw-ston-poytin" class="stretched-link" aria-label="Μέρκελ: «Στο τέλος της θητείας μου δεν είχα πλέον ισχύ για να επιβληθώ στον Πούτιν»"></a>
+        <time datetime="2022-12-07T08:28:00.000Z" title="07/12/2022, 08:28">πριν 2 ώρες</time>
+        <h3>ΗΠΑ στην Τουρκία - Στοπ στις υπερπτήσεις σε εναέριους χώρους άλλων συμμαχικών χωρών</h3>
+        <a href="https://www.vradini.gr/article/kosmos/683762-sthn-toyrkia-oi-natoikoi-symmaxoi-den-prepei-na-pragmatopoioyn-yperpthseis-se-enaerioys-xwroys-allwn-symmaxikwn-xwrwn" class="stretched-link" aria-label="ΗΠΑ στην Τουρκία - Στοπ στις υπερπτήσεις σε εναέριους χώρους άλλων συμμαχικών χωρών"></a>
     </article>
         <article>
         <div class="cover">
-            <figure><img src="https://www.vradini.gr/style/images/nopic.jpg" data-src="https://www.vradini.gr/photos/c_300px_300px/articles/2022/11/kivotos_tou_kosmou.jpg" alt="Κιβωτός του Κόσμου: Νέα αποκάλυψη σοκ - Ποιός άδειασε τη θυρίδα στην τράπεζα;"  class="img-fluid lazyload"/></figure>                        
+            <figure><img src="https://www.vradini.gr/style/images/nopic.jpg" data-src="https://www.vradini.gr/photos/c_300px_300px/articles/2022/12/rsz_ddddd.jpg" alt="Καλεσμένη η Κατερίνα Διδασκάλου στη «Μεγάλη εικόνα»"  class="img-fluid lazyload"/></figure>                        
         </div>
-        <span class="category"><a href="https://www.vradini.gr/article/ellada" style="color:#3198ff">Ελλάδα</a></span>
-        <time datetime="2022-11-24T18:20:00.000Z" title="24/11/2022, 18:20">πριν 5 ώρες</time>
-        <h3>Κιβωτός του Κόσμου: Νέα αποκάλυψη σοκ - Ποιός άδειασε τη θυρίδα στην τράπεζα;</h3>
-        <a href="https://www.vradini.gr/article/ellada/681891-kibwtos-toy-kosmoy-nea-apokalypsh-sok-poios-adeiase-th-thyrida" class="stretched-link" aria-label="Κιβωτός του Κόσμου: Νέα αποκάλυψη σοκ - Ποιός άδειασε τη θυρίδα στην τράπεζα;"></a>
+        <span class="category"><a href="https://www.vradini.gr/article/media" style="color:#00B2FF">Media</a></span>
+        <time datetime="2022-12-07T08:20:00.000Z" title="07/12/2022, 08:20">πριν 2 ώρες</time>
+        <h3>Καλεσμένη η Κατερίνα Διδασκάλου στη «Μεγάλη εικόνα»</h3>
+        <a href="https://www.vradini.gr/article/media/683736-kalesmenh-h-katerina-didaskaloy-sth-megalh-eikona" class="stretched-link" aria-label="Καλεσμένη η Κατερίνα Διδασκάλου στη «Μεγάλη εικόνα»"></a>
+    </article>
+        <article>
+        <div class="cover">
+            <figure><img src="https://www.vradini.gr/style/images/nopic.jpg" data-src="https://www.vradini.gr/photos/c_300px_300px/articles/2022/12/3_petrelaio.jpg" alt="Πλαφόν στο ρωσικό πετρέλαιο: Πέφτουν οι τιμές-Τα σενάρια για τις κινήσεις της Μόσχας"  class="img-fluid lazyload"/></figure>                        
+        </div>
+        <span class="category"><a href="https://www.vradini.gr/article/kosmos" style="color:#1bc576">Κόσμος</a></span>
+        <time datetime="2022-12-07T08:17:00.000Z" title="07/12/2022, 08:17">πριν 2 ώρες</time>
+        <h3>Πλαφόν στο ρωσικό πετρέλαιο: Πέφτουν οι τιμές-Τα σενάρια για τις κινήσεις της Μόσχας</h3>
+        <a href="https://www.vradini.gr/article/kosmos/683768-plafon-sto-rwsiko-petrelaio-peftoyn-oi-times-ta-senaria-gia-tis-kinhseis-ths-mosxas" class="stretched-link" aria-label="Πλαφόν στο ρωσικό πετρέλαιο: Πέφτουν οι τιμές-Τα σενάρια για τις κινήσεις της Μόσχας"></a>
+    </article>
+        <article>
+        <div class="cover">
+            <figure><img src="https://www.vradini.gr/style/images/nopic.jpg" data-src="https://www.vradini.gr/photos/c_300px_300px/articles/2022/12/a84476_111111.jpg" alt="Δούκισσα Νομικού: Οι γόβες  που ταιριάζουν με κάθε χριστουγεννιάτικο outfit"  class="img-fluid lazyload"/></figure>                        
+        </div>
+        <span class="category"><a href="https://www.vradini.gr/article/gynaika" style="color:#b91371">Γυναίκα</a></span>
+        <time datetime="2022-12-07T08:10:00.000Z" title="07/12/2022, 08:10">πριν 2 ώρες</time>
+        <h3>Δούκισσα Νομικού: Οι γόβες  που ταιριάζουν με κάθε χριστουγεννιάτικο outfit</h3>
+        <a href="https://www.vradini.gr/article/gynaika/683706-doykissa-nomikoy-oi-gobes-poy-tairiazoyn-me-kathe-xristoygenniatiko-outfit" class="stretched-link" aria-label="Δούκισσα Νομικού: Οι γόβες  που ταιριάζουν με κάθε χριστουγεννιάτικο outfit"></a>
+    </article>
+        <article>
+        <div class="cover">
+            <figure><img src="https://www.vradini.gr/style/images/nopic.jpg" data-src="https://www.vradini.gr/photos/c_300px_300px/articles/2022/12/5dckumjd2fmyvhfdmuyy5ylndi.jpg" alt=" Η Μελόνι είναι η έβδομη ισχυρότερη γυναίκα στον κόσμο, σύμφωνα με την λίστα Forbes"  class="img-fluid lazyload"/></figure>                        
+        </div>
+        <span class="category"><a href="https://www.vradini.gr/article/kosmos" style="color:#1bc576">Κόσμος</a></span>
+        <time datetime="2022-12-07T08:08:00.000Z" title="07/12/2022, 08:08">πριν 2 ώρες</time>
+        <h3> Η Μελόνι είναι η έβδομη ισχυρότερη γυναίκα στον κόσμο, σύμφωνα με την λίστα Forbes</h3>
+        <a href="https://www.vradini.gr/article/kosmos/683753-h-prwthypoyrgos-tzortzia-meloni-einai-h-ebdomh-isxyroterh-gynaika-ston-kosmo-symfwna-me-thn-fetinh-lista-toy-forbes" class="stretched-link" aria-label=" Η Μελόνι είναι η έβδομη ισχυρότερη γυναίκα στον κόσμο, σύμφωνα με την λίστα Forbes"></a>
+    </article>
+        <article>
+        <div class="cover">
+            <figure><img src="https://www.vradini.gr/style/images/nopic.jpg" data-src="https://www.vradini.gr/photos/c_300px_300px/articles/2022/12/kate_winslet_1dddddd.jpg" alt="Kate Winslet: «Μου έλεγαν ότι θα παίζω τους ρόλους του χοντρού κοριτσιού»"  class="img-fluid lazyload"/></figure>                        
+        </div>
+        <span class="category"><a href="https://www.vradini.gr/article/people-style" style="color:#4a61fb">People & Style</a></span>
+        <time datetime="2022-12-07T08:00:00.000Z" title="07/12/2022, 08:00">πριν 2 ώρες</time>
+        <h3>Kate Winslet: «Μου έλεγαν ότι θα παίζω τους ρόλους του χοντρού κοριτσιού»</h3>
+        <a href="https://www.vradini.gr/article/people-style/683668-kate-winslet-moy-elegan-oti-tha-paizw-toys-roloys-toy-xontroy-koritsioy" class="stretched-link" aria-label="Kate Winslet: «Μου έλεγαν ότι θα παίζω τους ρόλους του χοντρού κοριτσιού»"></a>
+    </article>
+        <article>
+        <div class="cover">
+            <figure><img src="https://www.vradini.gr/style/images/nopic.jpg" data-src="https://www.vradini.gr/photos/c_300px_300px/articles/2022/12/guterrez131020161920.jpg" alt="Η ανθρωπότητα έχει μετατραπεί σε «όπλο μαζικής εξάλειψης», καταγγέλλει ο Γκουτέρες"  class="img-fluid lazyload"/></figure>                        
+        </div>
+        <span class="category"><a href="https://www.vradini.gr/article/kosmos" style="color:#1bc576">Κόσμος</a></span>
+        <time datetime="2022-12-07T07:58:00.000Z" title="07/12/2022, 07:58">πριν 2 ώρες</time>
+        <h3>Η ανθρωπότητα έχει μετατραπεί σε «όπλο μαζικής εξάλειψης», καταγγέλλει ο Γκουτέρες</h3>
+        <a href="https://www.vradini.gr/article/kosmos/683752-h-anthrwpothta-exei-metatrapei-se-oplo-mazikhs-eksaleipshs-kataggellei-o-gg-toy-ohe-antonio-gkoyteres" class="stretched-link" aria-label="Η ανθρωπότητα έχει μετατραπεί σε «όπλο μαζικής εξάλειψης», καταγγέλλει ο Γκουτέρες"></a>
+    </article>
+        <article>
+        <div class="cover">
+            <figure><img src="https://www.vradini.gr/style/images/nopic.jpg" data-src="https://www.vradini.gr/photos/c_300px_300px/articles/2022/12/man_4165.jpg" alt="Ο Κώστας Τζίμας, ο Θανάσης Βασιλόπουλος και η Μαρίνα Σάττι στο «Μουσικό κουτί»"  class="img-fluid lazyload"/></figure>                        
+        </div>
+        <span class="category"><a href="https://www.vradini.gr/article/media" style="color:#00B2FF">Media</a></span>
+        <time datetime="2022-12-07T07:50:00.000Z" title="07/12/2022, 07:50">πριν 3 ώρες</time>
+        <h3>Ο Κώστας Τζίμας, ο Θανάσης Βασιλόπουλος και η Μαρίνα Σάττι στο «Μουσικό κουτί»</h3>
+        <a href="https://www.vradini.gr/article/media/683731-o-kwstas-tzimas-o-thanashs-basilopoylos-kai-h-marina-satti-sto-moysiko-koyti" class="stretched-link" aria-label="Ο Κώστας Τζίμας, ο Θανάσης Βασιλόπουλος και η Μαρίνα Σάττι στο «Μουσικό κουτί»"></a>
     </article>
             </div><!-- /#timeline -->
         
@@ -1259,6 +1256,6 @@ $(function(){
 
 	<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-6360ccaa6cfc6b6b"></script>
 
-<!-- script execution: 0.78227 seconds -->	</body>
+<!-- script execution: 0.75093 seconds -->	</body>
 	</html>
 	
