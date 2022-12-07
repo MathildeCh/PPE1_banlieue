@@ -46,26 +46,14 @@ do
         occurences_mot=$NONE
         contexte=$NONE
         compteur=$(($compteur+1))
-        codeHTTP=$(curl -b --cookie -A "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:107.0) Gecko/20100101 Firefox/107.0"  -L -w '%{http_code}\n' -o $dirURLs/../ASPIRATIONS/ciao$compteur$fichier.html $line)
-        encodage=$(curl -Is -L -w '%{content_type}\n' $dirURLs/../ASPIRATIONS/ciao$compteur$fichier.html | grep -i -P -o "charset=\S+" | cut -d= -f2 | head -n1)
-        xmllint --html --xmlout $dirURLs/../ASPIRATIONS/ciao$compteur$fichier.html > ciao.xhtml
+        codeHTTP=$(curl -b --cookie -A "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:107.0) Gecko/20100101 Firefox/107.0"  -L -w '%{http_code}\n' -o ./ASPIRATIONS/ciao$compteur$fichier.html $line)
+        encodage=$(curl -Is -L -w '%{content_type}\n' ./ASPIRATIONS/ciao$compteur$fichier.html | grep -i -P -o "charset=\S+" | cut -d= -f2 | head -n1)
+        xmllint --html --xmlout ./ASPIRATIONS/ciao$compteur$fichier.html > ciao.xhtml
             header=$(grep -m 1 "<title>" ciao.xhtml | cut -d\> -f2 | cut -d\< -f1)
             if [ $header=="" ]
             then
                 header=$(xmlstarlet select -T --template  --value-of /html/head/title --nl ciao.xhtml)
             fi
-
-
-
-        codeHTTP=$(curl -b --cookie -A "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:107.0) Gecko/20100101 Firefox/107.0"  -L -w '%{http_code}\n' -o $dirURLs/../ASPIRATIONS/ciao$compteur$fichier.html $line)
-        encodage=$(curl -Is -L -w '%{content_type}\n' $dirURLs/../ASPIRATIONS/ciao$compteur$fichier.html | grep -i -P -o "charset=\S+" | cut -d= -f2 | head -n1)
-        xmllint --html --xmlout $dirURLs/../ASPIRATIONS/ciao$compteur$fichier.html > ciao.xhtml
-            header=$(grep -m 1 "<title>" ciao.xhtml | cut -d\> -f2 | cut -d\< -f1)
-            if [ $header=="" ]
-            then
-                header=$(xmlstarlet select -T --template  --value-of /html/head/title --nl ciao.xhtml)
-            fi
-
 
 
         # Ici on teste si l'encodage est bien en utf-8. Si aucun encodage est relevé on suppose utf-8.
@@ -83,12 +71,8 @@ do
                 unset occurences_mot
                 lynx -dump -nolist ./ASPIRATIONS/ciao$compteur$fichier.html > ./DUMPS-TEXT/ciao$compteur$fichier.txt
                 occurences_mot=$(egrep -o -c "\b(suburbs?|periferi(a|e)|banlieues?|προ(ά|α)στ.+)\b" ./DUMPS-TEXT/ciao$compteur$fichier.txt)
-                lynx -dump -nolist $line | egrep -B 1 -A 1  "\b(suburbs?|periferi(a|e)|banlieues?|προ(ά|α)στ.+)\b" > ./CONTEXTES/contexte_$compteur$fichier.txt                
-                occurences_mot=$(lynx -dump -nolist $dirURLs/../ASPIRATIONS/ciao$compteur$fichier.html | egrep -o -c "\b(suburbs?|periferi(a|e)|banlieues?|προ(ά|α)στ.+)\b")
-                lynx -dump -nolist $dirURLs/../ASPIRATIONS/ciao$compteur$fichier.html > ./DUMPS-TEXT/ciao$compteur$fichier.txt
-                contexte=$(lynx -dump -nolist $dirURLs/../ASPIRATIONS/ciao$compteur$fichier.html)
-                # ICI NE MARCHE PAS. DANS LES TABLEAUX NE S'AFFICHE PAS BIEN
-                contexte=$(egrep -B 1 -A 1  "\b(suburbs?|periferi(a|e)|banlieues?|προ(ά|α)στ.+)\b" ./DUMPS-TEXT/ciao$compteur$fichier.txt)            fi
+                egrep -B 1 -A 1  "\b(suburbs?|periferi(a|e)|banlieues?|προ(ά|α)στ.+)\b" ./DUMPS-TEXT/ciao$compteur$fichier.txt > ./CONTEXTES/contexte_$compteur$fichier.txt  
+                fi         
         fi
 
         ##pour chaque urls
@@ -103,9 +87,8 @@ do
             <td><a href="../DUMPS-TEXT/ciao$compteur$fichier.txt">text</a></td>
             <td>$occurences_mot</td>
             <td><a href="../CONTEXTES/contexte_$compteur$fichier.txt">contexte</a></td>
-            <td><a href="../CONTEXTES/">contexte</a></td>
         </tr>" >> ./TABLEAUX/tableau_$fichier.html;
-    done < $dirURLs/$fichier;
+    done < ./URLS/$fichier;
 
     echo "
             </table>
