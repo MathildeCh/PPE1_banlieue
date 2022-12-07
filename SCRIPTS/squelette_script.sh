@@ -69,10 +69,10 @@ do
             if [[ $encodage == "UTF-8" || "uft-8" ]]
                 then
                 unset occurences_mot
-                lynx -dump -nolist ./ASPIRATIONS/ciao$compteur$fichier.html > ./DUMPS-TEXT/ciao$compteur$fichier.txt
-                occurences_mot=$(egrep -o -c "\b(suburbs?|periferi(a|e)|banlieues?|προ(ά|α)στ.+)\b" ./DUMPS-TEXT/ciao$compteur$fichier.txt)
-                egrep -B 1 -A 1  "\b(suburbs?|periferi(a|e)|banlieues?|προ(ά|α)στ.+)\b" ./DUMPS-TEXT/ciao$compteur$fichier.txt > ./CONTEXTES/contexte_$compteur$fichier.txt  
-                fi         
+                lynx -dump -nolist ./ASPIRATIONS/$fichier$compteur.html > ./DUMPS-TEXT/$fichier$compteur
+                occurences_mot=$(egrep -o -c "\b(suburbs?|periferi(a|e)|banlieues?|προ(ά|α)στ.+)\b" ./DUMPS-TEXT/$fichier$compteur)
+                egrep -B 1 -A 1  "\b(suburbs?|periferi(a|e)|banlieues?|προ(ά|α)στ.+)\b" ./DUMPS-TEXT/$fichier$compteur > ./CONTEXTES/contexte_$fichier$compteur
+                fi
         fi
 
         ##pour chaque urls
