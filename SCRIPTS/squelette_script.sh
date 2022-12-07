@@ -46,9 +46,9 @@ do
         occurences_mot=$NONE
         contexte=$NONE
         compteur=$(($compteur+1))
-        codeHTTP=$(curl -b --cookie -A "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:107.0) Gecko/20100101 Firefox/107.0"  -L -w '%{http_code}\n' -o ./ASPIRATIONS/ciao$compteur$fichier.html $line)
-        encodage=$(curl -Is -L -w '%{content_type}\n' ./ASPIRATIONS/ciao$compteur$fichier.html | grep -i -P -o "charset=\S+" | cut -d= -f2 | head -n1)
-        xmllint --html --xmlout ./ASPIRATIONS/ciao$compteur$fichier.html > ciao.xhtml
+        codeHTTP=$(curl -b --cookie -A "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:107.0) Gecko/20100101 Firefox/107.0"  -L -w '%{http_code}\n' -o ./ASPIRATIONS/$fichier$compteur.html $line)
+        encodage=$(curl -Is -L -w '%{content_type}\n' ./ASPIRATIONS/$fichier$compteur.html | grep -i -P -o "charset=\S+" | cut -d= -f2 | head -n1)
+        xmllint --html --xmlout ./ASPIRATIONS/$fichier$compteur.html > ciao.xhtml
             header=$(grep -m 1 "<title>" ciao.xhtml | cut -d\> -f2 | cut -d\< -f1)
             if [ $header=="" ]
             then
@@ -69,9 +69,9 @@ do
             if [[ $encodage == "UTF-8" || "uft-8" ]]
                 then
                 unset occurences_mot
-                lynx -dump -nolist ./ASPIRATIONS/$fichier$compteur.html > ./DUMPS-TEXT/$fichier$compteur
-                occurences_mot=$(egrep -o -c "\b(suburbs?|periferi(a|e)|banlieues?|προ(ά|α)στ.+)\b" ./DUMPS-TEXT/$fichier$compteur)
-                egrep -B 1 -A 1  "\b(suburbs?|periferi(a|e)|banlieues?|προ(ά|α)στ.+)\b" ./DUMPS-TEXT/$fichier$compteur > ./CONTEXTES/contexte_$fichier$compteur
+                lynx -dump -nolist ./ASPIRATIONS/$fichier$compteur.html > ./DUMPS-TEXT/$compteur$fichier
+                occurences_mot=$(egrep -o -c "\b(suburbs?|periferi(a|e)|banlieues?|προ(ά|α)στ.+)\b" ./DUMPS-TEXT/$compteur$fichier)
+                egrep -B 1 -A 1  "\b(suburbs?|periferi(a|e)|banlieues?|προ(ά|α)στ.+)\b" ./DUMPS-TEXT/$compteur$fichier > ./CONTEXTES/$compteur$fichier
                 fi
         fi
 
@@ -83,10 +83,10 @@ do
             <td>$header</td>
             <td><a href="$line">$line</a></td>
             <td>$encodage</td>
-            <td><a href="../ASPIRATIONS/ciao$compteur$fichier.html">html</a></td>
-            <td><a href="../DUMPS-TEXT/ciao$compteur$fichier.txt">text</a></td>
+            <td><a href="../ASPIRATIONS/$fichier$compteur.html"compteur>html</a></td>
+            <td><a href="../DUMPS-TEXT/$compteur$fichier">text</a></td>
             <td>$occurences_mot</td>
-            <td><a href="../CONTEXTES/contexte_$compteur$fichier.txt">contexte</a></td>
+            <td><a href="../CONTEXTES/$compteur$fichier">contexte</a></td>
         </tr>" >> ./TABLEAUX/tableau_$fichier.html;
     done < ./URLS/$fichier;
 
