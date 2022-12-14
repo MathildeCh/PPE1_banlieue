@@ -16,7 +16,7 @@ for filepath in $(ls $folder/*$basename.txt)
 do
     #filepath == DUMPS-TEXT/fr-1.txt
     #==> pagename = url_frc-1
-    pagename=$($basename -s .txt $filepath)
+    pagename=$(basename -s .txt $filepath)
 
     echo "<page!\"$pagename\">" >> "ITRAMEUR/$folder-$basename.txt"
     # POINT IMP : "./" n'est pas obligatoire.
@@ -33,6 +33,6 @@ do
     echo "$content" >> "ITRAMEUR/$folder-$basename.txt"
 
     echo "</text>" >> "ITRAMEUR/$folder-$basename.txt"
-    echo "</page>" >> "ITRAMEUR/$folder-$basename.txt"
+    echo "</page> §" >> "ITRAMEUR/$folder-$basename.txt"
 
 done
