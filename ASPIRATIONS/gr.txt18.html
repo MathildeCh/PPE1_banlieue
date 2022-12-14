@@ -1,0 +1,1504 @@
+<!doctype html>
+<html lang="el">
+<head><meta charset="UTF-8"><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>class RocketLazyLoadScripts{constructor(){this.triggerEvents=["keydown","mousedown","mousemove","touchmove","touchstart","touchend","wheel"],this.userEventHandler=this._triggerListener.bind(this),this.touchStartHandler=this._onTouchStart.bind(this),this.touchMoveHandler=this._onTouchMove.bind(this),this.touchEndHandler=this._onTouchEnd.bind(this),this.clickHandler=this._onClick.bind(this),this.interceptedClicks=[],window.addEventListener("pageshow",(e=>{this.persisted=e.persisted})),window.addEventListener("DOMContentLoaded",(()=>{this._preconnect3rdParties()})),this.delayedScripts={normal:[],async:[],defer:[]},this.allJQueries=[]}_addUserInteractionListener(e){document.hidden?e._triggerListener():(this.triggerEvents.forEach((t=>window.addEventListener(t,e.userEventHandler,{passive:!0}))),window.addEventListener("touchstart",e.touchStartHandler,{passive:!0}),window.addEventListener("mousedown",e.touchStartHandler),document.addEventListener("visibilitychange",e.userEventHandler))}_removeUserInteractionListener(){this.triggerEvents.forEach((e=>window.removeEventListener(e,this.userEventHandler,{passive:!0}))),document.removeEventListener("visibilitychange",this.userEventHandler)}_onTouchStart(e){"HTML"!==e.target.tagName&&(window.addEventListener("touchend",this.touchEndHandler),window.addEventListener("mouseup",this.touchEndHandler),window.addEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.addEventListener("mousemove",this.touchMoveHandler),e.target.addEventListener("click",this.clickHandler),this._renameDOMAttribute(e.target,"onclick","rocket-onclick"))}_onTouchMove(e){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler),e.target.removeEventListener("click",this.clickHandler),this._renameDOMAttribute(e.target,"rocket-onclick","onclick")}_onTouchEnd(e){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler)}_onClick(e){e.target.removeEventListener("click",this.clickHandler),this._renameDOMAttribute(e.target,"rocket-onclick","onclick"),this.interceptedClicks.push(e),e.preventDefault(),e.stopPropagation(),e.stopImmediatePropagation()}_replayClicks(){window.removeEventListener("touchstart",this.touchStartHandler,{passive:!0}),window.removeEventListener("mousedown",this.touchStartHandler),this.interceptedClicks.forEach((e=>{e.target.dispatchEvent(new MouseEvent("click",{view:e.view,bubbles:!0,cancelable:!0}))}))}_renameDOMAttribute(e,t,n){e.hasAttribute&&e.hasAttribute(t)&&(event.target.setAttribute(n,event.target.getAttribute(t)),event.target.removeAttribute(t))}_triggerListener(){this._removeUserInteractionListener(this),"loading"===document.readyState?document.addEventListener("DOMContentLoaded",this._loadEverythingNow.bind(this)):this._loadEverythingNow()}_preconnect3rdParties(){let e=[];document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((t=>{if(t.hasAttribute("src")){const n=new URL(t.src).origin;n!==location.origin&&e.push({src:n,crossOrigin:t.crossOrigin||"module"===t.getAttribute("data-rocket-type")})}})),e=[...new Map(e.map((e=>[JSON.stringify(e),e]))).values()],this._batchInjectResourceHints(e,"preconnect")}async _loadEverythingNow(){this.lastBreath=Date.now(),this._delayEventListeners(),this._delayJQueryReady(this),this._handleDocumentWrite(),this._registerAllDelayedScripts(),this._preloadAllScripts(),await this._loadScriptsFromList(this.delayedScripts.normal),await this._loadScriptsFromList(this.delayedScripts.defer),await this._loadScriptsFromList(this.delayedScripts.async);try{await this._triggerDOMContentLoaded(),await this._triggerWindowLoad()}catch(e){}window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this._replayClicks()}_registerAllDelayedScripts(){document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((e=>{e.hasAttribute("src")?e.hasAttribute("async")&&!1!==e.async?this.delayedScripts.async.push(e):e.hasAttribute("defer")&&!1!==e.defer||"module"===e.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(e):this.delayedScripts.normal.push(e):this.delayedScripts.normal.push(e)}))}async _transformScript(e){return await this._littleBreath(),new Promise((t=>{const n=document.createElement("script");[...e.attributes].forEach((e=>{let t=e.nodeName;"type"!==t&&("data-rocket-type"===t&&(t="type"),n.setAttribute(t,e.nodeValue))})),e.hasAttribute("src")?(n.addEventListener("load",t),n.addEventListener("error",t)):(n.text=e.text,t());try{e.parentNode.replaceChild(n,e)}catch(e){t()}}))}async _loadScriptsFromList(e){const t=e.shift();return t?(await this._transformScript(t),this._loadScriptsFromList(e)):Promise.resolve()}_preloadAllScripts(){this._batchInjectResourceHints([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}_batchInjectResourceHints(e,t){var n=document.createDocumentFragment();e.forEach((e=>{if(e.src){const i=document.createElement("link");i.href=e.src,i.rel=t,"preconnect"!==t&&(i.as="script"),e.getAttribute&&"module"===e.getAttribute("data-rocket-type")&&(i.crossOrigin=!0),e.crossOrigin&&(i.crossOrigin=e.crossOrigin),n.appendChild(i)}})),document.head.appendChild(n)}_delayEventListeners(){let e={};function t(t,n){!function(t){function n(n){return e[t].eventsToRewrite.indexOf(n)>=0?"rocket-"+n:n}e[t]||(e[t]={originalFunctions:{add:t.addEventListener,remove:t.removeEventListener},eventsToRewrite:[]},t.addEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.add.apply(t,arguments)},t.removeEventListener=function(){arguments[0]=n(arguments[0]),e[t].originalFunctions.remove.apply(t,arguments)})}(t),e[t].eventsToRewrite.push(n)}function n(e,t){let n=e[t];Object.defineProperty(e,t,{get:()=>n||function(){},set(i){e["rocket"+t]=n=i}})}t(document,"DOMContentLoaded"),t(window,"DOMContentLoaded"),t(window,"load"),t(window,"pageshow"),t(document,"readystatechange"),n(document,"onreadystatechange"),n(window,"onload"),n(window,"onpageshow")}_delayJQueryReady(e){let t=window.jQuery;Object.defineProperty(window,"jQuery",{get:()=>t,set(n){if(n&&n.fn&&!e.allJQueries.includes(n)){n.fn.ready=n.fn.init.prototype.ready=function(t){e.domReadyFired?t.bind(document)(n):document.addEventListener("rocket-DOMContentLoaded",(()=>t.bind(document)(n)))};const t=n.fn.on;n.fn.on=n.fn.init.prototype.on=function(){if(this[0]===window){function e(e){return e.split(" ").map((e=>"load"===e||0===e.indexOf("load.")?"rocket-jquery-load":e)).join(" ")}"string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=e(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach((t=>{delete Object.assign(arguments[0],{[e(t)]:arguments[0][t]})[t]}))}return t.apply(this,arguments),this},e.allJQueries.push(n)}t=n}})}async _triggerDOMContentLoaded(){this.domReadyFired=!0,await this._littleBreath(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._littleBreath(),window.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this._littleBreath(),document.dispatchEvent(new Event("rocket-readystatechange")),await this._littleBreath(),document.rocketonreadystatechange&&document.rocketonreadystatechange()}async _triggerWindowLoad(){await this._littleBreath(),window.dispatchEvent(new Event("rocket-load")),await this._littleBreath(),window.rocketonload&&window.rocketonload(),await this._littleBreath(),this.allJQueries.forEach((e=>e(window).trigger("rocket-jquery-load"))),await this._littleBreath();const e=new Event("rocket-pageshow");e.persisted=this.persisted,window.dispatchEvent(e),await this._littleBreath(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted})}_handleDocumentWrite(){const e=new Map;document.write=document.writeln=function(t){const n=document.currentScript,i=document.createRange(),r=n.parentElement;let o=e.get(n);void 0===o&&(o=n.nextSibling,e.set(n,o));const s=document.createDocumentFragment();i.setStart(s,0),s.appendChild(i.createContextualFragment(t)),r.insertBefore(s,o)}}async _littleBreath(){Date.now()-this.lastBreath>45&&(await this._requestAnimFrame(),this.lastBreath=Date.now())}async _requestAnimFrame(){return document.hidden?new Promise((e=>setTimeout(e))):new Promise((e=>requestAnimationFrame(e)))}static run(){const e=new RocketLazyLoadScripts;e._addUserInteractionListener(e)}}RocketLazyLoadScripts.run();</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="profile" href="https://gmpg.org/xfn/11">
+<link rel="stylesheet" href="https://use.typekit.net/bqv7bcn.css">
+<meta name='robots' content='index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1' />
+
+<title>Ξένια Σαμπτσάκ: Ποια είναι η δημοσιογράφος «βαφτιστήρα» του Πούτιν που έφυγε...νύχτα από τη Ρωσία για να μη συλληφθεί</title>
+<meta name="description" content="Η δημοσιογράφος Ξένια Σαμπτσάκ έφυγε από την Ρωσία, γράφει η εφημερίδα Novaya Gazeta επικαλούμενη τα ρωσικά ειδησεογραφικά πρακτορεία TASS και Ria Novosti." />
+<link rel="canonical" href="https://eleftherostypos.gr/diethni/xenia-sabtsak-poia-einai-i-dimosiografos-vaftistira-tou-poutin-pou-efyge-nychta-apo-ti-rosia-gia-na-mi-syllifthei" />
+<meta property="og:locale" content="el_GR" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Ξένια Σαμπτσάκ: Ποια είναι η δημοσιογράφος «βαφτιστήρα» του Πούτιν που έφυγε...νύχτα από τη Ρωσία για να μη συλληφθεί" />
+<meta property="og:description" content="Η δημοσιογράφος Ξένια Σαμπτσάκ έφυγε από την Ρωσία, γράφει η εφημερίδα Novaya Gazeta επικαλούμενη τα ρωσικά ειδησεογραφικά πρακτορεία TASS και Ria Novosti." />
+<meta property="og:url" content="https://eleftherostypos.gr/diethni/xenia-sabtsak-poia-einai-i-dimosiografos-vaftistira-tou-poutin-pou-efyge-nychta-apo-ti-rosia-gia-na-mi-syllifthei" />
+<meta property="og:site_name" content="Ελεύθερος Τύπος" />
+<meta property="article:publisher" content="https://www.facebook.com/EleftherosTypos/" />
+<meta property="article:published_time" content="2022-10-27T11:54:40+00:00" />
+<meta property="article:modified_time" content="2022-10-27T11:57:57+00:00" />
+<meta property="og:image" content="https://eleftherostypos.gr/wp-content/uploads/2022/10/ksenia-sobchakk-scaled.jpg" />
+<meta property="og:image:width" content="2560" />
+<meta property="og:image:height" content="1681" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta name="author" content="Newsroom" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:creator" content="@etyposgr" />
+<meta name="twitter:site" content="@etyposgr" />
+<meta name="twitter:label1" content="Συντάχθηκε από" />
+<meta name="twitter:data1" content="Newsroom" />
+<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"Article","@id":"https://eleftherostypos.gr/diethni/xenia-sabtsak-poia-einai-i-dimosiografos-vaftistira-tou-poutin-pou-efyge-nychta-apo-ti-rosia-gia-na-mi-syllifthei#article","isPartOf":{"@id":"https://eleftherostypos.gr/diethni/xenia-sabtsak-poia-einai-i-dimosiografos-vaftistira-tou-poutin-pou-efyge-nychta-apo-ti-rosia-gia-na-mi-syllifthei"},"author":{"name":"Newsroom","@id":"https://eleftherostypos.gr/#/schema/person/ea9a8f3a328aed0ba63546f9a92232b1"},"headline":"Ξένια Σαμπτσάκ: Ποια είναι η δημοσιογράφος «βαφτιστήρα» του Πούτιν που έφυγε&#8230;νύχτα από τη Ρωσία για να μη συλληφθεί","datePublished":"2022-10-27T11:54:40+00:00","dateModified":"2022-10-27T11:57:57+00:00","mainEntityOfPage":{"@id":"https://eleftherostypos.gr/diethni/xenia-sabtsak-poia-einai-i-dimosiografos-vaftistira-tou-poutin-pou-efyge-nychta-apo-ti-rosia-gia-na-mi-syllifthei"},"wordCount":11,"commentCount":0,"publisher":{"@id":"https://eleftherostypos.gr/#organization"},"image":{"@id":"https://eleftherostypos.gr/diethni/xenia-sabtsak-poia-einai-i-dimosiografos-vaftistira-tou-poutin-pou-efyge-nychta-apo-ti-rosia-gia-na-mi-syllifthei#primaryimage"},"thumbnailUrl":"https://eleftherostypos.gr/wp-content/uploads/2022/10/ksenia-sobchakk-scaled.jpg","keywords":["Βλαντιμίρ Πούτιν","δημοσιογράφος","Ξένια Σαμπτσάκ","Ρωσία"],"articleSection":["Διεθνή"],"inLanguage":"el","potentialAction":[{"@type":"CommentAction","name":"Comment","target":["https://eleftherostypos.gr/diethni/xenia-sabtsak-poia-einai-i-dimosiografos-vaftistira-tou-poutin-pou-efyge-nychta-apo-ti-rosia-gia-na-mi-syllifthei#respond"]}]},{"@type":"NewsArticle","@id":"https://eleftherostypos.gr/diethni/xenia-sabtsak-poia-einai-i-dimosiografos-vaftistira-tou-poutin-pou-efyge-nychta-apo-ti-rosia-gia-na-mi-syllifthei","url":"https://eleftherostypos.gr/diethni/xenia-sabtsak-poia-einai-i-dimosiografos-vaftistira-tou-poutin-pou-efyge-nychta-apo-ti-rosia-gia-na-mi-syllifthei","name":"Ξένια Σαμπτσάκ: Ποια είναι η δημοσιογράφος «βαφτιστήρα» του Πούτιν που έφυγε...νύχτα από τη Ρωσία για να μη συλληφθεί","isPartOf":{"@id":"https://eleftherostypos.gr/#website"},"primaryImageOfPage":{"@id":"https://eleftherostypos.gr/diethni/xenia-sabtsak-poia-einai-i-dimosiografos-vaftistira-tou-poutin-pou-efyge-nychta-apo-ti-rosia-gia-na-mi-syllifthei#primaryimage"},"image":{"@id":"https://eleftherostypos.gr/diethni/xenia-sabtsak-poia-einai-i-dimosiografos-vaftistira-tou-poutin-pou-efyge-nychta-apo-ti-rosia-gia-na-mi-syllifthei#primaryimage"},"thumbnailUrl":"https://eleftherostypos.gr/wp-content/uploads/2022/10/ksenia-sobchakk-scaled.jpg","datePublished":"2022-10-27T11:54:40+00:00","dateModified":"2022-10-27T11:57:57+00:00","description":"Η δημοσιογράφος Ξένια Σαμπτσάκ έφυγε από την Ρωσία, γράφει η εφημερίδα Novaya Gazeta επικαλούμενη τα ρωσικά ειδησεογραφικά πρακτορεία TASS και Ria Novosti.","breadcrumb":{"@id":"https://eleftherostypos.gr/diethni/xenia-sabtsak-poia-einai-i-dimosiografos-vaftistira-tou-poutin-pou-efyge-nychta-apo-ti-rosia-gia-na-mi-syllifthei#breadcrumb"},"inLanguage":"el","potentialAction":[{"@type":"ReadAction","target":["https://eleftherostypos.gr/diethni/xenia-sabtsak-poia-einai-i-dimosiografos-vaftistira-tou-poutin-pou-efyge-nychta-apo-ti-rosia-gia-na-mi-syllifthei"]}],"mainEntityOfPage":{"@type":"WebPage"},"headline":"Ξένια Σαμπτσάκ: Ποια είναι η δημοσιογράφος «βαφτιστήρα» του Πούτιν που έφυγε&#8230;νύχτα από τη Ρωσία για να μη συλληφθεί","author":{"@type":"Person","name":"Newsroom eleftherostypos.gr","url":"https://eleftherostypos.gr/dimosiografous/newsroom-eleftherostypos-gr"}},{"@type":"ImageObject","inLanguage":"el","@id":"https://eleftherostypos.gr/diethni/xenia-sabtsak-poia-einai-i-dimosiografos-vaftistira-tou-poutin-pou-efyge-nychta-apo-ti-rosia-gia-na-mi-syllifthei#primaryimage","url":"https://eleftherostypos.gr/wp-content/uploads/2022/10/ksenia-sobchakk-scaled.jpg","contentUrl":"https://eleftherostypos.gr/wp-content/uploads/2022/10/ksenia-sobchakk-scaled.jpg","width":2560,"height":1681,"caption":"FILE PHOTO: TV anchor and journalist Ksenia Sobchak attends a session of the St. Petersburg International Economic Forum (SPIEF) in Saint Petersburg, Russia, June 3, 2021. REUTERS/Evgenia Novozhenina/File Photo"},{"@type":"BreadcrumbList","@id":"https://eleftherostypos.gr/diethni/xenia-sabtsak-poia-einai-i-dimosiografos-vaftistira-tou-poutin-pou-efyge-nychta-apo-ti-rosia-gia-na-mi-syllifthei#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Αρχική","item":"https://eleftherostypos.gr/"},{"@type":"ListItem","position":2,"name":"Ξένια Σαμπτσάκ: Ποια είναι η δημοσιογράφος «βαφτιστήρα» του Πούτιν που έφυγε&#8230;νύχτα από τη Ρωσία για να μη συλληφθεί"}]},{"@type":"WebSite","@id":"https://eleftherostypos.gr/#website","url":"https://eleftherostypos.gr/","name":"Ελεύθερος Τύπος","description":"","publisher":{"@id":"https://eleftherostypos.gr/#organization"},"potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://eleftherostypos.gr/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"el"},{"@type":"Organization","@id":"https://eleftherostypos.gr/#organization","name":"Ελεύθερος Τύπος","url":"https://eleftherostypos.gr/","logo":{"@type":"ImageObject","inLanguage":"el","@id":"https://eleftherostypos.gr/#/schema/logo/image/","url":"https://eleftherostypos.gr/wp-content/uploads/2021/12/cropped-favicon-etypos.png","contentUrl":"https://eleftherostypos.gr/wp-content/uploads/2021/12/cropped-favicon-etypos.png","width":512,"height":512,"caption":"Ελεύθερος Τύπος"},"image":{"@id":"https://eleftherostypos.gr/#/schema/logo/image/"},"sameAs":["https://www.youtube.com/user/eleutherostypos","https://www.facebook.com/EleftherosTypos/","https://twitter.com/etyposgr"]},{"@type":"Person","@id":"https://eleftherostypos.gr/#/schema/person/ea9a8f3a328aed0ba63546f9a92232b1","name":"Newsroom","image":{"@type":"ImageObject","inLanguage":"el","@id":"https://eleftherostypos.gr/#/schema/person/image/","url":"https://secure.gravatar.com/avatar/16ed1b600d407406f9c6744bed162e50?s=96&d=mm&r=g","contentUrl":"https://secure.gravatar.com/avatar/16ed1b600d407406f9c6744bed162e50?s=96&d=mm&r=g","caption":"Newsroom"},"url":"https://eleftherostypos.gr/author/marina-benekou"}]}</script>
+
+<link rel="amphtml" href="https://eleftherostypos.gr/diethni/xenia-sabtsak-poia-einai-i-dimosiografos-vaftistira-tou-poutin-pou-efyge-nychta-apo-ti-rosia-gia-na-mi-syllifthei/amp" /><meta name="generator" content="AMP for WP 1.0.77.46" /><link rel='dns-prefetch' href='//cdn.jsdelivr.net' />
+<link rel='dns-prefetch' href='//www.googletagmanager.com' />
+<link rel="alternate" type="application/rss+xml" title="Ροή RSS &raquo; Ελεύθερος Τύπος" href="https://eleftherostypos.gr/feed" />
+<link rel="alternate" type="application/rss+xml" title="Ροή Σχολίων &raquo; Ελεύθερος Τύπος" href="https://eleftherostypos.gr/comments/feed" />
+<link rel="alternate" type="application/rss+xml" title="Ροή Σχολίων Ελεύθερος Τύπος &raquo; Ξένια Σαμπτσάκ: Ποια είναι η δημοσιογράφος «βαφτιστήρα» του Πούτιν που έφυγε&#8230;νύχτα από τη Ρωσία για να μη συλληφθεί" href="https://eleftherostypos.gr/diethni/xenia-sabtsak-poia-einai-i-dimosiografos-vaftistira-tou-poutin-pou-efyge-nychta-apo-ti-rosia-gia-na-mi-syllifthei/feed" />
+<link rel="alternate" type="application/rss+xml" title="Ελεύθερος Τύπος &raquo; Stories Feed" href="https://eleftherostypos.gr/web-stories/feed/"><style>
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='wp-block-library-css' href='https://eleftherostypos.gr/wp-includes/css/dist/block-library/style.min.css?ver=6.1.1' media='all' />
+<link rel='stylesheet' id='classic-theme-styles-css' href='https://eleftherostypos.gr/wp-includes/css/classic-themes.min.css?ver=1' media='all' />
+<style id='global-styles-inline-css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;}:where(.is-layout-flex){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='contact-form-7-css' href='https://eleftherostypos.gr/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.6.4' media='all' />
+<link rel='stylesheet' id='ivory-search-styles-css' href='https://eleftherostypos.gr/wp-content/plugins/add-search-to-menu/public/css/ivory-search.min.css?ver=5.4.10' media='all' />
+<link rel='stylesheet' id='toastify-kasneouras-css-css' href='https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css?ver=6.1.1' media='all' />
+<link rel='stylesheet' id='bootstrap.min-css' href='https://eleftherostypos.gr/wp-content/themes/eleytheros_typos/css/bootstrap.min.css?ver=6.1.1' media='all' />
+<link rel='stylesheet' id='icons.min-css' href='https://eleftherostypos.gr/wp-content/themes/eleytheros_typos/fonts/icons.min.css?ver=6.1.1' media='all' />
+<link rel='stylesheet' id='swiper-bundle.min-css' href='https://eleftherostypos.gr/wp-content/themes/eleytheros_typos/css/swiper-bundle.min.css?ver=6.1.1' media='all' />
+<link rel='stylesheet' id='hamburgers.min-css' href='https://eleftherostypos.gr/wp-content/themes/eleytheros_typos/css/hamburgers.min.css?ver=6.1.1' media='all' />
+<link rel='stylesheet' id='eleytheros_typos-style-css' href='https://eleftherostypos.gr/wp-content/themes/eleytheros_typos/style.css?ver=2.0.9' media='all' />
+<script type="rocketlazyloadscript" src='https://cdn.jsdelivr.net/npm/toastify-js?ver=6.1.1' id='toastify-kasneouras-js-js'></script>
+
+<script type="rocketlazyloadscript" src='https://www.googletagmanager.com/gtag/js?id=G-DETE7LL59J' id='google_gtagjs-js' async></script>
+<script type="rocketlazyloadscript" id='google_gtagjs-js-after'>
+window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}
+gtag("js", new Date());
+gtag("set", "developer_id.dZTNiMT", true);
+gtag("config", "G-DETE7LL59J");
+</script>
+
+<script type="rocketlazyloadscript" src='https://eleftherostypos.gr/wp-includes/js/jquery/jquery.min.js?ver=3.6.1' id='jquery-core-js'></script>
+<script type="rocketlazyloadscript" src='https://eleftherostypos.gr/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.3.2' id='jquery-migrate-js'></script>
+<link rel="https://api.w.org/" href="https://eleftherostypos.gr/wp-json/" /><link rel="alternate" type="application/json" href="https://eleftherostypos.gr/wp-json/wp/v2/posts/1039395" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://eleftherostypos.gr/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://eleftherostypos.gr/wp-includes/wlwmanifest.xml" />
+<meta name="generator" content="WordPress 6.1.1" />
+<link rel='shortlink' href='https://eleftherostypos.gr/?p=1039395' />
+<link rel="alternate" type="application/json+oembed" href="https://eleftherostypos.gr/wp-json/oembed/1.0/embed?url=https%3A%2F%2Feleftherostypos.gr%2Fdiethni%2Fxenia-sabtsak-poia-einai-i-dimosiografos-vaftistira-tou-poutin-pou-efyge-nychta-apo-ti-rosia-gia-na-mi-syllifthei" />
+<link rel="alternate" type="text/xml+oembed" href="https://eleftherostypos.gr/wp-json/oembed/1.0/embed?url=https%3A%2F%2Feleftherostypos.gr%2Fdiethni%2Fxenia-sabtsak-poia-einai-i-dimosiografos-vaftistira-tou-poutin-pou-efyge-nychta-apo-ti-rosia-gia-na-mi-syllifthei&#038;format=xml" />
+
+<script type="rocketlazyloadscript" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6646192625558379" crossorigin="anonymous"></script>
+<meta name="generator" content="Site Kit by Google 1.88.0" /> <meta name="onesignal" content="wordpress-plugin" />
+<script type="rocketlazyloadscript">
+
+      window.OneSignal = window.OneSignal || [];
+
+      OneSignal.push( function() {
+        OneSignal.SERVICE_WORKER_UPDATER_PATH = "OneSignalSDKUpdaterWorker.js.php";
+                      OneSignal.SERVICE_WORKER_PATH = "OneSignalSDKWorker.js.php";
+                      OneSignal.SERVICE_WORKER_PARAM = { scope: "/" };
+        OneSignal.setDefaultNotificationUrl("");        var oneSignal_options = {};
+        window._oneSignalInitOptions = oneSignal_options;
+
+        oneSignal_options['wordpress'] = true;
+oneSignal_options['appId'] = '487cc53b-3b66-4f84-8803-3a3a133043ab';
+oneSignal_options['allowLocalhostAsSecureOrigin'] = true;
+oneSignal_options['welcomeNotification'] = { };
+oneSignal_options['welcomeNotification']['title'] = "";
+oneSignal_options['welcomeNotification']['message'] = "Σας ευχαριστούμε για την εγγραφή σας";
+oneSignal_options['path'] = "https://eleftherostypos.gr/wp-content/plugins/onesignal-free-web-push-notifications/sdk_files/";
+oneSignal_options['safari_web_id'] = "web.onesignal.auto.67fef31a-7360-4fd8-9645-1463ac233cef";
+oneSignal_options['promptOptions'] = { };
+oneSignal_options['promptOptions']['actionMessage'] = "Θέλετε να λαμβάνετε ειδοποιήσεις για ότι σημαντικό συμβαίνει στην επικαιρότητα:";
+oneSignal_options['promptOptions']['exampleNotificationTitleDesktop'] = "Αυτή είναι μια δοκιμαστική ειδοποίηση";
+oneSignal_options['promptOptions']['exampleNotificationMessageDesktop'] = "Οι ειδοποιήσεις θα εμφανίζονται στην επιφάνεια εργασίας";
+oneSignal_options['promptOptions']['exampleNotificationTitleMobile'] = "Δοκιμαστική ειδοποίηση";
+oneSignal_options['promptOptions']['exampleNotificationMessageMobile'] = "Οι ειδοποιήσεις θα εμφανίζονται στη συσκευή σας";
+oneSignal_options['promptOptions']['exampleNotificationCaption'] = "(μπορείτε να διαγραφείτε οποιαδήποτε στίγμή)";
+oneSignal_options['promptOptions']['acceptButtonText'] = "ΣΥΝΕΧΕΙΑ";
+oneSignal_options['promptOptions']['cancelButtonText'] = "ΟΧΙ, ΕΥΧΑΡΙΣΤΩ";
+oneSignal_options['promptOptions']['siteName'] = "ΕΛΕΥΘΕΡΟΣ ΤΥΠΟΣ";
+oneSignal_options['promptOptions']['autoAcceptTitle'] = "ΝΑΙ, ΘΑ ΗΘΕΛΑ";
+oneSignal_options['notifyButton'] = { };
+oneSignal_options['notifyButton']['enable'] = true;
+oneSignal_options['notifyButton']['position'] = 'bottom-left';
+oneSignal_options['notifyButton']['theme'] = 'default';
+oneSignal_options['notifyButton']['size'] = 'medium';
+oneSignal_options['notifyButton']['showCredit'] = true;
+oneSignal_options['notifyButton']['text'] = {};
+oneSignal_options['notifyButton']['text']['tip.state.unsubscribed'] = 'Εγγραφείτε στις ειδοποιήσεις επικαιρότητας.';
+oneSignal_options['notifyButton']['text']['tip.state.subscribed'] = 'Έχετε εγγραφεί στις ειδοποιήσεις επικαιρότητας.';
+oneSignal_options['notifyButton']['text']['tip.state.blocked'] = 'Έχετε μπλοκάρει τις ειδοποιήσεις';
+oneSignal_options['notifyButton']['text']['message.action.subscribed'] = 'Σας ευχαριστούμε για την εγγραφή σας';
+oneSignal_options['notifyButton']['text']['message.action.resubscribed'] = 'Έχετε εγγραφεί στις ειδοποιήσεις του eleftherostypos.gr';
+oneSignal_options['notifyButton']['text']['message.action.unsubscribed'] = 'Δεν θα λαμβανετε πλέον ειδοποιήσεις από εμάς.';
+oneSignal_options['notifyButton']['text']['dialog.main.title'] = 'Διαχείριση ειδοποιήσεων από το eleftherostypos.gr';
+oneSignal_options['notifyButton']['text']['dialog.main.button.subscribe'] = 'ΕΓΓΡΑΦΗ';
+oneSignal_options['notifyButton']['text']['dialog.main.button.unsubscribe'] = 'ΔΙΑΓΡΑΦΗ';
+oneSignal_options['notifyButton']['text']['dialog.blocked.title'] = 'Αποκλεισμός ειδοποιήσεων';
+oneSignal_options['notifyButton']['text']['dialog.blocked.message'] = 'Ακολουθήστε τις παρακάτω οδηγίες για να επιτρέψετε ειδοπιήσεις από εμάς';
+oneSignal_options['notifyButton']['colors'] = {};
+oneSignal_options['notifyButton']['offset'] = {};
+                OneSignal.init(window._oneSignalInitOptions);
+                OneSignal.showSlidedownPrompt();      });
+
+      function documentInitOneSignal() {
+        var oneSignal_elements = document.getElementsByClassName("OneSignal-prompt");
+
+        var oneSignalLinkClickHandler = function(event) { OneSignal.push(['registerForPushNotifications']); event.preventDefault(); };        for(var i = 0; i < oneSignal_elements.length; i++)
+          oneSignal_elements[i].addEventListener('click', oneSignalLinkClickHandler, false);
+      }
+
+      if (document.readyState === 'complete') {
+           documentInitOneSignal();
+      }
+      else {
+           window.addEventListener("load", function(event){
+               documentInitOneSignal();
+          });
+      }
+    </script>
+<meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress." />
+<link rel="icon" href="https://eleftherostypos.gr/wp-content/uploads/2022/11/cropped-favicon-1-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://eleftherostypos.gr/wp-content/uploads/2022/11/cropped-favicon-1-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://eleftherostypos.gr/wp-content/uploads/2022/11/cropped-favicon-1-180x180.png" />
+<meta name="msapplication-TileImage" content="https://eleftherostypos.gr/wp-content/uploads/2022/11/cropped-favicon-1-270x270.png" />
+<noscript><style> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript><noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript> <script src="//cdn.orangeclickmedia.com/tech/eleftherostypos.gr/ocm.js" async="async"></script>
+
+<script type="rocketlazyloadscript">
+		! function(f, b, e, v, n, t, s) {
+			if (f.fbq) return;
+			n = f.fbq = function() {
+				n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+			};
+			if (!f._fbq) f._fbq = n;
+			n.push = n;
+			n.loaded = !0;
+			n.version = '2.0';
+			n.queue = [];
+			t = b.createElement(e);
+			t.async = !0;
+			t.src = v;
+			s = b.getElementsByTagName(e)[0];
+			s.parentNode.insertBefore(t, s)
+		}(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+		fbq('init', '618972382017166');
+		fbq('track', 'PageView');
+	</script>
+
+<script type="rocketlazyloadscript">
+		(function(w, d, s, l, i) {
+			w[l] = w[l] || [];
+			w[l].push({
+				'gtm.start': new Date().getTime(),
+				event: 'gtm.js'
+			});
+			var f = d.getElementsByTagName(s)[0],
+				j = d.createElement(s),
+				dl = l != 'dataLayer' ? '&l=' + l : '';
+			j.async = true;
+			j.src =
+				'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+			f.parentNode.insertBefore(j, f);
+		})(window, document, 'script', 'dataLayer', 'GTM-TLF55CW');
+	</script>
+
+<script type="rocketlazyloadscript" async src="//pahtbt.tech/c/eleftherostypos.gr.js"></script>
+<script type="rocketlazyloadscript" async src='//www.googletagservices.com/tag/js/gpt.js'></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+		var googletag = googletag || {};
+		googletag.cmd = googletag.cmd || [];
+	</script>
+
+</head>
+<body class="post-template-default single single-post postid-1039395 single-format-standard eleytheros_typos wpb-js-composer js-comp-ver-6.7.0 vc_responsive">
+
+
+
+
+
+
+
+<noscript>
+		<img height="1" width="1" src="https://www.facebook.com/tr?id=618972382017166&ev=PageView&noscript=1" alt="fb-no-script-track" />
+	</noscript>
+<script type="rocketlazyloadscript" async src="https://static.adman.gr/adman.js"></script>
+<script type="rocketlazyloadscript">
+		window.AdmanQueue = window.AdmanQueue || [];
+		AdmanQueue.push(function() {
+			Adman.adunit({
+				id: 338,
+				h: 'https://x.grxchange.gr',
+				inline: true
+			})
+		});
+	</script>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-dark-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 0.49803921568627" /><feFuncG type="table" tableValues="0 0.49803921568627" /><feFuncB type="table" tableValues="0 0.49803921568627" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-grayscale"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-red"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 1" /><feFuncG type="table" tableValues="0 0.27843137254902" /><feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-midnight"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0 0" /><feFuncG type="table" tableValues="0 0.64705882352941" /><feFuncB type="table" tableValues="0 1" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-magenta-yellow"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.78039215686275 1" /><feFuncG type="table" tableValues="0 0.94901960784314" /><feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-purple-green"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" /><feFuncG type="table" tableValues="0 1" /><feFuncB type="table" tableValues="0.44705882352941 0.4" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;"><defs><filter id="wp-duotone-blue-orange"><feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " /><feComponentTransfer color-interpolation-filters="sRGB"><feFuncR type="table" tableValues="0.098039215686275 1" /><feFuncG type="table" tableValues="0 0.66274509803922" /><feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" /><feFuncA type="table" tableValues="1 1" /></feComponentTransfer><feComposite in2="SourceGraphic" operator="in" /></filter></defs></svg> <header>
+<div class="inner-black">
+<div class="info-wrap main-container">
+<div class="left">
+<div><i class="fas fa-calendar-alt me-1"></i>
+7 Δεκέμβρίου 2022</div>
+<a href="/publication">ΕΝΤΥΠΗ ΕΚΔΟΣΗ</a>
+<a href="https://members.eleftherostypos.gr/">ΣΥΝΔΡΟΜΕΣ</a>
+<a href="/protoselida">ΠΡΩΤΟΣΕΛΙΔΑ</a>
+</div>
+<div class="right">
+<aside id="block-49" class="widget widget_block">
+<div class="is-layout-flow wp-block-group"><div class="wp-block-group__inner-container">
+<ul class="is-layout-flex wp-block-social-links"><li class="wp-social-link wp-social-link-google google-news-logo wp-block-social-link"><a href="https://news.google.com/publications/CAAiEPYUqMrfMp5Hh3Vvlek2VzUqFAgKIhD2FKjK3zKeR4d1b5XpNlc1?hl=el&#038;gl=GR&#038;ceid=GR%3Ael" rel="noopener nofollow" target="_blank" class="wp-block-social-link-anchor"><svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M12.02,10.18v3.72v0.01h5.51c-0.26,1.57-1.67,4.22-5.5,4.22c-3.31,0-6.01-2.75-6.01-6.12s2.7-6.12,6.01-6.12 c1.87,0,3.13,0.8,3.85,1.48l2.84-2.76C16.99,2.99,14.73,2,12.03,2c-5.52,0-10,4.48-10,10s4.48,10,10,10c5.77,0,9.6-4.06,9.6-9.77 c0-0.83-0.11-1.42-0.25-2.05H12.02z"></path></svg><span class="wp-block-social-link-label screen-reader-text">Google</span></a></li>
+<li class="wp-social-link wp-social-link-facebook wp-block-social-link"><a href="https://www.facebook.com/EleftherosTypos" rel="noopener nofollow" target="_blank" class="wp-block-social-link-anchor"><svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M12 2C6.5 2 2 6.5 2 12c0 5 3.7 9.1 8.4 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.3v7C18.3 21.1 22 17 22 12c0-5.5-4.5-10-10-10z"></path></svg><span class="wp-block-social-link-label screen-reader-text">Facebook</span></a></li>
+<li class="wp-social-link wp-social-link-twitter wp-block-social-link"><a href="https://twitter.com/etyposgr" rel="noopener nofollow" target="_blank" class="wp-block-social-link-anchor"><svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M22.23,5.924c-0.736,0.326-1.527,0.547-2.357,0.646c0.847-0.508,1.498-1.312,1.804-2.27 c-0.793,0.47-1.671,0.812-2.606,0.996C18.324,4.498,17.257,4,16.077,4c-2.266,0-4.103,1.837-4.103,4.103 c0,0.322,0.036,0.635,0.106,0.935C8.67,8.867,5.647,7.234,3.623,4.751C3.27,5.357,3.067,6.062,3.067,6.814 c0,1.424,0.724,2.679,1.825,3.415c-0.673-0.021-1.305-0.206-1.859-0.513c0,0.017,0,0.034,0,0.052c0,1.988,1.414,3.647,3.292,4.023 c-0.344,0.094-0.707,0.144-1.081,0.144c-0.264,0-0.521-0.026-0.772-0.074c0.522,1.63,2.038,2.816,3.833,2.85 c-1.404,1.1-3.174,1.756-5.096,1.756c-0.331,0-0.658-0.019-0.979-0.057c1.816,1.164,3.973,1.843,6.29,1.843 c7.547,0,11.675-6.252,11.675-11.675c0-0.178-0.004-0.355-0.012-0.531C20.985,7.47,21.68,6.747,22.23,5.924z"></path></svg><span class="wp-block-social-link-label screen-reader-text">Twitter</span></a></li>
+<li class="wp-social-link wp-social-link-instagram wp-block-social-link"><a href="https://www.instagram.com/eleftherostypos" rel="noopener nofollow" target="_blank" class="wp-block-social-link-anchor"><svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M12,4.622c2.403,0,2.688,0.009,3.637,0.052c0.877,0.04,1.354,0.187,1.671,0.31c0.42,0.163,0.72,0.358,1.035,0.673 c0.315,0.315,0.51,0.615,0.673,1.035c0.123,0.317,0.27,0.794,0.31,1.671c0.043,0.949,0.052,1.234,0.052,3.637 s-0.009,2.688-0.052,3.637c-0.04,0.877-0.187,1.354-0.31,1.671c-0.163,0.42-0.358,0.72-0.673,1.035 c-0.315,0.315-0.615,0.51-1.035,0.673c-0.317,0.123-0.794,0.27-1.671,0.31c-0.949,0.043-1.233,0.052-3.637,0.052 s-2.688-0.009-3.637-0.052c-0.877-0.04-1.354-0.187-1.671-0.31c-0.42-0.163-0.72-0.358-1.035-0.673 c-0.315-0.315-0.51-0.615-0.673-1.035c-0.123-0.317-0.27-0.794-0.31-1.671C4.631,14.688,4.622,14.403,4.622,12 s0.009-2.688,0.052-3.637c0.04-0.877,0.187-1.354,0.31-1.671c0.163-0.42,0.358-0.72,0.673-1.035 c0.315-0.315,0.615-0.51,1.035-0.673c0.317-0.123,0.794-0.27,1.671-0.31C9.312,4.631,9.597,4.622,12,4.622 M12,3 C9.556,3,9.249,3.01,8.289,3.054C7.331,3.098,6.677,3.25,6.105,3.472C5.513,3.702,5.011,4.01,4.511,4.511 c-0.5,0.5-0.808,1.002-1.038,1.594C3.25,6.677,3.098,7.331,3.054,8.289C3.01,9.249,3,9.556,3,12c0,2.444,0.01,2.751,0.054,3.711 c0.044,0.958,0.196,1.612,0.418,2.185c0.23,0.592,0.538,1.094,1.038,1.594c0.5,0.5,1.002,0.808,1.594,1.038 c0.572,0.222,1.227,0.375,2.185,0.418C9.249,20.99,9.556,21,12,21s2.751-0.01,3.711-0.054c0.958-0.044,1.612-0.196,2.185-0.418 c0.592-0.23,1.094-0.538,1.594-1.038c0.5-0.5,0.808-1.002,1.038-1.594c0.222-0.572,0.375-1.227,0.418-2.185 C20.99,14.751,21,14.444,21,12s-0.01-2.751-0.054-3.711c-0.044-0.958-0.196-1.612-0.418-2.185c-0.23-0.592-0.538-1.094-1.038-1.594 c-0.5-0.5-1.002-0.808-1.594-1.038c-0.572-0.222-1.227-0.375-2.185-0.418C14.751,3.01,14.444,3,12,3L12,3z M12,7.378 c-2.552,0-4.622,2.069-4.622,4.622S9.448,16.622,12,16.622s4.622-2.069,4.622-4.622S14.552,7.378,12,7.378z M12,15 c-1.657,0-3-1.343-3-3s1.343-3,3-3s3,1.343,3,3S13.657,15,12,15z M16.804,6.116c-0.596,0-1.08,0.484-1.08,1.08 s0.484,1.08,1.08,1.08c0.596,0,1.08-0.484,1.08-1.08S17.401,6.116,16.804,6.116z"></path></svg><span class="wp-block-social-link-label screen-reader-text">Instagram</span></a></li>
+<li class="wp-social-link wp-social-link-youtube wp-block-social-link"><a href="https://www.youtube.com/channel/UC2L9FAXbj4xzZABpHDJBq7g" rel="noopener nofollow" target="_blank" class="wp-block-social-link-anchor"><svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M21.8,8.001c0,0-0.195-1.378-0.795-1.985c-0.76-0.797-1.613-0.801-2.004-0.847c-2.799-0.202-6.997-0.202-6.997-0.202 h-0.009c0,0-4.198,0-6.997,0.202C4.608,5.216,3.756,5.22,2.995,6.016C2.395,6.623,2.2,8.001,2.2,8.001S2,9.62,2,11.238v1.517 c0,1.618,0.2,3.237,0.2,3.237s0.195,1.378,0.795,1.985c0.761,0.797,1.76,0.771,2.205,0.855c1.6,0.153,6.8,0.201,6.8,0.201 s4.203-0.006,7.001-0.209c0.391-0.047,1.243-0.051,2.004-0.847c0.6-0.607,0.795-1.985,0.795-1.985s0.2-1.618,0.2-3.237v-1.517 C22,9.62,21.8,8.001,21.8,8.001z M9.935,14.594l-0.001-5.62l5.404,2.82L9.935,14.594z"></path></svg><span class="wp-block-social-link-label screen-reader-text">YouTube</span></a></li>
+<li class="wp-social-link wp-social-link-feed wp-block-social-link"><a href="https:///feed" rel="noopener nofollow" target="_blank" class="wp-block-social-link-anchor"><svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M2,8.667V12c5.515,0,10,4.485,10,10h3.333C15.333,14.637,9.363,8.667,2,8.667z M2,2v3.333 c9.19,0,16.667,7.477,16.667,16.667H22C22,10.955,13.045,2,2,2z M4.5,17C3.118,17,2,18.12,2,19.5S3.118,22,4.5,22S7,20.88,7,19.5 S5.882,17,4.5,17z"></path></svg><span class="wp-block-social-link-label screen-reader-text">RSS Feed</span></a></li></ul>
+</div></div>
+</aside> </div>
+</div>
+</div>
+<nav class="position-relative">
+<div class="main-container">
+<button class="hamburger hamburger--collapse" type="button" aria-label="Menu" aria-controls="navigation" aria-expanded="false">
+<span class="hamburger-box">
+<span class="hamburger-inner"></span>
+</span>
+</button>
+<div class="logo-wrap"><a href="https://eleftherostypos.gr"><img class="logo-image w-100" src="/wp-content/uploads/2022/03/et-logo.svg" alt="eleftherostypos.gr"></a></div>
+<div class="menu-main-menu-container"><ul id="primary-menu" class="menu"><li id="menu-item-928250" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-928250"><a href="https://eleftherostypos.gr/roi-eidiseon">Ειδήσεις</a></li>
+<li id="menu-item-930224" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-930224"><a href="https://eleftherostypos.gr/ellada">Ελλάδα</a></li>
+<li id="menu-item-930225" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-930225"><a href="https://eleftherostypos.gr/diethni">Διεθνή</a></li>
+<li id="menu-item-930227" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-930227"><a href="https://eleftherostypos.gr/oikonomia">Οικονομία</a></li>
+<li id="menu-item-930228" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-930228"><a href="https://eleftherostypos.gr/politiki">Πολιτική</a></li>
+<li id="menu-item-930229" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-930229"><a href="https://eleftherostypos.gr/sports">Αθλητικά</a></li>
+<li id="menu-item-1041332" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1041332"><a href="https://eleftherostypos.gr/politismos">Πολιτισμός</a></li>
+<li id="menu-item-930232" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-930232"><a href="https://eleftherostypos.gr/lifestyle">Lifestyle</a></li>
+<li id="menu-item-918284" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-918284"><a href="https://eleftherostypos.gr/tag/kairos">Καιρός</a></li>
+<li id="menu-item-930235" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-930235"><a href="https://eleftherostypos.gr/ygeia-epistimi">Υγεία</a></li>
+<li id="menu-item-939142" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-939142"><a href="https://eleftherostypos.gr/perivallon">Περιβάλλον</a></li>
+<li id="menu-item-1041131" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1041131"><a href="https://eleftherostypos.gr/autotypos-by-quattroruote">Αυτοκίνητο</a></li>
+</ul></div> <div class="sw-cont">
+<button class="search-activation-btn">
+<img src="/wp-content/uploads/2022/03/loupe.svg" alt="">
+<img class="red" src="/wp-content/uploads/2022/03/loupe.red_.svg" alt="">
+</button>
+<button class=" ms-3 weather-wrap d-flex align-items-center gap-1">
+<i class="fas fa-cloud-sun"></i>
+
+<div class="weather-number d-flex align-items-center"> <i class="fal fa-angle-down ms-1"></i></div>
+</button>
+<div class="search-wrap">
+<form role="search" method="get" class="search-form" action="https://eleftherostypos.gr/">
+<label>
+<span class="screen-reader-text">Αναζήτηση για:</span>
+<input type="search" class="search-field" placeholder="Αναζήτηση&hellip;" value="" name="s" />
+</label>
+<input type="submit" class="search-submit" value="Αναζήτηση" />
+<input type="hidden" name="id" value="926920" /></form> </div>
+<div class="weather-widget-wrap">
+
+<a class="weatherwidget-io" href="https://forecast7.com/el/37d9823d73/athens/" data-label_1="Αθήνα" data-label_2="Καιρός" data-days="5" data-theme="pure" data-highcolor="#ed1b24">Αθήνα Καιρός</a>
+<script type="rocketlazyloadscript">
+							! function(d, s, id) {
+								var js, fjs = d.getElementsByTagName(s)[0];
+								if (!d.getElementById(id)) {
+									js = d.createElement(s);
+									js.id = id;
+									js.src = 'https://weatherwidget.io/js/widget.min.js';
+									fjs.parentNode.insertBefore(js, fjs);
+								}
+							}(document, 'script', 'weatherwidget-io-js');
+						</script>
+</div>
+</div>
+</div>
+<div class="menu-open">
+<div class="main-container ">
+<div class="left">
+<div class="menu-option-menu-1-container"><ul id="open-menu-1" class="burger-menu"><li id="menu-item-918237" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-918237"><a href="https://eleftherostypos.gr/roi-eidiseon">Όλες οι Ειδήσεις</a></li>
+<li id="menu-item-928226" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children addArrow menu-item-928226"><a href="https://eleftherostypos.gr/ellada">Ελλάδα</a>
+<ul class="sub-menu">
+<li id="menu-item-928227" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-928227"><a href="https://eleftherostypos.gr/koronoios">Κορωνοϊός</a></li>
+<li id="menu-item-928240" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-928240"><a href="https://eleftherostypos.gr/tag/egklima">Έγκλημα</a></li>
+</ul>
+</li>
+<li id="menu-item-928228" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children addArrow menu-item-928228"><a href="https://eleftherostypos.gr/politiki">Πολιτική</a>
+<ul class="sub-menu">
+<li id="menu-item-928229" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-928229"><a href="https://eleftherostypos.gr/politiki/parapolitika">Παραπολιτικά</a></li>
+<li id="menu-item-928230" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-928230"><a href="https://eleftherostypos.gr/ellinotourkika">Ελληνοτουρκικά</a></li>
+</ul>
+</li>
+<li id="menu-item-928231" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-928231"><a href="https://eleftherostypos.gr/diethni">Διεθνή</a></li>
+<li id="menu-item-928232" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children addArrow menu-item-928232"><a href="https://eleftherostypos.gr/oikonomia">Οικονομία</a>
+<ul class="sub-menu">
+<li id="menu-item-928233" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-928233"><a href="https://eleftherostypos.gr/business">Επιχειρήσεις</a></li>
+<li id="menu-item-928241" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-928241"><a href="https://eleftherostypos.gr/tag/oaed">ΟΑΕΔ</a></li>
+<li id="menu-item-928242" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-928242"><a href="https://eleftherostypos.gr/oikonomia/asfalisi-syntaxeis">Ασφάλιση &amp; Συντάξεις</a></li>
+<li id="menu-item-928822" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-928822"><a href="https://eleftherostypos.gr/agrotikos-tupos">Αγροτικός Τύπος</a></li>
+<li id="menu-item-959418" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-959418"><a href="https://eleftherostypos.gr/oikonomia/energeia">Ενέργεια</a></li>
+</ul>
+</li>
+</ul></div> <div class="menu-option-menu-2-container"><ul id="open-menu-2" class="burger-menu"><li id="menu-item-928234" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children addArrow menu-item-928234"><a href="https://eleftherostypos.gr/sports">Αθλητικά</a>
+<ul class="sub-menu">
+<li id="menu-item-928244" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-928244"><a href="https://eleftherostypos.gr/tag/podosfairo">Ποδόσφαιρο</a></li>
+<li id="menu-item-928245" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-928245"><a href="https://eleftherostypos.gr/tag/basket">Μπάσκετ</a></li>
+<li id="menu-item-986930" class="menu-item menu-item-type-taxonomy menu-item-object-post_tag menu-item-986930"><a href="https://eleftherostypos.gr/tag/mountial-2022">Μουντιάλ 2022</a></li>
+<li id="menu-item-976015" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-976015"><a href="https://eleftherostypos.gr/sports/stoixima">Στοίχημα</a></li>
+</ul>
+</li>
+<li id="menu-item-928235" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children addArrow menu-item-928235"><a href="https://eleftherostypos.gr/lifestyle">Lifestyle</a>
+<ul class="sub-menu">
+<li id="menu-item-928237" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-928237"><a href="https://eleftherostypos.gr/ta-zodia-tis-hmeras">Ζώδια</a></li>
+</ul>
+</li>
+<li id="menu-item-928238" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-928238"><a href="https://eleftherostypos.gr/ygeia-epistimi">Υγεία &amp; Επιστήμη</a></li>
+<li id="menu-item-928239" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-928239"><a href="https://eleftherostypos.gr/politismos">Πολιτισμός</a></li>
+<li id="menu-item-930244" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-930244"><a href="https://eleftherostypos.gr/autotypos-by-quattroruote">autotypos.gr</a></li>
+</ul></div> <div class="menu-option-menu-3-container"><ul id="open-menu-3" class="burger-menu"><li id="menu-item-928220" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-928220"><a href="https://eleftherostypos.gr/taxidi">Ταξίδι</a></li>
+<li id="menu-item-930247" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-930247"><a href="https://eleftherostypos.gr/perivallon">Περιβάλλον</a></li>
+<li id="menu-item-931751" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-931751"><a href="https://eleftherostypos.gr/media">Media</a></li>
+<li id="menu-item-931750" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-931750"><a href="https://eleftherostypos.gr/tech">Tech &amp; Science</a></li>
+<li id="menu-item-939886" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children addArrow menu-item-939886"><a href="https://eleftherostypos.gr/kouzina-gefsi">Κουζίνα &#038; Γεύσεις</a>
+<ul class="sub-menu">
+<li id="menu-item-939887" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-939887"><a href="https://eleftherostypos.gr/kouzina-gefsi/estiatoria">Εστιατόρια</a></li>
+<li id="menu-item-939888" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-939888"><a href="https://eleftherostypos.gr/kouzina-gefsi/syntages">Συνταγές</a></li>
+</ul>
+</li>
+</ul></div> <div class="menu-option-menu-4-container"><ul id="open-menu-4" class="burger-menu"><li id="menu-item-928251" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children addArrow menu-item-928251"><a href="#">Περισσότερα</a>
+<ul class="sub-menu">
+<li id="menu-item-928252" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-928252"><a href="https://eleftherostypos.gr/synentefxeis">Συνεντεύξεις</a></li>
+<li id="menu-item-928253" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-928253"><a href="https://eleftherostypos.gr/istories">Ιστορίες</a></li>
+<li id="menu-item-928254" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-928254"><a href="https://eleftherostypos.gr/apopseis">Απόψεις</a></li>
+<li id="menu-item-928255" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-928255"><a href="https://eleftherostypos.gr/perierga">Περίεργα</a></li>
+<li id="menu-item-928256" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-928256"><a href="https://eleftherostypos.gr/spiti">Σπίτι</a></li>
+<li id="menu-item-928259" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-928259"><a href="https://eleftherostypos.gr/geloiografies">Γελοιογραφίες</a></li>
+<li id="menu-item-928260" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-928260"><a href="https://eleftherostypos.gr/h-thesi-mas">Η Θέση Μας</a></li>
+<li id="menu-item-928261" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-928261"><a href="https://eleftherostypos.gr/eleftheros-typos-kyriakhs">Ελεύθερος Τύπος Κυριακής</a></li>
+<li id="menu-item-928262" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-928262"><a href="https://eleftherostypos.gr/etips">ETIPS</a></li>
+<li id="menu-item-928263" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-928263"><a href="https://eleftherostypos.gr/diaita-metavolismos">Δίαιτα &#038; Μεταβολισμός</a></li>
+<li id="menu-item-930242" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-930242"><a href="https://eleftherostypos.gr/psychagogia">Ψυχαγωγία</a></li>
+<li id="menu-item-931747" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-931747"><a href="https://eleftherostypos.gr/cinematv">Cinema-TV</a></li>
+</ul>
+</li>
+</ul></div> </div>
+<div class="right">
+
+<div class="accordion" id="mobile-weatherwidget-accordion">
+<div class="accordion-item">
+<h2 class="accordion-header">
+<button class="accordion-button collapsed m-weather-btn" type="button" data-bs-toggle="collapse" data-bs-target="#mobile-weather-widget" aria-expanded="true" aria-controls="mobile-weather-widget">
+<i class="fas fa-cloud-sun"></i>
+</button>
+</h2>
+<div id="mobile-weather-widget" class="accordion-collapse collapse" aria-labelledby="mobile-weather-widget">
+<div class="accordion-body">
+<a class="weatherwidget-io mobile" href="https://forecast7.com/el/37d9823d73/athens/" data-label_1="Αθήνα" data-label_2="Καιρός" data-days="5" data-theme="pure" data-highcolor="#ed1b24">Αθήνα Καιρός</a>
+<script type="rocketlazyloadscript">
+											! function(d, s, id) {
+												var js, fjs = d.getElementsByTagName(s)[0];
+												if (!d.getElementById(id)) {
+													js = d.createElement(s);
+													js.id = id;
+													js.src = 'https://weatherwidget.io/js/widget.min.js';
+													fjs.parentNode.insertBefore(js, fjs);
+												}
+											}(document, 'script', 'weatherwidget-io-js');
+										</script>
+</div>
+</div>
+</div>
+</div>
+<div class="menu-open-menu-right-container"><ul id="open-menu-right" class="burger-menu"><li id="menu-item-928347" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-928347"><a href="https://eleftherostypos.gr/tavtotita">Ταυτότητα</a></li>
+<li id="menu-item-928349" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-928349"><a href="https://eleftherostypos.gr/diafimisteite-se-emas">Διαφημιστείτε σε εμάς</a></li>
+<li id="menu-item-929487" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-929487"><a href="/publication">Έντυπη έκδοση</a></li>
+<li id="menu-item-944509" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-944509"><a href="https://members.eleftherostypos.gr">Συνδρομές</a></li>
+<li id="menu-item-928348" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-928348"><a href="https://eleftherostypos.gr/protoselida">Πρωτοσέλιδα</a></li>
+</ul></div> 
+<aside id="block-49" class="widget widget_block">
+<div class="is-layout-flow wp-block-group"><div class="wp-block-group__inner-container">
+<ul class="is-layout-flex wp-block-social-links"><li class="wp-social-link wp-social-link-google google-news-logo wp-block-social-link"><a href="https://news.google.com/publications/CAAiEPYUqMrfMp5Hh3Vvlek2VzUqFAgKIhD2FKjK3zKeR4d1b5XpNlc1?hl=el&#038;gl=GR&#038;ceid=GR%3Ael" rel="noopener nofollow" target="_blank" class="wp-block-social-link-anchor"><svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M12.02,10.18v3.72v0.01h5.51c-0.26,1.57-1.67,4.22-5.5,4.22c-3.31,0-6.01-2.75-6.01-6.12s2.7-6.12,6.01-6.12 c1.87,0,3.13,0.8,3.85,1.48l2.84-2.76C16.99,2.99,14.73,2,12.03,2c-5.52,0-10,4.48-10,10s4.48,10,10,10c5.77,0,9.6-4.06,9.6-9.77 c0-0.83-0.11-1.42-0.25-2.05H12.02z"></path></svg><span class="wp-block-social-link-label screen-reader-text">Google</span></a></li>
+<li class="wp-social-link wp-social-link-facebook wp-block-social-link"><a href="https://www.facebook.com/EleftherosTypos" rel="noopener nofollow" target="_blank" class="wp-block-social-link-anchor"><svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M12 2C6.5 2 2 6.5 2 12c0 5 3.7 9.1 8.4 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.3v7C18.3 21.1 22 17 22 12c0-5.5-4.5-10-10-10z"></path></svg><span class="wp-block-social-link-label screen-reader-text">Facebook</span></a></li>
+<li class="wp-social-link wp-social-link-twitter wp-block-social-link"><a href="https://twitter.com/etyposgr" rel="noopener nofollow" target="_blank" class="wp-block-social-link-anchor"><svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M22.23,5.924c-0.736,0.326-1.527,0.547-2.357,0.646c0.847-0.508,1.498-1.312,1.804-2.27 c-0.793,0.47-1.671,0.812-2.606,0.996C18.324,4.498,17.257,4,16.077,4c-2.266,0-4.103,1.837-4.103,4.103 c0,0.322,0.036,0.635,0.106,0.935C8.67,8.867,5.647,7.234,3.623,4.751C3.27,5.357,3.067,6.062,3.067,6.814 c0,1.424,0.724,2.679,1.825,3.415c-0.673-0.021-1.305-0.206-1.859-0.513c0,0.017,0,0.034,0,0.052c0,1.988,1.414,3.647,3.292,4.023 c-0.344,0.094-0.707,0.144-1.081,0.144c-0.264,0-0.521-0.026-0.772-0.074c0.522,1.63,2.038,2.816,3.833,2.85 c-1.404,1.1-3.174,1.756-5.096,1.756c-0.331,0-0.658-0.019-0.979-0.057c1.816,1.164,3.973,1.843,6.29,1.843 c7.547,0,11.675-6.252,11.675-11.675c0-0.178-0.004-0.355-0.012-0.531C20.985,7.47,21.68,6.747,22.23,5.924z"></path></svg><span class="wp-block-social-link-label screen-reader-text">Twitter</span></a></li>
+<li class="wp-social-link wp-social-link-instagram wp-block-social-link"><a href="https://www.instagram.com/eleftherostypos" rel="noopener nofollow" target="_blank" class="wp-block-social-link-anchor"><svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M12,4.622c2.403,0,2.688,0.009,3.637,0.052c0.877,0.04,1.354,0.187,1.671,0.31c0.42,0.163,0.72,0.358,1.035,0.673 c0.315,0.315,0.51,0.615,0.673,1.035c0.123,0.317,0.27,0.794,0.31,1.671c0.043,0.949,0.052,1.234,0.052,3.637 s-0.009,2.688-0.052,3.637c-0.04,0.877-0.187,1.354-0.31,1.671c-0.163,0.42-0.358,0.72-0.673,1.035 c-0.315,0.315-0.615,0.51-1.035,0.673c-0.317,0.123-0.794,0.27-1.671,0.31c-0.949,0.043-1.233,0.052-3.637,0.052 s-2.688-0.009-3.637-0.052c-0.877-0.04-1.354-0.187-1.671-0.31c-0.42-0.163-0.72-0.358-1.035-0.673 c-0.315-0.315-0.51-0.615-0.673-1.035c-0.123-0.317-0.27-0.794-0.31-1.671C4.631,14.688,4.622,14.403,4.622,12 s0.009-2.688,0.052-3.637c0.04-0.877,0.187-1.354,0.31-1.671c0.163-0.42,0.358-0.72,0.673-1.035 c0.315-0.315,0.615-0.51,1.035-0.673c0.317-0.123,0.794-0.27,1.671-0.31C9.312,4.631,9.597,4.622,12,4.622 M12,3 C9.556,3,9.249,3.01,8.289,3.054C7.331,3.098,6.677,3.25,6.105,3.472C5.513,3.702,5.011,4.01,4.511,4.511 c-0.5,0.5-0.808,1.002-1.038,1.594C3.25,6.677,3.098,7.331,3.054,8.289C3.01,9.249,3,9.556,3,12c0,2.444,0.01,2.751,0.054,3.711 c0.044,0.958,0.196,1.612,0.418,2.185c0.23,0.592,0.538,1.094,1.038,1.594c0.5,0.5,1.002,0.808,1.594,1.038 c0.572,0.222,1.227,0.375,2.185,0.418C9.249,20.99,9.556,21,12,21s2.751-0.01,3.711-0.054c0.958-0.044,1.612-0.196,2.185-0.418 c0.592-0.23,1.094-0.538,1.594-1.038c0.5-0.5,0.808-1.002,1.038-1.594c0.222-0.572,0.375-1.227,0.418-2.185 C20.99,14.751,21,14.444,21,12s-0.01-2.751-0.054-3.711c-0.044-0.958-0.196-1.612-0.418-2.185c-0.23-0.592-0.538-1.094-1.038-1.594 c-0.5-0.5-1.002-0.808-1.594-1.038c-0.572-0.222-1.227-0.375-2.185-0.418C14.751,3.01,14.444,3,12,3L12,3z M12,7.378 c-2.552,0-4.622,2.069-4.622,4.622S9.448,16.622,12,16.622s4.622-2.069,4.622-4.622S14.552,7.378,12,7.378z M12,15 c-1.657,0-3-1.343-3-3s1.343-3,3-3s3,1.343,3,3S13.657,15,12,15z M16.804,6.116c-0.596,0-1.08,0.484-1.08,1.08 s0.484,1.08,1.08,1.08c0.596,0,1.08-0.484,1.08-1.08S17.401,6.116,16.804,6.116z"></path></svg><span class="wp-block-social-link-label screen-reader-text">Instagram</span></a></li>
+<li class="wp-social-link wp-social-link-youtube wp-block-social-link"><a href="https://www.youtube.com/channel/UC2L9FAXbj4xzZABpHDJBq7g" rel="noopener nofollow" target="_blank" class="wp-block-social-link-anchor"><svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M21.8,8.001c0,0-0.195-1.378-0.795-1.985c-0.76-0.797-1.613-0.801-2.004-0.847c-2.799-0.202-6.997-0.202-6.997-0.202 h-0.009c0,0-4.198,0-6.997,0.202C4.608,5.216,3.756,5.22,2.995,6.016C2.395,6.623,2.2,8.001,2.2,8.001S2,9.62,2,11.238v1.517 c0,1.618,0.2,3.237,0.2,3.237s0.195,1.378,0.795,1.985c0.761,0.797,1.76,0.771,2.205,0.855c1.6,0.153,6.8,0.201,6.8,0.201 s4.203-0.006,7.001-0.209c0.391-0.047,1.243-0.051,2.004-0.847c0.6-0.607,0.795-1.985,0.795-1.985s0.2-1.618,0.2-3.237v-1.517 C22,9.62,21.8,8.001,21.8,8.001z M9.935,14.594l-0.001-5.62l5.404,2.82L9.935,14.594z"></path></svg><span class="wp-block-social-link-label screen-reader-text">YouTube</span></a></li>
+<li class="wp-social-link wp-social-link-feed wp-block-social-link"><a href="https:///feed" rel="noopener nofollow" target="_blank" class="wp-block-social-link-anchor"><svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M2,8.667V12c5.515,0,10,4.485,10,10h3.333C15.333,14.637,9.363,8.667,2,8.667z M2,2v3.333 c9.19,0,16.667,7.477,16.667,16.667H22C22,10.955,13.045,2,2,2z M4.5,17C3.118,17,2,18.12,2,19.5S3.118,22,4.5,22S7,20.88,7,19.5 S5.882,17,4.5,17z"></path></svg><span class="wp-block-social-link-label screen-reader-text">RSS Feed</span></a></li></ul>
+</div></div>
+</aside> </div>
+</div>
+</div>
+</nav>
+<div class="breaking-news-wrap">
+<div class="breaking-news">
+<div class="line"></div>
+<div class="d-flex gap-2 align-items-center px-3">
+<div class="fs-4"><i class="fal fa-exclamation-circle"></i></div>
+<div class="text-italic">BREAKING NEWS</div>
+</div>
+<div class="line"></div>
+</div>
+<div class="red-triangle"></div>
+<div class="swiper mySwiper2">
+<div class="swiper-wrapper">
+<div class="swiper-slide">
+<a href="https://eleftherostypos.gr/oikonomia/eortastiko-kalathi-kai-kalathi-tou-ai-vasili-ti-tha-perilamvanoun-osa-anakoinothikan">
+Εορταστικό καλάθι και καλάθι του Άη Βασίλη: Εκτός τα μελομακάρονα και κουραμπιέδες - Τι θα περιλαμβάνουν <div class="article-date-wrap">
+<div class="article-date">07/12/2022</div>
+<div class="article-time"> <i class="fal fa-clock me-1"></i>13:03</div>
+</div>
+</a>
+</div>
+<div class="swiper-slide">
+<a href="https://eleftherostypos.gr/politiki/thrasos-i-livyi-katathetei-diavima-diamartyrias-kata-tis-elladas-gia-tis-thalassies-erevnes">
+Θράσος: Η Λιβύη καταθέτει διάβημα διαμαρτυρίας κατά της Ελλάδας για τις θαλάσσιες έρευνες <div class="article-date-wrap">
+<div class="article-date">07/12/2022</div>
+<div class="article-time"> <i class="fal fa-clock me-1"></i>13:14</div>
+</div>
+</a>
+</div>
+<div class="swiper-slide">
+<a href="https://eleftherostypos.gr/eleftheros-typos-kyriakhs/monadikes-prosfores-me-ton-elefthero-typo-tis-kyriakis-11-dekemvriou">
+Μοναδικές προσφορές με τον Ελεύθερο Τύπο της Κυριακής, 11 Δεκεμβρίου <div class="article-date-wrap">
+<div class="article-date">06/12/2022</div>
+<div class="article-time"> <i class="fal fa-clock me-1"></i>13:49</div>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</header>
+<div class="article-page d-flex single--default">
+<div class="single--sidebanner banner sticky--main">
+</div>
+<div class="stop-overflow">
+<div class="grid-3-1 px-2rem">
+<div class="left">
+
+<div id='billboard1' class="sticky--main--child" data-ocm-ad style="min-height:250px">
+</div>
+<div class="tag-container">
+<div class="hot-tags"> <a href="https://eleftherostypos.gr/diethni"> Διεθνή </a> </div>
+<a href="https://eleftherostypos.gr/tag/%ce%b2%ce%bb%ce%b1%ce%bd%cf%84%ce%b9%ce%bc%ce%af%cf%81-%cf%80%ce%bf%cf%8d%cf%84%ce%b9%ce%bd" class="tag"> <span>#</span> Βλαντιμίρ Πούτιν </a>
+<a href="https://eleftherostypos.gr/tag/%ce%b4%ce%b7%ce%bc%ce%bf%cf%83%ce%b9%ce%bf%ce%b3%cf%81%ce%ac%cf%86%ce%bf%cf%82" class="tag"> <span>#</span> δημοσιογράφος </a>
+<a href="https://eleftherostypos.gr/tag/xenia-sabtsak" class="tag"> <span>#</span> Ξένια Σαμπτσάκ </a>
+<a href="https://eleftherostypos.gr/tag/%cf%81%cf%89%cf%83%ce%af%ce%b1" class="tag"> <span>#</span> Ρωσία </a>
+</div>
+<div class="ap-image-container">
+<div class="article-page-title">Ξένια Σαμπτσάκ: Ποια είναι η δημοσιογράφος «βαφτιστήρα» του Πούτιν που έφυγε...νύχτα από τη Ρωσία για να μη συλληφθεί</div>
+<div class="position-relative">
+ <img class="w-100" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Ξένια Σαμπτσάκ: Ποια είναι η δημοσιογράφος «βαφτιστήρα» του Πούτιν που έφυγενύχτα από τη Ρωσία για να μη συλληφθεί" data-lazy-src="https://eleftherostypos.gr/wp-content/uploads/2022/10/ksenia-sobchakk-1024x673.jpg"><noscript><img class="w-100" src="https://eleftherostypos.gr/wp-content/uploads/2022/10/ksenia-sobchakk-1024x673.jpg" alt="Ξένια Σαμπτσάκ: Ποια είναι η δημοσιογράφος «βαφτιστήρα» του Πούτιν που έφυγενύχτα από τη Ρωσία για να μη συλληφθεί"></noscript>
+<div class="ap-photo-credits">FILE PHOTO: TV anchor and journalist Ksenia Sobchak attends a session of the St. Petersburg International Economic Forum (SPIEF) in Saint Petersburg, Russia, June 3, 2021. REUTERS/Evgenia Novozhenina/File Photo</div> </div>
+<div class="img-caption-wrap">
+<a href="https://eleftherostypos.gr/dimosiografous/newsroom-eleftherostypos-gr" class="d-flex">
+<div class="img-wrap"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="image" data-lazy-src="/wp-content/uploads/2022/03/et-logo-re-1.png" /><noscript><img src="/wp-content/uploads/2022/03/et-logo-re-1.png" alt="image" /></noscript></div>
+<h5 class="fw-bold">Newsroom eleftherostypos.gr</h5>
+</a>
+<div class="date-cont">
+<div>27/10/2022</div>
+<div>|</div>
+<div>
+<div class="fal fa-clock me-1"></div> 14:54 </div>
+</div>
+</div>
+</div>
+<div class="ap-main-text-wrap">
+<div class="social-outer-wrap">
+<div class="social-wrap sticky--main">
+<a href="https://www.facebook.com/sharer.php?u=https://eleftherostypos.gr/diethni/xenia-sabtsak-poia-einai-i-dimosiografos-vaftistira-tou-poutin-pou-efyge-nychta-apo-ti-rosia-gia-na-mi-syllifthei" target="_blank">
+<i class="fab fa-facebook-f"></i>
+</a>
+<a href="https://twitter.com/share?text=%CE%9E%CE%AD%CE%BD%CE%B9%CE%B1+%CE%A3%CE%B1%CE%BC%CF%80%CF%84%CF%83%CE%AC%CE%BA%3A+%CE%A0%CE%BF%CE%B9%CE%B1+%CE%B5%CE%AF%CE%BD%CE%B1%CE%B9+%CE%B7+%CE%B4%CE%B7%CE%BC%CE%BF%CF%83%CE%B9%CE%BF%CE%B3%CF%81%CE%AC%CF%86%CE%BF%CF%82+%C2%AB%CE%B2%CE%B1%CF%86%CF%84%CE%B9%CF%83%CF%84%CE%AE%CF%81%CE%B1%C2%BB+%CF%84%CE%BF%CF%85+%CE%A0%CE%BF%CF%8D%CF%84%CE%B9%CE%BD+%CF%80%CE%BF%CF%85+%CE%AD%CF%86%CF%85%CE%B3%CE%B5...%CE%BD%CF%8D%CF%87%CF%84%CE%B1+%CE%B1%CF%80%CF%8C+%CF%84%CE%B7+%CE%A1%CF%89%CF%83%CE%AF%CE%B1+%CE%B3%CE%B9%CE%B1+%CE%BD%CE%B1+%CE%BC%CE%B7+%CF%83%CF%85%CE%BB%CE%BB%CE%B7%CF%86%CE%B8%CE%B5%CE%AF&amp;url=https://eleftherostypos.gr/diethni/xenia-sabtsak-poia-einai-i-dimosiografos-vaftistira-tou-poutin-pou-efyge-nychta-apo-ti-rosia-gia-na-mi-syllifthei" target="_blank">
+<i class="fab fa-twitter"></i>
+</a>
+<a href="https://api.whatsapp.com/send?text=https://eleftherostypos.gr/diethni/xenia-sabtsak-poia-einai-i-dimosiografos-vaftistira-tou-poutin-pou-efyge-nychta-apo-ti-rosia-gia-na-mi-syllifthei" target="_blank">
+<i class="fab fa-whatsapp"></i>
+</a>
+<a href="viber://forward?text=%CE%9E%CE%AD%CE%BD%CE%B9%CE%B1+%CE%A3%CE%B1%CE%BC%CF%80%CF%84%CF%83%CE%AC%CE%BA%3A+%CE%A0%CE%BF%CE%B9%CE%B1+%CE%B5%CE%AF%CE%BD%CE%B1%CE%B9+%CE%B7+%CE%B4%CE%B7%CE%BC%CE%BF%CF%83%CE%B9%CE%BF%CE%B3%CF%81%CE%AC%CF%86%CE%BF%CF%82+%C2%AB%CE%B2%CE%B1%CF%86%CF%84%CE%B9%CF%83%CF%84%CE%AE%CF%81%CE%B1%C2%BB+%CF%84%CE%BF%CF%85+%CE%A0%CE%BF%CF%8D%CF%84%CE%B9%CE%BD+%CF%80%CE%BF%CF%85+%CE%AD%CF%86%CF%85%CE%B3%CE%B5...%CE%BD%CF%8D%CF%87%CF%84%CE%B1+%CE%B1%CF%80%CF%8C+%CF%84%CE%B7+%CE%A1%CF%89%CF%83%CE%AF%CE%B1+%CE%B3%CE%B9%CE%B1+%CE%BD%CE%B1+%CE%BC%CE%B7+%CF%83%CF%85%CE%BB%CE%BB%CE%B7%CF%86%CE%B8%CE%B5%CE%AF&amp;url=https://eleftherostypos.gr/diethni/xenia-sabtsak-poia-einai-i-dimosiografos-vaftistira-tou-poutin-pou-efyge-nychta-apo-ti-rosia-gia-na-mi-syllifthei">
+<i class="fab fa-viber"></i>
+</a>
+<a href="/cdn-cgi/l/email-protection#7e410d0b1c141b1d0a43b0e0b0d3b0c3b0c7b0cf5eb0ddb0cfb0c2b1feb1fab1fdb0d2b0c4445eb0deb0c1b0c7b0cf5eb0cbb0d1b0c3b0cfb0c75eb0c95eb0cab0c9b0c2b0c1b1fdb0c7b0c1b0cdb1ffb0d2b1f8b0c1b1fc5ebcd5b0ccb0cfb1f8b1fab0c7b1fdb1fab0d0b1ffb0cfbcc55eb1fab0c1b1fb5eb0deb0c1b1f3b1fab0c7b0c35eb1feb0c1b1fb5eb0d3b1f8b1fbb0cdb0cb505050b0c3b1f3b1f9b1fab0cf5eb0cfb1feb1f25eb1fab0c95eb0dfb1f7b1fdb0d1b0cf5eb0cdb0c7b0cf5eb0c3b0cf5eb0c2b0c95eb1fdb1fbb0c5b0c5b0c9b1f8b0c6b0cbb0d1581f130e451c111a0743160a0a0e0d4451511b121b180a161b0c110d0a070e110d50190c511a171b0a16101751061b10171f530d1f1c0a0d1f15530e11171f531b17101f175317531a1713110d1711190c1f18110d53081f180a170d0a170c1f530a110b530e110b0a1710530e110b531b1807191b5310071d160a1f531f0e11530a17530c110d171f5319171f53101f531317530d07121217180a161b17" target="_blank">
+<i class="fal fa-envelope"></i>
+</a>
+<a onClick="javascript:window.print()">
+<i class="fal fa-print"></i>
+</a>
+</div>
+</div>
+<div class="ap-main-text">
+<div id="div-gpt-ad-1585218633458-0" class="mobile--stay--banner banner"></div>
+<h2 class="ap-title">Η δημοσιογράφος Ξένια Σαμπτσάκ έφυγε από την Ρωσία, γράφει η εφημερίδα Novaya Gazeta επικαλούμενη τα ρωσικά ειδησεογραφικά πρακτορεία TASS και Ria Novosti.</h2>
+<div class="ap-article-text">
+</span></p>
+<p>«Αναχώρησε από την Μόσχα την νύχτα (της Τρίτης). Μάλιστα χθες [Τρίτη] αγόρασε μέσω του διαδικτύου εισιτήρια για το Ντουμπάι και σήμερα για την Τουρκία. Το έκανε για να παραπλανήσει τους αστυνομικούς. Τελικά έφυγε για την Λιθουανία μέσω Λευκορωσίας» δήλωσε πηγή του TASS στην αστυνομία. Υπήρχε απόφαση του ανακριτή για σύλληψη της Σαμπτσάκ, αλλά η δημοσιογράφος κατάφερε να διαφύγει.</p>
+<p>Κάμερες κλειστού κυκλώματος φαίνεται να δείχνουν την Σαμπτσάκ, συνοδευόμενη από έναν άγνωστο άνδρα, να καλύπτει το πρόσωπό της και να φοράει καπέλο καθώς περνάει τα σύνορα, αναφέρει το πρακτορείο ειδήσεων RIA Novosti.</p>
+<p>Το βίντεο φαίνεται ότι διέρρευσε από τις κάμερες των συνόρων της Λευκορωσίας. H Λιθουανία επιβεβαίωσε σήμερα ότι η Σαμπτσάκ είχε εισέλθει στο κράτος της Βαλτικής, χρησιμοποιώντας ισραηλινό διαβατήριο.</p>
+<p><iframe loading="lazy" id="molvideoplayer" title="MailOnline Embed Player" src="https://www.dailymail.co.uk/embed/video/2803789.html" width="698" height="573" frameborder="0" scrolling="no" allowfullscreen="allowfullscreen"></iframe></p>
+<p>Η δημοσιογράφος, η οποία γνωρίζει τον Πούτιν από τότε που ήταν παιδί, διέφυγε από τη Ρωσία  λίγες ώρες μετά την έφοδο των Ρώσων πρακτόρων στο πολυτελές σπίτι της σε ένα διάσημο προάστιο της Μόσχας.</p><div id="inarticle-video"></div><div class="ap-relative-news-wrap"><div class="ap-relative-news"><div>ΔΙΑΒΑΣΤΕ ΕΠΙΣΗΣ</div><hr></div><a href="https://eleftherostypos.gr/diethni/oukrania-31-ypopta-paketa-stalthikan-se-oukranikes-presveies-kai-proxeneia" class="ap-relative-article"><div class="gen-date-wrap"><div>07/12/2022 </div><div>|</div><div> <i class="fal fa-clock"></i> 15:53 </div></div><h4 class="relative-article-title">Ουκρανία: 31 «ύποπτα πακέτα» στάλθηκαν σε ουκρανικές πρεσβείες και προξενεία </h4></a></div>
+<p>Η αστυνομία δήλωσε ότι η έρευνα στο σπίτι της σχετίζεται με τις φερόμενες παραβάσεις του διευθυντή των μέσων ενημέρωσης, Κιρίλ Σουχάνοφ, ο οποίος συνελήφθη με την κατηγορία του εκβιασμού.</p>
+<p>Η Σαμπτσάκ απέρριψε την Τρίτη (25/10) τις κατηγορίες κατά του Σουχάνοφ ως «παραλήρημα και ανοησία» και χαρακτήρισε τη σύλληψή του ως μέρος των προσπαθειών των αρχών να καταπνίξουν τα ανεξάρτητα μέσα ενημέρωσης.</p>
+<p><img decoding="async" class="wp-image-1039416 size-full alignnone" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20724%20715'%3E%3C/svg%3E" alt="" width="724" height="715" data-lazy-srcset="https://eleftherostypos.gr/wp-content/uploads/2022/10/ksenia-sobchak-1.jpg 724w, https://eleftherostypos.gr/wp-content/uploads/2022/10/ksenia-sobchak-1-300x296.jpg 300w, https://eleftherostypos.gr/wp-content/uploads/2022/10/ksenia-sobchak-1-96x96.jpg 96w, https://eleftherostypos.gr/wp-content/uploads/2022/10/ksenia-sobchak-1-150x148.jpg 150w" data-lazy-sizes="(max-width: 724px) 100vw, 724px" data-lazy-src="https://eleftherostypos.gr/wp-content/uploads/2022/10/ksenia-sobchak-1.jpg" /><noscript><img decoding="async" class="wp-image-1039416 size-full alignnone" src="https://eleftherostypos.gr/wp-content/uploads/2022/10/ksenia-sobchak-1.jpg" alt="" width="724" height="715" srcset="https://eleftherostypos.gr/wp-content/uploads/2022/10/ksenia-sobchak-1.jpg 724w, https://eleftherostypos.gr/wp-content/uploads/2022/10/ksenia-sobchak-1-300x296.jpg 300w, https://eleftherostypos.gr/wp-content/uploads/2022/10/ksenia-sobchak-1-96x96.jpg 96w, https://eleftherostypos.gr/wp-content/uploads/2022/10/ksenia-sobchak-1-150x148.jpg 150w" sizes="(max-width: 724px) 100vw, 724px" /></noscript></p>
+<p>Η Σαμπτσάκ, μια κοσμική γυναίκα που έγινε πολιτικός, κάποτε αποκαλούνταν η Πάρις Χίλτον της Μόσχας. Ήταν δημοφιλής παρουσιάστρια ριάλιτι και κάποτε πόζαρε για το Playboy.</p>
+<p>Ο Πούτιν τη γνωρίζει από την παιδική της ηλικία και παρακολούθησε τη βάπτισή της στην Ορθόδοξη Εκκλησία, γεγονός που οδήγησε σε φήμες ότι είναι νονός της. Ο Ανατόλι Σαμπτσάκ, ο πατέρας της, ήταν καθηγητής νομικής και μέντορας του Πούτιν.</p>
+<h2><a href="https://news.google.com/publications/CAAqLggKIihDQklTR0FnTWFoUUtFbVZzWldaMGFHVnliM04wZVhCdmN5NW5jaWdBUAE?hl=el&amp;gl=GR&amp;ceid=GR%3Ael">Ειδήσεις</a> <a href="https://eleftherostypos.gr/roi-eidiseon">σήμερα</a></h2>
+<p><a href="https://eleftherostypos.gr/oikonomia/aftes-einai-oi-ores-aichmis-pou-tha-prepei-na-periorizoume-to-revma-poioi-kai-pos-tha-paroun-to-bonous"><strong>Αυτές είναι οι ώρες αιχμής που θα πρέπει να περιορίζουμε το ρεύμα – Ποιοι και πως θα πάρουν το μπόνους</strong></a></p>
+<p><a href="https://eleftherostypos.gr/ellada/thanatos-archimandriti-eiche-molopes-sto-soma-tou-ki-aima-sto-stoma"><strong>Θάνατος αρχιμανδρίτη: Είχε μώλωπες στο σώμα του κι αίμα στο στόμα</strong></a></p>
+<p><a href="https://eleftherostypos.gr/oikonomia/asfalisi-syntaxeis/ti-tha-paroun-to-2023-oi-syntaxiouchoi-giratos-ana-tameio-me-vasi-ta-eti-asfalisis-pinakes"><strong>Τι θα πάρουν το 2023 οι συνταξιούχοι γήρατος ανά Tαμείο με βάση τα έτη ασφάλισης [πίνακες]</strong></a></p>
+</div>
+<div class="ap-quote-wrap">
+<div class="fas fa-quote-left"></div>
+<div class="fas fa-quote-right"></div>
+Δείτε όλες τις τελευταίες <u><a href="/roi-eidiseon">Ειδήσεις</a></u> από την <u><a href="https://eleftherostypos.gr/ellada">Ελλάδα</a></u> και τον <u><a href="https://eleftherostypos.gr/diethni">Κόσμο</a></u>, ανά πάσα στιγμή στο <u><a href="https://eleftherostypos.gr">EleftherosTypos.gr</a></u>
+</div>
+<div class="ap-social-2-wrap my-5">
+<a target="_blank" href="https://news.google.com/publications/CAAiEPYUqMrfMp5Hh3Vvlek2VzUqFAgKIhD2FKjK3zKeR4d1b5XpNlc1?hl=el&gl=GR&ceid=GR%3Ael"><svg class="svg-social-icon me-2 google-logo-svg" enable-background="new 0 0 7 15" height="30" viewBox="0 0 512.288 512.288" width="24" xmlns="http://www.w3.org/2000/svg">
+<g>
+<path d="m91.734 118.863 12.516-62.917 151.894 30.213 151.895-30.213 12.515 62.917 24.09 4.791v-107.991h-377v107.991z"></path>
+<path d="m512.288 167.697-85.399-16.987 10.127 50.915h37.628v155.322z"></path>
+<path d="m179.256 101.453-51.436-10.231-4.238 21.306z"></path>
+<path d="m406.429 201.625-21.961-110.403-384.468 76.475 37.644 189.25v-155.322z"></path>
+<path d="m444.644 231.625h-377v265h377zm-127 117.5h82v30h-82zm82-60v30h-82v-30zm-199.5 162.5c-48.248 0-87.5-39.252-87.5-87.5s39.252-87.5 87.5-87.5c22.574 0 44.005 8.572 60.345 24.138l-20.692 21.722c-10.736-10.228-24.818-15.86-39.653-15.86-31.706 0-57.5 25.794-57.5 57.5s25.794 57.5 57.5 57.5c26.518 0 48.901-18.046 55.516-42.5h-55.516v-30h87.5v15c0 48.248-39.252 87.5-87.5 87.5zm117.5-42.5h82v30h-82z"></path>
+</g>
+</svg> Ακολούθησε μας στο Google News </a>
+<a target="_blank" href="https://www.facebook.com/EleftherosTypos"><i class="fab fa-facebook-f me-2"></i> Κάνε like στη σελίδα μας στο Facebook </a>
+<a target="_blank" href="https://www.youtube.com/channel/UC2L9FAXbj4xzZABpHDJBq7g"><i class="fab fa-youtube me-2"></i> Ακολούθησε μας στο κανάλι μας στο Youtube </a>
+<a target="_blank" href="https://www.instagram.com/accounts/login/"><i class="fab fa-instagram me-2"></i> Ακολούθησε μας στο Instagram </a>
+<a target="_blank" href="https://twitter.com/etyposgr"><i class="fab fa-twitter me-2"></i> Ακολούθησε μας στο Twitter </a>
+</div>
+<div class="ap-sub-wrap">
+<div class="img-wrap">
+<img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="image" data-lazy-src="/wp-content/uploads/2022/03/newspaper-mockup.png" /><noscript><img src="/wp-content/uploads/2022/03/newspaper-mockup.png" alt="image" /></noscript>
+</div>
+<div>
+<div class="fw-bold fz-20">Αποκτήστε συνδρομή</div>
+<div>στην έντυπη έκδοση του Ελεύθερου Τύπου</div>
+</div>
+<a target="_blank" href="https://members.eleftherostypos.gr">Γίνε συνδρομητής <div class="i fas fa-caret-right ms-2"></div></a>
+</div>
+<div class="ap-tags-wrap">
+<div class="tags"> TAGS :</div>
+<div class="link-wrap">
+<a href="https://eleftherostypos.gr/tag/%ce%b2%ce%bb%ce%b1%ce%bd%cf%84%ce%b9%ce%bc%ce%af%cf%81-%cf%80%ce%bf%cf%8d%cf%84%ce%b9%ce%bd">Βλαντιμίρ Πούτιν</a>
+<a href="https://eleftherostypos.gr/tag/%ce%b4%ce%b7%ce%bc%ce%bf%cf%83%ce%b9%ce%bf%ce%b3%cf%81%ce%ac%cf%86%ce%bf%cf%82">δημοσιογράφος</a>
+<a href="https://eleftherostypos.gr/tag/xenia-sabtsak">Ξένια Σαμπτσάκ</a>
+<a href="https://eleftherostypos.gr/tag/%cf%81%cf%89%cf%83%ce%af%ce%b1">Ρωσία</a>
+</div>
+ </div>
+</div>
+</div>
+<div class="global-desktop-banner" id="div-gpt-ad-1583858265624-0"></div>
+<div class="global-mobile-banner" id="div-gpt-ad-4617102-9"></div>
+</div>
+<div class="right flex-bet align-items-center">
+<div class="sidebar-A sticky--main">
+<div class="mb-5">
+<div id="sidebar1" data-ocm-ad="" style="min-height:250px">
+</div>
+</div>
+<p></p>
+<p><div><div class="title"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="" data-lazy-src="/wp-content/uploads/2022/03/et-logo-re-1.png"><noscript><img src="/wp-content/uploads/2022/03/et-logo-re-1.png" alt=""></noscript>Ροή Ειδήσεων</div><div class="article-cont"><a href="https://eleftherostypos.gr/ellada/kivotos-tou-kosmou-i-mitera-tou-p-antoniou-apanta-gia-ti-thyrida-sto-onoma-tis" class="article-link vertical xs"><div class="article-img-wrap icon video-icon"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Κιβωτός του Κόσμου: Η μητέρα του π. Αντωνίου απαντά για τη θυρίδα στο όνομά της" data-lazy-src="https://eleftherostypos.gr/wp-content/uploads/2022/11/kivotos-tou-kosmou-s-3.jpg"><noscript><img src="https://eleftherostypos.gr/wp-content/uploads/2022/11/kivotos-tou-kosmou-s-3.jpg" alt="Κιβωτός του Κόσμου: Η μητέρα του π. Αντωνίου απαντά για τη θυρίδα στο όνομά της"></noscript></div><div class="article-text-wrap"><h2 class="article-title">Κιβωτός του Κόσμου: Η μητέρα του π. Αντωνίου απαντά για τη θυρίδα στο όνομά της</h2><div class="article-date-wrap"><div class="article-date">07/12/2022</div><div class="article-time"> <i class="fal fa-clock me-1"></i>16:38</div></div></div></a><a href="https://eleftherostypos.gr/politiki/theodorikakos-gia-ton-pyrovolismo-tou-16chronou-theloun-epanalipsi-tou-dekemvriou-tou-2008" class="article-link vertical xs"><div class="article-img-wrap "><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Θεοδωρικάκος για τον πυροβολισμό του 16χρονου: Θέλουν επανάληψη του  Δεκεμβρίου του 2008" data-lazy-src="https://eleftherostypos.gr/wp-content/uploads/2022/10/Theodorikakos-910x521-1.jpg"><noscript><img src="https://eleftherostypos.gr/wp-content/uploads/2022/10/Theodorikakos-910x521-1.jpg" alt="Θεοδωρικάκος για τον πυροβολισμό του 16χρονου: Θέλουν επανάληψη του  Δεκεμβρίου του 2008"></noscript></div><div class="article-text-wrap"><h2 class="article-title">Θεοδωρικάκος για τον πυροβολισμό του 16χρονου: Θέλουν επανάληψη του Δεκεμβρίου του 2008</h2><div class="article-date-wrap"><div class="article-date">07/12/2022</div><div class="article-time"> <i class="fal fa-clock me-1"></i>16:30</div></div></div></a><a href="https://eleftherostypos.gr/ygeia-epistimi/o-cheimonas-dokimazei-tous-astheneis-me-psoriasi" class="article-link vertical xs"><div class="article-img-wrap "><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Ο χειμώνας «δοκιμάζει» τους ασθενείς με ψωρίαση" data-lazy-src="https://eleftherostypos.gr/wp-content/uploads/2020/11/διαβήτης-χειμώνας1.jpg"><noscript><img src="https://eleftherostypos.gr/wp-content/uploads/2020/11/διαβήτης-χειμώνας1.jpg" alt="Ο χειμώνας «δοκιμάζει» τους ασθενείς με ψωρίαση"></noscript></div><div class="article-text-wrap"><h2 class="article-title">Ο χειμώνας «δοκιμάζει» τους ασθενείς με ψωρίαση</h2><div class="article-date-wrap"><div class="article-date">07/12/2022</div><div class="article-time"> <i class="fal fa-clock me-1"></i>16:29</div></div></div></a><a href="https://eleftherostypos.gr/politiki/mitsotakis-i-episkepsi-se-cheimarra-livadeia-kai-dervitsani-tha-ginei-oso-pio-amesa-ginetai" class="article-link vertical xs"><div class="article-img-wrap "><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Μητσοτάκης: Η επίσκεψη σε Χειμάρρα, Λιβαδειά και Δερβιτσάνη θα γίνει όσο πιο άμεσα γίνεται!" data-lazy-src="https://eleftherostypos.gr/wp-content/uploads/2022/12/mitsotakis_rama_1.webp"><noscript><img src="https://eleftherostypos.gr/wp-content/uploads/2022/12/mitsotakis_rama_1.webp" alt="Μητσοτάκης: Η επίσκεψη σε Χειμάρρα, Λιβαδειά και Δερβιτσάνη θα γίνει όσο πιο άμεσα γίνεται!"></noscript></div><div class="article-text-wrap"><h2 class="article-title">Μητσοτάκης: Η επίσκεψη σε Χειμάρρα, Λιβαδειά και Δερβιτσάνη θα γίνει όσο πιο άμεσα γίνεται!</h2><div class="article-date-wrap"><div class="article-date">07/12/2022</div><div class="article-time"> <i class="fal fa-clock me-1"></i>16:18</div></div></div></a><a href="https://eleftherostypos.gr/cinematv/sarose-ta-vraveia-aacta-i-tainia-elvis-gia-ti-zoi-tou-diasimou-mousikou" class="article-link vertical xs"><div class="article-img-wrap "><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="«Σάρωσε» τα βραβεία AACTA η ταινία «Έλβις» για τη ζωή του διάσημου μουσικού" data-lazy-src="https://eleftherostypos.gr/wp-content/uploads/2022/12/elvis-tainia.jpg"><noscript><img src="https://eleftherostypos.gr/wp-content/uploads/2022/12/elvis-tainia.jpg" alt="«Σάρωσε» τα βραβεία AACTA η ταινία «Έλβις» για τη ζωή του διάσημου μουσικού"></noscript></div><div class="article-text-wrap"><h2 class="article-title">«Σάρωσε» τα βραβεία AACTA η ταινία «Έλβις» για τη ζωή του διάσημου μουσικού</h2><div class="article-date-wrap"><div class="article-date">07/12/2022</div><div class="article-time"> <i class="fal fa-clock me-1"></i>16:11</div></div></div></a><a href="https://eleftherostypos.gr/ygeia-epistimi/errikos-ntynan-protoporiako-programma-gia-tis-polyanthektikes-loimoxeis" class="article-link vertical xs"><div class="article-img-wrap "><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Ερρίκος Ντυνάν: Πρωτοποριακό πρόγραμμα  για τις πολυανθεκτικές λοιμώξεις" data-lazy-src="https://eleftherostypos.gr/wp-content/uploads/2022/12/ΝΤΥΝΑΝ-εξωτερική-φωτό_-002.jpg"><noscript><img src="https://eleftherostypos.gr/wp-content/uploads/2022/12/ΝΤΥΝΑΝ-εξωτερική-φωτό_-002.jpg" alt="Ερρίκος Ντυνάν: Πρωτοποριακό πρόγραμμα  για τις πολυανθεκτικές λοιμώξεις"></noscript></div><div class="article-text-wrap"><h2 class="article-title">Ερρίκος Ντυνάν: Πρωτοποριακό πρόγραμμα για τις πολυανθεκτικές λοιμώξεις</h2><div class="article-date-wrap"><div class="article-date">07/12/2022</div><div class="article-time"> <i class="fal fa-clock me-1"></i>16:11</div></div></div></a><a href="https://eleftherostypos.gr/ellada/tragodia-stin-aidipso-78chronos-parapatise-karfothike-sta-kagkela-tis-avlis-tou-kai-pethane" class="article-link vertical xs"><div class="article-img-wrap "><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Τραγωδία στην Αιδηψό: 78χρονος παραπάτησε, καρφώθηκε στα κάγκελα της αυλής του και πέθανε" data-lazy-src="https://eleftherostypos.gr/wp-content/uploads/2022/09/ekav.jpg"><noscript><img src="https://eleftherostypos.gr/wp-content/uploads/2022/09/ekav.jpg" alt="Τραγωδία στην Αιδηψό: 78χρονος παραπάτησε, καρφώθηκε στα κάγκελα της αυλής του και πέθανε"></noscript></div><div class="article-text-wrap"><h2 class="article-title">Τραγωδία στην Αιδηψό: 78χρονος παραπάτησε, καρφώθηκε στα κάγκελα της αυλής του και πέθανε</h2><div class="article-date-wrap"><div class="article-date">07/12/2022</div><div class="article-time"> <i class="fal fa-clock me-1"></i>16:10</div></div></div></a><a href="https://eleftherostypos.gr/sports/mountial-2022-infantino-h-kalyteri-fasi-omilon-pou-echei-ginei-pote" class="article-link vertical xs"><div class="article-img-wrap "><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Μουντιάλ 2022-Ινφαντίνο: «H καλύτερη φάση ομίλων που έχει γίνει ποτέ»" data-lazy-src="https://eleftherostypos.gr/wp-content/uploads/2018/03/ifantino-500-500x250.jpg"><noscript><img src="https://eleftherostypos.gr/wp-content/uploads/2018/03/ifantino-500-500x250.jpg" alt="Μουντιάλ 2022-Ινφαντίνο: «H καλύτερη φάση ομίλων που έχει γίνει ποτέ»"></noscript></div><div class="article-text-wrap"><h2 class="article-title">Μουντιάλ 2022-Ινφαντίνο: «H καλύτερη φάση ομίλων που έχει γίνει ποτέ»</h2><div class="article-date-wrap"><div class="article-date">07/12/2022</div><div class="article-time"> <i class="fal fa-clock me-1"></i>16:08</div></div></div></a><a href="https://eleftherostypos.gr/oikonomia/elstat-anodos-28-tou-aep-tis-choras-to-g-trimino-fetos" class="article-link vertical xs"><div class="article-img-wrap "><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="ΕΛΣΤΑΤ: Άνοδος 2,8% του ΑΕΠ της χώρας το γ' τρίμηνο φέτος" data-lazy-src="https://eleftherostypos.gr/wp-content/uploads/2017/12/elstat-500-500x250.jpg"><noscript><img src="https://eleftherostypos.gr/wp-content/uploads/2017/12/elstat-500-500x250.jpg" alt="ΕΛΣΤΑΤ: Άνοδος 2,8% του ΑΕΠ της χώρας το γ' τρίμηνο φέτος"></noscript></div><div class="article-text-wrap"><h2 class="article-title">ΕΛΣΤΑΤ: Άνοδος 2,8% του ΑΕΠ της χώρας το γ' τρίμηνο φέτος</h2><div class="article-date-wrap"><div class="article-date">07/12/2022</div><div class="article-time"> <i class="fal fa-clock me-1"></i>16:03</div></div></div></a><a href="https://eleftherostypos.gr/cinematv/an-chek-nees-apokalypseis-gia-ta-pragmatika-aitia-thanatou-tis-ithopoiou" class="article-link vertical xs"><div class="article-img-wrap "><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Αν Χεκ: Νέες αποκαλύψεις για τα πραγματικά αίτια θανάτου της ηθοποιού" data-lazy-src="https://eleftherostypos.gr/wp-content/uploads/2022/08/anne-heche.jpg"><noscript><img src="https://eleftherostypos.gr/wp-content/uploads/2022/08/anne-heche.jpg" alt="Αν Χεκ: Νέες αποκαλύψεις για τα πραγματικά αίτια θανάτου της ηθοποιού"></noscript></div><div class="article-text-wrap"><h2 class="article-title">Αν Χεκ: Νέες αποκαλύψεις για τα πραγματικά αίτια θανάτου της ηθοποιού</h2><div class="article-date-wrap"><div class="article-date">07/12/2022</div><div class="article-time"> <i class="fal fa-clock me-1"></i>16:02</div></div></div></a><a href="https://eleftherostypos.gr/politiki/androulakis-programmata-koinonikis-katoikias-gia-na-meiothei-to-afximeno-kostos-zois" class="article-link vertical xs"><div class="article-img-wrap icon video-icon"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Ανδρουλάκης: Προγράμματα κοινωνικής κατοικίας για να μειωθεί το αυξημένο κόστος ζωής" data-lazy-src="https://eleftherostypos.gr/wp-content/uploads/2022/05/androulakis-p.jpg"><noscript><img src="https://eleftherostypos.gr/wp-content/uploads/2022/05/androulakis-p.jpg" alt="Ανδρουλάκης: Προγράμματα κοινωνικής κατοικίας για να μειωθεί το αυξημένο κόστος ζωής"></noscript></div><div class="article-text-wrap"><h2 class="article-title">Ανδρουλάκης: Προγράμματα κοινωνικής κατοικίας για να μειωθεί το αυξημένο κόστος ζωής</h2><div class="article-date-wrap"><div class="article-date">07/12/2022</div><div class="article-time"> <i class="fal fa-clock me-1"></i>15:59</div></div></div></a><a href="https://eleftherostypos.gr/ygeia-epistimi/karkinos-trachilou-tis-mitras-dorean-exetaseis-se-2-5-ekat-gynaikes-apo-21-eos-65-eton" class="article-link vertical xs"><div class="article-img-wrap "><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Καρκίνος τραχήλου της μήτρας: Δωρεάν εξετάσεις σε 2.5 εκατ. γυναίκες από 21 έως 65 ετών" data-lazy-src="https://eleftherostypos.gr/wp-content/uploads/2022/12/c1476b_img_20221207_wa0025.jpg"><noscript><img src="https://eleftherostypos.gr/wp-content/uploads/2022/12/c1476b_img_20221207_wa0025.jpg" alt="Καρκίνος τραχήλου της μήτρας: Δωρεάν εξετάσεις σε 2.5 εκατ. γυναίκες από 21 έως 65 ετών"></noscript></div><div class="article-text-wrap"><h2 class="article-title">Καρκίνος τραχήλου της μήτρας: Δωρεάν εξετάσεις σε 2.5 εκατ. γυναίκες από 21 έως 65 ετών</h2><div class="article-date-wrap"><div class="article-date">07/12/2022</div><div class="article-time"> <i class="fal fa-clock me-1"></i>15:58</div></div></div></a><a href="https://eleftherostypos.gr/diethni/oukrania-31-ypopta-paketa-stalthikan-se-oukranikes-presveies-kai-proxeneia" class="article-link vertical xs"><div class="article-img-wrap "><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Ουκρανία: 31 «ύποπτα πακέτα» στάλθηκαν σε ουκρανικές πρεσβείες και προξενεία" data-lazy-src="https://eleftherostypos.gr/wp-content/uploads/2022/11/ispania-astynomia.jpg"><noscript><img src="https://eleftherostypos.gr/wp-content/uploads/2022/11/ispania-astynomia.jpg" alt="Ουκρανία: 31 «ύποπτα πακέτα» στάλθηκαν σε ουκρανικές πρεσβείες και προξενεία"></noscript></div><div class="article-text-wrap"><h2 class="article-title">Ουκρανία: 31 «ύποπτα πακέτα» στάλθηκαν σε ουκρανικές πρεσβείες και προξενεία</h2><div class="article-date-wrap"><div class="article-date">07/12/2022</div><div class="article-time"> <i class="fal fa-clock me-1"></i>15:53</div></div></div></a><a href="https://eleftherostypos.gr/kouzina-gefsi/i-syntagi-tis-imeras-soupa-zestis-sokolatas" class="article-link vertical xs"><div class="article-img-wrap "><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Η συνταγή της ημέρας: Σούπα ζεστής σοκολάτας" data-lazy-src="https://eleftherostypos.gr/wp-content/uploads/2022/12/soupa-sokolatas-500.jpg"><noscript><img src="https://eleftherostypos.gr/wp-content/uploads/2022/12/soupa-sokolatas-500.jpg" alt="Η συνταγή της ημέρας: Σούπα ζεστής σοκολάτας"></noscript></div><div class="article-text-wrap"><h2 class="article-title">Η συνταγή της ημέρας: Σούπα ζεστής σοκολάτας</h2><div class="article-date-wrap"><div class="article-date">07/12/2022</div><div class="article-time"> <i class="fal fa-clock me-1"></i>15:46</div></div></div></a><a href="https://eleftherostypos.gr/agrotikos-tupos/eos-668-pano-oi-times-apo-to-chorafi-sto-rafi-adianoites-afxiseis-se-lemonia-mila-ryzi" class="article-link vertical xs"><div class="article-img-wrap "><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Εως 668% πάνω οι τιμές από το χωράφι στο ράφι - Αδιανόητες αυξήσεις σε λεμόνια, μήλα, ρύζι" data-lazy-src="https://eleftherostypos.gr/wp-content/uploads/2022/05/logarismoi-akriveia-re.jpg"><noscript><img src="https://eleftherostypos.gr/wp-content/uploads/2022/05/logarismoi-akriveia-re.jpg" alt="Εως 668% πάνω οι τιμές από το χωράφι στο ράφι - Αδιανόητες αυξήσεις σε λεμόνια, μήλα, ρύζι"></noscript></div><div class="article-text-wrap"><h2 class="article-title">Εως 668% πάνω οι τιμές από το χωράφι στο ράφι - Αδιανόητες αυξήσεις σε λεμόνια, μήλα, ρύζι</h2><div class="article-date-wrap"><div class="article-date">07/12/2022</div><div class="article-time"> <i class="fal fa-clock me-1"></i>15:46</div></div></div></a><a href="https://eleftherostypos.gr/diethni/kina-chalarosan-ta-metra-gia-ton-koronoio-panigyrizoun-oi-katoikoi-eimaste-eleftheroi" class="article-link vertical xs"><div class="article-img-wrap "><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Κίνα: Χαλάρωσαν τα μέτρα για τον κορονοϊό - Πανηγυρίζουν οι κάτοικοι, «είμαστε ελεύθεροι»" data-lazy-src="https://eleftherostypos.gr/wp-content/uploads/2022/11/MJLHVAUFUNP6HM4NLLDOFKELJM-scaled.jpg"><noscript><img src="https://eleftherostypos.gr/wp-content/uploads/2022/11/MJLHVAUFUNP6HM4NLLDOFKELJM-scaled.jpg" alt="Κίνα: Χαλάρωσαν τα μέτρα για τον κορονοϊό - Πανηγυρίζουν οι κάτοικοι, «είμαστε ελεύθεροι»"></noscript></div><div class="article-text-wrap"><h2 class="article-title">Κίνα: Χαλάρωσαν τα μέτρα για τον κορονοϊό - Πανηγυρίζουν οι κάτοικοι, «είμαστε ελεύθεροι»</h2><div class="article-date-wrap"><div class="article-date">07/12/2022</div><div class="article-time"> <i class="fal fa-clock me-1"></i>15:40</div></div></div></a><a href="https://eleftherostypos.gr/politismos/o-vasilis-gisdakis-kai-i-afentoula-razeli-tragoudoun-to-s-agapo-tou-kosmou" class="article-link vertical xs"><div class="article-img-wrap icon video-icon"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Ο Βασίλης Γισδάκης και η Αφεντούλα Ραζέλη τραγουδούν “Το σ' αγαπώ του κόσμου”" data-lazy-src="https://eleftherostypos.gr/wp-content/uploads/2022/12/εξώφυλλο.jpg"><noscript><img src="https://eleftherostypos.gr/wp-content/uploads/2022/12/εξώφυλλο.jpg" alt="Ο Βασίλης Γισδάκης και η Αφεντούλα Ραζέλη τραγουδούν “Το σ' αγαπώ του κόσμου”"></noscript></div><div class="article-text-wrap"><h2 class="article-title">Ο Βασίλης Γισδάκης και η Αφεντούλα Ραζέλη τραγουδούν “Το σ' αγαπώ του κόσμου”</h2><div class="article-date-wrap"><div class="article-date">07/12/2022</div><div class="article-time"> <i class="fal fa-clock me-1"></i>15:40</div></div></div></a><a href="https://eleftherostypos.gr/diethni/volontimir-zelenski-prosopo-tis-chronias-apo-to-periodiko-time" class="article-link vertical xs"><div class="article-img-wrap "><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Βολοντίμιρ Ζελένσκι: «Πρόσωπο της Χρονιάς» από το περιοδικό TIME" data-lazy-src="https://eleftherostypos.gr/wp-content/uploads/2022/12/zelensky-time.jpg"><noscript><img src="https://eleftherostypos.gr/wp-content/uploads/2022/12/zelensky-time.jpg" alt="Βολοντίμιρ Ζελένσκι: «Πρόσωπο της Χρονιάς» από το περιοδικό TIME"></noscript></div><div class="article-text-wrap"><h2 class="article-title">Βολοντίμιρ Ζελένσκι: «Πρόσωπο της Χρονιάς» από το περιοδικό TIME</h2><div class="article-date-wrap"><div class="article-date">07/12/2022</div><div class="article-time"> <i class="fal fa-clock me-1"></i>15:32</div></div></div></a><a href="https://eleftherostypos.gr/lifestyle/i-eleni-menegaki-apokalypse-tin-peripeteia-tis-me-ton-koronoio-pote-nosise" class="article-link vertical xs"><div class="article-img-wrap icon video-icon"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Η Eλένη Μενεγάκη αποκάλυψε την περιπέτειά της με τον κορονοϊό - Πότε νόσησε" data-lazy-src="https://eleftherostypos.gr/wp-content/uploads/2018/10/eleni-menegaki-premiera-500-500x250.jpg"><noscript><img src="https://eleftherostypos.gr/wp-content/uploads/2018/10/eleni-menegaki-premiera-500-500x250.jpg" alt="Η Eλένη Μενεγάκη αποκάλυψε την περιπέτειά της με τον κορονοϊό - Πότε νόσησε"></noscript></div><div class="article-text-wrap"><h2 class="article-title">Η Eλένη Μενεγάκη αποκάλυψε την περιπέτειά της με τον κορονοϊό - Πότε νόσησε</h2><div class="article-date-wrap"><div class="article-date">07/12/2022</div><div class="article-time"> <i class="fal fa-clock me-1"></i>15:30</div></div></div></a><a href="https://eleftherostypos.gr/politiki/i-maria-apatzidi-milouse-sti-vouli-kai-o-kleon-grigoriadis-gdynotan-se-zontani-syndesi" class="article-link vertical xs"><div class="article-img-wrap icon video-icon"><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Η Μαρία Απατζίδη μιλούσε στη Βουλή και ο Κλέων Γρηγοριάδης γδυνόταν σε ζωντανή σύνδεση" data-lazy-src="https://eleftherostypos.gr/wp-content/uploads/2022/12/Screenshot-2022-12-07-143707.png"><noscript><img src="https://eleftherostypos.gr/wp-content/uploads/2022/12/Screenshot-2022-12-07-143707.png" alt="Η Μαρία Απατζίδη μιλούσε στη Βουλή και ο Κλέων Γρηγοριάδης γδυνόταν σε ζωντανή σύνδεση"></noscript></div><div class="article-text-wrap"><h2 class="article-title">Η Μαρία Απατζίδη μιλούσε στη Βουλή και ο Κλέων Γρηγοριάδης γδυνόταν σε ζωντανή σύνδεση</h2><div class="article-date-wrap"><div class="article-date">07/12/2022</div><div class="article-time"> <i class="fal fa-clock me-1"></i>15:28</div></div></div></a><a href="https://eleftherostypos.gr/business/i-papastratos-dimosievei-ti-2i-eniaia-ekthesi-viosimis-anaptyxis" class="article-link vertical xs"><div class="article-img-wrap "><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Η Παπαστράτος δημοσιεύει τη 2η Ενιαία Έκθεση Βιώσιμης Ανάπτυξης" data-lazy-src="https://eleftherostypos.gr/wp-content/uploads/2022/12/papastratos.jpg"><noscript><img src="https://eleftherostypos.gr/wp-content/uploads/2022/12/papastratos.jpg" alt="Η Παπαστράτος δημοσιεύει τη 2η Ενιαία Έκθεση Βιώσιμης Ανάπτυξης"></noscript></div><div class="article-text-wrap"><h2 class="article-title">Η Παπαστράτος δημοσιεύει τη 2η Ενιαία Έκθεση Βιώσιμης Ανάπτυξης</h2><div class="article-date-wrap"><div class="article-date">07/12/2022</div><div class="article-time"> <i class="fal fa-clock me-1"></i>15:25</div></div></div></a><a href="https://eleftherostypos.gr/diethni/nato-stoltenbergk-i-rosia-prospathei-na-pagosei-ton-polemo-stin-oukrania-ochi-na-ton-teleiosei" class="article-link vertical xs"><div class="article-img-wrap "><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="NATO - Στόλτενμπεργκ: Η Ρωσία προσπαθεί να «παγώσει» τον πόλεμο στην Ουκρανία, όχι να τον τελειώσει" data-lazy-src="https://eleftherostypos.gr/wp-content/uploads/2022/06/stoltenberg.jpg"><noscript><img src="https://eleftherostypos.gr/wp-content/uploads/2022/06/stoltenberg.jpg" alt="NATO - Στόλτενμπεργκ: Η Ρωσία προσπαθεί να «παγώσει» τον πόλεμο στην Ουκρανία, όχι να τον τελειώσει"></noscript></div><div class="article-text-wrap"><h2 class="article-title">NATO - Στόλτενμπεργκ: Η Ρωσία προσπαθεί να «παγώσει» τον πόλεμο στην Ουκρανία, όχι να τον τελειώσει</h2><div class="article-date-wrap"><div class="article-date">07/12/2022</div><div class="article-time"> <i class="fal fa-clock me-1"></i>15:24</div></div></div></a><a href="https://eleftherostypos.gr/oikonomia/epidoma-paidiou-dipli-dosi-ton-dekemvrio-pote-tha-plirothei" class="article-link vertical xs"><div class="article-img-wrap "><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Επίδομα παιδιού: Διπλή δόση τον Δεκέμβριο - Πότε θα πληρωθεί" data-lazy-src="https://eleftherostypos.gr/wp-content/uploads/2022/11/epidoma-opekas.jpg"><noscript><img src="https://eleftherostypos.gr/wp-content/uploads/2022/11/epidoma-opekas.jpg" alt="Επίδομα παιδιού: Διπλή δόση τον Δεκέμβριο - Πότε θα πληρωθεί"></noscript></div><div class="article-text-wrap"><h2 class="article-title">Επίδομα παιδιού: Διπλή δόση τον Δεκέμβριο - Πότε θα πληρωθεί</h2><div class="article-date-wrap"><div class="article-date">07/12/2022</div><div class="article-time"> <i class="fal fa-clock me-1"></i>15:22</div></div></div></a><a href="https://eleftherostypos.gr/diethni/taliban-i-proti-dimosia-ektelesi-ap-otan-epestrepsan-stin-exousia" class="article-link vertical xs"><div class="article-img-wrap "><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Ταλιμπάν: Η πρώτη δημόσια εκτέλεση απ' όταν επέστρεψαν στην εξουσία" data-lazy-src="https://eleftherostypos.gr/wp-content/uploads/2021/08/taliban-2.jpg"><noscript><img src="https://eleftherostypos.gr/wp-content/uploads/2021/08/taliban-2.jpg" alt="Ταλιμπάν: Η πρώτη δημόσια εκτέλεση απ' όταν επέστρεψαν στην εξουσία"></noscript></div><div class="article-text-wrap"><h2 class="article-title">Ταλιμπάν: Η πρώτη δημόσια εκτέλεση απ' όταν επέστρεψαν στην εξουσία</h2><div class="article-date-wrap"><div class="article-date">07/12/2022</div><div class="article-time"> <i class="fal fa-clock me-1"></i>15:17</div></div></div></a><a href="https://eleftherostypos.gr/diethni/aeroplano-me-proorismo-tin-tourkia-prosgeiothike-ektaktos-sti-varkeloni-diefygan-28-metanastes" class="article-link vertical xs"><div class="article-img-wrap "><img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Αεροπλάνο με προορισμό την Τουρκία προσγειώθηκε εκτάκτως στη Βαρκελώνη - Διέφυγαν 28 μετανάστες" data-lazy-src="https://eleftherostypos.gr/wp-content/uploads/2022/12/varkelwni-aerodromio-elprat.jpg"><noscript><img src="https://eleftherostypos.gr/wp-content/uploads/2022/12/varkelwni-aerodromio-elprat.jpg" alt="Αεροπλάνο με προορισμό την Τουρκία προσγειώθηκε εκτάκτως στη Βαρκελώνη - Διέφυγαν 28 μετανάστες"></noscript></div><div class="article-text-wrap"><h2 class="article-title">Αεροπλάνο με προορισμό την Τουρκία προσγειώθηκε εκτάκτως στη Βαρκελώνη - Διέφυγαν 28 μετανάστες</h2><div class="article-date-wrap"><div class="article-date">07/12/2022</div><div class="article-time"> <i class="fal fa-clock me-1"></i>15:12</div></div></div></a></div></div></p>
+<div class="my-5">
+<div id="sidebar2" data-ocm-ad="" style="min-height:250px">
+</div>
+</div>
+<p><script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script type="rocketlazyloadscript">(function() {
+	window.mc4wp = window.mc4wp || {
+		listeners: [],
+		forms: {
+			on: function(evt, cb) {
+				window.mc4wp.listeners.push(
+					{
+						event   : evt,
+						callback: cb
+					}
+				);
+			}
+		}
+	}
+})();
+</script><form id="mc4wp-form-1" class="mc4wp-form mc4wp-form-940310" method="post" data-id="940310" data-name="Newsletter"><div class="mc4wp-form-fields"><div class="newsletter side">
+<div>
+<i class="fas fa-paper-plane"></i>
+<h2> Εγγραφή στο Newsletter </h2>
+<p> Κάνε εγγραφή στο newsletter μας, για να μαθαίνεις πρώτος όλα τα νέα και εξελίξεις! </p>
+</div>
+<div>
+<input type="email" name="EMAIL" placeholder="Συμπλήρωσε το email σου..." required>
+<div class="d-flex align-items-center gap-2">
+<input type="checkbox" required>
+<div class="fw-normal agree--with--terms">Συμφωνώ με τους <a href="https://eleftherostypos.gr/oroi-chrisis" class="text-decoration-underline  ">Όρους Χρήσης</a> </div>
+<button type="submit"> Εγγραφή <i class="fas fa-caret-right ms-2"></i></button>
+</div>
+</div>
+</div></div><label style="display: none !important;">Leave this field empty if you're human: <input type="text" name="_mc4wp_honeypot" value="" tabindex="-1" autocomplete="off" /></label><input type="hidden" name="_mc4wp_timestamp" value="1670423905" /><input type="hidden" name="_mc4wp_form_id" value="940310" /><input type="hidden" name="_mc4wp_form_element_id" value="mc4wp-form-1" /><div class="mc4wp-response"></div></form></p>
+<p>
+<div class="">
+<div class="title">
+<img class="m-auto" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="" data-lazy-src="/wp-content/uploads/2022/03/et-logo-re-1.png"><noscript><img class="m-auto" src="/wp-content/uploads/2022/03/et-logo-re-1.png" alt=""></noscript>
+</div>
+<ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+<li class="nav-item" role="presentation">
+<a class="nav-link tab" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Δημοφιλή</a>
+</li>
+<li class="nav-item" role="presentation">
+<a class="nav-link tab" id="pills-comment-tab" data-bs-toggle="pill" data-bs-target="#pills-comment" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Σχολιασμένα</a>
+</li>
+</ul>
+<div class="tab-content" id="pills-tabContent">
+<div class="tab-pane fade show active" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+<div class="article-cont">
+<a href="https://eleftherostypos.gr/diethni/italia-27chronos-apeilouse-na-skotosei-tin-tzortzia-meloni-kai-tin-kori-tis" class="article-link vertical xs">
+<div class="article-img-wrap">
+<img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Ιταλία: 27χρονος απειλούσε να σκοτώσει την Τζόρτζια Μελόνι και την κόρη της" data-lazy-src="https://eleftherostypos.gr/wp-content/uploads/2022/10/w09-164141.jpg"><noscript><img src="https://eleftherostypos.gr/wp-content/uploads/2022/10/w09-164141.jpg" alt="Ιταλία: 27χρονος απειλούσε να σκοτώσει την Τζόρτζια Μελόνι και την κόρη της"></noscript>
+</div>
+<div class="article-text-wrap">
+<h2 class="article-title">Ιταλία: 27χρονος απειλούσε να σκοτώσει την Τζόρτζια Μελόνι και την κόρη της</h2>
+<div class="article-date-wrap">
+<div class="article-date">07/12/2022</div>
+<div class="article-time"> <i class="fal fa-clock me-1"></i>14:22</div>
+</div>
+</div>
+</a>
+<a href="https://eleftherostypos.gr/sports/i-parastasi-tis-vrazilias-kai-ta-imichrona-kyriarchias-se-nok-aout-agones" class="article-link vertical xs">
+<div class="article-img-wrap">
+<img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Η παράσταση της Βραζιλίας και τα ημίχρονα κυριαρχίας σε νοκ άουτ αγώνες" data-lazy-src="https://eleftherostypos.gr/wp-content/uploads/2022/12/2022-12-05T211849Z_918795526_UP1EIC51IOU65_RTRMADP_3_SOCCER-WORLDCUP-BRA-KOR-REPORT.jpg"><noscript><img src="https://eleftherostypos.gr/wp-content/uploads/2022/12/2022-12-05T211849Z_918795526_UP1EIC51IOU65_RTRMADP_3_SOCCER-WORLDCUP-BRA-KOR-REPORT.jpg" alt="Η παράσταση της Βραζιλίας και τα ημίχρονα κυριαρχίας σε νοκ άουτ αγώνες"></noscript>
+</div>
+<div class="article-text-wrap">
+<h2 class="article-title">Η παράσταση της Βραζιλίας και τα ημίχρονα κυριαρχίας σε νοκ άουτ αγώνες</h2>
+<div class="article-date-wrap">
+<div class="article-date">06/12/2022</div>
+<div class="article-time"> <i class="fal fa-clock me-1"></i>15:18</div>
+</div>
+</div>
+</a>
+<a href="https://eleftherostypos.gr/ellada/alexandros-grigoropoulos-ekleise-i-panepistimiou-prochorise-se-prosagoges-i-el-as" class="article-link vertical xs">
+<div class="article-img-wrap">
+<img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Επέτειος Γρηγορόπουλου: Έκλεισε η Πανεπιστημίου – Προχώρησε σε προσαγωγές η ΕΛ.ΑΣ." data-lazy-src="https://eleftherostypos.gr/wp-content/uploads/2022/12/grigoropoulos.jpg"><noscript><img src="https://eleftherostypos.gr/wp-content/uploads/2022/12/grigoropoulos.jpg" alt="Επέτειος Γρηγορόπουλου: Έκλεισε η Πανεπιστημίου – Προχώρησε σε προσαγωγές η ΕΛ.ΑΣ."></noscript>
+</div>
+<div class="article-text-wrap">
+<h2 class="article-title">Επέτειος Γρηγορόπουλου: Έκλεισε η Πανεπιστημίου – Προχώρησε σε προσαγωγές η ΕΛ.ΑΣ.</h2>
+<div class="article-date-wrap">
+<div class="article-date">06/12/2022</div>
+<div class="article-time"> <i class="fal fa-clock me-1"></i>12:56</div>
+</div>
+</div>
+</a>
+<a href="https://eleftherostypos.gr/cinematv/kane-oti-koimasai-sta-akra-oi-scheseis-tou-nikola-me-ton-christoforo" class="article-link vertical xs">
+<div class="article-img-wrap">
+<img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="«Κάνε ότι κοιμάσαι»: Στα άκρα… οι σχέσεις του  Νικόλα με τον Χριστόφορο" data-lazy-src="https://eleftherostypos.gr/wp-content/uploads/2022/12/29-1-15πλ-1024x683-1.jpg"><noscript><img src="https://eleftherostypos.gr/wp-content/uploads/2022/12/29-1-15πλ-1024x683-1.jpg" alt="«Κάνε ότι κοιμάσαι»: Στα άκρα… οι σχέσεις του  Νικόλα με τον Χριστόφορο"></noscript>
+</div>
+<div class="article-text-wrap">
+<h2 class="article-title">«Κάνε ότι κοιμάσαι»: Στα άκρα… οι σχέσεις του Νικόλα με τον Χριστόφορο</h2>
+<div class="article-date-wrap">
+<div class="article-date">05/12/2022</div>
+<div class="article-time"> <i class="fal fa-clock me-1"></i>14:27</div>
+</div>
+</div>
+</a>
+<a href="https://eleftherostypos.gr/politiki/o-enti-rama-zitise-syngnomi-apo-ton-mitsotaki-elpizo-na-min-enochlithikate" class="article-link vertical xs">
+<div class="article-img-wrap">
+<img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Ο Έντι Ράμα ζήτησε συγγνώμη από τον Μητσοτάκη: «Ελπίζω να μην ενοχληθήκατε»" data-lazy-src="https://eleftherostypos.gr/wp-content/uploads/2022/12/mitsotakis_rama_papamitsos_343434.jpg.webp"><noscript><img src="https://eleftherostypos.gr/wp-content/uploads/2022/12/mitsotakis_rama_papamitsos_343434.jpg.webp" alt="Ο Έντι Ράμα ζήτησε συγγνώμη από τον Μητσοτάκη: «Ελπίζω να μην ενοχληθήκατε»"></noscript>
+</div>
+<div class="article-text-wrap">
+<h2 class="article-title">Ο Έντι Ράμα ζήτησε συγγνώμη από τον Μητσοτάκη: «Ελπίζω να μην ενοχληθήκατε»</h2>
+<div class="article-date-wrap">
+<div class="article-date">06/12/2022</div>
+<div class="article-time"> <i class="fal fa-clock me-1"></i>21:22</div>
+</div>
+</div>
+</a>
+<a href="https://eleftherostypos.gr/diethni/ipa-igetis-airesis-eiche-pano-apo-20-syzygous-pantreftike-akoma-kai-tin-aniliki-kori-tou" class="article-link vertical xs">
+<div class="article-img-wrap">
+<img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="ΗΠΑ: Ηγέτης αίρεσης είχε πάνω από 20 συζύγους - Παντρεύτηκε ακόμα και την ανήλικη κόρη του" data-lazy-src="https://eleftherostypos.gr/wp-content/uploads/2022/12/airesi-igetis.webp"><noscript><img src="https://eleftherostypos.gr/wp-content/uploads/2022/12/airesi-igetis.webp" alt="ΗΠΑ: Ηγέτης αίρεσης είχε πάνω από 20 συζύγους - Παντρεύτηκε ακόμα και την ανήλικη κόρη του"></noscript>
+</div>
+<div class="article-text-wrap">
+<h2 class="article-title">ΗΠΑ: Ηγέτης αίρεσης είχε πάνω από 20 συζύγους - Παντρεύτηκε ακόμα και την ανήλικη κόρη του</h2>
+<div class="article-date-wrap">
+<div class="article-date">05/12/2022</div>
+<div class="article-time"> <i class="fal fa-clock me-1"></i>12:59</div>
+</div>
+</div>
+</a>
+<a href="https://eleftherostypos.gr/ygeia-epistimi/ypourgeio-ygeias-gia-proti-fora-thespizetai-systima-anakoufistikis-frontidas-pos-tha-anavathmistoun-oi-ypiresies-gia-karkinopatheis-kai-allous-chronious-astheneis" class="article-link vertical xs">
+<div class="article-img-wrap">
+<img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Υπουργείο Υγείας: Για πρώτη φορά θεσπίζεται σύστημα ανακουφιστικής φροντίδας – Πώς θα αναβαθμιστούν οι υπηρεσίες για καρκινοπαθείς και άλλους χρόνιους ασθενείς" data-lazy-src="https://eleftherostypos.gr/wp-content/uploads/2022/12/ypourgeio-ygeias-500.jpg"><noscript><img src="https://eleftherostypos.gr/wp-content/uploads/2022/12/ypourgeio-ygeias-500.jpg" alt="Υπουργείο Υγείας: Για πρώτη φορά θεσπίζεται σύστημα ανακουφιστικής φροντίδας – Πώς θα αναβαθμιστούν οι υπηρεσίες για καρκινοπαθείς και άλλους χρόνιους ασθενείς"></noscript>
+</div>
+<div class="article-text-wrap">
+<h2 class="article-title">Υπουργείο Υγείας: Για πρώτη φορά θεσπίζεται σύστημα ανακουφιστικής φροντίδας – Πώς θα αναβαθμιστούν οι υπηρεσίες για καρκινοπαθείς και άλλους χρόνιους ασθενείς</h2>
+<div class="article-date-wrap">
+<div class="article-date">06/12/2022</div>
+<div class="article-time"> <i class="fal fa-clock me-1"></i>10:10</div>
+</div>
+</div>
+</a>
+<a href="https://eleftherostypos.gr/cinematv/rialiti-soou-pote-teleionoun-ta-agapimena-protzekt" class="article-link vertical xs">
+<div class="article-img-wrap">
+<img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Ριάλιτι σόου: Πότε τελειώνουν τα αγαπημένα πρότζεκτ" data-lazy-src="https://eleftherostypos.gr/wp-content/uploads/2022/12/Just-the2-ofus-500.png"><noscript><img src="https://eleftherostypos.gr/wp-content/uploads/2022/12/Just-the2-ofus-500.png" alt="Ριάλιτι σόου: Πότε τελειώνουν τα αγαπημένα πρότζεκτ"></noscript>
+</div>
+<div class="article-text-wrap">
+<h2 class="article-title">Ριάλιτι σόου: Πότε τελειώνουν τα αγαπημένα πρότζεκτ</h2>
+<div class="article-date-wrap">
+<div class="article-date">05/12/2022</div>
+<div class="article-time"> <i class="fal fa-clock me-1"></i>15:48</div>
+</div>
+</div>
+</a>
+<a href="https://eleftherostypos.gr/diethni/perou-22-000-thalassopoulia-nekra-apo-ti-gripi-ton-ptinon" class="article-link vertical xs">
+<div class="article-img-wrap">
+<img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Περού: 22.000 θαλασσοπούλια νεκρά από τη γρίπη των πτηνών" data-lazy-src="https://eleftherostypos.gr/wp-content/uploads/2022/12/127820717_de41.jpg"><noscript><img src="https://eleftherostypos.gr/wp-content/uploads/2022/12/127820717_de41.jpg" alt="Περού: 22.000 θαλασσοπούλια νεκρά από τη γρίπη των πτηνών"></noscript>
+</div>
+<div class="article-text-wrap">
+<h2 class="article-title">Περού: 22.000 θαλασσοπούλια νεκρά από τη γρίπη των πτηνών</h2>
+<div class="article-date-wrap">
+<div class="article-date">06/12/2022</div>
+<div class="article-time"> <i class="fal fa-clock me-1"></i>09:23</div>
+</div>
+</div>
+</a>
+<a href="https://eleftherostypos.gr/politiki/mitarakis-voultepsi-pros-guardian-yponomevete-tis-prospatheies-ton-ellinikon-archon-gia-entaxi-ton-prosfygon" class="article-link vertical xs">
+<div class="article-img-wrap">
+<img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Μηταράκης-Βούλτεψη προς Guardian: «Υπονομεύετε τις προσπάθειες των ελληνικών Αρχών για ένταξη των προσφύγων»" data-lazy-src="https://eleftherostypos.gr/wp-content/uploads/2022/06/mitarakis.jpg"><noscript><img src="https://eleftherostypos.gr/wp-content/uploads/2022/06/mitarakis.jpg" alt="Μηταράκης-Βούλτεψη προς Guardian: «Υπονομεύετε τις προσπάθειες των ελληνικών Αρχών για ένταξη των προσφύγων»"></noscript>
+</div>
+<div class="article-text-wrap">
+<h2 class="article-title">Μηταράκης-Βούλτεψη προς Guardian: «Υπονομεύετε τις προσπάθειες των ελληνικών Αρχών για ένταξη των προσφύγων»</h2>
+<div class="article-date-wrap">
+<div class="article-date">06/12/2022</div>
+<div class="article-time"> <i class="fal fa-clock me-1"></i>12:23</div>
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="tab-pane fade" id="pills-comment" role="tabpanel" aria-labelledby="pills-comment-tab">
+<div class="article-cont">
+<a href="https://eleftherostypos.gr/lifestyle/aschima-nea-gia-tin-roula-koromila-matheftike-prin-ligo" class="article-link vertical xs">
+<div class="article-img-wrap">
+<img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Άσχημα νέα για την Ρούλα Κορομηλά - Μαθεύτηκε πριν λίγο" data-lazy-src="https://eleftherostypos.gr/wp-content/uploads/2022/11/koromila.jpg"><noscript><img src="https://eleftherostypos.gr/wp-content/uploads/2022/11/koromila.jpg" alt="Άσχημα νέα για την Ρούλα Κορομηλά - Μαθεύτηκε πριν λίγο"></noscript>
+</div>
+<div class="article-text-wrap">
+<h2 class="article-title">Άσχημα νέα για την Ρούλα Κορομηλά - Μαθεύτηκε πριν λίγο</h2>
+<div class="article-date-wrap">
+<div class="article-date">04/12/2022</div>
+<div class="article-time"> <i class="fal fa-clock me-1"></i>10:30</div>
+</div>
+</div>
+ </a>
+<a href="https://eleftherostypos.gr/apopseis/o-tsipras-i-pandimia-kai-to-mati" class="article-link vertical xs">
+<div class="article-img-wrap">
+<img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Ο Τσίπρας, η πανδημία και το Μάτι" data-lazy-src="https://eleftherostypos.gr/wp-content/uploads/2022/11/tsipras-vouli-kontarinis-eurokinissi.jpg"><noscript><img src="https://eleftherostypos.gr/wp-content/uploads/2022/11/tsipras-vouli-kontarinis-eurokinissi.jpg" alt="Ο Τσίπρας, η πανδημία και το Μάτι"></noscript>
+</div>
+<div class="article-text-wrap">
+<h2 class="article-title">Ο Τσίπρας, η πανδημία και το Μάτι</h2>
+<div class="article-date-wrap">
+<div class="article-date">03/12/2022</div>
+<div class="article-time"> <i class="fal fa-clock me-1"></i>13:39</div>
+</div>
+</div>
+</a>
+<a href="https://eleftherostypos.gr/oikonomia/asfalisi-syntaxeis/syntaxeis-anadromika-eos-75-000-evro-gia-120-000-syntaxiouchous" class="article-link vertical xs">
+<div class="article-img-wrap">
+<img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Συντάξεις: Αναδρομικά έως 75.000 ευρώ για 120.000 συνταξιούχους" data-lazy-src="https://eleftherostypos.gr/wp-content/uploads/2022/12/14f1_pl-25-scaled.jpg"><noscript><img src="https://eleftherostypos.gr/wp-content/uploads/2022/12/14f1_pl-25-scaled.jpg" alt="Συντάξεις: Αναδρομικά έως 75.000 ευρώ για 120.000 συνταξιούχους"></noscript>
+</div>
+<div class="article-text-wrap">
+<h2 class="article-title">Συντάξεις: Αναδρομικά έως 75.000 ευρώ για 120.000 συνταξιούχους</h2>
+<div class="article-date-wrap">
+<div class="article-date">01/12/2022</div>
+<div class="article-time"> <i class="fal fa-clock me-1"></i>09:10</div>
+</div>
+</div>
+</a>
+<a href="https://eleftherostypos.gr/ellada/agioi-isidoroi-apomakrynthike-o-dimitrios-loupasakis" class="article-link vertical xs">
+<div class="article-img-wrap">
+<img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Αγιοι Ισίδωροι: Απομακρύνθηκε ο Δημήτριος Λουπασάκης" data-lazy-src="https://eleftherostypos.gr/wp-content/uploads/2022/10/lukabittos-agioi-isidoroi-1920.jpg"><noscript><img src="https://eleftherostypos.gr/wp-content/uploads/2022/10/lukabittos-agioi-isidoroi-1920.jpg" alt="Αγιοι Ισίδωροι: Απομακρύνθηκε ο Δημήτριος Λουπασάκης"></noscript>
+</div>
+<div class="article-text-wrap">
+<h2 class="article-title">Αγιοι Ισίδωροι: Απομακρύνθηκε ο Δημήτριος Λουπασάκης</h2>
+<div class="article-date-wrap">
+<div class="article-date">30/11/2022</div>
+ <div class="article-time"> <i class="fal fa-clock me-1"></i>07:04</div>
+</div>
+</div>
+</a>
+<a href="https://eleftherostypos.gr/politiki/anagnoristike-somateio-pou-proothei-ti-makedoniki-glossa-stin-ellada-sygcharitiria-apo-zaef" class="article-link vertical xs">
+<div class="article-img-wrap">
+<img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Αναγνωρίστηκε σωματείο που προωθεί τη «μακεδονική» γλώσσα στην Ελλάδα – Συγχαρητήρια από Ζάεφ" data-lazy-src="https://eleftherostypos.gr/wp-content/uploads/2018/07/zaev-tsipras-prespes-skopiano-500-500x250.jpg"><noscript><img src="https://eleftherostypos.gr/wp-content/uploads/2018/07/zaev-tsipras-prespes-skopiano-500-500x250.jpg" alt="Αναγνωρίστηκε σωματείο που προωθεί τη «μακεδονική» γλώσσα στην Ελλάδα – Συγχαρητήρια από Ζάεφ"></noscript>
+</div>
+<div class="article-text-wrap">
+<h2 class="article-title">Αναγνωρίστηκε σωματείο που προωθεί τη «μακεδονική» γλώσσα στην Ελλάδα – Συγχαρητήρια από Ζάεφ</h2>
+<div class="article-date-wrap">
+<div class="article-date">29/11/2022</div>
+<div class="article-time"> <i class="fal fa-clock me-1"></i>14:11</div>
+</div>
+</div>
+</a>
+<a href="https://eleftherostypos.gr/lifestyle/katerina-kainourgiou-ti-douleia-kanei-o-neos-syntrofos-tis-vangelis-rodopoulos" class="article-link vertical xs">
+<div class="article-img-wrap">
+<img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Κατερίνα Καινούργιου: Τι δουλειά κάνει ο νέος σύντροφος της Βαγγέλης Ροδόπουλος" data-lazy-src="https://eleftherostypos.gr/wp-content/uploads/2022/11/kainourgiou_rodopoylos.jpg"><noscript><img src="https://eleftherostypos.gr/wp-content/uploads/2022/11/kainourgiou_rodopoylos.jpg" alt="Κατερίνα Καινούργιου: Τι δουλειά κάνει ο νέος σύντροφος της Βαγγέλης Ροδόπουλος"></noscript>
+</div>
+<div class="article-text-wrap">
+<h2 class="article-title">Κατερίνα Καινούργιου: Τι δουλειά κάνει ο νέος σύντροφος της Βαγγέλης Ροδόπουλος</h2>
+<div class="article-date-wrap">
+<div class="article-date">29/11/2022</div>
+<div class="article-time"> <i class="fal fa-clock me-1"></i>09:29</div>
+</div>
+</div>
+</a>
+<a href="https://eleftherostypos.gr/ellada/thessaloniki-sparagmos-gia-tin-21chroni-emmanouela-ta-minymata-tis-miteras-tis" class="article-link vertical xs">
+<div class="article-img-wrap">
+<img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Θεσσαλονίκη: Σπαραγμός για την 21χρονη Εμμανουέλα - Τα μηνύματα της μητέρας της" data-lazy-src="https://eleftherostypos.gr/wp-content/uploads/2022/11/parasirsi-3-2-1024x683-1.jpg"><noscript><img src="https://eleftherostypos.gr/wp-content/uploads/2022/11/parasirsi-3-2-1024x683-1.jpg" alt="Θεσσαλονίκη: Σπαραγμός για την 21χρονη Εμμανουέλα - Τα μηνύματα της μητέρας της"></noscript>
+</div>
+<div class="article-text-wrap">
+<h2 class="article-title">Θεσσαλονίκη: Σπαραγμός για την 21χρονη Εμμανουέλα - Τα μηνύματα της μητέρας της</h2>
+<div class="article-date-wrap">
+<div class="article-date">27/11/2022</div>
+<div class="article-time"> <i class="fal fa-clock me-1"></i>15:18</div>
+<div class="upd-time-remove-it upd-time">Upd: 27/11/2022, 15:59</div>
+</div>
+</div>
+</a>
+<a href="https://eleftherostypos.gr/oikonomia/asfalisi-syntaxeis/syntaxeis-poioi-tha-paroun-dipli-i-tripli-afxisi-ti-eipe-o-chatzidakis-sti-vouli" class="article-link vertical xs">
+<div class="article-img-wrap">
+<img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Συντάξεις: Ποιοι θα πάρουν διπλή ή τριπλή αύξηση - Τι είπε ο Χατζηδάκης στη Βουλή" data-lazy-src="https://eleftherostypos.gr/wp-content/uploads/2016/09/syntaksiouxoi-psalidi-1300-500x250.jpg"><noscript><img src="https://eleftherostypos.gr/wp-content/uploads/2016/09/syntaksiouxoi-psalidi-1300-500x250.jpg" alt="Συντάξεις: Ποιοι θα πάρουν διπλή ή τριπλή αύξηση - Τι είπε ο Χατζηδάκης στη Βουλή"></noscript>
+</div>
+<div class="article-text-wrap">
+<h2 class="article-title">Συντάξεις: Ποιοι θα πάρουν διπλή ή τριπλή αύξηση - Τι είπε ο Χατζηδάκης στη Βουλή</h2>
+<div class="article-date-wrap">
+<div class="article-date">24/11/2022</div>
+<div class="article-time"> <i class="fal fa-clock me-1"></i>16:23</div>
+</div>
+</div>
+</a>
+<a href="https://eleftherostypos.gr/ellada/vary-katigoritirio-gia-ton-ebristi-tis-real-kai-tin-organosi-chiliades-ilioi-tis-nychtas" class="article-link vertical xs">
+<div class="article-img-wrap">
+<img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="«Βαρύ» κατηγορητήριο για τον εμπρηστή της Real και την οργάνωση «Χιλιάδες ήλιοι της νύχτας»" data-lazy-src="https://eleftherostypos.gr/wp-content/uploads/2022/07/real-news.epithesi.jpg"><noscript><img src="https://eleftherostypos.gr/wp-content/uploads/2022/07/real-news.epithesi.jpg" alt="«Βαρύ» κατηγορητήριο για τον εμπρηστή της Real και την οργάνωση «Χιλιάδες ήλιοι της νύχτας»"></noscript>
+</div>
+<div class="article-text-wrap">
+<h2 class="article-title">«Βαρύ» κατηγορητήριο για τον εμπρηστή της Real και την οργάνωση «Χιλιάδες ήλιοι της νύχτας»</h2>
+<div class="article-date-wrap">
+<div class="article-date">23/11/2022</div>
+<div class="article-time"> <i class="fal fa-clock me-1"></i>14:29</div>
+</div>
+</div>
+</a>
+<a href="https://eleftherostypos.gr/oikonomia/asfalisi-syntaxeis/syntaxeis-kourema-eos-100-stin-prosopiki-diafora-fernei-i-afxisi-8-tou-2023-pinakes" class="article-link vertical xs">
+<div class="article-img-wrap">
+<img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Συντάξεις: «Κούρεμα» έως 100% στην προσωπική διαφορά φέρνει η αύξηση 8% του 2023 [πίνακες]" data-lazy-src="https://eleftherostypos.gr/wp-content/uploads/2017/09/syntaksiouxoi-1000-500x250.jpg"><noscript><img src="https://eleftherostypos.gr/wp-content/uploads/2017/09/syntaksiouxoi-1000-500x250.jpg" alt="Συντάξεις: «Κούρεμα» έως 100% στην προσωπική διαφορά φέρνει η αύξηση 8% του 2023 [πίνακες]"></noscript>
+</div>
+<div class="article-text-wrap">
+<h2 class="article-title">Συντάξεις: «Κούρεμα» έως 100% στην προσωπική διαφορά φέρνει η αύξηση 8% του 2023 [πίνακες]</h2>
+<div class="article-date-wrap">
+<div class="article-date">22/11/2022</div>
+<div class="article-time"> <i class="fal fa-clock me-1"></i>12:29</div>
+</div>
+</div>
+</a>
+</div>
+</div>
+</div>
+</div>
+</p>
+<div class="my-5 sticky--main">
+<div id="sidebar3" data-ocm-ad="" style="min-height:250px">
+</div>
+</div> </div>
+</div>
+</div>
+<div id="disqus_thread" class="px-2rem"></div>
+<script type="rocketlazyloadscript">
+            jQuery('a').attr("rel", 'noopener noreferrer external');
+            jQuery(function(){
+                jQuery('a').on('click', function (e) {
+                    if(jQuery(this).attr('href') !== '#' && typeof jQuery(this).attr('href') !== 'undefined') {
+                        if(jQuery(this).attr('target') == '_blank'){
+                            e.preventDefault();
+                    
+                            window.open(
+                                jQuery(this).attr('href'),
+                                '_blank' 
+                                );
+                            }
+                        }
+
+                });
+                });
+
+            /**
+             *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT 
+             *  THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR 
+             *  PLATFORM OR CMS.
+             *  
+             *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: 
+             *  https://disqus.com/admin/universalcode/#configuration-variables
+             */
+
+            var disqus_config = function() {
+                // Replace PAGE_URL with your page's canonical URL variable
+                this.page.url = 'https://eleftherostypos.gr/diethni/xenia-sabtsak-poia-einai-i-dimosiografos-vaftistira-tou-poutin-pou-efyge-nychta-apo-ti-rosia-gia-na-mi-syllifthei';
+
+                // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+                this.page.identifier = 1039395;
+            };
+
+            (function() { // REQUIRED CONFIGURATION VARIABLE: EDIT THE SHORTNAME BELOW
+                var d = document,
+                    s = d.createElement('script');
+
+                // IMPORTANT: Replace EXAMPLE with your forum shortname!
+                s.src = 'https://eleftherostypos-gr.disqus.com/embed.js';
+
+                s.setAttribute('data-timestamp', +new Date());
+                (d.head || d.body).appendChild(s);
+            })();
+        </script>
+<noscript>
+            Please enable JavaScript to view the
+            <a href="https://disqus.com/?ref_noscript" rel="nofollow">
+                comments powered by Disqus.
+            </a>
+        </noscript>
+<div class="px-2rem">
+<div class="ap-article-pagination-wrap">
+<div class="text-start">
+<span><i class="fas fa-caret-left me-2"></i> ΠΡΟΗΓΟΥΜΕΝΟ ΑΡΘΡΟ</span>
+<a href="https://eleftherostypos.gr/diethni/germania-kinezikos-omilos-tha-agorasei-etaireia-mikrotsip-antidraseis-apo-tis-mystikes-ypiresies">Γερμανία: Κινεζικός όμιλος θα αγοράσει εταιρεία μικροτσίπ - Αντιδράσεις από τις μυστικές υπηρεσίες</a>
+</div>
+<div class="text-end ap-next-article">
+<span> ΕΠΟΜΕΝΟ ΑΡΘΡΟ<i class="fas fa-caret-right ms-2"></i></span>
+<a href="https://eleftherostypos.gr/diethni/o-efedrikos-prigkipas-o-prigkipas-chari-kykloforei-ta-apomnimonevmata-tou">«Ο...εφεδρικός πρίγκιπας»: Ο πρίγκιπας Χάρι κυκλοφορεί τα απομνημονεύματά του</a>
+</div>
+</div>
+<div class="article-news-letter">
+<script type="rocketlazyloadscript">(function() {
+	window.mc4wp = window.mc4wp || {
+		listeners: [],
+		forms: {
+			on: function(evt, cb) {
+				window.mc4wp.listeners.push(
+					{
+						event   : evt,
+						callback: cb
+					}
+				);
+			}
+		}
+	}
+})();
+</script><form id="mc4wp-form-2" class="mc4wp-form mc4wp-form-940310" method="post" data-id="940310" data-name="Newsletter"><div class="mc4wp-form-fields"><div class="newsletter side">
+<div>
+<i class="fas fa-paper-plane"></i>
+<h2> Εγγραφή στο Newsletter </h2>
+<p> Κάνε εγγραφή στο newsletter μας, για να μαθαίνεις πρώτος όλα τα νέα και εξελίξεις! </p>
+</div>
+<div>
+<input type="email" name="EMAIL" placeholder="Συμπλήρωσε το email σου..." required>
+<div class="d-flex align-items-center gap-2">
+<input type="checkbox" required>
+<div class="fw-normal agree--with--terms">Συμφωνώ με τους <a href="https://eleftherostypos.gr/oroi-chrisis" class="text-decoration-underline  ">Όρους Χρήσης</a> </div>
+<button type="submit"> Εγγραφή <i class="fas fa-caret-right ms-2"></i></button>
+</div>
+</div>
+</div></div><label style="display: none !important;">Leave this field empty if you're human: <input type="text" name="_mc4wp_honeypot" value="" tabindex="-1" autocomplete="off" /></label><input type="hidden" name="_mc4wp_timestamp" value="1670423905" /><input type="hidden" name="_mc4wp_form_id" value="940310" /><input type="hidden" name="_mc4wp_form_element_id" value="mc4wp-form-2" /><div class="mc4wp-response"></div></form> </div>
+<section class="ap-relative-articles-wrap">
+<div id="disqus_thread"></div>
+<script type="rocketlazyloadscript">
+    var embedVars = {"disqusConfig":{"integration":"wordpress 3.0.22"},"disqusIdentifier":"1064828 https:\/\/eleftherostypos.gr\/?p=1064828","disqusShortname":"eleftherostypos-gr","disqusTitle":"\u0391\u03b5\u03c1\u03bf\u03c0\u03bb\u03ac\u03bd\u03bf \u03bc\u03b5 \u03c0\u03c1\u03bf\u03bf\u03c1\u03b9\u03c3\u03bc\u03cc \u03c4\u03b7\u03bd \u03a4\u03bf\u03c5\u03c1\u03ba\u03af\u03b1 \u03c0\u03c1\u03bf\u03c3\u03b3\u03b5\u03b9\u03ce\u03b8\u03b7\u03ba\u03b5 \u03b5\u03ba\u03c4\u03ac\u03ba\u03c4\u03c9\u03c2 \u03c3\u03c4\u03b7 \u0392\u03b1\u03c1\u03ba\u03b5\u03bb\u03ce\u03bd\u03b7 &#8211; \u0394\u03b9\u03ad\u03c6\u03c5\u03b3\u03b1\u03bd 28 \u03bc\u03b5\u03c4\u03b1\u03bd\u03ac\u03c3\u03c4\u03b5\u03c2","disqusUrl":"https:\/\/eleftherostypos.gr\/diethni\/aeroplano-me-proorismo-tin-tourkia-prosgeiothike-ektaktos-sti-varkeloni-diefygan-28-metanastes","postId":1064828};
+    var disqus_url = embedVars.disqusUrl;
+var disqus_identifier = embedVars.disqusIdentifier;
+var disqus_container_id = 'disqus_thread';
+var disqus_shortname = embedVars.disqusShortname;
+var disqus_title = embedVars.disqusTitle;
+var disqus_config_custom = window.disqus_config;
+var disqus_config = function () {
+    /*
+    All currently supported events:
+    onReady: fires when everything is ready,
+    onNewComment: fires when a new comment is posted,
+    onIdentify: fires when user is authenticated
+    */
+    var dsqConfig = embedVars.disqusConfig;
+    this.page.integration = dsqConfig.integration;
+    this.page.remote_auth_s3 = dsqConfig.remote_auth_s3;
+    this.page.api_key = dsqConfig.api_key;
+    this.sso = dsqConfig.sso;
+    this.language = dsqConfig.language;
+
+    if (disqus_config_custom)
+        disqus_config_custom.call(this);
+};
+
+(function() {
+    if (document.getElementById(disqus_container_id)) {
+        var dsq = document.createElement('script');
+        dsq.type = 'text/javascript';
+        dsq.async = true;
+        dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }
+})();
+</script>
+</section>
+<section class="ap-relative-articles-wrap mb-5">
+<div class="lines-title-wrap">
+<hr>
+<div class="title">Σχετικά Άρθρα</div>
+<hr>
+</div>
+<div class="grid-4 mobile-vertical-link-wrap">
+<a href="https://eleftherostypos.gr/diethni/oukrania-31-ypopta-paketa-stalthikan-se-oukranikes-presveies-kai-proxeneia" class="article-link sm">
+<div class="article-img-wrap">
+<img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Ουκρανία: 31 «ύποπτα πακέτα» στάλθηκαν σε ουκρανικές πρεσβείες και προξενεία" data-lazy-src="https://eleftherostypos.gr/wp-content/uploads/2022/11/ispania-astynomia.jpg"><noscript><img src="https://eleftherostypos.gr/wp-content/uploads/2022/11/ispania-astynomia.jpg" alt="Ουκρανία: 31 «ύποπτα πακέτα» στάλθηκαν σε ουκρανικές πρεσβείες και προξενεία"></noscript>
+<div class="article-img-tag">Διεθνή</div>
+</div>
+<div class="article-text-wrap ">
+<div class="article-tag-container">
+<div class="article-img-tag mobile">Διεθνή</div>
+<hr>
+</div>
+<h2 class="article-title">Ουκρανία: 31 «ύποπτα πακέτα» στάλθηκαν σε ουκρανικές πρεσβείες και προξενεία</h2>
+<div class="article-date-wrap">
+<div class="article-date">07/12/2022</div>
+<div class="article-time"> <i class="fal fa-clock me-1"></i>15:53</div>
+</div>
+</div>
+</a>
+<a href="https://eleftherostypos.gr/diethni/kina-chalarosan-ta-metra-gia-ton-koronoio-panigyrizoun-oi-katoikoi-eimaste-eleftheroi" class="article-link sm">
+<div class="article-img-wrap">
+<img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Κίνα: Χαλάρωσαν τα μέτρα για τον κορονοϊό  Πανηγυρίζουν οι κάτοικοι «είμαστε ελεύθεροι»" data-lazy-src="https://eleftherostypos.gr/wp-content/uploads/2022/11/MJLHVAUFUNP6HM4NLLDOFKELJM-scaled.jpg"><noscript><img src="https://eleftherostypos.gr/wp-content/uploads/2022/11/MJLHVAUFUNP6HM4NLLDOFKELJM-scaled.jpg" alt="Κίνα: Χαλάρωσαν τα μέτρα για τον κορονοϊό  Πανηγυρίζουν οι κάτοικοι «είμαστε ελεύθεροι»"></noscript>
+<div class="article-img-tag">Διεθνή</div>
+</div>
+<div class="article-text-wrap ">
+<div class="article-tag-container">
+<div class="article-img-tag mobile">Διεθνή</div>
+<hr>
+</div>
+<h2 class="article-title">Κίνα: Χαλάρωσαν τα μέτρα για τον κορονοϊό - Πανηγυρίζουν οι κάτοικοι, «είμαστε ελεύθεροι»</h2>
+<div class="article-date-wrap">
+<div class="article-date">07/12/2022</div>
+<div class="article-time"> <i class="fal fa-clock me-1"></i>15:40</div>
+</div>
+</div>
+</a>
+<a href="https://eleftherostypos.gr/diethni/volontimir-zelenski-prosopo-tis-chronias-apo-to-periodiko-time" class="article-link sm">
+<div class="article-img-wrap">
+<img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Βολοντίμιρ Ζελένσκι: «Πρόσωπο της Χρονιάς» από το περιοδικό TIME" data-lazy-src="https://eleftherostypos.gr/wp-content/uploads/2022/12/zelensky-time.jpg"><noscript><img src="https://eleftherostypos.gr/wp-content/uploads/2022/12/zelensky-time.jpg" alt="Βολοντίμιρ Ζελένσκι: «Πρόσωπο της Χρονιάς» από το περιοδικό TIME"></noscript>
+<div class="article-img-tag">Διεθνή</div>
+</div>
+<div class="article-text-wrap ">
+<div class="article-tag-container">
+<div class="article-img-tag mobile">Διεθνή</div>
+<hr>
+</div>
+<h2 class="article-title">Βολοντίμιρ Ζελένσκι: «Πρόσωπο της Χρονιάς» από το περιοδικό TIME</h2>
+<div class="article-date-wrap">
+<div class="article-date">07/12/2022</div>
+<div class="article-time"> <i class="fal fa-clock me-1"></i>15:32</div>
+</div>
+</div>
+</a>
+<a href="https://eleftherostypos.gr/diethni/nato-stoltenbergk-i-rosia-prospathei-na-pagosei-ton-polemo-stin-oukrania-ochi-na-ton-teleiosei" class="article-link sm">
+<div class="article-img-wrap">
+<img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="NATO  Στόλτενμπεργκ: Η Ρωσία προσπαθεί να «παγώσει» τον πόλεμο στην Ουκρανία όχι να τον τελειώσει" data-lazy-src="https://eleftherostypos.gr/wp-content/uploads/2022/06/stoltenberg.jpg"><noscript><img src="https://eleftherostypos.gr/wp-content/uploads/2022/06/stoltenberg.jpg" alt="NATO  Στόλτενμπεργκ: Η Ρωσία προσπαθεί να «παγώσει» τον πόλεμο στην Ουκρανία όχι να τον τελειώσει"></noscript>
+<div class="article-img-tag">Διεθνή</div>
+</div>
+<div class="article-text-wrap ">
+<div class="article-tag-container">
+<div class="article-img-tag mobile">Διεθνή</div>
+<hr>
+</div>
+<h2 class="article-title">NATO - Στόλτενμπεργκ: Η Ρωσία προσπαθεί να «παγώσει» τον πόλεμο στην Ουκρανία, όχι να τον τελειώσει</h2>
+<div class="article-date-wrap">
+<div class="article-date">07/12/2022</div>
+<div class="article-time"> <i class="fal fa-clock me-1"></i>15:24</div>
+</div>
+</div>
+</a>
+<a href="https://eleftherostypos.gr/diethni/taliban-i-proti-dimosia-ektelesi-ap-otan-epestrepsan-stin-exousia" class="article-link sm">
+<div class="article-img-wrap">
+<img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Ταλιμπάν: Η πρώτη δημόσια εκτέλεση απ όταν επέστρεψαν στην εξουσία" data-lazy-src="https://eleftherostypos.gr/wp-content/uploads/2021/08/taliban-2.jpg"><noscript><img src="https://eleftherostypos.gr/wp-content/uploads/2021/08/taliban-2.jpg" alt="Ταλιμπάν: Η πρώτη δημόσια εκτέλεση απ όταν επέστρεψαν στην εξουσία"></noscript>
+<div class="article-img-tag">Διεθνή</div>
+</div>
+<div class="article-text-wrap ">
+<div class="article-tag-container">
+<div class="article-img-tag mobile">Διεθνή</div>
+<hr>
+</div>
+<h2 class="article-title">Ταλιμπάν: Η πρώτη δημόσια εκτέλεση απ' όταν επέστρεψαν στην εξουσία</h2>
+<div class="article-date-wrap">
+<div class="article-date">07/12/2022</div>
+<div class="article-time"> <i class="fal fa-clock me-1"></i>15:17</div>
+</div>
+</div>
+</a>
+<a href="https://eleftherostypos.gr/diethni/aeroplano-me-proorismo-tin-tourkia-prosgeiothike-ektaktos-sti-varkeloni-diefygan-28-metanastes" class="article-link sm">
+<div class="article-img-wrap">
+<img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Αεροπλάνο με προορισμό την Τουρκία προσγειώθηκε εκτάκτως στη Βαρκελώνη  Διέφυγαν 28 μετανάστες" data-lazy-src="https://eleftherostypos.gr/wp-content/uploads/2022/12/varkelwni-aerodromio-elprat.jpg"><noscript><img src="https://eleftherostypos.gr/wp-content/uploads/2022/12/varkelwni-aerodromio-elprat.jpg" alt="Αεροπλάνο με προορισμό την Τουρκία προσγειώθηκε εκτάκτως στη Βαρκελώνη  Διέφυγαν 28 μετανάστες"></noscript>
+<div class="article-img-tag">Διεθνή</div>
+</div>
+<div class="article-text-wrap ">
+<div class="article-tag-container">
+<div class="article-img-tag mobile">Διεθνή</div>
+<hr>
+</div>
+<h2 class="article-title">Αεροπλάνο με προορισμό την Τουρκία προσγειώθηκε εκτάκτως στη Βαρκελώνη - Διέφυγαν 28 μετανάστες</h2>
+<div class="article-date-wrap">
+<div class="article-date">07/12/2022</div>
+<div class="article-time"> <i class="fal fa-clock me-1"></i>15:12</div>
+</div>
+</div>
+</a>
+<a href="https://eleftherostypos.gr/diethni/glypta-tou-parthenona-epikindyno-na-ta-epistrepsoume-ypostirizei-i-vretanida-ypourgos-politismou" class="article-link sm">
+<div class="article-img-wrap">
+<img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Γλυπτά του Παρθενώνα: «Επικίνδυνο να τα επιστρέψουμε» υποστηρίζει η Βρετανίδα υπουργός Πολιτισμού" data-lazy-src="https://eleftherostypos.gr/wp-content/uploads/2022/12/glypta-parthenona-500.jpg"><noscript><img src="https://eleftherostypos.gr/wp-content/uploads/2022/12/glypta-parthenona-500.jpg" alt="Γλυπτά του Παρθενώνα: «Επικίνδυνο να τα επιστρέψουμε» υποστηρίζει η Βρετανίδα υπουργός Πολιτισμού"></noscript>
+<div class="article-img-tag">Διεθνή</div>
+</div>
+<div class="article-text-wrap ">
+<div class="article-tag-container">
+<div class="article-img-tag mobile">Διεθνή</div>
+<hr>
+</div>
+<h2 class="article-title">Γλυπτά του Παρθενώνα: «Επικίνδυνο να τα επιστρέψουμε», υποστηρίζει η Βρετανίδα υπουργός Πολιτισμού</h2>
+<div class="article-date-wrap">
+<div class="article-date">07/12/2022</div>
+<div class="article-time"> <i class="fal fa-clock me-1"></i>15:04</div>
+</div>
+</div>
+</a>
+<a href="https://eleftherostypos.gr/tech/google-ti-einai-to-wordle-pou-itan-proto-stis-anazitiseis-to-2022" class="article-link sm">
+<div class="article-img-wrap">
+<img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Google: Τι είναι το Wordle που ήταν πρώτο στις αναζητήσεις το 2022" data-lazy-src="https://eleftherostypos.gr/wp-content/uploads/2022/12/WORDLE-Janna-Lee-1068x697-1.png"><noscript><img src="https://eleftherostypos.gr/wp-content/uploads/2022/12/WORDLE-Janna-Lee-1068x697-1.png" alt="Google: Τι είναι το Wordle που ήταν πρώτο στις αναζητήσεις το 2022"></noscript>
+<div class="article-img-tag">Tech &amp; Science</div>
+</div>
+<div class="article-text-wrap ">
+<div class="article-tag-container">
+<div class="article-img-tag mobile">Tech &amp; Science</div>
+<hr>
+</div>
+<h2 class="article-title">Google: Τι είναι το Wordle που ήταν πρώτο στις αναζητήσεις το 2022</h2>
+<div class="article-date-wrap">
+<div class="article-date">07/12/2022</div>
+<div class="article-time"> <i class="fal fa-clock me-1"></i>14:55</div>
+</div>
+</div>
+</a>
+</div>
+</section>
+<div id="ENGAGEYA_WIDGET_221155" class="mb-5"></div>
+<script type="rocketlazyloadscript" data-cfasync="false">
+                    (function(E, n, G, A, g, Y, a) {
+                        E['EngageyaObject'] = g;
+                        E[g] = E[g] || function() {
+                            (E[g].q = E[g].q || []).push(arguments)
+                        }, E[g].l = 1 * new Date();
+                        Y = n.createElement(G), a = n.getElementsByTagName(G)[0];
+                        Y.async = 1;
+                        Y.src = A;
+                        a.parentNode.insertBefore(Y, a)
+                    })(window, document, 'script', '//widget.engageya.com/engageya_loader.js', '__engWidget');
+                    __engWidget('createWidget', {
+                        wwei: 'ENGAGEYA_WIDGET_221155',
+                        pubid: 183422,
+                        webid: 168594,
+                        wid: 221155
+                    });
+                </script>
+<section class="ap-popular-wrap">
+<div class="banner-col mb-5">
+<div class="sticky--main--child" id='billboard2' data-ocm-ad style="min-height:250px"></div>
+</div>
+<div class="single-popular">
+<div class="left">
+<h1 class="main-h1 mb-4">Δημοφιλή στο Web</h1>
+<div class="flex-bet">
+<div class="grid-3-1 ">
+<a href="https://eleftherostypos.gr/politiki/i-maria-apatzidi-milouse-sti-vouli-kai-o-kleon-grigoriadis-gdynotan-se-zontani-syndesi" class="article-link md">
+<div class="article-img-wrap">
+<img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Η Μαρία Απατζίδη μιλούσε στη Βουλή και ο Κλέων Γρηγοριάδης γδυνόταν σε ζωντανή σύνδεση" data-lazy-src="https://eleftherostypos.gr/wp-content/uploads/2022/12/Screenshot-2022-12-07-143707.png" /><noscript><img src="https://eleftherostypos.gr/wp-content/uploads/2022/12/Screenshot-2022-12-07-143707.png" alt="Η Μαρία Απατζίδη μιλούσε στη Βουλή και ο Κλέων Γρηγοριάδης γδυνόταν σε ζωντανή σύνδεση" /></noscript>
+<div class="article-img-tag">Πολιτική</div>
+</div>
+<div class="article-text-wrap ">
+<h2 class="article-title">Η Μαρία Απατζίδη μιλούσε στη Βουλή και ο Κλέων Γρηγοριάδης γδυνόταν σε ζωντανή σύνδεση</h2>
+<p class="article-text">Μάρτυρες ενός απίστευτου περιστατικού έγιναν όσοι παρακολούθησαν τη συνεδρίαση της Επιτροπής Δημόσιας Διοίκησης της Βουλής.</p>
+<div class="article-date-wrap">
+<div class="article-date">07/12/2022</div>
+<div class="article-time"> <i class="fal fa-clock me-1"></i>15:28</div>
+</div>
+</div>
+</a>
+<div class="flex-bet grid-2-mobile-link-wrap mobile-vertical-link-wrap flex-bet-mobile">
+<a href="https://eleftherostypos.gr/oikonomia/eortastiko-kalathi-giati-einai-ektos-melomakarona-kai-kourabiedes" class="article-link sm">
+<div class="article-img-wrap">
+<img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Εορταστικό καλάθι: Γιατί είναι εκτός μελομακάρονα και κουραμπιέδες" data-lazy-src="https://eleftherostypos.gr/wp-content/uploads/2019/12/melomakarono-kourampies-500.jpg" /><noscript><img src="https://eleftherostypos.gr/wp-content/uploads/2019/12/melomakarono-kourampies-500.jpg" alt="Εορταστικό καλάθι: Γιατί είναι εκτός μελομακάρονα και κουραμπιέδες" /></noscript>
+<div class="article-img-tag">Οικονομία</div>
+</div>
+<div class="article-text-wrap ">
+<div class="article-tag-container">
+<div class="article-img-tag mobile">Οικονομία</div>
+<hr>
+</div>
+<h2 class="article-title">Εορταστικό καλάθι: Γιατί είναι εκτός μελομακάρονα και κουραμπιέδες</h2>
+<div class="article-date-wrap">
+<div class="article-date">07/12/2022</div>
+<div class="article-time"> <i class="fal fa-clock me-1"></i>13:21</div>
+</div>
+</div>
+</a>
+<a href="https://eleftherostypos.gr/lifestyle/survivor-all-star-afta-einai-ta-symvolaia-oi-28-paiktes-pou-ypegrapsan" class="article-link sm">
+<div class="article-img-wrap">
+<img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Survivor All Star: Αυτά είναι τα συμβόλαια  Οι 28 παίκτες που υπέγραψαν" data-lazy-src="https://eleftherostypos.gr/wp-content/uploads/2022/11/ca36f4_survivor_all_star.jpg" /><noscript><img src="https://eleftherostypos.gr/wp-content/uploads/2022/11/ca36f4_survivor_all_star.jpg" alt="Survivor All Star: Αυτά είναι τα συμβόλαια  Οι 28 παίκτες που υπέγραψαν" /></noscript>
+<div class="article-img-tag">Lifestyle</div>
+</div>
+<div class="article-text-wrap ">
+<div class="article-tag-container">
+<div class="article-img-tag mobile">Lifestyle</div>
+<hr>
+</div>
+<h2 class="article-title">Survivor All Star: Αυτά είναι τα συμβόλαια - Οι 28 παίκτες που υπέγραψαν</h2>
+<div class="article-date-wrap">
+<div class="article-date">07/12/2022</div>
+<div class="article-time"> <i class="fal fa-clock me-1"></i>11:42</div>
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="grid-3 grid-2-mobile-link-wrap mobile-vertical-link-wrap">
+<a href="https://eleftherostypos.gr/cinematv/an-chek-nees-apokalypseis-gia-ta-pragmatika-aitia-thanatou-tis-ithopoiou" class="article-link sm">
+<div class="article-img-wrap">
+<img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Αν Χεκ: Νέες αποκαλύψεις για τα πραγματικά αίτια θανάτου της ηθοποιού" data-lazy-src="https://eleftherostypos.gr/wp-content/uploads/2022/08/anne-heche.jpg"><noscript><img src="https://eleftherostypos.gr/wp-content/uploads/2022/08/anne-heche.jpg" alt="Αν Χεκ: Νέες αποκαλύψεις για τα πραγματικά αίτια θανάτου της ηθοποιού"></noscript>
+<div class="article-img-tag">CinemaTV</div>
+</div>
+<div class="article-text-wrap ">
+<div class="article-tag-container">
+<div class="article-img-tag mobile">CinemaTV</div>
+<hr>
+</div>
+<h2 class="article-title">Αν Χεκ: Νέες αποκαλύψεις για τα πραγματικά αίτια θανάτου της ηθοποιού</h2>
+<div class="article-date-wrap">
+<div class="article-date">07/12/2022</div>
+<div class="article-time"> <i class="fal fa-clock me-1"></i>16:02</div>
+</div>
+</div>
+</a>
+<a href="https://eleftherostypos.gr/ellada/ti-kai-einai-akrivo-to-revma-spiti-stin-kozani-fotagogithike-me-10-000-labionia" class="article-link sm">
+<div class="article-img-wrap">
+ <img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Τι και αν είναι ακριβό το ρεύμα;  Σπίτι στην Κοζάνη φωταγωγήθηκε με 10000 λαμπιόνια" data-lazy-src="https://eleftherostypos.gr/wp-content/uploads/2022/12/10009.webp"><noscript><img src="https://eleftherostypos.gr/wp-content/uploads/2022/12/10009.webp" alt="Τι και αν είναι ακριβό το ρεύμα;  Σπίτι στην Κοζάνη φωταγωγήθηκε με 10000 λαμπιόνια"></noscript>
+<div class="article-img-tag">Ελλάδα</div>
+</div>
+<div class="article-text-wrap ">
+<div class="article-tag-container">
+<div class="article-img-tag mobile">Ελλάδα</div>
+<hr>
+</div>
+<h2 class="article-title">Τι και αν είναι ακριβό το ρεύμα; - Σπίτι στην Κοζάνη φωταγωγήθηκε με 10.000 λαμπιόνια</h2>
+<div class="article-date-wrap">
+<div class="article-date">07/12/2022</div>
+<div class="article-time"> <i class="fal fa-clock me-1"></i>11:09</div>
+</div>
+</div>
+</a>
+<a href="https://eleftherostypos.gr/istories/navagio-irakleion-to-paraskinio-piso-apo-ti-simantikoteri-naftiki-tragodia-stin-ellada" class="article-link sm">
+<div class="article-img-wrap">
+<img src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%200%200'%3E%3C/svg%3E" alt="Ναυάγιο Ηράκλειον: Το παρασκήνιο πίσω από τη σημαντικότερη ναυτική τραγωδία στην Ελλάδα" data-lazy-src="https://eleftherostypos.gr/wp-content/uploads/2022/12/54-55_F1_20-PLATOS-XRONOMHXANH.jpg"><noscript><img src="https://eleftherostypos.gr/wp-content/uploads/2022/12/54-55_F1_20-PLATOS-XRONOMHXANH.jpg" alt="Ναυάγιο Ηράκλειον: Το παρασκήνιο πίσω από τη σημαντικότερη ναυτική τραγωδία στην Ελλάδα"></noscript>
+<div class="article-img-tag">Ιστορίες</div>
+</div>
+<div class="article-text-wrap ">
+<div class="article-tag-container">
+<div class="article-img-tag mobile">Ιστορίες</div>
+<hr>
+</div>
+<h2 class="article-title">Ναυάγιο Ηράκλειον: Το παρασκήνιο πίσω από τη σημαντικότερη ναυτική τραγωδία στην Ελλάδα</h2>
+<div class="article-date-wrap">
+<div class="article-date">07/12/2022</div>
+<div class="article-time"> <i class="fal fa-clock me-1"></i>14:37</div>
+</div>
+</div>
+</a>
+ </div>
+</div>
+</div>
+<div>
+</div>
+</div>
+</section>
+</div>
+</div>
+</div>
+<footer>
+<button class="btt--btn"><i class="fas fa-angle-up"></i></button>
+<a href="/"><img class="logo-img" src="/wp-content/uploads/2022/03/et-logo.svg" alt="logo"></a>
+<div class="inner main-container">
+<div class="left">
+<aside id="block-17" class="widget widget_block">
+<div class="is-layout-flex wp-block-buttons">
+<div class="wp-block-button"><a class="wp-block-button__link" href="/tavtotita">Ταυτότητα</a></div>
+<div class="wp-block-button"><a class="wp-block-button__link" href="/diafimisteite-se-emas">Διαφημιστείτε σε εμάς</a></div>
+<div class="wp-block-button"><a class="wp-block-button__link" href="https://members.eleftherostypos.gr">Συνδρομές</a></div>
+<div class="wp-block-button"><a class="wp-block-button__link" href="/publication">Έντυπη Έκδοση</a></div>
+</div>
+</aside> </div>
+<div class="center">
+<div class="wrap">
+<div>
+<aside id="block-18" class="widget widget_block">
+<div class="is-layout-flex wp-block-buttons">
+<div class="wp-block-button"><a class="wp-block-button__link" href="/ellada">Ελλάδα</a></div>
+<div class="wp-block-button"><a class="wp-block-button__link" href="/politiki">Πολιτική</a></div>
+<div class="wp-block-button"><a class="wp-block-button__link" href="/diethni">Διεθνή</a></div>
+<div class="wp-block-button"><a class="wp-block-button__link" href="/oikonomia">Οικονομία</a></div>
+<div class="wp-block-button"><a class="wp-block-button__link" href="/sports">Αθλητικά</a></div>
+</div>
+</aside> </div>
+<div>
+<aside id="block-19" class="widget widget_block">
+<div class="is-layout-flex wp-block-buttons">
+<div class="wp-block-button"><a class="wp-block-button__link" href="/lifestyle">Lifestyle</a></div>
+<div class="wp-block-button"><a class="wp-block-button__link" href="/ygeia-epistimi">Υγεία</a></div>
+<div class="wp-block-button"><a class="wp-block-button__link" href="/politismos">Πολιτισμός</a></div>
+<div class="wp-block-button"><a class="wp-block-button__link" href="/autotypos-by-quattroruote">AutoTypos by Quattroruote</a></div>
+</div>
+</aside> </div>
+<div>
+<aside id="block-20" class="widget widget_block">
+<div class="is-layout-flex wp-block-buttons">
+<div class="wp-block-button"><a class="wp-block-button__link" href="/tech">Τεχνολογία</a></div>
+<div class="wp-block-button"><a class="wp-block-button__link" href="/synentefxeis">Συνεντεύξεις</a></div>
+<div class="wp-block-button"><a class="wp-block-button__link" href="/apopseis">Απόψεις</a></div>
+<div class="wp-block-button"><a class="wp-block-button__link" href="/h-thesi-mas">Η Θέση μας</a></div>
+<div class="wp-block-button"><a class="wp-block-button__link" href="/etips">Etips</a></div>
+</div>
+</aside> </div>
+</div>
+</div>
+<div class="right">
+<aside id="block-49" class="widget widget_block">
+<div class="is-layout-flow wp-block-group"><div class="wp-block-group__inner-container">
+<ul class="is-layout-flex wp-block-social-links"><li class="wp-social-link wp-social-link-google google-news-logo wp-block-social-link"><a href="https://news.google.com/publications/CAAiEPYUqMrfMp5Hh3Vvlek2VzUqFAgKIhD2FKjK3zKeR4d1b5XpNlc1?hl=el&#038;gl=GR&#038;ceid=GR%3Ael" rel="noopener nofollow" target="_blank" class="wp-block-social-link-anchor"><svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M12.02,10.18v3.72v0.01h5.51c-0.26,1.57-1.67,4.22-5.5,4.22c-3.31,0-6.01-2.75-6.01-6.12s2.7-6.12,6.01-6.12 c1.87,0,3.13,0.8,3.85,1.48l2.84-2.76C16.99,2.99,14.73,2,12.03,2c-5.52,0-10,4.48-10,10s4.48,10,10,10c5.77,0,9.6-4.06,9.6-9.77 c0-0.83-0.11-1.42-0.25-2.05H12.02z"></path></svg><span class="wp-block-social-link-label screen-reader-text">Google</span></a></li>
+<li class="wp-social-link wp-social-link-facebook wp-block-social-link"><a href="https://www.facebook.com/EleftherosTypos" rel="noopener nofollow" target="_blank" class="wp-block-social-link-anchor"><svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M12 2C6.5 2 2 6.5 2 12c0 5 3.7 9.1 8.4 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.3v7C18.3 21.1 22 17 22 12c0-5.5-4.5-10-10-10z"></path></svg><span class="wp-block-social-link-label screen-reader-text">Facebook</span></a></li>
+<li class="wp-social-link wp-social-link-twitter wp-block-social-link"><a href="https://twitter.com/etyposgr" rel="noopener nofollow" target="_blank" class="wp-block-social-link-anchor"><svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M22.23,5.924c-0.736,0.326-1.527,0.547-2.357,0.646c0.847-0.508,1.498-1.312,1.804-2.27 c-0.793,0.47-1.671,0.812-2.606,0.996C18.324,4.498,17.257,4,16.077,4c-2.266,0-4.103,1.837-4.103,4.103 c0,0.322,0.036,0.635,0.106,0.935C8.67,8.867,5.647,7.234,3.623,4.751C3.27,5.357,3.067,6.062,3.067,6.814 c0,1.424,0.724,2.679,1.825,3.415c-0.673-0.021-1.305-0.206-1.859-0.513c0,0.017,0,0.034,0,0.052c0,1.988,1.414,3.647,3.292,4.023 c-0.344,0.094-0.707,0.144-1.081,0.144c-0.264,0-0.521-0.026-0.772-0.074c0.522,1.63,2.038,2.816,3.833,2.85 c-1.404,1.1-3.174,1.756-5.096,1.756c-0.331,0-0.658-0.019-0.979-0.057c1.816,1.164,3.973,1.843,6.29,1.843 c7.547,0,11.675-6.252,11.675-11.675c0-0.178-0.004-0.355-0.012-0.531C20.985,7.47,21.68,6.747,22.23,5.924z"></path></svg><span class="wp-block-social-link-label screen-reader-text">Twitter</span></a></li>
+<li class="wp-social-link wp-social-link-instagram wp-block-social-link"><a href="https://www.instagram.com/eleftherostypos" rel="noopener nofollow" target="_blank" class="wp-block-social-link-anchor"><svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M12,4.622c2.403,0,2.688,0.009,3.637,0.052c0.877,0.04,1.354,0.187,1.671,0.31c0.42,0.163,0.72,0.358,1.035,0.673 c0.315,0.315,0.51,0.615,0.673,1.035c0.123,0.317,0.27,0.794,0.31,1.671c0.043,0.949,0.052,1.234,0.052,3.637 s-0.009,2.688-0.052,3.637c-0.04,0.877-0.187,1.354-0.31,1.671c-0.163,0.42-0.358,0.72-0.673,1.035 c-0.315,0.315-0.615,0.51-1.035,0.673c-0.317,0.123-0.794,0.27-1.671,0.31c-0.949,0.043-1.233,0.052-3.637,0.052 s-2.688-0.009-3.637-0.052c-0.877-0.04-1.354-0.187-1.671-0.31c-0.42-0.163-0.72-0.358-1.035-0.673 c-0.315-0.315-0.51-0.615-0.673-1.035c-0.123-0.317-0.27-0.794-0.31-1.671C4.631,14.688,4.622,14.403,4.622,12 s0.009-2.688,0.052-3.637c0.04-0.877,0.187-1.354,0.31-1.671c0.163-0.42,0.358-0.72,0.673-1.035 c0.315-0.315,0.615-0.51,1.035-0.673c0.317-0.123,0.794-0.27,1.671-0.31C9.312,4.631,9.597,4.622,12,4.622 M12,3 C9.556,3,9.249,3.01,8.289,3.054C7.331,3.098,6.677,3.25,6.105,3.472C5.513,3.702,5.011,4.01,4.511,4.511 c-0.5,0.5-0.808,1.002-1.038,1.594C3.25,6.677,3.098,7.331,3.054,8.289C3.01,9.249,3,9.556,3,12c0,2.444,0.01,2.751,0.054,3.711 c0.044,0.958,0.196,1.612,0.418,2.185c0.23,0.592,0.538,1.094,1.038,1.594c0.5,0.5,1.002,0.808,1.594,1.038 c0.572,0.222,1.227,0.375,2.185,0.418C9.249,20.99,9.556,21,12,21s2.751-0.01,3.711-0.054c0.958-0.044,1.612-0.196,2.185-0.418 c0.592-0.23,1.094-0.538,1.594-1.038c0.5-0.5,0.808-1.002,1.038-1.594c0.222-0.572,0.375-1.227,0.418-2.185 C20.99,14.751,21,14.444,21,12s-0.01-2.751-0.054-3.711c-0.044-0.958-0.196-1.612-0.418-2.185c-0.23-0.592-0.538-1.094-1.038-1.594 c-0.5-0.5-1.002-0.808-1.594-1.038c-0.572-0.222-1.227-0.375-2.185-0.418C14.751,3.01,14.444,3,12,3L12,3z M12,7.378 c-2.552,0-4.622,2.069-4.622,4.622S9.448,16.622,12,16.622s4.622-2.069,4.622-4.622S14.552,7.378,12,7.378z M12,15 c-1.657,0-3-1.343-3-3s1.343-3,3-3s3,1.343,3,3S13.657,15,12,15z M16.804,6.116c-0.596,0-1.08,0.484-1.08,1.08 s0.484,1.08,1.08,1.08c0.596,0,1.08-0.484,1.08-1.08S17.401,6.116,16.804,6.116z"></path></svg><span class="wp-block-social-link-label screen-reader-text">Instagram</span></a></li>
+<li class="wp-social-link wp-social-link-youtube wp-block-social-link"><a href="https://www.youtube.com/channel/UC2L9FAXbj4xzZABpHDJBq7g" rel="noopener nofollow" target="_blank" class="wp-block-social-link-anchor"><svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M21.8,8.001c0,0-0.195-1.378-0.795-1.985c-0.76-0.797-1.613-0.801-2.004-0.847c-2.799-0.202-6.997-0.202-6.997-0.202 h-0.009c0,0-4.198,0-6.997,0.202C4.608,5.216,3.756,5.22,2.995,6.016C2.395,6.623,2.2,8.001,2.2,8.001S2,9.62,2,11.238v1.517 c0,1.618,0.2,3.237,0.2,3.237s0.195,1.378,0.795,1.985c0.761,0.797,1.76,0.771,2.205,0.855c1.6,0.153,6.8,0.201,6.8,0.201 s4.203-0.006,7.001-0.209c0.391-0.047,1.243-0.051,2.004-0.847c0.6-0.607,0.795-1.985,0.795-1.985s0.2-1.618,0.2-3.237v-1.517 C22,9.62,21.8,8.001,21.8,8.001z M9.935,14.594l-0.001-5.62l5.404,2.82L9.935,14.594z"></path></svg><span class="wp-block-social-link-label screen-reader-text">YouTube</span></a></li>
+<li class="wp-social-link wp-social-link-feed wp-block-social-link"><a href="https:///feed" rel="noopener nofollow" target="_blank" class="wp-block-social-link-anchor"><svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M2,8.667V12c5.515,0,10,4.485,10,10h3.333C15.333,14.637,9.363,8.667,2,8.667z M2,2v3.333 c9.19,0,16.667,7.477,16.667,16.667H22C22,10.955,13.045,2,2,2z M4.5,17C3.118,17,2,18.12,2,19.5S3.118,22,4.5,22S7,20.88,7,19.5 S5.882,17,4.5,17z"></path></svg><span class="wp-block-social-link-label screen-reader-text">RSS Feed</span></a></li></ul>
+</div></div>
+</aside> </div>
+</div>
+<div class="cps">
+<div class="main-container">
+<div>@2022 - eleftherostypos.gr All Rights Reserved</div>
+<div class="d-flex gap-5">
+<a href="/oroi-chrisis" class="link">ΟΡΟΙ ΧΡΗΣΗΣ</a>
+</div>
+<div>Designed & Developed by <a href="https://happyonline.gr" target="_blank">HappyOnline.gr</a></div>
+</div>
+</div>
+</footer>
+<script type="rocketlazyloadscript">(function() {function maybePrefixUrlField() {
+	if (this.value.trim() !== '' && this.value.indexOf('http') !== 0) {
+		this.value = "http://" + this.value;
+	}
+}
+
+var urlFields = document.querySelectorAll('.mc4wp-form input[type="url"]');
+if (urlFields) {
+	for (var j=0; j < urlFields.length; j++) {
+		urlFields[j].addEventListener('blur', maybePrefixUrlField);
+	}
+}
+})();</script>
+<script type="rocketlazyloadscript">
+		var checkExist = setInterval(function() {
+			if (jQuery('#onesignal-slidedown-dialog').length) {
+				jQuery("#onesignal-slidedown-dialog").hide();
+				setTimeout(
+					function() {
+						jQuery("#onesignal-slidedown-dialog").show();
+					}, 6000);
+				clearInterval(checkExist);
+			}
+		}, 100);
+
+
+		var w = 0;
+
+
+
+		jQuery(window).load(function() {
+			w = jQuery(window).width();
+		});
+
+		// replace google news icon
+		// let googleNewsIcon = jQuery(
+		// 	'<svg class="svg-social-icon" fill="#000" enable-background="new 0 0 7 15" height="30" viewBox="0 0 512.288 512.288" width="24" xmlns="http://www.w3.org/2000/svg"><g><path d="m91.734 118.863 12.516-62.917 151.894 30.213 151.895-30.213 12.515 62.917 24.09 4.791v-107.991h-377v107.991z"></path><path d="m512.288 167.697-85.399-16.987 10.127 50.915h37.628v155.322z"></path><path d="m179.256 101.453-51.436-10.231-4.238 21.306z"></path><path d="m406.429 201.625-21.961-110.403-384.468 76.475 37.644 189.25v-155.322z"></path><path d="m444.644 231.625h-377v265h377zm-127 117.5h82v30h-82zm82-60v30h-82v-30zm-199.5 162.5c-48.248 0-87.5-39.252-87.5-87.5s39.252-87.5 87.5-87.5c22.574 0 44.005 8.572 60.345 24.138l-20.692 21.722c-10.736-10.228-24.818-15.86-39.653-15.86-31.706 0-57.5 25.794-57.5 57.5s25.794 57.5 57.5 57.5c26.518 0 48.901-18.046 55.516-42.5h-55.516v-30h87.5v15c0 48.248-39.252 87.5-87.5 87.5zm117.5-42.5h82v30h-82z"></path></g></svg>'
+		// );
+		// jQuery(".wp-block-social-links .wp-block-social-link-anchor").empty().append(googleNewsIcon)
+
+		// jQuery(window).resize(function() {
+
+		// 	if (window.matchMedia('(min-width: 575px)').matches) {
+		// 		if (w != jQuery(window).width()) {
+		// 			location.reload();
+		// 			console.log("reloaded");
+
+		// 			w = jQuery(window).width();
+		// 		}
+		// 	}
+		// });
+	</script>
+<script type="rocketlazyloadscript" src='https://eleftherostypos.gr/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=5.6.4' id='swv-js'></script>
+<script id='contact-form-7-js-extra'>
+var wpcf7 = {"api":{"root":"https:\/\/eleftherostypos.gr\/wp-json\/","namespace":"contact-form-7\/v1"},"cached":"1"};
+</script>
+<script type="rocketlazyloadscript" src='https://eleftherostypos.gr/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.6.4' id='contact-form-7-js'></script>
+<script id='disqus_count-js-extra'>
+var countVars = {"disqusShortname":"eleftherostypos-gr"};
+</script>
+<script type="rocketlazyloadscript" src='https://eleftherostypos.gr/wp-content/plugins/disqus-comment-system/public/js/comment_count.js?ver=3.0.22' id='disqus_count-js'></script>
+<script type="rocketlazyloadscript" id='rocket-browser-checker-js-after'>
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+</script>
+<script id='rocket-preload-links-js-extra'>
+var RocketPreloadLinksConfig = {"excludeUris":"\/roi-eidiseon|\/newsletter|\/(?:.+\/)?feed(?:\/(?:.+\/?)?)?$|\/(?:.+\/)?embed|\/(index\\.php\/)?wp\\-json(\/.*|$)|\/refer\/|\/go\/|\/recommend\/|\/recommends\/","usesTrailingSlash":"","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php|html|htm","siteUrl":"https:\/\/eleftherostypos.gr","onHoverDelay":"100","rateThrottle":"3"};
+</script>
+<script type="rocketlazyloadscript" id='rocket-preload-links-js-after'>
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+</script>
+<script src='https://eleftherostypos.gr/wp-content/themes/eleytheros_typos/js/jquery3.6.0.min.js?ver=1.0.0' id='jquery3.6.0.min-js'></script>
+<script type="rocketlazyloadscript" src='https://eleftherostypos.gr/wp-content/themes/eleytheros_typos/js/bootstrap.bundle.min.js?ver=1.0.0' id='eleytheros_typos-bootstrap.bundle.min-js'></script>
+<script src='https://eleftherostypos.gr/wp-content/themes/eleytheros_typos/js/swiper-bundle.min.js?ver=1.0.0' id='swiper-bundle.min-js'></script>
+<script src='https://eleftherostypos.gr/wp-content/themes/eleytheros_typos/js/main.js?ver=1.0.0' id='eleytheros_typos-main-js'></script>
+<script id='load-more-posts-js-extra'>
+var ajax_posts = {"ajaxurl":"https:\/\/eleftherostypos.gr\/wp-admin\/admin-ajax.php","noposts":"No older posts found","posts":"{\"page\":0,\"name\":\"xenia-sabtsak-poia-einai-i-dimosiografos-vaftistira-tou-poutin-pou-efyge-nychta-apo-ti-rosia-gia-na-mi-syllifthei\",\"category_name\":\"diethni\",\"error\":\"\",\"m\":\"\",\"p\":0,\"post_parent\":\"\",\"subpost\":\"\",\"subpost_id\":\"\",\"attachment\":\"\",\"attachment_id\":0,\"pagename\":\"\",\"page_id\":0,\"second\":\"\",\"minute\":\"\",\"hour\":\"\",\"day\":0,\"monthnum\":0,\"year\":0,\"w\":0,\"tag\":\"\",\"cat\":\"\",\"tag_id\":\"\",\"author\":\"\",\"author_name\":\"\",\"feed\":\"\",\"tb\":\"\",\"paged\":0,\"meta_key\":\"\",\"meta_value\":\"\",\"preview\":\"\",\"s\":\"\",\"sentence\":\"\",\"title\":\"\",\"fields\":\"\",\"menu_order\":\"\",\"embed\":\"\",\"category__in\":[],\"category__not_in\":[],\"category__and\":[],\"post__in\":[],\"post__not_in\":[],\"post_name__in\":[],\"tag__in\":[],\"tag__not_in\":[],\"tag__and\":[],\"tag_slug__in\":[],\"tag_slug__and\":[],\"post_parent__in\":[],\"post_parent__not_in\":[],\"author__in\":[],\"author__not_in\":[],\"ignore_sticky_posts\":false,\"suppress_filters\":false,\"cache_results\":true,\"update_post_term_cache\":true,\"update_menu_item_cache\":false,\"lazy_load_term_meta\":true,\"update_post_meta_cache\":true,\"post_type\":\"\",\"posts_per_page\":10,\"nopaging\":false,\"comments_per_page\":\"50\",\"no_found_rows\":false,\"order\":\"DESC\"}"};
+</script>
+<script type="rocketlazyloadscript" src='https://eleftherostypos.gr/wp-content/themes/eleytheros_typos/js/load-more-posts.js?ver=1.0.0' id='load-more-posts-js'></script>
+<script type="rocketlazyloadscript" src='https://eleftherostypos.gr/wp-content/plugins/page-links-to/dist/new-tab.js?ver=3.3.6' id='page-links-to-js'></script>
+<script id='ivory-search-scripts-js-extra'>
+var IvorySearchVars = {"is_analytics_enabled":"1"};
+</script>
+<script type="rocketlazyloadscript" src='https://eleftherostypos.gr/wp-content/plugins/add-search-to-menu/public/js/ivory-search.min.js?ver=5.4.10' id='ivory-search-scripts-js'></script>
+<script type="rocketlazyloadscript" src='https://cdn.onesignal.com/sdks/OneSignalSDK.js?ver=6.1.1' async='async' id='remote_sdk-js'></script>
+<script type="rocketlazyloadscript" defer src='https://eleftherostypos.gr/wp-content/plugins/mailchimp-for-wp/assets/js/forms.js?ver=4.8.11' id='mc4wp-forms-api-js'></script>
+<script>window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:".rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="https://eleftherostypos.gr/wp-content/plugins/wp-rocket/assets/js/lazyload/17.5/lazyload.min.js"></script>
+<script type="rocketlazyloadscript" data-cfasync="false" data-rocket-type="text/javascript" id="clever-core">
+            (function (document, window) {
+                var a, c = document.createElement("script");
+
+                c.id = "CleverCoreLoader57097";
+                c.src = "https://scripts.cleverwebserver.com/9f8f553a2669a264d3015b7ab84c9076.js";
+
+                c.async = !0;
+                c.type = "text/javascript";
+                c.setAttribute("data-target", window.name);
+                c.setAttribute("data-callback", "put-your-callback-macro-here");
+
+                try {
+                    a = parent.document.getElementsByTagName("script")[0] || document.getElementsByTagName("script")[0];
+                } catch (e) {
+                    a = !1;
+                }
+
+                a || (a = document.getElementsByTagName("head")[0] || document.getElementsByTagName("body")[0]);
+                a.parentNode.insertBefore(c, a);
+            })(document, window);
+        </script>
+<div id="CleverCoreLoader57097" class="clever-core-ads"></div>
+</body>
+</html>
