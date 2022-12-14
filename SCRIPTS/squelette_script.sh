@@ -70,8 +70,8 @@ do
                 then
                 unset occurences_mot
                 lynx -dump -nolist ./ASPIRATIONS/$fichier$compteur.html > ./DUMPS-TEXT/$compteur$fichier
-                occurences_mot=$(egrep -o -c "\b(suburbs?|periferi(a|e)|banlieues?|προ(ά|α)στ.+)\b" ./DUMPS-TEXT/$compteur$fichier)
-                egrep -B 1 -A 1  "\b(suburbs?|periferi(a|e)|banlieues?|προ(ά|α)στ.+)\b" ./DUMPS-TEXT/$compteur$fichier > ./CONTEXTES/$compteur$fichier
+                occurences_mot=$(egrep -o -i -c "\b(suburbs?|periferi(a|e)|banlieues?|προ(ά|α)στ.+)(\b|\n|\')" ./DUMPS-TEXT/$compteur$fichier)
+                egrep -i -B 1 -A 1  "\b(suburbs?|periferi(a|e)|banlieues?|προ(ά|α)στ.+)(\b|\n|\')" ./DUMPS-TEXT/$compteur$fichier > ./CONTEXTES/$compteur$fichier
                 fi
         fi
 
@@ -83,7 +83,7 @@ do
             <td>$header</td>
             <td><a href="$line">$line</a></td>
             <td>$encodage</td>
-            <td><a href="../ASPIRATIONS/$fichier$compteur.html"compteur>html</a></td>
+            <td><a href="../ASPIRATIONS/$fichier$compteur.html">html</a></td>
             <td><a href="../DUMPS-TEXT/$compteur$fichier">text</a></td>
             <td>$occurences_mot</td>
             <td><a href="../CONTEXTES/$compteur$fichier">contexte</a></td>
