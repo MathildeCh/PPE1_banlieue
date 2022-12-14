@@ -1,5 +1,5 @@
 <lang="it">
-<page="10it">
+<page!"10it">
 <text>
    Voce Di Mantova » La Polizia sequestra 28 kg di hashish in una
    palazzina alla periferia della città Feed dei commenti alternate
@@ -18,7 +18,7 @@ città
    individuato, nascosti in uno scantinato, alcuni borsoni di tipo
 </text>
 </page>
-<page="11it">
+<page!"11it">
 <text>
    #TuttoMondo » Feed TuttoMondo » Feed dei commenti TuttoMondo » La
    racaille, le haine: banlieue, le periferie francesi Feed dei commenti
@@ -82,7 +82,7 @@ La questione delle periferie urbane di Francia all’alba delle presidenziali
    Tagged banlieues, elezioni presidenziali 2017, francia, periferie
 </text>
 </page>
-<page="12it">
+<page!"12it">
 <text>
    Fratelli d'Italia » Tor Sapienza, Rampelli: Spaccio, prostituzione,
    degrado. Così si vive in periferia. Le vedette avvisano i criminali
@@ -97,7 +97,7 @@ periferia. Le vedette avvisano i criminali quando arriva la polizia
    governo con un dipartimento dedicato esclusivamente alla loro
 </text>
 </page>
-<page="13it">
+<page!"13it">
 <text>
 
 Il "portoghese", gli spari e la droga: il regolamento di conti alla periferia
@@ -120,7 +120,7 @@ Il "portoghese", gli spari e la droga: il regolamento di conti alla periferia
 di Roma est
 </text>
 </page>
-<page="14it">
+<page!"14it">
 <text>
 
 Brescia: sicurezza, in periferia la polizia torna a pedalare
@@ -130,7 +130,7 @@ Brescia: sicurezza, in periferia la polizia torna a pedalare
 Brescia: sicurezza, in periferia la polizia torna a pedalare
 </text>
 </page>
-<page="15it">
+<page!"15it">
 <text>
 
 In arrivo 60 telecamere in periferia, l'assessore Bonavina: «L'obiettivo è la
@@ -141,7 +141,7 @@ lotta allo spaccio»
    Bonavina. «Nei mesi scorsi - ha spiegato Bonavina - abbiamo vinto un
 </text>
 </page>
-<page="16it">
+<page!"16it">
 <text>
    L'inseguimento è partito nella notte tra sabato e domenica in zona
    borgata Finocchio per poi concludersi a Santa Palomba, periferia di
@@ -161,7 +161,7 @@ Finocchio per poi concludersi a Santa Palomba, periferia di Pomezia
    intercettata alla periferia di Pomezia, a Santa Palomba.
 </text>
 </page>
-<page="17it">
+<page!"17it">
 <text>
 
 Polizia arresta il pusher della coca in periferia a Spoleto | In casa 120
@@ -184,7 +184,7 @@ dosi pronte
      * polizia
 </text>
 </page>
-<page="18it">
+<page!"18it">
 <text>
 
 Giro di cocaina, dalla periferia Est ai salotti dell’Asti “bene”
@@ -199,7 +199,7 @@ Giro di cocaina, dalla periferia Est ai salotti dell’Asti “bene”
    e Finanza avevano captato un dialogo nel quale secondo le accuse si
 </text>
 </page>
-<page="19it">
+<page!"19it">
 <text>
      * Esteri
      * La rabbia dei poliziotti francesi, abbandonati nelle banlieue
@@ -262,7 +262,7 @@ A Capodanno nelle banlieue si menano poliziotti
      * polizia francese
 </text>
 </page>
-<page="1it">
+<page!"1it">
 <text>
     2. attualità
     3. Milano: rave party in periferia, polizia sul posto individua
@@ -277,7 +277,7 @@ Milano: rave party in periferia, polizia sul posto individua organizzatore
    Milano, in via Pestagalli 5, zona Porto di Mare, è stato scoperto e
 </text>
 </page>
-<page="20it">
+<page!"20it">
 <text>
    Romah24 siti > Metropoli > News > Cronaca > Droga nascosta nel caffè,
    fughe e speronamenti: la polizia arresta 18 spacciatori dalla periferia
@@ -296,7 +296,7 @@ spacciatori dalla periferia al centro storico
    competenza del distretto Casilino, gli investigatori hanno arrestato in
 </text>
 </page>
-<page="21it">
+<page!"21it">
 <text>
    #Ultima Voce » Feed Ultima Voce » Feed dei commenti Ultima Voce » Le
    banlieue e la violenza nella periferia parigina Feed dei commenti
@@ -347,7 +347,7 @@ società occidentali.
    LesMiserables, napoli, Parigi, Periferia, Rivolte, Violenza
 </text>
 </page>
-<page="22it">
+<page!"22it">
 <text>
 Roma, il nuovo piano sicurezza: "Polizia
 in centro e carabinieri in periferia"
@@ -373,7 +373,7 @@ in centro e carabinieri in periferia"
    ristrutturarli.
 </text>
 </page>
-<page="23it">
+<page!"23it">
 <text>
    Stando a quanto si apprende, il 25 luglio scorso presso il suo
    appartamento in periferia a Roma si sono presentate quattro persone,
@@ -388,7 +388,7 @@ in centro e carabinieri in periferia"
    si legge, si sono inserite "positivamente nel tessuto sociale del
 </text>
 </page>
-<page="24it">
+<page!"24it">
 <text>
    12enne di Parigi ritrovata morta nella notte tra venerdì e sabato nel
    19° arrondissement della capitale francese (periferia nord-est).
@@ -399,7 +399,7 @@ in centro e carabinieri in periferia"
    d’oltralpe. Le novità delle ultime ore riguardano l’autopsia, eseguita
 </text>
 </page>
-<page="25it">
+<page!"25it">
 <text>
    #Foligno Oggi » Feed Foligno Oggi » Feed dei commenti Foligno Oggi »
    Controlli in centro e in periferia, è Borghi Sicuri a Foligno con la
@@ -421,7 +421,7 @@ di Stato
    in particolare, lungo le principali direttrici della città e nella zona
 </text>
 </page>
-<page="26it">
+<page!"26it">
 <text>
    vista lo si osservi, esso appare inesorabilmente come la più
    inquietante delle periferie. Lanticamera degli accompagnamenti
@@ -462,7 +462,7 @@ di Stato
    <gtlt<gtltprecedente indice successivo>>
 </text>
 </page>
-<page="27it">
+<page!"27it">
 <text>
      * OSPEDALE BETANIA - La richiesta del Direttore Generale: ripristino
        drappello polizia in ospedali periferia
@@ -476,7 +476,7 @@ polizia in ospedali periferia
    dell’area vesuviana, a cui ricorrono oltre 50mila pazienti l’anno,
 </text>
 </page>
-<page="28it">
+<page!"28it">
 <text>
 
 Una leonessa si aggira alla periferia di Losanna? Dalla foto si direbbe di
@@ -491,7 +491,7 @@ sì...
    leonessa
 </text>
 </page>
-<page="29it">
+<page!"29it">
 <text>
 POLIZIA: SIULP, nomina CUFALO a Vice Capo, scelta importante e segnale a
 periferia.
@@ -510,7 +510,7 @@ periferia.
    brillanti risultati». Ad affermarlo è Felice Romano, Segretario
 </text>
 </page>
-<page="2it">
+<page!"2it">
 <text>
     #Mantovauno.it » Feed Mantovauno.it » Feed dei commenti Mantovauno.it
    » Occupavano un edificio abbandonato nella periferia di Mantova: la
@@ -529,7 +529,7 @@ scopre con 30 grammi di cocaina
    giorni scorsi, dunque gli uomini della Polizia di Stato e della Polizia
 </text>
 </page>
-<page="30it">
+<page!"30it">
 <text>
    Home News Litorale Sud Moto rubate a Roma, ritrovate smontate alla
    periferia di Ardea
@@ -561,7 +561,7 @@ rubate a Roma
    &amplayout=button_count&ampshow_faces=false&ampwidth=105&ampaction=like&ampcolorscheme
 </text>
 </page>
-<page="31it">
+<page!"31it">
 <text>
 
    Mentre faceva jogging alla periferia di Arnesano, il comandante dei
@@ -574,7 +574,7 @@ rubate a Roma
    comandante della stazione dell'Arma di Udine, si è accorto del rapace,
 </text>
 </page>
-<page="32it">
+<page!"32it">
 <text>
 
 Cassino, ufficio mobile della Polizia locale in periferia
@@ -585,8 +585,12 @@ Cassino, ufficio mobile della Polizia locale in periferia
    presenza della Polizia Locale anche nelle zone periferiche di Cassino,
 </text>
 </page>
-<page="33it">
+<page!"33it">
 <text>
+          + Mostre
+          + Periferie
+          + Arte
+--
    Una ragazza è morta a Roma, all'incrocio tra via di Salone e via Andrea
    Noale, periferia est della Capitale. La giovane ha perso la vita in un
    incidente frontale tra l'auto sulla quale viaggiava con altre tre
@@ -598,7 +602,7 @@ Cassino, ufficio mobile della Polizia locale in periferia
    Capitale. Le condizioni di Sheena sono apparse fin da subito disperate.
 </text>
 </page>
-<page="34it">
+<page!"34it">
 <text>
 
 Nettuno (RM) furti in pieno giorno, la periferia abbandonata a se stessa!
@@ -609,7 +613,7 @@ Nettuno (RM) furti in pieno giorno, la periferia abbandonata a se stessa!
    manca la sicurezza in queste zone?
 </text>
 </page>
-<page="35it">
+<page!"35it">
 <text>
 Controlli e servizi mirati di prevenzione da parte della Polizia a Latina e
 Aprilia: sotto la lente movida e periferia del capoluogo e “La Gogna”
@@ -624,7 +628,7 @@ Aprilia: sotto la lente movida e periferia del capoluogo e “La Gogna”
    della recente petizione inviata dalle associazione dei cittadini della
 </text>
 </page>
-<page="36it">
+<page!"36it">
 <text>
 Non si fermano all’alt della Polizia locale. A Saronno un inseguimento
 termina nei campi della periferia
@@ -635,7 +639,7 @@ termina nei campi della periferia
    di Saronno. È quanto successo la sera di martedì 8 febbraio durante uno
 </text>
 </page>
-<page="37it">
+<page!"37it">
 <text>
 
 Controlli in periferia, polizia municipale mette in fuga un sospettato: nel
@@ -646,7 +650,7 @@ cofano nascondeva fucili e munizioni
    abusivi. Nella zona dell’azienda Visocchi è stata intercettata un’Alfa
 </text>
 </page>
-<page="38it">
+<page!"38it">
 <text>
 
 Rioni di periferia, dopo il posto fisso della polizia municipale arrivano i
@@ -661,7 +665,7 @@ Rioni di periferia, dopo il posto fisso della polizia municipale arrivano i
 punti di ascolto
 </text>
 </page>
-<page="39it">
+<page!"39it">
 <text>
 
 Dal centro alla periferia, controlli a tappeto della polizia: espulsioni e
@@ -672,7 +676,7 @@ denunce
    prevenire i reati predatori e contrastare l’immigrazione clandestina e
 </text>
 </page>
-<page="3it">
+<page!"3it">
 <text>
 
 Francia, nelle banlieue la gara a chi fa più agguati alla polizia
@@ -708,7 +712,7 @@ Francia, nelle banlieue la gara a chi fa più agguati alla polizia
    aggressione banlieue polizia
 </text>
 </page>
-<page="40it">
+<page!"40it">
 <text>
 
    Belluno, finanziere suicida: nella periferia della città un uomo si è
@@ -719,7 +723,7 @@ Francia, nelle banlieue la gara a chi fa più agguati alla polizia
    senza vita di un finanziere. Il cadavere era in un furgone in un
 </text>
 </page>
-<page="41it">
+<page!"41it">
 <text>
 
 Siena, ”pattuglione” della Polizia in centro e in periferia
@@ -730,7 +734,7 @@ Siena, ”pattuglione” della Polizia in centro e in periferia
    territorio del Comune di Siena.
 </text>
 </page>
-<page="42it">
+<page!"42it">
 <text>
    Elicottero della polizia sorvola Pescara, in corso controlli
    straordinari in periferia Feed dei commenti alternate alternate
@@ -745,7 +749,7 @@ periferia
    zone di via Caduti per Servizio e via Ilaria Alpi.
 </text>
 </page>
-<page="43it">
+<page!"43it">
 <text>
    Melting Pot Europa » Feed dei commenti Progetto Melting Pot Europa »
    Parigi, torna la rivolta delle periferie, scontri con la polizia Feed
@@ -764,7 +768,7 @@ Parigi, torna la rivolta delle periferie, scontri con la polizia
    immigrati.
 </text>
 </page>
-<page="44it">
+<page!"44it">
 <text>
 
 La nuova lotta per i diritti civili si combatte nelle periferie
@@ -782,7 +786,7 @@ La nuova lotta per i diritti civili si combatte nelle periferie
    a strade senza uscita, scarseggiano gli alloggi accessibili per le
 </text>
 </page>
-<page="45it">
+<page!"45it">
 <text>
 
 Omicidio alla periferia di Napoli, ucciso un 54enne: era stato condannato per
@@ -804,7 +808,7 @@ aveva precedenti per droga ed era stato condannato per violenza sessuale
    condannato per violenza sessuale
 </text>
 </page>
-<page="46it">
+<page!"46it">
 <text>
 
 Appendino “Le periferie restano la nostra priorità – Ottimo il lavoro dei
@@ -832,7 +836,7 @@ Carabinieri al Valentino”
 periferia
 </text>
 </page>
-<page="47it">
+<page!"47it">
 <text>
 
 Controlli dei carabinieri contro i furti, 75 pattuglie nelle periferie
@@ -842,13 +846,13 @@ Controlli dei carabinieri contro i furti, 75 pattuglie nelle periferie
 Controlli dei carabinieri contro i furti, 75 pattuglie nelle periferie
 </text>
 </page>
-<page="48it">
+<page!"48it">
 <text>
 
 I carabinieri scoprono coltivazione di cannabis in periferia: tre persone si
 danno alla fuga
 --
-   by Redazione 20 Novembre 2013 374 2 min di lettura
+   by Redazione 20 Novembre 2013 380 2 min di lettura
    I carabinieri scoprono coltivazione di cannabis in periferia: tre
    persone si danno alla fuga
 --
@@ -857,7 +861,7 @@ danno alla fuga
    Due militari in servizio perlustrativo notavano tre persone armeggiare
 </text>
 </page>
-<page="49it">
+<page!"49it">
 <text>
    Non aveva precedenti penali e teneva tra le mani un’arma giocattolo il
    giovane ucciso la notte scorsa alla periferia di Laterza dai
@@ -868,7 +872,7 @@ danno alla fuga
    Secondo la ricostruzione fornita, Perrone si è parato dinanzi alla
 </text>
 </page>
-<page="4it">
+<page!"4it">
 <text>
 
 Spacciava hashish in periferia, arrestato dalla Polizia un trentaduenne
@@ -879,8 +883,11 @@ aquilano
    aquilano
 </text>
 </page>
-<page="50it">
+<page!"50it">
 <text>
+
+Periferie e strade al setaccio, ubriachi al volante, drogati e criminali: i
+militari trovano di tutto
 
    Maxi controllo dei Carabinieri nelle periferie dei “Ponti”: arresti,
    denunce e sequestri
@@ -888,9 +895,39 @@ aquilano
    Un controllo straordinario nelle più importanti zone residenziali della
    periferia perugina, quello effettuato dai Carabinieri della Compagnia
    di Perugia: 12 Gazzelle e 25 militari impiegati nei quartieri di Ponte
+--
+
+Periferie e strade al setaccio, ubriachi al volante, drogati e criminali: i
+militari trovano di tutto
 </text>
 </page>
-<page="6it">
+<page!"5it">
+<text>
+    #Colombia: attentato contro sede di polizia nella periferia di Bogotá,
+   morto ragazzo di 12 anni, 11 feriti. Padre De Roux al Sir, “il Paese
+--
+
+Colombia: attentato contro sede di polizia nella periferia di Bogotá. Padre
+De Roux al Sir, “non c’è alternativa a riconciliazione. Speranze per il
+--
+
+Colombia: attentato contro sede di polizia nella periferia di Bogotá. Padre
+De Roux al Sir, “non c’è alternativa a riconciliazione. Speranze per il
+--
+   seguito all’attentato perpetrato contro la sede della a Ciudad Bolívar,
+   nella periferia sud di Bogotá. “In Colombia – prosegue il gesuita – si
+   sono pentiti molti guerriglieri delle Farc, che rapivano i bambini per
+--
+
+Colombia: attentato contro sede di polizia nella periferia di Bogotá. Padre
+De Roux al Sir, “non c’è alternativa a riconciliazione. Speranze per il
+--
+
+Colombia: attentato contro sede di polizia nella periferia di Bogotá, morto
+ragazzo di 12 anni, 11 feriti. Padre De Roux al Sir, “il Paese non riesce a
+</text>
+</page>
+<page!"6it">
 <text>
 
 Firenze: locale in periferia chiuso dalla Polizia
@@ -904,7 +941,7 @@ Firenze: locale in periferia chiuso dalla Polizia
    della periferia cittadina.
 </text>
 </page>
-<page="7it">
+<page!"7it">
 <text>
    l'Umbria » Feed dei commenti Il quotidiano che racconta l'Umbria »
    “Borghi sicuri”: i controlli della Polizia a Foligno e periferia Feed
@@ -927,8 +964,16 @@ Firenze: locale in periferia chiuso dalla Polizia
    Fiamenga e Paciana.
 </text>
 </page>
-<page="8it">
+<page!"8it">
 <text>
+   #Polizia e Democrazia » Feed Polizia e Democrazia » Feed dei commenti
+   Polizia e Democrazia » Periferie, non solo un problema di legalità Feed
+   dei commenti alternate alternate alternate
+--
+
+Periferie, non solo un problema di legalità
+
+--
 Il delitto di Colleferro ha riaperto il dibattito sulla marginalità e
 l’esclusione sociale delle periferie cittadine. Oltre alla prevenzione dei
 crimini, per risolvere il problema le Istituzioni devono ripensare il modello
@@ -948,7 +993,7 @@ crimini, per risolvere il problema le Istituzioni devono ripensare il modello
    affermare che le condizioni materiali di vita sono peggiorate negli
 </text>
 </page>
-<page="9it">
+<page!"9it">
 <text>
 
 L’irruzione della polizia in un condominio di periferia: sequestrati hashish,

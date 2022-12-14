@@ -1,5 +1,5 @@
 <lang="en">
-<page="10en">
+<page!"10en">
 <text>
 
 ‘Tent city’ in affluent Sydney suburb Dee Why goes up in flames, police
@@ -20,13 +20,9 @@ arrest two men and seize machete
    The bush dwellings were in stark contrast to the homes of the
    multimillion suburb of Dee Why, nestled among some of the most
    expensive localities in the country – including Manly and Palm Beach.
---
-
-   A man from Sydney’s exclusive eastern suburbs has denied threatening a
-   taxi driver and stealing his car while drunk in the city.
 </text>
 </page>
-<page="11en">
+<page!"11en">
 <text>
    A body found on the driveway of a property near Darwin has been
    identified as an 18-year-old man who was a resident of the same suburb.
@@ -43,9 +39,13 @@ arrest two men and seize machete
 
    "He's a resident of the suburb, but he certainly wasn't near his
    house."
+--
+
+Why this coastal tourist town wants to restrict Airbnbs to affluent suburbs
+     *
 </text>
 </page>
-<page="12en">
+<page!"12en">
 <text>
    Auckland police have responded to a series of burglaries overnight in
    several suburbs.
@@ -62,7 +62,7 @@ arrest two men and seize machete
        Audio
 </text>
 </page>
-<page="13en">
+<page!"13en">
 <text>
 
 London property: Life in the Enfield suburb named one of UK's best places to
@@ -85,7 +85,7 @@ live where average house costs £700k
    timber canopy and has easy transport links to the city. The bus routes
 </text>
 </page>
-<page="14en">
+<page!"14en">
 <text>
    and was charged with murder two weeks after seasoned radio broadcaster
    Percival Mabasa (also known as Percy Lapid) was gunned down in a suburb
@@ -96,7 +96,7 @@ live where average house costs £700k
    southern metro Manila. He was the latest in a long line of killings
 </text>
 </page>
-<page="15en">
+<page!"15en">
 <text>
    tape in the background.
    A crime scene was established in the Palmerston suburb of Driver.(ABC
@@ -109,9 +109,13 @@ live where average house costs £700k
    established," the statement said.
    An intersection in a quiet suburb, with a strip of crime scene tape in
    the foreground. Police were notified early this morning.(ABC News:
+--
+
+Why this coastal tourist town wants to restrict Airbnbs to affluent suburbs
+     *
 </text>
 </page>
-<page="16en">
+<page!"16en">
 <text>
    Police allege a 74-year-old engineer murdered his wife at their home in
    the Sydney suburb of Bronte. (Bianca De Marchi/AAP PHOTOS)
@@ -126,7 +130,7 @@ live where average house costs £700k
    after the death, with numerous detectives and uniformed officers at the
 </text>
 </page>
-<page="17en">
+<page!"17en">
 <text>
    million in profit from selling art they owned at her gallery in the
    Detroit suburb of Birmingham including The Tetons and the Snake River,
@@ -140,7 +144,7 @@ live where average house costs £700k
    Detroit suburb of Birmingham.
 </text>
 </page>
-<page="18en">
+<page!"18en">
 <text>
 
 Denver suburb where Elijah McClain died ousts police chief
@@ -159,7 +163,7 @@ Denver suburb where Elijah McClain died ousts police chief
    ousts police chief
 </text>
 </page>
-<page="1en">
+<page!"1en">
 <text>
    Last week, WSWS journalists interviewed high school students at the
    Joliot-Curie high school in Nanterre, a suburb of Paris. For the past
@@ -177,12 +181,12 @@ Denver suburb where Elijah McClain died ousts police chief
    people, when this is not at all the case. If you took the time to be in
 </text>
 </page>
-<page="20en">
+<page!"20en">
 <text>
 
 </text>
 </page>
-<page="21en">
+<page!"21en">
 <text>
    A man has been arrested after a kidnapping ended in a car crash on the
    corner of Richardson and Maioro roads in the Auckland suburb of New
@@ -196,7 +200,7 @@ Denver suburb where Elijah McClain died ousts police chief
    crash in the Auckland suburb of New Windsor on Sunday night.
 </text>
 </page>
-<page="22en">
+<page!"22en">
 <text>
 
    Residents in a Dunedin suburb allegedly received a fake tsunami warning
@@ -209,7 +213,7 @@ Denver suburb where Elijah McClain died ousts police chief
    suburb broadcasting a fake tsunami warning through a loudhailer.
 </text>
 </page>
-<page="23en">
+<page!"23en">
 <text>
 
 'No police, no law': anarchy in Palestinian suburb of Jerusalem
@@ -226,18 +230,27 @@ Denver suburb where Elijah McClain died ousts police chief
    Aqab suburb of east Jerusalem
 </text>
 </page>
-<page="24en">
+<page!"24en">
 <text>
+
+    1. Police Shoot, Kill Man With Knife in Seattle Suburb
+
+--
+
+Police Shoot, Kill Man With Knife in Seattle Suburb
 
    Police in the Seattle suburb of Federal Way say they shot and killed a
    man after he charged them with a knife on Sunday night.
 --
 
+   Police Shoot, Kill Man With Knife in Seattle Suburb
+   More
+
    FEDERAL WAY, Wash. (AP) — Police in the Seattle suburb of Federal Way
    shot and killed a man after he charged them with a knife on Sunday
 </text>
 </page>
-<page="25en">
+<page!"25en">
 <text>
    Times » Staffing problems clash with COVID concerns as police hiring in
    Seattle suburb stirs debate Comments Feed alternate
@@ -255,7 +268,7 @@ suburb stirs debate
 Small suburb
 </text>
 </page>
-<page="26en">
+<page!"26en">
 <text>
    Cleveland police are investigating a fatal shooting involving officers
    from the suburb of Maple Heights.
@@ -269,7 +282,7 @@ Small suburb
    vehicle they suspected of shooting into homes in the suburb.
 </text>
 </page>
-<page="27en">
+<page!"27en">
 <text>
    [ap-july4th-shooting-2.jpg] A police officer reacts as he walks in
    downtown Highland Park, a suburb of Chicago, Monday, July 4, 2022,
@@ -285,7 +298,7 @@ Small suburb
    suburb’s restrictions remain in place.
 </text>
 </page>
-<page="28en">
+<page!"28en">
 <text>
 Samuel Quinton Edwards, 34, reportedly shot a Hendersonville police officer
 in Nashville suburb
@@ -304,7 +317,7 @@ in Nashville suburb
    with two guns and should be considered "extremely dangerous." (Metro
 </text>
 </page>
-<page="29en">
+<page!"29en">
 <text>
 Muskegon public safety director job offered to former gang specialist from
 Chicago suburb
@@ -319,7 +332,7 @@ Chicago suburb
    the gang crimes division of the police department at Cicero, Illinois.
 </text>
 </page>
-<page="2en">
+<page!"2en">
 <text>
 
 Trump lost America’s suburbs. Now the GOP might be about to win them back
@@ -346,7 +359,7 @@ Trump lost America’s suburbs. Now the GOP might be about to win them back
    city where some of the protests after Floyd’s death turned violent.
 </text>
 </page>
-<page="30en">
+<page!"30en">
 <text>
    Authorities say a man shot and seriously wounded a police officer
    Tuesday at a gas station in an Illinois suburb of St. Louis.
@@ -361,7 +374,7 @@ Trump lost America’s suburbs. Now the GOP might be about to win them back
    authorities said.
 </text>
 </page>
-<page="31en">
+<page!"31en">
 <text>
 
 Youths clash with police in Paris suburb
@@ -380,7 +393,7 @@ Youths clash with police in Paris suburb
    many of its cities – are frequently flashpoints of anger over social
 </text>
 </page>
-<page="32en">
+<page!"32en">
 <text>
    KANSAS CITY, Mo. — After the mass shooting that killed seven people in
    an Illinois suburb, KSHB 41 News spoke with police departments in the
@@ -390,14 +403,14 @@ Youths clash with police in Paris suburb
    into a 4th of July parade, Overland Park is a suburb.
 </text>
 </page>
-<page="33en">
+<page!"33en">
 <text>
    A woman called 911 and "stated that her dad shot her and her mother" in
    the Detroit suburb of Walled Lake, the Oakland County Sheriff's Office
    said.
 </text>
 </page>
-<page="34en">
+<page!"34en">
 <text>
    Police say a man fatally shot two people at an apartment complex in a
    Milwaukee suburb and later died of an apparent self-inflicted gunshot
@@ -408,7 +421,7 @@ Youths clash with police in Paris suburb
    self-inflicted gunshot wound, police said.
 </text>
 </page>
-<page="35en">
+<page!"35en">
 <text>
    that came just two days after a deadly mass shooting on the holiday in
    a Chicago suburb.
@@ -419,7 +432,7 @@ Youths clash with police in Paris suburb
    injuring more than three dozen.
 </text>
 </page>
-<page="36en">
+<page!"36en">
 <text>
 
    Chaim Vachman moved with his family to the nearby suburb of Deerfield
@@ -430,7 +443,7 @@ Youths clash with police in Paris suburb
    prefer to view it as a sterile bubble, regardless of the fact that
 </text>
 </page>
-<page="37en">
+<page!"37en">
 <text>
 
 Car rams two police motorcyclists in Paris suburb -police
@@ -441,7 +454,7 @@ Car rams two police motorcyclists in Paris suburb -police
    injuring both, police unions said.
 </text>
 </page>
-<page="38en">
+<page!"38en">
 <text>
    A gunman kills 5 in Israel before being killed by police A Palestinian
    gunman has killed five people in a suburb of Tel Aviv. It's the latest
@@ -456,14 +469,14 @@ Car rams two police motorcyclists in Paris suburb -police
    It's the latest in a series of attacks that have left 11 dead in just
 </text>
 </page>
-<page="39en">
+<page!"39en">
 <text>
    DIXMOOR, Illinois - Ronald Burge Jr., a former police commander in the
    Chicago suburb of Dixmoor, is scheduled to be in court on Monday for a
    hearing on aggravated battery charges after he allegedly dragged a
 </text>
 </page>
-<page="3en">
+<page!"3en">
 <text>
 
    Calls for a permanent police presence in the crime-ridden suburb of
@@ -481,7 +494,7 @@ Car rams two police motorcyclists in Paris suburb -police
    be established in Darwin’s northern suburbs next.
 </text>
 </page>
-<page="40en">
+<page!"40en">
 <text>
    In 2019, she was found incompetent to stand trial after she was accused
    of robbing a bank in the Dallas suburb of Wylie. She underwent
@@ -492,7 +505,7 @@ Car rams two police motorcyclists in Paris suburb -police
    Mesquite that she started it and was “God’s prophet,” according to a
 </text>
 </page>
-<page="41en">
+<page!"41en">
 <text>
    Around 300 people live under the A1 national highway in the Parisian
    suburb of Saint-Denis camp. Credit: InfoMigrants
@@ -517,7 +530,7 @@ Car rams two police motorcyclists in Paris suburb -police
    re-formed. The camp at Saint-Denis under the A1 highway is likely to be
 </text>
 </page>
-<page="42en">
+<page!"42en">
 <text>
 A neighborhood’s new anti-Section 8 rules will push many Black residents out
 of a North Texas suburb
@@ -532,7 +545,7 @@ of a North Texas suburb
    the organization accepted vouchers, the survey found.
 </text>
 </page>
-<page="43en">
+<page!"43en">
 <text>
 
    What you need to know about Highland Park, the Chicago suburb rattled
@@ -562,7 +575,7 @@ What you need to know about Highland Park, the Chicago suburb rattled by July
    residents. (About 3% of the Jews in Highland Park and its surrounding
 </text>
 </page>
-<page="44en">
+<page!"44en">
 <text>
 
 Rally for justice in Chicago suburb after young woman killed by police
@@ -585,7 +598,7 @@ Rally for justice in Chicago suburb after young woman killed by police
    even disciplined. Dolton itself accounted for nine of these shootings.
 </text>
 </page>
-<page="45en">
+<page!"45en">
 <text>
    investigation after a man attacked and killed a police administrator
    Friday with a knife at a police station in a Paris suburb.
@@ -600,7 +613,7 @@ Rally for justice in Chicago suburb after young woman killed by police
    kilometers southwest of Paris in France’s Yvelines department. Castex,
 </text>
 </page>
-<page="46en">
+<page!"46en">
 <text>
    Park, Ill., on July 4, 2022, after a shooter fired on the Chicago
    northern suburb’s Fourth of July parade.
@@ -611,17 +624,18 @@ Rally for justice in Chicago suburb after young woman killed by police
    of Highland Park. Robert E. Crimo III drew police attention three years
 </text>
 </page>
-<page="47en">
+<page!"47en">
 <text>
 
 </text>
 </page>
-<page="48en">
+<page!"48en">
 <text>
 
+Mexico City Suburb Fires 87 Officers Amid Corruption Charges
 </text>
 </page>
-<page="49en">
+<page!"49en">
 <text>
      .@AOC's answer to "what does defund the police look like?" was "a
      suburb" and that is totally gonna be my answer from now on
@@ -648,7 +662,7 @@ Rally for justice in Chicago suburb after young woman killed by police
    world without having much interruption or interaction with police at
 </text>
 </page>
-<page="4en">
+<page!"4en">
 <text>
 A one-and-half-year-old girl was attacked and killed by a leopard in the
 forested area of Aarey colony in the western suburb of Goregaon here on
@@ -659,7 +673,7 @@ Monday, police said.The incident took place in unit number 15 of Aarey around
    here on Monday, police said.
 </text>
 </page>
-<page="50en">
+<page!"50en">
 <text>
 
    PARIS (Reuters) - Armed police were sent into a suburb of Dijon in
@@ -673,7 +687,7 @@ Monday, police said.The incident took place in unit number 15 of Aarey around
    streets of the Dijon suburb.
 </text>
 </page>
-<page="5en">
+<page!"5en">
 <text>
    WA police confirm bikie links in 'cold-blooded' fatal shooting in
    northern Perth suburb of Gnangara
@@ -686,9 +700,13 @@ Perth suburb of Gnangara
    WA police have vowed to crack down on criminal gangs following a fatal
    shooting in the northern Perth suburb of Gnangara yesterday, with
    detectives confirming the victim had links to bikie members.
+--
+
+Why this coastal tourist town wants to restrict Airbnbs to affluent suburbs
+     *
 </text>
 </page>
-<page="6en">
+<page!"6en">
 <text>
 after he stopped one of them from bursting a firecracker in a glass bottle on
 an open ground in the eastern suburb of Govandi here on Monday, police said.
@@ -699,7 +717,7 @@ an open ground in the eastern suburb of Govandi here on Monday, police said.
    Monday, police said. The police have detained two of the boys, aged 14
 </text>
 </page>
-<page="7en">
+<page!"7en">
 <text>
    Constance Watcho's body was discovered near a busy walking track in the
    Brisbane suburb of Kangaroo Point.(ABC News: Alice Pavlovic)
@@ -712,9 +730,13 @@ an open ground in the eastern suburb of Govandi here on Monday, police said.
    Satellite imagery revealed that Constance's body had lain in the same
    spot for at least six months — in the same suburb where she was last
    seen alive.
+--
+
+Why this coastal tourist town wants to restrict Airbnbs to affluent suburbs
+     *
 </text>
 </page>
-<page="8en">
+<page!"8en">
 <text>
    In a statement, Merseyside Police said Thomas Cashman, from the
    Liverpool suburb of West Derby, had been charged with the young girl’s
@@ -725,7 +747,7 @@ an open ground in the eastern suburb of Govandi here on Monday, police said.
    an offender, police added.
 </text>
 </page>
-<page="9en">
+<page!"9en">
 <text>
    the community was so effective at driving parliamentary protesters out
    of the Lower Hutt suburb earlier this year, police are joking they may
