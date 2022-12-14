@@ -6,7 +6,7 @@
      * aller au direct radio
 
    (BUTTON) Menu principal
-   franceinfo
+   Accueil Franceinfo
      * vidéos
      * radio
      * jt
@@ -252,6 +252,14 @@ fois"
        Vidéo
        "Bamboula, ça reste encore à peu près convenable", lâche un
        syndicaliste policier sur France 5
+     * Franceinfo vous explique les notions d'euthanasie, de suicide
+       assisté ou encore de soins palliatifs pour mieux saisir les enjeux
+       du débat autour de la fin de vie. (ELLEN LOZON / FRANCEINFO)
+       Franceinfo vous explique les notions d'euthanasie, de suicide
+       assisté ou encore de soins palliatifs pour mieux saisir les enjeux
+       du débat autour de la fin de vie. (ELLEN LOZON / FRANCEINFO)
+       Euthanasie, soins palliatifs, directives anticipées... Huit mots
+       pour mieux comprendre le débat sur la fin de vie
      * La Belgique et l'Espagne ont récemment adopté des dispositifs en
        faveur d'une semaine de quatre jours. (PAULINE LE NOURS /
        FRANCEINFO) La Belgique et l'Espagne ont récemment adopté des
@@ -267,13 +275,6 @@ fois"
        Kiev, le 22 novembre 2022. (SERGEI CHUZAVKOV / AFP)
        Guerre en Ukraine : pourquoi les forces de sécurité multiplient les
        perquisitions dans les communautés orthodoxes liées à Moscou
-     * Un préfabriqué à l'école maternelle Tolbiac, dans le 13e
-       arrondissement de Paris, le 19 février 2019.&nbsp; (ARTHUR NICHOLAS
-       ORCHARD / HANS LUCAS / AFP) Un préfabriqué à l'école maternelle
-       Tolbiac, dans le 13e arrondissement de Paris, le 19 février
-       2019.&nbsp; (ARTHUR NICHOLAS ORCHARD / HANS LUCAS / AFP)
-       "Jusqu'à 10°C dans les classes" : face à la flambée des prix de
-       l'énergie, les communes peinent à chauffer les écoles
 
    les sujets associés
      * Police

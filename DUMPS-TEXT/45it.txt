@@ -9,11 +9,27 @@
    NOTIZIE
      * ULTIME NOTIZIE
      * CRONACA
+          + CRONACA NERA
+          + INCIDENTI
+          + RITIRO PRODOTTI ALIMENTARI
+          + METEO
+          + TERREMOTI E VULCANI
+          + STORIE
      * POLITICA
+          + SONDAGGI POLITICI
      * ECONOMIA
+          + LAVORO
+          + PREZZI
+          + SCIOPERI
+          + TASSE
      * ESTERI
-     * SOCIAL NEWS
+          + CRONACA ESTERA
+          + POLITICA ESTERA
      * ALTRO
+          + SALUTE
+          + CULTURA E SPETTACOLO
+          + SOCIAL NEWS
+          + GIOCHI E LOTTERIE
      * SPECIALI
           + #COVID
           + #UCRAINA
@@ -23,7 +39,7 @@
    Temi Caldi:
      * Guerra in Ucraina
      * Governo Italiano
-     * Meloni minacciata
+     * Scandalo Qatar
 
      * HOME
      * CRONACA
@@ -124,29 +140,29 @@ TAG:
 
 Leggi anche
 
-     * Paolo Stasi, 19enne ucciso a Francavilla Fontana: svolta nelle
-       indagini, ci sono due indagati
-     * Manolo Portanova, il calciatore condannato a sei anni di carcere
-       per violenza sessuale di gruppo
-     * Verona, culla violentemente il figlio fino alla morte a 11 mesi:
-       mamma condannata per omicidio
-     * Uccide e fa a pezzi la figlia di 11 mesi: arrestato negli Usa un
-       uomo di 31 anni, era latitante da settimane
-     * Germania, studentessa di 14 anni accoltellata e uccisa mentre va a
-       scuola: grave un'altra ragazza
+     * Molesta una donna in una lavanderia, lei gli scatta una foto e lo
+       fa arrestare
+     * Nick Carter dei Backstreet Boys denunciato per stupro: la violenza
+       sessuale su una minorenne con disabilità
+     * Confessa un omicidio scrivendolo sulla scheda elettorale: giallo a
+       Villasanta. Si sospetta di dieci persone
+     * Ragazzina rivela nel tema a scuola gli abusi sessuali subiti anni
+       prima: duplice accusa per il fratellastro
+     * Dresda, si barrica in un centro commerciale dopo aver ucciso la
+       madre: arrestato e liberati gli ostaggi
 
-     * ESTERI cosby
+     * INCIDENTI aereo-precipitato-trapani-morto-pilota-recuperato-corpo
 
-Bill Cosby accusato di molestie sessuali da 5 donne: il noto attore è stato
-denunciato per stupro
-     * ECONOMIA giorgia-meloni-pnrr-scadenze-dicembre
+Aereo militare precipitato a Trapani, il pilota è morto nell'impatto:
+ritrovato il corpo. Chi è la vittima
+     * CRONACA NERA fidene-spari
 
-Pnrr, ecco quali scadenze deve rispettare l'Italia entro dicembre per non
-perdere 22 miliardi di euro
-     * ESTERI Warnock Georgia
+Strage di Fidene, il bilancio delle vittime sale a quattro: Fabiana De
+Angelis è morta in ospedale
+     * STORIE emanuela-orlandi-ali-agca
 
-Midterm, i democratici conquistano il seggio della Georgia: come cambia il
-Senato negli Stati Uniti
+Emanuela Orlandi, nuove rivelazioni di Mehmet Ali Agca: "Il rapimento fu un
+fatto interno al Vaticano"
      * VIDEO
 
 Omicidi Roma, chi è il killer delle prostitute
@@ -167,102 +183,81 @@ Assunzioni 2023
 
 Ultime Notizie
 
-     * ESTERI cosby
+     * CRONACA ESTERA marocco
 
-Bill Cosby accusato di molestie sessuali da 5 donne: il noto attore è stato
-denunciato per stupro
-     * ECONOMIA giorgia-meloni-pnrr-scadenze-dicembre
+Turisti francesi 80enne presi a sassate in Marocco: morta una donna
+     * CRONACA ESTERA guerra-ucraina-diretta-14-dicembre
 
-Pnrr, ecco quali scadenze deve rispettare l'Italia entro dicembre per non
-perdere 22 miliardi di euro
-     * ESTERI Warnock Georgia
+Guerra in Ucraina, la diretta: esplosioni nel centro di Kiev
+     * STORIE emanuela-orlandi-ali-agca
 
-Midterm, i democratici conquistano il seggio della Georgia: come cambia il
-Senato negli Stati Uniti
-     * CRONACA Marocco
+Emanuela Orlandi, le nuove rivelazioni di Ali Agca tirano in ballo il Papa
+     * CRONACA NERA omicidio-agrigento
 
-Verona, agguato ad auto dei tifosi del Marocco: 12 fermati, una donna è
-rimasta ferita. Cosa è successo
-     * SOCIAL NEWS attivisti-scala
+Marito e moglie uccisi a coltellate: fermato il figlio di 34 anni
+     * CRONACA NERA venezia-canal-grande
 
-SONDAGGIO - Teatro Alla Scala imbrattato con la vernice: sei d'accordo con
-gli attivisti per il clima?
+Un tir con il volto di Mussolini sul Canal Grande: indaga la polizia
 
 Dai Social
 
-     * CULTURA E SPETTACOLO Merlo
+     * SALUTE Cammello
 
-Michele Merlo, saccheggiata la tomba del cantante morto di leucemia: anello
-sparito. La denuncia della madre
-     * ECONOMIA assegno-unico
+"Influenza del cammello" di ritorno dai Mondiali in Qatar: è allarme
+     * CRONACA NERA fidene-spari
 
-Assegno Unico 2023, aumento nel 2023 in base ai figli: quanto può ricevere
-una famiglia, novità sull'Isee
-     * CRONACA carabinieri
+Strage di Fidene, il bilancio delle vittime si aggrava
+     * INCIDENTI aereo-precipitato-trapani-morto-pilota-recuperato-corpo
 
-Omicidio a San Stino di Livenza, uccide la moglie a bottigliate e chiama i
-Carabinieri: chi era la vittima
-     * POLITICA maio
+Aereo militare precipitato, chi era il pilota: ritrovato il corpo
+     * CRONACA NERA Aggressione
 
-Luigi Di Maio "non ha titoli per il nuovo incarico né fare lo stagista":
-l'accusa degli ex eurodeputati M5s
-     * CRONACA attivisti-scala
+Medico aggredito col machete nel parcheggio dell'ospedale: è gravissimo
+     * CRONACA NERA aereo-militare
 
-Milano, lanciano vernice contro la Scala nel giorno della Prima: bloccati 5
-attivisti di Ultima Generazione
+Aereo militare scomparso in volo: ricerche in corso
 
 Ultime Gallery
 
-     * POLITICA sondaggi-politici
+     * CRONACA Ischia
 
-Sondaggi politici, nuovi scossoni nella maggioranza e nell'opposizione: chi
-voterebbero oggi gli italiani
-     * ESTERI Bruxelles
+Allerta meteo a Ischia, evacuazione da zona rossa a Casamicciola
+     * SONDAGGI POLITICI sondaggi-politici
 
-Bruxelles, scontri in strada dopo la vittoria del Marocco sul Belgio ai
-Mondiali: auto distrutte e in fiamme
-     * CRONACA frana Ischia
+Sondaggi politici, vola un partito: cambiano gli equilibri della maggioranza
+     * CULTURA E SPETTACOLO compagno-meloni
 
-Maltempo, violento nubifragio su Ischia: frana a Casamicciola Terme investe
-una casa. Le foto dall'isola
-     * POLITICA giorgia-meloni-funerali-maroni
+Prima della Scala, da Mattarella a Meloni: chi è presente
+     * CRONACA proteste
 
-Roberto Maroni, i funerali di Stato a Varese: presente Giorgia Meloni e la
-vecchia guardia della Lega
-     * POLITICA sondaggi
+Proteste contro la Prima della Scala: manifestanti in piazza a Milano
+     * SONDAGGI POLITICI sondaggi-politici
 
-Sondaggi politici, come cambiano le intenzioni di voto degli italiani: Meloni
-in crescita, conferme sul podio
+Sondaggi politici, un partito cresce ancora: cosa cambia tra i partiti
 
 Più viste
 
-     * CULTURA E SPETTACOLO kirstie-alley
+     * SALUTE sciroppo-per-la-tosse-ritirato
 
-Morta Kirstie Alley, star di 'Senti chi parla': le cause del decesso e il
-messaggio di John Travolta
+Reazioni allergiche improvvise, ritirati diversi sciroppi per la tosse
+     * ECONOMIA sciopero-benzinai
+
+Sciopero benzinai per 3 giorni, distributori chiusi in autostrada: le date
      * GIOCHI E LOTTERIE lotto-martedi
 
-Estrazioni Lotto e Superenalotto di oggi martedì 6 dicembre 2022: i numeri
-vincenti e il jackpot
-     * CRONACA ambulanza-cassino
+Lotto e Superenalotto di martedì 12 dicembre 2022: tutti i numeri
+     * CRONACA ESTERA scontri-india-cina
 
-Inferno sulla A1, incidenti a catena a Cassino: un morto e feriti gravi, la
-situazione
-     * POLITICA Meloni
+Cina, prove di guerra: si scontra con l'India, poi invade Taiwan
+     * INCIDENTI ambulanza-potenza
 
-Minacce a Giorgia Meloni, c'è un indagato: è un 27enne di Siracusa. Cosa ha
-scoperto la Polizia
-     * CRONACA Incidente
-
-Foggia, auto contro albero: muoiono due compagni di banco 18enni. Il ricordo
-degli amici a scuola
+Potenza, terribile incidente: corpi estratti con divaricatori e cesoie
 
 Meteo
 
-     * CRONACA pioggia-roma
+     * CRONACA meteo-previsioni-settimana
 
-Meteo, le previsioni della settimana: pioggia e tempo instabile con
-peggioramenti per il ponte dell'Immacolata
+Meteo, in arrivo gelo e nevicate a bassa quota: le previsioni
 
   Approfondimenti
 
@@ -312,5 +307,5 @@ Virgilio è:
    Ricerca principale ____________________ (Submit)
 
    IFRAME:
-   //it-gmtdmp.mookie1.com/t/v2?tagid=V2_407666&isNoScript&src.rand=167042
-   4082
+   //it-gmtdmp.mookie1.com/t/v2?tagid=V2_407666&isNoScript&src.rand=167100
+   7976

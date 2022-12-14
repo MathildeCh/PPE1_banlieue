@@ -4,12 +4,12 @@
    garantir les meilleures performances possibles.
 
    Passer au contenu principal
-   24 heures Monde
+   Monde
    S'abonner
    Se connecter
    (BUTTON)
    Menu
-     * Guerre en Ukraine
+     * Ukraine
      * Faits divers
 
    (BUTTON)
@@ -39,7 +39,7 @@
                o Votations
                o Suisse romande
                o Faits divers
-          + Guerre en Ukraine
+          + Ukraine
           + Monde (BUTTON)
                o Faits divers
           + Économie (BUTTON)

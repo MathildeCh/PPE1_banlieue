@@ -34,6 +34,7 @@
           + Performing Arts
           + Life Kit
      * Music (BUTTON) Expand/collapse submenu for Music
+          + Best Music of 2022
           + Tiny Desk
           + #NowPlaying
           + All Songs Considered
@@ -59,6 +60,7 @@
      * NPR Shop
 
      * NPR Music NPR Music
+     * Best Music of 2022
      * Tiny Desk
      * #NowPlaying
      * All Songs Considered

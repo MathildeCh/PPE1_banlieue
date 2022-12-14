@@ -100,25 +100,10 @@ Un fenomeno diffuso e pericoloso
    sicurezza nelle banlieue.
 
    Commenti
-   (BUTTON) Attendi (BUTTON) Commenta
-
-   ____________________________________________________________
-   ____________________________________________________________
-   ____________________________________________________________
-   ____________________________________________________________
-   Non sono consentiti commenti che contengano termini violenti,
-   discriminatori o che contravvengano alle elementari regole di
-   netiquette. Qui le norme di comportamento per esteso.
-   (BUTTON) Annulla (BUTTON) Pubblica
-   Accedi
-   ____________________
-   ____________________
-   (BUTTON) ACCEDI
-   REGISTRATI
-   HAI DIMENTICATO LA PASSWORD?
-   Accedi
-
-   Spiacenti, devi abilitare javascript per poter procedere.
+   (BUTTON) Attendi
+   I commenti saranno accettati:
+     * dal lunedì al venerdì dalle ore 10:00 alle ore 20:00
+     * sabato, domenica e festivi dalle ore 10:00 alle ore 18:00.
 
    Tag
    aggressione banlieue polizia
