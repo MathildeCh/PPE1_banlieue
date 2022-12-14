@@ -31,7 +31,7 @@ Une demande de sécurité dans les banlieues
    la police opprime les jeunes de banlieue », a conclu l’ex-commissaire
    de police.
 </text>
-</page>
+</page> §
 <page!"11fr">
 <text>
 TEMOIGNAGES FRANCEINFO. "Ce que tu as fait, c'est une trahison" : ils sont nés
@@ -58,7 +58,7 @@ TEMOIGNAGES FRANCEINFO. "Ce que tu as fait, c'est une trahison" : ils sont nés
    j'étais une fille de banlieue. Pour le reste de la population, j'étais
    la police. Au bout de deux ans, je ne savais plus vraiment qui
 </text>
-</page>
+</page> §
 <page!"12fr">
 <text>
 
@@ -80,7 +80,7 @@ Politique de la ville : les banlieues coupe-gorge de la République
    La France a subi 187 jours d’émeutes dans les banlieues en 2020, la
    moitié en région parisienne. Ces émeutiers sont de plus en plus jeunes
 </text>
-</page>
+</page> §
 <page!"13fr">
 <text>
 
@@ -91,7 +91,7 @@ déviants qui doivent être disciplinés »
    banlieue, qui sont fréquemment les cibles de ces violences depuis
    cinquante ans, sans que ces derniers participent à une quelconque
 </text>
-</page>
+</page> §
 <page!"15fr">
 <text>
 
@@ -134,7 +134,7 @@ France : ce qu'attendent les associations du plan Borloo sur les banlieues
    Face au "mépris de l'État", les élus de banlieue tirent la sonnette
    d'alarme
 </text>
-</page>
+</page> §
 <page!"16fr">
 <text>
 
@@ -178,7 +178,7 @@ France : ce qu'attendent les associations du plan Borloo sur les banlieues
    certains s'en amusant. La Première Marche des Fiertés en banlieue
    parisienne, à Saint-Denis le 9 juin 2019, a été accueillie avec
 </text>
-</page>
+</page> §
 <page!"17fr">
 <text>
 
@@ -209,7 +209,7 @@ Avec "Les Misérables", Ladj Ly filme les violences policières en banlieue
    Cinéma Violences policières Canal Plus Banlieue Ladj ly Les Misérables
    Vidéos Culture
 </text>
-</page>
+</page> §
 <page!"18fr">
 <text>
 
@@ -228,7 +228,7 @@ sommaire du magazine "Enquête d’action" ce soir sur W9
    Abdeslam est aussi une banlieue synonyme d'insécurité et de délinquance
    en Belgique. Le secteur est connu des forces de l’ordre belges pour
 </text>
-</page>
+</page> §
 <page!"19fr">
 <text>
    l’origine d’innombrables conflits de moindre intensité entre la police
@@ -279,7 +279,7 @@ sommaire du magazine "Enquête d’action" ce soir sur W9
    rofs-de-banlieue-contre-les-discriminations-des-eleves-en-sorties-scola
    ires_5098415_1473685.html (consulté le 9 décembre 2019).
 </text>
-</page>
+</page> §
 <page!"1fr">
 <text>
 
@@ -314,7 +314,7 @@ sommaire du magazine "Enquête d’action" ce soir sur W9
    grande banlieue parisienne. Pandore (les noms sont fictifs) est une
    grande ville comptant des quartiers aisés, mais aussi des quartiers
 </text>
-</page>
+</page> §
 <page!"20fr">
 <text>
 
@@ -343,7 +343,7 @@ Villeneuve-la-Garenne
    Macron présente une version allégée du plan Borloo pour les banlieues
    Sur le même sujet
 </text>
-</page>
+</page> §
 <page!"21fr">
 <text>
 
@@ -360,21 +360,21 @@ l'embrasement
    n'y a pas lieu d'avoir des inquiétudes", sur un risque d'embrasement
    général des banlieues, a poursuivi la porte-parole.
 </text>
-</page>
+</page> §
 <page!"22fr">
 <text>
 
 «Les Misérables» : un film coup de poing sur la banlieue qui se veut un «cri
 d’alerte»
 </text>
-</page>
+</page> §
 <page!"23fr">
 <text>
 
 «Les Misérables» : un film coup de poing sur la banlieue qui se veut un «cri
 d’alerte»
 </text>
-</page>
+</page> §
 <page!"24fr">
 <text>
    #» Flux » Flux des commentaires » Camélia Jordana et la police qui
@@ -405,7 +405,7 @@ Camélia Jordana et la police qui massacrerait en banlieue
      * Étiquettes banlieue, bourgeoisie, cités populaires,
        petite-bourgeoisie, police, police nationale, postmodernes,
 </text>
-</page>
+</page> §
 <page!"25fr">
 <text>
 Philippines: Un journaliste radio philippin a été abattu près de son domicile
@@ -416,7 +416,7 @@ dans la banlieue de Manille, annonce la police - VIDEO
    la banlieue de Manille, a annoncé mardi la police, dans un pays où de
    nombreux professionnels des médias sont régulièrement pris pour cible.
 </text>
-</page>
+</page> §
 <page!"26fr">
 <text>
 
@@ -454,7 +454,7 @@ Incidents et interpellations en banlieue parisienne
 
    COVID-19 VIOLENCES POLICIÈRES BANLIEUE IMMIGRATION ATTAQUE XÉNOPHOBE
 </text>
-</page>
+</page> §
 <page!"27fr">
 <text>
    accidentelle de deux adolescents à Clichy-sous-Bois (Seine-Saint-Denis)
@@ -469,7 +469,7 @@ Incidents et interpellations en banlieue parisienne
    Trois semaines de violences avaient suivi dans les banlieues, avec un
    bilan de 300 bâtiments et 10.000 véhicules incendiés, 130 policiers et
 </text>
-</page>
+</page> §
 <page!"28fr">
 <text>
 
@@ -484,7 +484,7 @@ POLITESSE. La police à tu et à toi avec les jeunes de banlieue
    conversations à Vaulx-en-Velin, dans la banlieue lyonnaise, que ce soit
    avec de simples lascars*, de vaillants étudiants désargentés ou encore
 </text>
-</page>
+</page> §
 <page!"29fr">
 <text>
    Photo d'une école à laquelle des émeutiers ont mis le feu à
@@ -503,7 +503,7 @@ POLITESSE. La police à tu et à toi avec les jeunes de banlieue
      * banlieues
      * violence
 </text>
-</page>
+</page> §
 <page!"2fr">
 <text>
 
@@ -535,7 +535,7 @@ Dans les banlieues, des pratiques policières en accusation
      * Banlieues
      * Jeux Olympiques 2024 en France
 </text>
-</page>
+</page> §
 <page!"30fr">
 <text>
 
@@ -548,7 +548,7 @@ Un policier abattu en banlieue de Toronto
    de Mississauga, lundi après-midi en banlieue de Toronto, par un suspect
    qui a aussi tué un second citoyen, en plus d’en blesser trois, avant
 </text>
-</page>
+</page> §
 <page!"31fr">
 <text>
    années 1970, la France connaît plusieurs vagues de violence dans les
@@ -607,7 +607,7 @@ I. Une cité HLM de banlieue sur le terrain
    Mots-clefs : Banlieue, Grenoble, Insécurité
    À propos de l’auteur
 </text>
-</page>
+</page> §
 <page!"32fr">
 <text>
    le berceau de l'horlogerie lové dans un méandre du Doubs ? « Rien à
@@ -630,7 +630,7 @@ I. Une cité HLM de banlieue sur le terrain
    poignée de banlieues provinciales, des obstacles sont dressés pour
    gêner les forces de l'ordre, des caméras de surveillance régulièrement
 </text>
-</page>
+</page> §
 <page!"33fr">
 <text>
 coûté la vie à deux adolescents dimanche soir Deux ans après les émeutes de
@@ -653,7 +653,7 @@ l’automne 2005, la banlieue parisienne s’embrase de nouveau
        les émeutes de l’automne 2005, la banlieue parisienne s’embrase de
        nouveau
 </text>
-</page>
+</page> §
 <page!"34fr">
 <text>
    successivement analysées dans ce qui suit : d’un côté, la domination
@@ -675,7 +675,7 @@ l’automne 2005, la banlieue parisienne s’embrase de nouveau
    de ça justement, faut qu’ils aient l’instinct chasseur », Entretien
    avec un brigadier d’une BAC de banlieue parisienne, 2004.
 </text>
-</page>
+</page> §
 <page!"35fr">
 <text>
 
@@ -703,7 +703,7 @@ la police n'exclut pas qu'il soit lié à trois autres crimes du même genre
    Aucun rapprochement n'a été fait entre ces crimes de Toulouse et ceux
    de la banlieue sud de Paris.
 </text>
-</page>
+</page> §
 <page!"36fr">
 <text>
    19 janvier 2015
@@ -737,7 +737,7 @@ la police n'exclut pas qu'il soit lié à trois autres crimes du même genre
    porte-parole de l'association "Banlieue Plus".
    Voir la bio » (BUTTON) Suivre
 </text>
-</page>
+</page> §
 <page!"37fr">
 <text>
 
@@ -756,7 +756,7 @@ Incidents en banlieue : Le FN lance une pétition "pour soutenir la police"
    banlieue parisienne, dans le sillage de lʼaffaire Théo, jeune homme
    victime dʼun viol présumé lors dʼune interpellation le 2 février, le
 </text>
-</page>
+</page> §
 <page!"38fr">
 <text>
 
@@ -771,7 +771,7 @@ La banlieue en replay
    gouvernement doit prendre conscience que la réalité des banlieues
    nécessite un projet politique d’envergure, d’une dimension encore
 </text>
-</page>
+</page> §
 <page!"39fr">
 <text>
    #Un peu d'air frais » Flux Un peu d'air frais » Flux des commentaires
@@ -794,7 +794,7 @@ Violences contre la Police en banlieue : des informations localo-locales
    via Violences contre la Police en banlieue : des informations
    localo-locales
 </text>
-</page>
+</page> §
 <page!"3fr">
 <text>
 
@@ -811,7 +811,7 @@ Banlieues: une police en roue libre
    Les habitants de banlieues sont seuls et ne peuvent compter que sur
    leurs propres forces. Alors les tribunes multiples sur demain qui ne
 </text>
-</page>
+</page> §
 <page!"40fr">
 <text>
 
@@ -822,7 +822,7 @@ Banlieues: une police en roue libre
    banlieue. A maints endroits, les forces de l’ordre semblaient débordées
    face aux manifestants.
 </text>
-</page>
+</page> §
 <page!"41fr">
 <text>
    preuve de sa technicité pour livrer une vision complaisante et
@@ -837,7 +837,7 @@ Banlieues: une police en roue libre
    caricaturale qu’il fait des gamins de banlieues ? Agressifs, sans
    vocabulaire, sans nom, une horde sauvage de débiles qui attaquent un
 </text>
-</page>
+</page> §
 <page!"42fr">
 <text>
 Politique de la ville - Plus d'éducateurs ou plus de policiers dans les
@@ -875,7 +875,7 @@ banlieues ? Les Français sont partagés
    banlieues 10 ans après les émeutes de 2005", pour la Fondation Jean
    Jaurès, auprès d'un échantillon représentatif de 969 personnes, entre
 </text>
-</page>
+</page> §
 <page!"43fr">
 <text>
    Des sauveteurs en canot pneumatique dans une rue inondée de
@@ -886,7 +886,7 @@ banlieues ? Les Français sont partagés
    voitures et inondé des maisons, les banlieues de Melbourne étant parmi
    les plus touchées.
 </text>
-</page>
+</page> §
 <page!"44fr">
 <text>
    Des heurts ont mis aux prises de jeunes Guinéens et les forces de
@@ -903,7 +903,7 @@ banlieues ? Les Français sont partagés
    de la banlieue, des manifestants se sont attaqués à de rares véhicules
    conduits par des civils auxquels ils reprochaient, selon des témoins,
 </text>
-</page>
+</page> §
 <page!"45fr">
 <text>
 
@@ -928,7 +928,7 @@ Violences policières : « On serait en banlieue je t’aurais arraché la tête
 Blocus au lycée Simone de Beauvoir : « Pour eux, les lycéens de banlieue ne
 sont que du bétail »
 </text>
-</page>
+</page> §
 <page!"46fr">
 <text>
      * La France vue de l'étranger
@@ -980,7 +980,7 @@ Les banlieues françaises, grandes oubliées du confinement
    La France vue de l'étranger Réveil Covid-19 Coronavirus Banlieues
    France
 </text>
-</page>
+</page> §
 <page!"47fr">
 <text>
 
@@ -998,7 +998,7 @@ Cinq jeunes racontent leur banlieue sans clichés
    leurs difficultés (voire impossibilité) d’accès. Dans nos banlieues,
    beaucoup de jeunes ont plein de potentialités qui cherchent à
 </text>
-</page>
+</page> §
 <page!"48fr">
 <text>
 
@@ -1066,7 +1066,7 @@ Journal officiel des banlieues
 
 J.O. des Banlieues
 </text>
-</page>
+</page> §
 <page!"49fr">
 <text>
    commentaires La Nouvelle Chronique » La couverture médiatique des
@@ -1249,7 +1249,7 @@ III. Un traitement médiatique des banlieues qui se diversifie
    visible, le traitement médiatique des banlieues s’est diversifié et a
    vu naître une critique de la couverture de la presse traditionnelle,
 </text>
-</page>
+</page> §
 <page!"4fr">
 <text>
    de la dégradation des relations entre habitants et police, et du
@@ -1273,7 +1273,7 @@ III. Un traitement médiatique des banlieues qui se diversifie
    Soutenez-nous
    Covid-19 police quartiers populaires banlieue coronavirus
 </text>
-</page>
+</page> §
 <page!"50fr">
 <text>
 
@@ -1296,7 +1296,7 @@ Les Pays-Bas veulent attirer les jeunes chômeurs des banlieues françaises
    une interview les jeunes chômeurs des banlieues françaises à venir
    travailler aux Pays-Bas.
 </text>
-</page>
+</page> §
 <page!"51fr">
 <text>
 
@@ -1434,7 +1434,7 @@ Banlieues, cités dans la Cité (introduction)
 
 Les banlieues populaires ont aussi une histoire
 </text>
-</page>
+</page> §
 <page!"5fr">
 <text>
 
@@ -1465,7 +1465,7 @@ Les banlieues populaires ont aussi une histoire
    «Entre la police et les jeunes de banlieue, la défiance est mutuelle»
    S'ABONNER
 </text>
-</page>
+</page> §
 <page!"6fr">
 <text>
 David Le Bars : «Il faut arrêter de faire croire que la police opprime les
@@ -1479,7 +1479,7 @@ jeunes de banlieue»
    banlieue», a lâché le secrétaire général SCPN UNSA David Le Bars ce
    lundi, dans la matinale.
 </text>
-</page>
+</page> §
 <page!"7fr">
 <text>
    #Violence de banlieue et politisation juvénile Cultures &amp Conflits,
@@ -1533,7 +1533,7 @@ Violence de banlieue et politisation juvénile
    Angelina Peralva, «Violence de banlieue et politisation
    juvénile», Cultures &amp Conflits [En línea], 18 | été 1995, Publicado el
 </text>
-</page>
+</page> §
 <page!"8fr">
 <text>
    >
@@ -1616,7 +1616,7 @@ Banlieues
    l’inconscient de la langue, le mot « banlieue » en porte, encore
    aujourd’hui, le poids infamant. Même si, entre-temps, l’endroit s’est
 </text>
-</page>
+</page> §
 <page!"9fr">
 <text>
    les pratiques de ses collègues. Y a-t-il un traitement différencié du
@@ -1661,4 +1661,4 @@ Banlieues
    cadre des banlieues (manifestations de gilets jaunes, marches pour le
    climat…). La médiatisation de ces affaires pourrait-elle mener à une
 </text>
-</page>
+</page> §

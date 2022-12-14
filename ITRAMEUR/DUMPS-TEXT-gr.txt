@@ -373,7 +373,7 @@
    εμπειρία στη σελίδα μας. Εάν συνεχίσετε να χρησιμοποιείτε τη σελίδα, θα
    υποθέσουμε πως είστε ικανοποιημένοι με αυτό.ΕντάξειΌροι χρήσης
 </text>
-</page>
+</page> §
 <page!"11gr">
 <text>
      * ΕΙΔΗΣΕΙΣ
@@ -1152,7 +1152,7 @@ Athens Magazine
 
    Quantcast
 </text>
-</page>
+</page> §
 <page!"12gr">
 <text>
      *
@@ -1271,7 +1271,7 @@ Athens Magazine
    Copyright ©2022 PARALLAXI
    Powered by nxcode.gr
 </text>
-</page>
+</page> §
 <page!"13gr">
 <text>
    #alternate
@@ -1964,7 +1964,7 @@ Patriot στο Κίεβο θα στείλουν οι ΗΠΑ σύμφωνα με 
 
    Copyright © 2012-2022 902.gr
 </text>
-</page>
+</page> §
 <page!"14gr">
 <text>
    IFRAME: https://www.googletagmanager.com/ns.html?id=GTM-WRW7KDR
@@ -2513,7 +2513,7 @@ Qatargate: Γαλλικός Τύπος για το σκάνδαλο Καϊλή- 
 
    ____________________ (BUTTON)
 </text>
-</page>
+</page> §
 <page!"15gr">
 <text>
    #Ροή RSS » Nantia Report alternate alternate alternate
@@ -2695,7 +2695,7 @@ Related Posts
    εμπειρία στη σελίδα μας. Εάν συνεχίσετε να χρησιμοποιείτε τη σελίδα, θα
    υποθέσουμε πως είστε ικανοποιημένοι με αυτό.ΕντάξειPrivacy policy
 </text>
-</page>
+</page> §
 <page!"16gr">
 <text>
    #Ροή RSS » notia.gr Ροή Σχολίων » notia.gr Ροή Σχολίων notia.gr »
@@ -2977,7 +2977,7 @@ Privacy Overview
    cookies on your website.
    SAVE &amp ACCEPT
 </text>
-</page>
+</page> §
 <page!"17gr">
 <text>
    #Ροή RSS » politic.gr Ροή Σχολίων » politic.gr alternate alternate
@@ -3217,7 +3217,7 @@ politic.gr
    Theme by: Theme Horse
    Proudly Powered by: WordPress
 </text>
-</page>
+</page> §
 <page!"18gr">
 <text>
    #Ροή RSS » Ελεύθερος Τύπος Ροή Σχολίων » Ελεύθερος Τύπος Ροή Σχολίων
@@ -4013,7 +4013,7 @@ La Repubblica: Συνετρίβη Eurofighter στη Σικελία - Σώος �
    ΟΡΟΙ ΧΡΗΣΗΣ
    Designed &amp Developed by HappyOnline.gr
 </text>
-</page>
+</page> §
 <page!"19gr">
 <text>
    #Ροή RSS » Protagon.gr alternate alternate
@@ -4289,7 +4289,7 @@ La Repubblica: Συνετρίβη Eurofighter στη Σικελία - Σώος �
 
    [tr?id=1161593517255688&ampev=PageView&ampnoscript=1]
 </text>
-</page>
+</page> §
 <page!"1gr">
 <text>
    #alternate alternate
@@ -4630,7 +4630,7 @@ La Repubblica: Συνετρίβη Eurofighter στη Σικελία - Σώος �
    x
    arrow-top
 </text>
-</page>
+</page> §
 <page!"20gr">
 <text>
    #Ροή RSS » Nantia Report alternate alternate alternate
@@ -4800,7 +4800,7 @@ Related Posts
    εμπειρία στη σελίδα μας. Εάν συνεχίσετε να χρησιμοποιείτε τη σελίδα, θα
    υποθέσουμε πως είστε ικανοποιημένοι με αυτό.ΕντάξειPrivacy policy
 </text>
-</page>
+</page> §
 <page!"21gr">
 <text>
     #Ροή RSS » italians.gr Ροή Σχολίων » italians.gr Ροή Σχολίων Νεκρός
@@ -4960,7 +4960,7 @@ Retrieve your password
 
    (BUTTON) (BUTTON)
 </text>
-</page>
+</page> §
 <page!"22gr">
 <text>
    #Ροή RSS » KOZANILIFE.GR Ροή Σχολίων » KOZANILIFE.GR Ροή Σχολίων
@@ -5283,7 +5283,7 @@ Tελευταία νέα
    by kozaniLife.gr
    [logokozanilife.png?w=750&amp#038;ssl=1]
 </text>
-</page>
+</page> §
 <page!"23gr">
 <text>
    Ροή Ειδήσεων
@@ -5688,7 +5688,7 @@ MadWalk 2022-Αναστασία: «Γιατί να μην πληρώσω εγώ 
    (BUTTON)
    photo (BUTTON) (BUTTON)
 </text>
-</page>
+</page> §
 <page!"24gr">
 <text>
     #Ροή RSS » newsbreak Ροή Σχολίων » newsbreak alternate alternate
@@ -6073,7 +6073,7 @@ H Eλένη Φουρέιρα ντύθηκε υβρίδιο του Αστυνόμ
 
    Made by minoanDesign
 </text>
-</page>
+</page> §
 <page!"25gr">
 <text>
    Παράκαμψη προς το κυρίως περιεχόμενο
@@ -6241,7 +6241,7 @@ H Eλένη Φουρέιρα ντύθηκε υβρίδιο του Αστυνόμ
    Policenet.gr © | 2022 Όροι Χρήσης.
    developed by Pixelthis
 </text>
-</page>
+</page> §
 <page!"26gr">
 <text>
    #Ροή RSS » Εφημερίδα Γνώμη Υπεύθυνη ενημέρωση alternate alternate
@@ -6997,7 +6997,7 @@ H Eλένη Φουρέιρα ντύθηκε υβρίδιο του Αστυνόμ
    (BUTTON) (BUTTON) (BUTTON) (BUTTON)
    (BUTTON) (BUTTON)
 </text>
-</page>
+</page> §
 <page!"27gr">
 <text>
 
@@ -7592,7 +7592,7 @@ Follow Efsyn
      *
      *
 </text>
-</page>
+</page> §
 <page!"28gr">
 <text>
    [tr?id=512550390833263&ampev=PageView&ampnoscript=1]
@@ -7958,12 +7958,12 @@ RSF: 533 δημοσιογράφοι φυλακισμένοι στον κόσμο
    © 2022 vradini.gr
    Made by netstream
 </text>
-</page>
+</page> §
 <page!"29gr">
 <text>
 
 </text>
-</page>
+</page> §
 <page!"2gr">
 <text>
     #Παλαιό Φάληρο: Ο άνδρας με το τατουάζ άρπαξε 34χρονη από στάση
@@ -8466,7 +8466,7 @@ Mαρούσι: Η 17χρονη σκότωσε την 22χρονη με 40 μαχ
 
    IFRAME: https://www.in.gr/latestnews/?category=economy
 </text>
-</page>
+</page> §
 <page!"30gr">
 <text>
     #Ροή RSS » The President Ροή Σχολίων » The President alternate
@@ -8857,7 +8857,7 @@ Mαρούσι: Η 17χρονη σκότωσε την 22χρονη με 40 μαχ
 
    Quantcast
 </text>
-</page>
+</page> §
 <page!"31gr">
 <text>
    #RSS .92 RSS 2.0 Ροή RSS » Makeleio.gr Κανάλι σχολίων » Makeleio.gr
@@ -9072,7 +9072,7 @@ Mαρούσι: Η 17χρονη σκότωσε την 22χρονη με 40 μαχ
      * Όροι Χρήσης
      * Πολιτική Ασφαλείας
 </text>
-</page>
+</page> §
 <page!"32gr">
 <text>
    #alternate alternate
@@ -9446,7 +9446,7 @@ Netflix: Η έκτη σεζόν του «The Crown» δεν θα συμπερι�
    x
    arrow-top
 </text>
-</page>
+</page> §
 <page!"33gr">
 <text>
    [tr?id=512550390833263&ampev=PageView&ampnoscript=1]
@@ -9834,7 +9834,7 @@ RSF: 533 δημοσιογράφοι φυλακισμένοι στον κόσμο
    © 2022 vradini.gr
    Made by netstream
 </text>
-</page>
+</page> §
 <page!"34gr">
 <text>
      * ΕΙΔΗΣΕΙΣ
@@ -10655,7 +10655,7 @@ Athens Magazine
 
    Quantcast
 </text>
-</page>
+</page> §
 <page!"35gr">
 <text>
    #alternate alternate alternate
@@ -11097,7 +11097,7 @@ Tags
 
    %d bloggers like this:
 </text>
-</page>
+</page> §
 <page!"36gr">
 <text>
 Dikaiologitika.gr | ΕΙΔΗΣΕΙΣ
@@ -11292,7 +11292,7 @@ News4Health
    Copyright © 2011 - 2022 OpinionPost S.A. All rights reserved.
    Designed by Andko Digital / Developed by Nuevvo
 </text>
-</page>
+</page> §
 <page!"37gr">
 <text>
    #alternate
@@ -11496,7 +11496,7 @@ News4Health
 
    (BUTTON) Επιστροφή
 </text>
-</page>
+</page> §
 <page!"38gr">
 <text>
    [tr?id=512550390833263&ampev=PageView&ampnoscript=1]
@@ -11890,7 +11890,7 @@ RSF: 533 δημοσιογράφοι φυλακισμένοι στον κόσμο
    © 2022 vradini.gr
    Made by netstream
 </text>
-</page>
+</page> §
 <page!"39gr">
 <text>
    #alternate alternate
@@ -12236,7 +12236,7 @@ RSF: 533 δημοσιογράφοι φυλακισμένοι στον κόσμο
    x
    arrow-top
 </text>
-</page>
+</page> §
 <page!"3gr">
 <text>
     #Βαρυμπόμπη: «Κανείς μας δεν κατάλαβε ότι δέχθηκε 15 μαχαιριές»,
@@ -12740,7 +12740,7 @@ Mαρούσι: Η 17χρονη σκότωσε την 22χρονη με 40 μαχ
 
    IFRAME: https://www.in.gr/latestnews/?category=economy
 </text>
-</page>
+</page> §
 <page!"40gr">
 <text>
    #Ροή RSS » ypaithros.gr Ροή Σχολίων » ypaithros.gr ypaithros.gr » iCal
@@ -13080,7 +13080,7 @@ Yeasty: Παραγωγή εναλλακτικών πρωτεϊνών από υπ
 
    IFRAME: https://www.googletagmanager.com/ns.html?id=GTM-MFTLBNP
 </text>
-</page>
+</page> §
 <page!"41gr">
 <text>
    IFRAME: https://www.googletagmanager.com/ns.html?id=GTM-KLJV8X3
@@ -13535,7 +13535,7 @@ Bankman-Fried: Η κατάθεση που θα έδινε σήμερα στο Κ
 
    (BUTTON)
 </text>
-</page>
+</page> §
 <page!"42gr">
 <text>
     #Εύβοια: Ροντβάιλερ επιτέθηκε και δάγκωσε στον λαιμό 6χρονο αγοράκι
@@ -14041,7 +14041,7 @@ Mαρούσι: Η 17χρονη σκότωσε την 22χρονη με 40 μαχ
 
    IFRAME: https://www.in.gr/latestnews/?category=economy
 </text>
-</page>
+</page> §
 <page!"43gr">
 <text>
    IFRAME: https://www.googletagmanager.com/ns.html?id=GTM-M9ZNLVC
@@ -14497,7 +14497,7 @@ BEST OF NETWORK
    [javascript]
    Copyright © 2022 Πρώτο Θέμα
 </text>
-</page>
+</page> §
 <page!"44gr">
 <text>
    #alternate alternate
@@ -14797,7 +14797,7 @@ BEST OF NETWORK
 
    IFRAME: https://www.ot.gr/eidiseis/?category=oikonomia
 </text>
-</page>
+</page> §
 <page!"45gr">
 <text>
    IFRAME: https://www.googletagmanager.com/ns.html?id=GTM-M9ZNLVC
@@ -15211,7 +15211,7 @@ BEST OF NETWORK
    [javascript]
    Copyright © 2022 Πρώτο Θέμα
 </text>
-</page>
+</page> §
 <page!"46gr">
 <text>
    IFRAME: https://www.googletagmanager.com/ns.html?id=GTM-M9ZNLVC
@@ -15710,7 +15710,7 @@ BEST OF NETWORK
    [javascript]
    Copyright © 2022 Πρώτο Θέμα
 </text>
-</page>
+</page> §
 <page!"47gr">
 <text>
    IFRAME: https://www.googletagmanager.com/ns.html?id=GTM-M9ZNLVC
@@ -16130,7 +16130,7 @@ BEST OF NETWORK
    [javascript]
    Copyright © 2022 Πρώτο Θέμα
 </text>
-</page>
+</page> §
 <page!"48gr">
 <text>
    [tr?id=291563966515959&ampev=PageView&ampnoscript=1] #alternate alternate
@@ -16503,7 +16503,7 @@ Ario: Η εταιρεία που δημιουργεί σύγχρονες κατ�
      * © 2022 Nou-Pou
      * Website by Beatthewhites
 </text>
-</page>
+</page> §
 <page!"49gr">
 <text>
    #Ροή RSS » Law &amp Order Ροή Σχολίων » Law &amp Order alternate alternate
@@ -16825,7 +16825,7 @@ Social Media
      * Όροι Χρήσης
      * Αποποίηση Ευθύνης
 </text>
-</page>
+</page> §
 <page!"50gr">
 <text>
    IFRAME: https://www.googletagmanager.com/ns.html?id=GTM-KLJV8X3
@@ -17300,7 +17300,7 @@ Bankman-Fried: Η κατάθεση που θα έδινε σήμερα στο Κ
 
    (BUTTON)
 </text>
-</page>
+</page> §
 <page!"5gr">
 <text>
    #Ροή RSS » mynews.gr Ροή Σχολίων » mynews.gr Ροή Σχολίων mynews.gr »
@@ -17569,7 +17569,7 @@ Reader Interactions
    Copyright © 2022 • mynews.gr • Όροι Χρήσης • Επικοινωνία • ΓΕΜΗ:
    059043304000
 </text>
-</page>
+</page> §
 <page!"6gr">
 <text>
     #Ροή RSS » Γαργαλιάνοι Online - Οι ειδήσεις και τα νέα της Τριφυλιας,
@@ -17929,7 +17929,7 @@ Privacy Overview
    Close
    ____________________ (BUTTON) Ψάχνω για
 </text>
-</page>
+</page> §
 <page!"7gr">
 <text>
    Back to Top
@@ -18246,7 +18246,7 @@ Privacy Overview
 
    [INS: :INS]
 </text>
-</page>
+</page> §
 <page!"8gr">
 <text>
    #Ροή RSS » mynews.gr Ροή Σχολίων » mynews.gr Ροή Σχολίων mynews.gr »
@@ -18483,7 +18483,7 @@ Reader Interactions
    Copyright © 2022 • mynews.gr • Όροι Χρήσης • Επικοινωνία • ΓΕΜΗ:
    059043304000
 </text>
-</page>
+</page> §
 <page!"9gr">
 <text>
     #Ροή RSS » Η Άποψη Ροή Σχολίων » Η Άποψη alternate alternate alternate
@@ -18649,4 +18649,4 @@ Reader Interactions
      * Likes
      * Ακόλουθοι
 </text>
-</page>
+</page> §

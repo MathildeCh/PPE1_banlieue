@@ -150,7 +150,7 @@ Liens utiles
        près de chez vous [Choisir une région________.]
        OU Localisez-moi
 </text>
-</page>
+</page> §
 <page!"11fr">
 <text>
    (BUTTON) Accès au menu d’accessibilité
@@ -500,7 +500,7 @@ fois"
    gnages_franceinfo_ce_que_tu_as_fait_c_est_une_trahison_ils_sont_nes_en_
    banlieue_et_ont_choisi_d_etre_policiers__2052527]
 </text>
-</page>
+</page> §
 <page!"12fr">
 <text>
    IFRAME: //www.googletagmanager.com/ns.html?id=GTM-M5K8CCQ
@@ -906,7 +906,7 @@ Laissez un commentaire
    Joomla Template by ThemeXpert
    (BUTTON)
 </text>
-</page>
+</page> §
 <page!"13fr">
 <text>
    #Subscribe to recent articles
@@ -1365,7 +1365,7 @@ déviants qui doivent être disciplinés »
    chida_brahim_pour_la_police_les_jeunes_de_banlieue_sont_des_corps_devia
    nts_qui_doivent_etre_disciplines_634247]
 </text>
-</page>
+</page> §
 <page!"15fr">
 <text>
    (BUTTON)
@@ -1680,7 +1680,7 @@ France : ce qu'attendent les associations du plan Borloo sur les banlieues
    Le contenu auquel vous tentez d'accéder n'existe pas ou n'est plus
    disponible.
 </text>
-</page>
+</page> §
 <page!"16fr">
 <text>
    (BUTTON)
@@ -2005,7 +2005,7 @@ France : ce qu'attendent les associations du plan Borloo sur les banlieues
    Le contenu auquel vous tentez d'accéder n'existe pas ou n'est plus
    disponible.
 </text>
-</page>
+</page> §
 <page!"17fr">
 <text>
 
@@ -2202,7 +2202,7 @@ La faute aux politiques
 
    #Le HuffPost : Culture
 </text>
-</page>
+</page> §
 <page!"18fr">
 <text>
    #RSS
@@ -2581,7 +2581,7 @@ sommaire du magazine "Enquête d’action" ce soir sur W9
      * Cookies et données personnelles
      * Préférences cookies
 </text>
-</page>
+</page> §
 <page!"19fr">
 <text>
    IFRAME: https://www.googletagmanager.com/ns.html?id=GTM-W5D7ZP
@@ -4938,7 +4938,7 @@ Footer menu
    Human Rights Watch is a 501(C)(3) nonprofit registered in the US under
    EIN: 13-2875808
 </text>
-</page>
+</page> §
 <page!"1fr">
 <text>
    Accueil |  Présentation  | Qui sommes-nous ?  | Charte éditoriale  |
@@ -5481,7 +5481,7 @@ Mentions légales
    Nous contacter  | Partenaires  | Amis  | Plan du site  | Proposer un
    contenu
 </text>
-</page>
+</page> §
 <page!"20fr">
 <text>
    (BUTTON)
@@ -5759,7 +5759,7 @@ Villeneuve-la-Garenne
    Le contenu auquel vous tentez d'accéder n'existe pas ou n'est plus
    disponible.
 </text>
-</page>
+</page> §
 <page!"21fr">
 <text>
     En directProgrammesCoupe du monde 2022
@@ -5874,7 +5874,7 @@ Incendie volontaire d'une école
    //redirect447.tagcommander.com/utils/noscript.php?id=5&ampmode=iframe&ampcont
    ent_type=&ampcontent_id=&ampcontent_level1=&ampcontent_level2=&ampcontent_level3=
 </text>
-</page>
+</page> §
 <page!"22fr">
 <text>
    IFRAME:
@@ -6160,7 +6160,7 @@ Montfermeil, en Seine-Saint-Denis. Magistral.
    [pixel_635dd91f?a=dD03NjgxOWI2YmJmMzI2ZWY0ZTA2MTkzYzJmNTYyOTk0NmM1ZDEwY
    jM0JmpzPW9mZg==]
 </text>
-</page>
+</page> §
 <page!"23fr">
 <text>
    IFRAME:
@@ -6446,7 +6446,7 @@ Montfermeil, en Seine-Saint-Denis. Magistral.
    [pixel_635dd91f?a=dD03NjgxOWI2YmJmMzI2ZWY0ZTA2MTkzYzJmNTYyOTk0NmM1ZDEwY
    jM0JmpzPW9mZg==]
 </text>
-</page>
+</page> §
 <page!"24fr">
 <text>
    #» Flux » Flux des commentaires » Camélia Jordana et la police qui
@@ -6571,7 +6571,7 @@ Camélia Jordana et la police qui massacrerait en banlieue
 
    Vers le haut ↑ Haut ↑
 </text>
-</page>
+</page> §
 <page!"25fr">
 <text>
    Aller au contenu principal
@@ -6782,7 +6782,7 @@ Ailleurs sur le web
      * CGU
      * Contact
 </text>
-</page>
+</page> §
 <page!"26fr">
 <text>
    #alternate alternate alternate alternate alternate alternate alternate
@@ -7154,7 +7154,7 @@ Chercher dans les tags du jour
 
    Facebook
 </text>
-</page>
+</page> §
 <page!"27fr">
 <text>
    #publisher alternate alternate
@@ -7273,7 +7273,7 @@ Deux policiers jugés dix ans après le drame de Clichy-sous-Bois
    for-phone-onlyfor-tablet-portrait-upfor-tablet-landscape-upfor-desktop-
    upfor-wide-desktop-up
 </text>
-</page>
+</page> §
 <page!"28fr">
 <text>
     #alternate
@@ -7477,7 +7477,7 @@ POLITESSE. La police à tu et à toi avec les jeunes de banlieue
 
    [iu3?pid=53ea394c-a65f-44b4-8583-4462975c707a&ampevent=PageView]
 </text>
-</page>
+</page> §
 <page!"29fr">
 <text>
    Menu Fermer
@@ -7822,7 +7822,7 @@ Vous voulez écrire ?
 
    Droits d'auteur © 2010–2022, The Conversation France (assoc. 1901)
 </text>
-</page>
+</page> §
 <page!"2fr">
 <text>
    #La-Croix.com
@@ -8410,7 +8410,7 @@ L’actu à ne pas manquer
    © 2022 - Bayard - Tous droits réservés - @la-croix.com est un site de
    la Croix Network
 </text>
-</page>
+</page> §
 <page!"30fr">
 <text>
    IFRAME: //www.googletagmanager.com/ns.html?id=GTM-PRRHXRL
@@ -8732,7 +8732,7 @@ Sections importantes
      * Confidentialité
      * Conditions d'utilisation
 </text>
-</page>
+</page> §
 <page!"31fr">
 <text>
    #Conflits : Revue de Géopolitique » Flux Conflits : Revue de
@@ -9526,7 +9526,7 @@ Pin It on Pinterest
    Êtes-vous sûr de vouloir vous déconnecter ?
    Déconnexion
 </text>
-</page>
+</page> §
 <page!"32fr">
 <text>
    Voir la bourse sur Investir
@@ -10012,7 +10012,7 @@ Thomas Flohr, l'homme qui a bousculé l'aviation d'affaires
    (BUTTON)
    (BUTTON) Connexion
 </text>
-</page>
+</page> §
 <page!"33fr">
 <text>
 
@@ -10515,7 +10515,7 @@ Vous aimez nous lire ? Nous vous offrons 1 article supplémentaire.
 
    [tr?id=355941738321791&ampev=PageView&ampnoscript=1]
 </text>
-</page>
+</page> §
 <page!"34fr">
 <text>
    #Syndiquer tout le site
@@ -11165,7 +11165,7 @@ Réseaux
    © laviedesidees.fr - Toute reproduction interdite sans autorisation
    explicite de la rédaction - Mentions légales - webdesign : Abel Poucet
 </text>
-</page>
+</page> §
 <page!"35fr">
 <text>
    Votre navigateur est obsolète. Veuillez le mettre à jour avec la
@@ -11412,7 +11412,7 @@ FranceUn tueur en deux-roues sévit au sud de Paris
 
    © 2022 Tamedia. All Rights Reserved
 </text>
-</page>
+</page> §
 <page!"36fr">
 <text>
    #alternate alternate Atlantico RSS
@@ -11811,7 +11811,7 @@ Rejoignez-nous
    généralesCopyright © 2020 - Atlantico.fr
    Tous droits réservés
 </text>
-</page>
+</page> §
 <page!"37fr">
 <text>
    REFRESH(900 sec):
@@ -12109,7 +12109,7 @@ Incidents en banlieue : Le FN lance une pétition "pour soutenir la police"
 
    (BUTTON) Enregistrer mes préférences
 </text>
-</page>
+</page> §
 <page!"38fr">
 <text>
    #Bondy Blog Feed
@@ -12284,7 +12284,7 @@ d’Otis
    sur le site.
    (BUTTON) Accepter (BUTTON) Refuser
 </text>
-</page>
+</page> §
 <page!"39fr">
 <text>
    #Un peu d'air frais » Flux Un peu d'air frais » Flux des commentaires
@@ -12474,7 +12474,7 @@ REVUE DE PRESSE
 
    Flux RSS
 </text>
-</page>
+</page> §
 <page!"3fr">
 <text>
      * Contenu principal
@@ -13016,7 +13016,7 @@ Hitler » (Godard)
 
    (BUTTON) Enregistrer et fermer
 </text>
-</page>
+</page> §
 <page!"40fr">
 <text>
    Jump to Navigation
@@ -13253,7 +13253,7 @@ MEF/DGTCP : Des cadres en renforcement de capacités sur l'appropriation des
 
    [INS: :INS]
 </text>
-</page>
+</page> §
 <page!"41fr">
 <text>
    (BUTTON) Ouvrir le menu principal
@@ -13565,7 +13565,7 @@ Nos choix culture du numéro 48
      * Youtube
      * Dailymotion
 </text>
-</page>
+</page> §
 <page!"42fr">
 <text>
      * Ouvrir les outils d'accessibilité
@@ -13920,7 +13920,7 @@ Votre navigateur n'est pas adapté
    invitons a utiliser un autre navigateur, comme Google Chrome ou
    Firefox.
 </text>
-</page>
+</page> §
 <page!"43fr">
 <text>
    REFRESH(3600 sec):
@@ -14112,7 +14112,7 @@ Lecourrier.vn
 
    E-mail : courrier@vnanet.vn, courrier.cvn@gmail.com
 </text>
-</page>
+</page> §
 <page!"44fr">
 <text>
    #VOA - Top Stories [RSS]
@@ -14316,7 +14316,7 @@ L'école primaire Barry-Daiwadou suscite un tollé à Conakry
    MD
    LG
 </text>
-</page>
+</page> §
 <page!"45fr">
 <text>
 Révolution Permanente
@@ -14513,7 +14513,7 @@ les salaires
 
    © 2017 REVOLUTION PERMANENTE - Termes et conditions
 </text>
-</page>
+</page> §
 <page!"46fr">
 <text>
     #alternate
@@ -14816,7 +14816,7 @@ Un exemple pour le pays
 
    [iu3?pid=53ea394c-a65f-44b4-8583-4462975c707a&ampevent=PageView]
 </text>
-</page>
+</page> §
 <page!"47fr">
 <text>
    (BUTTON)
@@ -15151,7 +15151,7 @@ Où lire Libé?
 
    Libération
 </text>
-</page>
+</page> §
 <page!"48fr">
 <text>
 
@@ -15424,7 +15424,7 @@ Annuaire
      * Sud-Ouest
      * Sud-Est
 </text>
-</page>
+</page> §
 <page!"49fr">
 <text>
    #La Nouvelle Chronique » Flux La Nouvelle Chronique » Flux des
@@ -16153,7 +16153,7 @@ La Nouvelle Chronique
 
    %d blogueurs aiment cette page :
 </text>
-</page>
+</page> §
 <page!"4fr">
 <text>
     #Syndiquer tout le site
@@ -16562,7 +16562,7 @@ Partenaires
    d'auteur. Toute reproduction interdite sans autorisation.
    Plan du site / Se connecter / Mentions légales / RSS 2.0
 </text>
-</page>
+</page> §
 <page!"50fr">
 <text>
    #alternate
@@ -16829,7 +16829,7 @@ Aux Pays-Bas, une crise politique en plein pic épidémique
    News
    La fréquentation du JDD.fr est certifiée par l'ACPM
 </text>
-</page>
+</page> §
 <page!"51fr">
 <text>
    #RSS
@@ -17511,7 +17511,7 @@ Les banlieues populaires ont aussi une histoire
      * Foire aux questions
      * Instructions aux auteurs
 </text>
-</page>
+</page> §
 <page!"5fr">
 <text>
    #alternate
@@ -18074,7 +18074,7 @@ interpellations
 
    IFRAME: https://www.googletagmanager.com/ns.html?id=GTM-TC6DVH
 </text>
-</page>
+</page> §
 <page!"6fr">
 <text>
     #alternate
@@ -18206,7 +18206,7 @@ jeunes de banlieue»
      * Sudoku
      * Programme TV
 </text>
-</page>
+</page> §
 <page!"7fr">
 <text>
    #Violence de banlieue et politisation juvénile Cultures &amp Conflits,
@@ -18946,7 +18946,7 @@ Afiliaciones/socios
    OpenEdition Search Boletín electrónico
    Síganos
 </text>
-</page>
+</page> §
 <page!"8fr">
 <text>
    #RSS
@@ -19596,7 +19596,7 @@ Vérités et mensonges au nom de la science
           + Manière de voir
           + Cartographie
 </text>
-</page>
+</page> §
 <page!"9fr">
 <text>
    Aller au contenu principal
@@ -19880,4 +19880,4 @@ beaucoup trop centré sur la police d’intervention
      * Politique de confidentialité
      * FAQ
 </text>
-</page>
+</page> §

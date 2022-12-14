@@ -304,7 +304,7 @@ Categorie Più Lette
 
    © Tutti i diritti riservati
 </text>
-</page>
+</page> §
 <page!"11it">
 <text>
    #TuttoMondo » Feed TuttoMondo » Feed dei commenti TuttoMondo » La
@@ -522,7 +522,7 @@ Lascia un commento Annulla risposta
    esperienza sul nostro sito. Se continui ad utilizzare questo sito noi
    assumiamo che tu ne sia felice.Ok
 </text>
-</page>
+</page> §
 <page!"12it">
 <text>
    #Fratelli d'Italia » Feed Fratelli d'Italia » Feed dei commenti
@@ -1108,7 +1108,7 @@ soggetto erogatore.)
 
    [ribbon.gif]
 </text>
-</page>
+</page> §
 <page!"13it">
 <text>
    #RSS
@@ -1340,7 +1340,7 @@ Link utili
 
    RomaToday è in caricamento, ma ha bisogno di JavaScript
 </text>
-</page>
+</page> §
 <page!"14it">
 <text>
    #RSS
@@ -1570,7 +1570,7 @@ Link utili
 
    BresciaToday è in caricamento, ma ha bisogno di JavaScript
 </text>
-</page>
+</page> §
 <page!"15it">
 <text>
    #Nordest
@@ -1955,7 +1955,7 @@ CONCESSIONARIA DI PUBBLICITÁ
    [tr?id=613826478728879&ampev=PageView&ampnoscript=1]
    [tr?id=1210062079362921&ampev=PageView&ampnoscript=1]
 </text>
-</page>
+</page> §
 <page!"16it">
 <text>
     #Canale Dieci » Feed Canale Dieci » Feed dei commenti alternate
@@ -2253,7 +2253,7 @@ GF Vip, sondaggi sabato 17 dicembre 2022: nomination e concorrenti a...
 
    © 2022 Canale Dieci s.r.l. Tutti i diritti riservati.
 </text>
-</page>
+</page> §
 <page!"17it">
 <text>
    [tr?id=1314692865368959&ampev=PageView&ampnoscript=1]
@@ -2498,7 +2498,7 @@ dosi pronte
    opportunità esclusivi!
    (BUTTON) Chiudi
 </text>
-</page>
+</page> §
 <page!"18it">
 <text>
    #alternate
@@ -2704,7 +2704,7 @@ Xiaomi Coupon: tutti i migliori prodotti scontati del 15%
    vietata la loro riproduzione con qualsiasi mezzo e l'adattamento totale
    o parziale.
 </text>
-</page>
+</page> §
 <page!"19it">
 <text>
    [tr?id=916540528499612&ampev=PageView&ampnoscript=1]
@@ -2982,7 +2982,7 @@ vicepresidente del Pe Eva Kaili
    [png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mN
    kYAAAAAYAAjCB0C8AAAAASUVORK5CYII=]
 </text>
-</page>
+</page> §
 <page!"1it">
 <text>
    IFRAME: https://www.googletagmanager.com/ns.html?id=GTM-PG47VFL
@@ -3498,7 +3498,7 @@ BOLOGNA: Filt Cgil a congresso, Lepore tira dritto sul tram | VIDEO
 
    Seguici Su
 </text>
-</page>
+</page> §
 <page!"20it">
 <text>
    #Metropoli » Feed alternate alternate alternate
@@ -3742,7 +3742,7 @@ Roma StoryWalk: ecco la mappa per camminare nella storia di Roma
    Luigi Carletti. Typimedia H24 S.r.l. , Viale Regina Margherita 279 -
    00198 Roma
 </text>
-</page>
+</page> §
 <page!"21it">
 <text>
    #Ultima Voce » Feed Ultima Voce » Feed dei commenti Ultima Voce » Le
@@ -4011,7 +4011,7 @@ FAQ E CONSIGLI UTILI
 
    Quantcast
 </text>
-</page>
+</page> §
 <page!"22it">
 <text>
    #News
@@ -4351,7 +4351,7 @@ risponde a tono ai suoi haters
 
    IFRAME: https://www.googletagmanager.com/ns.html?id=GTM-M4WGV6R
 </text>
-</page>
+</page> §
 <page!"23it">
 <text>
    #RSS 2.0 RSS .92 Atom 0.3
@@ -4554,7 +4554,7 @@ La mamma: "Voglio la verità, mio figlio in coma da 50 giorni"
 
    [s.gif] score-card-search
 </text>
-</page>
+</page> §
 <page!"24it">
 <text>
    #TAG24 » Feed TAG24 » Feed dei commenti TAG24 » Parigi, ipotesi
@@ -4906,7 +4906,7 @@ App
    Quotidiano telematico. Registrato al n.12/2015 del 21 gennaio 2015
    Tribunale di Roma. Direttore Emanuela Valente.
 </text>
-</page>
+</page> §
 <page!"25it">
 <text>
    #Foligno Oggi » Feed Foligno Oggi » Feed dei commenti Foligno Oggi »
@@ -5165,7 +5165,7 @@ Giornata della trasparenza martedì 13 dicembre
 
    (BUTTON) Gestisci consenso
 </text>
-</page>
+</page> §
 <page!"26it">
 <text>
                        [immagini\testata_nuova_1.jpg]
@@ -5377,7 +5377,7 @@ Immigrazione
       PoliziaeDemocrazia.it é una pubblicazione di DDE Editrice P.IVA
                         01989701006 - dati societari
 </text>
-</page>
+</page> §
 <page!"27it">
 <text>
    [INS: :INS]
@@ -5649,7 +5649,7 @@ Argomenti Popolari
 
    web master: www.ideaingrafica.com
 </text>
-</page>
+</page> §
 <page!"28it">
 <text>
    #Ticinolibero - RSS 2.0 alternate
@@ -5775,7 +5775,7 @@ di Épalinges
    © 2022 , All rights reserved
    ﻿
 </text>
-</page>
+</page> §
 <page!"29it">
 <text>
     #SIULP » Feed SIULP » Feed dei commenti alternate alternate alternate
@@ -6277,7 +6277,7 @@ posti...
 
    2 Luglio 2019
 </text>
-</page>
+</page> §
 <page!"2it">
 <text>
     #Mantovauno.it » Feed Mantovauno.it » Feed dei commenti Mantovauno.it
@@ -6569,7 +6569,7 @@ con i...
    (BUTTON) Accetta tutti i cookies (BUTTON) Rifiuta tutti (BUTTON) Salva
    le modifiche
 </text>
-</page>
+</page> §
 <page!"30it">
 <text>
     #Canale Dieci » Feed Canale Dieci » Feed dei commenti alternate
@@ -6835,7 +6835,7 @@ GF Vip, sondaggi sabato 17 dicembre 2022: nomination e concorrenti a...
 
    © 2022 Canale Dieci s.r.l. Tutti i diritti riservati.
 </text>
-</page>
+</page> §
 <page!"31it">
 <text>
    #RSS
@@ -7049,7 +7049,7 @@ Link utili
 
    LeccePrima è in caricamento, ma ha bisogno di JavaScript
 </text>
-</page>
+</page> §
 <page!"32it">
 <text>
    #Area C » Feed Area C » Feed dei commenti alternate alternate alternate
@@ -7193,7 +7193,7 @@ Cassino, ufficio mobile della Polizia locale in periferia
 
    (BUTTON) Gestisci consenso
 </text>
-</page>
+</page> §
 <page!"33it">
 <text>
    #Primo Piano
@@ -7623,7 +7623,7 @@ PIU' LETTE
    [tr?id=613826478728879&ampev=PageView&ampnoscript=1]
    [tr?id=3250029561771476&ampev=PageView&ampnoscript=1]
 </text>
-</page>
+</page> §
 <page!"34it">
 <text>
     #LeS Polizia » Feed alternate alternate alternate
@@ -7963,7 +7963,7 @@ Privacy Overview
    ACCETTA E SALVA
    Powered by CookieYes Logo
 </text>
-</page>
+</page> §
 <page!"35it">
 <text>
    #Latina TU » Feed Latina TU » Feed dei commenti Latina TU » POLIZIA:
@@ -8334,7 +8334,7 @@ ABOUT US
    esperienza sul nostro sito. Se continui ad utilizzare questo sito noi
    assumiamo che tu ne sia felice.AccettaRifiuta
 </text>
-</page>
+</page> §
 <page!"36it">
 <text>
    Quantcast
@@ -8784,7 +8784,7 @@ Effettua l'accesso
 
    [shinystat.cgi?USER=saronnonews&ampP=3]
 </text>
-</page>
+</page> §
 <page!"37it">
 <text>
    #Caffe' Procope » Feed Caffe' Procope » Feed dei commenti Sindaco
@@ -8911,7 +8911,7 @@ Articoli Più Recenti
    Caffe' Procope Copyright © 2022  Privacy
    deVm@n
 </text>
-</page>
+</page> §
 <page!"38it">
 <text>
    #RSS
@@ -9138,7 +9138,7 @@ Link utili
 
    IlPescara è in caricamento, ma ha bisogno di JavaScript
 </text>
-</page>
+</page> §
 <page!"39it">
 <text>
    #Terni Life » Feed Terni Life » Feed dei commenti Filipponi: “Azioni
@@ -9257,7 +9257,7 @@ Fotogallery
 
    Posting....
 </text>
-</page>
+</page> §
 <page!"3it">
 <text>
    #Ricerca
@@ -9413,7 +9413,7 @@ Un fenomeno diffuso e pericoloso
 
    [p?c1=2&ampamp;c2=34027069&ampamp;cv=3.6.0&ampamp;cj=1]
 </text>
-</page>
+</page> §
 <page!"40it">
 <text>
    #LA NOTIZIA » Feed LA NOTIZIA » Feed dei commenti alternate alternate
@@ -9526,7 +9526,7 @@ si crede anche di meno
 
    Quantcast
 </text>
-</page>
+</page> §
 <page!"41it">
 <text>
    #Siena Free » Feed
@@ -9757,7 +9757,7 @@ lavori di adeguamento ed efficientamento
 
    Inserisci il termine di ricerca e premi Enter. Premi Esc per annullare.
 </text>
-</page>
+</page> §
 <page!"42it">
 <text>
     #AbruzzoLive » Feed AbruzzoLive » Feed dei commenti AbruzzoLive »
@@ -9903,7 +9903,7 @@ Notizie più lette
 
    (BUTTON) (BUTTON)
 </text>
-</page>
+</page> §
 <page!"43it">
 <text>
    #alternate alternate Progetto Melting Pot Europa » Feed Progetto
@@ -10227,7 +10227,7 @@ I cookies
    è usato per raccogliere dati statistici sulla navigazione dell'utente.
    ACCETTA E SALVA
 </text>
-</page>
+</page> §
 <page!"44it">
 <text>
    #Internazionale - RSS Internazionale - RSS Italia Internazionale - RSS
@@ -10572,7 +10572,7 @@ Entra
    [p?c1=2&ampc2=18897644&ampcv=2.0&ampcj=1]
    [tr?id=1654258764834115&ampev=PageView&ampnoscript=1]
 </text>
-</page>
+</page> §
 <page!"45it">
 <text>
    ,,
@@ -10887,7 +10887,7 @@ Virgilio è:
    //it-gmtdmp.mookie1.com/t/v2?tagid=V2_407666&ampisNoScript&ampsrc.rand=167100
    7976
 </text>
-</page>
+</page> §
 <page!"46it">
 <text>
    #Torino News 24 - Le news da Torino » Feed Torino News 24 - Le news da
@@ -11145,7 +11145,7 @@ subito
 
    Privacy PolicyCookie Policy
 </text>
-</page>
+</page> §
 <page!"47it">
 <text>
    #RSS
@@ -11368,7 +11368,7 @@ Link utili
 
    CesenaToday è in caricamento, ma ha bisogno di JavaScript
 </text>
-</page>
+</page> §
 <page!"48it">
 <text>
    #Santa Croce Web » Feed Santa Croce Web » Feed dei commenti alternate
@@ -11543,7 +11543,7 @@ Follow us:
    Ci dispiace, il tuo blog non consente di condividere articoli tramite
    e-mail.
 </text>
-</page>
+</page> §
 <page!"49it">
 <text>
    #alternate
@@ -11730,7 +11730,7 @@ Xiaomi Coupon: tutti i migliori prodotti scontati del 15%
    vietata la loro riproduzione con qualsiasi mezzo e l'adattamento totale
    o parziale.
 </text>
-</page>
+</page> §
 <page!"4it">
 <text>
    #Terre Marsicane » Feed Terre Marsicane » Feed dei commenti alternate
@@ -11981,7 +11981,7 @@ rapporti sessuali con la minaccia di un coltello
    [INS: :INS]
    [INS: :INS]
 </text>
-</page>
+</page> §
 <page!"50it">
 <text>
    #RSS
@@ -12222,7 +12222,7 @@ Link utili
 
    PerugiaToday è in caricamento, ma ha bisogno di JavaScript
 </text>
-</page>
+</page> §
 <page!"5it">
 <text>
     #Colombia: attentato contro sede di polizia nella periferia di Bogotá,
@@ -12839,7 +12839,7 @@ Papa Francesco: Angelus, “i genitori si avvicinano molto al sentire di Dio”
 
    (BUTTON) Preferenze Cookie
 </text>
-</page>
+</page> §
 <page!"6it">
 <text>
      * 4 °C 7 °C Meteo Firenze Oggi
@@ -13087,7 +13087,7 @@ Nove da Firenze
    © 1997-2022 Nove da Firenze. Dal 1997 il primo quotidiano on line di
    Firenze. Reg. Trib. Firenze n. 4877 del 31/03/99.
 </text>
-</page>
+</page> §
 <page!"7it">
 <text>
    #Il quotidiano che racconta l'Umbria » Feed Il quotidiano che racconta
@@ -13242,7 +13242,7 @@ dall’operatrice del 113
 
    Chiudi
 </text>
-</page>
+</page> §
 <page!"8it">
 <text>
    #Polizia e Democrazia » Feed Polizia e Democrazia » Feed dei commenti
@@ -13575,7 +13575,7 @@ Carceri: Mille agenti in quattro anni, una goccia nel deserto
           + Privacy &amp Cookie Policy
           + Contatti
 </text>
-</page>
+</page> §
 <page!"9it">
 <text>
    #alternate
@@ -13820,4 +13820,4 @@ di Mussolini e la scritta Duce
    © 2022 ilDolomiti.it
    torna su
 </text>
-</page>
+</page> §

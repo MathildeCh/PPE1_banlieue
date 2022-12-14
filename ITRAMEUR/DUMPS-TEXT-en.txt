@@ -621,7 +621,7 @@ Arrests after $24m harbourside mansion fire
    [pixel_12f576a6?a=dD01ZDg2M2VkYzExYTQ1YjIwNzBlN2MwNWZkMTI4NzQzMmEzYjUyN
    zE3JmpzPW9mZg==]
 </text>
-</page>
+</page> §
 <page!"11en">
 <text>
    IFRAME: https://www.googletagmanager.com/ns.html?id=GTM-PB2GX
@@ -1039,7 +1039,7 @@ More from ABC News
      *
      *
 </text>
-</page>
+</page> §
 <page!"12en">
 <text>
    #publisher alternate
@@ -1350,7 +1350,7 @@ Join &amp Follow RNZ
 
    © Copyright Radio New Zealand 2022
 </text>
-</page>
+</page> §
 <page!"13en">
 <text>
    #Search getwestlondon
@@ -1842,7 +1842,7 @@ Follow us
 
      © 2022 a Reach plc subsidiary
 </text>
-</page>
+</page> §
 <page!"14en">
 <text>
    #Police: Suspected gunman in Philippine broadcaster’s killing
@@ -2155,7 +2155,7 @@ Email
    contact@benarnews.org
    © 2022 BenarNews
 </text>
-</page>
+</page> §
 <page!"15en">
 <text>
    IFRAME: https://www.googletagmanager.com/ns.html?id=GTM-PB2GX
@@ -2580,7 +2580,7 @@ More from ABC News
      *
      *
 </text>
-</page>
+</page> §
 <page!"16en">
 <text>
     (BUTTON)
@@ -2829,7 +2829,7 @@ Get the latest Canberra news in your inbox
    (BUTTON)
    Ad
 </text>
-</page>
+</page> §
 <page!"17en">
 <text>
    #U.S. News - UPI.com
@@ -3174,7 +3174,7 @@ Follow Us
    Copyright © 2022 United Press International, Inc. All Rights Reserved.
    Terms of UsePrivacy Policy
 </text>
-</page>
+</page> §
 <page!"18en">
 <text>
    logged_out
@@ -3641,7 +3641,7 @@ Share by Email
    ____________________
    (BUTTON) Close (BUTTON) Share
 </text>
-</page>
+</page> §
 <page!"1en">
 <text>
    MenuSearch
@@ -3847,12 +3847,12 @@ Read more
    © 1998-2022 World Socialist Web Site. All rights reserved.
    HomeAboutContactPrivacy StatementPrivacy Settings
 </text>
-</page>
+</page> §
 <page!"20en">
 <text>
 
 </text>
-</page>
+</page> §
 <page!"21en">
 <text>
    ____________________ Submit
@@ -4055,7 +4055,7 @@ Breaking news?
    [pixel_4c3a8c17?a=dD05OTU1OTUwYTI5ZDM2NjU0Njc2NTcyOWNjMjRlYzI4NjcxNGFiN
    DA0JmpzPW9mZg==]
 </text>
-</page>
+</page> §
 <page!"22en">
 <text>
    ____________________ Submit
@@ -4214,7 +4214,7 @@ Breaking news?
    [pixel_4c3a8c17?a=dD05OTU1OTUwYTI5ZDM2NjU0Njc2NTcyOWNjMjRlYzI4NjcxNGFiN
    DA0JmpzPW9mZg==]
 </text>
-</page>
+</page> §
 <page!"23en">
 <text>
    #alternate
@@ -4654,7 +4654,7 @@ Newsletters
      *
      *
 </text>
-</page>
+</page> §
 <page!"24en">
 <text>
    U.S. News and World Report Logo Skip to content
@@ -4968,7 +4968,7 @@ Best States
    [pixel_29b1bb39?a=dD0zZmZkNjRmZjdmZGNiNjQzZDhlYjViNDMzZDBkZTc3ZDQ2OWVmN
    GRjJmpzPW9mZg==]
 </text>
-</page>
+</page> §
 <page!"25en">
 <text>
    #The Seattle Times » Feed The Seattle Times » Comments Feed The Seattle
@@ -5457,7 +5457,7 @@ Sponsored
    Copyright © 2022 The Seattle Times | Privacy Statement | Notice At
    Collection | Do Not Sell My Information | Terms of Service
 </text>
-</page>
+</page> §
 <page!"26en">
 <text>
    U.S. News and World Report Logo Skip to content
@@ -5772,7 +5772,7 @@ Best States
    [pixel_29b1bb39?a=dD0zZmZkNjRmZjdmZGNiNjQzZDhlYjViNDMzZDBkZTc3ZDQ2OWVmN
    GRjJmpzPW9mZg==]
 </text>
-</page>
+</page> §
 <page!"27en">
 <text>
    #Fayetteville Flyer » Feed Fayetteville Flyer » Comments Feed
@@ -6060,7 +6060,7 @@ Advertise
    Press and may not be published, broadcast, rewritten, or redistributed.
    See AP policy.
 </text>
-</page>
+</page> §
 <page!"28en">
 <text>
    Fox News
@@ -6500,7 +6500,7 @@ Other
    Solutions. Legal Statement. Mutual Fund and ETF data provided by
    Refinitiv Lipper.
 </text>
-</page>
+</page> §
 <page!"29en">
 <text>
    #MLive.com
@@ -6669,7 +6669,7 @@ Disclaimer
 
    Ad Choices Ad Choices
 </text>
-</page>
+</page> §
 <page!"2en">
 <text>
    #alternate alternate alternate alternate
@@ -7291,7 +7291,7 @@ High sticker prices drown out Democratic legislative accomplishments
    Reserved.
    CNN Sans ™ &amp © 2016 Cable News Network.
 </text>
-</page>
+</page> §
 <page!"30en">
 <text>
    U.S. News and World Report Logo Skip to content
@@ -7614,7 +7614,7 @@ Best States
    [pixel_29b1bb39?a=dD0zZmZkNjRmZjdmZGNiNjQzZDhlYjViNDMzZDBkZTc3ZDQ2OWVmN
    GRjJmpzPW9mZg==]
 </text>
-</page>
+</page> §
 <page!"31en">
 <text>
    REFRESH(240 sec):
@@ -7887,7 +7887,7 @@ Türkiye discovers $12 billion onshore oil reserve
 
    ____________________
 </text>
-</page>
+</page> §
 <page!"32en">
 <text>
    IFRAME: //www.googletagmanager.com/ns.html?id=GTM-FSC5
@@ -8230,7 +8230,7 @@ Social
    © 2022 Scripps Media, Inc
    Give Light and the People Will Find Their Own Way
 </text>
-</page>
+</page> §
 <page!"33en">
 <text>
    IE 11 is not supported. For an optimal experience visit our site on
@@ -8450,7 +8450,7 @@ Michigan man killed by police after shooting wife and daughter
 
    © 2022 NBC UNIVERSAL
 </text>
-</page>
+</page> §
 <page!"34en">
 <text>
    U.S. News and World Report Logo Skip to content
@@ -8769,7 +8769,7 @@ Best States
    [pixel_29b1bb39?a=dD0zZmZkNjRmZjdmZGNiNjQzZDhlYjViNDMzZDBkZTc3ZDQ2OWVmN
    GRjJmpzPW9mZg==]
 </text>
-</page>
+</page> §
 <page!"35en">
 <text>
    Skip Navigation
@@ -8995,7 +8995,7 @@ CNBC Newsletters
 
    comscore
 </text>
-</page>
+</page> §
 <page!"36en">
 <text>
    [tr?id=272776440645465&ampev=PageView&ampnoscript=1]
@@ -10089,7 +10089,7 @@ Into the Land: A Tale of Two Cities
    (BUTTON) No thanks
    You're subscribed
 </text>
-</page>
+</page> §
 <page!"37en">
 <text>
    #alternate alternate alternate alternate alternate alternate alternate
@@ -10263,7 +10263,7 @@ Dictionary.com announces word of the year: ‘woman’
    [p?c1=2&ampc2=7241469&ampc5=1197618800&ampc7=https%3A%2F%2Fnews.yahoo.com%2Fcar-
    rams-two-police-motorcyclists-205134107.html&ampc14=-1]
 </text>
-</page>
+</page> §
 <page!"38en">
 <text>
    #Middle East Middle East
@@ -10515,7 +10515,7 @@ Get Involved
 
    Become an NPR sponsor
 </text>
-</page>
+</page> §
 <page!"39en">
 <text>
    FOX 32 Chicago FOX 32 Chicago
@@ -10918,7 +10918,7 @@ About Us
    This material may not be published, broadcast, rewritten, or
    redistributed. ©2022 FOX Television Stations
 </text>
-</page>
+</page> §
 <page!"3en">
 <text>
    #NT Independent » Feed NT Independent » Comments Feed NT Independent »
@@ -11201,7 +11201,7 @@ newsletter
 
    IFRAME: https://www.googletagmanager.com/ns.html?id=GTM-K8DSZD2
 </text>
-</page>
+</page> §
 <page!"40en">
 <text>
    Open in Our App
@@ -11432,7 +11432,7 @@ LATEST NEWS
 
    © 2022, Charter Communications, all rights reserved.
 </text>
-</page>
+</page> §
 <page!"41en">
 <text>
 
@@ -11793,7 +11793,7 @@ More articles
      * دری
      * বাংলা
 </text>
-</page>
+</page> §
 <page!"42en">
 <text>
    Skip to main content
@@ -12276,7 +12276,7 @@ Social Media
      *
      * Join our Facebook Group, This Is Your Texas.
 </text>
-</page>
+</page> §
 <page!"43en">
 <text>
    #alternate
@@ -14462,7 +14462,7 @@ Online Parashah Study Groups
 
    Scroll to view more
 </text>
-</page>
+</page> §
 <page!"44en">
 <text>
    #Liberation News » Feed alternate alternate alternate Liberation News »
@@ -14685,7 +14685,7 @@ provocation
 
    Search for: ____________________ Search
 </text>
-</page>
+</page> §
 <page!"45en">
 <text>
    #VOA - Top Stories [RSS]
@@ -14914,7 +14914,7 @@ Recommended
    MD
    LG
 </text>
-</page>
+</page> §
 <page!"46en">
 <text>
 
@@ -15537,7 +15537,7 @@ for 2024
    Copyright © 2022, Los Angeles Times | Terms of Service | Privacy Policy
    | CA Notice of Collection | Do Not Sell My Personal Information
 </text>
-</page>
+</page> §
 <page!"47en">
 <text>
    #Schmitt, Valentine to Face Off in November General Election Kansas
@@ -15794,7 +15794,7 @@ Follow Us
 
    2022 KSIS Radio 1050 AM, Townsquare Media, Inc. All rights reserved.
 </text>
-</page>
+</page> §
 <page!"48en">
 <text>
    IFRAME: //www.googletagmanager.com/ns.html?id=GTM-WL644C
@@ -16031,7 +16031,7 @@ Download the NewsmaxTV App
    [pixel_23dbbea0?a=dD0yMzYzMWZjMzRhNDY1OWVjOTlmNGRhNzc4MTM4OGU2ODRjNWM2Y
    jg0JmpzPW9mZg==]
 </text>
-</page>
+</page> §
 <page!"49en">
 <text>
    (BUTTON)
@@ -16334,7 +16334,7 @@ Black Lives Matter
    © Future US, Inc. Full 7th Floor, 130 West 42nd Street, New York, NY
    10036.
 </text>
-</page>
+</page> §
 <page!"4en">
 <text>
    #Devdiscourse News publisher
@@ -16646,7 +16646,7 @@ CONNECT
 
    Web Analytics Made Easy - Statcounter
 </text>
-</page>
+</page> §
 <page!"50en">
 <text>
    #publisher alternate alternate
@@ -16732,7 +16732,7 @@ Armed French police sent into Dijon to quell ethnic gang violence
    for-phone-onlyfor-tablet-portrait-upfor-tablet-landscape-upfor-desktop-
    upfor-wide-desktop-up
 </text>
-</page>
+</page> §
 <page!"5en">
 <text>
    IFRAME: https://www.googletagmanager.com/ns.html?id=GTM-PB2GX
@@ -17147,7 +17147,7 @@ More from ABC News
      *
      *
 </text>
-</page>
+</page> §
 <page!"6en">
 <text>
    #Devdiscourse News publisher
@@ -17425,7 +17425,7 @@ CONNECT
 
    Web Analytics Made Easy - Statcounter
 </text>
-</page>
+</page> §
 <page!"7en">
 <text>
    IFRAME: https://www.googletagmanager.com/ns.html?id=GTM-PB2GX
@@ -18182,7 +18182,7 @@ More from ABC News
      *
      *
 </text>
-</page>
+</page> §
 <page!"8en">
 <text>
    .
@@ -18590,7 +18590,7 @@ This website uses "cookies":
    For more information, please read our Privacy Policy
    Ok, I Accept
 </text>
-</page>
+</page> §
 <page!"9en">
 <text>
    ____________________ Submit
@@ -18829,4 +18829,4 @@ Breaking news?
    [pixel_4c3a8c17?a=dD05OTU1OTUwYTI5ZDM2NjU0Njc2NTcyOWNjMjRlYzI4NjcxNGFiN
    DA0JmpzPW9mZg==]
 </text>
-</page>
+</page> §
