@@ -136,3 +136,9 @@ Nous avons créé la base Itrameur.
 Nous avons modifié l'egrep qui retrouve les occurrence de nos mots clés afin qu'il ne soit pas sensible à la casse. Ensuite, nous avons rechargé tous les fichier et modifié leur nom (format sans "url"). 
 
 Nous avons aussi essayé de nous approcher d'une première version d'un script python pour générer un wordcloud. 
+
+### Création du site
+
+Nous avons créé l'arborescence du site (index.html présent dans chaque dossier), et commencer à créer la page index des tableaux html selon la template choisie sur bootstrap.
+
+
