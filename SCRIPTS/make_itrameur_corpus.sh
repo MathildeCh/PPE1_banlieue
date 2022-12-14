@@ -12,7 +12,7 @@ basename=$2 #la langue : url_frc, url_ita, ...
 
 echo "<lang=\"$basename\">" > "ITRAMEUR/$folder-$basename.txt"
 
-for filepath in $(ls $folder/$basename*.txt)
+for filepath in $(ls $folder/*$basename.txt)
 do
     #filepath == DUMPS-TEXT/fr-1.txt
     #==> pagename = url_frc-1
