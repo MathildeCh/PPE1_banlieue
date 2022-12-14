@@ -110,3 +110,29 @@ Nous avons essayé plusieurs méthodes sur curl (-b --cookie) et lynx (FORCE_SSL
 ### Dossier DUMPS-TEXT
 
 Nous avons créé le dossier DUMPS-TEXT qui contient le texte en intégralité des urls avec un code HTTP 200, extrait avec lynx. 
+
+## 30/11/2022
+
+### Dossier CONTEXTE
+
+Nous avons créé le dossier CONTEXTES qui contient des fichiers texte avec toutes les lignes où nos mots cible apparaissent plus la ligne d'avant et la ligne d'après. 
+
+Ensuite nous avons intégré les resultats dans les tableaux html de chaque langue.
+
+## 07/12/2022
+
+### Dossier CONCORDANCE 
+### et création base Itrameur
+
+Nous avons modifié le script pour faire en sorte qu'il crée un tableau de concordance pour chaque langue et qu'ensuite il les enregistre dans le dossier CONCORDANCE. Ces tableaux contiennent trois colonnes avec au centre nos mots cible et à gauche le contexte de gauche et à droite le contexte de droite pour chaque URL. 
+
+Nous avons créé la base Itrameur.
+
+##  14/12/2022
+
+### Resolutions de certains petits problèmes dans le script 
+### et premier approche au wordcloud 
+
+Nous avons modifié l'egrep qui retrouve les occurrence de nos mots clés afin qu'il ne soit pas sensible à la casse. Ensuite, nous avons rechargé tous les fichier et modifié leur nom (format sans "url"). 
+
+Nous avons aussi essayé de nous approcher d'une première version d'un script python pour générer un wordcloud. 
