@@ -128,7 +128,7 @@ Nous avons modifié le script pour faire en sorte qu'il crée un tableau de conc
 
 Nous avons créé la base Itrameur.
 
-##  14/12/2022
+## 14/12/2022
 
 ### Resolutions de certains petits problèmes dans le script 
 ### et premier approche au wordcloud 
@@ -141,4 +141,8 @@ Nous avons aussi essayé de nous approcher d'une première version d'un script p
 
 Nous avons créé l'arborescence du site (index.html présent dans chaque dossier), et commencer à créer la page index des tableaux html selon la template choisie sur bootstrap.
 
+## 27/12/2022
 
+### Création script python pour génération nouage de mot
+
+Nous avons crée un code python qui génère un nouage de mot pour chacune des langues sur lesquelles nous avons décidé de travailler. Le code contient une fonction qui : A) effectue d'abord le pre-processing de tous les dumps-text d'une langue choisie et B) autogénère le nouage de mot et retourne sa visualisation.  
