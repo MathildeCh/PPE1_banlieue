@@ -4,7 +4,7 @@ Qui sommes-nous?
 
 (TODO- définir le projet sémantique du web)
 
-Nous sommes deux étudiants de Nanterre en M1 de TAL , Diego Rossini et Mathilde Charlet. Diego est italien et parle français, anglais et italien. Mathilde est française et parle français et anglais. Nous travaillerons donc sur le français, l’anglais et l’italien.
+Nous sommes deux étudiants de Nanterre en M1 de TAL : Diego Rossini et Mathilde Charlet ; et une étudiante de P3 : Lilas Pastré. Diego est italien et parle français, anglais et italien. Mathilde est française et parle français et anglais. Lilas est française et parle français, anglais et grec. Nous travaillerons donc sur le français, l’anglais, l’italien et le grec.
 
 Le choix du mot:
 
