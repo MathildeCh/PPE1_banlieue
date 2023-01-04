@@ -30,6 +30,16 @@ do
     content=$(echo "$content" | sed 's/&/&amp/g')
     content=$(echo "$content" | sed 's/</&lt/g')
     content=$(echo "$content" | sed 's/</&gt/g')
+
+
+    #On lemmatise
+    content=$(echo "$content" | tr '[:upper:]' '[:lower:]' | sed 's/suburbs/suburb/g')
+    content=$(echo "$content" | sed 's/banlieues/banlieue/g')
+    content=$(echo "$content" | sed 's/periferie/periferia/g')
+    content=$(echo "$content" | sed 's/προάστια/προάστιο/g')
+    content=$(echo "$content" | sed 's/ποαστίων/προάστιο/g')
+    content=$(echo "$content" | sed 's/προαστίου/προάστιο/g')
+
     echo "$content" >> "ITRAMEUR/$folder-$basename.txt"
 
     echo "</text>" >> "ITRAMEUR/$folder-$basename.txt"
