@@ -1,0 +1,44 @@
+16/11/2022 – Intégration codes HTTP et encodage aux tableaux HTML
+
+
+Suite à la création des tableaux HTML, nous avons continué progressivement leur remplissage. Dans cette étape nous avons ajouté aux tableaux HTML les codes HTTP des tous les urls et leur encodage. Pour cela faire nous avons procédé de la façon suivante à la modification de notre script bash/HTML :
+
+
+1) Code HTTP des urls
+
+Pour chaque urls traité par la boucle “while”, nous avons executé une commande “curl” qui nous a retourné en tant que resultat le code HTTP de ces derniers. La ligne de code que nous avons écrit est la suivante : 
+
+############### IMAGE 1 – 1.integrationCodesHTTPTableaux ##########################
+
+
+Après la déclaration de la variable “codeHTTP” nous avons lui attribué le resultat de plusieurs opérations effectué sur les apsirations de “curl”. Pour que “curl” nous renvoie seulement le codeHTTP de l’url traité, nous avons operé le choix de plusieurs options disponibles: 
+
+    • -b, --cookie = pour accepter les cookies eventuels
+    • -A = specification de l’user agent
+    • -L = permet à “curl” de suivre toutes les redirections
+    • -w = permet à “curl” de montrer l’output (le code HTTP) en sortie standard
+    • -o = permet de stocket la page aspirée dans un fichier spécifié
+
+Une fois que la variable “codeHTTP” contient le code HTTP de l’url traité, l’avons ajoutée aux tableaux HTML crée lors de l’étape précedente. Il est important aussi de remarquer que les aspirations des tous les urls ont été stockées et triées dans un dossier appelé ASPIRATIONS.
+
+
+2) Encodage des textes des urls
+
+Afin de trouver l’encodage avec lequel les textes des articles ont été écrits, nous avons écrit la ligne de commnde suivante :
+
+############### IMAGE 2 – 2.integrationCodesHTTPTableaux ##########################
+
+
+Comme vu auparavent, ici aussi on a déclaré une varable “encodage” et nous y avons stocké dedans le resultat d’une opération “curl”, “grep”,”cut” et “head2” dans l’ordre ci-precisé. Les options choisis pour “curl” cette fois ci-sont :
+
+    • -I = “curl” affihe seulement les headers
+    • -s = mode silence de “curl”
+    • -w = permet à “curl” de montrer l’output (l’encodage) en sortie standard
+
+Toutefois, le resultat de “curl” n’était pas encore parfait car on devait encore isoler l’encodage sans qu’autres portions du header n’apparaissent. Pour cela faire nous avons utilisé “grep” sur la sortie standard de “curl” avec les options suivantes : 
+
+    • -i = “grep” ignore la casse
+    • -P = “grep” interprète le pattern fourni comme une expression régulière Perl
+    • -o = “grep” affiche seulement les texte qui matche le pattern fourni
+
+À ce moment là il nous fallait absulement éliminer le mot “charset=” pour garder juste le portion du texte qui suit. C’est donc avec “cut” que nous avons divisé la sortie de “grep” en ce qui est avant le symbole “=” et ce qui suit ce symbole. Ensuite nous en avons recuperé la première ligne où il est marqué l’encodage du texte de l’article. 
