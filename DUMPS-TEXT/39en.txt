@@ -3,8 +3,8 @@
      * News
      * Weather
      * Sports
-     * World Cup
      * Good Day
+     * Email
      * Contests
      * More
 
@@ -56,7 +56,6 @@ Politics
 
 Sports
 
-     * World Cup
      * Bears
      * Blackhawks
      * Bulls
@@ -143,10 +142,14 @@ back in court on Monday
    Updated 8:41PM
    Dixmoor
    FOX 32 Chicago
+
+   Share
+     * Copy Link
+     * Email
      * Facebook
      * Twitter
-     * Print
-     * Email
+     * LinkedIn
+     * Reddit
 
    article
 
@@ -190,68 +193,75 @@ DAILY NEWSLETTER
 
 Trending
 
-   Bitter cold is coming for Chicago
-   Bitter cold is coming for Chicago
+   Driver wanted after dragging man 6 blocks in deadly South Side
+   hit-and-run
+   Driver wanted after dragging man 6 blocks in deadly South Side
+   hit-and-run
 
-Bitter cold is coming for Chicago
+Driver wanted after dragging man 6 blocks in deadly South Side hit-and-run
 
-   $450K winning Lucky Day Lotto ticket sold in suburban Chicago
-   $450K winning Lucky Day Lotto ticket sold in suburban Chicago
+   Group canvassing Chicago in caravan of stolen vehicles, committing
+   armed robberies and carjackings: police
+   Group canvassing Chicago in caravan of stolen vehicles, committing
+   armed robberies and carjackings: police
 
-$450K winning Lucky Day Lotto ticket sold in suburban Chicago
+Group canvassing Chicago in caravan of stolen vehicles, committing armed
+robberies and carjackings: police
 
-   Chicago mayoral election: Green calls for federal investigation into
-   Wilson
-   Chicago mayoral election: Green calls for federal investigation into
-   Wilson
+   Idaho murder timeline: Affidavit reveals how 16 minutes depict shocking
+   scene
+   Idaho murder timeline: Affidavit reveals how 16 minutes depict shocking
+   scene
 
-Chicago mayoral election: Green calls for federal investigation into Wilson
+Idaho murder timeline: Affidavit reveals how 16 minutes depict shocking scene
 
-   Missing 15-year-old Chicago girl found dead in Evanston hotel room
-   Missing 15-year-old Chicago girl found dead in Evanston hotel room
+   82-year-old Walmart employee retires after viral TikTok leads to
+   $100,000 GoFundMe
+   82-year-old Walmart employee retires after viral TikTok leads to
+   $100,000 GoFundMe
 
-Missing 15-year-old Chicago girl found dead in Evanston hotel room
+82-year-old Walmart employee retires after viral TikTok leads to $100,000
+GoFundMe
 
-   Bond denied for second Cook County man charged with robbing woman at
-   gunpoint in Walmart parking lot
-   Bond denied for second Cook County man charged with robbing woman at
-   gunpoint in Walmart parking lot
+   Wild video shows 2018 gang shootout on Chicago's South Side
+   Wild video shows 2018 gang shootout on Chicago's South Side
 
-Bond denied for second Cook County man charged with robbing woman at gunpoint
-in Walmart parking lot
+Wild video shows 2018 gang shootout on Chicago's South Side
 
 Latest News
 
-   Pritzker takes a ride on the CTA Holiday Train
-   Pritzker takes a ride on the CTA Holiday Train
+   Republican Kevin McCarthy elected US House speaker after 15 votes
+   Republican Kevin McCarthy elected US House speaker after 15 votes
 
-Pritzker takes a ride on the CTA Holiday Train
+Republican Kevin McCarthy elected US House speaker after 15 votes
 
-   Boy, 14, shot on Chicago's South Side: police
-   Boy, 14, shot on Chicago's South Side: police
+   McCarthy elected House speaker after 4 days of votes and 15 ballots
+   McCarthy elected House speaker after 4 days of votes and 15 ballots
 
-Boy, 14, shot on Chicago's South Side: police
+McCarthy elected House speaker after 4 days of votes and 15 ballots
 
-   Here are ways to save on shopping for gift cards this holiday season
-   Here are ways to save on shopping for gift cards this holiday season
+   'There's no other place like this spot': Future of Little Village
+   Discount Mall remains unclear
+   'There's no other place like this spot': Future of Little Village
+   Discount Mall remains unclear
 
-Here are ways to save on shopping for gift cards this holiday season
+'There's no other place like this spot': Future of Little Village Discount
+Mall remains unclear
 
-   Full-scale twin models of NASA's Ingenuity and Perseverance at
-   Chicago's Adler Planetarium
-   Full-scale twin models of NASA's Ingenuity and Perseverance at
-   Chicago's Adler Planetarium
+   Did you win? Here are the numbers for Friday night's Mega Millions
+   drawing
+   Did you win? Here are the numbers for Friday night's Mega Millions
+   drawing
 
-Full-scale twin models of NASA's Ingenuity and Perseverance at Chicago's
-Adler Planetarium
+Did you win? Here are the numbers for Friday night's Mega Millions drawing
 
-   Special drone formation flies over White Sox park for families fighting
-   cancer
-   Special drone formation flies over White Sox park for families fighting
-   cancer
+   Authorities release 911 calls for service involving Buffalo Grove
+   family killed in murder-suicide
+   Authorities release 911 calls for service involving Buffalo Grove
+   family killed in murder-suicide
 
-Special drone formation flies over White Sox park for families fighting
-cancer
+Authorities release 911 calls for service involving Buffalo Grove family
+killed in murder-suicide
 
 FOX 32 Live Instapoll
 
@@ -302,7 +312,6 @@ Politics
 
 Sports
 
-     * World Cup
      * Bears
      * Blackhawks
      * Bulls
@@ -385,9 +394,9 @@ About Us
      * email
 
    FOX 32 Chicago
-     * Privacy Policy
+     * New Privacy Policy
      * Terms of Service
-     * Do Not Sell my Personal Information
+     * Your Privacy Choices
      * FCC Public File
      * EEO Public File
      * Closed Captioning
@@ -396,4 +405,4 @@ About Us
      * Contact Us
 
    This material may not be published, broadcast, rewritten, or
-   redistributed. ©2022 FOX Television Stations
+   redistributed. ©2023 FOX Television Stations

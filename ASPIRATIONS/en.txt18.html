@@ -5,50 +5,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
                     <meta name="section" content="Around the Region">
                     <meta name="section" content="More News">
+                <script type="text/javascript" src="//d21yqjvcoayho7.cloudfront.net/wp-content/cache/asset-cleanup/js/item/a7a7781b8f399f9a535bafc7de195eb9-v66569ab52e1eb3c4f7d664f07daa95b846aa3548.js"></script>
                 <script>
-            let serve_paywalls = false;
-
-            function commenceABQPWLogic() {
-                var pw_inter = setInterval(function () {
-                    if (serve_paywalls) {
-                        new ABQPaywallManager(campaigns);
-                        clearInterval(pw_inter);
-                    }
-                }, 100);
-            }
-            function updateUserType()
-            {
-                var xhttp = new XMLHttpRequest();
-                xhttp.onreadystatechange = function() {
-                    if (this.readyState == 4 && this.status == 200) {
-                        var response = JSON.parse(this.responseText);
-                        let acts = JSON.parse(atob(response.act));
-                        if (localStorage.getItem("abq_mather")) {
-                            mather = JSON.parse(localStorage.getItem("abq_mather"));
-                        }
-                        mather['accounts'] = acts;
-                        localStorage.setItem("abq_mather", JSON.stringify(mather));
-                        localStorage.setItem('abq_ut', response.type);
-                        abq_ut = response.type;
-                    }
-                };
-
-                xhttp.open("POST", '/portal.php', true);
-                xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-                xhttp.send("action=get_user_type&at="+localStorage.getItem('abq_jwt'));
-            }
-            updateUserType();
-            let categories = [];
-                        categories.push("Around the Region");
-                        categories.push("More News");
-                    </script>
-                <script>
+            let storageManager = new ABQStorageManager();
             let site_url = 'https://www.abqjournal.com';
             let ajaxUrl = "https://www.abqjournal.com/wp-admin/admin-ajax.php";
             let page_url = "https://www.abqjournal.com/2486162/denver-suburb-where-elijah-mcclain-died-ousts-police-chief.html";
             let abq_categories = ["news-around-the-region","news-more"];
             let abq_single = true;
             let abq_category = false;
+            let abq_category_name = "More News";
             let abq_page = false;
             let abq_post_type = "post";
             let abq_subscription_portal_page = false;
@@ -61,9 +27,11 @@
             let abq_published_time = "2022-04-06 10:45:13";
             let abq_modified_time = "2022-04-06 17:01:14";
             let abq_author = "Associated Press";
-            let abq_site_name = "Albuquerque Journal";
-            let mather = {};
-            if (localStorage.getItem("abq_mather")) {
+            let abq_site_name = "Albuquerque Journal";let mather = {};
+            let categories = [];
+                        categories.push("Around the Region");
+                        categories.push("More News");
+                        if (localStorage.getItem("abq_mather")) {
                 mather = JSON.parse(localStorage.getItem("abq_mather"));
             }
             mather.post_id = post_id;
@@ -77,43 +45,246 @@
             mather.page_type = abq_post_type;
             window.mather = mather;
             localStorage.setItem("abq_mather", JSON.stringify(mather));
-        </script>
-        <script type="text/javascript" src="https://d21yqjvcoayho7.cloudfront.net/wp-includes/js/jquery/jquery.js"></script>
-                <script type='text/javascript' id='wpacu-combined-js-head-group-1' src='//d21yqjvcoayho7.cloudfront.net/wp-content/cache/asset-cleanup/js/head-ea17c454e4c8d4c4b31efa42cfe7ef5a00a896ee.js'></script>        <script src="https://www.abqjournal.com/wp-content/themes/abq/assets/scripts/abq-pw-manager.js" type="text/javascript"></script>
-        <div class="loggedInStatus" style="display: none"><div class="status">logged_out</div></div>
-        <script>
-            var xhttp = new XMLHttpRequest();
-            xhttp.onreadystatechange = function() {
-                if (this.readyState == 4 && this.status == 200) {
-                    var response = JSON.parse(this.responseText);
-                    localStorage.setItem('abq_at', response.admin_type);
-                    if (response.is_admin == 0) {
-                        if (document.getElementById('wpadminbar') !== null) {
-                            document.getElementById('wpadminbar').remove();
-                        }
-                        abq_ia = false;
+
+            function fetchEjournal()
+            {
+                var xhttp = new XMLHttpRequest();
+                xhttp.onreadystatechange = function() {
+                    if (this.readyState == 4 && this.status == 200) {
+                        var response = JSON.parse(this.responseText);
+                        if (response.url != "" ) {
+                        ejournal_url = response.url;
+                        const now = new Date()
+                        const item = {
+                        url: response.url,
+                        expiry: now.getTime() + 3600,
+                    }
+                        localStorage.setItem('abq_ejt', JSON.stringify(item))
+                    }
+                        loadAccountButtons(ejournal_url);
+                    }
+                };
+                if (localStorage.getItem('abq_ut') != undefined) {
+                    var ut = localStorage.getItem('abq_ut');
+                } else {
+                    var ut = 'guest';
+                }
+                xhttp.open("POST", "/portal.php", true);
+                xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+                xhttp.send("action=get_ejournal_url&ut="+ut+"&uid");
+            }
+
+            function fetchSavedArticles() {
+                let storageManager = new ABQStorageManager();
+                if (jQuery(document).find(".my-saved-articles-widget").length>0) {
+                    let key = "abq_saved_articles";
+                    if (!storageManager.storageValid(key)) {
+                        jQuery.ajax({
+                            url: "/portal.php",
+                            type: "post",
+                            data: {
+                                action: "get_saved_articles",
+                                uid: localStorage.getItem("abq_uid")
+                            },
+                            success: function (response) {
+                                if (response && response.trim() != "keep hidden") {
+                                    storageManager.saveStorage(key, response, 60*60*24*30);
+                                    jQuery(".my-saved-articles-widget").html(response);
+                                    jQuery(".saved-articles").removeAttr("hidden");
+                                } else {
+                                    response = "";
+                                }
+                                storageManager.saveStorage(key, response, 60*60*24*30);
+                            }
+                        });
                     } else {
-                        abq_ia = true;
+                        jQuery(".my-saved-articles-widget").html(storageManager.getStorage(key));
+                        jQuery(".saved-articles").removeAttr("hidden");
                     }
                 }
-            };
+                fetchMyBookmarks();
+            }
 
-            xhttp.open("POST", '/portal.php', true);
-            xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-            xhttp.send("action=abq_is_admin");
+            function fetchMyBookmarks() {
+                let key = "abq_my_bookmarks";
+                console.log(key);
+                if (!storageManager.storageValid(key)) {
+                    jQuery.ajax({
+                        url: "/portal.php",
+                        type: "post",
+                        data: {
+                            action: "get_bookmarks",
+                            uid: localStorage.getItem("abq_uid")
+                        },
+                        success: function (response) {
+                            if (response.trim() !== "") {
+                                storageManager.saveStorage(key, response, 60*60*24*30);
+                                response = JSON.parse(response);
+                                setBookmarks(response);
+                            } else {
+                                response = {
+                                    article_ids: []
+                                };
+                            }
+                            storageManager.saveStorage(key, response, 60*60*24*30);
+                        }
+                    });
+                } else {
+                    setBookmarks(storageManager.getStorage(key));
+                }
+            }
+
+            function setBookmarks(data) {
+                var articles = data.article_ids;
+                if (articles.length > 0) {
+                    for (i = 0; i < articles.length; i++) {
+                        jQuery(".article" + articles[i]).toggleClass("far fas");
+                    }
+                }
+            }
+
+            function loadAccountButtons(ejournal_url)
+            {
+                if (localStorage.getItem('abq_jwt') == null) { return false; }
+                jQuery(document).ready(function() {
+                    if (ejournal_url === "") {
+                        var tokenString = localStorage.getItem('abq_ejt');
+                        var token = JSON.parse(tokenString);
+                        ejournal_url = token.url;
+                    }
+                    var accounts = document.getElementsByClassName('goto-my-account');
+                    for (i = 0; i < accounts.length; i++) {
+                        accounts[i].innerHTML = '<a href="https://www.abqjournal.com/my-account"><i class="fa fa-user fa-2x" style="line-height: 32px;"></i></a>';
+                    }
+                    var offers = document.getElementsByClassName('goto-standard-offers');
+                    for (i = 0; i < offers.length; i++) {
+                        if (offers[i].className.search('mobile-subscribe-button') > -1) {
+                            offers[i].innerHTML = '<a class="e-journal-link" href="' + ejournal_url + '" target="_blank"><button type="button" class="btn btn-default" style="text-transform: uppercase; border: 1px solid #00c2f0; color: #00c2f0">eJournal</button></a>';
+                        } else {
+                            offers[i].innerHTML = '<a class="e-journal-link" href="' + ejournal_url + '" target="_blank"><button type="button" class="btn btn-default" style="text-transform: uppercase; border: 1px solid #00c2f0; color: #00c2f0; width: 105px">eJournal</button></a>';
+                        }
+                    }
+                    var ejournalLinks = document.getElementsByClassName('e-journal-link');
+                    for (i = 0; i < ejournalLinks.length; i++) {
+                        ejournalLinks[i].setAttribute('href', ejournal_url);
+                    }
+                    var elements = document.getElementsByClassName('guest-buttons');
+                    for (i = 0; i < elements.length; i++) {
+                        elements[i].style.visibility = "unset";
+                    }
+                })
+            }
+
+            function updateUserType(response)
+            {
+                let acts = JSON.parse(atob(response.act));
+                if (localStorage.getItem("abq_mather")) {
+                    mather = JSON.parse(localStorage.getItem("abq_mather"));
+                }
+                mather['accounts'] = acts;
+                localStorage.setItem("abq_mather", JSON.stringify(mather));
+                localStorage.setItem('abq_ut', response.abq_ut);
+                abq_ut = response.abq_ut;
+            }
+
         </script>
+        <script type="text/javascript" src="https://d21yqjvcoayho7.cloudfront.net/wp-includes/js/jquery/jquery.js"></script>
+                <script>
+            let auth = localStorage.getItem('auth');
+            let abq_jwt = localStorage.getItem('abq_jwt');
+            let abq_ut = "guest";
+            if (localStorage.getItem('abq_ut') !== undefined) {
+                abq_ut = localStorage.getItem('abq_ut');
+            }
+            jQuery.ajax({
+                url: '/portal.php',
+                data: 'action=auto_login_user&auth='+ auth + '&abq_jwt='+ abq_jwt+'&page=2486162&ut='+abq_ut,
+                type: 'post',
+                success: function(response) {
+                    var response = jQuery.parseJSON(response);
+                    if (response.status == 'success') {
+                        jQuery(document).ready(function() {
+                            fetchSavedArticles();
+                        });
+                        var status = document.createElement('div');
+                        status.className = 'status';
+                        status.innerText = 'logged_in';
+                        jQuery(document).ready(function() {
+                            var loggedInStatus = document.getElementsByClassName('loggedInStatus')[0];
+                            loggedInStatus.removeChild(loggedInStatus.firstElementChild);
+                            loggedInStatus.append(status);
+                        });
+                        if (response.refresher != undefined && response.token != undefined) {
+                            localStorage.setItem('abq_jwt', response.token);
+                            localStorage.setItem('auth', response.refresher);
+                        } else if (response.refresher != undefined) {
+                            localStorage.setItem('auth', response.refresher);
+                        }
+                        if (response.reload === true) {
+                            location.reload();
+                        } else {
+                            if (location.href.search('subscriber-login') > -1) {
+                                if (!localStorage.getItem('abq_abort')) {
+                                    localStorage.setItem('abq_abort', true);
+                                    location.href = '/my-account';
+                                } else {
+                                    location.href = '?dt=true';
+                                }
+                            }
+                        }
+                        let storageManager = new ABQStorageManager();
+                        storageManager.saveStorage('abq_email', response.abq_email, 300);
+
+                        localStorage.setItem('abq_uid', response.abq_uid);
+                        if (localStorage.getItem('auth') !== null && localStorage.getItem('abq_ejt') === null) {
+                            fetchEjournal();
+                        } else {
+                            if (localStorage.getItem('abq_ejt') !== null) {
+                                loadAccountButtons("");
+                            } else {
+                                var elements = document.getElementsByClassName('guest-buttons');
+                                for (i=0; i<elements.length; i++) {
+                                    elements[i].style.visibility = "unset";
+                                }
+                            }
+                        }
+                    } else if(response.status == 'delete') {
+                        localStorage.removeItem('abq_jwt');
+                        localStorage.removeItem('auth');
+                        jQuery(document).ready(function() {
+                            var elements = document.getElementsByClassName('guest-buttons');
+                            for (i=0; i<elements.length; i++) {
+                                elements[i].style.visibility = "unset";
+                            }
+                        });
+                    } else {
+                        jQuery(document).ready(function() {
+                            var elements = document.getElementsByClassName('guest-buttons');
+                            for (i=0; i<elements.length; i++) {
+                                elements[i].style.visibility = "unset";
+                            }
+                        });
+                    }
+                    storageManager.saveStorage('is_admin', response.is_admin, 60);
+                    loadMyNewsAndMostRead();
+                    updateUserType(response);
+                }
+            });
+        </script>
+                <script type='text/javascript' id='wpacu-combined-js-head-group-1' src='//d21yqjvcoayho7.cloudfront.net/wp-content/cache/asset-cleanup/js/head-e529de16dc34d6ec9a91f437a9508822edbe2100.js'></script>        <script src="https://www.abqjournal.com/wp-content/themes/abq/assets/scripts/abq-pw-manager.js" type="text/javascript"></script>
+        <div class="loggedInStatus" style="display: none"><div class="status">logged_out</div></div>
         
                 <script type="text/javascript">
             var campaigns = [];
                         let abq_pwm = localStorage.getItem('abq_pwm');
             let abq_pwm_e = localStorage.getItem('abq_pwm_expiration');
-            if (abq_pwm == null || abq_pwm_e < 1671006458) {
+            if (abq_pwm == null || abq_pwm_e < 1673088390) {
                 var xhttp = new XMLHttpRequest();
                 xhttp.onreadystatechange = function() {
                     if (this.readyState == 4 && this.status == 200) {
                         var response = JSON.parse(this.responseText);
                         campaigns = JSON.parse(response.response);
-                        if (response.status === 'success' && !abq_ia) {
+                        if (response.status === 'success') {
                             let ut = localStorage.getItem('abq_ut');
                             let c = null;
                             let sc = null;
@@ -134,7 +305,7 @@
                                 }
                             }
                             localStorage.setItem('abq_pwm', response.response);
-                            localStorage.setItem('abq_pwm_expiration', 1671087600);
+                            localStorage.setItem('abq_pwm_expiration', 1673161200);
                             serve_paywalls = true;
                         }
                     }
@@ -149,6 +320,9 @@
             }
                         </script>
                 <script type="text/javascript">
+
+        </script>
+        <script type="text/javascript">
             var userType = 'guest';
             if (localStorage.getItem('abq_ut') !== null) {
                 if (localStorage.getItem('abq_ut') === 'subscriber') {
@@ -185,7 +359,7 @@
 <link rel="preload" as="font" href="https://d21yqjvcoayho7.cloudfront.net/wp-content/themes/abq/assets/fonts/pt-serif/subset-PTSerif-Regular.ttf" data-wpacu-preload-font="1" crossorigin>
 <link rel="preload" as="font" href="https://d21yqjvcoayho7.cloudfront.net/wp-content/themes/abq/assets/fonts/pt-serif/subset-PTSerif-Regular.svg" data-wpacu-preload-font="1" crossorigin>
 
-	<!-- This site is optimized with the Yoast SEO Premium plugin v19.5 (Yoast SEO v19.11) - https://yoast.com/wordpress/plugins/seo/ -->
+	<!-- This site is optimized with the Yoast SEO Premium plugin v19.6 (Yoast SEO v19.12) - https://yoast.com/wordpress/plugins/seo/ -->
 	<title>Denver suburb where Elijah McClain died ousts police chief - Albuquerque Journal</title>
 	<link rel="canonical" href="https://www.abqjournal.com/2486162/denver-suburb-where-elijah-mcclain-died-ousts-police-chief.html" />
 	<meta property="og:locale" content="en_US" />
@@ -287,7 +461,7 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14
 /*! This file is auto-generated */
 !function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode,e=(p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0),i.toDataURL());return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([129777,127995,8205,129778,127999],[129777,127995,8203,129778,127999])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(e=t.source||{}).concatemoji?c(e.concatemoji):e.wpemoji&&e.twemoji&&(c(e.twemoji),c(e.wpemoji)))}(window,document,window._wpemojiSettings);
 </script>
-<!-- abqjournal.com is managing ads with Advanced Ads 1.38.0 – https://wpadvancedads.com/ --><script id="rolli-ready">
+<!-- abqjournal.com is managing ads with Advanced Ads 1.39.0 – https://wpadvancedads.com/ --><script id="rolli-ready">
 			window.advanced_ads_ready=function(e,a){a=a||"complete";var d=function(e){return"interactive"===a?"loading"!==e:"complete"===e};d(document.readyState)?e():document.addEventListener("readystatechange",(function(a){d(a.target.readyState)&&e()}),{once:"interactive"===a})},window.advanced_ads_ready_queue=window.advanced_ads_ready_queue||[];		</script>
 		<style type="text/css">
 img.wp-smiley,
@@ -947,14 +1121,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                             <li class="mobile-nav-menu cat cat-item cat-item-2422915">
                     <span class="d-flex justify-content-between">
-                        <a class="title" href="https://abqjournal.com/">HOME</a>
+                        <a class="title" href="https://www.abqjournal.com/">HOME</a>
 
                                                     <div class="mobile-menu-item-toggle fa fa-plus"></div>
                                             </span>
 
                                             <ul class="sub-menu mobile-nav-menu nav-menu">
                                                             <li class="cat cat-item cat-item-2422916">
-                                    <a class="title" href="https://abqjournal.com/">&#x1f3e0; Home Page</a>
+                                    <a class="title" href="/">&#x1f3e0; Home Page</a>
                                 </li>
                                                             <li class="cat cat-item cat-item-2422917">
                                     <a class="title" href="https://abqjournal.com/subscriber-login">Login</a>
@@ -1022,6 +1196,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                             </span>
 
                                             <ul class="sub-menu mobile-nav-menu nav-menu">
+                                                            <li class="cat cat-item cat-item-2560116">
+                                    <a class="title" href="https://www.abqjournal.com/category/sports/college/mens-basketball">UNM Lobo men's basketball</a>
+                                </li>
                                                             <li class="cat cat-item cat-item-2422930">
                                     <a class="title" href="https://www.abqjournal.com/category/sports/college/unm-lobos">UNM Lobos</a>
                                 </li>
@@ -1201,7 +1378,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <li id="menu-item-2422969" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2422969"><a href="https://www.abqjournal.com/category/news/crime">Crime</a></li>
 <li id="menu-item-2422970" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2422970"><a href="https://abqjournal.com/?s=%22What%27s+in+a+name%22">What&#8217;s in a name?</a></li>
 <li id="menu-item-2422971" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2422971"><a href="https://www.abqjournal.com/category/blogs/geoff-grammer-blog">Grammer School</a></li>
-<li id="menu-item-2422972" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-2422972"><a href="https://www.abqjournal.com/category/entertainment">Entertainment</a>
+<li id="menu-item-2422972" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children menu-item-2422972"><a href="https://www.abqjournal.com/category/entertainment">Entertainment</a>
 <ul class="children">
 	<li id="menu-item-2422973" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2422973"><a href="https://abqjournal.com/category/living">Life in NM</a></li>
 	<li id="menu-item-2422974" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2422974"><a href="https://www.abqjournal.com/category/entertainment/arts">Arts</a></li>
@@ -1212,13 +1389,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <li id="menu-item-2422977" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2422977"><a href="https://www.abqjournal.com/category/sports">Sports</a></li>
 <li id="menu-item-2422978" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2422978"><a href="https://www.abqjournal.com/category/biz/outlook">Outlook</a></li>
 <li id="menu-item-2422979" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2422979"><a href="https://www.abqjournal.com/category/sports/college/unm-lobos">UNM Lobos</a></li>
-<li id="menu-item-2422980" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor menu-item-2422980"><a href="https://www.abqjournal.com/category/biz">Business</a></li>
+<li id="menu-item-2422980" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2422980"><a href="https://www.abqjournal.com/category/biz">Business</a></li>
 <li id="menu-item-2422981" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2422981"><a href="https://www.abqjournal.com/category/north">Journal North</a></li>
 <li id="menu-item-2422982" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2422982"><a href="https://www.abqjournal.com/category/news/abq-news">ABQ metro</a></li>
 <li id="menu-item-2422983" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2422983"><a href="https://www.abqjournal.com/legislature">Legislature</a></li>
 <li id="menu-item-2422984" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2422984"><a href="https://promote.events.com/plans/?calendarId=1368&#038;fromSpingo=true">Add event to calendar</a></li>
 <li id="menu-item-2422985" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2422985"><a href="https://www.abqjournal.com/category/bright-spot">Bright Spot</a></li>
-<li id="menu-item-2422986" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-2422986"><a href="https://www.abqjournal.com/category/news/nm-news">New Mexico News</a></li>
+<li id="menu-item-2422986" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2422986"><a href="https://www.abqjournal.com/category/news/nm-news">New Mexico News</a></li>
 <li id="menu-item-2422987" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2422987"><a href="https://www.abqjournal.com/category/news/abq-news">Local/State</a></li>
 <li id="menu-item-2422988" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2422988"><a href="https://abqjournal.com/letters/new">Send a letter to the editor</a></li>
 <li id="menu-item-2422989" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2422989"><a href="https://www.abqjournal.com/category/opinion/guest-columns">Guest Columns</a></li>
@@ -1285,144 +1462,18 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <span class="header-right-actions header-weather d-none d-lg-inline mr-1 pr-2" id="weather" style="border-right: 1px solid #000000"></span>
                         </a>
 
-                        <span class="header-right-actions header-date d-none d-lg-inline mr-2">December 14, 2022</span>
+                        <span class="header-right-actions header-date d-none d-lg-inline mr-2">January 7, 2023</span>
 
                                                     <span class="header-right-actions goto-standard-offers d-none d-md-inline mr-2 guest-buttons" style="visibility: hidden"><a href="https://www.abqjournal.com/subscription-offers"><button type="button" class="btn btn-primary" style="text-transform: uppercase; width: 105px; background-color:#df7533 !important; border-color:#df7533 !important">Subscribe</button></a></span>
                                                 <span class="header-right-actions goto-my-account d-none d-md-inline mr-3 guest-buttons" style="visibility: hidden"><a href="https://www.abqjournal.com/subscriber-login"><button type="button" class="btn btn-default" style="text-transform: uppercase; border: 1px solid #00c2f0; color: #00c2f0; width: 105px">Login</button></a></span>
                         <span class="header-right-actions goto-my-account d-md-none d-lg-none mr-5 guest-buttons" style="visibility: hidden"><a href="https://www.abqjournal.com/subscriber-login"><i class="fa fa-user fa-2x" style="line-height: 32px;"></i></a></span>
                     </div>
                             </div>
-                <script>
-                    let auth = localStorage.getItem('auth');
-                    let abq_jwt = localStorage.getItem('abq_jwt');
-                    let abq_ut = "guest";
-                    if (localStorage.getItem('abq_ut') !== undefined) {
-                        abq_ut = localStorage.getItem('abq_ut');
-                    }
-                    jQuery.ajax({
-                        url: '/portal.php',
-                        data: 'action=auto_login_user&auth='+ auth + '&abq_jwt='+ abq_jwt+'&page=2486162&ut='+abq_ut,
-                        type: 'post',
-                        success: function(response) {
-                            var response = jQuery.parseJSON(response);
-                            if (response.status == 'success') {
-                                var status = document.createElement('div');
-                                status.className = 'status';
-                                status.innerText = 'logged_in';
-                                var loggedInStatus = document.getElementsByClassName('loggedInStatus')[0];
-                                loggedInStatus.removeChild(loggedInStatus.firstElementChild);
-                                loggedInStatus.append(status);
-                                localStorage.setItem('abq_uid', response.abq_uid);
-                                jQuery('.goto-my-account a').attr('href', 'https://www.abqjournal.com/my-account').html('<i class="fa fa-user fa-2x" style="line-height: 32px;"></i>');
-                                jQuery('.goto-standard-offers').each(function() {
-                                    if (jQuery(this).hasClass('mobile-subscribe-button')) {
-                                        jQuery(this).html('<a class="e-journal-link" href="'+ejournal_url+'" target="_blank"><button type="button" class="btn btn-default" style="text-transform: uppercase; border: 1px solid #00c2f0; color: #00c2f0">eJournal</button></a>');
-                                    } else {
-                                        jQuery(this).html('<a class="e-journal-link" href="'+ejournal_url+'" target="_blank"><button type="button" class="btn btn-default" style="text-transform: uppercase; border: 1px solid #00c2f0; color: #00c2f0; width: 105px">eJournal</button></a>');
-                                    }
-                                });
-                                if (response.refresher != undefined && response.token != undefined) {
-                                    localStorage.setItem('abq_jwt', response.token);
-                                    localStorage.setItem('auth', response.refresher);
-                                } else if (response.refresher != undefined) {
-                                    localStorage.setItem('auth', response.refresher);
-                                }
-                                if (response.reload === true) {
-                                    location.reload();
-                                } else {
-                                    if (location.href.search('subscriber-login') > -1) {
-                                        if (!localStorage.getItem('abq_abort')) {
-                                            localStorage.setItem('abq_abort', true);
-                                            location.href = '/my-account';
-                                        } else {
-                                            location.href = '?dt=true';
-                                        }
-                                    }
-                                }
-                                localStorage.setItem('abq_ut', response.abq_ut);
-                                localStorage.setItem('abq_uid', response.abq_uid);
-                                if (localStorage.getItem('auth') !== null && localStorage.getItem('abq_ejt') === null) {
-                                    var xhttp = new XMLHttpRequest();
-                                    xhttp.onreadystatechange = function() {
-                                        if (this.readyState == 4 && this.status == 200) {
-                                            var response = JSON.parse(this.responseText);
-                                            if (response.url != "" ) {
-                                                ejournal_url = response.url;
-                                                const now = new Date()
-                                                const item = {
-                                                    url: response.url,
-                                                    expiry: now.getTime() + 3600,
-                                                }
-                                                localStorage.setItem('abq_ejt', JSON.stringify(item))
-                                            }
-                                            loadAccountButtons(ejournal_url);
-                                        }
-                                    };
-                                    if (localStorage.getItem('abq_ut') != undefined) {
-                                        var ut = localStorage.getItem('abq_ut');
-                                    } else {
-                                        var ut = 'guest';
-                                    }
-                                    xhttp.open("POST", "/portal.php", true);
-                                    xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-                                    xhttp.send("action=get_ejournal_url&ut="+ut+"&uid");
-                                } else {
-                                    if (localStorage.getItem('abq_ejt') !== null) {
-                                        loadAccountButtons("");
-                                    } else {
-                                        var elements = document.getElementsByClassName('guest-buttons');
-                                        for (i=0; i<elements.length; i++) {
-                                            elements[i].style.visibility = "unset";
-                                        }
-                                    }
-                                }
-                            } else if(response.status == 'delete') {
-                                localStorage.removeItem('abq_jwt');
-                                localStorage.removeItem('auth');
-                            }
-
-                            var elements = document.getElementsByClassName('guest-buttons');
-                            for (i=0; i<elements.length; i++) {
-                                elements[i].style.visibility = "unset";
-                            }
-                        }
-                    });
-
-                    function loadAccountButtons(ejournal_url)
-                    {
-                        if (localStorage.getItem('abq_jwt') == null) { return false; }
-                        if (ejournal_url === "") {
-                            var tokenString = localStorage.getItem('abq_ejt');
-                            var token = JSON.parse(tokenString);
-                            ejournal_url = token.url;
-                        }
-                        var accounts = document.getElementsByClassName('goto-my-account');
-                        for (i = 0; i < accounts.length; i++) {
-                            accounts[i].innerHTML = '<a href="https://www.abqjournal.com/my-account"><i class="fa fa-user fa-2x" style="line-height: 32px;"></i></a>';
-                        }
-                        var offers = document.getElementsByClassName('goto-standard-offers');
-                        for (i = 0; i < offers.length; i++) {
-                            if (offers[i].className.search('mobile-subscribe-button') > -1) {
-                                offers[i].innerHTML = '<a class="e-journal-link" href="' + ejournal_url + '" target="_blank"><button type="button" class="btn btn-default" style="text-transform: uppercase; border: 1px solid #00c2f0; color: #00c2f0">eJournal</button></a>';
-                            } else {
-                                offers[i].innerHTML = '<a class="e-journal-link" href="' + ejournal_url + '" target="_blank"><button type="button" class="btn btn-default" style="text-transform: uppercase; border: 1px solid #00c2f0; color: #00c2f0; width: 105px">eJournal</button></a>';
-                            }
-                        }
-                        var ejournalLinks = document.getElementsByClassName('e-journal-link');
-                        for (i = 0; i < ejournalLinks.length; i++) {
-                            ejournalLinks[i].setAttribute('href', ejournal_url);
-                        }
-                        var elements = document.getElementsByClassName('guest-buttons');
-                        for (i = 0; i < elements.length; i++) {
-                            elements[i].style.visibility = "unset";
-                        }
-                    }
-                </script>
             
                                                     <nav id="site-navigation">
-    <div class="menu-main-navigation-container"><ul id="menu-main-navigation" class="menu"><li id="menu-item-2422915" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-2422915"><a href="https://abqjournal.com/">HOME</a>
+    <div class="menu-main-navigation-container"><ul id="menu-main-navigation" class="menu"><li id="menu-item-2422915" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-has-children menu-item-2422915"><a href="https://www.abqjournal.com/">HOME</a>
 <ul class="sub-menu">
-	<li id="menu-item-2422916" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2422916"><a href="https://abqjournal.com/">&#x1f3e0; Home Page</a></li>
+	<li id="menu-item-2422916" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2422916"><a href="/">&#x1f3e0; Home Page</a></li>
 	<li id="menu-item-2422917" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2422917"><a href="https://abqjournal.com/subscriber-login">Login</a></li>
 	<li id="menu-item-2422918" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2422918"><a href="https://abqjournal.com/my-account">My Account</a></li>
 	<li id="menu-item-2511775" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2511775"><a href="https://www.abqjournal.com/newsletter-signup">Newsletters – Signup and Preferences</a></li>
@@ -1447,6 +1498,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </li>
 <li id="menu-item-2422929" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-2422929"><a href="https://www.abqjournal.com/category/sports">Sports</a>
 <ul class="sub-menu">
+	<li id="menu-item-2560116" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2560116"><a href="https://www.abqjournal.com/category/sports/college/mens-basketball">UNM Lobo men&#8217;s basketball</a></li>
 	<li id="menu-item-2422930" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2422930"><a href="https://www.abqjournal.com/category/sports/college/unm-lobos">UNM Lobos</a></li>
 	<li id="menu-item-2422931" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2422931"><a href="https://www.abqjournal.com/category/blogs/geoff-grammer-blog">Grammer School</a></li>
 	<li id="menu-item-2422932" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2422932"><a href="https://www.abqjournal.com/category/sports/high-school-sports">High School</a></li>
@@ -1455,7 +1507,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<li id="menu-item-2467332" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2467332"><a href="https://wintergames.ap.org/abqjournal">Olympic Games</a></li>
 </ul>
 </li>
-<li id="menu-item-2422937" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-2422937"><a href="https://www.abqjournal.com/category/entertainment">Entertainment</a>
+<li id="menu-item-2422937" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-has-children menu-item-2422937"><a href="https://www.abqjournal.com/category/entertainment">Entertainment</a>
 <ul class="sub-menu">
 	<li id="menu-item-2422938" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2422938"><a href="https://abqjournal.com/puzzle-answers">Print puzzle answers</a></li>
 	<li id="menu-item-2422939" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2422939"><a href="https://abqjournal.com/puzzles">Puzzles</a></li>
@@ -1571,12 +1623,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <p>However, lawyers for Vanessa Wilson, who became chief in Aurora in 2020 after the death of Elijah McClain gained new attention amid protests over police brutality and racial injustice following the police killing of George Floyd, said she was the victim of a campaign to damage her reputation by conservative city council members who opposed reforms.</p>
 <p>Last year, the city signed an agreement with State Attorney General Phil Weiser to make changes aimed at ending a pattern of racially biased policing and excessive force. Before that, Wilson also acted quickly to discipline and fire officers accused of misconduct, including officers who took and shared photos appearing to mock McClain&#8217;s death.</p>
 <p>&#8220;In an effort to justify getting rid of Chief Wilson, the City and Council have engaged in a conspiracy to leak misinformation to the media and falsely attribute responsibility for the department&#8217;s long-standing historical problems to Chief Wilson,&#8221; Wilson&#8217;s lawyers said.</p>
-<p>City Manager Jim Twombly said Wilson excelled in her community outreach work in Colorado&#8217;s third-largest city but he said he fired her because of concerns about her leadership and management of the department. He declined to give specific examples other than mentioning a backlog of thousands of crime reports, with the potential to delay investigations and arrests, that he said he first learned about last month, in a list of more general factors contributing to his decision. A report on the findings of a city-commissioned independent audit on the records backlog was issued Tuesday.</p><div  class="rolli-0ba84193a8d0511f81b11d0ad2681ddb rolli-in-story-content-nonsubsctibers" id="rolli-0ba84193a8d0511f81b11d0ad2681ddb"></div>
-<p>Twombly also said he had ongoing conversations with officers in the department and was concerned about the number of officers who have left. When asked by a reporter, he said he was concerned about the rise in crime in the community but he did not attribute that to Wilson.</p>
-<p>&#8220;It really comes down to a lack of confidence on my part for her to be able to lead the department,&#8221; he said.</p><div  class="rolli-76a853af8f9511e0952089652e46da9b rolli-content-middle" id="rolli-76a853af8f9511e0952089652e46da9b"></div>
-<p>Twombly said Aurora would continue to uphold its consent decree agreement with the attorney general, signed in November,  but some were skeptical.</p>
-<p>&#8220;Aurora is already regressing soon after the ink has dried on the consent decree,&#8221; said Qusair Mohamedbhai, who represents McClain&#8217;s mother, Sheneen McClain, and Kyle Vinson, a  Black man who was shown on video being pistol whipped by an Aurora police officer last year.</p>
-<p>The state lawmakers who represent Aurora, all Democrats, issued a statement saying Wilson&#8217;s firing will set back efforts to eliminate &#8220;the department&#8217;s longstanding pattern and practice of racist policing.&#8221;</p><div class="rolli-content" id="rolli-1071816137"><div data-rolli-trackid="2523932" data-rolli-trackbid="1" class="rolli-target" id="rolli-450916489"><div class="textwidget">
+<p>City Manager Jim Twombly said Wilson excelled in her community outreach work in Colorado&#8217;s third-largest city but he said he fired her because of concerns about her leadership and management of the department. He declined to give specific examples other than mentioning a backlog of thousands of crime reports, with the potential to delay investigations and arrests, that he said he first learned about last month, in a list of more general factors contributing to his decision. A report on the findings of a city-commissioned independent audit on the records backlog was issued Tuesday.</p><div class="rolli-content" id="rolli-1315517458"><div data-rolli-trackid="2523932" data-rolli-trackbid="1" class="rolli-target" id="rolli-61225790"><div class="textwidget">
 <div id="subscriber-form-wrapper-7af020d2" class="newsletter-signup" style="visibility: unset;">
     <div class="newsletter-signup__form-container" style="background-color:#eeeeee!important;">
         <h2 style="text-transform:none;letter-spacing:-.02rem;">Sign up for our free <span id="name-7af020d2">Daily</span> Headlines newsletter</h2>
@@ -1600,10 +1647,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </div>
 </div>
   </div></div>
+<p>Twombly also said he had ongoing conversations with officers in the department and was concerned about the number of officers who have left. When asked by a reporter, he said he was concerned about the rise in crime in the community but he did not attribute that to Wilson.</p>
+<p>&#8220;It really comes down to a lack of confidence on my part for her to be able to lead the department,&#8221; he said.</p><div  class="rolli-0abef707401b4c50b1be9e10250f1b2d rolli-content-middle" id="rolli-0abef707401b4c50b1be9e10250f1b2d"></div>
+<p>Twombly said Aurora would continue to uphold its consent decree agreement with the attorney general, signed in November,  but some were skeptical.</p>
+<p>&#8220;Aurora is already regressing soon after the ink has dried on the consent decree,&#8221; said Qusair Mohamedbhai, who represents McClain&#8217;s mother, Sheneen McClain, and Kyle Vinson, a  Black man who was shown on video being pistol whipped by an Aurora police officer last year.</p>
+<p>The state lawmakers who represent Aurora, all Democrats, issued a statement saying Wilson&#8217;s firing will set back efforts to eliminate &#8220;the department&#8217;s longstanding pattern and practice of racist policing.&#8221;</p>
 <p>&#8220;Her firing in the middle of these efforts sends a terrible message to the police force and to the community about Aurora&#8217;s commitment to reforming these practices,&#8221; they said.</p>
 <p>___</p>
 <p>AP journalist James Anderson contributed to this report.</p>
-<div  class="rolli-9fead3f9aacc5283fc8bd83c8e7275cb rolli-after-content" id="rolli-9fead3f9aacc5283fc8bd83c8e7275cb"></div>        </div>
+<div  class="rolli-43cfd43e765af9422d335641b67dc3ba rolli-after-content" id="rolli-43cfd43e765af9422d335641b67dc3ba"></div>        </div>
         <div id="gsurvey_container"></div>
     </div><!-- .entry-content -->
 
@@ -1611,13 +1663,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div id="pagination-container">
             </div>
 
-    <section id="text-76" class="widget adspace widget_text">			<div class="textwidget"><span><span><a href="https://www.abqjournal.com/">Home</a> » <span><a href="https://www.abqjournal.com/category/news-around-the-region">Around the Region</a> » <strong class="breadcrumb_last" aria-current="page">Denver suburb where Elijah McClain died ousts police chief</strong></span></span></span>
+    <section id="text-76" class="widget adspace widget_text">			<div class="textwidget"><span><span><a href="https://www.abqjournal.com/">Home</a></span> » <span><a href="https://www.abqjournal.com/category/news-around-the-region">Around the Region</a></span> » <span class="breadcrumb_last" aria-current="page"><strong>Denver suburb where Elijah McClain died ousts police chief</strong></span></span>
 </div>
 		</section><hr><h5>
 <br><b>Albuquerque Journal and its reporters are committed to telling the stories of our community.</b> 
 <br><br>• Do you have a question you want someone to try to answer for you? Do you have a bright spot you want to share?
 <br>   We want to hear from you.  <a href="mailto:yourstory@abqjournal.com?SUBJECT=AFTER_CORONA2020_NM"><font color=green>Please email yourstory@abqjournal.com</font></a> </h5><section class="widget adspace rolli-widget"><h2 class="widgettitle">taboola desktop</h2>
-<div  class="rolli-742f9a4c8a18b1c80c65b1b78d8446a4" id="rolli-742f9a4c8a18b1c80c65b1b78d8446a4"></div></section>    
+<div  class="rolli-ae3e5ab7c601f17c8c821a643c5fc81e" id="rolli-ae3e5ab7c601f17c8c821a643c5fc81e"></div></section>    
     <div id="more_articles">
             <div class="row">
         <div class="col-12">
@@ -1633,18 +1685,18 @@ MORE ARTICLES LIKE THIS</a>                                                     
     <article class="post-card  post-card--has-thumbnail post-card--thumbnail-top ">
     <div class="post-card__inner">
                             <div class="post-card__thumbnail">
-                <a href="https://www.abqjournal.com/2557233/colorado-river-water-users-convening-amid-crisis-concerns-2.html" rel="bookmark">
-                    <div class="post-card__thumbnail__image lazy" style="" data-bg="url(https://d21yqjvcoayho7.cloudfront.net/wp-content/uploads/2022/12/14/colorado-river-users-western-drought.jpg)">
+                <a href="https://www.abqjournal.com/2562445/violence-hits-mexico-cartel-stronghold-as-chapo-son-nabbed.html" rel="bookmark">
+                    <div class="post-card__thumbnail__image lazy" style="" data-bg="url(https://d21yqjvcoayho7.cloudfront.net/wp-content/uploads/2023/01/06/mexico-violence.jpg)">
                                             </div>
                 </a>
             </div>
                 <div class="post-card__title">
-            <h4 class="entry-title"><a href="https://www.abqjournal.com/2557233/colorado-river-water-users-convening-amid-crisis-concerns-2.html" rel="bookmark">Colorado River water users convening amid crisis concerns</a></h4>
+            <h4 class="entry-title"><a href="https://www.abqjournal.com/2562445/violence-hits-mexico-cartel-stronghold-as-chapo-son-nabbed.html" rel="bookmark">Mexico gives account of violence after &#039;Chapo&#039; son nabbed</a></h4>
         </div>
 
                 <div class="post-card__excerpt">
-            <a href="https://www.abqjournal.com/2557233/colorado-river-water-users-convening-amid-crisis-concerns-2.html" rel="bookmark">
-                <span>Conference meets amid growing concern over water use, climate change</span>
+            <a href="https://www.abqjournal.com/2562445/violence-hits-mexico-cartel-stronghold-as-chapo-son-nabbed.html" rel="bookmark">
+                <span>MEXICO CITY (AP) -- The operation to detain Ovidio Guzman, the son of imprisoned drug&hellip;</span>
             </a>
         </div>
         
@@ -1653,18 +1705,18 @@ MORE ARTICLES LIKE THIS</a>                                                     
 <article class="post-card  post-card--has-thumbnail post-card--thumbnail-top ">
     <div class="post-card__inner">
                             <div class="post-card__thumbnail">
-                <a href="https://www.abqjournal.com/2557201/environmentalists-want-jaguars-reintroduced-to-us-southwest.html" rel="bookmark">
-                    <div class="post-card__thumbnail__image lazy" style="" data-bg="url(https://d21yqjvcoayho7.cloudfront.net/wp-content/uploads/2022/12/13/jaguar-recovery.jpg)">
+                <a href="https://www.abqjournal.com/2562087/8-found-fatally-shot-in-utah-home-including-5-children.html" rel="bookmark">
+                    <div class="post-card__thumbnail__image lazy" style="" data-bg="url(https://d21yqjvcoayho7.cloudfront.net/wp-content/uploads/2023/01/05/eight-dead-utah.jpg)">
                                             </div>
                 </a>
             </div>
                 <div class="post-card__title">
-            <h4 class="entry-title"><a href="https://www.abqjournal.com/2557201/environmentalists-want-jaguars-reintroduced-to-us-southwest.html" rel="bookmark">Environmentalists want jaguars reintroduced to US Southwest</a></h4>
+            <h4 class="entry-title"><a href="https://www.abqjournal.com/2562087/8-found-fatally-shot-in-utah-home-including-5-children.html" rel="bookmark">8 dead in Utah murder-suicide after wife sought divorce</a></h4>
         </div>
 
                 <div class="post-card__excerpt">
-            <a href="https://www.abqjournal.com/2557201/environmentalists-want-jaguars-reintroduced-to-us-southwest.html" rel="bookmark">
-                <span>Only one lonely cat is left, seen in Arizona</span>
+            <a href="https://www.abqjournal.com/2562087/8-found-fatally-shot-in-utah-home-including-5-children.html" rel="bookmark">
+                <span>ENOCH, Utah (AP) -- A Utah man fatally shot his five children, his mother-in-law and&hellip;</span>
             </a>
         </div>
         
@@ -1673,18 +1725,18 @@ MORE ARTICLES LIKE THIS</a>                                                     
 <article class="post-card  post-card--has-thumbnail post-card--thumbnail-top ">
     <div class="post-card__inner">
                             <div class="post-card__thumbnail">
-                <a href="https://www.abqjournal.com/2557224/study-medicaid-providers-mostly-cant-be-reached-by-phone.html" rel="bookmark">
-                    <div class="post-card__thumbnail__image lazy" style="" data-bg="url(https://d21yqjvcoayho7.cloudfront.net/wp-content/uploads/2022/12/14/state-budget-new-mexico.jpg)">
+                <a href="https://www.abqjournal.com/2562131/biden-restricting-nicaraguans-cubans-and-haitians-at-border.html" rel="bookmark">
+                    <div class="post-card__thumbnail__image lazy" style="" data-bg="url(https://d21yqjvcoayho7.cloudfront.net/wp-content/uploads/2023/01/05/biden-border.jpg)">
                                             </div>
                 </a>
             </div>
                 <div class="post-card__title">
-            <h4 class="entry-title"><a href="https://www.abqjournal.com/2557224/study-medicaid-providers-mostly-cant-be-reached-by-phone.html" rel="bookmark">Study: Medicaid providers mostly can&#039;t be reached by phone</a></h4>
+            <h4 class="entry-title"><a href="https://www.abqjournal.com/2562131/biden-restricting-nicaraguans-cubans-and-haitians-at-border.html" rel="bookmark">Biden toughens border, offers legal path for 30,000 a month</a></h4>
         </div>
 
                 <div class="post-card__excerpt">
-            <a href="https://www.abqjournal.com/2557224/study-medicaid-providers-mostly-cant-be-reached-by-phone.html" rel="bookmark">
-                <span>SANTA FE, N.M. (AP) -- A 'secret shopper' accountability study shows that medical patients can't&hellip;</span>
+            <a href="https://www.abqjournal.com/2562131/biden-restricting-nicaraguans-cubans-and-haitians-at-border.html" rel="bookmark">
+                <span>WASHINGTON (AP) -- President Joe Biden said Thursday the U.S. would immediately begin turning away&hellip;</span>
             </a>
         </div>
         
@@ -1703,7 +1755,7 @@ MORE ARTICLES LIKE THIS</a>                                                     
                 <aside id="secondary" class="widget-area">
                     
 <aside id="secondary" class="widget-area">
-     <section class="widget rolli-widget"><div  class="rolli-3f6bb993ecdc17c3b64b2af7808fc3d3" id="rolli-3f6bb993ecdc17c3b64b2af7808fc3d3"></div></section><div id="my-news-widget" class="my-news-widget-container">
+     <section class="widget rolli-widget"><div  class="rolli-3eea0269e54da0b0bdaf3b649fb3037e" id="rolli-3eea0269e54da0b0bdaf3b649fb3037e"></div></section><div id="my-news-widget" class="my-news-widget-container">
     <div class="col-6 tab active">
         <a href="#" class="my-news-link" data-pane="my-news-widget">My News</a>
     </div>
@@ -1721,10 +1773,9 @@ MORE ARTICLES LIKE THIS</a>                                                     
         Subscribe now to access decluttered news, chosen by you. Manage the news you want to see, read exclusive content and explore other subscriber benefits.    </div>
 
     <div class="tab-pane most-read-imageless-widget">
-
     </div>
 </div>
-<section class="widget rolli-widget"><div  class="rolli-e7ba37dbbba7293a8b1cadf69b24cbad" id="rolli-e7ba37dbbba7293a8b1cadf69b24cbad"></div></section>    <div class="row">
+<section class="widget rolli-widget"><div  class="rolli-10a9e13232830e57f958c3fede0fff60" id="rolli-10a9e13232830e57f958c3fede0fff60"></div></section>    <div class="row">
         <div class="col-12">
             <h3 class="widget-title">
                 
@@ -1739,13 +1790,13 @@ Most Recent</a>
     <article class="post-card  post-card--has-thumbnail post-card--thumbnail-left ">
     <div class="post-card__inner">
                             <div class="post-card__thumbnail">
-                <a href="https://www.abqjournal.com/2557289/county-commission-considers-speed-cameras-ex-pedestrian-safety-ordin.html" rel="bookmark">
-                    <div class="post-card__thumbnail__image lazy" style="" data-bg="url(https://d21yqjvcoayho7.cloudfront.net/wp-content/uploads/2022/04/03/berncohq-160x87.jpg)">
+                <a href="https://www.abqjournal.com/2562451/mccarthy-offers-deal-to-end-standoff-in-house-speaker-fight.html" rel="bookmark">
+                    <div class="post-card__thumbnail__image lazy" style="" data-bg="url(https://d21yqjvcoayho7.cloudfront.net/wp-content/uploads/2023/01/07/AP23007203074171-135x90.jpg)">
                                             </div>
                 </a>
             </div>
                 <div class="post-card__title">
-            <h4 class="entry-title"><a href="https://www.abqjournal.com/2557289/county-commission-considers-speed-cameras-ex-pedestrian-safety-ordin.html" rel="bookmark">Albuquerque is using mobile speed cameras. Is Bernalillo County next?</a></h4>
+            <h4 class="entry-title"><a href="https://www.abqjournal.com/2562451/mccarthy-offers-deal-to-end-standoff-in-house-speaker-fight.html" rel="bookmark">McCarthy elected House speaker in rowdy post-midnight vote</a></h4>
         </div>
 
         
@@ -1754,13 +1805,13 @@ Most Recent</a>
 <article class="post-card  post-card--has-thumbnail post-card--thumbnail-left ">
     <div class="post-card__inner">
                             <div class="post-card__thumbnail">
-                <a href="https://www.abqjournal.com/2557250/two-native-new-mexico-dancers-win-accolades-as-changemakers-ex-the.html" rel="bookmark">
-                    <div class="post-card__thumbnail__image lazy" style="" data-bg="url(https://d21yqjvcoayho7.cloudfront.net/wp-content/uploads/2022/12/14/a01_jd_14dec_dancers-1-113x90.jpg)">
+                <a href="https://www.abqjournal.com/2562721/lets-get-ready-for-a-pit-game.html" rel="bookmark">
+                    <div class="post-card__thumbnail__image lazy" style="" data-bg="url(https://d21yqjvcoayho7.cloudfront.net/wp-content/uploads/2023/01/07/AP22363181350341-e1673073176901-160x90.jpg)">
                                             </div>
                 </a>
             </div>
                 <div class="post-card__title">
-            <h4 class="entry-title"><a href="https://www.abqjournal.com/2557250/two-native-new-mexico-dancers-win-accolades-as-changemakers-ex-the.html" rel="bookmark">Two Native New Mexico dancers win accolades as &#039;changemakers&#039;</a></h4>
+            <h4 class="entry-title"><a href="https://www.abqjournal.com/2562721/lets-get-ready-for-a-pit-game.html" rel="bookmark">No. 21 Lobos seek spark from big Pit turnout Saturday vs. UNLV</a></h4>
         </div>
 
         
@@ -1769,13 +1820,13 @@ Most Recent</a>
 <article class="post-card  post-card--has-thumbnail post-card--thumbnail-left ">
     <div class="post-card__inner">
                             <div class="post-card__thumbnail">
-                <a href="https://www.abqjournal.com/2557256/state-windfall-could-prompt-tax-rebates-ex-gov-lujan-grisham-pushes.html" rel="bookmark">
-                    <div class="post-card__thumbnail__image lazy" style="" data-bg="url(https://d21yqjvcoayho7.cloudfront.net/wp-content/uploads/2022/06/09/05202021223_001.jpg)">
+                <a href="https://www.abqjournal.com/2562498/ex-deputy-who-used-stun-gun-on-espanola-teen-gets-30-days.html" rel="bookmark">
+                    <div class="post-card__thumbnail__image lazy" style="" data-bg="url(https://d21yqjvcoayho7.cloudfront.net/wp-content/uploads/2019/09/25/a01_jd_26sep_tasing-2-200x107.jpg)">
                                             </div>
                 </a>
             </div>
                 <div class="post-card__title">
-            <h4 class="entry-title"><a href="https://www.abqjournal.com/2557256/state-windfall-could-prompt-tax-rebates-ex-gov-lujan-grisham-pushes.html" rel="bookmark">New Mexico&#039;s revenue windfall could prompt new round of rebates</a></h4>
+            <h4 class="entry-title"><a href="https://www.abqjournal.com/2562498/ex-deputy-who-used-stun-gun-on-espanola-teen-gets-30-days.html" rel="bookmark">Ex-Rio Arriba County deputy who used stun gun on Española teen gets 30 days</a></h4>
         </div>
 
         
@@ -1784,13 +1835,13 @@ Most Recent</a>
 <article class="post-card  post-card--has-thumbnail post-card--thumbnail-left ">
     <div class="post-card__inner">
                             <div class="post-card__thumbnail">
-                <a href="https://www.abqjournal.com/2557259/nm-lawmakers-prepare-for-debate-on-abortion-rights-in-2023-session-exce.html" rel="bookmark">
-                    <div class="post-card__thumbnail__image lazy" style="" data-bg="url(https://d21yqjvcoayho7.cloudfront.net/wp-content/uploads/2022/01/08/roundhouse-150x150.jpg)">
+                <a href="https://www.abqjournal.com/2562696/its-about-hope-albuquerque-sign-language-academy-unveils-new-campus-design.html" rel="bookmark">
+                    <div class="post-card__thumbnail__image lazy" style="" data-bg="url(https://d21yqjvcoayho7.cloudfront.net/wp-content/uploads/2023/01/07/ldb010623a-135x90.jpg)">
                                             </div>
                 </a>
             </div>
                 <div class="post-card__title">
-            <h4 class="entry-title"><a href="https://www.abqjournal.com/2557259/nm-lawmakers-prepare-for-debate-on-abortion-rights-in-2023-session-exce.html" rel="bookmark">NM lawmakers prepare for debate on abortion rights in 2023 session</a></h4>
+            <h4 class="entry-title"><a href="https://www.abqjournal.com/2562696/its-about-hope-albuquerque-sign-language-academy-unveils-new-campus-design.html" rel="bookmark">‘It’s about ... hope’: Albuquerque Sign Language Academy unveils new campus design</a></h4>
         </div>
 
         
@@ -1798,9 +1849,9 @@ Most Recent</a>
 </article>
 </div>
 
-<section class="widget rolli-widget"><div  class="rolli-1844fc634596826a018b18559be118dd" id="rolli-1844fc634596826a018b18559be118dd"></div></section><div class="specialized-block big-number">
+<section class="widget rolli-widget"><div  class="rolli-6a8fa218531fd8fe3d13738c355b0977" id="rolli-6a8fa218531fd8fe3d13738c355b0977"></div></section><div class="specialized-block big-number">
     </div>
-<section class="widget rolli-widget"><div  class="rolli-dbd59eb1f364a7348633884dc7138e48" id="rolli-dbd59eb1f364a7348633884dc7138e48"></div></section><section class="widget rolli-widget"><div  class="rolli-f53180a5f25879253bb5eef8730640b2" id="rolli-f53180a5f25879253bb5eef8730640b2"></div></section><section class="widget rolli-widget"><h3 class="widget-title">Taboola right rail story</h3><div data-rolli-trackid="2438006" data-rolli-trackbid="1" class="rolli-target" id="rolli-2032932130"><div id="taboola-right-rail-thumbnails1"></div>
+<section class="widget rolli-widget"><div  class="rolli-fe06245e77d9304cd9aa29ee2692ec8d" id="rolli-fe06245e77d9304cd9aa29ee2692ec8d"></div></section><section class="widget rolli-widget"><div  class="rolli-a950140a4264ed58c1ca7c7e348d5773" id="rolli-a950140a4264ed58c1ca7c7e348d5773"></div></section><section class="widget rolli-widget"><h3 class="widget-title">Taboola right rail story</h3><div data-rolli-trackid="2438006" data-rolli-trackbid="1" class="rolli-target" id="rolli-1508203959"><div id="taboola-right-rail-thumbnails1"></div>
 <script type="text/javascript">
   window._taboola = window._taboola || [];
   _taboola.push({
@@ -1810,7 +1861,7 @@ Most Recent</a>
     target_type: 'mix'
   });
 </script> 
-</div></section><section class="widget rolli-widget"><div data-rolli-trackid="2482306" data-rolli-trackbid="1" class="rolli-target" id="rolli-2102582359"><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0568194180963808" crossorigin="anonymous"></script><ins class="adsbygoogle" style="display:block;" data-ad-client="ca-pub-0568194180963808" 
+</div></section><section class="widget rolli-widget"><div data-rolli-trackid="2482306" data-rolli-trackbid="1" class="rolli-target" id="rolli-1739396739"><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-0568194180963808" crossorigin="anonymous"></script><ins class="adsbygoogle" style="display:block;" data-ad-client="ca-pub-0568194180963808" 
 data-ad-slot="" 
 data-ad-format="auto" data-full-width-responsive="false"></ins>
 <script> 
@@ -1924,7 +1975,7 @@ data-ad-format="auto" data-full-width-responsive="false"></ins>
                         <a href="https://www.abqjournal.com/" rel="home">www.abqjournal.com </a>
                     </div><!--site link -->
                     <div class="order-1">
-                        Copyright &copy; 2022 Albuquerque Journal                    </div><!-- copyright -->
+                        Copyright &copy; 2023 Albuquerque Journal                    </div><!-- copyright -->
                     <div class="order-2">
                         <span class="sep"> | </span>
                         <span>	Albuquerque, N. M. </span>
@@ -1976,7 +2027,6 @@ var advadsCfpInfo = {"cfpExpHours":"3","cfpClickLimit":"3","cfpBan":"7","cfpPath
 </script>
 <script data-wpacu-script-handle='advanced-ads-pro/front' type='text/javascript' src='https://d21yqjvcoayho7.cloudfront.net/wp-content/uploads/261/363/assets/js/611.js' id='advanced-ads-pro/front-js'></script>
 <script data-wpacu-script-handle='abq-bootstrap' type='text/javascript' src='https://d21yqjvcoayho7.cloudfront.net/wp-content/themes/abq/assets/bootstrap-4/js/bootstrap.js' id='abq-bootstrap-js'></script>
-<script data-wpacu-script-handle='abq-device-handling' type='text/javascript' src='https://www.abqjournal.com/wp-content/themes/abq/assets/scripts/abq-cache-buster.js' id='abq-device-handling-js'></script>
 <script data-wpacu-script-handle='abq-side-navigation' type='text/javascript' src='https://d21yqjvcoayho7.cloudfront.net/wp-content/themes/abq/assets/scripts/side-navigation.js' id='abq-side-navigation-js'></script>
 <script data-wpacu-script-handle='abq-mobile-nav' type='text/javascript' src='https://d21yqjvcoayho7.cloudfront.net/wp-content/themes/abq/assets/scripts/mobile-nav.js' id='abq-mobile-nav-js'></script>
 <script data-wpacu-script-handle='abq-breaking-news' type='text/javascript' src='https://d21yqjvcoayho7.cloudfront.net/wp-content/themes/abq/assets/scripts/breaking-news.js' id='abq-breaking-news-js'></script>
@@ -1991,7 +2041,7 @@ var advadsTracking = {"impressionActionName":"aatrack-records","clickActionName"
 <script data-wpacu-script-handle='advadsTrackingDelayed' type='text/javascript' src='https://d21yqjvcoayho7.cloudfront.net/wp-content/uploads/261/697/public/assets/js/142/214.js' id='advadsTrackingDelayed-js'></script>
 <script type='text/javascript' id='newsletterglue_gutenberg-js-extra'>
 /* <![CDATA[ */
-var newsletterglue_gutenberg = {"ajaxurl":"https:\/\/www.abqjournal.com\/wp-admin\/admin-ajax.php","ajaxnonce":"7d4d4d9ba2","please_wait":"Please wait..."};
+var newsletterglue_gutenberg = {"ajaxurl":"https:\/\/www.abqjournal.com\/wp-admin\/admin-ajax.php","ajaxnonce":"07c0ade7d8","please_wait":"Please wait..."};
 /* ]]> */
 </script>
 <script data-wpacu-script-handle='newsletterglue_gutenberg' type='text/javascript' src='https://d21yqjvcoayho7.cloudfront.net/wp-content/plugins/newsletter-glue-pro/assets/js/frontend/gutenberg.min.js' id='newsletterglue_gutenberg-js'></script>
@@ -2079,7 +2129,7 @@ var wpformsDispatchEvent = function (el, ev, custom) {
 				};
 			
 </script>
-<script>(function(){var advanced_ads_ga_UID="UA-243604-1",advanced_ads_ga_anonymIP=!!1;function AdvAdsAdBlockCounterGA(t){this.UID=t,this.analyticsObject="function"==typeof gtag;var n=this;return this.count=function(){gtag("event","AdBlock",{event_category:"Advanced Ads",event_label:"Yes",non_interaction:!0,send_to:n.UID})},function(){if(!n.analyticsObject){var e=document.createElement("script");e.src="https://www.googletagmanager.com/gtag/js?id="+t,e.async=!0,document.body.appendChild(e),window.dataLayer=window.dataLayer||[],window.gtag=function(){dataLayer.push(arguments)},n.analyticsObject=!0,gtag("js",new Date)}var a={send_page_view:!1,transport_type:"beacon"};window.advanced_ads_ga_anonymIP&&(a.anonymize_ip=!0),gtag("config",t,a)}(),this}window.advanced_ads_check_adblocker=function(t){var n=[],e=null;function a(t){(window.requestAnimationFrame||window.mozRequestAnimationFrame||window.webkitRequestAnimationFrame||function(t){return setTimeout(t,16)}).call(window,t)}return a((function(){var t=document.createElement("div");t.innerHTML="&nbsp;",t.setAttribute("class","ad_unit ad-unit text-ad text_ad pub_300x250"),t.setAttribute("style","width: 1px !important; height: 1px !important; position: absolute !important; left: 0px !important; top: 0px !important; overflow: hidden !important;"),document.body.appendChild(t),a((function(){var a=window.getComputedStyle&&window.getComputedStyle(t),o=a&&a.getPropertyValue("-moz-binding");e=a&&"none"===a.getPropertyValue("display")||"string"==typeof o&&-1!==o.indexOf("about:");for(var i=0,d=n.length;i<d;i++)n[i](e);n=[]}))})),function(t){null!==e?t(e):n.push(t)}}(),advanced_ads_check_adblocker((function(t){t&&new AdvAdsAdBlockCounterGA(advanced_ads_ga_UID).count()}));})();</script><div  class="rolli-00e8d520d694c7d32952660cd5bc4988 rolli-popup-and-layer-ads" id="rolli-00e8d520d694c7d32952660cd5bc4988"></div><div id="top-news-overlay">
+<script>(function(){var advanced_ads_ga_UID="UA-243604-1",advanced_ads_ga_anonymIP=!!1;function AdvAdsAdBlockCounterGA(t){this.UID=t,this.analyticsObject="function"==typeof gtag;var n=this;return this.count=function(){gtag("event","AdBlock",{event_category:"Advanced Ads",event_label:"Yes",non_interaction:!0,send_to:n.UID})},function(){if(!n.analyticsObject){var e=document.createElement("script");e.src="https://www.googletagmanager.com/gtag/js?id="+t,e.async=!0,document.body.appendChild(e),window.dataLayer=window.dataLayer||[],window.gtag=function(){dataLayer.push(arguments)},n.analyticsObject=!0,gtag("js",new Date)}var a={send_page_view:!1,transport_type:"beacon"};window.advanced_ads_ga_anonymIP&&(a.anonymize_ip=!0),gtag("config",t,a)}(),this}window.advanced_ads_check_adblocker=function(t){var n=[],e=null;function a(t){(window.requestAnimationFrame||window.mozRequestAnimationFrame||window.webkitRequestAnimationFrame||function(t){return setTimeout(t,16)}).call(window,t)}return a((function(){var t=document.createElement("div");t.innerHTML="&nbsp;",t.setAttribute("class","ad_unit ad-unit text-ad text_ad pub_300x250"),t.setAttribute("style","width: 1px !important; height: 1px !important; position: absolute !important; left: 0px !important; top: 0px !important; overflow: hidden !important;"),document.body.appendChild(t),a((function(){var a=window.getComputedStyle&&window.getComputedStyle(t),o=a&&a.getPropertyValue("-moz-binding");e=a&&"none"===a.getPropertyValue("display")||"string"==typeof o&&-1!==o.indexOf("about:");for(var i=0,d=n.length;i<d;i++)n[i](e);n=[]}))})),function(t){null!==e?t(e):n.push(t)}}(),advanced_ads_check_adblocker((function(t){t&&new AdvAdsAdBlockCounterGA(advanced_ads_ga_UID).count()}));})();</script><div  class="rolli-c53935965973b613f284969e01aeb0b3 rolli-popup-and-layer-ads" id="rolli-c53935965973b613f284969e01aeb0b3"></div><div id="top-news-overlay">
     <div class="top-9-header">
         <div class="logo-section col-12 d-flex justify-content-center">
             <div class="abq-top-9-logo">
@@ -2097,32 +2147,32 @@ var wpformsDispatchEvent = function (el, ev, custom) {
         <div id="top-news-container" class="col-12 offset-md-1">
             <div class="col-12 col-md-5  article-container item-1" id="1">
     <div class="entry-index">1</div>
-    <a href="https://www.abqjournal.com/2557233/colorado-river-water-users-convening-amid-crisis-concerns-2.html">
+    <a href="https://www.abqjournal.com/2562445/violence-hits-mexico-cartel-stronghold-as-chapo-son-nabbed.html">
         <div class="title col-10">
-            <span>Colorado River water users convening amid crisis concerns</span>        </div>
+            <span>Mexico gives account of violence after 'Chapo' son nabbed</span>        </div>
         <div class="category">
             ABQnews Seeker        </div>
         <div class="description">
             <span class='desktop-excerpt'>
-                <span>Conference meets amid growing concern over ...</span>            </span>
+                <span>MEXICO CITY (AP) -- The operation ...</span>            </span>
             <span class='mobile-excerpt'>
-                <span>Conference meets amid growing concern over water use, climate change</span>            </span>
+                <span>MEXICO CITY (AP) -- The operation to detain Ovidio Guzman, the son of imprisoned drug lord Joaquin 'El Chapo' Guzman, unleashed firefights that turned ...</span>            </span>
         </div>
     </a>
     <div class="entry-meta">
-        <div class="shareable-container" data-id="2557233">
+        <div class="shareable-container" data-id="2562445">
 
 </div>
         <span class="date">
-            <time class="entry-date published updated" datetime="TuePMMSTE_503C">December 13, 2022 10:27PM</time>            <span class="top-9-icons post-card__meta__actions">
-                <div class="shareable-container" data-id="2557233">
+            <time class="entry-date published updated" datetime="FriPMMSTE_013C">January 6, 2023 4:17PM</time>            <span class="top-9-icons post-card__meta__actions">
+                <div class="shareable-container" data-id="2562445">
 
 </div>
                 <a id="top-news-action-share" style="cursor: pointer" href="javascript:void(0)">
                     <i  class="fas fa-share-alt post-card__meta__actions__button "></i>
                 </a>
-                <a id="top-news-action-save" href="javascript: void(0)" class="save-article" data-id="2557233">
-                    <i class="far  fa-bookmark post-card__meta__actions__button  article2557233" href="javascript:void(0)"></i>
+                <a id="top-news-action-save" href="javascript: void(0)" class="save-article" data-id="2562445">
+                    <i class="far  fa-bookmark post-card__meta__actions__button  article2562445" href="javascript:void(0)"></i>
                 </a>
             </span>
         </span>
@@ -2130,32 +2180,32 @@ var wpformsDispatchEvent = function (el, ev, custom) {
 </div>
     <div class="col-12 col-md-5  article-container item-2" id="2">
     <div class="entry-index">2</div>
-    <a href="https://www.abqjournal.com/2557201/environmentalists-want-jaguars-reintroduced-to-us-southwest.html">
+    <a href="https://www.abqjournal.com/2562087/8-found-fatally-shot-in-utah-home-including-5-children.html">
         <div class="title col-10">
-            <span>Environmentalists want jaguars reintroduced to US Southwest</span>        </div>
+            <span>8 dead in Utah murder-suicide after wife sought divorce</span>        </div>
         <div class="category">
-            Around the Region        </div>
+            ABQnews Seeker        </div>
         <div class="description">
             <span class='desktop-excerpt'>
-                <span>Only one lonely cat is left, ...</span>            </span>
+                <span>ENOCH, Utah (AP) -- A Utah ...</span>            </span>
             <span class='mobile-excerpt'>
-                <span>Only one lonely cat is left, seen in Arizona</span>            </span>
+                <span>ENOCH, Utah (AP) -- A Utah man fatally shot his five children, his mother-in-law and his wife and then killed himself two weeks after ...</span>            </span>
         </div>
     </a>
     <div class="entry-meta">
-        <div class="shareable-container" data-id="2557201">
+        <div class="shareable-container" data-id="2562087">
 
 </div>
         <span class="date">
-            <time class="entry-date published updated" datetime="TuePMMSTE_503C">December 13, 2022 10:12PM</time>            <span class="top-9-icons post-card__meta__actions">
-                <div class="shareable-container" data-id="2557201">
+            <time class="entry-date published updated" datetime="ThuPMMSTE_013C">January 5, 2023 7:20PM</time>            <span class="top-9-icons post-card__meta__actions">
+                <div class="shareable-container" data-id="2562087">
 
 </div>
                 <a id="top-news-action-share" style="cursor: pointer" href="javascript:void(0)">
                     <i  class="fas fa-share-alt post-card__meta__actions__button "></i>
                 </a>
-                <a id="top-news-action-save" href="javascript: void(0)" class="save-article" data-id="2557201">
-                    <i class="far  fa-bookmark post-card__meta__actions__button  article2557201" href="javascript:void(0)"></i>
+                <a id="top-news-action-save" href="javascript: void(0)" class="save-article" data-id="2562087">
+                    <i class="far  fa-bookmark post-card__meta__actions__button  article2562087" href="javascript:void(0)"></i>
                 </a>
             </span>
         </span>
@@ -2163,32 +2213,32 @@ var wpformsDispatchEvent = function (el, ev, custom) {
 </div>
     <div class="col-12 col-md-5  article-container item-3" id="3">
     <div class="entry-index">3</div>
-    <a href="https://www.abqjournal.com/2557224/study-medicaid-providers-mostly-cant-be-reached-by-phone.html">
+    <a href="https://www.abqjournal.com/2562131/biden-restricting-nicaraguans-cubans-and-haitians-at-border.html">
         <div class="title col-10">
-            <span>Study: Medicaid providers mostly can't be reached by phone</span>        </div>
+            <span>Biden toughens border, offers legal path for 30,000 a ...</span>        </div>
         <div class="category">
-            ABQnews Seeker        </div>
+            Around the Region        </div>
         <div class="description">
             <span class='desktop-excerpt'>
-                <span>SANTA FE, N.M. (AP) -- A ...</span>            </span>
+                <span>WASHINGTON (AP) -- President Joe Biden ...</span>            </span>
             <span class='mobile-excerpt'>
-                <span>SANTA FE, N.M. (AP) -- A 'secret shopper' accountability study shows that medical patients can't readily schedule appointments by phone through Medicaid providers in ...</span>            </span>
+                <span>WASHINGTON (AP) -- President Joe Biden said Thursday the U.S. would immediately begin turning away Cubans, Haitians and Nicaraguans who cross the border from ...</span>            </span>
         </div>
     </a>
     <div class="entry-meta">
-        <div class="shareable-container" data-id="2557224">
+        <div class="shareable-container" data-id="2562131">
 
 </div>
         <span class="date">
-            <time class="entry-date published updated" datetime="TuePMMSTE_503C">December 13, 2022 10:02PM</time>            <span class="top-9-icons post-card__meta__actions">
-                <div class="shareable-container" data-id="2557224">
+            <time class="entry-date published updated" datetime="ThuPMMSTE_013C">January 5, 2023 2:34PM</time>            <span class="top-9-icons post-card__meta__actions">
+                <div class="shareable-container" data-id="2562131">
 
 </div>
                 <a id="top-news-action-share" style="cursor: pointer" href="javascript:void(0)">
                     <i  class="fas fa-share-alt post-card__meta__actions__button "></i>
                 </a>
-                <a id="top-news-action-save" href="javascript: void(0)" class="save-article" data-id="2557224">
-                    <i class="far  fa-bookmark post-card__meta__actions__button  article2557224" href="javascript:void(0)"></i>
+                <a id="top-news-action-save" href="javascript: void(0)" class="save-article" data-id="2562131">
+                    <i class="far  fa-bookmark post-card__meta__actions__button  article2562131" href="javascript:void(0)"></i>
                 </a>
             </span>
         </span>
@@ -2197,32 +2247,32 @@ var wpformsDispatchEvent = function (el, ev, custom) {
     <div class="clearrow"></div>
     <div class="col-12 col-md-5  article-container item-4" id="4">
     <div class="entry-index">4</div>
-    <a href="https://www.abqjournal.com/2557180/colorado-river-water-users-convening-amid-crisis-concerns.html">
+    <a href="https://www.abqjournal.com/2562012/judge-orders-proposed-rio-grande-decree-to-be-made-public.html">
         <div class="title col-10">
-            <span>Colorado River water users convening amid crisis concerns</span>        </div>
+            <span>Judge orders proposed Rio Grande decree to be made ...</span>        </div>
         <div class="category">
-            Around the Region        </div>
+            ABQnews Seeker        </div>
         <div class="description">
             <span class='desktop-excerpt'>
-                <span>LAS VEGAS (AP) -- Living with ...</span>            </span>
+                <span>ALBUQUERQUE, N.M. (AP) -- A U.S. ...</span>            </span>
             <span class='mobile-excerpt'>
-                <span>LAS VEGAS (AP) -- Living with less water in the U.S. Southwest is the focus this week for state and federal water administrators, tribal ...</span>            </span>
+                <span>ALBUQUERQUE, N.M. (AP) -- A U.S. judge serving as special master in the legal battle over management of the Rio Grande, one of North ...</span>            </span>
         </div>
     </a>
     <div class="entry-meta">
-        <div class="shareable-container" data-id="2557180">
+        <div class="shareable-container" data-id="2562012">
 
 </div>
         <span class="date">
-            <time class="entry-date published updated" datetime="TueAMMSTE_503C">December 13, 2022 9:21AM</time>            <span class="top-9-icons post-card__meta__actions">
-                <div class="shareable-container" data-id="2557180">
+            <time class="entry-date published updated" datetime="WedPMMSTE_013C">January 4, 2023 10:47PM</time>            <span class="top-9-icons post-card__meta__actions">
+                <div class="shareable-container" data-id="2562012">
 
 </div>
                 <a id="top-news-action-share" style="cursor: pointer" href="javascript:void(0)">
                     <i  class="fas fa-share-alt post-card__meta__actions__button "></i>
                 </a>
-                <a id="top-news-action-save" href="javascript: void(0)" class="save-article" data-id="2557180">
-                    <i class="far  fa-bookmark post-card__meta__actions__button  article2557180" href="javascript:void(0)"></i>
+                <a id="top-news-action-save" href="javascript: void(0)" class="save-article" data-id="2562012">
+                    <i class="far  fa-bookmark post-card__meta__actions__button  article2562012" href="javascript:void(0)"></i>
                 </a>
             </span>
         </span>
@@ -2230,32 +2280,32 @@ var wpformsDispatchEvent = function (el, ev, custom) {
 </div>
     <div class="col-12 col-md-5  article-container item-5" id="5">
     <div class="entry-index">5</div>
-    <a href="https://www.abqjournal.com/2557174/mississippi-state-football-coach-mike-leach-dies-at-61.html">
+    <a href="https://www.abqjournal.com/2560718/2-pedestrians-killed-by-suv-near-downtown-las-vegas-casinos.html">
         <div class="title col-10">
-            <span>Mississippi State football coach Mike Leach dies at 61</span>        </div>
+            <span>2 killed by SUV near downtown Las Vegas casinos; ...</span>        </div>
         <div class="category">
-            Around the Region        </div>
+            ABQnews Seeker        </div>
         <div class="description">
             <span class='desktop-excerpt'>
-                <span>Mike Leach, the gruff, pioneering and ...</span>            </span>
+                <span>A man from Minnesota and a ...</span>            </span>
             <span class='mobile-excerpt'>
-                <span>Mike Leach, the gruff, pioneering and unfiltered college football coach who helped revolutionize the passing game with the Air Raid offense, has died following ...</span>            </span>
+                <span>A man from Minnesota and a woman from New Mexico were struck and killed by an SU ...</span>            </span>
         </div>
     </a>
     <div class="entry-meta">
-        <div class="shareable-container" data-id="2557174">
+        <div class="shareable-container" data-id="2560718">
 
 </div>
         <span class="date">
-            <time class="entry-date published updated" datetime="TueAMMSTE_503C">December 13, 2022 7:57AM</time>            <span class="top-9-icons post-card__meta__actions">
-                <div class="shareable-container" data-id="2557174">
+            <time class="entry-date published updated" datetime="FriPMMSTE_523C">December 30, 2022 1:45PM</time>            <span class="top-9-icons post-card__meta__actions">
+                <div class="shareable-container" data-id="2560718">
 
 </div>
                 <a id="top-news-action-share" style="cursor: pointer" href="javascript:void(0)">
                     <i  class="fas fa-share-alt post-card__meta__actions__button "></i>
                 </a>
-                <a id="top-news-action-save" href="javascript: void(0)" class="save-article" data-id="2557174">
-                    <i class="far  fa-bookmark post-card__meta__actions__button  article2557174" href="javascript:void(0)"></i>
+                <a id="top-news-action-save" href="javascript: void(0)" class="save-article" data-id="2560718">
+                    <i class="far  fa-bookmark post-card__meta__actions__button  article2560718" href="javascript:void(0)"></i>
                 </a>
             </span>
         </span>
@@ -2263,32 +2313,32 @@ var wpformsDispatchEvent = function (el, ev, custom) {
 </div>
     <div class="col-12 col-md-5  article-container item-6" id="6">
     <div class="entry-index">6</div>
-    <a href="https://www.abqjournal.com/2556809/anti-abortion-ordinance-would-rely-on-residents-2.html">
+    <a href="https://www.abqjournal.com/2560625/southwest-cuts-2300-flights-schedule-in-sustained-chaos.html">
         <div class="title col-10">
-            <span>Anti-abortion ordinance would rely on residents</span>        </div>
+            <span>Southwest: Normal flight operations to resume Friday</span>        </div>
         <div class="category">
             ABQnews Seeker        </div>
         <div class="description">
             <span class='desktop-excerpt'>
-                <span>The proposed Roosevelt County anti-abortion ordinance ...</span>            </span>
+                <span>DALLAS (AP) -- Southwest Airlines said ...</span>            </span>
             <span class='mobile-excerpt'>
-                <span>The proposed Roosevelt County anti-abortion ordinance set for a vote next month is different than the ordinances passed in Hobbs and tabled in Clovis: ...</span>            </span>
+                <span>DALLAS (AP) -- Southwest Airlines said it expects to return to normal operations Friday after more than a week of widespread flight cancellations that ...</span>            </span>
         </div>
     </a>
     <div class="entry-meta">
-        <div class="shareable-container" data-id="2556809">
+        <div class="shareable-container" data-id="2560625">
 
 </div>
         <span class="date">
-            <time class="entry-date published updated" datetime="SunPMMSTE_493C">December 11, 2022 10:12PM</time>            <span class="top-9-icons post-card__meta__actions">
-                <div class="shareable-container" data-id="2556809">
+            <time class="entry-date published updated" datetime="ThuPMMSTE_523C">December 29, 2022 4:09PM</time>            <span class="top-9-icons post-card__meta__actions">
+                <div class="shareable-container" data-id="2560625">
 
 </div>
                 <a id="top-news-action-share" style="cursor: pointer" href="javascript:void(0)">
                     <i  class="fas fa-share-alt post-card__meta__actions__button "></i>
                 </a>
-                <a id="top-news-action-save" href="javascript: void(0)" class="save-article" data-id="2556809">
-                    <i class="far  fa-bookmark post-card__meta__actions__button  article2556809" href="javascript:void(0)"></i>
+                <a id="top-news-action-save" href="javascript: void(0)" class="save-article" data-id="2560625">
+                    <i class="far  fa-bookmark post-card__meta__actions__button  article2560625" href="javascript:void(0)"></i>
                 </a>
             </span>
         </span>
@@ -2296,32 +2346,32 @@ var wpformsDispatchEvent = function (el, ev, custom) {
 </div>
     <div class="col-12 col-md-5  article-container item-7" id="7">
     <div class="entry-index">7</div>
-    <a href="https://www.abqjournal.com/2556832/arizona-gov-ducey-stacks-containers-on-border-at-terms-end.html">
+    <a href="https://www.abqjournal.com/2560198/law-protects-export-of-sacred-native-american-items-from-us.html">
         <div class="title col-10">
-            <span>Arizona Gov. Ducey stacks containers on border at term's ...</span>        </div>
+            <span>Law to stop export of sacred Native American items</span>        </div>
         <div class="category">
-            Around the Region        </div>
+            ABQnews Seeker        </div>
         <div class="description">
             <span class='desktop-excerpt'>
-                <span>SAN RAFAEL VALLEY, Arizona (AP) -- ...</span>            </span>
+                <span>FLAGSTAFF, Ariz.  &ndash;  Federal ...</span>            </span>
             <span class='mobile-excerpt'>
-                <span>SAN RAFAEL VALLEY, Arizona (AP) -- Work crews have steadily erected hundreds of double-stacked shipping containers topped by razor wire along Arizona's remote eastern ...</span>            </span>
+                <span>FLAGSTAFF, Ariz.  &ndash;  Federal penalties have increased under a newly signed law intended to pro ...</span>            </span>
         </div>
     </a>
     <div class="entry-meta">
-        <div class="shareable-container" data-id="2556832">
+        <div class="shareable-container" data-id="2560198">
 
 </div>
         <span class="date">
-            <time class="entry-date published updated" datetime="SunPMMSTE_493C">December 11, 2022 8:38PM</time>            <span class="top-9-icons post-card__meta__actions">
-                <div class="shareable-container" data-id="2556832">
+            <time class="entry-date published updated" datetime="WedPMMSTE_523C">December 28, 2022 10:18PM</time>            <span class="top-9-icons post-card__meta__actions">
+                <div class="shareable-container" data-id="2560198">
 
 </div>
                 <a id="top-news-action-share" style="cursor: pointer" href="javascript:void(0)">
                     <i  class="fas fa-share-alt post-card__meta__actions__button "></i>
                 </a>
-                <a id="top-news-action-save" href="javascript: void(0)" class="save-article" data-id="2556832">
-                    <i class="far  fa-bookmark post-card__meta__actions__button  article2556832" href="javascript:void(0)"></i>
+                <a id="top-news-action-save" href="javascript: void(0)" class="save-article" data-id="2560198">
+                    <i class="far  fa-bookmark post-card__meta__actions__button  article2560198" href="javascript:void(0)"></i>
                 </a>
             </span>
         </span>
@@ -2329,32 +2379,32 @@ var wpformsDispatchEvent = function (el, ev, custom) {
 </div>
     <div class="col-12 col-md-5  article-container item-8" id="8">
     <div class="entry-index">8</div>
-    <a href="https://www.abqjournal.com/2556125/protections-sought-for-coyotes-in-mexican-wolf-territory.html">
+    <a href="https://www.abqjournal.com/2560413/bats-plunge-to-ground-in-cold-saved-by-incubators-fluids.html">
         <div class="title col-10">
-            <span>Protections sought for coyotes in wolf territory</span>        </div>
+            <span>Bats plunge to ground in cold; saved by incubators, ...</span>        </div>
         <div class="category">
-            ABQnews Seeker        </div>
+            Around the Region        </div>
         <div class="description">
             <span class='desktop-excerpt'>
-                <span>Petition cites cases of mistaken identity</span>            </span>
+                <span>Some 1,600 bats found a temporary ...</span>            </span>
             <span class='mobile-excerpt'>
-                <span>Petition cites cases of mistaken identity</span>            </span>
+                <span>Some 1,600 bats found a temporary home this week in the attic of a Houston Humane Society director, but it wasn't because they made ...</span>            </span>
         </div>
     </a>
     <div class="entry-meta">
-        <div class="shareable-container" data-id="2556125">
+        <div class="shareable-container" data-id="2560413">
 
 </div>
         <span class="date">
-            <time class="entry-date published updated" datetime="FriPMMSTE_493C">December 9, 2022 10:13PM</time>            <span class="top-9-icons post-card__meta__actions">
-                <div class="shareable-container" data-id="2556125">
+            <time class="entry-date published updated" datetime="WedPMMSTE_523C">December 28, 2022 3:35PM</time>            <span class="top-9-icons post-card__meta__actions">
+                <div class="shareable-container" data-id="2560413">
 
 </div>
                 <a id="top-news-action-share" style="cursor: pointer" href="javascript:void(0)">
                     <i  class="fas fa-share-alt post-card__meta__actions__button "></i>
                 </a>
-                <a id="top-news-action-save" href="javascript: void(0)" class="save-article" data-id="2556125">
-                    <i class="far  fa-bookmark post-card__meta__actions__button  article2556125" href="javascript:void(0)"></i>
+                <a id="top-news-action-save" href="javascript: void(0)" class="save-article" data-id="2560413">
+                    <i class="far  fa-bookmark post-card__meta__actions__button  article2560413" href="javascript:void(0)"></i>
                 </a>
             </span>
         </span>
@@ -2362,32 +2412,32 @@ var wpformsDispatchEvent = function (el, ev, custom) {
 </div>
     <div class="col-12 col-md-5  article-container item-9" id="9">
     <div class="entry-index">9</div>
-    <a href="https://www.abqjournal.com/2556324/democratic-sen-kyrsten-sinema-switches-to-independent.html">
+    <a href="https://www.abqjournal.com/2560352/7-hurt-as-grand-canyon-tour-helicopter-makes-hard-landing.html">
         <div class="title col-10">
-            <span>Democratic Sen. Kyrsten Sinema switches to independent</span>        </div>
+            <span>7 hurt as Grand Canyon tour helicopter makes hard ...</span>        </div>
         <div class="category">
-            ABQnews Seeker        </div>
+            Around the Region        </div>
         <div class="description">
             <span class='desktop-excerpt'>
-                <span>WASHINGTON (AP) -- Democratic Sen. Kyrsten ...</span>            </span>
+                <span>LAS VEGAS (AP) -- A Grand ...</span>            </span>
             <span class='mobile-excerpt'>
-                <span>WASHINGTON (AP) -- Democratic Sen. Kyrsten Sinema of Arizona announced Friday she has registered as an independent, a renegade move that could bolster her ...</span>            </span>
+                <span>LAS VEGAS (AP) -- A Grand Canyon tour helicopter made a hard landing at a Las Vegas-area airport, injuring seven people, officials said Wednesday. ...</span>            </span>
         </div>
     </a>
     <div class="entry-meta">
-        <div class="shareable-container" data-id="2556324">
+        <div class="shareable-container" data-id="2560352">
 
 </div>
         <span class="date">
-            <time class="entry-date published updated" datetime="FriPMMSTE_493C">December 9, 2022 3:02PM</time>            <span class="top-9-icons post-card__meta__actions">
-                <div class="shareable-container" data-id="2556324">
+            <time class="entry-date published updated" datetime="WedPMMSTE_523C">December 28, 2022 1:18PM</time>            <span class="top-9-icons post-card__meta__actions">
+                <div class="shareable-container" data-id="2560352">
 
 </div>
                 <a id="top-news-action-share" style="cursor: pointer" href="javascript:void(0)">
                     <i  class="fas fa-share-alt post-card__meta__actions__button "></i>
                 </a>
-                <a id="top-news-action-save" href="javascript: void(0)" class="save-article" data-id="2556324">
-                    <i class="far  fa-bookmark post-card__meta__actions__button  article2556324" href="javascript:void(0)"></i>
+                <a id="top-news-action-save" href="javascript: void(0)" class="save-article" data-id="2560352">
+                    <i class="far  fa-bookmark post-card__meta__actions__button  article2560352" href="javascript:void(0)"></i>
                 </a>
             </span>
         </span>
@@ -2398,9 +2448,9 @@ var wpformsDispatchEvent = function (el, ev, custom) {
         </div>
 
 
-<script>window.advads_admin_bar_items = [{"title":"Content","type":"placement"},{"title":"000 - Daily Newsletter","type":"ad"},{"title":"email newsletter signups in stories","type":"group"},{"title":"00 Taboola right rail","type":"ad"},{"title":"000-666 adsense","type":"ad"}];</script><script>window.advads_passive_ads = {"2355301_4":{"elementid":["rolli-742f9a4c8a18b1c80c65b1b78d8446a4"],"ads":{"2355301":{"id":2355301,"title":"ad9999 Taboola bottom of story content recommendation","expiry_date":0,"visitors":[],"content":"<div style=\"margin-top: 10px; margin-bottom: 10px; \" id=\"rolli-1742469850\" data-rolli-trackid=\"2355301\" data-rolli-trackbid=\"1\" class=\"rolli-target\"><!-- requires header code from taboola to insert widget see javascript in the header area -->\r\n<section id=\"taboola\">\r\n<!-- taboola code here to insert widget-->\r\n<div id=\"taboola-feed-article-thumbnails\"><\/div>\r\n<script type=\"text\/javascript\">\r\n  window._taboola = window._taboola || [];\r\n  _taboola.push({\r\n    mode: 'alternating-thumbnails-a',\r\n    container: 'taboola-feed-article-thumbnails',\r\n    placement: 'Feed Article Thumbnails',\r\n    target_type: 'mix'\r\n  });\r\n<\/script>\r\n<\/section>\r\n\r\n<\/div>","once_per_page":1,"debugmode":false,"blog_id":1,"type":"plain","position":"","tracking_enabled":true,"privacy":{"ignore":false,"needs_consent":false}}}},"2373862_8":{"elementid":["rolli-e7ba37dbbba7293a8b1cadf69b24cbad"],"ads":{"2373862":{"id":2373862,"title":"ad3 widget bigbox-insidepages \u2013 google admanager dfp advert: Donn","expiry_date":0,"visitors":[],"content":"<div data-rolli-trackid=\"2373862\" data-rolli-trackbid=\"1\" class=\"rolli-target\" id=\"rolli-960287751\"><script async=\"async\" src=\"https:\/\/securepubads.g.doubleclick.net\/tag\/js\/gpt.js\"><\/script>\n<script> var googletag = googletag || {}; googletag.cmd = googletag.cmd || [];<\/script>\n<div id=\"gpt-ad-4388063426098-0\">\n  <script>\n\tgoogletag.cmd.push(function() {\n\t\t\t\tgoogletag.defineSlot( '\/3828090\/story-remnant', [300,250], 'gpt-ad-4388063426098-0' )\n\t\t.addService(googletag.pubads());\n\t\t\t\tgoogletag.enableServices();\n\t\tgoogletag.display( 'gpt-ad-4388063426098-0' );\n\t});\n  <\/script>\n<\/div>\n<\/div>","once_per_page":0,"debugmode":false,"blog_id":1,"type":"gam","position":"","tracking_enabled":true,"privacy":{"ignore":false,"needs_consent":false}}}},"2373862_10":{"elementid":["rolli-1844fc634596826a018b18559be118dd"],"ads":{"2373862":{"id":2373862,"title":"ad3 widget bigbox-insidepages \u2013 google admanager dfp advert: Donn","expiry_date":0,"visitors":[],"content":"<div data-rolli-trackid=\"2373862\" data-rolli-trackbid=\"1\" class=\"rolli-target\" id=\"rolli-1696623362\"><script async=\"async\" src=\"https:\/\/securepubads.g.doubleclick.net\/tag\/js\/gpt.js\"><\/script>\n<script> var googletag = googletag || {}; googletag.cmd = googletag.cmd || [];<\/script>\n<div id=\"gpt-ad-7650285673800-0\">\n  <script>\n\tgoogletag.cmd.push(function() {\n\t\t\t\tgoogletag.defineSlot( '\/3828090\/story-remnant', [300,250], 'gpt-ad-7650285673800-0' )\n\t\t.addService(googletag.pubads());\n\t\t\t\tgoogletag.enableServices();\n\t\tgoogletag.display( 'gpt-ad-7650285673800-0' );\n\t});\n  <\/script>\n<\/div>\n<\/div>","once_per_page":0,"debugmode":false,"blog_id":1,"type":"gam","position":"","tracking_enabled":true,"privacy":{"ignore":false,"needs_consent":false}}}},"2355301_12":{"elementid":["rolli-dbd59eb1f364a7348633884dc7138e48"],"ads":{"2355301":{"id":2355301,"title":"ad9999 Taboola bottom of story content recommendation","expiry_date":0,"visitors":[],"content":"<div style=\"margin-top: 10px; margin-bottom: 10px; \" id=\"rolli-1554724400\" data-rolli-trackid=\"2355301\" data-rolli-trackbid=\"1\" class=\"rolli-target\"><!-- requires header code from taboola to insert widget see javascript in the header area -->\r\n<section id=\"taboola\">\r\n<!-- taboola code here to insert widget-->\r\n<div id=\"taboola-feed-article-thumbnails\"><\/div>\r\n<script type=\"text\/javascript\">\r\n  window._taboola = window._taboola || [];\r\n  _taboola.push({\r\n    mode: 'alternating-thumbnails-a',\r\n    container: 'taboola-feed-article-thumbnails',\r\n    placement: 'Feed Article Thumbnails',\r\n    target_type: 'mix'\r\n  });\r\n<\/script>\r\n<\/section>\r\n\r\n<\/div>","once_per_page":1,"debugmode":false,"blog_id":1,"type":"plain","position":"","tracking_enabled":true,"privacy":{"ignore":false,"needs_consent":false}}}},"1538983_14":{"elementid":["rolli-f53180a5f25879253bb5eef8730640b2"],"ads":{"1538983":{"id":1538983,"title":"000 - Sidebar","expiry_date":0,"visitors":[],"content":"<div style=\"margin-bottom: 20px; \" id=\"rolli-1632834814\" data-rolli-trackid=\"1538983\" data-rolli-trackbid=\"1\" class=\"rolli-target\"><script async=\"async\" src=\"https:\/\/securepubads.g.doubleclick.net\/tag\/js\/gpt.js\"><\/script>\n<script> var googletag = googletag || {}; googletag.cmd = googletag.cmd || [];<\/script>\n<div id=\"gpt-ad-5655805700388-0\">\n  <script>\n\tgoogletag.cmd.push(function() {\n\t\t\t\tgoogletag.defineSlot( '\/3828090\/sidebar-top', [[300,250],[300,600]], 'gpt-ad-5655805700388-0' )\n\t\t.addService(googletag.pubads());\n\t\t\t\tgoogletag.enableServices();\n\t\tgoogletag.display( 'gpt-ad-5655805700388-0' );\n\t});\n  <\/script>\n<\/div>\n<\/div>","once_per_page":0,"debugmode":false,"blog_id":1,"type":"gam","position":"","tracking_enabled":true,"privacy":{"ignore":false,"needs_consent":false}}}}};
-window.advads_passive_groups = {"1770_6":{"type":"group","id":1770,"elementid":["rolli-3f6bb993ecdc17c3b64b2af7808fc3d3"],"ads":{"2500413":{"id":2500413,"title":"Sandia Area Fed Credit Union","expiry_date":0,"visitors":[],"content":"<div data-rolli-trackid=\"2500413\" data-rolli-trackbid=\"1\" class=\"rolli-target\" id=\"rolli-372250604\"><a href=\"https:\/\/www.sandia.org\/MySavings?utm_source=ABQJournal&utm_medium=Digital+Ad&utm_campaign=11_02_My_Savings_2022&utm_id=20221102\" target=\"_New\" rel=\"noopener\"><img loading=\"lazy\" src=\"https:\/\/tpc.googlesyndication.com\/pageadimg\/imgad?id=CICAgODsxZrPgwEQrAIY-gEoATIIdD3W5H-a8ZI\" alt=\"serving NM\" width=\"300\" height=\"250\" border=\"0\" \/><\/a><\/div>","once_per_page":0,"debugmode":false,"blog_id":1,"type":"plain","position":"none","tracking_enabled":true,"privacy":{"ignore":false,"needs_consent":false}},"2494934":{"id":2494934,"title":"Maez Group","expiry_date":0,"visitors":[],"content":"<div data-rolli-trackid=\"2494934\" data-rolli-trackbid=\"1\" class=\"rolli-target\" id=\"rolli-1402006256\"><!--300x250-->\r\n<SCRIPT language=\"JavaScript1.1\">var fas_m=location.hostname;var fas_r=\"\";var impid=\"\";var q=\"\";var oid = Math.floor(Math.random() * 100000000);if(typeof document.referrer != \"undefined\" && document.referrer != \"\")fas_r = document.referrer.split(\"\/\")[2];document.write(\"<IFRAME SRC=\\\"https:\/\/ads.brandcdn.com\/html\/4342474_300x250_62ffe4677b96d.html?fas_c=&oid=\"+oid+\"&fas_m=\"+fas_m+\"&fas_r=\"+fas_r+q+\"&impid=\"+impid+q+\"\\\" WIDTH=300 HEIGHT=250 MARGINWIDTH=0 MARGINHEIGHT=0 HSPACE=0 VSPACE=0 FRAMEBORDER=0 SCROLLING=no BORDERCOLOR=\\\"#000000\\\" ALLOWFULLSCREEN><SCR'+'IPT language=\\\"JavaScript1.1\\\">var fas_c_for_js=\\\"\\\";var impid_for_js=\\\"\\\";<\/SCR'+'IPT><SCR'+'IPT language=\\\"JavaScript1.1\\\" SRC=\\\"https:\/\/ads.brandcdn.com\/scripts\/4342474_300x250_62ffe4677b96d.js&oid=\"+oid+\"\\\"><\/SCR'+'IPT><\/IFRAME>\");<\/SCRIPT><span id=\"te-clearads-js-brandcdn01cont1\"><script type=\"text\/javascript\" src=\"\/\/choices.truste.com\/ca?pid=brandcdn01&aid=brandcdn01&cid=0701&c=brandcdn01cont1&w=300&h=250\"><\/script><\/span>\r\n<\/div>","once_per_page":0,"debugmode":false,"blog_id":1,"type":"plain","position":"none","tracking_enabled":true,"privacy":{"ignore":false,"needs_consent":false}},"2545456":{"id":2545456,"title":"Pulte Homes","expiry_date":0,"visitors":[],"content":"<div data-rolli-trackid=\"2545456\" data-rolli-trackbid=\"1\" class=\"rolli-target\" id=\"rolli-1899619241\"><a href=\"https:\/\/www.pulte.com\/homes\/new-mexico\" target=\"_New\" rel=\"noopener\"><img loading=\"lazy\" src=\"https:\/\/tpc.googlesyndication.com\/pageadimg\/imgad?id=CICAgODMxqzVKRCsAhj6ASgBMghvkkdTvxa_7w\" alt=\"serving NM\" width=\"300\" height=\"250\" border=\"0\" \/><\/a><\/div>","once_per_page":0,"debugmode":false,"blog_id":1,"type":"plain","position":"none","tracking_enabled":true,"privacy":{"ignore":false,"needs_consent":false}},"2504437":{"id":2504437,"title":"Slingshot - URHR Sponsorship","expiry_date":0,"visitors":[],"content":"<div data-rolli-trackid=\"2504437\" data-rolli-trackbid=\"1\" class=\"rolli-target\" id=\"rolli-1515924560\"><a href=\"https:\/\/www.l4sb.com\/\" target=\"_New\" rel=\"noopener\"><img loading=\"lazy\" src=\"https:\/\/tpc.googlesyndication.com\/pageadimg\/imgad?id=CICAgODsxcbLgwEQrAIY-gEoATIIy1Bd7FTaYWs\" alt=\"serving NM\" width=\"300\" height=\"250\" border=\"0\" \/><\/a><\/div>","once_per_page":0,"debugmode":false,"blog_id":1,"type":"plain","position":"none","tracking_enabled":true,"privacy":{"ignore":false,"needs_consent":false}},"2494931":{"id":2494931,"title":"DreamStyle - URHR Sponsorship","expiry_date":0,"visitors":[],"content":"<div data-rolli-trackid=\"2494931\" data-rolli-trackbid=\"1\" class=\"rolli-target\" id=\"rolli-1379115385\"><a href=\"https:\/\/www.dreamstyleremodeling.com\/?source=ABQJournalDigital\" target=\"_New\"><img loading=\"lazy\" src=\"https:\/\/tpc.googlesyndication.com\/pageadimg\/imgad?id=CICAgODsxu2AnAEQrAIY-gEoATIItjI5CskhTRc\" alt=\"serving NM\" width=\"300\" height=\"250\" border=\"0\" \/><\/a><\/div>","once_per_page":0,"debugmode":false,"blog_id":1,"type":"plain","position":"none","tracking_enabled":true,"privacy":{"ignore":false,"needs_consent":false}}},"group_info":{"id":1770,"name":"Upper Right Hand Rail Sponsorship","weights":{"2494931":10,"2545456":10,"2500413":10,"2504437":10,"2494934":10},"type":"default","ordered_ad_ids":[2500413,2494934,2545456,2504437,2494931],"ad_count":1}}};
-window.advads_ajax_queries = [{"id":"amp-header","method":"placement","params":{"cache-busting":"auto","previous_method":"placement","previous_id":"amp-header","post":"r0","url_parameter":"\/2486162\/denver-suburb-where-elijah-mcclain-died-ousts-police-chief.html","placement_type":"header","output":{"placement_id":"amp-header"}},"blog_id":1},{"id":"header","method":"placement","params":{"placement_conditions":{"display":[{"type":"posttypes","operator":"is","value":["page"]}],"visitors":[{"type":"role","operator":"is_not","value":"subscriber"}]},"cache-busting":"auto","previous_method":"placement","previous_id":"header","post":"r0","url_parameter":"\/2486162\/denver-suburb-where-elijah-mcclain-died-ousts-police-chief.html","placement_type":"header","output":{"placement_id":"header"},"change-ad":{"visitors":[{"type":"role","operator":"is_not","value":"subscriber","connector":"and"}],"conditions":[{"type":"posttypes","operator":"is","value":["page"],"connector":"and"}]}},"blog_id":1},{"id":"after-content","method":"placement","params":{"ad_label":"disabled","placement_clearfix":"1","inline-css":"","pro_minimum_length":"100","placement_conditions":{"display":[{"type":"posttypes","operator":"is","value":["post","page"]},{"type":"taxonomy_category","operator":"is_not","value":["221","12","1202","886"]}],"visitors":[{"type":"role","operator":"is_not","value":"subscriber"}]},"lazy_load":"enabled","post":"r0","url_parameter":"\/2486162\/denver-suburb-where-elijah-mcclain-died-ousts-police-chief.html","placement_type":"post_bottom"},"elementid":"rolli-9fead3f9aacc5283fc8bd83c8e7275cb","blog_id":1},{"id":"in-story-content-nonsubsctibers","method":"placement","params":{"ad_label":"enabled","placement_position":"center","placement_clearfix":"1","inline-css":"","pro_minimum_length":"50","words_between_repeats":"50","placement_conditions":{"display":[{"type":"taxonomy_category","operator":"is_not","value":["1759"]},{"type":"taxonomy_category","operator":"is_not","value":["1771"]}],"visitors":[{"type":"role","operator":"is_not","value":"subscriber"}]},"position":"after","index":6,"tag":"anyelement","xpath":"","repeat":"1","lazy_load":"enabled","post":"r0","url_parameter":"\/2486162\/denver-suburb-where-elijah-mcclain-died-ousts-police-chief.html","placement_type":"post_content"},"elementid":"rolli-0ba84193a8d0511f81b11d0ad2681ddb","blog_id":1},{"id":"content-middle","method":"placement","params":{"ad_label":"enabled","placement_position":"center","inline-css":"","pro_minimum_length":"250","placement_conditions":{"display":[{"type":"posttypes","operator":"is","value":["post"]},{"type":"taxonomy_category","operator":"is_not","value":["221","12","1202","886"]},{"connector":"or","type":"amp","operator":"is_not"}],"visitors":[{"type":"role","operator":"is","value":"subscriber"},{"type":"device_width","operator":"is_lower","value":"600"}]},"placement":{"type":"post_content_middle"},"post":"r0","url_parameter":"\/2486162\/denver-suburb-where-elijah-mcclain-died-ousts-police-chief.html","placement_type":"post_content_middle"},"elementid":"rolli-76a853af8f9511e0952089652e46da9b","blog_id":1},{"id":"popup-and-layer-ads","method":"placement","params":{"previous_method":"placement","previous_id":"popup-and-layer-ads","post":"r0","url_parameter":"\/2486162\/denver-suburb-where-elijah-mcclain-died-ousts-police-chief.html","placement_type":"layer","ad_label":"disabled","inline-css":"","layer_placement":{"trigger":"","offset":"200","delay_sec":"10","effect":"show","duration":"500","auto_close":{"delay":"5"},"close":{"where":"outside","side":"left","timeout":"0"},"sticky":{"assistant":"bottomcenter","position":{"width":"0","height":"0"}}},"placement_width":"0","placement_height":"0","placement_conditions":{"display":[{"type":"request_uri","operator":"contain_not","value":"my-account"},{"type":"request_uri","operator":"contain_not","value":"subscri"},{"type":"request_uri","operator":"contain_not","value":"forgot-password"},{"value":["is_front_page","is_singular","is_archive","is_search"],"type":"general"},{"type":"request_uri","operator":"contain_not","value":"legal"},{"type":"taxonomy_category","operator":"is_not","value":["1771"]},{"type":"request_uri","operator":"contain_not","value":"summer-guide"},{"type":"request_uri","operator":"contain_not","value":"\/reset-password"}],"visitors":[{"type":"role","operator":"is_not","value":"subscriber"},{"type":"role","operator":"is_not","value":"editor"},{"type":"referrer_url","operator":"contain","value":""}]},"cache-busting":"auto","output":{"class":["rolli-popup-and-layer-ads"],"placement_id":"popup-and-layer-ads"}},"elementid":"rolli-00e8d520d694c7d32952660cd5bc4988","blog_id":1}];
+<script>window.advads_admin_bar_items = [{"title":"Content","type":"placement"},{"title":"000 - Daily Newsletter","type":"ad"},{"title":"email newsletter signups in stories","type":"group"},{"title":"00 Taboola right rail","type":"ad"},{"title":"000-666 adsense","type":"ad"}];</script><script>window.advads_passive_ads = {"2355301_3":{"elementid":["rolli-ae3e5ab7c601f17c8c821a643c5fc81e"],"ads":{"2355301":{"id":2355301,"title":"ad9999 Taboola bottom of story content recommendation","expiry_date":0,"visitors":[],"content":"<div style=\"margin-top: 10px; margin-bottom: 10px; \" id=\"rolli-36850015\" data-rolli-trackid=\"2355301\" data-rolli-trackbid=\"1\" class=\"rolli-target\"><!-- requires header code from taboola to insert widget see javascript in the header area -->\r\n<section id=\"taboola\">\r\n<!-- taboola code here to insert widget-->\r\n<div id=\"taboola-feed-article-thumbnails\"><\/div>\r\n<script type=\"text\/javascript\">\r\n  window._taboola = window._taboola || [];\r\n  _taboola.push({\r\n    mode: 'alternating-thumbnails-a',\r\n    container: 'taboola-feed-article-thumbnails',\r\n    placement: 'Feed Article Thumbnails',\r\n    target_type: 'mix'\r\n  });\r\n<\/script>\r\n<\/section>\r\n\r\n<\/div>","once_per_page":1,"debugmode":false,"blog_id":1,"type":"plain","position":"","tracking_enabled":true,"privacy":{"ignore":false,"needs_consent":false}}}},"2373862_7":{"elementid":["rolli-10a9e13232830e57f958c3fede0fff60"],"ads":{"2373862":{"id":2373862,"title":"ad3 widget bigbox-insidepages \u2013 google admanager dfp advert: Donn","expiry_date":0,"visitors":[],"content":"<div data-rolli-trackid=\"2373862\" data-rolli-trackbid=\"1\" class=\"rolli-target\" id=\"rolli-1540244112\"><script async=\"async\" src=\"https:\/\/securepubads.g.doubleclick.net\/tag\/js\/gpt.js\"><\/script>\n<script> var googletag = googletag || {}; googletag.cmd = googletag.cmd || [];<\/script>\n<div id=\"gpt-ad-8198211597857-0\">\n  <script>\n\tgoogletag.cmd.push(function() {\n\t\t\t\tgoogletag.defineSlot( '\/3828090\/story-remnant', [300,250], 'gpt-ad-8198211597857-0' )\n\t\t.addService(googletag.pubads());\n\t\t\t\tgoogletag.enableServices();\n\t\tgoogletag.display( 'gpt-ad-8198211597857-0' );\n\t});\n  <\/script>\n<\/div>\n<\/div>","once_per_page":0,"debugmode":false,"blog_id":1,"type":"gam","position":"","tracking_enabled":true,"privacy":{"ignore":false,"needs_consent":false}}}},"2373862_9":{"elementid":["rolli-6a8fa218531fd8fe3d13738c355b0977"],"ads":{"2373862":{"id":2373862,"title":"ad3 widget bigbox-insidepages \u2013 google admanager dfp advert: Donn","expiry_date":0,"visitors":[],"content":"<div data-rolli-trackid=\"2373862\" data-rolli-trackbid=\"1\" class=\"rolli-target\" id=\"rolli-1798583088\"><script async=\"async\" src=\"https:\/\/securepubads.g.doubleclick.net\/tag\/js\/gpt.js\"><\/script>\n<script> var googletag = googletag || {}; googletag.cmd = googletag.cmd || [];<\/script>\n<div id=\"gpt-ad-5745247222659-0\">\n  <script>\n\tgoogletag.cmd.push(function() {\n\t\t\t\tgoogletag.defineSlot( '\/3828090\/story-remnant', [300,250], 'gpt-ad-5745247222659-0' )\n\t\t.addService(googletag.pubads());\n\t\t\t\tgoogletag.enableServices();\n\t\tgoogletag.display( 'gpt-ad-5745247222659-0' );\n\t});\n  <\/script>\n<\/div>\n<\/div>","once_per_page":0,"debugmode":false,"blog_id":1,"type":"gam","position":"","tracking_enabled":true,"privacy":{"ignore":false,"needs_consent":false}}}},"2355301_11":{"elementid":["rolli-fe06245e77d9304cd9aa29ee2692ec8d"],"ads":{"2355301":{"id":2355301,"title":"ad9999 Taboola bottom of story content recommendation","expiry_date":0,"visitors":[],"content":"<div style=\"margin-top: 10px; margin-bottom: 10px; \" id=\"rolli-1373721878\" data-rolli-trackid=\"2355301\" data-rolli-trackbid=\"1\" class=\"rolli-target\"><!-- requires header code from taboola to insert widget see javascript in the header area -->\r\n<section id=\"taboola\">\r\n<!-- taboola code here to insert widget-->\r\n<div id=\"taboola-feed-article-thumbnails\"><\/div>\r\n<script type=\"text\/javascript\">\r\n  window._taboola = window._taboola || [];\r\n  _taboola.push({\r\n    mode: 'alternating-thumbnails-a',\r\n    container: 'taboola-feed-article-thumbnails',\r\n    placement: 'Feed Article Thumbnails',\r\n    target_type: 'mix'\r\n  });\r\n<\/script>\r\n<\/section>\r\n\r\n<\/div>","once_per_page":1,"debugmode":false,"blog_id":1,"type":"plain","position":"","tracking_enabled":true,"privacy":{"ignore":false,"needs_consent":false}}}},"1538983_13":{"elementid":["rolli-a950140a4264ed58c1ca7c7e348d5773"],"ads":{"1538983":{"id":1538983,"title":"000 - Sidebar","expiry_date":0,"visitors":[],"content":"<div style=\"margin-bottom: 20px; \" id=\"rolli-1107152845\" data-rolli-trackid=\"1538983\" data-rolli-trackbid=\"1\" class=\"rolli-target\"><script async=\"async\" src=\"https:\/\/securepubads.g.doubleclick.net\/tag\/js\/gpt.js\"><\/script>\n<script> var googletag = googletag || {}; googletag.cmd = googletag.cmd || [];<\/script>\n<div id=\"gpt-ad-7167764124708-0\">\n  <script>\n\tgoogletag.cmd.push(function() {\n\t\t\t\tgoogletag.defineSlot( '\/3828090\/sidebar-top', [[300,250],[300,600]], 'gpt-ad-7167764124708-0' )\n\t\t.addService(googletag.pubads());\n\t\t\t\tgoogletag.enableServices();\n\t\tgoogletag.display( 'gpt-ad-7167764124708-0' );\n\t});\n  <\/script>\n<\/div>\n<\/div>","once_per_page":0,"debugmode":false,"blog_id":1,"type":"gam","position":"","tracking_enabled":true,"privacy":{"ignore":false,"needs_consent":false}}}}};
+window.advads_passive_groups = {"1770_5":{"type":"group","id":1770,"elementid":["rolli-3eea0269e54da0b0bdaf3b649fb3037e"],"ads":{"2504437":{"id":2504437,"title":"Slingshot - URHR Sponsorship","expiry_date":0,"visitors":[],"content":"<div data-rolli-trackid=\"2504437\" data-rolli-trackbid=\"1\" class=\"rolli-target\" id=\"rolli-1378847933\"><a href=\"https:\/\/www.l4sb.com\/\" target=\"_New\" rel=\"noopener\"><img loading=\"lazy\" src=\"https:\/\/tpc.googlesyndication.com\/pageadimg\/imgad?id=CICAgODsxcbLgwEQrAIY-gEoATIIy1Bd7FTaYWs\" alt=\"serving NM\" width=\"300\" height=\"250\" border=\"0\" \/><\/a><\/div>","once_per_page":0,"debugmode":false,"blog_id":1,"type":"plain","position":"none","tracking_enabled":true,"privacy":{"ignore":false,"needs_consent":false}},"2545456":{"id":2545456,"title":"Pulte Homes","expiry_date":0,"visitors":[],"content":"<div data-rolli-trackid=\"2545456\" data-rolli-trackbid=\"1\" class=\"rolli-target\" id=\"rolli-894229499\"><a href=\"https:\/\/www.pulte.com\/homes\/new-mexico\" target=\"_New\" rel=\"noopener\"><img loading=\"lazy\" src=\"https:\/\/tpc.googlesyndication.com\/pageadimg\/imgad?id=CICAgODMxqzVKRCsAhj6ASgBMghvkkdTvxa_7w\" alt=\"serving NM\" width=\"300\" height=\"250\" border=\"0\" \/><\/a><\/div>","once_per_page":0,"debugmode":false,"blog_id":1,"type":"plain","position":"none","tracking_enabled":true,"privacy":{"ignore":false,"needs_consent":false}},"2494934":{"id":2494934,"title":"Maez Group","expiry_date":0,"visitors":[],"content":"<div data-rolli-trackid=\"2494934\" data-rolli-trackbid=\"1\" class=\"rolli-target\" id=\"rolli-1189910763\"><!--300x250-->\r\n<SCRIPT language=\"JavaScript1.1\">var fas_m=location.hostname;var fas_r=\"\";var impid=\"\";var q=\"\";var oid = Math.floor(Math.random() * 100000000);if(typeof document.referrer != \"undefined\" && document.referrer != \"\")fas_r = document.referrer.split(\"\/\")[2];document.write(\"<IFRAME SRC=\\\"https:\/\/ads.brandcdn.com\/html\/4342474_300x250_62ffe4677b96d.html?fas_c=&oid=\"+oid+\"&fas_m=\"+fas_m+\"&fas_r=\"+fas_r+q+\"&impid=\"+impid+q+\"\\\" WIDTH=300 HEIGHT=250 MARGINWIDTH=0 MARGINHEIGHT=0 HSPACE=0 VSPACE=0 FRAMEBORDER=0 SCROLLING=no BORDERCOLOR=\\\"#000000\\\" ALLOWFULLSCREEN><SCR'+'IPT language=\\\"JavaScript1.1\\\">var fas_c_for_js=\\\"\\\";var impid_for_js=\\\"\\\";<\/SCR'+'IPT><SCR'+'IPT language=\\\"JavaScript1.1\\\" SRC=\\\"https:\/\/ads.brandcdn.com\/scripts\/4342474_300x250_62ffe4677b96d.js&oid=\"+oid+\"\\\"><\/SCR'+'IPT><\/IFRAME>\");<\/SCRIPT><span id=\"te-clearads-js-brandcdn01cont1\"><script type=\"text\/javascript\" src=\"\/\/choices.truste.com\/ca?pid=brandcdn01&aid=brandcdn01&cid=0701&c=brandcdn01cont1&w=300&h=250\"><\/script><\/span>\r\n<\/div>","once_per_page":0,"debugmode":false,"blog_id":1,"type":"plain","position":"none","tracking_enabled":true,"privacy":{"ignore":false,"needs_consent":false}}},"group_info":{"id":1770,"name":"Upper Right Hand Rail Sponsorship","weights":{"2494934":10,"2545456":10,"2504437":10},"type":"default","ordered_ad_ids":[2504437,2545456,2494934],"ad_count":1}}};
+window.advads_ajax_queries = [{"id":"amp-header","method":"placement","params":{"cache-busting":"auto","previous_method":"placement","previous_id":"amp-header","post":"r0","url_parameter":"\/2486162\/denver-suburb-where-elijah-mcclain-died-ousts-police-chief.html","placement_type":"header","output":{"placement_id":"amp-header"}},"blog_id":1},{"id":"header","method":"placement","params":{"placement_conditions":{"display":[{"type":"posttypes","operator":"is","value":["page"]}],"visitors":[{"type":"role","operator":"is_not","value":"subscriber"}]},"cache-busting":"auto","previous_method":"placement","previous_id":"header","post":"r0","url_parameter":"\/2486162\/denver-suburb-where-elijah-mcclain-died-ousts-police-chief.html","placement_type":"header","output":{"placement_id":"header"},"change-ad":{"visitors":[{"type":"role","operator":"is_not","value":"subscriber","connector":"and"}],"conditions":[{"type":"posttypes","operator":"is","value":["page"],"connector":"and"}]}},"blog_id":1},{"id":"after-content","method":"placement","params":{"ad_label":"disabled","placement_clearfix":"1","inline-css":"","pro_minimum_length":"100","placement_conditions":{"display":[{"type":"posttypes","operator":"is","value":["post","page"]},{"type":"taxonomy_category","operator":"is_not","value":["221","12","1202","886"]}],"visitors":[{"type":"role","operator":"is_not","value":"subscriber"}]},"lazy_load":"enabled","post":"r0","url_parameter":"\/2486162\/denver-suburb-where-elijah-mcclain-died-ousts-police-chief.html","placement_type":"post_bottom"},"elementid":"rolli-43cfd43e765af9422d335641b67dc3ba","blog_id":1},{"id":"content-middle","method":"placement","params":{"ad_label":"enabled","placement_position":"center","inline-css":"","pro_minimum_length":"250","placement_conditions":{"display":[{"type":"posttypes","operator":"is","value":["post"]},{"type":"taxonomy_category","operator":"is_not","value":["221","12","1202","886"]},{"connector":"or","type":"amp","operator":"is_not"}],"visitors":[{"type":"role","operator":"is","value":"subscriber"},{"type":"device_width","operator":"is_lower","value":"600"}]},"placement":{"type":"post_content_middle"},"post":"r0","url_parameter":"\/2486162\/denver-suburb-where-elijah-mcclain-died-ousts-police-chief.html","placement_type":"post_content_middle"},"elementid":"rolli-0abef707401b4c50b1be9e10250f1b2d","blog_id":1},{"id":"popup-and-layer-ads","method":"placement","params":{"previous_method":"placement","previous_id":"popup-and-layer-ads","post":"r0","url_parameter":"\/2486162\/denver-suburb-where-elijah-mcclain-died-ousts-police-chief.html","placement_type":"layer","ad_label":"disabled","inline-css":"","layer_placement":{"trigger":"","offset":"200","delay_sec":"10","effect":"show","duration":"500","auto_close":{"delay":"5"},"close":{"where":"outside","side":"left","timeout":"0"},"sticky":{"assistant":"bottomcenter","position":{"width":"0","height":"0"}}},"placement_width":"0","placement_height":"0","placement_conditions":{"display":[{"type":"request_uri","operator":"contain_not","value":"my-account"},{"type":"request_uri","operator":"contain_not","value":"subscri"},{"type":"request_uri","operator":"contain_not","value":"forgot-password"},{"value":["is_front_page","is_singular","is_archive","is_search"],"type":"general"},{"type":"request_uri","operator":"contain_not","value":"legal"},{"type":"taxonomy_category","operator":"is_not","value":["1771"]},{"type":"request_uri","operator":"contain_not","value":"summer-guide"},{"type":"request_uri","operator":"contain_not","value":"\/reset-password"}],"visitors":[{"type":"role","operator":"is_not","value":"subscriber"},{"type":"role","operator":"is_not","value":"editor"},{"type":"referrer_url","operator":"contain","value":""}]},"cache-busting":"auto","output":{"class":["rolli-popup-and-layer-ads"],"placement_id":"popup-and-layer-ads"}},"elementid":"rolli-c53935965973b613f284969e01aeb0b3","blog_id":1}];
 window.advads_has_ads = [["2523932","ad","000 - Daily Newsletter","off"],["2438006","ad","00 Taboola right rail","off"],["2482306","ad","000-666 adsense","off"]];
 window.advads_ajax_queries_args = {"r0":{"id":2486162,"author":"223","post_type":"post"}};
 ( window.advanced_ads_ready || jQuery( document ).ready ).call( null, function() {if ( !window.advanced_ads_pro ) {console.log("Advanced Ads Pro: cache-busting can not be initialized");} });</script><script type='text/javascript'>
@@ -2410,12 +2460,24 @@ var wpforms_settings = {"val_required":"This field is required.","val_email":"Pl
 </script>
 <script>!function(){window.advanced_ads_ready_queue=window.advanced_ads_ready_queue||[],advanced_ads_ready_queue.push=window.advanced_ads_ready;for(var d=0,a=advanced_ads_ready_queue.length;d<a;d++)advanced_ads_ready(advanced_ads_ready_queue[d])}();</script><script id="rolli-tracking">var advads_tracking_ads = {"1":[2523932,2438006,2482306]};var advads_tracking_urls = {"1":"https:\/\/www.abqjournal.com\/wp-content\/ajax-handler.php"};var advads_tracking_methods = {"1":"onrequest"};var advads_tracking_parallel = {"1":false};var advads_tracking_linkbases = {"1":"https:\/\/www.abqjournal.com\/linkout\/"};</script>
 <!-- Mather Analytics -->
-<noscript><img class="lazy" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201%201'%3E%3C/svg%3E" data-src="https://www.i.matheranalytics.com/i?e=pv&aid=v1&cid=ma84920&mrk=69231039&p=web&tv=no-js-0.1.0&tid=1671006459" style="display:none" height="1" width="1" alt/></noscript>
+<noscript><img class="lazy" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201%201'%3E%3C/svg%3E" data-src="https://www.i.matheranalytics.com/i?e=pv&aid=v1&cid=ma84920&mrk=69231039&p=web&tv=no-js-0.1.0&tid=1673088390" style="display:none" height="1" width="1" alt/></noscript>
 <script>
+        function commenceABQPWLogic() {
+        var pw_inter = setInterval(function () {
+            new ABQPaywallManager(campaigns);
+            clearInterval(pw_inter);
+        }, 100);
+    }
     jQuery(document).ready(function() {
-        commenceABQPWLogic();
+        is_admin = false;
+        if (storageManager.storageValid('is_admin')) {
+            is_admin = storageManager.getStorage('is_admin');
+        }
+        if (!is_admin) {
+            commenceABQPWLogic();
+        }
     });
-    jQuery(document).on('click', '.newsletter-signup .submit-button', function() {
+        jQuery(document).on('click', '.newsletter-signup .submit-button', function() {
         var formContainer = jQuery(this).parents('.newsletter-signup:first');
         var form = formContainer.find('form');
         if (formContainer.find('input.email').val() != "") {
@@ -2500,6 +2562,7 @@ var wpforms_settings = {"val_required":"This field is required.","val_email":"Pl
             },
             dataType: 'json',
             success: function (response) {
+                let storageManager = new ABQStorageManager();
                 if (response.status == 'unauthorized') {
                     location.href = "https://www.abqjournal.com/subscription-offers";
                     return false;
@@ -2523,6 +2586,8 @@ var wpforms_settings = {"val_required":"This field is required.","val_email":"Pl
                         });
                     }
                 }
+                storageManager.removeStorage('abq_saved_articles');
+                storageManager.removeStorage('abq_my_bookmarks');
             }
         });
     });
@@ -2583,8 +2648,7 @@ var wpforms_settings = {"val_required":"This field is required.","val_email":"Pl
         getWeather();
     }
 
-    function getWeather()
-    {
+    function getWeather() {
         jQuery.ajax({
             url: '/portal.php',
             dataType: 'json',
@@ -2597,7 +2661,7 @@ var wpforms_settings = {"val_required":"This field is required.","val_email":"Pl
                 const now = new Date()
                 const item = {
                     info: response,
-                    expiry: now.getTime() + 60000,
+                    expiry: now.getTime() + 600000,
                 }
                 localStorage.setItem('weather', JSON.stringify(item))
             }
@@ -2635,7 +2699,8 @@ var wpforms_settings = {"val_required":"This field is required.","val_email":"Pl
         return check;
     };
 </script>
-<noscript><img class="lazy" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201%201'%3E%3C/svg%3E" data-src="https://www.i.matheranalytics.com/i?e=pv&aid=v1&cid=ma84920&mrk=69231039&p=web&tv=no-js-0.1.0&tid=1671006459" style="display:none" height="1" width="1" alt/></noscript>
+
+<noscript><img class="lazy" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%201%201'%3E%3C/svg%3E" data-src="https://www.i.matheranalytics.com/i?e=pv&aid=v1&cid=ma84920&mrk=69231039&p=web&tv=no-js-0.1.0&tid=1673088390" style="display:none" height="1" width="1" alt/></noscript>
 <amp-iframe width="1px" height="1px" layout="fixed" sandbox="allow-scripts allow-same-origin" src="https://www.abqjournal.com/wp-content/themes/abq/inc/template-parts/taboola-newsroom-amp.html">
 </amp-iframe>
 <div id="shareable-modal" class="modal" tabindex="-1">
@@ -2657,17 +2722,18 @@ var wpforms_settings = {"val_required":"This field is required.","val_email":"Pl
         </div>
     </div>
 </div>
+
 <script>window.w3tc_lazyload=1,window.lazyLoadOptions={elements_selector:".lazy",callback_loaded:function(t){var e;try{e=new CustomEvent("w3tc_lazyload_loaded",{detail:{e:t}})}catch(a){(e=document.createEvent("CustomEvent")).initCustomEvent("w3tc_lazyload_loaded",!1,!1,{e:t})}window.dispatchEvent(e)}}</script><script async src="https://d21yqjvcoayho7.cloudfront.net/wp-content/plugins/w3-total-cache/pub/js/lazyload.min.js"></script></body>
 </html>
 
 <!--
 Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/
 
-Object Caching 437/538 objects using redis
+Object Caching 447/552 objects using redis
 Page Caching using disk: enhanced 
 Content Delivery Network via Amazon Web Services: CloudFront: d21yqjvcoayho7.cloudfront.net
 Content Delivery Network Full Site Delivery via cloudfront
 Lazy Loading
 
-Served from: abqjournal.com @ 2022-12-14 01:27:39 by W3 Total Cache
+Served from: abqjournal.com @ 2023-01-07 03:46:30 by W3 Total Cache
 -->

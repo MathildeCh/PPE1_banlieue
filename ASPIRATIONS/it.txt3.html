@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 
-<html data-style="" lang="it" data-dw-cb="20221201-01-042" class="js-no">
+<html data-style="" lang="it" data-dw-cb="20221230-05-0429" class="js-no">
 <head>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -48,8 +48,8 @@
 
 
 	<!-- PRELOAD STYLES -->
-	<link rel="preload" href="/css/bundle.min.css?_=20221201-01-042" as="style" />
-		<link rel="preload" href="/css/content.min.css?_=20221201-01-042" as="style" />
+	<link rel="preload" href="/css/bundle.min.css?_=20221230-05-0429" as="style" />
+		<link rel="preload" href="/css/content.min.css?_=20221230-05-0429" as="style" />
 
 	
 	<!-- FAVICON -->
@@ -309,6 +309,12 @@ r.parentNode.insertBefore(t, r);
 	(function() {
 		// AFTER ACCEPT
 		function afterAccept() {
+			
+			// COMSCORE
+			var _comscore = _comscore || [];
+			_comscore.push({ c1: "2", c2: "34027069" });
+			console.log('COMSCORE: push c1 and c2');
+
 			// ADBLOCKING + CMP STATS
 			if (!!(window.__ilg_ads)) {
 				console.log('ILG: CMP=Y ADS=Y');
@@ -396,7 +402,7 @@ r.parentNode.insertBefore(t, r);
 </script>
 
 	
-<script src="/js/webtrekk/webtrekk_v3.min.js?_=20221201-01-042"></script>
+<script src="/js/webtrekk/webtrekk_v3.min.js?_=20221230-05-0429"></script>
 
 	
 <!-- EVOLUTION ADV -->
@@ -410,12 +416,12 @@ r.parentNode.insertBefore(t, r);
 
 
 
-	<link rel="stylesheet" href="/css/bundle.min.css?_=20221201-01-042" />
+	<link rel="stylesheet" href="/css/bundle.min.css?_=20221230-05-0429" />
 
 
 
-		<link rel="preload" href="/css/typography.min.css?_=20221201-01-042" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="/css/typography.min.css?_=20221201-01-042"></noscript>
-		<link rel="preload" href="/css/content.min.css?_=20221201-01-042" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="/css/content.min.css?_=20221201-01-042"></noscript>
+		<link rel="preload" href="/css/typography.min.css?_=20221230-05-0429" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="/css/typography.min.css?_=20221230-05-0429"></noscript>
+		<link rel="preload" href="/css/content.min.css?_=20221230-05-0429" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="/css/content.min.css?_=20221230-05-0429"></noscript>
 
 <!-- FLUID IMAGE CSS DEFINITION -->
 <style>img.op_7_7_1_1 { object-position: 1% 1%; }
@@ -470,13 +476,13 @@ img.op_7_7_7_7 { object-position: 99% 99%; }
 </style>
 
 <!-- HIGH CONTRAST -->
-<link rel="stylesheet" href="/css/hi-contrast.min.css?_=20221201-01-042" media="screen and (prefers-contrast: more)" />
+<link rel="stylesheet" href="/css/hi-contrast.min.css?_=20221230-05-0429" media="screen and (prefers-contrast: more)" />
 
 <!-- PRINT -->
-<link rel="stylesheet" href="/css/print.min.css?_=20221201-01-042" media="only print" />
+<link rel="stylesheet" href="/css/print.min.css?_=20221230-05-0429" media="only print" />
 
 <!-- IE 11 -->
-<link rel="stylesheet" href="/css/ie11.min.css?_=20221201-01-042" media="screen and (min-width:0\0)" />
+<link rel="stylesheet" href="/css/ie11.min.css?_=20221230-05-0429" media="screen and (min-width:0\0)" />
 
 <!-- DEBUG STYLES -->
 
@@ -580,7 +586,7 @@ img.op_7_7_7_7 { object-position: 99% 99%; }
 
 <body class="signed-out opt-cls" data-cnt-type="news" data-cnt-id="1778129">
 	<a href="#main-content" class="skip-link">Vai al contenuto principale</a>
-	<div class="ga4-datalayer-events" id="ga4-datalayer-events" data-ga4-event-content-id="1778129" data-ga4-event-super-type="node" data-ga4-event-content-type="news" data-ga4-event-term-name="" data-ga4-event-days-life="1139" data-ga4-event-first-author="Federico Giuliani" data-ga4-event-section="Mondo" data-ga4-event-parent-section="" data-ga4-event-special="" data-ga4-event-native-campaign="" data-ga4-event-native-customer="" data-ga4-event-is-paper="False"></div>
+	<div class="ga4-datalayer-events" id="ga4-datalayer-events" data-ga4-event-content-id="1778129" data-ga4-event-super-type="node" data-ga4-event-content-type="news" data-ga4-event-term-name="" data-ga4-event-days-life="1163" data-ga4-event-first-author="Federico Giuliani" data-ga4-event-section="Mondo" data-ga4-event-parent-section="" data-ga4-event-special="" data-ga4-event-native-campaign="" data-ga4-event-native-customer="" data-ga4-event-is-paper="False"></div>
 	
 
 <!-- GTM -->
@@ -615,7 +621,7 @@ img.op_7_7_7_7 { object-position: 99% 99%; }
 
 		var _content_id = null;
 		var _content_type = 'page';
-		var _super_type = 'page';
+		var _super_type = 'other';
 		var _term_name = null;
 		var _section = null;
 		var _parentSection = null;
@@ -629,14 +635,12 @@ img.op_7_7_7_7 { object-position: 99% 99%; }
 
 		if (location.pathname == '/') {
 			_content_type = "homepage";
-		} else if (location.pathname == '/cerca.html') {
-			_content_type = "search_page";
 		} else {
 			var _ga4DataLayerEl = document.querySelector('.ga4-datalayer-events');
 			if (_ga4DataLayerEl) {
 				_content_id = parseInt(_ga4DataLayerEl.getAttribute('data-ga4-event-content-id')) || 0;
+				_super_type = _ga4DataLayerEl.getAttribute('data-ga4-event-super-type') || 'other';
 				_content_type = _ga4DataLayerEl.getAttribute('data-ga4-event-content-type') || 'page';
-				_super_type = _ga4DataLayerEl.getAttribute('data-ga4-event-super-type') || 'page';
 				_term_name = _ga4DataLayerEl.getAttribute('data-ga4-event-term-name') || null;
 				_section = _ga4DataLayerEl.getAttribute('data-ga4-event-section') || '';
 				_parentSection = _ga4DataLayerEl.getAttribute('data-ga4-event-parent-section') || '';
@@ -652,9 +656,6 @@ img.op_7_7_7_7 { object-position: 99% 99%; }
 		}
 
 		switch (eventName) {
-			//case 'page_view':
-			//	_res = {..._res, ...{ 'content_type': _content_type }};
-			//	break;
 			case 'content_view':
 				_res = {..._res,
 						...{
@@ -676,6 +677,24 @@ img.op_7_7_7_7 { object-position: 99% 99%; }
 					}
 				;
 				break;
+			case 'video_start':
+			case 'video_progress':
+            case 'video_complete':
+				_res = {
+					..._res,
+					...{
+						'content_id': _content_id,
+						'content_type': _content_type,
+						'super_type': _super_type,
+						'first_topic': _parentSection,
+						'second_topic': _section,
+						'first_author': _firstAuthor,
+						'second_author': _secondAuthor,
+						'special': _special
+					}
+				}
+					;
+				break;
 			case 'share':
 				_res = {..._res,
 						...{
@@ -688,17 +707,24 @@ img.op_7_7_7_7 { object-position: 99% 99%; }
 					}
 				;
 				break;
+			case 'comment':
+				_res = {..._res,
+						...{
+							'content_id': _content_id,
+							'content_type': _content_type
+						}
+					}
+				;
+				break;
 		}
 		return {..._res, ...(objToMerge || {})};
 	}
 
 	document.addEventListener('DOMContentLoaded', function () {
 
-		var _dlObjects = new Array();
-		//_dlObjects.push(collectGA4DataLayerObjectData('page_view'));
-		_dlObjects.push(collectGA4DataLayerObjectData('content_view'));
-		_dlObjects.forEach(_dlObj => $ilg_ga4.utils.pushToDataLayer(_dlObj));
-		$ilg_ga4.utils.log('ILG - GA4 - BASIC EVENTs: ', _dlObjects);
+		var _dlObj = collectGA4DataLayerObjectData('content_view');
+		$ilg_ga4.utils.pushToDataLayer(_dlObj);
+		$ilg_ga4.utils.log('ILG - GA4 - CONTENT VIEW: ', _dlObj);
 
 		var _socialShareElements = document.querySelectorAll('.social-share a');
 		if (_socialShareElements) {
@@ -706,7 +732,7 @@ img.op_7_7_7_7 { object-position: 99% 99%; }
 				el.addEventListener('click', function (e) {
 					var _dlObj = collectGA4DataLayerObjectData('share', {'method': el.getAttribute('data-social')});
 					$ilg_ga4.utils.pushToDataLayer(_dlObj);
-					$ilg_ga4.utils.log('ILG - GA4: SOCIAL SHARE: ', _dlObj);
+					$ilg_ga4.utils.log('ILG - GA4 - SOCIAL SHARE: ', _dlObj);
 				});
 			});
 		}
@@ -804,10 +830,10 @@ img.op_7_7_7_7 { object-position: 99% 99%; }
 
 	
 
-<a href="/news/calcio/mondiali-qatar-2022-risultati-giorno-giorno-2088135.html"  >Qatar 2022: risultati</a>
+<a href="/speciali/qatargate-167733.html"  >Qatargate</a>
 	
 
-<a href="/persone/giorgia-meloni-134874.html"  >Giorgia Meloni</a>
+<a href="/persone/aboubakar-soumahoro-143106.html"  >Caso Soumahoro</a>
 	
 
 <a href="/tag/consigli-lacquisto-166847.html"  >Le offerte del Giornale</a>
@@ -985,10 +1011,10 @@ img.op_7_7_7_7 { object-position: 99% 99%; }
 
 	
 
-<a href="/news/calcio/mondiali-qatar-2022-risultati-giorno-giorno-2088135.html"  >Qatar 2022: risultati</a>
+<a href="/speciali/qatargate-167733.html"  >Qatargate</a>
 	
 
-<a href="/persone/giorgia-meloni-134874.html"  >Giorgia Meloni</a>
+<a href="/persone/aboubakar-soumahoro-143106.html"  >Caso Soumahoro</a>
 	
 
 <a href="/tag/consigli-lacquisto-166847.html"  >Le offerte del Giornale</a>
@@ -1100,7 +1126,7 @@ img.op_7_7_7_7 { object-position: 99% 99%; }
 
 <a href="#ilg_comments" class="comments-link"><i class="far fa-fw fa-comment-alt"></i> 6</a>
 
-						<button type="button" aria-label="Attendi" data-bookmark="1778129" class="bookmark bookmark--initial" disabled><i class="fas fa-spinner-third fa-fw fa-spin"></i></button>
+						<button type="button" aria-label="Attendi" data-bookmark="1778129" data-bookmark-cnttype="news" class="bookmark bookmark--initial" disabled><i class="fas fa-spinner-third fa-fw fa-spin"></i></button>
 					</div>
 				</div>
 
@@ -1143,6 +1169,12 @@ img.op_7_7_7_7 { object-position: 99% 99%; }
 
 
 					
+<div class="strip-article--top">
+	<div class="banner">
+		<div class="gptslot evo-ilgiornale-strip-articolo-top" data-adunitid="36"></div>
+	</div>
+</div>
+
 
 					
 
@@ -1169,8 +1201,8 @@ img.op_7_7_7_7 { object-position: 99% 99%; }
 
 						
 
-<link rel="preload" href="/tribute/tribute.min.css?_=20221201-01-042" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="/tribute/tribute.min.css?_=20221201-01-042"></noscript>
-<script src="/tribute/tribute.min.js?_=20221201-01-042"></script>
+<link rel="preload" href="/tribute/tribute.min.css?_=20221230-05-0429" as="style" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="/tribute/tribute.min.css?_=20221230-05-0429"></noscript>
+<script src="/tribute/tribute.min.js?_=20221230-05-0429"></script>
 
 <style>
 	.tribute-container {
@@ -1203,23 +1235,67 @@ img.op_7_7_7_7 { object-position: 99% 99%; }
 
 		<div class="comments__header__actions">
 <button type="button" data-mute="1778129" class="mute mute--initial" disabled><i class="fas fa-spinner-third fa-fw fa-spin"></i>Attendi</button>
+				<button type="button" data-reply-to="">Commenta</button>
 		</div>
 	</div>
 
-			<!-- DISCLAIMER -->
-			<div class="comments__disclaimer comments-disclaimer with-links">
-				I commenti saranno accettati:
-				<br>
-				<ul>
-					<li>dal <strong>lunedì</strong> al <strong>venerdì</strong> dalle ore <strong>10:00</strong> alle ore <strong>20:00</strong></li>
-					<li><strong>sabato</strong>, <strong>domenica</strong> e <strong>festivi</strong> dalle ore <strong>10:00</strong> alle ore <strong>18:00</strong>.</li>
-				</ul>
-			</div>
 
 	<div data-load="/commenti/1778129.html?cc=6">
 		<div class="mini-loader"></div>
 	</div>
 
+		<div class="comments__actions" data-comments-count="6">
+			
+
+<div class="form form-comment-insert signed-in-visible" data-content-id="1778129">
+	<div class="panel-data">
+		<div class="form__row">
+			<textarea title="Testo del commento" placeholder="Scrivi qui il tuo commento" class="form-comment-insert__txt mini with-mentions" maxlength="700"></textarea>
+		</div>
+		<div class="form__actions">
+			<div class="comments-disclaimer with-links">
+				Non sono consentiti commenti che contengano termini violenti, discriminatori o che contravvengano alle elementari regole di <a href="https://it.wikipedia.org/wiki/Netiquette" target="_blank" rel="noreferrer noopener">netiquette</a>. <a href="https://www.ilgiornale.it/pagina/disclaimer-unico.html" target="_blank" rel="noreferrer noopener">Qui</a> le norme di comportamento per esteso.
+			</div>
+			<button type="button" class="button form-comment-insert__cancel">Annulla</button>
+			<button type="button" class="button form-comment-insert__send">Pubblica</button>
+		</div>
+	</div>
+</div>
+
+			
+
+<form method="post" action="/utente/profilo/login/" class="form form-login form--md form--centered signed-out-visible js-yes-only">
+	<div class="form__title">Accedi</div>
+
+	<div class="form__row">
+		<input type="text" name="username_or_email" placeholder="Nome utente o email" title="Nome utente o email" maxlength="200" required />
+	</div>
+
+	<div class="form__row">
+		<input type="password" name="password" placeholder="Password" title="Password" maxlength="500" required />
+	</div>
+
+	<div class="form__actions">
+		<button type="submit" class="button">ACCEDI</button>
+	</div>
+	<div class="form__actions">
+		<a href="/utente/registrazione/start.html" class="button">REGISTRATI</a>
+	</div>
+	<div class="form__actions">
+		<a href="/utente/profilo/recupera_password.html" class="link-forgot-password">HAI DIMENTICATO LA PASSWORD?</a>
+	</div>
+</form>
+
+<noscript>
+	<div class="form form--md form--centered signed-out-visible">
+		<div class="form__title">Accedi</div>
+		<p class="typography">
+			Spiacenti, devi abilitare javascript per poter procedere.
+		</p>
+	</div>
+</noscript>
+
+		</div>
 </section>
 
 				</div>
@@ -1334,12 +1410,14 @@ img.op_7_7_7_7 { object-position: 99% 99%; }
 			window.top.optiload.$("body").on("evoAfterContentRevolutionInserted", function () {
 				document.querySelector("#content-revolution").previousElementSibling.remove();
 				$ilg.loadDynamicFragments();
+
+				// COMSCORE
+				//self.COMSCORE && COMSCORE.beacon({ c1: "2", c2: "34027069" });
+				//console.log('COMSCORE: push c1 and c2 after Evo changed Url');
 			});
 
 			window.top.optiload.$("body").on("evoContentRevolutionChangedUrl", function () {
 				console.log('CONTENT REVOLUTION: changed url');
-				// COMSCORE
-				self.COMSCORE && COMSCORE.beacon({ c1: "2", c2: "34027069" });
 				// NIELSEN
 				if (window.ilg_nielsen_process) {
 					window.ilg_nielsen_process();
@@ -1635,7 +1713,7 @@ img.op_7_7_7_7 { object-position: 99% 99%; }
 
 
 
-	<script src="/js/bundle.min.js?_=20221201-01-042" fetchpriority="high"></script>
+	<script src="/js/bundle.min.js?_=20221230-05-0429" fetchpriority="high"></script>
 
 
 
@@ -1694,8 +1772,6 @@ img.op_7_7_7_7 { object-position: 99% 99%; }
 	
 <!-- Begin comScore Tag -->
 <script>
-  var _comscore = _comscore || [];
-  _comscore.push({ c1: "2", c2: "34027069" });
   (function() {
     var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
     s.src = "https://sb.scorecardresearch.com/cs/34027069/beacon.js";

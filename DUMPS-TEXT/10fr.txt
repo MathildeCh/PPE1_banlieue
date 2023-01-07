@@ -1,6 +1,6 @@
    REFRESH(600 sec):
-   file://localhost/mnt/c/Users/Lilas/Desktop/M1_TAL/Projet_encadre/PPE1/P
-   PE1_banlieue/ASPIRATIONS/fr.txt10.html
+   file://localhost/home/mathilde/Documents/Master_NLP/COURS/S1/P3_PE/Repo
+   Commun/PPE1_banlieue/ASPIRATIONS/fr.txt10.html
    #Valeurs actuelles » Flux Valeurs actuelles » Flux des commentaires
    Valeurs actuelles » Délinquance : « Il faut arrêter de faire croire que
    la police opprime les jeunes de banlieue », affirme David Le Bars,

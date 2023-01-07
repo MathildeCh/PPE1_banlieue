@@ -88,11 +88,11 @@ Nous avons créé le script qui permet de créer les tableaux HTML par corpus av
 
 ### Table HTML: intégration du code HTTP et de l'encodage.
 
-Nous avons inclus le code HTTP aux tableaux. Nous avons également trouvé comment isoler l'encodage (charset) du header et l'inclure dans les tableaux (à finaliser). Nous avons presque réussi à isoler les titres des articles.
+Nous avons inclus le code HTTP aux tableaux. Nous avons également trouvé comment isoler l'encodage (charset) du header et l'inclure dans les tableaux. Nous avons presque réussi à isoler les titres des articles.
 
 ## 21/11/2022
 
-### Table HTML: intégration vérification encodage + comptage mot cible (incomplet!)
+### Table HTML: intégration vérification encodage + comptage mot cible 
 
 Nous avons inclus les comptages des occurrences du mot cible dans les différents langues après vérification du codeHTTP correct. Il manque toutefois le comptage du mot grec équivalent à "banlieue". Il reste à vérifier comment traiter les urls qui n'ont pas un codeHTTP valable (403) pour l'extraction du texte.
 
@@ -143,6 +143,6 @@ Nous avons créé l'arborescence du site (index.html présent dans chaque dossie
 
 ## 27/12/2022
 
-### Création script python pour génération nouage de mot
+### Création script python pour génération nuage de mot
 
 Nous avons crée un code python qui génère un nouage de mot pour chacune des langues sur lesquelles nous avons décidé de travailler. Le code contient une fonction qui : A) effectue d'abord le pre-processing de tous les dumps-text d'une langue choisie et B) autogénère le nouage de mot et retourne sa visualisation.  

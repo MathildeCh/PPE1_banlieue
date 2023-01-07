@@ -13,8 +13,8 @@
    Tecnologia Salute Lifestyle Sport Automotive Over
 
    IN EVIDENZA
-   Qatar 2022: risultati Giorgia Meloni Le offerte del Giornale Automotive
-   La guerra in Ucraina Secondo Natura
+   Qatargate Caso Soumahoro Le offerte del Giornale Automotive La guerra
+   in Ucraina Secondo Natura
 
    NETWORK
    InsideOver Piccole Note TimeOver Motori Fiera Milano Le ali di Milano
@@ -32,8 +32,8 @@
    Abbonamento Esci
 
    IN EVIDENZA Hot
-   Qatar 2022: risultati Giorgia Meloni Le offerte del Giornale Automotive
-   La guerra in Ucraina Secondo Natura
+   Qatargate Caso Soumahoro Le offerte del Giornale Automotive La guerra
+   in Ucraina Secondo Natura
 
    Stai utilizzando Internet Eplorer: è un browser molto vecchio, non
    sicuro, e non più supportato neanche da Microsoft stessa, che l'ha
@@ -100,10 +100,25 @@ Un fenomeno diffuso e pericoloso
    sicurezza nelle banlieue.
 
    Commenti
-   (BUTTON) Attendi
-   I commenti saranno accettati:
-     * dal lunedì al venerdì dalle ore 10:00 alle ore 20:00
-     * sabato, domenica e festivi dalle ore 10:00 alle ore 18:00.
+   (BUTTON) Attendi (BUTTON) Commenta
+
+   ____________________________________________________________
+   ____________________________________________________________
+   ____________________________________________________________
+   ____________________________________________________________
+   Non sono consentiti commenti che contengano termini violenti,
+   discriminatori o che contravvengano alle elementari regole di
+   netiquette. Qui le norme di comportamento per esteso.
+   (BUTTON) Annulla (BUTTON) Pubblica
+   Accedi
+   ____________________
+   ____________________
+   (BUTTON) ACCEDI
+   REGISTRATI
+   HAI DIMENTICATO LA PASSWORD?
+   Accedi
+
+   Spiacenti, devi abilitare javascript per poter procedere.
 
    Tag
    aggressione banlieue polizia

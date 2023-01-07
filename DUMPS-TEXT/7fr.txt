@@ -543,7 +543,7 @@ Referencia electrónica
 
    Angelina Peralva, «Violence de banlieue et politisation
    juvénile», Cultures & Conflits [En línea], 18 | été 1995, Publicado el
-   04 marzo 2005, consultado el 14 diciembre 2022. URL:
+   04 marzo 2005, consultado el 07 enero 2023. URL:
    http://journals.openedition.org/conflits/451; DOI:
    https://doi.org/10.4000/conflits.451
    Inicio de página
@@ -620,12 +620,12 @@ Secciones electrónicas
 
      * 2022125 | 126
      * 2021121 | 122 | 123-124
-     * 2020117 | 118 | 119-120
-     * 2019114-115 | 116
+     * 2020118 | 119-120
 
 Números en texto completo
 
-     * 2019113
+     * 2020117
+     * 2019113 | 114-115 | 116
      * 2018109 | 110-111 | 112
      * 2017105-106 | 107 | 108
      * 2016101 | 102 | 103-104
@@ -716,7 +716,7 @@ Afiliaciones/socios
    (BUTTON)
 
      * Inicio
-     * Catálogo de 604 revistas
+     * Catálogo de 605 revistas
 
    OpenEdition Search
    (BUTTON) Todo OpenEdition

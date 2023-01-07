@@ -8,7 +8,7 @@
    Recherche (BUTTON) Mode Newsletters
 
    Photo
-   Le bonheur malgré tout
+   Pourquoi il faut penser global
    Je m’abonne à partir de 1€
 
    La France vue de l’étranger Géopolitique Économie Société Politique
@@ -16,7 +16,7 @@
    Podcasts Infographies Réveil Courrier Tous les hebdos Tous les pays Nos
    sources Horoscope
 
-   Réveil Courrier Qatargate Guerre en Ukraine Iran Coupe du monde 2022
+   Réveil Courrier Ukraine Iran Covid-19 La France vue de l'étranger
    L’hebdo Horoscope
 
      * La France vue de l'étranger
@@ -213,14 +213,14 @@ Un exemple pour le pays
    photos et les articles de la presse étrangère qui ont marqué 2022.
    Je commande mon hors-série →
    Photo
-   Prix Sakharov
-   Face à la guerre : s’opposer, résister, protéger.
-   Assister à la conférence-débat →
+   Gymglish
+   Les rois mages arrivent ! Êtes-vous incollables sur cette tradition ?
+   Faites le test autour d’une bonne galette.
+   Je joue →
    Photo
    Cinéma
-   Tentez de remporter une invitation pour deux personnes à
-   l’avant-première de Nos soleils, le 12 janvier en présence de la
-   réalisatrice.
+   Tentez de remporter deux places pour visionner « Joyland » de Saim
+   Sadiq.
    Je tente ma chance →
    Photo
    Festival international des Jeux de Cannes
@@ -230,16 +230,16 @@ Un exemple pour le pays
 
    Les plus lus
 
-   Drogue. Aux États-Unis, les ravages toujours plus démesurés du fentanyl
-   et des opioïdes
+   Vu de l’étranger. Un “nouveau coup dur” pour la DGSE française
 
-   Vu de Belgique. L’armée française se prépare à un “conflit de haute
-   intensité” en Europe
+   Patrimoine. Bolsonaro a laissé le palais présidentiel brésilien en
+   piteux état
 
-   Reconversion. Ces ex-mafieux américains qui cartonnent sur YouTube
+   Mémoires. Les révélations du prince Harry accablent la famille royale
+   britannique
 
-   Vu d'Italie. Qatargate : la fin de la “supériorité morale” de la gauche
-   ?
+   Mexique. Journée de terreur dans le Sinaloa, après l’arrestation du
+   fils d’“El Chapo”
 
    Nos services
    Photo
@@ -248,14 +248,14 @@ Un exemple pour le pays
    photos et les articles de la presse étrangère qui ont marqué 2022.
    Je commande mon hors-série →
    Photo
-   Prix Sakharov
-   Face à la guerre : s’opposer, résister, protéger.
-   Assister à la conférence-débat →
+   Gymglish
+   Les rois mages arrivent ! Êtes-vous incollables sur cette tradition ?
+   Faites le test autour d’une bonne galette.
+   Je joue →
    Photo
    Cinéma
-   Tentez de remporter une invitation pour deux personnes à
-   l’avant-première de Nos soleils, le 12 janvier en présence de la
-   réalisatrice.
+   Tentez de remporter deux places pour visionner « Joyland » de Saim
+   Sadiq.
    Je tente ma chance →
    Photo
    Festival international des Jeux de Cannes
@@ -273,7 +273,7 @@ Un exemple pour le pays
 
    Newsletters (BUTTON) Applications
    Photo
-   Hebdo Le bonheur malgré tout
+   Hebdo Pourquoi il faut penser global
    Photo
    Hors-série Best-of 2022
 

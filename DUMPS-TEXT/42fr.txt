@@ -28,10 +28,10 @@
                o Tourisme
                o Transition écologique et énergétique
                o Très Haut Débit
-       Filière automobile
-       AMI - Rebond Industriel
-       AAP - Territoires intelligents et durables
-       AMI - Innovation dans la forme scolaire
+       Programme Démonstrateurs villes durables
+       PROGRAMME - Démonstrateurs de la ville durable
+       THEMATIQUE PRIORITAIRE - Relocalisation industrielle :…
+       AMI - Constructions Vertes
      * Offres et services
        (BUTTON) Fermer Offres et services (BUTTON) Fermer Offres et
        services
@@ -64,10 +64,10 @@
                o Présentation
                o Localtis Mag
           + Le Hub des Territoires
-       Terrïtrains
-       OFFRE - TerriTrains : Solution innovante de financement,…
-       OFFRE - Ciclade.fr : rechercher et récupérer des avoirs en…
-       AMI - « Constructions Vertes »
+       Champ de blé
+       OFFRE - Accompagner la transition des modèles de production…
+       OFFRE - Investissement dans les projets de formation…
+       OFFRE - Favoriser la création de nouvelles écoles de…
      * Ressources
        (BUTTON) Fermer Ressources (BUTTON) Fermer Ressources
           + Toutes nos ressources
@@ -86,8 +86,8 @@
        Faire renaître l’industrie dans les territoires : les clés du
        succès
        LIVRE BLANC - Faire renaître l’industrie dans les…
-       LIVRE BLANC - Accompagnement du développement des EnR dans…
-       ETUDE - Eclairages n°27 - Un panorama de la vente de…
+       GUIDE ET SUPPORT PEDAGOGIQUE - Accompagner les départements…
+       CONJONCTURE - Conjoncture économique et financière du 3e…
      * Qui sommes-nous ?
        (BUTTON) Fermer Qui sommes-nous ? (BUTTON) Fermer Qui sommes-nous ?
           + Notre identité
@@ -103,10 +103,10 @@
                o Evénements de la Banque des Territoires
           + Vos contacts en région
           + Nos filiales et partenaires
-       Plénière numérique
-       EVENEMENT - Printemps des Territoires 2022 : revivez les…
-       REALISATION - Construction du groupe scolaire Doulon…
-       REALISATION - Lutte contre les îlots de chaleur :…
+       Localtis Mag N°7
+       LOCALTIS MAG - Un média Banque des Territoires
+       REPLAY - Osons les sujets : parlons d'avenir sans…
+       REALISATION - Création de l’école de production « Étincelle…
      * (BUTTON) Espaces
        (BUTTON) Espaces
           + Collectivités locales
@@ -114,6 +114,7 @@
           + Habitat social
           + Professions juridiques
           + Entreprises et acteurs financiers
+          + Partenaires
 
      * Directions régionales
      * Contact
@@ -127,6 +128,7 @@
 
    Espace Collectivités locales Entreprises Publiques Locales Habitat
    social Professions juridiques Entreprises et acteurs financiers
+   Partenaires
 
    Retour
      * Collectivités locales
@@ -134,9 +136,10 @@
      * Habitat social
      * Professions juridiques
      * Entreprises et acteurs financiers
+     * Partenaires
 
    Collectivités locales Entreprises Publiques Locales Habitat social
-   Professions juridiques Entreprises et acteurs financiers
+   Professions juridiques Entreprises et acteurs financiers Partenaires
      * Bienvenue
      * Solutions sur mesure
      * Thématiques prioritaires
@@ -164,6 +167,8 @@
      * Thématiques prioritaires
      * Outils
 
+     * Bienvenue
+
    Nos espaces
 
    No Space selected
@@ -172,6 +177,7 @@
      * Habitat social
      * Professions juridiques
      * Entreprises et acteurs financiers
+     * Partenaires
 
      * Directions régionales
      * Contact
@@ -318,7 +324,7 @@ Abonnez-vous à Localtis !
      * Instruments financiers
      * Gestion des cookies
 
-   © Banque des Territoires 2022. Tous droits réservés.
+   © Banque des Territoires 2023. Tous droits réservés.
 
 Accessibility Tools
 

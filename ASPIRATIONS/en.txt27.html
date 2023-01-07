@@ -261,7 +261,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 <link rel='stylesheet' id='godaddy-styles-css'  href='https://www.fayettevilleflyer.com/wp-content/plugins/coblocks/includes/Dependencies/GoDaddy/Styles/build/latest.css?ver=0.4.2' media='all' />
 <link rel='stylesheet' id='gravityview_az_entry_filter-css'  href='https://www.fayettevilleflyer.com/wp-content/plugins/gravityview-az-filters/assets/css/gravityview-az-filters.css?ver=61075bdd1fbb5331df1b4c8d279201ec' media='all' />
 <link rel='stylesheet' id='gravityview-featured-entries-css'  href='https://www.fayettevilleflyer.com/wp-content/plugins/gravityview-featured-entries/assets/css/featured-entries.css?ver=2.0.7' media='all' />
-<link rel='stylesheet' id='uag-style-253054-css'  href='https://www.fayettevilleflyer.com/wp-content/uploads/uag-plugin/assets/253000/uag-css-253054-1670979702.css?ver=2.0.13' media='all' />
+<link rel='stylesheet' id='uag-style-253054-css'  href='https://www.fayettevilleflyer.com/wp-content/uploads/uag-plugin/assets/253000/uag-css-253054-1673083470.css?ver=2.0.13' media='all' />
 <link rel='stylesheet' id='child-understrap-styles-css'  href='https://www.fayettevilleflyer.com/wp-content/themes/understrap-child/css/child-theme.min.css?ver=1.9' media='all' />
 <style id='generateblocks-inline-css'>
 .gb-container .wp-block-image img{vertical-align:middle;}.gb-container .gb-shape{position:absolute;overflow:hidden;pointer-events:none;line-height:0;}.gb-container .gb-shape svg{fill:currentColor;}.gb-container-ffb1cec5{background-color:#144263;}.gb-container-ffb1cec5 > .gb-inside-container{padding:30px 15px 15px 25px;max-width:400px;margin-left:auto;margin-right:auto;}.gb-container-ffb1cec5 a, .gb-container-ffb1cec5 a:visited{color:#ffffff;}
@@ -466,23 +466,20 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 /* Home section titles */
 h3.uagb-heading-text a {font-size:16px;}
 
-/* Ft 1 headline */
-h2.wp-block-post-title {font-size:36px;line-height:110%;}
-
-/* Ft 1 excerpt */
+/* Featured 1 excerpt */
 .wp-container-5 .wp-block-post-excerpt {margin:15px 0 10px 0;}
 
 /* Other homepage excerpts */
 p.wp-block-post-excerpt__excerpt {margin:5px 0}
 
-/* Ft 3 headlines */
+/* Featured 3 headlines */
 .kt-layout-id_a64a98-72 h4.wp-block-post-title {font-size:20px;}
 
-/* Other home headlines */
+/* Other homepage headlines */
 h4.wp-block-post-title {font-size:24px;}
 
 /* Author bylines */
-.wp-block-post-author p, .byline a {font-size:12px;font-weight:bold;color:#144263;}
+.wp-block-post-author p, .byline a {font-size:12px;}
 
 /* Datelines */
 .wp-block-post-date {white-space:nowrap;font-size:12px;}
@@ -516,9 +513,6 @@ margin-bottom:20px;
 /* Hide mobile/desktop */
 @media only screen and (max-width: 600px) {.no-show-mobile {display:none;}}
 @media only screen and (min-width: 600px) {.no-show-desktop {display:none;}}
-
-/* Newsletter signup heading */
-.wp-block-uagb-advanced-heading h3.uagb-heading-text {font-size:22px}
 
 /* Sponsor top banner ad */
 .ad-horizontal .container {background-color:#f7f7f7; border-bottom:1px solid #ddd;padding:15px 0;}
@@ -584,7 +578,7 @@ p.photo_credit a:hover {color:#cc0000;text-decoration:underline;}
 .photo_credit a {color:#999; text-decoration:underline;}
 .photo_credit a:hover {color:#cc0000;text-decoration:underline;}
 
-/* New deals */
+/* Deals */
 .deal-container {background-color: #f0f0f0;border: 2px solid #eeeeee;}
 .deal-info {line-height:15px;}
 img.deal-logo {width: 45px; float: left; padding-right: 10px;}
@@ -596,6 +590,7 @@ img.deal-logo {width: 45px; float: left; padding-right: 10px;}
 .deal-label {font-size:12px;color:#444;padding-bottom:10px;text-transform:uppercase;}
 .deal-label em {font-style:normal;color:#c0c0c0;font-size:11px;}
 
+/* Deals Wide and Inline */
 .deal-wide .deal-container {overflow:auto;}
 .deal-wide img.deal-image {width:22%;float:left;padding:10px 15px 10px 10px;margin:0;}
 .deal-wide .deal-info {margin-top:20px;line-height:18px;text-align:left;}
@@ -609,19 +604,18 @@ img.deal-logo {width: 45px; float: left; padding-right: 10px;}
 @media only screen and (max-width: 600px) {.deal-wide .deal-name {font-size:14px;}}
 @media only screen and (max-width: 600px) {.deal-wide .deal-text {margin-top:0;font-size:14px;line-height:18px;}}
 
+/* Deals 300 */
 .deal-300 {margin:0 auto; max-width:400px;}
 .deal-300 img.deal-image {margin-bottom:10px;width: 100%;}
 .deal-300 .deal-info {margin:5px 10px 12px 12px;}
 .deal-300 .deal-label {display:none;}
 
-.deal-inline .deal-container {border:none;padding-right:10px;margin:0 0 25px 0;overflow:auto;display: flex;
-justify-content: center; /* align horizontal */
-align-items: center; /* align vertical */}
-.deal-inline .deal-info {display:none;}
-.deal-inline img.deal-image {max-width: 20%; margin:0px 10px 10px 10px;padding-top: 10px;}
-@media only screen and (max-width: 600px) {.deal-inline img.deal-image {max-width: 35%;padding:10px 0 0 10px;margin:0;}}
-@media only screen and (max-width: 600px) {.deal-inline .deal-label {margin-top:12px;line-height:14px;}}
-@media only screen and (max-width: 600px) {.deal-inline .deal-label em {display:none;}}
+/* Deals list page */
+.deals-list img.deal-logo {width: 55px;}
+.deals-list .deal-info {line-height:18px;margin-bottom:15px;}
+.deals-list .deal-name {font-size:16px;}
+.deals-list .deal-tagline {font-size:12px;}
+.deals-list .deal-text {font-size:16px;}
 
 /* Sponsor squares */
 .sponsor-squares {margin-bottom:20px;}
@@ -752,7 +746,16 @@ article.post-260277 h1.entry-title {font-size:40px;font-weight:bold;color:#444;m
 .event-price {border-left:1px solid #bbb;color:#666;font-size:30px;font-weight:normal;padding:12px 0 0 15px;}
 .event-website {width:30%;border:1px solid #f0f0f0;border-radius:5px;background-color:#f0f0f0;margin-bottom:10px;padding:5px;text-align:center;text-transform:uppercase;font-size:13px;font-weight:bold;}
 .event-website a {text-decoration:none;color:#777;}
-.event-website a:hover {text-decoration:underline;color:#cc0000;}		</style>
+.event-website a:hover {text-decoration:underline;color:#cc0000;}
+
+/* Query Loop pagination */
+.gb-query-loop-pagination a.gb-button {background-color:#144263;color:#fff;}
+.gb-query-loop-pagination a:visited.gb-button {background-color:#144263;color:#fff;}
+.gb-query-loop-pagination a:hover.gb-button {background-color:#cc0000;color:#fff;}
+.gb-query-loop-pagination a.gb-button__current {background-color:#a1cff0;}
+
+/* Space above the two large sidebars below the content on single posts */
+.ad-block {margin-top:30px;}		</style>
 			<script type="text/javascript">
 		jQuery(document).ready(function($) {
 			$( ".Monday" ).first().css("display", "block");
@@ -781,7 +784,7 @@ article.post-260277 h1.entry-title {font-size:40px;font-weight:bold;color:#444;m
 		<div class="row">
 			<div class="col-lg-3 d-none d-lg-block">
 				<div class="header-date">
-					Wednesday, Dec 14, 2022				</div>
+					Saturday, Jan 07, 2023				</div>
 
 				<div class="header-search">
 					<form method="get" class="search-form" role="search" action="https://www.fayettevilleflyer.com/">
@@ -803,10 +806,10 @@ article.post-260277 h1.entry-title {font-size:40px;font-weight:bold;color:#444;m
 				<div class="header-topnav">
 					
 
-					<div class="menu-topbar-container"><ul id="topnav-menu" class=""><li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-57061" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-57061 nav-item"><a title="Sponsors" href="http://www.fayettevilleflyer.com/sponsors/" class="nav-link">Sponsors</a></li>
-<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-36178" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-36178 nav-item"><a title="Advertise" href="http://www.fayettevilleflyer.com/advertising" class="nav-link">Advertise</a></li>
-<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-260596" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-260596 nav-item"><a title="Newsletter" href="https://www.fayettevilleflyer.com/newsletter/" class="nav-link">Newsletter</a></li>
-<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-36253" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-36253 nav-item"><a title="Contact" href="https://www.fayettevilleflyer.com/contact/" class="nav-link">Contact</a></li>
+					<div class="menu-topbar-container"><ul id="topnav-menu" class=""><li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-260596" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-260596 nav-item"><a title="Newsletter" href="https://www.fayettevilleflyer.com/newsletter/" class="nav-link">Newsletter</a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-36178" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-36178 nav-item"><a title="Contact" href="http://www.fayettevilleflyer.com/contact" class="nav-link">Contact</a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-57061" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-57061 nav-item"><a title="Sponsors" href="http://www.fayettevilleflyer.com/sponsors/" class="nav-link">Sponsors</a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-266472" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-266472 nav-item"><a title="Advertise" href="https://www.fayettevilleflyer.com/advertising/" class="nav-link">Advertise</a></li>
 </ul></div>
 				</div>
 
@@ -884,6 +887,7 @@ article.post-260277 h1.entry-title {font-size:40px;font-weight:bold;color:#444;m
 	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-175266" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-175266 nav-item"><a title="Music Reviews" href="https://www.fayettevilleflyer.com/category/columns-features/music-reviews/" class="dropdown-item">Music Reviews</a></li>
 	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-175265" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-175265 nav-item"><a title="Theatre Reviews" href="https://www.fayettevilleflyer.com/category/columns-features/theatre-reviews/" class="dropdown-item">Theatre Reviews</a></li>
 	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-161407" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-161407 nav-item"><a title="Movie Reviews" href="https://www.fayettevilleflyer.com/category/columns-features/movie-reviews/" class="dropdown-item">Movie Reviews</a></li>
+	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-267682" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-267682 nav-item"><a title="Flyer Guides" href="https://www.fayettevilleflyer.com/category/columns-features/flyer-guides/" class="dropdown-item">Flyer Guides</a></li>
 	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-193449" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-193449 nav-item"><a title="Trail Tours" href="https://www.fayettevilleflyer.com/category/columns-features/trail-tours/" class="dropdown-item">Trail Tours</a></li>
 	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-94317" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-94317 nav-item"><a title="Giveaways" href="https://www.fayettevilleflyer.com/category/columns-features/giveaways/" class="dropdown-item">Giveaways</a></li>
 	<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-191503" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-191503 nav-item"><a title="Recipes" href="https://www.fayettevilleflyer.com/category/columns-features/flyer-foodie/" class="dropdown-item">Recipes</a></li>
@@ -906,10 +910,10 @@ article.post-260277 h1.entry-title {font-size:40px;font-weight:bold;color:#444;m
 				<hr>
 
 				<div class="mobile-menu-only d-xs-block d-sm-block d-md-none d-lg-none d-xl-none">
-					<div class="menu-topbar-container"><ul id="mobile-topnav-menu" class="navbar-nav"><li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-57061 nav-item"><a title="Sponsors" href="http://www.fayettevilleflyer.com/sponsors/" class="nav-link">Sponsors</a></li>
-<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-36178 nav-item"><a title="Advertise" href="http://www.fayettevilleflyer.com/advertising" class="nav-link">Advertise</a></li>
-<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-260596 nav-item"><a title="Newsletter" href="https://www.fayettevilleflyer.com/newsletter/" class="nav-link">Newsletter</a></li>
-<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-36253 nav-item"><a title="Contact" href="https://www.fayettevilleflyer.com/contact/" class="nav-link">Contact</a></li>
+					<div class="menu-topbar-container"><ul id="mobile-topnav-menu" class="navbar-nav"><li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-260596 nav-item"><a title="Newsletter" href="https://www.fayettevilleflyer.com/newsletter/" class="nav-link">Newsletter</a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-36178 nav-item"><a title="Contact" href="http://www.fayettevilleflyer.com/contact" class="nav-link">Contact</a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-57061 nav-item"><a title="Sponsors" href="http://www.fayettevilleflyer.com/sponsors/" class="nav-link">Sponsors</a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-266472 nav-item"><a title="Advertise" href="https://www.fayettevilleflyer.com/advertising/" class="nav-link">Advertise</a></li>
 </ul></div>				</div>
 
 				<hr>
@@ -926,6 +930,7 @@ article.post-260277 h1.entry-title {font-size:40px;font-weight:bold;color:#444;m
 							<a href=""><i class="fa-brands fa-instagram fa-lg"></i></a>
 						</li>
 					</ul>
+				
 				</div>
 
 				<hr>
@@ -940,8 +945,10 @@ article.post-260277 h1.entry-title {font-size:40px;font-weight:bold;color:#444;m
 	</div><!-- .container(-fluid) -->
 
 </nav><!-- .site-navigation -->
+
 <div class="ad-horizontal">
 	<div class="container page-border">
+		
 		<!-- Revive Adserver Javascript Tag - Generated with Revive Adserver v5.4.1 -->
 		<script type='text/javascript'><!--//<![CDATA[
 		   var m3_u = (location.protocol=='https:'?'https://newmedia.fayettevilleflyer.com/www/delivery/ajs.php':'http://newmedia.fayettevilleflyer.com/www/delivery/ajs.php');
@@ -1004,13 +1011,11 @@ article.post-260277 h1.entry-title {font-size:40px;font-weight:bold;color:#444;m
 		<p><span class="ap">By MICHAEL TARM, KATHLEEN FOODY and STEPHEN GROVES Associated Press</span></p>
 <div class="image_main"><img src="https://www.fayettevilleflyer.com/wp-content/uploads/2022/07/ap-july4th-shooting-2.jpg" class="image-main"><span class="photo_caption">A police officer reacts as he walks in downtown Highland Park, a suburb of Chicago, Monday, July 4, 2022, where a mass shooting took place at a Highland Park Fourth of July parade. (AP Photo/Nam Y. Huh)</span></div>
 <p>HIGHLAND PARK, Ill. (AP) — The man charged with killing seven people at an Independence Day parade confessed to police that he unleashed a hail of bullets from a rooftop in suburban Chicago and then fled to the Madison, Wisconsin, area, where he contemplated shooting up an event there, authorities said Wednesday.</p>
-<p>Robert Crimo III turned back to Illinois, where he was later arrested after deciding he was not prepared to pull off a shooting in Wisconsin, Lake County Major Crime Task Force spokesman Christopher Covelli said.</p><div class='code-block code-block-6' style='margin: 8px 0; clear: both;'>
-<div style="margin:10px 35px;"></div></div>
-
+<p>Robert Crimo III turned back to Illinois, where he was later arrested after deciding he was not prepared to pull off a shooting in Wisconsin, Lake County Major Crime Task Force spokesman Christopher Covelli said.</p>
 <p>An Illinois judge ordered Crimo to be held without bail. Police found the shells of 83 bullets and three ammunition magazines on the rooftop that he fired from, Lake County Assistant State&#8217;s Attorney Ben Dillon said in court.</p>
 <hr />
-<p><em>This is a breaking news update. AP&#8217;s earlier story is below.</em></p><div class='code-block code-block-1' style='margin: 8px auto; text-align: center; display: block; clear: both;'>
-<div class="deal-wide" style="margin:30px 0;"><!-- Revive Adserver Javascript Tag - Generated with Revive Adserver v5.4.1 -->
+<p><em>This is a breaking news update. AP&#8217;s earlier story is below.</em></p><div class='code-block code-block-5' style='margin: 8px 0; clear: both;'>
+<div class="deal-300" style="margin:20px 5px;"><!-- Revive Adserver Javascript Tag - Generated with Revive Adserver v5.4.1 -->
 <script type="text/javascript"><!--//<![CDATA[
    var m3_u = (location.protocol=='https:'?'https://newmedia.fayettevilleflyer.com/www/delivery/ajs.php':'http://newmedia.fayettevilleflyer.com/www/delivery/ajs.php');
    var m3_r = Math.floor(Math.random()*99999999999);
@@ -1037,10 +1042,8 @@ article.post-260277 h1.entry-title {font-size:40px;font-weight:bold;color:#444;m
 <p>Police in April 2019 also responded to a reported suicide attempt by the suspect, Covelli said.</p>
 <p>Crimo legally purchased the rifle used in the attack in Illinois within the past year, Covelli said. In all, police said, he purchased five firearms, which were recovered by officers at his father’s home.</p>
 <p>The revelation about his gun purchases is just the latest example of young men who were able to obtain guns and carry out massacres in recent months despite glaring warning signs about their mental health and inclination to violence.</p>
-<p>Illinois state police, who issue gun owners’ licenses, said Crimo applied for a license in December 2019, when he was 19. His father sponsored his application.</p>
-<p>At the time “there was insufficient basis to establish a clear and present danger” and deny the application, state police said in a statement.</p>
-<p>Investigators who have interrogated the suspect and reviewed his social media posts have not determined a motive or found any indication that he targeted victims by race, religion or other protected status, Covelli said.</p><div class='code-block code-block-2' style='margin: 8px auto; text-align: center; display: block; clear: both;'>
-<div class="deal-wide" style="margin:30px 0;"><!-- Revive Adserver Javascript Tag - Generated with Revive Adserver v5.4.1 -->
+<p>Illinois state police, who issue gun owners’ licenses, said Crimo applied for a license in December 2019, when he was 19. His father sponsored his application.</p><div class='code-block code-block-6' style='margin: 8px 0; clear: both;'>
+<div class="deal-300" style="margin:20px 5px;"><!-- Revive Adserver Javascript Tag - Generated with Revive Adserver v5.4.1 -->
 <script type="text/javascript"><!--//<![CDATA[
    var m3_u = (location.protocol=='https:'?'https://newmedia.fayettevilleflyer.com/www/delivery/ajs.php':'http://newmedia.fayettevilleflyer.com/www/delivery/ajs.php');
    var m3_r = Math.floor(Math.random()*99999999999);
@@ -1057,6 +1060,8 @@ article.post-260277 h1.entry-title {font-size:40px;font-weight:bold;color:#444;m
 //]]&gt;--></script>
 </div></div>
 
+<p>At the time “there was insufficient basis to establish a clear and present danger” and deny the application, state police said in a statement.</p>
+<p>Investigators who have interrogated the suspect and reviewed his social media posts have not determined a motive or found any indication that he targeted victims by race, religion or other protected status, Covelli said.</p>
 <p>At the July 4 parade, the shots were initially mistaken for fireworks before hundreds of revelers fled in terror. A day later, baby strollers, lawn chairs and other items left behind by panicked parade goers remained inside a wide police perimeter. Outside the police tape, some residents drove up to collect blankets and chairs they abandoned.</p>
 <p>David Shapiro, 47, said the gunfire quickly turned the parade into “chaos.”</p>
 <p>“People didn’t know right away where the gunfire was coming from, whether the gunman was in front or behind you chasing you,” he said Tuesday as he retrieved a stroller and lawn chairs.</p>
@@ -1066,8 +1071,8 @@ article.post-260277 h1.entry-title {font-size:40px;font-weight:bold;color:#444;m
 <p>The shooting was just the latest to shatter the rituals of American life. Schools, churches, grocery stores and now community parades have all become killing grounds in recent months. This time, the bloodshed came as the nation tried to celebrate its founding and the bonds that still hold it together.</p>
 <p>The gunman initially evaded capture by dressing as a woman and blending into the fleeing crowd, Covelli said.</p>
 <p>A police officer pulled over 21-year-old Crimo north of the shooting scene several hours after police released his photo and warned that he was likely armed and dangerous, Highland Park Police Chief Lou Jogmen said.</p>
-<p>Asked about his client’s emotional state, prominent Chicago-based lawyer Thomas A. Durkin said he has spoken to Crimo only once — for 10 minutes by phone. He declined to comment further.</p><div class='code-block code-block-3' style='margin: 8px auto; text-align: center; display: block; clear: both;'>
-<div class="deal-wide" style="margin:30px 0;"><!-- Revive Adserver Javascript Tag - Generated with Revive Adserver v5.4.1 -->
+<p>Asked about his client’s emotional state, prominent Chicago-based lawyer Thomas A. Durkin said he has spoken to Crimo only once — for 10 minutes by phone. He declined to comment further.</p><div class='code-block code-block-7' style='margin: 8px 0; clear: both;'>
+<div class="deal-300" style="margin:20px 5px;"><!-- Revive Adserver Javascript Tag - Generated with Revive Adserver v5.4.1 -->
 <script type="text/javascript"><!--//<![CDATA[
    var m3_u = (location.protocol=='https:'?'https://newmedia.fayettevilleflyer.com/www/delivery/ajs.php':'http://newmedia.fayettevilleflyer.com/www/delivery/ajs.php');
    var m3_r = Math.floor(Math.random()*99999999999);
@@ -1100,14 +1105,19 @@ article.post-260277 h1.entry-title {font-size:40px;font-weight:bold;color:#444;m
 
 	<footer class="entry-footer">
 
+		
+		
 		<div class="wp-block-kadence-rowlayout alignnone newsletter-promo">
+			
+			<div class="tagged" style="margin-bottom:20px;padding:0;"></div>
+			
 			<div id="kt-layout-id_a6b42a-96" class="kt-row-layout-inner kt-row-has-bg kt-layout-id_a6b42a-96 has-blue-background-color">
 				<div class="kt-row-column-wrap kt-has-1-columns kt-gutter-default kt-v-gutter-default kt-row-valign-top kt-row-layout-equal kt-tab-layout-inherit kt-m-colapse-left-to-right kt-mobile-layout-row">
 					<div class="wp-block-kadence-column inner-column-1 kadence-column_f9396b-48">
 						<div class="kt-inside-inner-col">
 							<div class="wp-block-uagb-advanced-heading uagb-block-cab0f32a h-inline">
 								<h3 class="uagb-heading-text">
-									Flyer Newsletter
+									Flyer Wire Newsletter
 								</h3>
 								<p class="uagb-desc-text">
 									The latest from the Flyer, straight to your inbox.
@@ -1119,7 +1129,7 @@ article.post-260277 h1.entry-title {font-size:40px;font-weight:bold;color:#444;m
                 <div class='gf_browser_chrome gform_wrapper gravity-theme' id='gform_wrapper_7' ><form method='post' enctype='multipart/form-data'  id='gform_7'  action='/2022/07/06/police-parade-shooting-suspect-contemplated-2nd-shooting/' >
                         <div class='gform_body gform-body'><div id='gform_fields_7' class='gform_fields top_label form_sublabel_below description_below'><div id="field_7_1"  class="gfield gfield--width-half field_sublabel_below field_description_below hidden_label gfield_visibility_visible"  data-js-reload="field_7_1"><label class='gfield_label' for='input_7_1' >Email</label><div class='ginput_container ginput_container_email'>
                             <input name='input_1' id='input_7_1' type='text' value='' class='large'     aria-invalid="false"  />
-                        </div></div><div id="field_submit"  class="gfield gfield--width-half field_sublabel_below field_description_below gfield_visibility_visible"  data-field-class="gform_editor_submit_container" data-field-position="inline" data-js-reload="true"><input type='submit' id='gform_submit_button_7' class='gform-button gform-button--white  button' value='Sign up'  onclick='if(window["gf_submitting_7"]){return false;}  window["gf_submitting_7"]=true;  ' onkeypress='if( event.keyCode == 13 ){ if(window["gf_submitting_7"]){return false;} window["gf_submitting_7"]=true;  jQuery("#gform_7").trigger("submit",[true]); }' /></div></div></div>
+                        </div></div><div id="field_submit"  class="gfield gfield--width-half field_sublabel_below field_description_below gfield_visibility_visible"  data-field-class="gform_editor_submit_container" data-field-position="inline" data-js-reload="true"><input type='submit' id='gform_submit_button_7' class='gform-button gform-button--white  button' value='Subscribe'  onclick='if(window["gf_submitting_7"]){return false;}  window["gf_submitting_7"]=true;  ' onkeypress='if( event.keyCode == 13 ){ if(window["gf_submitting_7"]){return false;} window["gf_submitting_7"]=true;  jQuery("#gform_7").trigger("submit",[true]); }' /></div></div></div>
         <div class='gform_footer top_label'>  
             <input type='hidden' class='gform_hidden' name='is_submit_7' value='1' />
             <input type='hidden' class='gform_hidden' name='gform_submit' value='7' />
@@ -1139,6 +1149,7 @@ article.post-260277 h1.entry-title {font-size:40px;font-weight:bold;color:#444;m
 		</div>
 		
 		
+
 	</footer><!-- .entry-footer -->
 
 </article><!-- #post-## -->
@@ -1293,7 +1304,7 @@ article.post-260277 h1.entry-title {font-size:40px;font-weight:bold;color:#444;m
 </div>
 </div></aside><aside id="block-16" class="widget widget_block"><div class="gb-container gb-container-ffb1cec5"><div class="gb-inside-container">
 
-<div class="wp-block-uagb-advanced-heading uagb-block-66d865fd"><h5 class="uagb-heading-text">OUR SPONSORS</h5></div>
+<div class="wp-block-uagb-advanced-heading uagb-block-1599192e"><h5 class="uagb-heading-text">OUR SPONSORS</h5></div>
 
 
 
@@ -1410,7 +1421,7 @@ article.post-260277 h1.entry-title {font-size:40px;font-weight:bold;color:#444;m
 
 			<div class="row">
 
-				<div id="text-36" class="footer-widget widget_text widget-count-3 col-md-4"><h3 class="widget-title">Flyer Sponsors</h3>			<div class="textwidget"><div class="sponsor-grid"><a href="https://www.fayettevilleflyer.com/sponsors"><img src="https://www.fayettevilleflyer.com/wp-content/uploads/2022/12/sponsor-grid-121322.jpg" alt="sponsor-logos"></a><br />&raquo; <a href="https://www.fayettevilleflyer.com/sponsors/">See all sponsors</a></div></div>
+				<div id="text-36" class="footer-widget widget_text widget-count-3 col-md-4"><h3 class="widget-title">Flyer Sponsors</h3>			<div class="textwidget"><div class="sponsor-grid"><a href="https://www.fayettevilleflyer.com/sponsors"><img src="https://www.fayettevilleflyer.com/wp-content/uploads/2023/01/sponsor-grid-010623.jpg" alt="sponsor-logos"></a><br />&raquo; <a href="https://www.fayettevilleflyer.com/sponsors/">See all sponsors</a></div></div>
 		</div><!-- .footer-widget --><div id="text-94" class="footer-widget widget_text widget-count-3 col-md-4"><h3 class="widget-title">Flyer Tweets</h3>			<div class="textwidget"><a class="twitter-timeline" data-height="350" data-theme="dark" data-link-color="#F5F8FA" href="https://twitter.com/fayflyer/lists/flyer-sponsors?ref_src=twsrc%5Etfw">A Twitter List by fayflyer</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></div>
 		</div><!-- .footer-widget --><div id="text-96" class="footer-widget widget_text widget-count-3 col-md-4"><h3 class="widget-title">Advertise</h3>			<div class="textwidget"><p>Local businesses are so important to our community.</p>
 
@@ -1432,11 +1443,12 @@ article.post-260277 h1.entry-title {font-size:40px;font-weight:bold;color:#444;m
 	<div class="container bg-grey">
 		<div class="row">
 			<div class="col-12">
-				<div class="menu-footer-container"><ul id="footer-menu" class="footer-nav"><li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-94053" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-94053 nav-item"><a title="About" href="https://www.fayettevilleflyer.com/about/" class="nav-link">About</a></li>
+				<div class="menu-footer-container"><ul id="footer-menu" class="footer-nav"><li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-266474" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-266474 nav-item"><a title="Newsletter" href="https://www.fayettevilleflyer.com/newsletter/" class="nav-link">Newsletter</a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-94055" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-94055 nav-item"><a title="Contact Us" href="https://www.fayettevilleflyer.com/contact/" class="nav-link">Contact Us</a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-94053" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-94053 nav-item"><a title="About Us" href="https://www.fayettevilleflyer.com/about/" class="nav-link">About Us</a></li>
 <li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-162174" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-162174 nav-item"><a title="Sponsors" href="https://www.fayettevilleflyer.com/sponsors/" class="nav-link">Sponsors</a></li>
-<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-162173" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-162173 nav-item"><a title="Advertise" href="https://www.fayettevilleflyer.com/advertising/" class="nav-link">Advertise</a></li>
-<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-94055" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-94055 nav-item"><a title="Contact" href="https://www.fayettevilleflyer.com/contact/" class="nav-link">Contact</a></li>
-<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-128060" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-128060 nav-item"><a title="Legal, Terms of Use and Privacy Policy" href="https://www.fayettevilleflyer.com/legal/" class="nav-link">Legal, Terms of Use and Privacy Policy</a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-266473" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-266473 nav-item"><a title="Advertise" href="https://www.fayettevilleflyer.com/advertising/" class="nav-link">Advertise</a></li>
+<li itemscope="itemscope" itemtype="https://www.schema.org/SiteNavigationElement" id="menu-item-128060" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-128060 nav-item"><a title="Legal &amp; Policies" href="https://www.fayettevilleflyer.com/legal/" class="nav-link">Legal &#038; Policies</a></li>
 </ul></div>			</div>
 		</div>
 	</div>
@@ -1456,8 +1468,8 @@ article.post-260277 h1.entry-title {font-size:40px;font-weight:bold;color:#444;m
 
 						<img src="https://www.fayettevilleflyer.com/wp-content/uploads/2022/10/flyer-logo-footer.png" width="180" class="footer-logo" />
 
-						<p>&copy; 2007-2022 Wonderstate Media, LLC. All rights reserved. Terms of Use & Privacy Policy</p>
-						<p>Material from the Associated Press is Copyright &copy; 2022, Associated Press and may not be published, broadcast, rewritten, or redistributed. See AP policy.</p>
+						<p>&copy; 2007-2023 Wonderstate Media, LLC. All rights reserved. Terms of Use & Privacy Policy</p>
+						<p>Material from the Associated Press is Copyright &copy; 2023, Associated Press and may not be published, broadcast, rewritten, or redistributed. See AP policy.</p>
 
 
 					</div><!-- .site-info -->
@@ -1704,11 +1716,7 @@ article.post-260277 h1.entry-title {font-size:40px;font-weight:bold;color:#444;m
 		}
 		/* End MonsterInsights Scroll Tracking */
 		
-</script><link rel='stylesheet' id='monsterinsights-popular-posts-style-css'  href='https://www.fayettevilleflyer.com/wp-content/plugins/google-analytics-premium/assets/css/frontend.min.css?ver=8.10.0' media='all' />
-<style id='monsterinsights-popular-posts-style-inline-css'>
-.monsterinsights-inline-popular-posts.monsterinsights-popular-posts-styled.monsterinsights-inline-popular-posts-beta .monsterinsights-inline-popular-posts-title {font-size:18px;}.monsterinsights-inline-popular-posts.monsterinsights-popular-posts-styled.monsterinsights-inline-popular-posts-india .monsterinsights-inline-popular-posts-label {color:rgba(18, 90, 149, 1);}.monsterinsights-inline-popular-posts.monsterinsights-popular-posts-styled.monsterinsights-inline-popular-posts-india .monsterinsights-inline-popular-posts-border {border-color:rgba(18, 90, 149, 1);}.monsterinsights-inline-popular-posts.monsterinsights-popular-posts-styled.monsterinsights-inline-popular-posts-golf .monsterinsights-inline-popular-posts-label {color:rgba(99, 153, 215, 1);}.monsterinsights-inline-popular-posts.monsterinsights-popular-posts-styled.monsterinsights-inline-popular-posts-golf .monsterinsights-inline-popular-posts-border {border-color:rgba(99, 153, 215, 1);}.monsterinsights-inline-popular-posts.monsterinsights-popular-posts-styled.monsterinsights-inline-popular-posts-mike .monsterinsights-inline-popular-posts-label {background-color:rgba(123, 123, 123, 1);}.monsterinsights-inline-popular-posts.monsterinsights-popular-posts-styled.monsterinsights-inline-popular-posts-mike .monsterinsights-inline-popular-posts-title {font-size:17px;}
-</style>
-<link rel='stylesheet' id='gform_basic-css'  href='https://www.fayettevilleflyer.com/wp-content/plugins/gravityforms/assets/css/dist/basic.min.css?ver=2.6.7' media='all' />
+</script><link rel='stylesheet' id='gform_basic-css'  href='https://www.fayettevilleflyer.com/wp-content/plugins/gravityforms/assets/css/dist/basic.min.css?ver=2.6.7' media='all' />
 <link rel='stylesheet' id='gform_theme_components-css'  href='https://www.fayettevilleflyer.com/wp-content/plugins/gravityforms/assets/css/dist/theme-components.min.css?ver=2.6.7' media='all' />
 <link rel='stylesheet' id='gform_theme_ie11-css'  href='https://www.fayettevilleflyer.com/wp-content/plugins/gravityforms/assets/css/dist/theme-ie11.min.css?ver=2.6.7' media='all' />
 <link rel='stylesheet' id='gform_theme-css'  href='https://www.fayettevilleflyer.com/wp-content/plugins/gravityforms/assets/css/dist/theme.min.css?ver=2.6.7' media='all' />

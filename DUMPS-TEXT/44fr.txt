@@ -26,8 +26,8 @@ Print Options:
    Link has been copied to clipboard
    [ ]
 
-     * [X] A La Une
-       Coupe du monde Afrique États-Unis Monde
+     * [X] À La Une
+       Afrique États-Unis Monde
      * [X] TV
        Le Monde Aujourd'hui VOA60 Afrique Washington Forum Correspondant
        VOA Reportages Vous + Nous Carnet de Santé

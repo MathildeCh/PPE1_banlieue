@@ -2,8 +2,8 @@
    alternate alternate
 
    REFRESH(25 sec):
-   file://localhost/mnt/c/Users/Lilas/Desktop/M1_TAL/Projet_encadre/PPE1/P
-   PE1_banlieue/ASPIRATIONS/gr.txt30.html
+   file://localhost/home/mathilde/Documents/Master_NLP/COURS/S1/P3_PE/Repo
+   Commun/PPE1_banlieue/ASPIRATIONS/gr.txt30.html
    [tr?id=434552387766472&ev=PageView&noscript=1]
 
      * ΠΟΛΙΤΙΚΗ
@@ -346,6 +346,8 @@
 
 ΣΧΕΤΙΚΑ ΑΡΘΡΑΠΕΡΙΣΣΟΤΕΡΑ ΑΠΟ ΤΟΝ ΔΗΜΙΟΥΡΓΟ
 
+Τα καϊλοσπυράκια της Ευρώπης – Γράφει ο Θάνος Τζήμερος
+
 Νομοθετώντας υπέρ της Κολοβού – Γράφει ο Θάνος Τζήμερος
 
 Άβαφη ρίζα, με διαταγή Άδωνι! Γράφει ο Θάνος Τζήμερος
@@ -368,8 +370,6 @@
 
 Αγαπητέ ανεμβολίαστε… Γράφει ο Θάνος Τζήμερος
 
-Να πώς ξοδεύονται, φορολογούμενε, τα λεφτά σου! Γράφει ο Θάνος Τζήμερος
-
    ____________________ Αναζήτηση
 
      * ΡΟΗ ΕΙΔΗΣΕΩΝ
@@ -382,6 +382,6 @@
    Επικοινωνία: info@thepresident.gr
 
    ΑΚΟΛΟΥΘΗΣΤΕ ΜΑΣ
-   © 2018 - 2022 Πνευματικά δικαιώματα: "ABP IKE"
+   © 2018 - 2023 Πνευματικά δικαιώματα: "ABP IKE"
 
    Quantcast

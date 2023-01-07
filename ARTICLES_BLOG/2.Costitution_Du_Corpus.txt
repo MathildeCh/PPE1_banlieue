@@ -1,0 +1,11 @@
+10/10/2022 – Costitution du corpus
+
+
+Une fois notre mot et ses traductions choisis, nous avons commencé à rechercher sur Google des articles de presse qui contiennent nos mots-clès:  banlieue, periferia, suburb et προάστιο. Nous nous sommes tout de suite aperçu qu’une mise en contexte du mot était nécessaire afin de constituer une coprus cohérent. Effectivement, une recherche qu’avec nos mots clès produisait des résultats assez différents où les “banlieues” étaient traitées sous plusieurs points de vue : sociologique, économique, urbanistique, politique… À cette étape, nous avons décidé de toujours placer “police” à coté de nos mots-clès dans le but de restraindre le terrain de recherche et obtenir 50 URLS d’article de presse pour chacune des langues avec lequelles on travaille. 
+
+Donc les mots clés étaient "banlieue police" / "periferia polizia" / "suburb police" / "grec -> Lilas" sur Google News.
+
+
+Toutefois, la recherche de ces URLS a été plus compliquée qu’on aurait pu le croire. La plupart des articles contenait seulement une occurence de nos mots-clès et le plus souvent uniquement dans le titre de l’article. La longeur des articles aussi a représenté un facteur de difficulté car pas mal d’articles avaient une longueur comprise entre 3 et 5 lignes. Ce à ce moment là qu’on a décidé de retenir seulement les URLS des articles qui contenaient au moins 2 occurrences de nos mots-clès et qui faisaient au moins 5 lignes de texte. Cependant, pour certaines langues (italien, français par exemple) nous avons du prendre en considération en tant qu’occurrence aussi des mots synonymes de nos mots-clès comme, par exemple, “cité” dans le cas du français. 
+
+Le corpus est donc composé de 50 urls d'articles de presse par langue, sélectionnées sur la base des critères vus précédemment. 4 fichiers texte contenant les 50 urls ont été créés dans le dossier URLS du dépôt GIT (voir article 3).

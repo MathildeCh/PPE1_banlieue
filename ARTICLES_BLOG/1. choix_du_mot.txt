@@ -35,9 +35,9 @@ Contrairement au verbe “sentir”, le mot “dépaysement” nous procurait un
 
 Défintion du Robert =  “Changement agréable d'habitudes ou sentiment dérangeant, fait d’être troublé par un changement d’habitudes, de lieux, d’occupations, d’idées.”
 
-Traduction en italien du Larousse = “Spaesamento” (sentiment dérangeant, perte de repères, désorientation).
+Traduction en italien du Larousse : “Spaesamento” (sentiment dérangeant, perte de repères, désorientation).
 
-Traduction en anglais de wordreference = “change of scenery (positive), desorientation (negative), culture shock (negative)”.
+Traduction en anglais de wordreference : “change of scenery (positive), desorientation (negative), culture shock (negative)”.
 
 Nous voyons que la traduction italienne du mot “dépaysement” ne parvient pas à prendre en compte toutes les connotations sémantiques présentes en français : l’italien souligne seulement l’aspect négatif du mot. En anglais, la sémantique de “dépaysement” est récupérée par plusieurs signifiants, ce qui nous oblige à en choisir un seul et ainsi appauvrir également les acceptions du mot traduit.
 
@@ -71,7 +71,7 @@ Ce mot nous paraît particulièrement intéressant car malgré une définition a
 
 Problématique linguistique
 
-Co-occurrence du nom “banlieue” dans le discours de presse français, italien et anglais ?
+Co-occurrence du nom “banlieue” dans le discours de presse français, italien, anglais et grec ?
 
 l'utilisation linguisitique du mot "banlieue" reflète-t-il l'organisation urbaine des pays ?
 

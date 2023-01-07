@@ -11,7 +11,7 @@ Pour chaque urls traité par la boucle “while”, nous avons executé une comm
 ############### IMAGE 1 – 1.integrationCodesHTTPTableaux ##########################
 
 
-Après la déclaration de la variable “codeHTTP” nous avons lui attribué le resultat de plusieurs opérations effectué sur les apsirations de “curl”. Pour que “curl” nous renvoie seulement le codeHTTP de l’url traité, nous avons operé le choix de plusieurs options disponibles: 
+Après la déclaration de la variable “codeHTTP” nous lui avons attribué le resultat de plusieurs opérations effectuées sur les aspirations de “curl”. Pour que “curl” nous renvoie seulement le codeHTTP de l’url traité, nous avons operé le choix de plusieurs options disponibles: 
 
     • -b, --cookie = pour accepter les cookies eventuels
     • -A = specification de l’user agent

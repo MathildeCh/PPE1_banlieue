@@ -6,7 +6,7 @@
      * aller au direct radio
 
    (BUTTON) Menu principal
-   Accueil Franceinfo
+   Accueil France Info
      * vidéos
      * radio
      * jt
@@ -27,7 +27,6 @@
      * magazines
 
    Accueil
-     * qatar (BUTTON) Sous-menu qatar
      * politique (BUTTON) Sous-menu politique
      * vrai ou fake
      * société (BUTTON) Sous-menu société
@@ -252,29 +251,32 @@ fois"
        Vidéo
        "Bamboula, ça reste encore à peu près convenable", lâche un
        syndicaliste policier sur France 5
-     * Franceinfo vous explique les notions d'euthanasie, de suicide
-       assisté ou encore de soins palliatifs pour mieux saisir les enjeux
-       du débat autour de la fin de vie. (ELLEN LOZON / FRANCEINFO)
-       Franceinfo vous explique les notions d'euthanasie, de suicide
-       assisté ou encore de soins palliatifs pour mieux saisir les enjeux
-       du débat autour de la fin de vie. (ELLEN LOZON / FRANCEINFO)
-       Euthanasie, soins palliatifs, directives anticipées... Huit mots
-       pour mieux comprendre le débat sur la fin de vie
-     * La Belgique et l'Espagne ont récemment adopté des dispositifs en
-       faveur d'une semaine de quatre jours. (PAULINE LE NOURS /
-       FRANCEINFO) La Belgique et l'Espagne ont récemment adopté des
-       dispositifs en faveur d'une semaine de quatre jours. (PAULINE LE
-       NOURS / FRANCEINFO)
-       Nouveau rapport au travail, bien-être en entreprise,
-       productivité... Pourquoi la semaine de quatre jours gagne du
-       terrain en Europe
-     * Un membre des forces de sécurité ukrainiennes discute avec un
-       visiteur de la laure des Grottes de Kiev, le 22 novembre 2022.
-       (SERGEI CHUZAVKOV / AFP) Un membre des forces de sécurité
-       ukrainiennes discute avec un visiteur de la laure des Grottes de
-       Kiev, le 22 novembre 2022. (SERGEI CHUZAVKOV / AFP)
-       Guerre en Ukraine : pourquoi les forces de sécurité multiplient les
-       perquisitions dans les communautés orthodoxes liées à Moscou
+     * Transidentité (photo d'illustration). (STEPHANIE BERLU / RADIO
+       FRANCE) Transidentité (photo d'illustration). (STEPHANIE BERLU /
+       RADIO FRANCE)
+       Témoignage
+       Transition de genre : "Ça me permet d'éliminer tout ce qui n'est
+       pas moi ", témoigne Liz née dans le mauvais corps
+     * Les jurés sont tirés au sort sur les listes électorales et doivent
+       avoir plus de 23 ans. Ils rendent le verdict aux côtés de trois
+       magistrats professionnels (un président et deux assesseurs).
+       (PAULINE LE NOURS / FRANCEINFO) Les jurés sont tirés au sort sur
+       les listes électorales et doivent avoir plus de 23 ans. Ils rendent
+       le verdict aux côtés de trois magistrats professionnels (un
+       président et deux assesseurs). (PAULINE LE NOURS / FRANCEINFO)
+       "Plus jamais je ne me permettrai de juger sans avoir tous les
+       éléments" : à l'occasion de la généralisation des cours
+       criminelles, des jurés d'assises racontent leur expérience
+     * Crise de l'énergie, inflation, réforme des retraites, projet de loi
+       sur l'immigration... L'exécutif ne manque pas de dossiers chauds en
+       ce début d'année 2023. (ANTOINE GYORI / UTAMARU KIDO / GETTY IMAGES
+       / ELLEN LOZON / FRANCEINFO) Crise de l'énergie, inflation, réforme
+       des retraites, projet de loi sur l'immigration... L'exécutif ne
+       manque pas de dossiers chauds en ce début d'année 2023. (ANTOINE
+       GYORI / UTAMARU KIDO / GETTY IMAGES / ELLEN LOZON / FRANCEINFO)
+       Inflation, système de santé, réforme des retraites... Sur fond de
+       "climat très morose", les dossiers brûlants qui attendent le
+       gouvernement en 2023
 
    les sujets associés
      * Police
@@ -321,22 +323,23 @@ fois"
      * Notre compte Youtube (nouvelle fenêtre)
 
    Suivez l'actualité en direct :
-
      * le live
      * direct tv
      * direct radio
 
    Soyez alerté(e) en temps réel avec l'application franceinfo :
-   App store
-   Play store
+     * Télécharger dans l'App Store Télécharger dans l'App Store
+     * Disponible sur Google Play Disponible sur Google Play
+
    Télécharger l'application
 
      * Politique de confidentialité
      * CGU et mentions légales
      * Gérer mes traceurs
+     * Index
 
      * Nous contacter
-     * Qui sommes-nous?
+     * Qui sommes-nous
      * Charte déontologique
      * Devenir annonceur
      * Recrutement

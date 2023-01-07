@@ -1,637 +1,767 @@
 
-    <html>
+    <!DOCTYPE html>
+    <html lang="fr">
         <head>
-            <meta charset=UTF-8 />
-            <title>TABLEAU URLS</title>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Tableaux</title>
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+            <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
+            <link href="../assets/CSS/blog.css" rel="stylesheet">
         </head>
         <body>
-            <table border=solid width=100%>
-                <tr>
-                    <th>ligne</th>
-                    <th>code HTTP</th>
-                    <th>titre</th>
-                    <th>URLS fr.txt</th>
-                    <th>Encodage</th>
-                    <th>dump html</th>
-                    <th>dump text</th>
-                    <th>n_occurrence_mot</th>
-                    <th>contexte</th>
-                </tr>
+            <div class="container mb-4">
+                <header class="blog-header lh-1 py-3">
+                    <div class="row flex-nowrap justify-content-between align-items-center">
+                    <div class="col-6 text-center">
+                        <a class="blog-header-logo text-dark" href="./index.html">BANLIEUE</a>
+                    </div>
+                    <div>
+                        <img width="8%" src="../assets/img/banlieue_logo2.png" alt="">
+                    </div>
+                    </div>
+                </header>
 
-        <tr>
-            <td>1</td>
-            <td>200</td>
-            <td>Liens Socio : La police et les jeunes des banlieues</td>
-            <td><a href=http://www.liens-socio.org/article.php3?id_article=1122%20>http://www.liens-socio.org/article.php3?id_article=1122%20</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/fr.txt1.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/1fr.txt>text</a></td>
-            <td>8</td>
-            <td><a href=../CONTEXTES/1fr.txt>contexte</a></td>
-        </tr>
+                <div class="d-flex justify-content-between align-items-stretch">
+                    <nav class="nav navbar navbar-expand-lg">
+                        <div class="container-fluid py-1 mb-12">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <strong><a class="nav-link" aria-current="page" href="../index.html">ACCUEIL</a></strong>
+                                </li>
+                                <li class="nav-item">
+                                    <strong><a class="nav-link"href="../etapes.html">ÉTAPES DU PROJET</a></strong>
+                                </li>
+                                <li class="nav-item">
+                                    <strong><a class="nav-link"  href="../TABLEAUX/index.html">TABLEAUX</a></strong>
+                                </li>
+                                <li class="nav-item">
+                                    <strong><a class="nav-link"  href="../scripts.html">SCRIPTS</a></strong>
+                                </li>
+                                <li class="nav-item">
+                                    <strong><a class="nav-link"  href="../resultats.html">ANALYSE DES RÉSULTATS</a></strong>
+                                </li>
+                                <li class="nav-item">
+                                    <strong><a class="nav-link"  href="../contact.html">CONTACT</a></strong>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
 
-        <tr>
-            <td>2</td>
-            <td>200</td>
-            <td>Dans les banlieues, des pratiques policières en accusation</td>
-            <td><a href=https://www.la-croix.com/France/Securite/Dans-banlieues-pratiques-policieres-accusation-2017-02-17-1200825433>https://www.la-croix.com/France/Securite/Dans-banlieues-pratiques-policieres-accusation-2017-02-17-1200825433</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/fr.txt2.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/2fr.txt>text</a></td>
-            <td>9</td>
-            <td><a href=../CONTEXTES/2fr.txt>contexte</a></td>
-        </tr>
+            <main class="container mt-3">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Ligne</th>
+                            <th>Code HTTP</th>
+                            <th>Titres</th>
+                            <th>URLS</th>
+                            <th>Encodage</th>
+                            <th>Dump html</th>
+                            <th>Dump text</th>
+                            <th>Nombre occurrences</th>
+                            <th>contexte</th>
+                            <th>Concordance</th>
+                        </tr>
+                    </thead>
+                    <tbody>
 
-        <tr>
-            <td>3</td>
-            <td>200</td>
-            <td>Banlieues: une police en roue libre | Le Club</td>
-            <td><a href=https://blogs.mediapart.fr/michelle-guerci/blog/200420/banlieues-une-police-en-roue-libre>https://blogs.mediapart.fr/michelle-guerci/blog/200420/banlieues-une-police-en-roue-libre</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/fr.txt3.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/3fr.txt>text</a></td>
-            <td>4</td>
-            <td><a href=../CONTEXTES/3fr.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>1</td>
+                <td>200</td>
+                <td>Liens Socio : La police et les jeunes des banlieues</td>
+                <td><a href=http://www.liens-socio.org/article.php3?id_article=1122%20>http://www.liens-socio.org/article.php3?id_article=1122%20</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/fr.txt1.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/1fr.txt>text</a></td>
+                <td>8</td>
+                <td><a href=../CONTEXTES/1fr.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_fr.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>4</td>
-            <td>200</td>
-            <td>La dÃ©gradation des relations entre les habitants des quartiers pauvres et la (...) - MÃ©tropolitiques</td>
-            <td><a href=https://metropolitiques.eu/La-degradation-des-relations-entre-les-habitants-des-quartiers-pauvres-et-la.html>https://metropolitiques.eu/La-degradation-des-relations-entre-les-habitants-des-quartiers-pauvres-et-la.html</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/fr.txt4.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/4fr.txt>text</a></td>
-            <td>6</td>
-            <td><a href=../CONTEXTES/4fr.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>2</td>
+                <td>200</td>
+                <td>Dans les banlieues, des pratiques policières en accusation</td>
+                <td><a href=https://www.la-croix.com/France/Securite/Dans-banlieues-pratiques-policieres-accusation-2017-02-17-1200825433>https://www.la-croix.com/France/Securite/Dans-banlieues-pratiques-policieres-accusation-2017-02-17-1200825433</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/fr.txt2.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/2fr.txt>text</a></td>
+                <td>9</td>
+                <td><a href=../CONTEXTES/2fr.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_fr.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>5</td>
-            <td>200</td>
-            <td></td>
-            <td><a href=https://www.lefigaro.fr/actualite-france/2017/02/09/01016-20170209ARTFIG00302-entre-la-police-et-les-jeunes-de-banlieue-la-defiance-est-mutuelle.php>https://www.lefigaro.fr/actualite-france/2017/02/09/01016-20170209ARTFIG00302-entre-la-police-et-les-jeunes-de-banlieue-la-defiance-est-mutuelle.php</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/fr.txt5.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/5fr.txt>text</a></td>
-            <td>7</td>
-            <td><a href=../CONTEXTES/5fr.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>3</td>
+                <td>200</td>
+                <td>Banlieues: une police en roue libre | Le Club</td>
+                <td><a href=https://blogs.mediapart.fr/michelle-guerci/blog/200420/banlieues-une-police-en-roue-libre>https://blogs.mediapart.fr/michelle-guerci/blog/200420/banlieues-une-police-en-roue-libre</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/fr.txt3.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/3fr.txt>text</a></td>
+                <td>4</td>
+                <td><a href=../CONTEXTES/3fr.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_fr.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>6</td>
-            <td>200</td>
-            <td>David Le Bars : «Il faut arrêter de faire croire que la police opprime les jeunes de banlieue» | CNEWS</td>
-            <td><a href=https://www.cnews.fr/france/2022-09-20/david-le-bars-il-faut-arreter-de-faire-croire-que-la-police-opprime-les-jeunes-de>https://www.cnews.fr/france/2022-09-20/david-le-bars-il-faut-arreter-de-faire-croire-que-la-police-opprime-les-jeunes-de</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/fr.txt6.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/6fr.txt>text</a></td>
-            <td>3</td>
-            <td><a href=../CONTEXTES/6fr.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>4</td>
+                <td>200</td>
+                <td>La dÃ©gradation des relations entre les habitants des quartiers pauvres et la (...) - MÃ©tropolitiques</td>
+                <td><a href=https://metropolitiques.eu/La-degradation-des-relations-entre-les-habitants-des-quartiers-pauvres-et-la.html>https://metropolitiques.eu/La-degradation-des-relations-entre-les-habitants-des-quartiers-pauvres-et-la.html</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/fr.txt4.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/4fr.txt>text</a></td>
+                <td>6</td>
+                <td><a href=../CONTEXTES/4fr.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_fr.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>7</td>
-            <td>200</td>
-            <td>Violence de banlieue et politisation juvénile</td>
-            <td><a href=https://journals.openedition.org/conflits/451?lang=es>https://journals.openedition.org/conflits/451?lang=es</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/fr.txt7.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/7fr.txt>text</a></td>
-            <td>13</td>
-            <td><a href=../CONTEXTES/7fr.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>5</td>
+                <td>200</td>
+                <td></td>
+                <td><a href=https://www.lefigaro.fr/actualite-france/2017/02/09/01016-20170209ARTFIG00302-entre-la-police-et-les-jeunes-de-banlieue-la-defiance-est-mutuelle.php>https://www.lefigaro.fr/actualite-france/2017/02/09/01016-20170209ARTFIG00302-entre-la-police-et-les-jeunes-de-banlieue-la-defiance-est-mutuelle.php</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/fr.txt5.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/5fr.txt>text</a></td>
+                <td>7</td>
+                <td><a href=../CONTEXTES/5fr.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_fr.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>8</td>
-            <td>200</td>
-            <td>Banlieues : chronologie 1973-2006, par Olivier Pironet (Le Monde diplomatique, octobre 2006)</td>
-            <td><a href=https://www.monde-diplomatique.fr/mav/89/PIRONET/14098>https://www.monde-diplomatique.fr/mav/89/PIRONET/14098</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/fr.txt8.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/8fr.txt>text</a></td>
-            <td>21</td>
-            <td><a href=../CONTEXTES/8fr.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>6</td>
+                <td>200</td>
+                <td>David Le Bars : «Il faut arrêter de faire croire que la police opprime les jeunes de banlieue» | CNEWS</td>
+                <td><a href=https://www.cnews.fr/france/2022-09-20/david-le-bars-il-faut-arreter-de-faire-croire-que-la-police-opprime-les-jeunes-de>https://www.cnews.fr/france/2022-09-20/david-le-bars-il-faut-arreter-de-faire-croire-que-la-police-opprime-les-jeunes-de</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/fr.txt6.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/6fr.txt>text</a></td>
+                <td>3</td>
+                <td><a href=../CONTEXTES/6fr.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_fr.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>9</td>
-            <td>200</td>
-            <td>"Les Misérables" illustre les conséquences négatives d’un modèle policier beaucoup trop centré sur la police d’intervention</td>
-            <td><a href=https://www.zerodeconduite.net/article/les-miserables-illustre-les-consequences-negatives-dun-modele-policier-beaucoup-trop-centre>https://www.zerodeconduite.net/article/les-miserables-illustre-les-consequences-negatives-dun-modele-policier-beaucoup-trop-centre</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/fr.txt9.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/9fr.txt>text</a></td>
-            <td>12</td>
-            <td><a href=../CONTEXTES/9fr.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>7</td>
+                <td>200</td>
+                <td>Violence de banlieue et politisation juvénile</td>
+                <td><a href=https://journals.openedition.org/conflits/451?lang=es>https://journals.openedition.org/conflits/451?lang=es</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/fr.txt7.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/7fr.txt>text</a></td>
+                <td>13</td>
+                <td><a href=../CONTEXTES/7fr.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_fr.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>10</td>
-            <td>200</td>
-            <td>Délinquance : « Il faut arrêter de faire croire que la police opprime les jeunes de banlieue », affirme David Le Bars, secrétaire général SCPN UNSA - Valeurs actuelles</td>
-            <td><a href=https://www.valeursactuelles.com/societe/delinquance-il-faut-arreter-de-faire-croire-que-la-police-opprime-les-jeunes-de-banlieue-affirme-david-le-bars-secretaire-general-scpn-unsa>https://www.valeursactuelles.com/societe/delinquance-il-faut-arreter-de-faire-croire-que-la-police-opprime-les-jeunes-de-banlieue-affirme-david-le-bars-secretaire-general-scpn-unsa</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/fr.txt10.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/10fr.txt>text</a></td>
-            <td>8</td>
-            <td><a href=../CONTEXTES/10fr.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>8</td>
+                <td>200</td>
+                <td>Banlieues : chronologie 1973-2006, par Olivier Pironet (Le Monde diplomatique, octobre 2006)</td>
+                <td><a href=https://www.monde-diplomatique.fr/mav/89/PIRONET/14098>https://www.monde-diplomatique.fr/mav/89/PIRONET/14098</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/fr.txt8.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/8fr.txt>text</a></td>
+                <td>21</td>
+                <td><a href=../CONTEXTES/8fr.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_fr.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>11</td>
-            <td>200</td>
-            <td>TEMOIGNAGES FRANCEINFO. "Ce que tu as fait, c'est une trahison" : ils sont nés en banlieue et ont choisi d'être policiers</td>
-            <td><a href=https://www.francetvinfo.fr/societe/manifestation-des-policiers/temoignages-franceinfo-ce-que-tu-as-fait-c-est-une-trahison-ils-sont-nes-en-banlieue-et-ont-choisi-d-etre-policiers_2052527.html>https://www.francetvinfo.fr/societe/manifestation-des-policiers/temoignages-franceinfo-ce-que-tu-as-fait-c-est-une-trahison-ils-sont-nes-en-banlieue-et-ont-choisi-d-etre-policiers_2052527.html</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/fr.txt11.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/11fr.txt>text</a></td>
-            <td>6</td>
-            <td><a href=../CONTEXTES/11fr.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>9</td>
+                <td>200</td>
+                <td>"Les Misérables" illustre les conséquences négatives d’un modèle policier beaucoup trop centré sur la police d’intervention</td>
+                <td><a href=https://www.zerodeconduite.net/article/les-miserables-illustre-les-consequences-negatives-dun-modele-policier-beaucoup-trop-centre>https://www.zerodeconduite.net/article/les-miserables-illustre-les-consequences-negatives-dun-modele-policier-beaucoup-trop-centre</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/fr.txt9.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/9fr.txt>text</a></td>
+                <td>12</td>
+                <td><a href=../CONTEXTES/9fr.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_fr.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>12</td>
-            <td>200</td>
-            <td>Politique de la ville : les banlieues coupe-gorge de la République</td>
-            <td><a href=https://www.touscontribuables.org/les-combats-de-contribuables-associes/les-depenses-publiques/politique-de-la-ville-les-banlieues-coupe-gorge-de-la-republique>https://www.touscontribuables.org/les-combats-de-contribuables-associes/les-depenses-publiques/politique-de-la-ville-les-banlieues-coupe-gorge-de-la-republique</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/fr.txt12.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/12fr.txt>text</a></td>
-            <td>5</td>
-            <td><a href=../CONTEXTES/12fr.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>10</td>
+                <td>200</td>
+                <td>Délinquance : « Il faut arrêter de faire croire que la police opprime les jeunes de banlieue », affirme David Le Bars, secrétaire général SCPN UNSA - Valeurs actuelles</td>
+                <td><a href=https://www.valeursactuelles.com/societe/delinquance-il-faut-arreter-de-faire-croire-que-la-police-opprime-les-jeunes-de-banlieue-affirme-david-le-bars-secretaire-general-scpn-unsa>https://www.valeursactuelles.com/societe/delinquance-il-faut-arreter-de-faire-croire-que-la-police-opprime-les-jeunes-de-banlieue-affirme-david-le-bars-secretaire-general-scpn-unsa</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/fr.txt10.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/10fr.txt>text</a></td>
+                <td>8</td>
+                <td><a href=../CONTEXTES/10fr.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_fr.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>13</td>
-            <td>200</td>
-            <td>Rachida Brahim : « Pour la police, les jeunes de banlieue sont des corps déviants qui doivent être disciplinés » | L'Humanité</td>
-            <td><a href=https://www.humanite.fr/societe/violences-policieres/rachida-brahim-pour-la-police-les-jeunes-de-banlieue-sont-des-corps>https://www.humanite.fr/societe/violences-policieres/rachida-brahim-pour-la-police-les-jeunes-de-banlieue-sont-des-corps</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/fr.txt13.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/13fr.txt>text</a></td>
-            <td>2</td>
-            <td><a href=../CONTEXTES/13fr.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>11</td>
+                <td>200</td>
+                <td>TEMOIGNAGES FRANCEINFO. "Ce que tu as fait, c'est une trahison" : ils sont nés en banlieue et ont choisi d'être policiers</td>
+                <td><a href=https://www.francetvinfo.fr/societe/manifestation-des-policiers/temoignages-franceinfo-ce-que-tu-as-fait-c-est-une-trahison-ils-sont-nes-en-banlieue-et-ont-choisi-d-etre-policiers_2052527.html>https://www.francetvinfo.fr/societe/manifestation-des-policiers/temoignages-franceinfo-ce-que-tu-as-fait-c-est-une-trahison-ils-sont-nes-en-banlieue-et-ont-choisi-d-etre-policiers_2052527.html</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/fr.txt11.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/11fr.txt>text</a></td>
+                <td>6</td>
+                <td><a href=../CONTEXTES/11fr.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_fr.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>14</td>
-            <td>403</td>
-            <td>ouest-france.fr</td>
-            <td><a href=https://www.ouest-france.fr/societe/police/darmanin-ne-veut-plus-de-jeunes-policiers-sortant-de-leur-terroir-a-paris-et-en-banlieue-6929344>https://www.ouest-france.fr/societe/police/darmanin-ne-veut-plus-de-jeunes-policiers-sortant-de-leur-terroir-a-paris-et-en-banlieue-6929344</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/fr.txt14.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/14fr.txt>text</a></td>
-            <td></td>
-            <td><a href=../CONTEXTES/14fr.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>12</td>
+                <td>200</td>
+                <td>Politique de la ville : les banlieues coupe-gorge de la République</td>
+                <td><a href=https://www.touscontribuables.org/les-combats-de-contribuables-associes/les-depenses-publiques/politique-de-la-ville-les-banlieues-coupe-gorge-de-la-republique>https://www.touscontribuables.org/les-combats-de-contribuables-associes/les-depenses-publiques/politique-de-la-ville-les-banlieues-coupe-gorge-de-la-republique</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/fr.txt12.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/12fr.txt>text</a></td>
+                <td>5</td>
+                <td><a href=../CONTEXTES/12fr.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_fr.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>15</td>
-            <td>200</td>
-            <td>France : ce qu'attendent les associations du plan Borloo sur les banlieues</td>
-            <td><a href=https://www.france24.com/fr/20180426-france-associations-plan-borloo-banlieues-logement-quartiers>https://www.france24.com/fr/20180426-france-associations-plan-borloo-banlieues-logement-quartiers</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/fr.txt15.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/15fr.txt>text</a></td>
-            <td>11</td>
-            <td><a href=../CONTEXTES/15fr.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>13</td>
+                <td>200</td>
+                <td>Rachida Brahim : « Pour la police, les jeunes de banlieue sont des corps déviants qui doivent être disciplinés » | L'Humanité</td>
+                <td><a href=https://www.humanite.fr/societe/violences-policieres/rachida-brahim-pour-la-police-les-jeunes-de-banlieue-sont-des-corps>https://www.humanite.fr/societe/violences-policieres/rachida-brahim-pour-la-police-les-jeunes-de-banlieue-sont-des-corps</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/fr.txt13.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/13fr.txt>text</a></td>
+                <td>2</td>
+                <td><a href=../CONTEXTES/13fr.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_fr.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>16</td>
-            <td>200</td>
-            <td>À Saint-Denis, une marche des fiertés pour changer l'image des banlieues</td>
-            <td><a href=https://www.france24.com/fr/20190609-france-premiere-marche-fiertes-banlieues-saint-denis-lgbt-homosexualite>https://www.france24.com/fr/20190609-france-premiere-marche-fiertes-banlieues-saint-denis-lgbt-homosexualite</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/fr.txt16.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/16fr.txt>text</a></td>
-            <td>12</td>
-            <td><a href=../CONTEXTES/16fr.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>14</td>
+                <td>403</td>
+                <td>ouest-france.fr</td>
+                <td><a href=https://www.ouest-france.fr/societe/police/darmanin-ne-veut-plus-de-jeunes-policiers-sortant-de-leur-terroir-a-paris-et-en-banlieue-6929344>https://www.ouest-france.fr/societe/police/darmanin-ne-veut-plus-de-jeunes-policiers-sortant-de-leur-terroir-a-paris-et-en-banlieue-6929344</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/fr.txt14.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/14fr.txt>text</a></td>
+                <td></td>
+                <td><a href=../CONTEXTES/14fr.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_fr.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>17</td>
-            <td>200</td>
-            <td>Avec "Les Misérables", Ladj Ly filme les violences policières en banlieue</td>
-            <td><a href=https://www.huffingtonpost.fr/culture/video/avec-les-miserables-ladj-ly-filme-les-violences-policieres-en-banlieue_171013.html>https://www.huffingtonpost.fr/culture/video/avec-les-miserables-ladj-ly-filme-les-violences-policieres-en-banlieue_171013.html</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/fr.txt17.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/17fr.txt>text</a></td>
-            <td>7</td>
-            <td><a href=../CONTEXTES/17fr.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>15</td>
+                <td>403</td>
+                <td>403 Forbidden</td>
+                <td><a href=https://www.france24.com/fr/20180426-france-associations-plan-borloo-banlieues-logement-quartiers>https://www.france24.com/fr/20180426-france-associations-plan-borloo-banlieues-logement-quartiers</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/fr.txt15.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/15fr.txt>text</a></td>
+                <td></td>
+                <td><a href=../CONTEXTES/15fr.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_fr.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>18</td>
-            <td>200</td>
-            <td>"Police de Molenbeek : immersion dans une banlieue chaude de Belgique" au sommaire du magazine "EnquÃªte dâaction" ce soir sur W9 - Le Zapping du PAF</td>
-            <td><a href=https://www.lezappingdupaf.com/2022/10/police-de-molenbeek-immersion-dans-une-banlieue-chaude-de-belgique-au-sommaire-du-magazine-enquete-d-action-ce-soir-sur-w9.html>https://www.lezappingdupaf.com/2022/10/police-de-molenbeek-immersion-dans-une-banlieue-chaude-de-belgique-au-sommaire-du-magazine-enquete-d-action-ce-soir-sur-w9.html</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/fr.txt18.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/18fr.txt>text</a></td>
-            <td>4</td>
-            <td><a href=../CONTEXTES/18fr.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>16</td>
+                <td>403</td>
+                <td>403 Forbidden</td>
+                <td><a href=https://www.france24.com/fr/20190609-france-premiere-marche-fiertes-banlieues-saint-denis-lgbt-homosexualite>https://www.france24.com/fr/20190609-france-premiere-marche-fiertes-banlieues-saint-denis-lgbt-homosexualite</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/fr.txt16.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/16fr.txt>text</a></td>
+                <td></td>
+                <td><a href=../CONTEXTES/16fr.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_fr.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>19</td>
-            <td>200</td>
-            <td>« Ils nous parlent comme à des chiens »: Contrôles de police abusifs en France | HRW</td>
-            <td><a href=https://www.hrw.org/fr/report/2020/06/18/ils-nous-parlent-comme-des-chiens/controles-de-police-abusifs-en-france>https://www.hrw.org/fr/report/2020/06/18/ils-nous-parlent-comme-des-chiens/controles-de-police-abusifs-en-france</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/fr.txt19.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/19fr.txt>text</a></td>
-            <td>12</td>
-            <td><a href=../CONTEXTES/19fr.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>17</td>
+                <td>200</td>
+                <td>Avec "Les Misérables", Ladj Ly filme les violences policières en banlieue</td>
+                <td><a href=https://www.huffingtonpost.fr/culture/video/avec-les-miserables-ladj-ly-filme-les-violences-policieres-en-banlieue_171013.html>https://www.huffingtonpost.fr/culture/video/avec-les-miserables-ladj-ly-filme-les-violences-policieres-en-banlieue_171013.html</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/fr.txt17.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/17fr.txt>text</a></td>
+                <td>7</td>
+                <td><a href=../CONTEXTES/17fr.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_fr.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>20</td>
-            <td>200</td>
-            <td>Banlieue parisienne : nouveaux incidents avec la police à Villeneuve-la-Garenne</td>
-            <td><a href=https://www.france24.com/fr/20200420-banlieue-parisienne-nouveaux-incidents-avec-la-police-%C3%A0-villeneuve-la-garenne>https://www.france24.com/fr/20200420-banlieue-parisienne-nouveaux-incidents-avec-la-police-%C3%A0-villeneuve-la-garenne</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/fr.txt20.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/20fr.txt>text</a></td>
-            <td>7</td>
-            <td><a href=../CONTEXTES/20fr.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>18</td>
+                <td>200</td>
+                <td>"Police de Molenbeek : immersion dans une banlieue chaude de Belgique" au sommaire du magazine "EnquÃªte dâaction" ce soir sur W9 - Le Zapping du PAF</td>
+                <td><a href=https://www.lezappingdupaf.com/2022/10/police-de-molenbeek-immersion-dans-une-banlieue-chaude-de-belgique-au-sommaire-du-magazine-enquete-d-action-ce-soir-sur-w9.html>https://www.lezappingdupaf.com/2022/10/police-de-molenbeek-immersion-dans-une-banlieue-chaude-de-belgique-au-sommaire-du-magazine-enquete-d-action-ce-soir-sur-w9.html</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/fr.txt18.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/18fr.txt>text</a></td>
+                <td>4</td>
+                <td><a href=../CONTEXTES/18fr.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_fr.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>21</td>
-            <td>200</td>
-            <td>Violences en banlieue : le gouvernement "condamne" mais ne craint pas l'embrasement</td>
-            <td><a href=https://www.europe1.fr/societe/violences-en-banlieue-le-gouvernement-condamne-mais-ne-craint-pas-lembrasement-3963720>https://www.europe1.fr/societe/violences-en-banlieue-le-gouvernement-condamne-mais-ne-craint-pas-lembrasement-3963720</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/fr.txt21.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/21fr.txt>text</a></td>
-            <td>4</td>
-            <td><a href=../CONTEXTES/21fr.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>19</td>
+                <td>200</td>
+                <td>« Ils nous parlent comme à des chiens »: Contrôles de police abusifs en France | HRW</td>
+                <td><a href=https://www.hrw.org/fr/report/2020/06/18/ils-nous-parlent-comme-des-chiens/controles-de-police-abusifs-en-france>https://www.hrw.org/fr/report/2020/06/18/ils-nous-parlent-comme-des-chiens/controles-de-police-abusifs-en-france</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/fr.txt19.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/19fr.txt>text</a></td>
+                <td>12</td>
+                <td><a href=../CONTEXTES/19fr.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_fr.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>22</td>
-            <td>200</td>
-            <td>«Les Misérables» : un film coup de poing sur la banlieue qui se veut un «cri d’alerte» - Le Parisien</td>
-            <td><a href=https://www.leparisien.fr/culture-loisirs/cinema/les-miserables-un-film-coup-de-poing-sur-la-banlieue-qui-se-veut-un-cri-d-alerte-19-11-2019-8197188.php>https://www.leparisien.fr/culture-loisirs/cinema/les-miserables-un-film-coup-de-poing-sur-la-banlieue-qui-se-veut-un-cri-d-alerte-19-11-2019-8197188.php</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/fr.txt22.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/22fr.txt>text</a></td>
-            <td>1</td>
-            <td><a href=../CONTEXTES/22fr.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>20</td>
+                <td>403</td>
+                <td>403 Forbidden</td>
+                <td><a href=https://www.france24.com/fr/20200420-banlieue-parisienne-nouveaux-incidents-avec-la-police-%C3%A0-villeneuve-la-garenne>https://www.france24.com/fr/20200420-banlieue-parisienne-nouveaux-incidents-avec-la-police-%C3%A0-villeneuve-la-garenne</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/fr.txt20.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/20fr.txt>text</a></td>
+                <td></td>
+                <td><a href=../CONTEXTES/20fr.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_fr.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>23</td>
-            <td>200</td>
-            <td>«Les Misérables» : un film coup de poing sur la banlieue qui se veut un «cri d’alerte» - Le Parisien</td>
-            <td><a href=https://www.leparisien.fr/culture-loisirs/cinema/les-miserables-un-film-coup-de-poing-sur-la-banlieue-qui-se-veut-un-cri-d-alerte-19-11-2019-8197188.php>https://www.leparisien.fr/culture-loisirs/cinema/les-miserables-un-film-coup-de-poing-sur-la-banlieue-qui-se-veut-un-cri-d-alerte-19-11-2019-8197188.php</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/fr.txt23.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/23fr.txt>text</a></td>
-            <td>1</td>
-            <td><a href=../CONTEXTES/23fr.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>21</td>
+                <td>200</td>
+                <td>Violences en banlieue : le gouvernement "condamne" mais ne craint pas l'embrasement</td>
+                <td><a href=https://www.europe1.fr/societe/violences-en-banlieue-le-gouvernement-condamne-mais-ne-craint-pas-lembrasement-3963720>https://www.europe1.fr/societe/violences-en-banlieue-le-gouvernement-condamne-mais-ne-craint-pas-lembrasement-3963720</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/fr.txt21.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/21fr.txt>text</a></td>
+                <td>4</td>
+                <td><a href=../CONTEXTES/21fr.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_fr.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>24</td>
-            <td>200</td>
-            <td>Camélia Jordana et la police qui massacrerait en banlieue</td>
-            <td><a href=https://agauche.org/2020/05/25/camelia-jordana-et-la-police-qui-massacrerait-en-banlieue/>https://agauche.org/2020/05/25/camelia-jordana-et-la-police-qui-massacrerait-en-banlieue/</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/fr.txt24.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/24fr.txt>text</a></td>
-            <td>7</td>
-            <td><a href=../CONTEXTES/24fr.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>22</td>
+                <td>200</td>
+                <td>«Les Misérables» : un film coup de poing sur la banlieue qui se veut un «cri d’alerte» - Le Parisien</td>
+                <td><a href=https://www.leparisien.fr/culture-loisirs/cinema/les-miserables-un-film-coup-de-poing-sur-la-banlieue-qui-se-veut-un-cri-d-alerte-19-11-2019-8197188.php>https://www.leparisien.fr/culture-loisirs/cinema/les-miserables-un-film-coup-de-poing-sur-la-banlieue-qui-se-veut-un-cri-d-alerte-19-11-2019-8197188.php</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/fr.txt22.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/22fr.txt>text</a></td>
+                <td>3</td>
+                <td><a href=../CONTEXTES/22fr.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_fr.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>25</td>
-            <td>200</td>
-            <td>Philippines: Un journaliste radio philippin a été abattu près de son domicile dans la banlieue de Manille, annonce la police - VIDEO | Jean-Marc Morandini</td>
-            <td><a href=https://www.jeanmarcmorandini.com/article-513847-philippines-un-journaliste-radio-philippin-a-ete-abattu-pres-de-son-domicile-dans-la-banlieue-de-manille-annonce-la-police-video.html>https://www.jeanmarcmorandini.com/article-513847-philippines-un-journaliste-radio-philippin-a-ete-abattu-pres-de-son-domicile-dans-la-banlieue-de-manille-annonce-la-police-video.html</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/fr.txt25.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/25fr.txt>text</a></td>
-            <td>2</td>
-            <td><a href=../CONTEXTES/25fr.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>23</td>
+                <td>200</td>
+                <td>«Les Misérables» : un film coup de poing sur la banlieue qui se veut un «cri d’alerte» - Le Parisien</td>
+                <td><a href=https://www.leparisien.fr/culture-loisirs/cinema/les-miserables-un-film-coup-de-poing-sur-la-banlieue-qui-se-veut-un-cri-d-alerte-19-11-2019-8197188.php>https://www.leparisien.fr/culture-loisirs/cinema/les-miserables-un-film-coup-de-poing-sur-la-banlieue-qui-se-veut-un-cri-d-alerte-19-11-2019-8197188.php</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/fr.txt23.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/23fr.txt>text</a></td>
+                <td>3</td>
+                <td><a href=../CONTEXTES/23fr.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_fr.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>26</td>
-            <td>200</td>
-            <td>Les incidents violents dans les banlieues françaises font craindre un embrasement | Euronews</td>
-            <td><a href=https://fr.euronews.com/2020/04/23/les-incidents-violents-dans-les-banlieues-font-craindre-un-embrasement>https://fr.euronews.com/2020/04/23/les-incidents-violents-dans-les-banlieues-font-craindre-un-embrasement</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/fr.txt26.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/26fr.txt>text</a></td>
-            <td>9</td>
-            <td><a href=../CONTEXTES/26fr.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>24</td>
+                <td>200</td>
+                <td>Camélia Jordana et la police qui massacrerait en banlieue</td>
+                <td><a href=https://agauche.org/2020/05/25/camelia-jordana-et-la-police-qui-massacrerait-en-banlieue/>https://agauche.org/2020/05/25/camelia-jordana-et-la-police-qui-massacrerait-en-banlieue/</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/fr.txt24.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/24fr.txt>text</a></td>
+                <td>7</td>
+                <td><a href=../CONTEXTES/24fr.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_fr.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>27</td>
-            <td>200</td>
-            <td>Deux policiers jugés dix ans après le drame de Clichy-sous-Bois | Reuters</td>
-            <td><a href=https://www.reuters.com/article/ofrtp-france-banlieues-proc-s-idFRKBN0MB0RM20150316>https://www.reuters.com/article/ofrtp-france-banlieues-proc-s-idFRKBN0MB0RM20150316</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/fr.txt27.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/27fr.txt>text</a></td>
-            <td>3</td>
-            <td><a href=../CONTEXTES/27fr.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>25</td>
+                <td>200</td>
+                <td>Philippines: Un journaliste radio philippin a été abattu près de son domicile dans la banlieue de Manille, annonce la police - VIDEO | Jean-Marc Morandini</td>
+                <td><a href=https://www.jeanmarcmorandini.com/article-513847-philippines-un-journaliste-radio-philippin-a-ete-abattu-pres-de-son-domicile-dans-la-banlieue-de-manille-annonce-la-police-video.html>https://www.jeanmarcmorandini.com/article-513847-philippines-un-journaliste-radio-philippin-a-ete-abattu-pres-de-son-domicile-dans-la-banlieue-de-manille-annonce-la-police-video.html</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/fr.txt25.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/25fr.txt>text</a></td>
+                <td>2</td>
+                <td><a href=../CONTEXTES/25fr.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_fr.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>28</td>
-            <td>200</td>
-            <td>POLITESSE. La police à tu et à toi avec les jeunes de banlieue</td>
-            <td><a href=https://www.courrierinternational.com/article/2008/03/27/la-police-a-tu-et-a-toi-avec-les-jeunes-de-banlieue>https://www.courrierinternational.com/article/2008/03/27/la-police-a-tu-et-a-toi-avec-les-jeunes-de-banlieue</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/fr.txt28.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/28fr.txt>text</a></td>
-            <td>3</td>
-            <td><a href=../CONTEXTES/28fr.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>26</td>
+                <td>200</td>
+                <td>Les incidents violents dans les banlieues françaises font craindre un embrasement | Euronews</td>
+                <td><a href=https://fr.euronews.com/2020/04/23/les-incidents-violents-dans-les-banlieues-font-craindre-un-embrasement>https://fr.euronews.com/2020/04/23/les-incidents-violents-dans-les-banlieues-font-craindre-un-embrasement</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/fr.txt26.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/26fr.txt>text</a></td>
+                <td>9</td>
+                <td><a href=../CONTEXTES/26fr.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_fr.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>29</td>
-            <td>200</td>
-            <td>Dans les cités, le sentiment d’injustice s’intensifie avec le confinement</td>
-            <td><a href=https://theconversation.com/dans-les-cites-le-sentiment-dinjustice-sintensifie-avec-le-confinement-137135>https://theconversation.com/dans-les-cites-le-sentiment-dinjustice-sintensifie-avec-le-confinement-137135</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/fr.txt29.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/29fr.txt>text</a></td>
-            <td>4</td>
-            <td><a href=../CONTEXTES/29fr.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>27</td>
+                <td>200</td>
+                <td>Deux policiers jugés dix ans après le drame de Clichy-sous-Bois | Reuters</td>
+                <td><a href=https://www.reuters.com/article/ofrtp-france-banlieues-proc-s-idFRKBN0MB0RM20150316>https://www.reuters.com/article/ofrtp-france-banlieues-proc-s-idFRKBN0MB0RM20150316</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/fr.txt27.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/27fr.txt>text</a></td>
+                <td>3</td>
+                <td><a href=../CONTEXTES/27fr.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_fr.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>30</td>
-            <td>200</td>
-            <td>Un policier abattu en banlieue de Toronto | TVA Nouvelles</td>
-            <td><a href=https://www.tvanouvelles.ca/2022/09/12/un-policier-abattu-en-banlieue-de-toronto>https://www.tvanouvelles.ca/2022/09/12/un-policier-abattu-en-banlieue-de-toronto</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/fr.txt30.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/30fr.txt>text</a></td>
-            <td>3</td>
-            <td><a href=../CONTEXTES/30fr.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>28</td>
+                <td>200</td>
+                <td>POLITESSE. La police à tu et à toi avec les jeunes de banlieue</td>
+                <td><a href=https://www.courrierinternational.com/article/2008/03/27/la-police-a-tu-et-a-toi-avec-les-jeunes-de-banlieue>https://www.courrierinternational.com/article/2008/03/27/la-police-a-tu-et-a-toi-avec-les-jeunes-de-banlieue</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/fr.txt28.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/28fr.txt>text</a></td>
+                <td>3</td>
+                <td><a href=../CONTEXTES/28fr.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_fr.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>31</td>
-            <td>200</td>
-            <td>Géopolitique de la violence urbaine : entre réalité et représentations | Conflits : Revue de Géopolitique</td>
-            <td><a href=https://www.revueconflits.com/banlieue-villeneuve-de-grenoble-criminalite-insecurite/>https://www.revueconflits.com/banlieue-villeneuve-de-grenoble-criminalite-insecurite/</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/fr.txt31.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/31fr.txt>text</a></td>
-            <td>15</td>
-            <td><a href=../CONTEXTES/31fr.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>29</td>
+                <td>200</td>
+                <td>Dans les cités, le sentiment d’injustice s’intensifie avec le confinement</td>
+                <td><a href=https://theconversation.com/dans-les-cites-le-sentiment-dinjustice-sintensifie-avec-le-confinement-137135>https://theconversation.com/dans-les-cites-le-sentiment-dinjustice-sintensifie-avec-le-confinement-137135</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/fr.txt29.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/29fr.txt>text</a></td>
+                <td>4</td>
+                <td><a href=../CONTEXTES/29fr.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_fr.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>32</td>
-            <td>200</td>
-            <td>Besançon, Angers, Libourne... Les nouvelles cités de la drogue | Les Echos</td>
-            <td><a href=https://www.lesechos.fr/weekend/business-story/besancon-angers-libourne-les-nouvelles-cites-de-la-drogue-1389072>https://www.lesechos.fr/weekend/business-story/besancon-angers-libourne-les-nouvelles-cites-de-la-drogue-1389072</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/fr.txt32.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/32fr.txt>text</a></td>
-            <td>5</td>
-            <td><a href=../CONTEXTES/32fr.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>30</td>
+                <td>200</td>
+                <td>Un policier abattu en banlieue de Toronto | TVA Nouvelles</td>
+                <td><a href=https://www.tvanouvelles.ca/2022/09/12/un-policier-abattu-en-banlieue-de-toronto>https://www.tvanouvelles.ca/2022/09/12/un-policier-abattu-en-banlieue-de-toronto</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/fr.txt30.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/30fr.txt>text</a></td>
+                <td>3</td>
+                <td><a href=../CONTEXTES/30fr.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_fr.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>33</td>
-            <td>200</td>
-            <td>FRANCE - La responsabilité policière paraît écartée dans l’incident qui a coûté la vie à deux adolescents dimanche soir
+            <tr>
+                <td>31</td>
+                <td>200</td>
+                <td>Géopolitique de la violence urbaine : entre réalité et représentations | Conflits : Revue de Géopolitique</td>
+                <td><a href=https://www.revueconflits.com/banlieue-villeneuve-de-grenoble-criminalite-insecurite/>https://www.revueconflits.com/banlieue-villeneuve-de-grenoble-criminalite-insecurite/</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/fr.txt31.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/31fr.txt>text</a></td>
+                <td>15</td>
+                <td><a href=../CONTEXTES/31fr.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_fr.html>concordance</a></td>
+            </tr>
+
+            <tr>
+                <td>32</td>
+                <td>200</td>
+                <td>Besançon, Angers, Libourne... Les nouvelles cités de la drogue | Les Echos</td>
+                <td><a href=https://www.lesechos.fr/weekend/business-story/besancon-angers-libourne-les-nouvelles-cites-de-la-drogue-1389072>https://www.lesechos.fr/weekend/business-story/besancon-angers-libourne-les-nouvelles-cites-de-la-drogue-1389072</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/fr.txt32.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/32fr.txt>text</a></td>
+                <td>5</td>
+                <td><a href=../CONTEXTES/32fr.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_fr.html>concordance</a></td>
+            </tr>
+
+            <tr>
+                <td>33</td>
+                <td>200</td>
+                <td>FRANCE - La responsabilité policière paraît écartée dans l’incident qui a coûté la vie à deux adolescents dimanche soir
 Deux ans après les émeutes de l’automne 2005, 
 la banlieue parisienne s’embrase de nouveau - L'Orient-Le Jour</td>
-            <td><a href=https://www.lorientlejour.com/article/576520/FRANCE_-_La_responsabilite_policiere_parait_ecartee_dans_l%2527incident_qui_a_coute_la_vie_a_deux_adolescents_dimanche_soirDeux_ans_apres_les_emeutes_de.html>https://www.lorientlejour.com/article/576520/FRANCE_-_La_responsabilite_policiere_parait_ecartee_dans_l%2527incident_qui_a_coute_la_vie_a_deux_adolescents_dimanche_soirDeux_ans_apres_les_emeutes_de.html</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/fr.txt33.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/33fr.txt>text</a></td>
-            <td>5</td>
-            <td><a href=../CONTEXTES/33fr.txt>contexte</a></td>
-        </tr>
+                <td><a href=https://www.lorientlejour.com/article/576520/FRANCE_-_La_responsabilite_policiere_parait_ecartee_dans_l%2527incident_qui_a_coute_la_vie_a_deux_adolescents_dimanche_soirDeux_ans_apres_les_emeutes_de.html>https://www.lorientlejour.com/article/576520/FRANCE_-_La_responsabilite_policiere_parait_ecartee_dans_l%2527incident_qui_a_coute_la_vie_a_deux_adolescents_dimanche_soirDeux_ans_apres_les_emeutes_de.html</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/fr.txt33.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/33fr.txt>text</a></td>
+                <td>5</td>
+                <td><a href=../CONTEXTES/33fr.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_fr.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>34</td>
-            <td>200</td>
-            <td>Lâart franÃ§ais de la dÃ©viance policiÃ¨re - La Vie des idÃ©es</td>
-            <td><a href=https://laviedesidees.fr/L-art-francais-de-la-deviance-policiere.html>https://laviedesidees.fr/L-art-francais-de-la-deviance-policiere.html</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/fr.txt34.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/34fr.txt>text</a></td>
-            <td>5</td>
-            <td><a href=../CONTEXTES/34fr.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>34</td>
+                <td>200</td>
+                <td>Lâart franÃ§ais de la dÃ©viance policiÃ¨re - La Vie des idÃ©es</td>
+                <td><a href=https://laviedesidees.fr/L-art-francais-de-la-deviance-policiere.html>https://laviedesidees.fr/L-art-francais-de-la-deviance-policiere.html</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/fr.txt34.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/34fr.txt>text</a></td>
+                <td>5</td>
+                <td><a href=../CONTEXTES/34fr.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_fr.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>35</td>
-            <td>200</td>
-            <td>Banlieue parisienne – La police française sur la piste d&#39;un tueur en série | 24 heures</td>
-            <td><a href=https://www.24heures.ch/la-police-francaise-sur-la-piste-d-un-tueur-en-serie-544690165133>https://www.24heures.ch/la-police-francaise-sur-la-piste-d-un-tueur-en-serie-544690165133</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/fr.txt35.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/35fr.txt>text</a></td>
-            <td>8</td>
-            <td><a href=../CONTEXTES/35fr.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>35</td>
+                <td>200</td>
+                <td>Banlieue parisienne – La police française sur la piste d&#39;un tueur en série | 24 heures</td>
+                <td><a href=https://www.24heures.ch/la-police-francaise-sur-la-piste-d-un-tueur-en-serie-544690165133>https://www.24heures.ch/la-police-francaise-sur-la-piste-d-un-tueur-en-serie-544690165133</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/fr.txt35.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/35fr.txt>text</a></td>
+                <td>8</td>
+                <td><a href=../CONTEXTES/35fr.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_fr.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>36</td>
-            <td>200</td>
-            <td>Plongée dans la vie quotidienne de ces quartiers où grandissent les djihadistes français | Atlantico.fr</td>
-            <td><a href=https://atlantico.fr/article/decryptage/plongee-dans-la-vie-quotidienne-de-ces-quartiers-ou-grandissent-les-djihadistes-francais-didier-lapeyronnie-farid-temsamani->https://atlantico.fr/article/decryptage/plongee-dans-la-vie-quotidienne-de-ces-quartiers-ou-grandissent-les-djihadistes-francais-didier-lapeyronnie-farid-temsamani-</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/fr.txt36.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/36fr.txt>text</a></td>
-            <td>8</td>
-            <td><a href=../CONTEXTES/36fr.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>36</td>
+                <td>200</td>
+                <td>Plongée dans la vie quotidienne de ces quartiers où grandissent les djihadistes français | Atlantico.fr</td>
+                <td><a href=https://atlantico.fr/article/decryptage/plongee-dans-la-vie-quotidienne-de-ces-quartiers-ou-grandissent-les-djihadistes-francais-didier-lapeyronnie-farid-temsamani->https://atlantico.fr/article/decryptage/plongee-dans-la-vie-quotidienne-de-ces-quartiers-ou-grandissent-les-djihadistes-francais-didier-lapeyronnie-farid-temsamani-</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/fr.txt36.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/36fr.txt>text</a></td>
+                <td>8</td>
+                <td><a href=../CONTEXTES/36fr.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_fr.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>37</td>
-            <td>200</td>
-            <td>Incidents en banlieue: Le FN lance une pétition "pour soutenir la police" - Challenges</td>
-            <td><a href=https://www.challenges.fr/politique/incidents-en-banlieue-le-fn-lance-une-petition-pour-soutenir-la-police_454117>https://www.challenges.fr/politique/incidents-en-banlieue-le-fn-lance-une-petition-pour-soutenir-la-police_454117</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/fr.txt37.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/37fr.txt>text</a></td>
-            <td>4</td>
-            <td><a href=../CONTEXTES/37fr.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>37</td>
+                <td>200</td>
+                <td>Incidents en banlieue: Le FN lance une pétition "pour soutenir la police" - Challenges</td>
+                <td><a href=https://www.challenges.fr/politique/incidents-en-banlieue-le-fn-lance-une-petition-pour-soutenir-la-police_454117>https://www.challenges.fr/politique/incidents-en-banlieue-le-fn-lance-une-petition-pour-soutenir-la-police_454117</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/fr.txt37.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/37fr.txt>text</a></td>
+                <td>4</td>
+                <td><a href=../CONTEXTES/37fr.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_fr.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>38</td>
-            <td>200</td>
-            <td>La banlieue en replay - Bondy Blog</td>
-            <td><a href=https://www.bondyblog.fr/societe/police-justice/la-banlieue-en-replay/>https://www.bondyblog.fr/societe/police-justice/la-banlieue-en-replay/</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/fr.txt38.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/38fr.txt>text</a></td>
-            <td>3</td>
-            <td><a href=../CONTEXTES/38fr.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>38</td>
+                <td>200</td>
+                <td>La banlieue en replay - Bondy Blog</td>
+                <td><a href=https://www.bondyblog.fr/societe/police-justice/la-banlieue-en-replay/>https://www.bondyblog.fr/societe/police-justice/la-banlieue-en-replay/</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/fr.txt38.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/38fr.txt>text</a></td>
+                <td>3</td>
+                <td><a href=../CONTEXTES/38fr.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_fr.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>39</td>
-            <td>200</td>
-            <td>Violences contre la Police en banlieue : des informations localo-locales – Un peu d'air frais</td>
-            <td><a href=https://unpeudairfrais.org/violences-contre-la-police-en-banlieue-des-informations-localo-locales/>https://unpeudairfrais.org/violences-contre-la-police-en-banlieue-des-informations-localo-locales/</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/fr.txt39.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/39fr.txt>text</a></td>
-            <td>5</td>
-            <td><a href=../CONTEXTES/39fr.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>39</td>
+                <td>200</td>
+                <td>Violences contre la Police en banlieue : des informations localo-locales – Un peu d'air frais</td>
+                <td><a href=https://unpeudairfrais.org/violences-contre-la-police-en-banlieue-des-informations-localo-locales/>https://unpeudairfrais.org/violences-contre-la-police-en-banlieue-des-informations-localo-locales/</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/fr.txt39.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/39fr.txt>text</a></td>
+                <td>5</td>
+                <td><a href=../CONTEXTES/39fr.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_fr.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>40</td>
-            <td>200</td>
-            <td>Manifestations à Conakry : "Tout va bien pour le moment…", selon la Police | Africa Guinee | Actualité sur la Guinée et l'Afrique</td>
-            <td><a href=https://www.africaguinee.com/articles/2022/10/20/manifestations-conakry-tout-va-bien-pour-le-moment-selon-la-police>https://www.africaguinee.com/articles/2022/10/20/manifestations-conakry-tout-va-bien-pour-le-moment-selon-la-police</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/fr.txt40.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/40fr.txt>text</a></td>
-            <td>2</td>
-            <td><a href=../CONTEXTES/40fr.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>40</td>
+                <td>200</td>
+                <td>Manifestations à Conakry : "Tout va bien pour le moment…", selon la Police | Africa Guinee | Actualité sur la Guinée et l'Afrique</td>
+                <td><a href=https://www.africaguinee.com/articles/2022/10/20/manifestations-conakry-tout-va-bien-pour-le-moment-selon-la-police>https://www.africaguinee.com/articles/2022/10/20/manifestations-conakry-tout-va-bien-pour-le-moment-selon-la-police</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/fr.txt40.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/40fr.txt>text</a></td>
+                <td>2</td>
+                <td><a href=../CONTEXTES/40fr.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_fr.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>41</td>
-            <td>200</td>
-            <td>Romain Gavras, cinÃ©aste gravos</td>
-            <td><a href=https://www.franc-tireur.fr/romain-gavras-cineaste-gravos>https://www.franc-tireur.fr/romain-gavras-cineaste-gravos</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/fr.txt41.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/41fr.txt>text</a></td>
-            <td>3</td>
-            <td><a href=../CONTEXTES/41fr.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>41</td>
+                <td>200</td>
+                <td>Romain Gavras, cinÃ©aste gravos</td>
+                <td><a href=https://www.franc-tireur.fr/romain-gavras-cineaste-gravos>https://www.franc-tireur.fr/romain-gavras-cineaste-gravos</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/fr.txt41.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/41fr.txt>text</a></td>
+                <td>3</td>
+                <td><a href=../CONTEXTES/41fr.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_fr.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>42</td>
-            <td>200</td>
-            <td>Plus d'éducateurs ou plus de policiers dans les banlieues ? Les Français sont partagés</td>
-            <td><a href=https://www.banquedesterritoires.fr/plus-deducateurs-ou-plus-de-policiers-dans-les-banlieues-les-francais-sont-partages>https://www.banquedesterritoires.fr/plus-deducateurs-ou-plus-de-policiers-dans-les-banlieues-les-francais-sont-partages</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/fr.txt42.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/42fr.txt>text</a></td>
-            <td>10</td>
-            <td><a href=../CONTEXTES/42fr.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>42</td>
+                <td>200</td>
+                <td>Plus d'éducateurs ou plus de policiers dans les banlieues ? Les Français sont partagés</td>
+                <td><a href=https://www.banquedesterritoires.fr/plus-deducateurs-ou-plus-de-policiers-dans-les-banlieues-les-francais-sont-partages>https://www.banquedesterritoires.fr/plus-deducateurs-ou-plus-de-policiers-dans-les-banlieues-les-francais-sont-partages</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/fr.txt42.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/42fr.txt>text</a></td>
+                <td>10</td>
+                <td><a href=../CONTEXTES/42fr.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_fr.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>43</td>
-            <td>200</td>
-            <td>Australie : un mort dans les inondations, les pluies s'atténuent</td>
-            <td><a href=https://lecourrier.vn/australie-un-mort-dans-les-inondations-les-pluies-sattenuent/1076761.html>https://lecourrier.vn/australie-un-mort-dans-les-inondations-les-pluies-sattenuent/1076761.html</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/fr.txt43.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/43fr.txt>text</a></td>
-            <td>2</td>
-            <td><a href=../CONTEXTES/43fr.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>43</td>
+                <td>000</td>
+                <td>Australie : un mort dans les inondations, les pluies s'atténuent</td>
+                <td><a href=https://lecourrier.vn/australie-un-mort-dans-les-inondations-les-pluies-sattenuent/1076761.html>https://lecourrier.vn/australie-un-mort-dans-les-inondations-les-pluies-sattenuent/1076761.html</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/fr.txt43.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/43fr.txt>text</a></td>
+                <td></td>
+                <td><a href=../CONTEXTES/43fr.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_fr.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>44</td>
-            <td>200</td>
-            <td>Manifestations anti-junte et heurts à Conakry</td>
-            <td><a href=https://www.voaafrique.com/a/guin%C3%A9e-manifestations-anti-junte-et-heurts-%C3%A0-conakry/6797988.html>https://www.voaafrique.com/a/guin%C3%A9e-manifestations-anti-junte-et-heurts-%C3%A0-conakry/6797988.html</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/fr.txt44.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/44fr.txt>text</a></td>
-            <td>4</td>
-            <td><a href=../CONTEXTES/44fr.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>44</td>
+                <td>200</td>
+                <td>Manifestations anti-junte et heurts à Conakry</td>
+                <td><a href=https://www.voaafrique.com/a/guin%C3%A9e-manifestations-anti-junte-et-heurts-%C3%A0-conakry/6797988.html>https://www.voaafrique.com/a/guin%C3%A9e-manifestations-anti-junte-et-heurts-%C3%A0-conakry/6797988.html</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/fr.txt44.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/44fr.txt>text</a></td>
+                <td>4</td>
+                <td><a href=../CONTEXTES/44fr.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_fr.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>45</td>
-            <td>200</td>
-            <td>Violences policières : « On serait en banlieue je t'aurais arraché la tête »</td>
-            <td><a href=https://www.revolutionpermanente.fr/Violences-policieres-On-serait-en-banlieue-je-t-aurais-arrache-la-tete>https://www.revolutionpermanente.fr/Violences-policieres-On-serait-en-banlieue-je-t-aurais-arrache-la-tete</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/fr.txt45.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/45fr.txt>text</a></td>
-            <td>6</td>
-            <td><a href=../CONTEXTES/45fr.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>45</td>
+                <td>200</td>
+                <td>Violences policières : « On serait en banlieue je t'aurais arraché la tête »</td>
+                <td><a href=https://www.revolutionpermanente.fr/Violences-policieres-On-serait-en-banlieue-je-t-aurais-arrache-la-tete>https://www.revolutionpermanente.fr/Violences-policieres-On-serait-en-banlieue-je-t-aurais-arrache-la-tete</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/fr.txt45.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/45fr.txt>text</a></td>
+                <td>4</td>
+                <td><a href=../CONTEXTES/45fr.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_fr.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>46</td>
-            <td>200</td>
-            <td>Les banlieues françaises, grandes oubliées du confinement</td>
-            <td><a href=https://www.courrierinternational.com/article/vu-dallemagne-les-banlieues-francaises-grandes-oubliees-du-confinement>https://www.courrierinternational.com/article/vu-dallemagne-les-banlieues-francaises-grandes-oubliees-du-confinement</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/fr.txt46.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/46fr.txt>text</a></td>
-            <td>13</td>
-            <td><a href=../CONTEXTES/46fr.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>46</td>
+                <td>200</td>
+                <td>Les banlieues françaises, grandes oubliées du confinement</td>
+                <td><a href=https://www.courrierinternational.com/article/vu-dallemagne-les-banlieues-francaises-grandes-oubliees-du-confinement>https://www.courrierinternational.com/article/vu-dallemagne-les-banlieues-francaises-grandes-oubliees-du-confinement</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/fr.txt46.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/46fr.txt>text</a></td>
+                <td>13</td>
+                <td><a href=../CONTEXTES/46fr.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_fr.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>47</td>
-            <td>200</td>
-            <td>Cinq jeunes racontent leur banlieue sans clichÃ©s â LibÃ©ration</td>
-            <td><a href=https://www.liberation.fr/france/2017/07/10/cinq-jeunes-racontent-leur-banlieue-sans-cliches_1582900/>https://www.liberation.fr/france/2017/07/10/cinq-jeunes-racontent-leur-banlieue-sans-cliches_1582900/</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/fr.txt47.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/47fr.txt>text</a></td>
-            <td>4</td>
-            <td><a href=../CONTEXTES/47fr.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>47</td>
+                <td>200</td>
+                <td>Cinq jeunes racontent leur banlieue sans clichÃ©s â LibÃ©ration</td>
+                <td><a href=https://www.liberation.fr/france/2017/07/10/cinq-jeunes-racontent-leur-banlieue-sans-cliches_1582900/>https://www.liberation.fr/france/2017/07/10/cinq-jeunes-racontent-leur-banlieue-sans-cliches_1582900/</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/fr.txt47.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/47fr.txt>text</a></td>
+                <td>4</td>
+                <td><a href=../CONTEXTES/47fr.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_fr.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>48</td>
-            <td>200</td>
-            <td>FRANCE D’APRÈS : LA TRANSITION ÉCOLOGIQUE PASSERA PAR LES BANLIEUES | Presse &amp; Cité</td>
-            <td><a href=https://www.presseetcite.info/journal-officiel-des-banlieues/societe/france-dapres-la-transition-ecologique-passera-par-les>https://www.presseetcite.info/journal-officiel-des-banlieues/societe/france-dapres-la-transition-ecologique-passera-par-les</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/fr.txt48.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/48fr.txt>text</a></td>
-            <td>18</td>
-            <td><a href=../CONTEXTES/48fr.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>48</td>
+                <td>200</td>
+                <td>FRANCE D’APRÈS : LA TRANSITION ÉCOLOGIQUE PASSERA PAR LES BANLIEUES | Presse &amp; Cité</td>
+                <td><a href=https://www.presseetcite.info/journal-officiel-des-banlieues/societe/france-dapres-la-transition-ecologique-passera-par-les>https://www.presseetcite.info/journal-officiel-des-banlieues/societe/france-dapres-la-transition-ecologique-passera-par-les</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/fr.txt48.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/48fr.txt>text</a></td>
+                <td>18</td>
+                <td><a href=../CONTEXTES/48fr.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_fr.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>49</td>
-            <td>200</td>
-            <td>La couverture médiatique des banlieues - La Nouvelle Chronique</td>
-            <td><a href=https://lanouvellechronique.com/2020/02/16/la-couverture-mediatique-des-banlieues/>https://lanouvellechronique.com/2020/02/16/la-couverture-mediatique-des-banlieues/</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/fr.txt49.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/49fr.txt>text</a></td>
-            <td>52</td>
-            <td><a href=../CONTEXTES/49fr.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>49</td>
+                <td>200</td>
+                <td>La couverture médiatique des banlieues - La Nouvelle Chronique</td>
+                <td><a href=https://lanouvellechronique.com/2020/02/16/la-couverture-mediatique-des-banlieues/>https://lanouvellechronique.com/2020/02/16/la-couverture-mediatique-des-banlieues/</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/fr.txt49.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/49fr.txt>text</a></td>
+                <td>52</td>
+                <td><a href=../CONTEXTES/49fr.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_fr.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>50</td>
-            <td>200</td>
-            <td>Les Pays-Bas veulent attirer les jeunes chômeurs des banlieues françaises</td>
-            <td><a href=https://www.lejdd.fr/International/les-pays-bas-veulent-attirer-les-jeunes-chomeurs-des-banlieues-francaises-4117465>https://www.lejdd.fr/International/les-pays-bas-veulent-attirer-les-jeunes-chomeurs-des-banlieues-francaises-4117465</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/fr.txt50.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/50fr.txt>text</a></td>
-            <td>6</td>
-            <td><a href=../CONTEXTES/50fr.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>50</td>
+                <td>200</td>
+                <td>Les Pays-Bas veulent attirer les jeunes chômeurs des banlieues françaises</td>
+                <td><a href=https://www.lejdd.fr/International/les-pays-bas-veulent-attirer-les-jeunes-chomeurs-des-banlieues-francaises-4117465>https://www.lejdd.fr/International/les-pays-bas-veulent-attirer-les-jeunes-chomeurs-des-banlieues-francaises-4117465</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/fr.txt50.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/50fr.txt>text</a></td>
+                <td>6</td>
+                <td><a href=../CONTEXTES/50fr.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_fr.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>51</td>
-            <td>200</td>
-            <td>Les banlieues populaires ont aussi une histoire | Revue Projet</td>
-            <td><a href=https://www.revue-projet.com/articles/2007-4-les-banlieues-populaires-ont-aussi-une-histoire/>https://www.revue-projet.com/articles/2007-4-les-banlieues-populaires-ont-aussi-une-histoire/</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/fr.txt51.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/51fr.txt>text</a></td>
-            <td>36</td>
-            <td><a href=../CONTEXTES/51fr.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>51</td>
+                <td>200</td>
+                <td>Les banlieues populaires ont aussi une histoire | Revue Projet</td>
+                <td><a href=https://www.revue-projet.com/articles/2007-4-les-banlieues-populaires-ont-aussi-une-histoire/>https://www.revue-projet.com/articles/2007-4-les-banlieues-populaires-ont-aussi-une-histoire/</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/fr.txt51.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/51fr.txt>text</a></td>
+                <td>35</td>
+                <td><a href=../CONTEXTES/51fr.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_fr.html>concordance</a></td>
+            </tr>
 
-            </table>
+                    </tbody>
+                </table>
+
+                <nav class=blog-pagination aria-label=Pagination>
+                    <a class=btn btn-outline-warning rounded-pill href=>Haut</a>
+                </nav>
+                <div class=container d-flex justify-content-center>
+                    <nav class=blog-pagination aria-label=Pagination>
+                        <a class=btn btn-outline-dark rounded-pill href=../TABLEAUX/tableau_en.txt.html>Tableau anglais</a>
+                        <a class=btn btn-outline-dark rounded-pill href=../TABLEAUX/tableau_fr.txt.html>Tableau français</a>
+                        <a class=btn btn-outline-dark rounded-pill href=../TABLEAUX/tableau_it.txt.html>Tableau italien</a>
+                        <a class=btn btn-outline-dark rounded-pill href=../TABLEAUX/tableau_gr.txt.html>Tableau grec</a>
+                    </nav>
+                </div>
+            </main>
+            <footer class=blog-footer>
+                <div class=mb-3>
+                    <nav class=footer d-flex justify-content-around>
+                        <a class=link-secondary href=../index.html>Accueil</a>
+                        <a class=link-secondary href=../etapes.html>Étapes du projet</a>
+                        <a class=link-secondary href=../TABLEAUX/index.html>Tableaux</a>
+                        <a class=link-secondary href=../scripts.html>Scripts</a>
+                        <a class=link-secondary href=../resultats.html>Résultats</a>
+                        <a class=link-secondary href=../contact.html>Contact</a>
+                    </nav>
+                </div>
+                <p class=mb-0>Made with love by Mathou, Dedo & Lilou</p>
+            </footer>
+            <script src=https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js integrity=sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4 crossorigin=anonymous></script>
         </body>
     </html>

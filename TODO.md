@@ -13,10 +13,10 @@
 [x] Trier les URLS, notamment celles qui posent problème (403).
 
 #ECRITURE ARTICLE
-[ ] réécriture de l'article 1 "choix du mot" (le laisser en .txt et non en .md)\
+[x] réécriture de l'article 1 "choix du mot" (le laisser en .txt et non en .md)\
 
 #Structurer le site
 [x] quelle architecture du site, quel design ? -> réunion à ce propose le 30/11.
-[ ] Mise en place d'une arborescence, travail à finir. 
+[x] Mise en place d'une arborescence. 
 [ ] Modifier le script qui créé les tableaux pour qu'il intègre la template bootstrap.
 

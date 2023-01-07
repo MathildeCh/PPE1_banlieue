@@ -46,76 +46,20 @@
      *
      * Live TV
 
-   My europe
-     * Bruxelles, Je T’aime ?
-     * C’est Quoi L’europe?
-     * Débats Européens
-     * Europe News
-     * L’europe Décodée
-     * Smart Regions
-     * State Of The Union
-     * Unreported Europe
-
-   Sport
-
-   Monde
-     * Euronews Witness
-     * Global Japan
-     * Monde
-     * No Comment
-     * Qatar 365
-     * Spotlight
-     * The Global Conversation
-     * Top News Stories Today
-
-   Next
-     * Business Line
-     * Business Planet
-     * Focus
-     * Futuris
-     * Hacker Hunter Next Level
-     * Real Economy
-     * Sci-Tech
-     * Smart Health
-     * Target
-     * The Exchange
-
-   Voyage
-     * Adventures
-     * Explore
-     * Postcards
-     * Soul Of The South
-     * Taste
-
-   Green
-     * Climate Now
-     * Farm To Fork
-     * Ocean
-
-   Culture
-     * Cinema
-     * Crossing Cultures
-     * Cult
-     * Dans La Tête Des Hommes
-     * La Surprise Du Chef
-     * Meet The Locals
-     * Musica
-
-   Couverture spéciale
-     * Algeria Tomorrow
-     * Angola 360
-     * Climat
-     * Coronavirus
-     * Croatia 360
-     * Destination Dubai
-     * Explore Azerbaijan
-     * From Qatar
-     * Here We Grow: Spain
-     * Mobility Week
-     * Podcasts
-     * Procès Des Attentats Du 13 Novembre 2015
-     * The New Uzbekistan
-
+   My europe Bruxelles, Je T’aime ? C’est Quoi L’europe? Débats Européens
+   Europe News L’europe Décodée Smart Regions State Of The Union
+   Unreported Europe Sport
+   Monde Euronews Witness Global Japan Monde No Comment Qatar 365
+   Spotlight The Global Conversation Top News Stories Today
+   Next Business Line Business Planet Focus Futuris Hacker Hunter Next
+   Level Real Economy Sci-Tech Smart Health Target The Exchange
+   Voyage Adventures Explore Postcards Soul Of The South Taste Green
+   Climate Now Farm To Fork Ocean
+   Culture Cinema Crossing Cultures Cult Dans La Tête Des Hommes Inspire
+   Saudi La Surprise Du Chef Meet The Locals Musica
+   Couverture spéciale Algeria Tomorrow Angola 360 Climat Coronavirus
+   Destination Dubai Explore Azerbaijan From Qatar Here We Grow: Spain
+   Podcasts The New Uzbekistan
    Tous les programmes
 
    (BUTTON)
@@ -249,8 +193,7 @@ La France débloque 39 millions d'euros pour l'aide alimentaire
 
 Incidents et interpellations en banlieue parisienne
 
-France : triple épidémie, la question du port du masque obligatoire fait
-débat
+France : les services d'urgence débordés sous l'effet d'une triple épidémie
 
 PLUS D’INFOS
 
@@ -268,8 +211,7 @@ Hot Topic
 
 Chercher dans les tags du jour
 
-   France Coupe du monde 2022 au Qatar Parlement européen Corruption
-   Ukraine Football Scandale de corruption au Parlement européen
+   Etats-Unis Donald Trump Royaume-Uni Suède France Russie Chine
 
      * Thèmes
           + My Europe
@@ -317,7 +259,7 @@ Chercher dans les tags du jour
 
    Newsletter
 
-   Copyright © euronews 2022
+   Copyright © euronews 2023
    -
    (BUTTON) Français
    English
@@ -339,12 +281,10 @@ Chercher dans les tags du jour
    Srpski
 
    A LA UNE
-   FRANCE COUPE DU MONDE 2022 AU QATAR CORRUPTION UKRAINE PARLEMENT
-   EUROPÉEN FOOTBALL
+   ETATS-UNIS DONALD TRUMP ROYAUME-UNI SUÈDE RUSSIE
    My Europe Monde Business Sport Green Next Voyage Culture Vidéo Tous les
-   programmes Here we grow: Spain Mobility Week Algeria Tomorrow Croatia
-   360 From Qatar Coronavirus Podcasts Procès des attentats du 13 novembre
-   2015 Climat Destination Dubai Angola 360 The New Uzbekistan Explore
+   programmes Here we grow: Spain Algeria Tomorrow From Qatar Coronavirus
+   Podcasts Climat Destination Dubai Angola 360 The New Uzbekistan Explore
    Azerbaijan
 
      * Live TV

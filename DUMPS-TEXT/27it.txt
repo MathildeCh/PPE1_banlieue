@@ -1,5 +1,4 @@
    [INS: :INS]
-   asl vaccino
    icauto lugli 2021
 
    (BUTTON)
@@ -28,11 +27,12 @@
      * Pubblicità
      * Contatti
 
-   bcc_natale_2022
-   manzoniopenday2022
+   ance fase due
+   bccterradilavoro_riempitivo
    jambo natale 2022
    catone_dicembre_2022
    icauto_banner_2022
+   energia_camera
 
      * Sei qui:
      * Home
@@ -97,6 +97,8 @@ polizia in ospedali periferia
      * Indietro
      * Avanti
 
+   manzoni_openday_2022
+
    CASERTAFOCUS.NET
 
    SEGUI LE NOTIZIE IN DIRETTA
@@ -107,26 +109,28 @@ polizia in ospedali periferia
 
 Ultimi Articoli
 
-     * PRIMARK AL CENTRO CAMPANIA – Il 19 dicembre l’apertura ufficiale,
-       ma l’organico non è completo ECCO LE POSIZIONI aperte e come
-       CANDIDARSI
-     * CARO BOLLETTE – Il presidente De Luca: via libera ad un nuovo
-       contributo della Regione ECCO CHI può riceverlo
-     * ORTA DI ATELLA – Un atto di responsabilità IL DOCUMENTO UFFICIALE
-       dei dieci che hanno mandato Gaudino a casa
-     * ORTA DI ATELLA – Gaudino non è più sindaco, dieci consiglieri
-       firmano la sfiducia davanti al notaio TUTTI I NOMI si vota in
-       primavera
-     * SAN PRISCO – Botti proibiti, gli alunni della Benedetto Croce
-       incontrano gli artificieri del comando carabinieri
+     * L’INTERVENTO - Cangiano ed Oliva (FdI): «Solidarietà alla famiglia
+       di turisti derubata, li rivogliamo qui. Aversa non merita di essere
+       ricordata solo per episodi così brutti»
+     * SANTA MARIA A VICO - Il Sindaco Andrea Pirozzi annuncia l’avvio
+       delle procedure per la realizzazione dell’autostrada
+       Caserta-Benevento
+     * CELLOLE - Termina con successo l'edizione 2023 del presepe vivente
+       GUARDA LE FOTO
+     * LOTTERIA ITALIA – La Dea Bendata bacia Aversa, Casale, Teano e San
+       Nicola TUTTI I BIGLIETTI vincenti I TAGLIANDI fortunati venduti in
+       Campania
+     * SANTA MARIA CAPUA VETERE - Successo per l'iniziativa solidale
+       'Giocattoli in Movimento', il consigliere Talento: «Far felici i
+       bambini non ha prezzo»
 
-        Dicembre 2022
+        Gennaio 2023
    D  L  M  M  G  V    S
-               1  2  3
-   4  5  6  7  8  9  10
-   11 12 13 14 15 16 17
-   18 19 20 21 22 23 24
-   25 26 27 28 29 30 31
+   1  2  3  4  5  6  7
+   8  9  10 11 12 13 14
+   15 16 17 18 19 20 21
+   22 23 24 25 26 27 28
+   29 30 31
 
 Articoli più letti
 
@@ -138,7 +142,7 @@ Articoli più letti
 
 REGGIA DI CASERTA – Manca una visione …
 
-   28-10-2022 Hits:656 Notizie La Redazione
+   28-10-2022 Hits:857 Notizie La Redazione
 
    18:22:52 Cari amici, anche oggi ci ritroviamo a fare una chiacchierata
    sui temi locali.
@@ -147,7 +151,7 @@ REGGIA DI CASERTA – Manca una visione …
 
 AUTONOMIA DIFFERENZIATA – Un grande pe…
 
-   25-10-2022 Hits:798 Politica La Redazione
+   25-10-2022 Hits:969 Politica La Redazione
 
    21:11:44 Cari amici, come in qualche occasione è accaduto, parleremo di
    temi nazionali.
@@ -156,7 +160,7 @@ AUTONOMIA DIFFERENZIATA – Un grande pe…
 
 CASERTA – Via San Carlo, il deja vu ch…
 
-   20-10-2022 Hits:916 Notizie La Redazione
+   20-10-2022 Hits:1117 Notizie La Redazione
 
    13:55:16 Cari amici, come sempre mi confronto con voi sui temi di
    attualità locale.
@@ -248,8 +252,8 @@ Argomenti Popolari
      * santa maria capua vetere
      * covid
      * aversa
-     * morto covid
      * maddaloni
+     * morto covid
 
 
 

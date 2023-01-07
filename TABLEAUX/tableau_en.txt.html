@@ -1,624 +1,753 @@
 
-    <html>
+    <!DOCTYPE html>
+    <html lang="fr">
         <head>
-            <meta charset=UTF-8 />
-            <title>TABLEAU URLS</title>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Tableaux</title>
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+            <link href="https://fonts.googleapis.com/css?family=Playfair&#43;Display:700,900&amp;display=swap" rel="stylesheet">
+            <link href="../assets/CSS/blog.css" rel="stylesheet">
         </head>
         <body>
-            <table border=solid width=100%>
-                <tr>
-                    <th>ligne</th>
-                    <th>code HTTP</th>
-                    <th>titre</th>
-                    <th>URLS en.txt</th>
-                    <th>Encodage</th>
-                    <th>dump html</th>
-                    <th>dump text</th>
-                    <th>n_occurrence_mot</th>
-                    <th>contexte</th>
-                </tr>
+            <div class="container mb-4">
+                <header class="blog-header lh-1 py-3">
+                    <div class="row flex-nowrap justify-content-between align-items-center">
+                    <div class="col-6 text-center">
+                        <a class="blog-header-logo text-dark" href="./index.html">BANLIEUE</a>
+                    </div>
+                    <div>
+                        <img width="8%" src="../assets/img/banlieue_logo2.png" alt="">
+                    </div>
+                    </div>
+                </header>
 
-        <tr>
-            <td>1</td>
-            <td>200</td>
-            <td>Students at Joliot-Curie high school near Paris denounce police attacks - World Socialist Web Site</td>
-            <td><a href=https://www.wsws.org/en/articles/2022/10/24/mvmc-o24.html>https://www.wsws.org/en/articles/2022/10/24/mvmc-o24.html</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/en.txt1.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/1en.txt>text</a></td>
-            <td>4</td>
-            <td><a href=../CONTEXTES/1en.txt>contexte</a></td>
-        </tr>
+                <div class="d-flex justify-content-between align-items-stretch">
+                    <nav class="nav navbar navbar-expand-lg">
+                        <div class="container-fluid py-1 mb-12">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li class="nav-item">
+                                    <strong><a class="nav-link" aria-current="page" href="../index.html">ACCUEIL</a></strong>
+                                </li>
+                                <li class="nav-item">
+                                    <strong><a class="nav-link"href="../etapes.html">ÉTAPES DU PROJET</a></strong>
+                                </li>
+                                <li class="nav-item">
+                                    <strong><a class="nav-link"  href="../TABLEAUX/index.html">TABLEAUX</a></strong>
+                                </li>
+                                <li class="nav-item">
+                                    <strong><a class="nav-link"  href="../scripts.html">SCRIPTS</a></strong>
+                                </li>
+                                <li class="nav-item">
+                                    <strong><a class="nav-link"  href="../resultats.html">ANALYSE DES RÉSULTATS</a></strong>
+                                </li>
+                                <li class="nav-item">
+                                    <strong><a class="nav-link"  href="../contact.html">CONTACT</a></strong>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
 
-        <tr>
-            <td>2</td>
-            <td>200</td>
-            <td>Trump lost America's suburbs. Now the GOP might be about to win them back | CNN Politics</td>
-            <td><a href=https://edition.cnn.com/2022/10/24/politics/suburbs-key-to-gop-house-majority-nevada/index.html>https://edition.cnn.com/2022/10/24/politics/suburbs-key-to-gop-house-majority-nevada/index.html</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/en.txt2.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/2en.txt>text</a></td>
-            <td>6</td>
-            <td><a href=../CONTEXTES/2en.txt>contexte</a></td>
-        </tr>
+            <main class="container mt-3">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Ligne</th>
+                            <th>Code HTTP</th>
+                            <th>Titres</th>
+                            <th>URLS</th>
+                            <th>Encodage</th>
+                            <th>Dump html</th>
+                            <th>Dump text</th>
+                            <th>Nombre occurrences</th>
+                            <th>contexte</th>
+                            <th>Concordance</th>
+                        </tr>
+                    </thead>
+                    <tbody>
 
-        <tr>
-            <td>3</td>
-            <td>200</td>
-            <td>'Uneconomical and ineffective': Police Minister rejects petition for permanent police presence in Karama | NT Independent</td>
-            <td><a href=https://ntindependent.com.au/uneconomical-and-ineffective-police-minister-rejects-petition-for-permanent-police-presence-in-karama/>https://ntindependent.com.au/uneconomical-and-ineffective-police-minister-rejects-petition-for-permanent-police-presence-in-karama/</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/en.txt3.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/3en.txt>text</a></td>
-            <td>4</td>
-            <td><a href=../CONTEXTES/3en.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>1</td>
+                <td>200</td>
+                <td>Students at Joliot-Curie high school near Paris denounce police attacks - World Socialist Web Site</td>
+                <td><a href=https://www.wsws.org/en/articles/2022/10/24/mvmc-o24.html>https://www.wsws.org/en/articles/2022/10/24/mvmc-o24.html</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/en.txt1.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/1en.txt>text</a></td>
+                <td>4</td>
+                <td><a href=../CONTEXTES/1en.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_en.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>4</td>
-            <td>200</td>
-            <td>Mumbai: Toddler attacked, killed by leopard at Aarey colony | Law-Order</td>
-            <td><a href=https://www.devdiscourse.com/article/law-order/2225125-mumbai-toddler-attacked-killed-by-leopard-at-aarey-colony>https://www.devdiscourse.com/article/law-order/2225125-mumbai-toddler-attacked-killed-by-leopard-at-aarey-colony</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/en.txt4.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/4en.txt>text</a></td>
-            <td>2</td>
-            <td><a href=../CONTEXTES/4en.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>2</td>
+                <td>200</td>
+                <td>Trump lost America's suburbs. Now the GOP might be about to win them back | CNN Politics</td>
+                <td><a href=https://edition.cnn.com/2022/10/24/politics/suburbs-key-to-gop-house-majority-nevada/index.html>https://edition.cnn.com/2022/10/24/politics/suburbs-key-to-gop-house-majority-nevada/index.html</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/en.txt2.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/2en.txt>text</a></td>
+                <td>6</td>
+                <td><a href=../CONTEXTES/2en.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_en.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>5</td>
-            <td>200</td>
-            <td>WA police confirm bikie links in 'cold-blooded' fatal shooting in northern Perth suburb of Gnangara - ABC News</td>
-            <td><a href=https://www.abc.net.au/news/2022-09-29/wa-police-investigate-fatal-shooting-gnangara/101489004>https://www.abc.net.au/news/2022-09-29/wa-police-investigate-fatal-shooting-gnangara/101489004</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/en.txt5.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/5en.txt>text</a></td>
-            <td>4</td>
-            <td><a href=../CONTEXTES/5en.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>3</td>
+                <td>200</td>
+                <td>'Uneconomical and ineffective': Police Minister rejects petition for permanent police presence in Karama | NT Independent</td>
+                <td><a href=https://ntindependent.com.au/uneconomical-and-ineffective-police-minister-rejects-petition-for-permanent-police-presence-in-karama/>https://ntindependent.com.au/uneconomical-and-ineffective-police-minister-rejects-petition-for-permanent-police-presence-in-karama/</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/en.txt3.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/3en.txt>text</a></td>
+                <td>4</td>
+                <td><a href=../CONTEXTES/3en.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_en.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>6</td>
-            <td>200</td>
-            <td>Mumbai: Man stabbed to death by minor boys over argument about bursting firecrackers in glass bottle | Law-Order</td>
-            <td><a href=https://www.devdiscourse.com/article/law-order/2225246-mumbai-man-stabbed-to-death-by-minor-boys-over-argument-about-bursting-firecrackers-in-glass-bottle>https://www.devdiscourse.com/article/law-order/2225246-mumbai-man-stabbed-to-death-by-minor-boys-over-argument-about-bursting-firecrackers-in-glass-bottle</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/en.txt6.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/6en.txt>text</a></td>
-            <td>2</td>
-            <td><a href=../CONTEXTES/6en.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>4</td>
+                <td>200</td>
+                <td>Mumbai: Toddler attacked, killed by leopard at Aarey colony | Law-Order</td>
+                <td><a href=https://www.devdiscourse.com/article/law-order/2225125-mumbai-toddler-attacked-killed-by-leopard-at-aarey-colony>https://www.devdiscourse.com/article/law-order/2225125-mumbai-toddler-attacked-killed-by-leopard-at-aarey-colony</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/en.txt4.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/4en.txt>text</a></td>
+                <td>2</td>
+                <td><a href=../CONTEXTES/4en.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_en.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>7</td>
-            <td>200</td>
-            <td>Constance Watcho's death is unspeakable, yet it isn't listed as a homicide - ABC News</td>
-            <td><a href=https://www.abc.net.au/news/2022-10-24/the-tragic-story-of-constance-watcho/101552092>https://www.abc.net.au/news/2022-10-24/the-tragic-story-of-constance-watcho/101552092</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/en.txt7.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/7en.txt>text</a></td>
-            <td>4</td>
-            <td><a href=../CONTEXTES/7en.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>5</td>
+                <td>200</td>
+                <td>WA police confirm bikie links in 'cold-blooded' fatal shooting in northern Perth suburb of Gnangara - ABC News</td>
+                <td><a href=https://www.abc.net.au/news/2022-09-29/wa-police-investigate-fatal-shooting-gnangara/101489004>https://www.abc.net.au/news/2022-09-29/wa-police-investigate-fatal-shooting-gnangara/101489004</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/en.txt5.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/5en.txt>text</a></td>
+                <td>3</td>
+                <td><a href=../CONTEXTES/5en.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_en.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>8</td>
-            <td>200</td>
-            <td>UK police charge man with murder of 9-year-old girl, shot in Liverpool  | Al Arabiya English</td>
-            <td><a href=https://english.alarabiya.net/News/world/2022/10/02/UK-police-charge-man-with-murder-of-9-year-old-girl-shot-in-Liverpool>https://english.alarabiya.net/News/world/2022/10/02/UK-police-charge-man-with-murder-of-9-year-old-girl-shot-in-Liverpool</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/en.txt8.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/8en.txt>text</a></td>
-            <td>2</td>
-            <td><a href=../CONTEXTES/8en.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>6</td>
+                <td>200</td>
+                <td>Mumbai: Man stabbed to death by minor boys over argument about bursting firecrackers in glass bottle | Law-Order</td>
+                <td><a href=https://www.devdiscourse.com/article/law-order/2225246-mumbai-man-stabbed-to-death-by-minor-boys-over-argument-about-bursting-firecrackers-in-glass-bottle>https://www.devdiscourse.com/article/law-order/2225246-mumbai-man-stabbed-to-death-by-minor-boys-over-argument-about-bursting-firecrackers-in-glass-bottle</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/en.txt6.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/6en.txt>text</a></td>
+                <td>2</td>
+                <td><a href=../CONTEXTES/6en.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_en.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>9</td>
-            <td>200</td>
-            <td>High praise for locals as police return to Wainuiomata after 10-year hiatus | Stuff.co.nz</td>
-            <td><a href=https://www.stuff.co.nz/national/crime/130066144/high-praise-for-locals-as-police-return-to-wainuiomata-after-10year-hiatus>https://www.stuff.co.nz/national/crime/130066144/high-praise-for-locals-as-police-return-to-wainuiomata-after-10year-hiatus</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/en.txt9.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/9en.txt>text</a></td>
-            <td>3</td>
-            <td><a href=../CONTEXTES/9en.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>7</td>
+                <td>200</td>
+                <td>Constance Watcho's death is unspeakable, yet it isn't listed as a homicide - ABC News</td>
+                <td><a href=https://www.abc.net.au/news/2022-10-24/the-tragic-story-of-constance-watcho/101552092>https://www.abc.net.au/news/2022-10-24/the-tragic-story-of-constance-watcho/101552092</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/en.txt7.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/7en.txt>text</a></td>
+                <td>3</td>
+                <td><a href=../CONTEXTES/7en.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_en.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>10</td>
-            <td>200</td>
-            <td>Dee Why âtent cityâ goes up in flames: Police arrest two men amidst homeless feuding | news.com.au â Australiaâs leading news site</td>
-            <td><a href=https://www.news.com.au/national/nsw-act/crime/tent-city-in-affluent-sydney-suburb-dee-why-goes-up-in-flames-police-arrest-two-men-and-seize-machete/news-story/1dc7865c6f3f3787d36fbc105b359632>https://www.news.com.au/national/nsw-act/crime/tent-city-in-affluent-sydney-suburb-dee-why-goes-up-in-flames-police-arrest-two-men-and-seize-machete/news-story/1dc7865c6f3f3787d36fbc105b359632</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/en.txt10.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/10en.txt>text</a></td>
-            <td>5</td>
-            <td><a href=../CONTEXTES/10en.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>8</td>
+                <td>200</td>
+                <td>UK police charge man with murder of 9-year-old girl, shot in Liverpool  | Al Arabiya English</td>
+                <td><a href=https://english.alarabiya.net/News/world/2022/10/02/UK-police-charge-man-with-murder-of-9-year-old-girl-shot-in-Liverpool>https://english.alarabiya.net/News/world/2022/10/02/UK-police-charge-man-with-murder-of-9-year-old-girl-shot-in-Liverpool</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/en.txt8.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/8en.txt>text</a></td>
+                <td>2</td>
+                <td><a href=../CONTEXTES/8en.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_en.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>11</td>
-            <td>200</td>
-            <td>18-year-old man found dead on Palmerston driveway had sustained head trauma, NT Police say - ABC News</td>
-            <td><a href=https://www.abc.net.au/news/2022-10-09/body-of-man-found-in-palmerston-driveway-had-head-trauma/101516750>https://www.abc.net.au/news/2022-10-09/body-of-man-found-in-palmerston-driveway-had-head-trauma/101516750</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/en.txt11.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/11en.txt>text</a></td>
-            <td>5</td>
-            <td><a href=../CONTEXTES/11en.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>9</td>
+                <td>200</td>
+                <td>High praise for locals as police return to Wainuiomata after 10-year hiatus | Stuff.co.nz</td>
+                <td><a href=https://www.stuff.co.nz/national/crime/130066144/high-praise-for-locals-as-police-return-to-wainuiomata-after-10year-hiatus>https://www.stuff.co.nz/national/crime/130066144/high-praise-for-locals-as-police-return-to-wainuiomata-after-10year-hiatus</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/en.txt9.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/9en.txt>text</a></td>
+                <td>3</td>
+                <td><a href=../CONTEXTES/9en.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_en.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>12</td>
-            <td>200</td>
-            <td>Auckland police investigate series of burglaries | RNZ News</td>
-            <td><a href=https://www.rnz.co.nz/news/national/476180/auckland-police-investigate-series-of-burglaries>https://www.rnz.co.nz/news/national/476180/auckland-police-investigate-series-of-burglaries</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/en.txt12.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/12en.txt>text</a></td>
-            <td>4</td>
-            <td><a href=../CONTEXTES/12en.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>10</td>
+                <td>200</td>
+                <td>Dee Why âtent cityâ goes up in flames: Police arrest two men amidst homeless feuding | news.com.au â Australiaâs leading news site</td>
+                <td><a href=https://www.news.com.au/national/nsw-act/crime/tent-city-in-affluent-sydney-suburb-dee-why-goes-up-in-flames-police-arrest-two-men-and-seize-machete/news-story/1dc7865c6f3f3787d36fbc105b359632>https://www.news.com.au/national/nsw-act/crime/tent-city-in-affluent-sydney-suburb-dee-why-goes-up-in-flames-police-arrest-two-men-and-seize-machete/news-story/1dc7865c6f3f3787d36fbc105b359632</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/en.txt10.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/10en.txt>text</a></td>
+                <td>5</td>
+                <td><a href=../CONTEXTES/10en.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_en.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>13</td>
-            <td>200</td>
-            <td>London property: Life in the Enfield suburb named one of UK's best places to live where average house costs Â£700k - MyLondon</td>
-            <td><a href=https://www.mylondon.news/news/north-london-news/london-property-life-enfield-suburb-25294197>https://www.mylondon.news/news/north-london-news/london-property-life-enfield-suburb-25294197</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/en.txt13.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/13en.txt>text</a></td>
-            <td>5</td>
-            <td><a href=../CONTEXTES/13en.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>11</td>
+                <td>200</td>
+                <td>18-year-old man found dead on Palmerston driveway had sustained head trauma, NT Police say - ABC News</td>
+                <td><a href=https://www.abc.net.au/news/2022-10-09/body-of-man-found-in-palmerston-driveway-had-head-trauma/101516750>https://www.abc.net.au/news/2022-10-09/body-of-man-found-in-palmerston-driveway-had-head-trauma/101516750</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/en.txt11.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/11en.txt>text</a></td>
+                <td>4</td>
+                <td><a href=../CONTEXTES/11en.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_en.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>14</td>
-            <td>200</td>
-            <td>Police: Suspected gunman in Philippine broadcaster&#xE2;&#x80;&#x99;s killing surrenders, confesses &#xE2;&#x80;&#x94; BenarNews</td>
-            <td><a href=https://www.benarnews.org/english/news/philippine/suspected-gunman-10182022144746.html>https://www.benarnews.org/english/news/philippine/suspected-gunman-10182022144746.html</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/en.txt14.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/14en.txt>text</a></td>
-            <td>2</td>
-            <td><a href=../CONTEXTES/14en.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>12</td>
+                <td>200</td>
+                <td>Auckland police investigate series of burglaries | RNZ News</td>
+                <td><a href=https://www.rnz.co.nz/news/national/476180/auckland-police-investigate-series-of-burglaries>https://www.rnz.co.nz/news/national/476180/auckland-police-investigate-series-of-burglaries</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/en.txt12.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/12en.txt>text</a></td>
+                <td>4</td>
+                <td><a href=../CONTEXTES/12en.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_en.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>15</td>
-            <td>200</td>
-            <td>NT Police investigating after man's body found on residential driveway in Palmerston near Darwin - ABC News</td>
-            <td><a href=https://www.abc.net.au/news/2022-10-08/man-found-dead-on-palmerston-driveway-nt-police-investigating/101515222>https://www.abc.net.au/news/2022-10-08/man-found-dead-on-palmerston-driveway-nt-police-investigating/101515222</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/en.txt15.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/15en.txt>text</a></td>
-            <td>4</td>
-            <td><a href=../CONTEXTES/15en.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>13</td>
+                <td>200</td>
+                <td>London property: Life in the Enfield suburb named one of UK's best places to live where average house costs Â£700k - MyLondon</td>
+                <td><a href=https://www.mylondon.news/news/north-london-news/london-property-life-enfield-suburb-25294197>https://www.mylondon.news/news/north-london-news/london-property-life-enfield-suburb-25294197</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/en.txt13.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/13en.txt>text</a></td>
+                <td>5</td>
+                <td><a href=../CONTEXTES/13en.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_en.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>16</td>
-            <td>200</td>
-            <td>Sydney engineer 'confessed' murder to cops | The Canberra Times | Canberra, ACT</td>
-            <td><a href=https://www.canberratimes.com.au/story/7932990/sydney-engineer-confessed-murder-to-cops/>https://www.canberratimes.com.au/story/7932990/sydney-engineer-confessed-murder-to-cops/</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/en.txt16.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/16en.txt>text</a></td>
-            <td>4</td>
-            <td><a href=../CONTEXTES/16en.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>14</td>
+                <td>200</td>
+                <td>Police: Suspected gunman in Philippine broadcaster&#xE2;&#x80;&#x99;s killing surrenders, confesses &#xE2;&#x80;&#x94; BenarNews</td>
+                <td><a href=https://www.benarnews.org/english/news/philippine/suspected-gunman-10182022144746.html>https://www.benarnews.org/english/news/philippine/suspected-gunman-10182022144746.html</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/en.txt14.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/14en.txt>text</a></td>
+                <td>2</td>
+                <td><a href=../CONTEXTES/14en.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_en.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>17</td>
-            <td>200</td>
-            <td>FBI: Michigan art dealer faked lung transplant in $1.6M art fraud scheme - UPI.com</td>
-            <td><a href=https://www.upi.com/Top_News/US/2022/10/22/fbi-michigan-art-dealer-faked-lung-transplant-art-fraud-scheme/7791666488303/>https://www.upi.com/Top_News/US/2022/10/22/fbi-michigan-art-dealer-faked-lung-transplant-art-fraud-scheme/7791666488303/</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/en.txt17.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/17en.txt>text</a></td>
-            <td>3</td>
-            <td><a href=../CONTEXTES/17en.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>15</td>
+                <td>200</td>
+                <td>NT Police investigating after man's body found on residential driveway in Palmerston near Darwin - ABC News</td>
+                <td><a href=https://www.abc.net.au/news/2022-10-08/man-found-dead-on-palmerston-driveway-nt-police-investigating/101515222>https://www.abc.net.au/news/2022-10-08/man-found-dead-on-palmerston-driveway-nt-police-investigating/101515222</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/en.txt15.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/15en.txt>text</a></td>
+                <td>3</td>
+                <td><a href=../CONTEXTES/15en.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_en.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>18</td>
-            <td>200</td>
-            <td>Denver suburb where Elijah McClain died ousts police chief - Albuquerque Journal</td>
-            <td><a href=https://www.abqjournal.com/2486162/denver-suburb-where-elijah-mcclain-died-ousts-police-chief.html>https://www.abqjournal.com/2486162/denver-suburb-where-elijah-mcclain-died-ousts-police-chief.html</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/en.txt18.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/18en.txt>text</a></td>
-            <td>4</td>
-            <td><a href=../CONTEXTES/18en.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>16</td>
+                <td>200</td>
+                <td>Sydney engineer 'confessed' murder to cops | The Canberra Times | Canberra, ACT</td>
+                <td><a href=https://www.canberratimes.com.au/story/7932990/sydney-engineer-confessed-murder-to-cops/>https://www.canberratimes.com.au/story/7932990/sydney-engineer-confessed-murder-to-cops/</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/en.txt16.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/16en.txt>text</a></td>
+                <td>4</td>
+                <td><a href=../CONTEXTES/16en.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_en.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>19</td>
-            <td>403</td>
-            <td>Just a moment...</td>
-            <td><a href=https://www.thelocal.fr/20220602/reader-question-is-the-paris-suburb-of-saint-denis-really-a-no-go-zone/>https://www.thelocal.fr/20220602/reader-question-is-the-paris-suburb-of-saint-denis-really-a-no-go-zone/</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/en.txt19.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/19en.txt>text</a></td>
-            <td></td>
-            <td><a href=../CONTEXTES/19en.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>17</td>
+                <td>200</td>
+                <td>FBI: Michigan art dealer faked lung transplant in $1.6M art fraud scheme - UPI.com</td>
+                <td><a href=https://www.upi.com/Top_News/US/2022/10/22/fbi-michigan-art-dealer-faked-lung-transplant-art-fraud-scheme/7791666488303/>https://www.upi.com/Top_News/US/2022/10/22/fbi-michigan-art-dealer-faked-lung-transplant-art-fraud-scheme/7791666488303/</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/en.txt17.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/17en.txt>text</a></td>
+                <td>3</td>
+                <td><a href=../CONTEXTES/17en.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_en.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>20</td>
-            <td>200</td>
-            <td>MSN</td>
-            <td><a href=https://www.msn.com/en-gb/news/world/police-find-huge-cannabis-factory-in-leafy-cardiff-suburb/ar-AA12sbpG>https://www.msn.com/en-gb/news/world/police-find-huge-cannabis-factory-in-leafy-cardiff-suburb/ar-AA12sbpG</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/en.txt20.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/20en.txt>text</a></td>
-            <td>0</td>
-            <td><a href=../CONTEXTES/20en.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>18</td>
+                <td>200</td>
+                <td>Denver suburb where Elijah McClain died ousts police chief - Albuquerque Journal</td>
+                <td><a href=https://www.abqjournal.com/2486162/denver-suburb-where-elijah-mcclain-died-ousts-police-chief.html>https://www.abqjournal.com/2486162/denver-suburb-where-elijah-mcclain-died-ousts-police-chief.html</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/en.txt18.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/18en.txt>text</a></td>
+                <td>4</td>
+                <td><a href=../CONTEXTES/18en.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_en.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>21</td>
-            <td>200</td>
-            <td>Man, 20, charged by police after Auckland kidnapping ended in car crash | Stuff.co.nz</td>
-            <td><a href=https://www.stuff.co.nz/national/crime/300697838/man-20-charged-by-police-after-auckland-kidnapping-ended-in-car-crash>https://www.stuff.co.nz/national/crime/300697838/man-20-charged-by-police-after-auckland-kidnapping-ended-in-car-crash</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/en.txt21.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/21en.txt>text</a></td>
-            <td>3</td>
-            <td><a href=../CONTEXTES/21en.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>19</td>
+                <td>200</td>
+                <td>  Reader question: Is the Paris suburb of Saint-Denis really a no-go zone?</td>
+                <td><a href=https://www.thelocal.fr/20220602/reader-question-is-the-paris-suburb-of-saint-denis-really-a-no-go-zone/>https://www.thelocal.fr/20220602/reader-question-is-the-paris-suburb-of-saint-denis-really-a-no-go-zone/</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/en.txt19.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/19en.txt>text</a></td>
+                <td>12</td>
+                <td><a href=../CONTEXTES/19en.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_en.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>22</td>
-            <td>200</td>
-            <td>Hoax tsunami warning sparks police investigation | Stuff.co.nz</td>
-            <td><a href=https://www.stuff.co.nz/national/crime/130032878/hoax-tsunami-warning-sparks-police-investigation>https://www.stuff.co.nz/national/crime/130032878/hoax-tsunami-warning-sparks-police-investigation</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/en.txt22.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/22en.txt>text</a></td>
-            <td>3</td>
-            <td><a href=../CONTEXTES/22en.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>20</td>
+                <td>200</td>
+                <td>MSN</td>
+                <td><a href=https://www.msn.com/en-gb/news/world/police-find-huge-cannabis-factory-in-leafy-cardiff-suburb/ar-AA12sbpG>https://www.msn.com/en-gb/news/world/police-find-huge-cannabis-factory-in-leafy-cardiff-suburb/ar-AA12sbpG</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/en.txt20.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/20en.txt>text</a></td>
+                <td>0</td>
+                <td><a href=../CONTEXTES/20en.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_en.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>23</td>
-            <td>200</td>
-            <td>'No police, no law': anarchy in Palestinian suburb of Jerusalem - Al-Monitor: Independent, trusted coverage of the Middle East</td>
-            <td><a href=https://www.al-monitor.com/originals/2022/09/no-police-no-law-anarchy-palestinian-suburb-jerusalem>https://www.al-monitor.com/originals/2022/09/no-police-no-law-anarchy-palestinian-suburb-jerusalem</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/en.txt23.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/23en.txt>text</a></td>
-            <td>5</td>
-            <td><a href=../CONTEXTES/23en.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>21</td>
+                <td>200</td>
+                <td>Man, 20, charged by police after Auckland kidnapping ended in car crash | Stuff.co.nz</td>
+                <td><a href=https://www.stuff.co.nz/national/crime/300697838/man-20-charged-by-police-after-auckland-kidnapping-ended-in-car-crash>https://www.stuff.co.nz/national/crime/300697838/man-20-charged-by-police-after-auckland-kidnapping-ended-in-car-crash</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/en.txt21.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/21en.txt>text</a></td>
+                <td>3</td>
+                <td><a href=../CONTEXTES/21en.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_en.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>24</td>
-            <td>200</td>
-            <td>Police Shoot, Kill Man With Knife in Seattle Suburb</td>
-            <td><a href=https://www.usnews.com/news/best-states/washington/articles/2022-09-05/police-shoot-kill-man-with-knife-in-seattle-suburb>https://www.usnews.com/news/best-states/washington/articles/2022-09-05/police-shoot-kill-man-with-knife-in-seattle-suburb</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/en.txt24.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/24en.txt>text</a></td>
-            <td>5</td>
-            <td><a href=../CONTEXTES/24en.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>22</td>
+                <td>200</td>
+                <td>Hoax tsunami warning sparks police investigation | Stuff.co.nz</td>
+                <td><a href=https://www.stuff.co.nz/national/crime/130032878/hoax-tsunami-warning-sparks-police-investigation>https://www.stuff.co.nz/national/crime/130032878/hoax-tsunami-warning-sparks-police-investigation</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/en.txt22.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/22en.txt>text</a></td>
+                <td>3</td>
+                <td><a href=../CONTEXTES/22en.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_en.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>25</td>
-            <td>200</td>
-            <td>Staffing problems clash with COVID concerns as police hiring in Seattle suburb stirs debate | The Seattle Times</td>
-            <td><a href=https://www.seattletimes.com/seattle-news/politics/staffing-problems-clash-with-covid-concerns-as-police-hiring-in-seattle-suburb-stirs-debate/>https://www.seattletimes.com/seattle-news/politics/staffing-problems-clash-with-covid-concerns-as-police-hiring-in-seattle-suburb-stirs-debate/</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/en.txt25.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/25en.txt>text</a></td>
-            <td>4</td>
-            <td><a href=../CONTEXTES/25en.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>23</td>
+                <td>200</td>
+                <td>'No police, no law': anarchy in Palestinian suburb of Jerusalem - Al-Monitor: Independent, trusted coverage of the Middle East</td>
+                <td><a href=https://www.al-monitor.com/originals/2022/09/no-police-no-law-anarchy-palestinian-suburb-jerusalem>https://www.al-monitor.com/originals/2022/09/no-police-no-law-anarchy-palestinian-suburb-jerusalem</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/en.txt23.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/23en.txt>text</a></td>
+                <td>5</td>
+                <td><a href=../CONTEXTES/23en.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_en.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>26</td>
-            <td>200</td>
-            <td>Cleveland Police Probe Shooting Involving Suburban Officer</td>
-            <td><a href=https://www.usnews.com/news/best-states/ohio/articles/2022-05-30/cleveland-police-probe-shooting-involving-suburban-officer>https://www.usnews.com/news/best-states/ohio/articles/2022-05-30/cleveland-police-probe-shooting-involving-suburban-officer</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/en.txt26.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/26en.txt>text</a></td>
-            <td>3</td>
-            <td><a href=../CONTEXTES/26en.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>24</td>
+                <td>200</td>
+                <td>Police Shoot, Kill Man With Knife in Seattle Suburb</td>
+                <td><a href=https://www.usnews.com/news/best-states/washington/articles/2022-09-05/police-shoot-kill-man-with-knife-in-seattle-suburb>https://www.usnews.com/news/best-states/washington/articles/2022-09-05/police-shoot-kill-man-with-knife-in-seattle-suburb</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/en.txt24.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/24en.txt>text</a></td>
+                <td>5</td>
+                <td><a href=../CONTEXTES/24en.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_en.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>27</td>
-            <td>200</td>
-            <td>Police: Parade shooting suspect contemplated 2nd shooting – Fayetteville Flyer</td>
-            <td><a href=https://www.fayettevilleflyer.com/2022/07/06/police-parade-shooting-suspect-contemplated-2nd-shooting/>https://www.fayettevilleflyer.com/2022/07/06/police-parade-shooting-suspect-contemplated-2nd-shooting/</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/en.txt27.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/27en.txt>text</a></td>
-            <td>4</td>
-            <td><a href=../CONTEXTES/27en.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>25</td>
+                <td>200</td>
+                <td>Staffing problems clash with COVID concerns as police hiring in Seattle suburb stirs debate | The Seattle Times</td>
+                <td><a href=https://www.seattletimes.com/seattle-news/politics/staffing-problems-clash-with-covid-concerns-as-police-hiring-in-seattle-suburb-stirs-debate/>https://www.seattletimes.com/seattle-news/politics/staffing-problems-clash-with-covid-concerns-as-police-hiring-in-seattle-suburb-stirs-debate/</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/en.txt25.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/25en.txt>text</a></td>
+                <td>4</td>
+                <td><a href=../CONTEXTES/25en.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_en.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>28</td>
-            <td>200</td>
-            <td>Tennessee man on the run after shooting police officer: ‘Armed and extremely dangerous’ | Fox News</td>
-            <td><a href=https://www.foxnews.com/us/tennessee-man-shooting-police-officer-armed-dangerous>https://www.foxnews.com/us/tennessee-man-shooting-police-officer-armed-dangerous</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/en.txt28.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/28en.txt>text</a></td>
-            <td>4</td>
-            <td><a href=../CONTEXTES/28en.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>26</td>
+                <td>200</td>
+                <td>Cleveland Police Probe Shooting Involving Suburban Officer</td>
+                <td><a href=https://www.usnews.com/news/best-states/ohio/articles/2022-05-30/cleveland-police-probe-shooting-involving-suburban-officer>https://www.usnews.com/news/best-states/ohio/articles/2022-05-30/cleveland-police-probe-shooting-involving-suburban-officer</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/en.txt26.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/26en.txt>text</a></td>
+                <td>3</td>
+                <td><a href=../CONTEXTES/26en.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_en.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>29</td>
-            <td>200</td>
-            <td>Muskegon public safety director job offered to former gang specialist from Chicago suburb - mlive.com</td>
-            <td><a href=https://www.mlive.com/news/muskegon/2022/03/muskegon-public-safety-director-job-offered-to-former-gang-specialist-from-chicago-suburb.html>https://www.mlive.com/news/muskegon/2022/03/muskegon-public-safety-director-job-offered-to-former-gang-specialist-from-chicago-suburb.html</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/en.txt29.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/29en.txt>text</a></td>
-            <td>3</td>
-            <td><a href=../CONTEXTES/29en.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>27</td>
+                <td>200</td>
+                <td>Police: Parade shooting suspect contemplated 2nd shooting – Fayetteville Flyer</td>
+                <td><a href=https://www.fayettevilleflyer.com/2022/07/06/police-parade-shooting-suspect-contemplated-2nd-shooting/>https://www.fayettevilleflyer.com/2022/07/06/police-parade-shooting-suspect-contemplated-2nd-shooting/</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/en.txt27.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/27en.txt>text</a></td>
+                <td>4</td>
+                <td><a href=../CONTEXTES/27en.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_en.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>30</td>
-            <td>200</td>
-            <td>Illinois Police Officer Shot and Wounded Near St. Louis</td>
-            <td><a href=https://www.usnews.com/news/us/articles/2021-10-26/illinois-police-officer-shot-and-wounded-near-st-louis>https://www.usnews.com/news/us/articles/2021-10-26/illinois-police-officer-shot-and-wounded-near-st-louis</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/en.txt30.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/30en.txt>text</a></td>
-            <td>3</td>
-            <td><a href=../CONTEXTES/30en.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>28</td>
+                <td>200</td>
+                <td>Tennessee man on the run after shooting police officer: ‘Armed and extremely dangerous’ | Fox News</td>
+                <td><a href=https://www.foxnews.com/us/tennessee-man-shooting-police-officer-armed-dangerous>https://www.foxnews.com/us/tennessee-man-shooting-police-officer-armed-dangerous</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/en.txt28.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/28en.txt>text</a></td>
+                <td>4</td>
+                <td><a href=../CONTEXTES/28en.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_en.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>31</td>
-            <td>200</td>
-            <td>Youths clash with police in Paris suburb | Daily Sabah</td>
-            <td><a href=https://www.dailysabah.com/world/europe/youths-clash-with-police-in-paris-suburb>https://www.dailysabah.com/world/europe/youths-clash-with-police-in-paris-suburb</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/en.txt31.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/31en.txt>text</a></td>
-            <td>4</td>
-            <td><a href=../CONTEXTES/31en.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>29</td>
+                <td>200</td>
+                <td>Muskegon public safety director job offered to former gang specialist from Chicago suburb - mlive.com</td>
+                <td><a href=https://www.mlive.com/news/muskegon/2022/03/muskegon-public-safety-director-job-offered-to-former-gang-specialist-from-chicago-suburb.html>https://www.mlive.com/news/muskegon/2022/03/muskegon-public-safety-director-job-offered-to-former-gang-specialist-from-chicago-suburb.html</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/en.txt29.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/29en.txt>text</a></td>
+                <td>3</td>
+                <td><a href=../CONTEXTES/29en.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_en.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>32</td>
-            <td>200</td>
-            <td>KC-area police departments evaluate security improvements after mass shootings</td>
-            <td><a href=https://www.kshb.com/news/local-news/investigations/kansas-city-area-police-departments-evaluating-security-improvements-following-mass-shootings>https://www.kshb.com/news/local-news/investigations/kansas-city-area-police-departments-evaluating-security-improvements-following-mass-shootings</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/en.txt32.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/32en.txt>text</a></td>
-            <td>2</td>
-            <td><a href=../CONTEXTES/32en.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>30</td>
+                <td>200</td>
+                <td>Illinois Police Officer Shot and Wounded Near St. Louis</td>
+                <td><a href=https://www.usnews.com/news/us/articles/2021-10-26/illinois-police-officer-shot-and-wounded-near-st-louis>https://www.usnews.com/news/us/articles/2021-10-26/illinois-police-officer-shot-and-wounded-near-st-louis</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/en.txt30.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/30en.txt>text</a></td>
+                <td>3</td>
+                <td><a href=../CONTEXTES/30en.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_en.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>33</td>
-            <td>200</td>
-            <td>Michigan man fatally shot by police after he killed his wife; his daughter blames incident on QAnon conspiracy theory</td>
-            <td><a href=https://www.nbcnews.com/news/us-news/michigan-police-kill-man-accused-fatally-shooting-wife-wounding-daught-rcna47274>https://www.nbcnews.com/news/us-news/michigan-police-kill-man-accused-fatally-shooting-wife-wounding-daught-rcna47274</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/en.txt33.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/33en.txt>text</a></td>
-            <td>1</td>
-            <td><a href=../CONTEXTES/33en.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>31</td>
+                <td>200</td>
+                <td>Youths clash with police in Paris suburb | Daily Sabah</td>
+                <td><a href=https://www.dailysabah.com/world/europe/youths-clash-with-police-in-paris-suburb>https://www.dailysabah.com/world/europe/youths-clash-with-police-in-paris-suburb</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/en.txt31.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/31en.txt>text</a></td>
+                <td>4</td>
+                <td><a href=../CONTEXTES/31en.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_en.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>34</td>
-            <td>200</td>
-            <td>Police: Shooter at Apartment Complex Kills 2, Then Himself</td>
-            <td><a href=https://www.usnews.com/news/best-states/wisconsin/articles/2022-02-05/medical-examiner-called-to-brown-deer-apartment-complex>https://www.usnews.com/news/best-states/wisconsin/articles/2022-02-05/medical-examiner-called-to-brown-deer-apartment-complex</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/en.txt34.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/34en.txt>text</a></td>
-            <td>2</td>
-            <td><a href=../CONTEXTES/34en.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>32</td>
+                <td>200</td>
+                <td>KC-area police departments evaluate security improvements after mass shootings</td>
+                <td><a href=https://www.kshb.com/news/local-news/investigations/kansas-city-area-police-departments-evaluating-security-improvements-following-mass-shootings>https://www.kshb.com/news/local-news/investigations/kansas-city-area-police-departments-evaluating-security-improvements-following-mass-shootings</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/en.txt32.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/32en.txt>text</a></td>
+                <td>2</td>
+                <td><a href=../CONTEXTES/32en.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_en.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>35</td>
-            <td>200</td>
-            <td>Police say they stopped a planned July 4 mass shooting in Virginia's capital after getting a tip</td>
-            <td><a href=https://www.cnbc.com/2022/07/06/police-say-they-stopped-a-planned-july-4-mass-shooting-in-virginias-capital-after-getting-a-tip.html>https://www.cnbc.com/2022/07/06/police-say-they-stopped-a-planned-july-4-mass-shooting-in-virginias-capital-after-getting-a-tip.html</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/en.txt35.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/35en.txt>text</a></td>
-            <td>2</td>
-            <td><a href=../CONTEXTES/35en.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>33</td>
+                <td>200</td>
+                <td>Michigan man fatally shot by police after he killed his wife; his daughter blames incident on QAnon conspiracy theory</td>
+                <td><a href=https://www.nbcnews.com/news/us-news/michigan-police-kill-man-accused-fatally-shooting-wife-wounding-daught-rcna47274>https://www.nbcnews.com/news/us-news/michigan-police-kill-man-accused-fatally-shooting-wife-wounding-daught-rcna47274</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/en.txt33.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/33en.txt>text</a></td>
+                <td>1</td>
+                <td><a href=../CONTEXTES/33en.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_en.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>36</td>
-            <td>200</td>
-            <td>Israeli at Highland Park parade recalls moment he realized fireworks were gunshots | The Times of Israel</td>
-            <td><a href=https://www.timesofisrael.com/liveblog_entry/israeli-at-highland-park-parade-recalls-moment-he-realized-fireworks-were-gunshots/>https://www.timesofisrael.com/liveblog_entry/israeli-at-highland-park-parade-recalls-moment-he-realized-fireworks-were-gunshots/</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/en.txt36.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/36en.txt>text</a></td>
-            <td>2</td>
-            <td><a href=../CONTEXTES/36en.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>34</td>
+                <td>200</td>
+                <td>Police: Shooter at Apartment Complex Kills 2, Then Himself</td>
+                <td><a href=https://www.usnews.com/news/best-states/wisconsin/articles/2022-02-05/medical-examiner-called-to-brown-deer-apartment-complex>https://www.usnews.com/news/best-states/wisconsin/articles/2022-02-05/medical-examiner-called-to-brown-deer-apartment-complex</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/en.txt34.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/34en.txt>text</a></td>
+                <td>2</td>
+                <td><a href=../CONTEXTES/34en.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_en.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>37</td>
-            <td>200</td>
-            <td></td>
-            <td><a href=https://news.yahoo.com/car-rams-two-police-motorcyclists-205134107.html>https://news.yahoo.com/car-rams-two-police-motorcyclists-205134107.html</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/en.txt37.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/37en.txt>text</a></td>
-            <td>2</td>
-            <td><a href=../CONTEXTES/37en.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>35</td>
+                <td>200</td>
+                <td>Police say they stopped a planned July 4 mass shooting in Virginia's capital after getting a tip</td>
+                <td><a href=https://www.cnbc.com/2022/07/06/police-say-they-stopped-a-planned-july-4-mass-shooting-in-virginias-capital-after-getting-a-tip.html>https://www.cnbc.com/2022/07/06/police-say-they-stopped-a-planned-july-4-mass-shooting-in-virginias-capital-after-getting-a-tip.html</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/en.txt35.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/35en.txt>text</a></td>
+                <td>2</td>
+                <td><a href=../CONTEXTES/35en.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_en.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>38</td>
-            <td>200</td>
-            <td></td>
-            <td><a href=https://www.npr.org/2022/03/30/1089630962/gunman-kills-5-israel>https://www.npr.org/2022/03/30/1089630962/gunman-kills-5-israel</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/en.txt38.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/38en.txt>text</a></td>
-            <td>3</td>
-            <td><a href=../CONTEXTES/38en.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>36</td>
+                <td>200</td>
+                <td>Israeli at Highland Park parade recalls moment he realized fireworks were gunshots | The Times of Israel</td>
+                <td><a href=https://www.timesofisrael.com/liveblog_entry/israeli-at-highland-park-parade-recalls-moment-he-realized-fireworks-were-gunshots/>https://www.timesofisrael.com/liveblog_entry/israeli-at-highland-park-parade-recalls-moment-he-realized-fireworks-were-gunshots/</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/en.txt36.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/36en.txt>text</a></td>
+                <td>2</td>
+                <td><a href=../CONTEXTES/36en.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_en.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>39</td>
-            <td>200</td>
-            <td>Former suburban Chicago police officer accused of dragging 66-year-old woman back in court on Monday</td>
-            <td><a href=https://www.fox32chicago.com/news/suburban-chicago-police-officer-accused-of-dragging-66-year-old-woman-back-in-court-on-monday>https://www.fox32chicago.com/news/suburban-chicago-police-officer-accused-of-dragging-66-year-old-woman-back-in-court-on-monday</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/en.txt39.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/39en.txt>text</a></td>
-            <td>1</td>
-            <td><a href=../CONTEXTES/39en.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>37</td>
+                <td>200</td>
+                <td></td>
+                <td><a href=https://news.yahoo.com/car-rams-two-police-motorcyclists-205134107.html>https://news.yahoo.com/car-rams-two-police-motorcyclists-205134107.html</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/en.txt37.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/37en.txt>text</a></td>
+                <td>2</td>
+                <td><a href=../CONTEXTES/37en.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_en.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>40</td>
-            <td>200</td>
-            <td>Police: Woman who opened fire at Dallas airport shot at cop</td>
-            <td><a href=https://spectrumlocalnews.com/tx/south-texas-el-paso/news/2022/07/26/police--woman-who-opened-fire-at-dallas-airport-shot-at-cop>https://spectrumlocalnews.com/tx/south-texas-el-paso/news/2022/07/26/police--woman-who-opened-fire-at-dallas-airport-shot-at-cop</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/en.txt40.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/40en.txt>text</a></td>
-            <td>2</td>
-            <td><a href=../CONTEXTES/40en.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>38</td>
+                <td>200</td>
+                <td></td>
+                <td><a href=https://www.npr.org/2022/03/30/1089630962/gunman-kills-5-israel>https://www.npr.org/2022/03/30/1089630962/gunman-kills-5-israel</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/en.txt38.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/38en.txt>text</a></td>
+                <td>3</td>
+                <td><a href=../CONTEXTES/38en.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_en.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>41</td>
-            <td>200</td>
-            <td>Informal settlement near Paris: 'Every morning, the police tell us to get out' - InfoMigrants</td>
-            <td><a href=https://www.infomigrants.net/en/post/27009/informal-settlement-near-paris-every-morning-the-police-tell-us-to-get-out>https://www.infomigrants.net/en/post/27009/informal-settlement-near-paris-every-morning-the-police-tell-us-to-get-out</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/en.txt41.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/41en.txt>text</a></td>
-            <td>6</td>
-            <td><a href=../CONTEXTES/41en.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>39</td>
+                <td>200</td>
+                <td>Former suburban Chicago police officer accused of dragging 66-year-old woman back in court on Monday</td>
+                <td><a href=https://www.fox32chicago.com/news/suburban-chicago-police-officer-accused-of-dragging-66-year-old-woman-back-in-court-on-monday>https://www.fox32chicago.com/news/suburban-chicago-police-officer-accused-of-dragging-66-year-old-woman-back-in-court-on-monday</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/en.txt39.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/39en.txt>text</a></td>
+                <td>1</td>
+                <td><a href=../CONTEXTES/39en.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_en.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>42</td>
-            <td>200</td>
-            <td>Anti-Section 8 policy will push many Black residents out of Texas suburb | The Texas Tribune</td>
-            <td><a href=https://www.texastribune.org/2022/07/21/texas-hoa-bans-section-8-providence-village/>https://www.texastribune.org/2022/07/21/texas-hoa-bans-section-8-providence-village/</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/en.txt42.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/42en.txt>text</a></td>
-            <td>3</td>
-            <td><a href=../CONTEXTES/42en.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>40</td>
+                <td>200</td>
+                <td>Police: Woman who opened fire at Dallas airport shot at cop</td>
+                <td><a href=https://spectrumlocalnews.com/tx/south-texas-el-paso/news/2022/07/26/police--woman-who-opened-fire-at-dallas-airport-shot-at-cop>https://spectrumlocalnews.com/tx/south-texas-el-paso/news/2022/07/26/police--woman-who-opened-fire-at-dallas-airport-shot-at-cop</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/en.txt40.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/40en.txt>text</a></td>
+                <td>2</td>
+                <td><a href=../CONTEXTES/40en.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_en.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>43</td>
-            <td>200</td>
-            <td>What you need to know about Highland Park, the Chicago suburb rattled by July 4 shooting | The Pittsburgh Jewish Chronicle</td>
-            <td><a href=https://jewishchronicle.timesofisrael.com/what-you-need-to-know-about-highland-park-the-chicago-suburb-rattled-by-july-4-shooting/>https://jewishchronicle.timesofisrael.com/what-you-need-to-know-about-highland-park-the-chicago-suburb-rattled-by-july-4-shooting/</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/en.txt43.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/43en.txt>text</a></td>
-            <td>7</td>
-            <td><a href=../CONTEXTES/43en.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>41</td>
+                <td>200</td>
+                <td>Informal settlement near Paris: 'Every morning, the police tell us to get out' - InfoMigrants</td>
+                <td><a href=https://www.infomigrants.net/en/post/27009/informal-settlement-near-paris-every-morning-the-police-tell-us-to-get-out>https://www.infomigrants.net/en/post/27009/informal-settlement-near-paris-every-morning-the-police-tell-us-to-get-out</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/en.txt41.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/41en.txt>text</a></td>
+                <td>6</td>
+                <td><a href=../CONTEXTES/41en.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_en.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>44</td>
-            <td>200</td>
-            <td>Rally for justice in Chicago suburb after young woman killed by police – Liberation News</td>
-            <td><a href=https://www.liberationnews.org/rally-for-justice-in-chicago-suburb-rallies-after-young-woman-killed-by-police/>https://www.liberationnews.org/rally-for-justice-in-chicago-suburb-rallies-after-young-woman-killed-by-police/</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/en.txt44.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/44en.txt>text</a></td>
-            <td>5</td>
-            <td><a href=../CONTEXTES/44en.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>42</td>
+                <td>200</td>
+                <td>Anti-Section 8 policy will push many Black residents out of Texas suburb | The Texas Tribune</td>
+                <td><a href=https://www.texastribune.org/2022/07/21/texas-hoa-bans-section-8-providence-village/>https://www.texastribune.org/2022/07/21/texas-hoa-bans-section-8-providence-village/</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/en.txt42.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/42en.txt>text</a></td>
+                <td>3</td>
+                <td><a href=../CONTEXTES/42en.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_en.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>45</td>
-            <td>200</td>
-            <td>French Police Administrator Killed in Knife attack </td>
-            <td><a href=https://www.voanews.com/a/europe_french-police-administrator-killed-knife-attack/6204973.html>https://www.voanews.com/a/europe_french-police-administrator-killed-knife-attack/6204973.html</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/en.txt45.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/45en.txt>text</a></td>
-            <td>3</td>
-            <td><a href=../CONTEXTES/45en.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>43</td>
+                <td>200</td>
+                <td>What you need to know about Highland Park, the Chicago suburb rattled by July 4 shooting | The Pittsburgh Jewish Chronicle</td>
+                <td><a href=https://jewishchronicle.timesofisrael.com/what-you-need-to-know-about-highland-park-the-chicago-suburb-rattled-by-july-4-shooting/>https://jewishchronicle.timesofisrael.com/what-you-need-to-know-about-highland-park-the-chicago-suburb-rattled-by-july-4-shooting/</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/en.txt43.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/43en.txt>text</a></td>
+                <td>7</td>
+                <td><a href=../CONTEXTES/43en.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_en.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>46</td>
-            <td>200</td>
-            <td>Many U.S. states barely use red flag laws as shootings and gun deaths soar - Los Angeles Times</td>
-            <td><a href=https://www.latimes.com/world-nation/story/2022-09-02/red-flag-laws-get-little-use-as-shootings-gun-deaths-soar>https://www.latimes.com/world-nation/story/2022-09-02/red-flag-laws-get-little-use-as-shootings-gun-deaths-soar</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/en.txt46.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/46en.txt>text</a></td>
-            <td>2</td>
-            <td><a href=../CONTEXTES/46en.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>44</td>
+                <td>200</td>
+                <td>Rally for justice in Chicago suburb after young woman killed by police – Liberation News</td>
+                <td><a href=https://www.liberationnews.org/rally-for-justice-in-chicago-suburb-rallies-after-young-woman-killed-by-police/>https://www.liberationnews.org/rally-for-justice-in-chicago-suburb-rallies-after-young-woman-killed-by-police/</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/en.txt44.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/44en.txt>text</a></td>
+                <td>5</td>
+                <td><a href=../CONTEXTES/44en.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_en.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>47</td>
-            <td>200</td>
-            <td>Sedalia Police Reports For August 3, 2022</td>
-            <td><a href=https://ksisradio.com/sedalia-police-reports-for-august-3-2022/>https://ksisradio.com/sedalia-police-reports-for-august-3-2022/</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/en.txt47.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/47en.txt>text</a></td>
-            <td>0</td>
-            <td><a href=../CONTEXTES/47en.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>45</td>
+                <td>200</td>
+                <td>French Police Administrator Killed in Knife attack </td>
+                <td><a href=https://www.voanews.com/a/europe_french-police-administrator-killed-knife-attack/6204973.html>https://www.voanews.com/a/europe_french-police-administrator-killed-knife-attack/6204973.html</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/en.txt45.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/45en.txt>text</a></td>
+                <td>3</td>
+                <td><a href=../CONTEXTES/45en.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_en.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>48</td>
-            <td>200</td>
-            <td>
+            <tr>
+                <td>46</td>
+                <td>200</td>
+                <td>Many U.S. states barely use red flag laws as shootings and gun deaths soar - Los Angeles Times</td>
+                <td><a href=https://www.latimes.com/world-nation/story/2022-09-02/red-flag-laws-get-little-use-as-shootings-gun-deaths-soar>https://www.latimes.com/world-nation/story/2022-09-02/red-flag-laws-get-little-use-as-shootings-gun-deaths-soar</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/en.txt46.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/46en.txt>text</a></td>
+                <td>2</td>
+                <td><a href=../CONTEXTES/46en.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_en.html>concordance</a></td>
+            </tr>
+
+            <tr>
+                <td>47</td>
+                <td>200</td>
+                <td>Sedalia Police Reports For August 3, 2022</td>
+                <td><a href=https://ksisradio.com/sedalia-police-reports-for-august-3-2022/>https://ksisradio.com/sedalia-police-reports-for-august-3-2022/</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/en.txt47.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/47en.txt>text</a></td>
+                <td>0</td>
+                <td><a href=../CONTEXTES/47en.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_en.html>concordance</a></td>
+            </tr>
+
+            <tr>
+                <td>48</td>
+                <td>200</td>
+                <td>
 	Mexico City Suburb Fires 87 Officers Amid Corruption Charges | Newsmax.com</td>
-            <td><a href=https://www.newsmax.com/newsfront/mexico-naucalpan-corruption/2022/07/20/id/1079658/>https://www.newsmax.com/newsfront/mexico-naucalpan-corruption/2022/07/20/id/1079658/</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/en.txt48.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/48en.txt>text</a></td>
-            <td>1</td>
-            <td><a href=../CONTEXTES/48en.txt>contexte</a></td>
-        </tr>
+                <td><a href=https://www.newsmax.com/newsfront/mexico-naucalpan-corruption/2022/07/20/id/1079658/>https://www.newsmax.com/newsfront/mexico-naucalpan-corruption/2022/07/20/id/1079658/</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/en.txt48.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/48en.txt>text</a></td>
+                <td>1</td>
+                <td><a href=../CONTEXTES/48en.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_en.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>49</td>
-            <td>200</td>
-            <td>Alexandria Ocasio-Cortez "Defund the Police" Instagram Response | Marie Claire</td>
-            <td><a href=https://www.marieclaire.com/politics/a32849383/alexandria-ocasio-cortez-defund-the-police/>https://www.marieclaire.com/politics/a32849383/alexandria-ocasio-cortez-defund-the-police/</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/en.txt49.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/49en.txt>text</a></td>
-            <td>6</td>
-            <td><a href=../CONTEXTES/49en.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>49</td>
+                <td>200</td>
+                <td>Alexandria Ocasio-Cortez "Defund the Police" Instagram Response | Marie Claire</td>
+                <td><a href=https://www.marieclaire.com/politics/a32849383/alexandria-ocasio-cortez-defund-the-police/>https://www.marieclaire.com/politics/a32849383/alexandria-ocasio-cortez-defund-the-police/</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/en.txt49.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/49en.txt>text</a></td>
+                <td>6</td>
+                <td><a href=../CONTEXTES/49en.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_en.html>concordance</a></td>
+            </tr>
 
-        <tr>
-            <td>50</td>
-            <td>200</td>
-            <td>Armed French police sent into Dijon to quell ethnic gang violence | Reuters</td>
-            <td><a href=https://www.reuters.com/article/us-france-security-dijon-idUSKBN23N0OE>https://www.reuters.com/article/us-france-security-dijon-idUSKBN23N0OE</a></td>
-            <td>UTF-8</td>
-            <td><a href=../ASPIRATIONS/en.txt50.html>html</a></td>
-            <td><a href=../DUMPS-TEXT/50en.txt>text</a></td>
-            <td>3</td>
-            <td><a href=../CONTEXTES/50en.txt>contexte</a></td>
-        </tr>
+            <tr>
+                <td>50</td>
+                <td>200</td>
+                <td>Armed French police sent into Dijon to quell ethnic gang violence | Reuters</td>
+                <td><a href=https://www.reuters.com/article/us-france-security-dijon-idUSKBN23N0OE>https://www.reuters.com/article/us-france-security-dijon-idUSKBN23N0OE</a></td>
+                <td>UTF-8</td>
+                <td><a href=../ASPIRATIONS/en.txt50.html>html</a></td>
+                <td><a href=../DUMPS-TEXT/50en.txt>text</a></td>
+                <td>3</td>
+                <td><a href=../CONTEXTES/50en.txt>contexte</a></td>
+                <td><a href=../CONCORDANCE/Tableau_concordance_en.html>concordance</a></td>
+            </tr>
 
-            </table>
+                    </tbody>
+                </table>
+
+                <nav class=blog-pagination aria-label=Pagination>
+                    <a class=btn btn-outline-warning rounded-pill href=>Haut</a>
+                </nav>
+                <div class=container d-flex justify-content-center>
+                    <nav class=blog-pagination aria-label=Pagination>
+                        <a class=btn btn-outline-dark rounded-pill href=../TABLEAUX/tableau_en.txt.html>Tableau anglais</a>
+                        <a class=btn btn-outline-dark rounded-pill href=../TABLEAUX/tableau_fr.txt.html>Tableau français</a>
+                        <a class=btn btn-outline-dark rounded-pill href=../TABLEAUX/tableau_it.txt.html>Tableau italien</a>
+                        <a class=btn btn-outline-dark rounded-pill href=../TABLEAUX/tableau_gr.txt.html>Tableau grec</a>
+                    </nav>
+                </div>
+            </main>
+            <footer class=blog-footer>
+                <div class=mb-3>
+                    <nav class=footer d-flex justify-content-around>
+                        <a class=link-secondary href=../index.html>Accueil</a>
+                        <a class=link-secondary href=../etapes.html>Étapes du projet</a>
+                        <a class=link-secondary href=../TABLEAUX/index.html>Tableaux</a>
+                        <a class=link-secondary href=../scripts.html>Scripts</a>
+                        <a class=link-secondary href=../resultats.html>Résultats</a>
+                        <a class=link-secondary href=../contact.html>Contact</a>
+                    </nav>
+                </div>
+                <p class=mb-0>Made with love by Mathou, Dedo & Lilou</p>
+            </footer>
+            <script src=https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js integrity=sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4 crossorigin=anonymous></script>
         </body>
     </html>

@@ -2,9 +2,9 @@
    (BUTTON)
    (BUTTON) Menu
    Libération
-      Coupe du monde(Opens in new window)   Politique   International
-   CheckNews   Culture   Idées et Débats   Société   Environnement
-   Economie   Lifestyle   Portraits   Sciences
+      Politique   International   CheckNews   Culture   Idées et Débats
+   Société   Environnement   Economie   Lifestyle   Portraits   Sports
+   Sciences
    (BUTTON)
      * Accueil(S'ouvre dans une nouvelle fenêtre)
      * Fil Info(S'ouvre dans une nouvelle fenêtre)
@@ -63,7 +63,6 @@
      * Portraits
      * Sports (BUTTON)
           + Football
-          + Coupe du monde(S'ouvre dans une nouvelle fenêtre)
           + Cyclisme
           + Jeux Olympiques
           + Tennis
@@ -71,20 +70,17 @@
           + Sports mécaniques
      * Sciences (BUTTON)
           + Archéologie
-          + Astronomie
           + Biologie
           + Espace
           + Histoire
-          + Mathématiques
-          + Physique
      * Plus (BUTTON)
           + Séries d'été
           + Numéros spéciaux
      * Forums & événements
      * Archives (BUTTON)
+          + 2023(S'ouvre dans une nouvelle fenêtre)
           + 2022(S'ouvre dans une nouvelle fenêtre)
           + 2021(S'ouvre dans une nouvelle fenêtre)
-          + 2020(S'ouvre dans une nouvelle fenêtre)
      * Lire le journal(S'ouvre dans une nouvelle fenêtre)
      * La boutique(S'ouvre dans une nouvelle fenêtre)
      * Les newsletters(S'ouvre dans une nouvelle fenêtre)
@@ -257,31 +253,27 @@ dise ce qu’il pense»
    (BUTTON) (BUTTON)
    Dans la même rubrique
 
-Procès de l’attentat de Nice : «soulagement» des victimes, sidération de la
-défense
+Manifestation à Paris : «J’espère voir des gilets jaunes actifs, pas des
+gilets jaunes de canapé»
 
-   il y a 31 min
+   7 janv. 2023
 
-Nombre record de journalistes emprisonnés dans le monde, vague de froid en
-France, reconstitution dans l’affaire Delphine Jubillar, demi-finale
-France-Maroc… L’actu de ce mercredi matin
+A Nantes, la métropole ne tombe plus dans le panneau publicitaire
 
-   Football14 déc. 2022
+   Société7 janv. 2023
 
-Le ministre Gérald Darmanin annonce porter plainte en diffamation contre le
-député Adrien Quatennens
+Dani Ploeger, écrans tactiles et masturbation
 
-   Politique14 déc. 2022
+   Lifestyle7 janv. 2023abonnés
 
-Trente ans après l’assassinat de la militante sud-africaine Dulcie September
-à Paris, l’enquête relancée ?
+Un nouveau traitement très attendu contre Alzheimer autorisé aux Etats-Unis
 
-   Police / Justice14 déc. 2022abonnés
+   Santé6 janv. 2023
    Le portrait du jour
 
-Yves Camdeborde, bien conservé
+Esteban Ocon, va vite et deviens
 
-   13 déc. 2022abonnés
+   6 janv. 2023abonnés
 
    © Libé 2022
 
@@ -289,14 +281,14 @@ Yves Camdeborde, bien conservé
 
 Dans l'actu
 
-     * Coupe du monde(Opens in new window)
-     * Réchauffement climatique
-     * Révolte en Iran
-     * Guerre en Ukraine
-     * Crise énergétique
-     * Le gouvernement Borne
      * Réforme des retraites
+     * Le gouvernement Borne
+     * Crise énergétique
+     * Réchauffement climatique
      * Inflation
+     * Covid-19
+     * Guerre en Ukraine
+     * Révolte en Iran
 
 Services
 

@@ -3,12 +3,10 @@
      * Pied de page
 
    Aller au Journal
-
-   Le Club<span class="hidden@lg-only">&nbsp;de Mediapart</span>
-
+   Le Club de Mediapart : Participez au débat
      * Nous contacter
      * Se connecter
-     * Écrire un billet de blog Écrire un billet de blog
+     * Écrire un billet
      * Journal
      * Rechercher
      * (BUTTON) Menu
@@ -118,7 +116,7 @@ Banlieues: une police en roue libre
 
    Ce blog est personnel, la rédaction n’est pas à l’origine de ses
    contenus.
-   (BUTTON) Lire plus tard (BUTTON) Imprimer
+   (BUTTON) Lire +plus tard (BUTTON) Imprimer
    Partager sur Facebook Partager sur Twitter
 
    Il y a les insultes (1), systématiques, les gifles, ici à
@@ -266,13 +264,13 @@ Hitler » (Godard)
 
    Ce blog est personnel, la rédaction n’est pas à l’origine de ses
    contenus.
-   (BUTTON) Recommandé (85)
+   (BUTTON) Recommandé (85) Recommandé (85)
    Partager sur Facebook Partager sur Twitter
    43 commentaires
    (BUTTON) Le Club est l’espace de libre expression des abonné·e·s
    de Mediapart
 
-   Bienvenue dans le Club de Mediapart
+   Bienvenue dans Le Club de Mediapart
 
    Tout·e abonné·e à Mediapart dispose d’un blog et peut exercer
    sa liberté d’expression dans le respect de notre charte
@@ -287,101 +285,127 @@ Hitler » (Godard)
    Abonnez-vous à partir de 1€ et écrivez votre premier billet
    Je m’abonne
    Les articles les plus lus
+
+   Journal — Police
+   Photos de suspects et propos racistes : le tableau de chasse d’un
+   policier pro-Zemmour sur Telegram
+
+   Journal — Extrême droite
+   Chants nazis, homophobie : la nouvelle recrue de l’OL ne choque
+   personne, et surtout pas son entraîneur
+
+   Journal — France
+   La justice soupçonne des pots-de-vin entre des policiers franciliens et
+   la fourrière
+
+   Journal — Économie et social
+   Au Royaume-Uni, une crise structurelle plus qu’un effet du Brexit
+
    Journal
-   À l’extrême gauche, le NPA s’est autodétruit
-   Journal
-   Un policier jugé aux assises pour avoir éborgné un manifestant à Paris
-   Journal — Santé
-   Fin de vie : des médecins qui accompagnent des patients en cancérologie
-   confient leurs doutes
-   Journal
-   Soupçons de corruption par le Qatar : le Parlement européen
-   perquisitionné
-   Journal
-   Du flirt avec Zemmour à la présidence du parti LR, la victoire d’Éric
-   Ciotti
+   Pour la Cnil, les JO 2024 sont « un tournant » en matière de
+   surveillance numérique
    Recommandés par nos abonné·es
+
    Billet de blog
-   Corruption du Qatar au Parlement européen : « Notre démocratie n'est
-   pas à vendre »
+   Une gueuse en colère
+
    Billet de blog
-   Témoignage d'un hospitalisé
+   Médecins libéraux en grève : le rien à cirer des urgences de ville
+
    Billet de blog
-   De la refondation de la France Insoumise
+   On n’a rien vu venir
 
    À la Une de Mediapart
+
    Journal
-   La grande fébrilité du Parlement européen face aux soupçons de
-   corruption du Qatar et du Maroc
-   L’enquête éclaboussant le Parlement européen porte désormais sur des
-   soupçons d’ingérence du Qatar mais aussi du Maroc. Au parlement de
-   Strasbourg, où le malaise est vif au sein du groupe des
-   sociaux-démocrates depuis lundi, les appels à la création d’une agence
-   de contrôle des conflits d’intérêts se multiplient.
-   par Ludovic Lamant
-   Journal — Politique
-   À La France insoumise, la fronde continue
-   Le manque de pluralisme à la direction du mouvement de gauche suscite
-   des critiques cinglantes en interne. Plusieurs membres du groupe
-   parlementaire ne comptent pas s’arrêter en si bon chemin dans la lutte
-   pour sa démocratisation.
+   Le congrès du PS se résume au débat sur la stratégie de l’union
+
+   Alors que le vote des adhérents du Parti socialiste pour désigner leur
+   prochaine direction approche, l’attitude du PS et son rôle dans
+   l’avenir de la gauche est le seul sujet qui a vraiment divisé les trois
+   candidats au poste de premier secrétaire lors d’un débat organisé
+   vendredi soir.
    par Mathieu Dejean
-   Journal — France
-   Réquisitions au procès « Bismuth » : des mots fermes, des peines avec
-   sursis
-   Des peines de trois ans de prison avec sursis ont été requises contre
-   Nicolas Sarkozy, Thierry Herzog et Gilbert Azibert, mardi lors du
-   procès en appel de l’affaire de corruption dite « Paul Bismuth ». Une
-   « affaire d’une gravité exceptionnelle », selon l’avocat général.
-   par Michel Deléan
-   Journal
-   Bernard Laporte et Mohed Altrad condamnés à de la prison avec sursis
-   Bernard Laporte et Mohed Altrad ont été condamnés, mardi 13 décembre,
-   pour des faits de corruption, prise illégale d’intérêts et trafic
-   d’influence. Le président de la fédération française de rugby écope
-   également d’une interdiction d’exercer toute fonction dans le rugby
-   pendant deux ans.
-   par Michel Deléan
+
+   Journal — Justice
+   Désobéissance civile : quatre militants antibassines condamnés à de la
+   prison avec sursis
+
+   Deux à six mois de prison avec sursis assortis d’interdiction de
+   territoire ont été prononcés vendredi par le tribunal correctionnel de
+   Niort contre des militants « antibassines » reconnus coupables de
+   « violences aggravées » et/ou de « dégradations avec circonstances
+   aggravantes » lors d’une manifestation à l’automne 2021 dans les
+   Deux-Sèvres. Jeudi à La Rochelle, quatre à cinq mois de prison avec
+   sursis ont été requis contre deux autres membres du mouvement.
+   par Marion Briswalter
+
+   Journal — Écosystèmes et pollution
+   Scandale du chlordécone : « Le combat continue »
+
+   À la suite du non-lieu prononcé dans l’enquête sur l’empoisonnement des
+   Antilles au chlordécone, Harry Durimel, maire écologiste de
+   Pointe-à-Pitre (Guadeloupe) et avocat historique des victimes, a
+   annoncé son intention de faire appel et revient pour Mediapart sur les
+   conséquences délétères de cette décision.
+   par Mickaël Correia
+
+   Journal — Santé
+   Santé : face à une crise « sans fin », Macron annonce une série de
+   « petites mesures »
+
+   Le président de la République a dévoilé la feuille de route de son
+   second quinquennat en matière de santé. Une série de mesures, parmi
+   lesquelles la suppression de la tarification à l’acte ou la remise en
+   cause des 35 heures à l’hôpital, censées enrayer la crise du secteur.
+   Soignants et élus attendent maintenant des actes.
+   par Caroline Coq-Chodorge et Ilyes Ramdani
 
    La sélection du Club
+
    Billet de blog
-   La guerre et la « révolution culturelle des minables » en Russie
-   Critique théâtrale respectée, directrice de la revue « Teatr » et
-   cofondatrice du festival New Europeen Theatre qu’elle a dirigé durant
-   23 ans, Marina Davydova, comme beaucoup d’autres, a quitté son pays.
-   Elle vient d’être nommée pour trois ans à la direction théâtrale du
-   festival de Salzbourg. Ce long article analytique est paru une première
-   fois en allemand dans la revue Theater der Zeit.
-   par jean-pierre thibaudat
+   Faire face à l’effondrement du service public de santé
+
+   Après avoir montré l’étendue et les causes des dégâts du service public
+   de santé français, ce deuxième volet traite des solutions en
+   trompe-l’œil prises jusque-là. Et avance des propositions inédites,
+   articulées autour de la création d’un service public de santé
+   territorial, pour tenter d’y remédier.
+   par Julien Vernaudon
+
    Billet de blog
-   La résistance féministe anti-guerre
-   Deuxième volet d'une série de textes issus d'un partenariat entre le
-   Club de Mediapart et un réseau de dissident·es de la Russie
-   d'aujourd'hui. Frédérique, une activiste de la résistance féministe
-   anti-guerre (FAS) nous explique comment le mouvement s'est organisé et
-   détaille les actions menées par le FAS, dont des cellules sont
-   présentes dans plus de 90 villes de Russie et plus de 30 pays
-   étrangers.
-   par Russie - les voix de la dissidence d'aujourd'hui
+   Pour une bonne santé en 2023
+
+   Emmanuel Macron et son ministre de la santé ne peuvent plus cacher à la
+   population l’état de dégradation profonde de notre système de santé.
+   Alors que nous nous targuions d’avoir soi-disant le meilleur système de
+   santé au monde au tournant du siècle, 20 ans plus tard, l’organisation
+   Samu-Urgences de France décompte depuis plusieurs semaines les « morts
+   évitables ».
+   par prudhomme1960
+
    Billet de blog
-   Une paix juste et durable pour l’Ukraine
-   [Rediffusion] « Toute guerre se termine un jour, toute négociation qui
-   permettrait d’y mettre un terme sera bienvenue. Mais une paix juste et
-   durable ne s’établira pas sans conditions, elle ne peut être envisagée
-   que sur la base du respect de certains principes élémentaires. » Un
-   appel lancé par de nombreuses personnalités politiques, associatives et
-   syndicales françaises, des intellectuels, des artistes et des
-   représentants de la diaspora ukrainienne.
-   par Les invités de Mediapart
+   Procès de l'Hôpital public : Chapitre 7 - De la vacuité d'Agnès Buzyn
+
+   [Rediffusion] Quel bilan ministériel des actions de Madame Agnès Buzyn
+   en tant que Ministre de la santé, mis à part sa gestion des débuts de
+   l’épidémie de Covid et ses réponses aux manifestations de soignants ?
+   L’objectif de ce nouveau chapitre du « procès de l'Hôpital public « est
+   d’étudier sa part de responsabilité dans l’effondrement de l’hôpital,
+   annoncé dès l’année 2019.
+   par florian vivrel
+
    Billet de blog
-   Le devenir de la Crimée… et la place des Tatars
-   Dans notre livre Vlad le destructeur (Éditions l’Élan des mots, 2022),
-   nous avons parlé de la Crimée comme un des points-clefs de cette
-   guerre. Son destin est, depuis peu, à la fois évoqué et éclipsé :
-   personne ne sait ce qu’elle va devenir. Un retour sur son histoire
-   devrait permettre d’envisager le possible et le souhaitable, et de se
-   préoccuper du sort des Tatars, ces grands oubliés.
-   par Michel Juffé
+   Services Hospitaliers Publics 2023 : « Plus de chef ! Toutes et tous
+   chefs ! »
+
+   Les politiques de Santé menées ces 25 dernières années n’ont eu de
+   cesse de réduire les moyens, les solidarités et le pouvoir décisionnel
+   des soignants au sein des hôpitaux publics au profit des Directions et
+   des ARS, tout en reportant la responsabilité des dysfonctionnements sur
+   les soignants eux-mêmes. En 2023, nous pourrions commencer à changer la
+   donne.
+   par LAURENT THINES
 
    Newsletters
 
@@ -427,8 +451,10 @@ Hitler » (Godard)
      * Plan du site
      * Recrutement
 
-     *
-     *
+     * Disponible sur Google Play - Téléchargez l’application sur votre
+       appareil Android
+     * Disponible dans l'App Store - Téléchargez l’application sur votre
+       iPhone ou votre iPad
 
    Mediapart sur mobile
 
@@ -438,6 +464,8 @@ Hitler » (Godard)
      * CGV
      * Confidentialité
      * (BUTTON) Gestion des cookies
+
+   (BUTTON) Fermer le message
 
    Votre choix pour vos données
 

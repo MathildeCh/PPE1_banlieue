@@ -8,7 +8,7 @@
                o Top Stories
                o Health News
                o Politics
-               o Leaders
+               o New York
                o World Report
                o Business News
                o Coronavirus
@@ -53,7 +53,7 @@
      * Elections
      * The Racial Divide
      * Photos
-     * Events
+     * U.S. News Live
      * The Report
 
    (BUTTON) Sign In (BUTTON)
@@ -108,9 +108,9 @@ Police Shoot, Kill Man With Knife in Seattle Suburb
 
 Political Cartoons
 
-   [20221212edbbc-a.jpg?update-time=1670961853147&amp;size=responsive640]
+   [sbr010623dapc.jpg?update-time=1673034646791&amp;size=responsive640]
    (BUTTON)
-   View All 800 Images
+   View All 829 Images
    (BUTTON)
 
    The officers involved in the shooting are on administrative leave,
@@ -128,9 +128,24 @@ Political Cartoons
 Related Articles
 
    Best States
-   California Leads on Energy Efficiency
-   [gettyimages-1242853665.jpg?update-time=1670342860839&amp;size=responsi
+   15 Interesting State Laws Now in Effect
+   [gettyimages-1244628625.jpg?update-time=1672941427169&amp;size=responsi
    veSquare150]
+
+   Best States
+   States With the Highest Gas Prices
+   [media%3Abfb5ccf06f254bebb1800a5b2c5dab42California_Gas_Prices_Rebate_2
+   0346.jpg?update-time=1648076764000&amp;size=responsiveSquare150]
+
+   Best States
+   The Cheapest U.S. Airports
+   [gettyimages-1245783544.jpg?update-time=1671740971051&amp;size=responsi
+   veSquare150]
+
+   Best States
+   A Guide to Marijuana Legalization
+   [190726-weed-editorial.jpg?update-time=1564169938375&amp;size=responsiv
+   eSquare150]
 
    Best States
    States With Worst COVID-19 Vaccine Rates
@@ -141,22 +156,6 @@ Related Articles
    States With Best COVID-19 Vaccine Rates
    [210929-vaccines-editorial.jpg?update-time=1661367481430&amp;size=respo
    nsiveSquare150]
-
-   Best States
-   Thank These States for Thanksgiving Food
-   [171120-thanksgiving-stock.jpg?update-time=1604951233485&amp;size=respo
-   nsiveSquare150]
-
-   Elections
-   States That Funded the 2022 Midterms
-   [media%3Ac2c421e685904ca7aeced88d10a68da0Election_2022_Religious_Voters
-   _87450.jpg?update-time=1668185607000&amp;size=responsiveSquare150]
-
-   Best States
-   Women Governors Break Records
-   [media%3Aaacf2c7cf2b64822aa2b2162a09f7e70Election_2022_Massachusetts_Go
-   vernor_15570.jpg?update-time=1667964289000&amp;size=responsiveSquare150
-   ]
 
 Best States Rankings
 
@@ -197,27 +196,29 @@ The 10 Best States
 
    Elliott Davis Jr.March 9, 2021
 
-Mississippi Set to Execute Man for Killing 16-Year-Old Girl
+Best of CES 2023: High-Tech Eyebrows and a Boba Tea Robot
 
-   A Mississippi man who pleaded guilty to raping and killing a
-   16-year-old girl is scheduled to be put to death
+   Tech companies have showed off their latest products this week at CES,
+   formerly known as the Consumer Electronics show
 
-   Associated PressDec. 14, 2022
+   Associated PressJan. 7, 2023
 
-Winter US Storm Brings Warnings of More Tornadoes, Blizzards
+Utah Murder-Suicide Underscores Frequency of Family Killings
 
-   A destructive winter storm is marching across the United States
+   A murder-suicide that left eight members of one family including five
+   children dead in a small Utah town is the latest in what has become an
+   all-too-common occurrence in troubled households across the United
+   States
 
-   Associated PressDec. 14, 2022
+   Associated PressJan. 7, 2023
 
-California Reparations Task Force to Talk Eligibility
+Lame-Duck Illinois Lawmakers Vote Themselves a 16% Raise
 
-   California's first-in-the-nation task force studying reparations for
-   Black residents will discuss potential eligibility requirements and
-   what form reparations could take at a two-day meeting that starts
-   Wednesday
+   Illinois House Democrats working in a lame-duck session left town for a
+   weekend break Friday night — but not before voting on plans to give
+   themselves a pay raise of nearly 16%
 
-   Associated PressDec. 14, 2022
+   Associated PressJan. 6, 2023
    See More »
 
    [best_states_logo_2.svg]
@@ -259,15 +260,21 @@ Best States
    Rural, Up-and-Coming
    Data Explorer
    Methodology
+   Rankings Download
    Communities FAQ
 
    News
+   The Run
    Politics
    World
    Business
    Science
    Health News
    Cartoons
+
+   Cities
+
+   Leaders
 
    The Report
 
@@ -284,6 +291,10 @@ Best States
    Healthiest Communities
 
    News
+
+   Cities
+
+   Leaders
 
    The Report
 
@@ -302,9 +313,9 @@ Best States
    Jobs
    Site Map
    Store
-   Copyright 2022 © U.S. News & World Report L.P.Terms &
+   Copyright 2023 © U.S. News & World Report L.P.Terms &
    Conditions/Privacy Policy/California Privacy Notice/California Do Not
    Sell My Personal Information Request
 
-   [pixel_29b1bb39?a=dD0zZmZkNjRmZjdmZGNiNjQzZDhlYjViNDMzZDBkZTc3ZDQ2OWVmN
-   GRjJmpzPW9mZg==]
+   [pixel_6482fa84?a=dD1lZTFiOTVlM2FmNmMzNTM4ZWYzMTRmOTZjODY1YjdhMzdkZGExN
+   WU3JmpzPW9mZg==]

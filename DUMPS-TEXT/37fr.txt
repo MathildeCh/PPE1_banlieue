@@ -1,6 +1,6 @@
    REFRESH(900 sec):
-   file://localhost/mnt/c/Users/Lilas/Desktop/M1_TAL/Projet_encadre/PPE1/P
-   PE1_banlieue/ASPIRATIONS/fr.txt37.html
+   file://localhost/home/mathilde/Documents/Master_NLP/COURS/S1/P3_PE/Repo
+   Commun/PPE1_banlieue/ASPIRATIONS/fr.txt37.html
    #A la une
 
    IFRAME: https://www.googletagmanager.com/ns.html?id=GTM-5R3RG2H
@@ -9,18 +9,18 @@
        Newsletter Services Magazine
        Mon compte
        Mon profil Déconnexion
-       Connexion S’abonner dès 1€
+       Connexion S’abonner
 
    ____________________
 
-   S’abonner dès 1€
+   S’abonner
 
           +
                o Menu
                o [logo.svg]
                o
                o
-               o S’abonner dès 1€
+               o S’abonner
                o Connexion
                o Mon compte
                  Mon profil Déconnexion
@@ -75,11 +75,11 @@
           +
           +
           + Mon compte
-          + S’abonner dès 1€
+          + S’abonner
           + Connexion
 
-   Challenges Audio Espace débat Sommet de l'Economie Grandes Écoles
-   Cybersecu
+   Challenges Audio Espace débat Candidatez aux 100 start-up Grandes
+   Écoles Cybersecu
 
    Partager
 
@@ -144,31 +144,24 @@ Incidents en banlieue : Le FN lance une pétition "pour soutenir la police"
    Réagir
    Pour réagir, veuillez vous connecter en cliquant ici
 
-     * Bourse Le 14/12 à 09H21
-     * CAC 40 6724,27 -0,31%
+     * Bourse Le 06/01 à 18H05
+     * CAC 40 6860,95 +1,47%
      * Rechercher une valeur ____________________
 
    Newsletter Challenges
-   ____________________
+   [90079c784b711ff68534203b4cef488611f4ca66.jpg] ____________________
+   Je crée mon compte
 
-   En cliquant sur « je m’abonne », vous acceptez que Challenges utilise
-   votre adresse email dans le but de vous adresser ses newsletters. Vous
-   affirmez avoir pris connaissance de nos Conditions générales
-   d’utilisation, et de notre Politique de confidentialité qui vous
-   informe des modalités de traitement de vos données, ainsi que des
-   moyens d’exercer vos droits sur ces données. Vous pouvez vous
-   désinscrire à tout moment à l’aide des liens de désinscription ou en
-   nous contactant à l’adresse dpo@challenges.fr
-   Je m'abonne
-   Votre inscription a bien été prise en compte
+   Déjà un compte ? Je me connecte
    Politique
-     * Nicolas Sarkozy Procès Bismuth : trois ans de prison avec sursis
-       requis contre Sarkozy
-     * Adrien Quatennens dénonce un "lynchage" et exclut de démissionner
-     * Ciotti président de LR, un appoint pour Marine Le Pen
-     * Nouveau 49.3 dégainé et nouvelle motion déposée sur le budget
-     * Présidence LR : comment Ciotti a manœuvré pour l'emporter face à
-       Retailleau
+     * Gérard Collomb : scuds sur Macron Collomb et le zig et zag du
+       président de la République
+     * Comment rallumer (enfin) la flamme du PS
+     * Macron, l’hôpital, la gauche… les confidences amères de Gérard
+       Collomb
+     * Retraites, prix, manifs, Borne demande à ses ministres "de résister
+       aux vents contraires"
+     * Retraites : les syndicats redisent leur opposition
 
    Tous les articles Politique
    à la une cette semaine
@@ -205,22 +198,13 @@ Incidents en banlieue : Le FN lance une pétition "pour soutenir la police"
      * Nouvelle-Aquitaine
 
    Newsletter Challenges
-   Entrez votre email pour recevoir la newsletter ____________________
+   [placeholder_400x300.jpg] ____________________ Je crée mon compte
 
-   En cliquant sur « je m’abonne », vous acceptez que Challenges utilise
-   votre adresse email dans le but de vous adresser ses newsletters. Vous
-   affirmez avoir pris connaissance de nos Conditions générales
-   d’utilisation, et de notre Politique de confidentialité qui vous
-   informe des modalités de traitement de vos données, ainsi que des
-   moyens d’exercer vos droits sur ces données. Vous pouvez vous
-   désinscrire à tout moment à l’aide des liens de désinscription ou en
-   nous contactant à l’adresse dpo@challenges.fr
-   Je m'abonne
-   Votre inscription a bien été prise en compte
+   Déjà un compte ? Je me connecte
    Suivez-nous
 
-   Challenges Audio Espace débat Sommet de l'Economie Grandes Écoles
-   Cybersecu
+   Challenges Audio Espace débat Candidatez aux 100 start-up Grandes
+   Écoles Cybersecu
      __________________________________________________________________
 
    ClassementsLes 500 plus grandes fortunes de FranceLes prix de

@@ -5,8 +5,10 @@
      * U.S. News
      * World
      * Culture and trends
-     * Opinion
      * Business
+     * Tech
+     * Health
+     * Opinion
 
    (BUTTON) (BUTTON)
 
@@ -196,7 +198,7 @@ Michigan man killed by police after shooting wife and daughter
    motion.”
    David K. Li
 
-   David K. Li is a breaking news reporter for NBC News.
+   David K. Li is a senior breaking news reporter for NBC News Digital.
    Brandy Zadrozny contributed.
 
      * About
@@ -213,4 +215,4 @@ Michigan man killed by police after shooting wife and daughter
      * Select Shopping
      * Select Personal Finance
 
-   © 2022 NBC UNIVERSAL
+   © 2023 NBC UNIVERSAL
