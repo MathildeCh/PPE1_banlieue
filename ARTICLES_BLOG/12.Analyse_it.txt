@@ -1,0 +1,20 @@
+Le nuage de mots ci-dessous présente les contextes du mot periferia dans le corpus italien. Il nous permet de saisir l’emploi assez géographique du terme (Francia, Parigi, città), mais surtout l’émergence d’autres mots relatifs à la police (polizia, carabinieri) et à la sécurité (controlli, sicurezza, violenza).
+################# IMAGE 1 – 1. Analyse_it ###########################
+
+Si on s’intéresse plus précisément aux cooccurrents du mot perifieria, on obtient le graphe suivant sur iTrameur.
+################# IMAGE 2 – 2. Analyse_it ###########################
+Paramètres : FQMax = 3, Co-Freq = 6, IndSPMin = 5, 15 termes à gauche et à droite 
+
+	On retrouve la sémantique géographique de periferia dans les noms de lieux comme Foligno, Bogotà et surtout Ardea, ou encore des indications géographiques comme centro ou est, qui sont particulièrement cooccurrents du mot choisi. periferia apparaît également en coocurrence de polizia (police) ou de controlli (contrôles), ainsi que du mot hashish (haschisch), ce qui semble révéler une autre représentation charriée par le mot choisi, moins dans son ancrage territorial  que dans les comportements illégaux qui sont supposés s’y dérouler.
+
+Pour mieux comprendre la connotation du mot periferia dans notre corpus, on s’intéresse au réseau de cooccurrences.
+
+################# IMAGE 3 – 3. Analyse_it ###########################
+Paramètres : FQMax = 5, Co-Freq = 11, IndSPMin = 6, 15 termes à gauche et à droite 
+
+Le réseau de cooccurrence permet de visualiser un lien entre la banlieue décrite en rapport avec le centre, dans une relation d’opposition qui affilie plutôt la perifieria au champ sémantique de la police (controlli, polizia, carabineria). Les autres cooccurrents sont d’ordre géographique, à l’exception des mots contro (contre) et stato (Etat), qui semblent s’inscrire dans la même logique d’une periferia opposée au centre, avec une connotation du centre  qui s’étendrait alors, au-delà de la seule position géographique, à une question de place au sein d’un Etat. 
+
+	Ainsi, si le corpus semble plutôt organisé autour de la question de la drogue et de la police dans le nuage de mots, il apparaît que le mot periferia y est de façon récurrente opposée au centre, ce qui n’est pas le cas dans les autres corpora. La banlieue est en effet prise comme un objet en soi dans ces autres textes : elle apparaît en relation avec des termes qui la complètent. Ici, le centre et la periferia semblent plutôt être comparés, définissant ainsi la marge par sa position et pas seulement par ses attributs. Il serait intéressant de poursuivre cette analyse pour mieux comprendre l’emploi des comparaisons centre/périphérie dans le corpus italien.
+
+Quelques exemples de contextes : 
+################# IMAGE 4 – 4. Analyse_it ###########################

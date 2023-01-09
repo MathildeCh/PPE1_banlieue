@@ -1,0 +1,20 @@
+Le nuage de mots ci-dessous présente les contextes du mot προάστιο dans le corpus grec. Il nous permet de saisir l’emploi assez géographique du terme, mais également l’émergence d’autres mots relatifs à la police, la violence ou la drogue.
+################# IMAGE 1 – 1. Analyse_gr ###########################
+
+Si on s’intéresse plus précisément aux cooccurrents du mot προάστιο, on obtient le graphe suivant sur iTrameur.
+################# IMAGE 2 – 2. Analyse_gr ###########################
+Paramètres : FQMax = 5, Co-Freq = 2, IndSPMin = 10, 15 termes à gauche et à droite
+
+On retrouve la sémantique géographique de προάστιο dans les termes νότια (sud), βόρεια (nord) et Αττικής (Attique), qui sont particulièrement cooccurrents du mot choisi. Néanmoins, προάστιο apparaît en coocurrence du terme κοκαΐνη (cocaïne), ce qui semble révéler une autre représentation charriée par le mot choisi, moins dans son ancrage territorial que dans les comportements illégaux qui sont supposés s’y dérouler. 
+
+Pour mieux comprendre cette connotation du mot προάστιο dans notre corpus, on s’intéresse au réseau de cooccurrences. 
+
+################# IMAGE 3 – 3. Analyse_gr ###########################
+Paramètres : FQMax = 13, Co-Freq = 2, IndSPMin = 8, 10 termes à gauche et à droite 
+
+	Le réseau de cooccurrence permet de visualiser un lien fait entre les zones géographiques et le champ sémantique de la drogue dans le corpus. En effet, les termes de νότια (sud) et de κοκαΐνη (cocaïne) apparaissent particulièrement cooccurrents. L’importance du terme Αττικής (Attique) dans le corpus semble indiquer ici qu’il est surtout question de la banlieue d’Athènes (région de l’Attique), dont le sud est plutôt représenté comme dangereux relativement à la banlieue nord, plus pavillonnaire. 
+
+	Le corpus grec permet ainsi de saisir la dimension géographique des comportements illégaux associés au champ sémantique de la banlieue. Grâce à l’analyse du nuage de mots et des cooccurrences, on saisit ainsi en partie la représentation spatialisée de la banlieue dans le territoire grec, très centralisé autour d’Athènes : la banlieue nord et la banlieue sud n’apparaissent pas associées au mêmes champs sémantiques dans le corpus. 
+
+Quelques exemples de contextes : 
+################# IMAGE 4 – 4. Analyse_gr ###########################
