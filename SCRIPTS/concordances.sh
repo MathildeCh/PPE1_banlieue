@@ -3,7 +3,7 @@
 #Pour chaque langue
 for lang in en fr it gr
 #On cherche la liste des contextes correspondants
-do 
+do
     liste=$(ls  ./CONTEXTES/*$lang.txt)
     #On crée le concordancier par langue
     echo "
@@ -20,7 +20,7 @@ do
                     <th>Contexte gauche</th>
                 </tr>" > ./CONCORDANCE/Tableau_concordance_$lang.html
 
-    #Pour chaque fichier de la liste 
+    #Pour chaque fichier de la liste
     for fichier in $liste
         do
             #On cherche les mots correspondants, et on prend les contextes qui précèdent le mot, le mot et les contextes qui les suivent
@@ -28,7 +28,7 @@ do
              #On stocke directement le tout dans le tableau
         echo $contexte1 >> ./CONCORDANCE/Tableau_concordance_$lang.html
         done
-       
+
        #On finit le concordancier par langue
         echo "
             </table>
