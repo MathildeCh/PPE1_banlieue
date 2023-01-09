@@ -10,13 +10,16 @@
 [x] ajouter un if statement pour checker si le code est 200 ou non\
 [x] finaliser l'exercice encodage : si rien, ajouter UTF8.\
 [x] exercice 6 : compter les ocurrences du mot cible.\
-[x] Trier les URLS, notamment celles qui posent problème (403).
+[x] Trier les URLS, notamment celles qui posent problème (403).\
 
 #ECRITURE ARTICLE
 [x] réécriture de l'article 1 "choix du mot" (le laisser en .txt et non en .md)\
+[x] articles de Diego.\
+[ ] articles de Lilas.\
+[ ] articles de Mathilde.
 
 #Structurer le site
 [x] quelle architecture du site, quel design ? -> réunion à ce propose le 30/11.
-[x] Mise en place d'une arborescence. 
-[ ] Modifier le script qui créé les tableaux pour qu'il intègre la template bootstrap.
-
+[x] Mise en place d'une arborescence.\
+[x] Modifier le script qui créé les tableaux pour qu'il intègre la template bootstrap.\
+[ ] "open in a new tab" les tableaux\

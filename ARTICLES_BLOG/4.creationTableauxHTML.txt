@@ -8,7 +8,7 @@ En premier lieu, nous avons du écrire en language bash quelques lignes de comma
 ################# IMAGE 1 – 1. creation Tableaux HTML ###########################
 
 
-Ensuite nous avons démarré une boucle “for” qui lit tous les fichiers texte contenu dans URLS et qui crée une table HTML pour chacune des langues. La création de ces tableaux se produit à travers la commande “echo”, commande qui permet de pouvoir changer de language et de passer au HTML : 
+Ensuite nous avons démarré une boucle “for” qui lit tous les fichiers texte contenu dans URLS et qui créé une table HTML pour chacune des langues. La création de ces tableaux se produit à travers la commande “echo”, commande qui permet de pouvoir changer de language et de passer au HTML : 
 
 ################# IMAGE 2 – 2. cration Tableaux HTML ############################
 
@@ -20,7 +20,7 @@ Par la suite, nous avons commencé à remplir les tableaux avec la numérotation
 
 ################# IMAGE 3 – 3. cration Tableaux HTML ############################
 
-Dans l’image ci-dessous on remarque la déclaration d’une variabe “compteur” qui augmente d’une unité à chaque tour de la boucle “while” precédemment créee. Les valeurs succéssifs de cette variable sont ensuite enregistrés dans chacun des tableaux HTML. 
-Concernat la boucle “while”, sa fonction est celle de lire une par une les 50 lignes des fichiers texte contenus dans URLS ; la variable “line” déclaré lors de l’initialisation de cette boucle contient les liens qui seront par la suite inserés dans les tableaux à travers les lignes de code suivantes :
+Dans l’image ci-dessous on remarque la déclaration d’une variabe “compteur” qui augmente d’une unité à chaque tour de la boucle “while” precédemment créée. Les valeurs succéssifs de cette variable sont ensuite enregistrés dans chacun des tableaux HTML. 
+Concernat la boucle “while”, sa fonction est celle de lire une par une les 50 lignes des fichiers texte contenus dans URLS ; la variable “line” déclarée lors de l’initialisation de cette boucle contient les liens qui seront par la suite inserés dans les tableaux à travers les lignes de code suivantes :
 
 ################# IMAGE 4 – 4. cration Tableaux HTML #############################

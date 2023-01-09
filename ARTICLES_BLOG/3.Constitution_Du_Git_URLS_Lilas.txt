@@ -1,17 +1,17 @@
 17/10/2022 – Constitution du Git et ajout du dossier URLS
 
 
-Lors de la séance 2 de PPE1 nous avons vu comment créer un dépot Git avec GitHub. Nous avons ainsi tous crée notre propre dépot GitHub en suivant les indications des professeurs et les slides qui nous ont été fournies. Une fois renseigné nos informations personnelles, nous avons du rensiegner aussi :
+Lors de la séance 2 de PPE1 nous avons vu comment créer un dépot Git avec GitHub. Nous avons ainsi tous crée notre propre dépot GitHub en suivant les indications des professeurs et les slides qui nous ont été fournies. Une fois renseigné nos informations personnelles, nous avons du renseigner aussi :
 
 - Nom du repository : PPE1
 - Description simple du projet : Programmation et Projet Encadré 1
 
-Une fois le dépot GitHub crée nous l’avons récupéré localement en executant la commande suivante  :
+Une fois le dépot GitHub créé nous l’avons récupéré localement en executant la commande suivante  :
 
 ############### IMAGE 1 – “1. Constitution Git Article” ########################
 
 
-L’étape qui a suivi ces premier pas sur Git a été l’éxecution de nos premières modifications directement via le site GitHub. D’abord on a crée notre “journal-de-bord” en format markdown et ensuite on l’a ajouté à notre dépot. Cependant, le fichier “journal-de-bord” n’est pas directement présent sur le dépot locale une fois crée sur celui de GitHub. C’est à cette éstade qu’on a appri à exécuter les commandes suivante :
+L'étape suivant ces premiers pas sur Git a été l’éxecution de nos premières modifications directement via le site GitHub. D'abord on a crée notre “journal-de-bord” en format markdown et ensuite on l’a ajouté à notre dépot. Cependant, le fichier “journal-de-bord” n’est pas directement présent sur le dépot locale une fois crée sur celui de GitHub. C’est à cette étape qu’on a appris à exécuter les commandes suivantes :
 
 - git log → voir le dernier commit
 - git status → vérifier si le dépot locale diffère du dépot en ligne
