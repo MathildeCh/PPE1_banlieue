@@ -124,7 +124,7 @@
                     <h2 class="blog-post-title mb-1">Quatrième étape : Création et premier remplissage des tables HTML.</h2>
                     <p class="blog-post-meta">écrit le 08 novembre 2022 par <a href="../contact.html">Lilas, Mathilde, Diego</a></p><br>
                     <p>
-                        Une fois le corpus constitué, l'étape suivante a été celle de créer des tableaux HTML (un par langue, donc 4 totaux) et de commencer à les remplir. Dans cette optique, il nous fallait écrire un script bash qui accompli des opérations sur notre corpus (les 200 urls) et qui intègre aussi du language HTML pour la constitution des tableaux.
+                        Une fois le corpus constitué, l'étape suivante a été celle de créer des tableaux HTML (un par langue, donc 4 au total) et de commencer à les remplir. Dans cette optique, il nous fallait écrire un script bash qui accomplisse des opérations sur notre corpus (les 200 urls) et qui intègre aussi du language HTML pour la constitution des tableaux.
                     <p>
                         En premier lieu, nous avons du écrire en language bash quelques lignes de commande qui puissent vérifier si l’utilisateur a bien inséré l’argument demandé. Étant donné que nous avons décidé d’avoir en tant qu’argument seulement le dossier URLS, nous avons écrit les lignes suivantes :
                     </p>
@@ -132,7 +132,7 @@
                         <img width=90% src="../assets/img/1.creationTableauxHTML.png" alt="screenshot création des tableaux">
                     </p>
                     <p>
-                        Ensuite nous avons démarré une boucle “for” qui lit tous les fichiers texte contenu dans URLS et qui créé une table HTML pour chacune des langues. La création de ces tableaux se produit à travers la commande “echo”, commande qui permet d'écrire dans un fichier dans un langage choisi. Ici nous avions besoin d'écrire du HTML, nous avons donc écrit grâce à "echo" la structure d'un fichier HTML qui sera responsable de la création des tableaux :
+                        Ensuite nous avons démarré une boucle “for” qui lit tous les fichiers texte contenu dans URLS et qui crée une table HTML pour chacune des langues. La création de ces tableaux se produit à travers la commande “echo”, commande qui permet d'écrire dans un autre langage da programmation. Ici nous avions besoin d'écrire du HTML afin de générer des tableaux :
                     </p>
                     <p>
                         <img width=90% src="../assets/img/2.crationTableauxHTML.png" alt="screenshot création tableaux2">
@@ -147,11 +147,8 @@
                         <img width=90% src="../assets/img/3.creationTableauxHTML.png" alt="screenshot creation tableau 3">
                     </p>
                     <p>
-                        Dans l’image ci-dessous on remarque la déclaration d’une variabe “compteur” qui augmente d’une unité à chaque tour de la boucle “while” precédemment créée. Les valeurs successives de cette variable sont ensuite enregistrés dans chacun des tableaux HTML. 
-                    </p>
-                    <p>
                         Dans l’image ci-dessous on remarque la déclaration d’une variabe “compteur” qui augmente d’une unité à chaque tour de la boucle “while” precédemment créée. Les valeurs succéssifs de cette variable sont ensuite enregistrés dans chacun des tableaux HTML. 
-Concernat la boucle “while”, sa fonction est celle de lire une par une les 50 lignes des fichiers texte contenus dans URLS ; la variable “line” déclarée lors de l’initialisation de cette boucle contient les liens qui seront par la suite inserés dans les tableaux à travers les lignes de code suivantes :
+                        Concernat la boucle “while”, sa fonction est celle de lire une par une les 50 lignes des fichiers texte contenus dans URLS ; la variable “line” déclarée lors de l’initialisation de cette boucle contient les liens qui seront par la suite inserés dans les tableaux à travers les lignes de code suivantes :
                     </p>
                     <p>
                         <img widtg=90% src="../assets/img/4.creationTableauHTML.png" alt="screenshot 4">
