@@ -1,7 +1,7 @@
 07/12/2022 – Ajout des concordances aux tableux HTML
 
 
-Si dans l’étape précédente on a vu comment nous avons éxtrait le contexte d’apparition de nos mots-clès, cette fois-ci nous verrons comment nous avons recupéré les concordances de nos mots-clès. Pour “concordances” on entend tous les tokens à droite et à gauche par rapport à notre mot-clès et qui sont présents sur la meme ligne dans nos articles. L’organisation et la présentation de cette donnée très importante a été faite sous la forme d’un autre tableau HTML qui sera, à son tour, integré aux tableaux HTML dont on a déjà parlé lors des étapes précédentes. Ces nouveaux tableaux HTML dédiés aux concordances contiennent 3 colonnes où, au centre, on retrouve nos mots-clès et à droite et à gauche les occurrences des autres mots présents sur la meme ligne : 
+Si dans l’étape précédente on a vu comment nous avons éxtrait le contexte d’apparition de nos mots-clés, cette fois-ci nous verrons comment nous avons recupéré les concordances de nos mots-clés. Pour “concordances” on entend tous les tokens à droite et à gauche par rapport à notre mot-clés et qui sont présents sur la meme ligne dans nos articles. L’organisation et la présentation de cette donnée très importante a été faite sous la forme d’un autre tableau HTML qui sera, à son tour, integré aux tableaux HTML dont on a déjà parlé lors des étapes précédentes. Ces nouveaux tableaux HTML dédiés aux concordances contiennent 3 colonnes où, au centre, on retrouve nos mots-clés et à droite et à gauche les occurrences des autres mots présents sur la meme ligne : 
 
 
 ############## IMAGE 1 – 1.concordancesHTML ############################
@@ -13,7 +13,7 @@ Afin de pouvoir créer les tableaux HTML des concordances nous avons du écrire 
 ############## IMAGE 2 – 2.concordancesHTML ############################
 
 
-Ensuite, pour chaque fichier “contexte”, une commande “grep” va rechercher le pattern indiqué  (nos mots-clès dans leurs différentes formes flexionnelles) en ignorant la casse avec l’option -i ; cette commande “grep” contient l’option -E (extended grep = “egrep”) et -T pour regler la tabulation des caractères en début de phrase et leur alignement. Une fois obtenue la ligne contenante nos mot-clès, nous avons effectué une commande “sed” sur ce meme resultat. “sed” permet d’éditer rapidement des fichiers tels quels nos tableaux concordances HTML crées auparavant. Effectivement, lancer “sed” sur le resultat du “grep” en lui précisant un pattern spécifique à notre tache nous a permis de séparer la ligne contenante nos mots-clès en contexte gauche, mot-clès et contexte droit :
+Ensuite, pour chaque fichier “contexte”, une commande “grep” va rechercher le pattern indiqué  (nos mots-clés dans leurs différentes formes flexionnelles) en ignorant la casse avec l’option -i ; cette commande “grep” contient l’option -E (extended grep = “egrep”) et -T pour regler la tabulation des caractères en début de phrase et leur alignement. Une fois obtenue la ligne contenante nos mot-clés, nous avons effectué une commande “sed” sur ce meme resultat. “sed” permet d’éditer rapidement des fichiers tels quels nos tableaux concordances HTML crées auparavant. Effectivement, lancer “sed” sur le resultat du “grep” en lui précisant un pattern spécifique à notre tache nous a permis de séparer la ligne contenante nos mots-clés en contexte gauche, mot-clès et contexte droit :
 
 
 ############## IMAGE 3 – 3.concordancesHTML ############################
