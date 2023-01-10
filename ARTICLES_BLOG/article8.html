@@ -122,15 +122,65 @@
             </h3>
 
             <article class="blog-post">
-            <h2 class="blog-post-title mb-1">Huitième étape : </h2>
-            <p class="blog-post-meta">écrit le 08 novembre 2022 par <a href="../contact.html">Lilas, Mathilde, Diego</a></p><br>
-            <p>
-
-            </p>
-            <p>
-
-            </p>
-
+                <h2 class="blog-post-title mb-1">Huitième étape : Arborescence du projet et création du site</h2>
+                <p class="blog-post-meta">écrit du 23 novembre 2022 au 10 janvier 2023 par <a href="../contact.html">Lilas, Mathilde, Diego</a></p><br>
+                <p>
+                    Nous avons créé notre projet grâce aux commandes du terminal, telles que "mkdir", "cd", "touch", comme ceci :
+                </p>
+                <p>
+                    <img width=100% src="../assets/img/arbo1.jpeg" alt="commandes terminal">
+                </p>
+                <p>L'arborescence du projet est d'autant plus importante que le site est intégré à l'aide de github.</p>
+                <p>La racine de notre projet se compose donc de 10 dossiers et 9 fichiers.</p>
+                <p>
+                    <img width=100% src="../assets/img/arbo3.png" alt="arborescence projet">
+                </p>
+                <br><h4>Les fichiers Markdown</h4><br>
+                <p>Les fichiers en format markdown sont les fichiers utiles pour notre dépôt git. Le README.md est une présentation générale et succinte du projet ; le JOURNAL_DE_BORD.md présente notre démarche semaine après semaine ;  TODO.md est notre todo list ; probleme_rencontre.md est un récapitulatif des problèmes rencontrés et des solutions trouvées.</p>
+                <br><h4>Les fichiers HTML </h4><br>
+                <p>Les fichiers HTML servent à la construction du site, ainsi que le dossier "assets", qui contient nos fichiers CSS et nos images. </p>
+                <p>Le fichier index.html est la page qui s'affiche automatiquement lorsque nous accédons au site par l'url : "https://mathildech.github.io/PPE1_banlieue".</p>
+                <p>C'est donc la page d'accueil de notre site. </p>
+                <p>Les autres fichiers HTML présents à la racine du projet sont les pages qui composent le menu du site : etapes.html, scripts.html, resultats.html, contact.html.</p>
+                <p>Le menu est également composé de la page des tableaux, qui se trouve dans le dossier TABLEAUX/index.html. Cette page recense les 4 tableaux HTML concernant les 4 langues étudiées, créé à partir du script bash principal (squelette_script.sh).</p>
+                <br><p>
+                    Ensuite, le dossier ARTICLES_BLOG contient tous les fichiers html de nos articles (soit 17).
+                </p><br>
+                <h4>Le reste du projet</h4><br>
+                <p>
+                    Le dossier URLS a été créé en premier, il rassemble nos corpora d'urls, matière première de notre projet.
+                </p>
+                <p>Le dossier SCRIPTS contient 3 scripts bash et un script python, responsables de la création des autres dossiers. Le script squelette_script.sh, le script principal, permet la création du dossier TABLEAUX et des tableaux HTML avec les colonnes correspondantes aux dossiers CONTEXTES, DUMPS-TEXT, ASPIRATIONS (dump HTML).</p>
+                <p>Le script make_itrameur_corpus.sh mène à la création du dossier ITRAMEUR.</p>
+                <p>Le script concordances.sh créé le dossier CONCORDANCES.</p>
+                <p>Enfin, le script python wordcloud_script_python.py permet de générer le nuage de mot qui sera intérprété lors des résultats.</p>
+                <br><br>
+                <h3>LE SITE </h3><br>
+                <p>
+                    Comme créer un site est une tâche longue et ardue pour des débutants, nous avons choisi de passer par une template bootstrap, car personne dans l'équipe n'est adepte du design graphique.
+                </p>
+                <p>
+                    Nous avons cependant enrichi le site de notre touche personnelle.
+                </p>
+                <p>
+                    Le design du site est donc simple, la palette de couleur est noir, blanc, gris et jaune.
+                </p>
+                <p>
+                    Le site est responsive et le menu se compresse en un dropdown menu à partir d'une certaine taille d'écran.
+                </p>
+                <p>
+                    Nous utilisons la flexbox pour positionner les élèments.
+                </p>
+                <p>
+                    Nous avons essayé de rendre la navigation la plus simple possible en intégrant un header et un footer à chaque page et chaque article ; une pagination à la fin de chaque article ainsi qu'une sticky note qui mène vers encore plus d'articles.
+                </p>
+                <p>
+                    Ainsi, l'utilisateur peut toujours se repérer et naviguer vers du nouveau contenu. 
+                </p>
+                <p>
+                    La structure du site apparaît également pour la page des tableaux HTML, cependant, elle n'apparaît pas pour le contenu des colonnes de ces tableaux. 
+                </p>
+                <p>Chaque étape du projet représente un article de notre blog.</p>
             </article>
         </div>
 
@@ -145,8 +195,8 @@
                 <ol class="list-unstyled mb-0">
                 <li>→ <a href="./jdb.html">Journal de bord</a></li>
                 <li>→ <a href="./article10.html">10. Ajout des concordances aux tableaux HTML</a></li>
-                <li>→ <a href="./article11.html">Titre article 11</a></li>
-                <li>→ <a href="./article12.html">titre article 12</a></li>
+                <li>→ <a href="./article11.html">11. Itrameur</a></li>
+                <li>→ <a href="./article12.html">12. Le nuage de mot</a></li>
                 <li>→ <a href="../etapes.html">Tous les articles</a></li>
                 </ol>
             </div>
