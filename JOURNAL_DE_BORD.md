@@ -146,3 +146,23 @@ Nous avons créé l'arborescence du site (index.html présent dans chaque dossie
 ### Création script python pour génération nuage de mot
 
 Nous avons crée un code python qui génère un nouage de mot pour chacune des langues sur lesquelles nous avons décidé de travailler. Le code contient une fonction qui : A) effectue d'abord le pre-processing de tous les dumps-text d'une langue choisie et B) autogénère le nouage de mot et retourne sa visualisation.  
+
+## 03/01/2023
+
+### Mise à jour des tableaux HTML 
+
+Version finale des tableaux HTML avec toutes les colonnes.
+
+### Analyse socio-linguistique des résultats de iTrameur
+
+Nous avons fait l'analyse des résultats de iTrameur par langue.
+
+## 10/01/2023
+
+### Écriture des articles 
+
+Nous avons commencé à rédiger au format .txt les articles qui composeront le site.
+
+### Mise à jour du site
+
+Nous avons intégré petit à petit les articles écrits au format .txt au site en format HTML+CSS.
