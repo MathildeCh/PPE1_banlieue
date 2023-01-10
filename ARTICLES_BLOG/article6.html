@@ -122,13 +122,28 @@
             </h3>
 
             <article class="blog-post">
-            <h2 class="blog-post-title mb-1">Sixième étape : </h2>
-            <p class="blog-post-meta">écrit le 08 novembre 2022 par <a href="../contact.html">Lilas, Mathilde, Diego</a></p><br>
+            <h2 class="blog-post-title mb-1">Sixième étape : Comptage des occurrences du mot et vérification du code de la réponse HTTP</h2>
+            <p class="blog-post-meta">écrit le 21 novembre 2022 par <a href="../contact.html">Lilas, Mathilde, Diego</a></p><br>
             <p>
-
+                À cette date nous avons continué le travail sur les tableaux HTML. Cette fois-ci nous avons procédé à l’écriture de certaines lignes de code qui nous ont permis d’ajouter le nombre d’occurrences de nos mots-clés dans chaque urls. Les lignes de code sont les suivantes : 
             </p>
             <p>
-
+                <img width=90% src="../assets/img/1.comptageMots.png" alt="screenshot comptage mpot">
+            </p>
+            <p>
+                Tout d’abord nous avons déclaré une variable “occurrence_mot” avec une valeur nulle. Ensuite, avant d’activer les commandes qui permettent de compter les occurrences, nous avons vérifié si la variable “encodage” n’est pas nulle et si le code HTTP est bien 200 ou 302 (codes qui nous indiquent la réussite de notre requête). Nous n’avons pas pu nous passer de la commande “unset” pour la variable “occurrence_mot” et nous n’avons pas réussi à trouver le moyen de faire fonctioner le script sans (car sans “unset”, aucune valeur n'est réaffectée à la variable “occurrence_mot”).
+            </p>
+            <p>
+                En ce qui concerne le comptage des occurrences de nos mots-clés, une fois vérifié que l’encodage est correct et que la réponse HTTP est la bonne, nous avons utilisé le navigateur web en mode texte “lynx”.
+            </p>
+            <p>
+                La commande “lynx” est utilisée avec les options “-dump” et “-nolist” sur la base des aspirations "curl" effectuées lors des étapes précédentes. L’option “-dump” renvoie le rendu de “lynx” dans la sortie standard. “-nolist” désactive l’apparition de la liste des liens corrélés à la page web en renvoyant ainsi seulement le texte des articles. Le resultat de la commande “lynx” est finalement enregistré dans un fichier texte et sauvegardé dans un dossier DUMPS-TEXT. Tous les dumps-text serviront dans la ligne suivante où l'on attribue à la variable “occurrence_mot” le résultat d'une recherche textuelle effectuée avec “egrep”. La recherche “egrep” sert à matcher un certain pattern (nos mots-clés), elle compte également le nombre d'occurrences de ce pattern.
+            </p>
+            <p>
+                C’est donc avec les options “egrep” -o (pour output) et -c (pour count) qu’on obtient enfin la valeur correcte de la variable “occurrence_mot”, soit le nombre de fois où ce mot apparît dans le texte. “occurrence_mot” est ensuite inclus dans les tableaux HTML.
+            </p>
+            <p>
+                <img src="../assets/img/2.comptageMots.png" alt="">
             </p>
 
             </article>

@@ -63,8 +63,8 @@ Nous avons décidé de constituer un corpus d'*articles de presse* présentant u
 
 ### Ajout des urls et de Lilas
 
-Ajout des urls en *anglais*, *français* et *italien* : recherche effectuée sur *Google News* avec la coocurrence de "banlieue" et "police".<br>
-Notre groupe s'agrandit et une nouvelle langue s'ajoute à la constitution de notre corpus, le *grec moderne*. 
+Ajout des urls en anglais, français et italien : recherche effectuée sur Google News avec la coocurrence de "banlieue" et "police".<br>
+Notre groupe s'agrandit et une nouvelle langue s'ajoute à la constitution de notre corpus, le grec moderne. 
 
 ## 30/10/2022
 
