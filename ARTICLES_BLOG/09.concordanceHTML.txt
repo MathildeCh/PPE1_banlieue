@@ -1,7 +1,7 @@
 07/12/2022 – Ajout des concordances aux tableux HTML
 
 
-Si dans l’étape précédente on a vu comment nous avons éxtrait le contexte d’apparition de nos mots-clés, cette fois-ci nous verrons comment nous avons recupéré les concordances de nos mots-clés. Pour “concordances” on entend tous les tokens à droite et à gauche par rapport à notre mot-clés et qui sont présents sur la meme ligne dans nos articles. L’organisation et la présentation de cette donnée très importante a été faite sous la forme d’un autre tableau HTML qui sera, à son tour, integré aux tableaux HTML dont on a déjà parlé lors des étapes précédentes. Ces nouveaux tableaux HTML dédiés aux concordances contiennent 3 colonnes où, au centre, on retrouve nos mots-clés et à droite et à gauche les occurrences des autres mots présents sur la meme ligne : 
+Lors de l’étape précédente, nous avons vu comment extraire le contexte d’apparition de nos mots-clés. Dans cette étape, nous verrons comment nous avons recupéré les concordances. Les “concordances” signifient tous les tokens à droite et à gauche du mot-clé présents sur la même ligne. L’organisation et la présentation des données est importante. Les concordances seront présents sous la forme d’un tableau HTML qui sera, à son tour, integré aux tableaux HTML dont on a déjà parlé lors des étapes précédentes. Ces nouveaux tableaux HTML dédiés aux concordances contiennent 3 colonnes où, au centre, on retrouve nos mots-clés et à droite et à gauche les occurrences des autres mots présents sur la meme ligne : 
 
 
 ############## IMAGE 1 – 1.concordancesHTML ############################
