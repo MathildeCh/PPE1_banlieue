@@ -1,5 +1,7 @@
 Dans le but d’améliorer les tableaux finaux, nous avons décidé d'y inclure les titres des articles et de traiter la problématique des cookies refusés en arrivant sur les pages web, qui causaient des erreurs 403. 
 
 	D’une part, nous avons cherché à isoler les balises head dans les fichiers html afin d’obtenir les titres. Nous ne souhaitions pas passer par des expressions régulières et avons donc opté pour l’utilisation des package xmllint et xmlstarlet. Le package xmllint nous a permis de convertir les fichiers html en xml, afin qu’ils soient traitables avec les commandes de xmlstarlet. xmlstarlet nous a ainsi permis, dans un second temps, d’extraire directement les balises de titre des articles. Ce procédé a rencontré quelques limites, comme on peut le constater dans les tableaux : certains titres ne s’affichent pas, ou pas correctement. Ce problème pourrait être réglé en appréhendant mieux le balisage et les packages susmentionnés. 
+################# IMAGE 1 – 1.Pimp_titres_cookie ###########################
 
-	D’autre part, nous avons décidé d’utiliser cURL pour gérer les problèmes de cookies. L’option -- cookie nous a permis de diminuer nos erreurs 403. Cette option a requis l’utilisation d’un User-Agent, qui est donc relatif à l’une de nos machines mais fonctionne néanmoins sur les trois. 
+	D’autre part, nous avons décidé d’utiliser cURL pour gérer les problèmes de cookies. L’option -- cookie nous a permis de diminuer nos erreurs 403. Cette option a requis l’utilisation d’un User-Agent, qui est donc relatif à l’une de nos machines mais fonctionne néanmoins sur les trois.
+################# IMAGE 2 – 2.Pimp_titres_cookie ########################### 
