@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Article 10</title>
+        <title>Article 13</title>
         <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"> -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
 
@@ -118,31 +118,14 @@
         <div class="row g-1">
         <div class="col-md-8">
             <h3 class="pb-4 mb-4 fst-italic border-bottom">
-            ARTICLE 10
+            ARTICLE 13
             </h3>
 
             <article class="blog-post">
-            <h2 class="blog-post-title mb-1">Dixième étape : Ajout des concordances aux tableux HTML.</h2>
-            <p class="blog-post-meta">écrit le 07 décembre 2022 par <a href="../contact.html">Lilas, Mathilde, Diego</a></p><br>
+            <h2 class="blog-post-title mb-1">Résultat : italien</h2>
+            <p class="blog-post-meta">écrit le 10 janvier 2023 par <a href="../contact.html">Lilas, Mathilde, Diego</a></p><br>
             <p>
-                Lors de l’étape précédente, nous avons vu comment extraire le contexte d’apparition de nos mots-clés. Dans cette étape, nous verrons comment nous avons recupéré les concordances. Les “concordances” signifient tous les tokens à droite et à gauche du mot-clé présents sur la même ligne. Les concordances sont présents sous la forme d’un tableau HTML qui est integré aux tableaux HTML principaux. Comme il y a un seul tableaux de concordance par langue, la répétition du lien vers ce tableau est inutile mais nous l'avons gardé par souci d'accessibilité et de clareté. Les tableaux HTML dédiés aux concordances contiennent 3 colonnes où, au centre, on retrouve nos mots-clés et à droite et à gauche les occurrences des autres mots présents sur la meme ligne : 
-            </p>
-            <p>
-                <img width=100% src="../assets/img/1.concordancesHTML.png" alt="screenshot concordance mot">
-            </p>
-            <p>
-                <br><br>
-                Afin de pouvoir créer les tableaux HTML des concordances nous avons du écrire un nouveau script bash nommé “concordances.sh”. Ce script va créer 4 nouveaux tableaux HTML, un par langue choisie pour ce projet, et va les stocker dans un dossier CONCORDANCE. Afin de créer les concordances, nous repartons des fichiers présents dans le dossier CONTEXTES, qui contiennent déjà la ligne précédente et suivante l'occurence du mot-clé. Ainsi, dans les premières lignes du script une variable “liste” est déclarée et elle va contenir les différents fichiers présents dans le dossier CONTEXTES au fur et à mesure du traitement effectué par deux boucles “for” imbriquées.
-            </p>
-            <p>
-                <img width=100% src="../assets/img/2.concordancesHTML.png" alt="screenshot concordance mot2">
-            </p>
-            <p>
-                <br><br>
-                Ensuite, pour chaque fichier “contexte”, une commande “grep” va rechercher le pattern indiqué  (nos mots-clés dans leurs différentes formes flexionnelles) en ignorant la casse avec l’option -i ; cette commande “grep” contient l’option -E (extended grep = “egrep”) et -T pour régler la tabulation des caractères en début de phrase et leur alignement. Nous avons ensuite effectué une commande “sed” sur la ligne contenant nos mots-clés. “sed” permet d’éditer rapidement des fichiers, tels que nos tableaux concordances HTML crées auparavant. Effectivement, lancer “sed” sur le résultat du “grep” en lui précisant un pattern spécifique à notre tâche nous a permis de séparer la ligne contenant nos mots-clés en contexte gauche, mot-clès et contexte droit :
-            </p>
-            <p>
-                <img width=100% src="../assets/img/3.concordancesHTML.png" alt="screenshot concordance mot3">
+                
             </p>
 
             </article>
@@ -158,9 +141,9 @@
                 <h4 class="fst-italic">Autres articles</h4>
                 <ol class="list-unstyled mb-0">
                 <li>→ <a href="./jdb.html">Journal de bord</a></li>
-                <li>→ <a href="./article12.html">12. Le nuage de mot</a></li>
-                <li>→ <a href="./article13.html">13. Résultat : italien</a></li>
-                <li>→ <a href="./article14.html">14. Résultat : anglais</a></li>
+                <li>→ <a href="./article15.html">15. Résultat : grec</a></li>
+                <li>→ <a href="./article16.html">16. Résultat : français</a></li>
+                <li>→ <a href="./article1.html">1. Le choix du mot</a></li>
                 <li>→ <a href="../etapes.html">Tous les articles</a></li>
                 </ol>
             </div>
@@ -174,8 +157,8 @@
 
         <div class="container d-flex justify-content-center">
         <nav class="blog-pagination" aria-label="Pagination">
-            <a class="btn btn-outline-dark rounded-pill" href="./article9.html">Article précèdent</a>
-            <a class="btn btn-outline-dark rounded-pill" href="./article11.html">Article suivant >></a>
+            <a class="btn btn-outline-dark rounded-pill" href="./article12.html">Article précèdent</a>
+            <a class="btn btn-outline-dark rounded-pill" href="./article14.html">Article suivant >></a>
         </nav>
         </div>
     </main>
