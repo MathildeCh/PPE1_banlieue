@@ -41,6 +41,14 @@
           fill: currentColor;
         }
 
+        .container{
+          text-align: justify;
+        }
+
+        .p{
+          text-align: justify;
+        }
+
         .nav-scroller {
           position: relative;
           z-index: 2;
@@ -107,53 +115,60 @@
         </div>
     </div>
 
+
+
       <main class="container">
-        <div class="p-4 p-md-5 mb-4 rounded text-bg-warning text-white">
-          <div class="col-md-8 px-0">
+        <div class="p-2 p-md-2 mb-3 rounded text-bg-warning text-white">
+          <div class="col-md-12 px-0">
             <h2 class="display-5 fst-italic text-center">Qui sommes-nous?</h2>
           </div>
-        </div>
+        
 
         <div class="d-flex justify-content-around align-items-stretch mb-5">
           <div class="p-4 m-1 rounded  text-bg-light">
             <img width=60% class="img-fluid rounded-circle mx-auto d-block" src="./assets/img/lilou.jpg" alt="">
             <h2 class="mb-4 text-center text-warning">Lilas Pastré</h2>
-            <p class="text-center">Après sa licence d’économie, mineure histoire, Lilas a intégré le département de sciences sociales de l’ENS de Paris par le concours étudiant. En lien avec son projet de recherche sur le Grand débat national, elle s’est inscrite en master Traitement Automatique des Langues (Nanterre, Paris 3, Inalco) où elle bénéficie d’un étalement de scolarité pour pouvoir valider en parallèle le master Quantifier en sciences sociales (ENS, EHESS). Elle parle français, grec et anglais.  <br><br>
+            <p class="text">Après sa licence d’économie, mineure histoire, Lilas a intégré le département de sciences sociales de l’ENS de Paris par le concours étudiant. En lien avec son projet de recherche sur le Grand débat national, elle s’est inscrite en master Traitement Automatique des Langues (Nanterre, Paris 3, Inalco) où elle bénéficie d’un étalement de scolarité pour pouvoir valider en parallèle le master Quantifier en sciences sociales (ENS, EHESS). Elle parle français, grec et anglais.  <br><br>
+               </p><p class = "text-center">  
             <a href="https://github.com/Lilasp/PPE1" target="_blank" rel="noopener noreferrer"><img width=10% src="./assets/img/github.png" alt=""></a></p>
           </div>
           <div class="p-4 m-1 rounded  text-bg-light">
             <img width=90% class="img-fluid rounded-circle mx-auto d-block" src="./assets/img/dedo.png" alt="">
             <h2 class="mb-4 text-center text-warning">Diego Rossini</h2>
-            <p class="text-center text-justify">A la suite de son master de linguistique à Bologne, Diego a d’abord donné des cours d’italien à des chanteurs d’opéra à Urbania. Il a ensuite déménagé en France où il a travaillé dans la restauration durant trois ans avant de s’intéresser à l’informatique et de redécouvrir sa passion du langage au sein du master Traitement Automatique des Langues (Nanterre, Paris 3, Inalco). Il parle italien, français et anglais. <br><br>
+            <p class="text">A la suite de son master de linguistique à Bologne, Diego a d’abord donné des cours d’italien à des chanteurs d’opéra à Urbania. Il a ensuite déménagé en France où il a travaillé dans la restauration durant trois ans avant de s’intéresser à l’informatique et de redécouvrir sa passion du langage au sein du master Traitement Automatique des Langues (Nanterre, Paris 3, Inalco). Il parle italien, français et anglais. <br><br>
+               </p><p class = "text-center">  
               <a href="https://github.com/DiegoRossini/PPE1" target="_blank" rel="noopener noreferrer"><img width=10% src="./assets/img/github.png" alt=""></a></p>
           </div>
           <div class="p-4 m-1 rounded  text-bg-light">
             <img width=70% class="img-fluid rounded-circle mx-auto d-block" src="./assets/img/mathou.jpeg" alt="">
             <h2 class="mb-4 text-center text-warning">Mathilde Charlet</h2>
-            <p class="text-center text-justify">L’amour de Mathilde pour les lettres l’a d’abord menée en classe préparatoire littéraire à Grenoble. Elle a intégré une grande école de commerce avant de tout plaquer, dépitée du contenu des cours, pour aller voyager en Asie. Elle s’est ensuite formée en informatique en Israël, où elle a travaillé durant une année avant d’intégrer le master Traitement Automatique des Langues (Nanterre, Paris 3, Inalco). Elle parle français et anglais.  <br><br>
+            <p class="text">L’amour de Mathilde pour les lettres l’a d’abord menée en classe préparatoire littéraire à Grenoble. Elle a intégré une grande école de commerce avant de tout plaquer, dépitée du contenu des cours, pour aller voyager en Asie. Elle s’est ensuite formée en informatique en Israël, où elle a travaillé durant une année avant d’intégrer le master Traitement Automatique des Langues (Nanterre, Paris 3, Inalco). Elle parle français et anglais.  <br><br>
+            </p><p class = "text-center">  
               <a href="https://github.com/MathildeCh/PPE" target="_blank" rel="noopener noreferrer"><img width=10% src="./assets/img/github.png" alt=""></a></p>
           </div>
         </div>
+        </div>
 
-        <div class="col-md-10 ">
-          <h3 class="pb-4 mb-4 fst-italic border-bottom">
-            Pourquoi ce site ?
-          </h3>
+        <div class="col-md-12 ">
+            <h3 class="pb-4 mb-4 fst-italic border-bottom">
+              Pourquoi ce site ?
+            </h3>
 
-          <article class="blog-post ">
-            <h2 class="blog-post-title mb-1">Projet : La vie multilingue des mots sur le web.</h2><br>
-            <p>Nous sommes des étudiants en master Plurital à Paris. Dans le cadre du cours de Projet de Programmation Encadré, nous avons développé un projet dont nous rendons compte dans ce site.</p>
-            <p>Objectif : Mise en oeuvre d'une chaîne de traitement textuel semi-automatique, depuis la récupération des données jusqu'à leur présentation.
-              Ce projet posera d'abord la question des objectifs linguistiques à atteindre (lexicologie, recherche d'information, traduction...)
-              et fera appel aux méthodes et outils informatiques nécessaires à leur réalisation (récupération de corpus, normalisation des textes, segmentation, étiquetage, extraction, structuration et présentation des résultats...).</p>
-            <p>Ce projet sera aussi l'occasion d'une évaluation critique des résultats obtenus, d'un point de vue quantitatif et qualitatif.</p>
-            <p>Pour suivre notre démarche semaine après semaine, voir <a href="./ARTICLES_BLOG/jdb.html">NOTRE JOURNAL DE BORD</a></p>
-            <br><h3 class="mb-2">Introduction</h3><br>
-            <p>Le mot “banlieue” en français convoque tout un pan d'imaginaire collectif : à son évocation, notre pensée se dirige très souvent vers le reflet d'un jeune Vincent Cassel qui, les sourcils froncés, profère des menaces face au miroir. Il s'agit de la scène la plus célèbre du film culte de Mathieu Kassovitz, “La Haine”, film qui dévoile au monde entier l'univers complexe des “banlieues”. Effectivement, il suffit de citer cette scène pour que le mot “banlieue” remonte à la surface de notre esprit et nous oblige à réfléchir au dictionnaire populaire qui lui est associé : “police”, “batiments”, “affrontements”, “fratrie”, “violence”, “pauvreté”, “marginalisation”, “racisme”, ... </p>
-          <p>Mais que véhicule cette multitude de connotations autour du mot “banlieue” ? La presse constitue-t-elle un témoin fiable de ce procès sémantique ? Dans le cadre du projet “le mot sur le web” nous voulons comprendre et analyser le discours de presse et l'utilisation linguistique de ce mot. Pour cela, nous voulons comparer le discours de presse français avec celui d’autres langues telles que l’italien, l’anglais des Etats-Unis et le grec. Nous croyons que cette comparaison linguistique nous fournira des indications sur la sémantique du mot “banlieue” dans les quatre langues et nous permettra de mieux conceptualiser une realité lingustique au premier abord simple mais qui se révèle complexe et frangmentée sous plusieurs points de vue. </p>
-          <p><strong>Donc, la question principale que nous nous posons est la suivante : est-il possible d'affirmer, en s’appuyant sur les discours de presse, que la signification du mot “banlieue” en français traduit un phénomène social franco-français ; et quelle réalité sémantique revêt-il dans d'autres langues ? </strong></p>
-
+            <article class="blog-post">
+              <h2 class="blog-post-title mb-1">Projet : La vie multilingue des mots sur le web.</h2><br>
+              <p>Nous sommes des étudiants en master <strong>T</strong>raitement <strong>A</strong>utomatique des <strong>L</strong>angues (Nanterre, Paris 3, Inalco). Dans le cadre du cours Projet de Programmation Encadré, nous avons développé un projet dont nous rendons compte dans ce site.</p>
+              <p><strong>Objectif</strong> : Mise en oeuvre d'une chaîne de traitement textuel semi-automatique, depuis la récupération des données jusqu'à leur présentation.
+                Ce projet posera d'abord la question des objectifs linguistiques à atteindre (lexicologie, recherche d'information, traduction...)
+                et fera appel aux méthodes et outils informatiques nécessaires à leur réalisation (récupération de corpus, normalisation des textes, segmentation, étiquetage, extraction, structuration et présentation des résultats...).</p>
+              <p>Ce projet sera aussi l'occasion d'une évaluation critique des résultats obtenus, d'un point de vue quantitatif et qualitatif.</p>
+              <p>Pour suivre notre démarche semaine après semaine, voir <a href="./ARTICLES_BLOG/jdb.html">notre journal de bord</a>.</p>
+              <br><h3 class="mb-2">Introduction</h3><br>
+              <p>Le mot "banlieue" en français convoque tout un pan d'imaginaire collectif : à son évocation, notre pensée se dirige très souvent vers le reflet d'un jeune Vincent Cassel qui, les sourcils froncés, profère des menaces face au miroir. Il s'agit de la scène la plus célèbre du film culte de Mathieu Kassovitz, "La Haine", film qui dévoile au monde entier l'univers complexe des "banlieues". Effectivement, il suffit de citer cette scène pour que le mot "banlieue" remonte à la surface de notre esprit et nous oblige à réfléchir au dictionnaire populaire qui lui est associé : "police", "cité", "affrontements", "violence", "pauvreté", "marginalisation", "racisme" ... </p>
+            <p>Mais que véhicule cette multitude de connotations autour du mot "banlieue" ? La presse constitue-t-elle un témoin fiable de ce procès sémantique ? Dans le cadre du projet "<a href="http://www.tal.univ-paris3.fr/cours/PROJET-MOT-SUR-LE-WEB/">la vie multilingue des mots sur le web</a>" nous voulons comprendre et analyser le discours de presse et l'utilisation linguistique de ce mot. Pour cela, nous voulons comparer le discours de presse français avec celui d’autres langues telles que l’italien, l’anglais des Etats-Unis et le grec. Nous croyons que cette comparaison linguistique nous fournira des indications sur la sémantique du mot "banlieue" dans les quatre langues et nous permettra de mieux conceptualiser une realité linguistique au premier abord simple mais qui se révèle complexe et frangmentée sous plusieurs points de vue. </p>
+            <p><strong>La question principale que nous nous posons est donc la suivante : est-il possible d'affirmer, en s’appuyant sur un corpus de presse web en quatre langues, que la signification du mot "banlieue" en français traduit un phénomène social franco-français ?  
+            </strong></p>
           </article>
+
         </div>
 
 
