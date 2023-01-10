@@ -1,8 +1,8 @@
 30/11/2022 – Ajout des contextes aux tableux HTML
 
 
-Une des donnéés les plus importantes à analyser dans le cadre de notre projet est le contexte d’apparition des nos mots-clés “banlieue”, “periferia”, “suburb” et “προάστιο” dans chacun des articles de presse qui composent notre corpus. 
-Au niveau informatique nous étions aménés à extraire la ligne où nos mots-clés apparaissent dans chaque articles et à en extraire aussi la ligne précédente et la ligne suivante. Pour cela faire, les DUMPS-TEXT extraits précédemment avec “lynx” se sont révélés très utiles et nous ont permis d'accomplir cette tache. Plus précisement, voici les lignes du script qui nous ont permis de créer un fichier texte contenant la ligne où le mot-clés apparait avec une ligne avant et une après et de l’ajouter aux tableaux HTML :
+Une des données les plus importantes à analyser dans le cadre de notre projet est le contexte d’apparition de nos mots-clés “banlieue”, “periferia”, “suburb” et “προάστιο” dans chaque article de presse qui compose notre corpus. 
+Au niveau informatique, nous devions extraire la ligne où nos mots-clés apparaissent dans chaque articles et extraire aussi la ligne précédente et la ligne suivante. Pour cela, les DUMPS-TEXT extraits précédemment avec “lynx” se sont révélés très utiles et nous ont permis d'accomplir cette tâche. Plus précisement, voici les lignes du script qui nous ont permis de créer un fichier texte contenant la ligne où le mot-clés apparait avec une ligne avant et une après et de l’ajouter aux tableaux HTML :
 
 
 ############### IMAGE 1 – 1.contextesHTML ###############################
@@ -12,3 +12,5 @@ Cette simple recherche “egrep” sur chaque dumps-text du dossier DUMPS-TEXT c
 
 
 ############### IMAGE 2 – 2.contextesHTML ###############################
+
+
