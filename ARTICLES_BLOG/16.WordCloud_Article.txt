@@ -3,7 +3,7 @@
 
 Afin de pouvoir générer un nuage de mots pour chacune des langues traitées dans notre projet, nous avons écrit un script python que nous allons présenter dans cet article. 
 
-Nous allons ici vous présenter étape par étape l’écriture de ce script python en éxpliquant la démarche et les choix éffectuées. 
+Nous allons ici vous présenter étape par étape l’écriture de ce script python en expliquant la démarche et les choix éffectués. 
 
 
 1. Importations
@@ -17,22 +17,22 @@ Glob nous permet de retourner tous les fichiers qui matchent un pattern spécifi
 
 b. string
 
-String nous fournira une simple liste des ponctuations qu’on eliminera par la suite après tokenisation. 
+String nous fournira une liste des ponctuations qu’on eliminera par la suite après tokenisation. 
 
 
 c. nltk
 
-Nltk nous fourni la plupart des fonctions dont on a besoin afin de normaliser les DUMPS-TEXT. En premier lieu on a téléchargé toutes les stopwords de toutes les langues du projet. Ensuite on a importé le lemmatiseur pour pouvoir éliminer par la suite les variations flexionnelles des mots présents dans les textes du corpus. 
+Nltk nous fournit la plupart des fonctions dont on a besoin afin de normaliser les DUMPS-TEXT. Nous avons d'abord téléchargé tous les stopwords de toutes les langues du projet. Ensuite nous avons importé le lemmatiseur pour pouvoir éliminer par la suite les variations flexionnelles des mots présents dans les textes du corpus. 
 
 
 d. WordCloud
 
-WordCloud, très simplement, nous permettera de générer le nuage de mot à partir de l’ensemble des DUMPS-TEXT de chaque langue.
+WordCloud nous permettera de générer le nuage de mot à partir de l’ensemble des DUMPS-TEXT de chaque langue.
 
 
 e. matplotlib
 
-Matplotlib nous serviva pour la visualisation du nuage de mot crée par WordCloud.
+Matplotlib nous serviva pour la visualisation du nuage de mot créé par WordCloud.
 
 
 ##################IMAGE 1 - "1.WordCloud Article"########################
@@ -41,7 +41,7 @@ Matplotlib nous serviva pour la visualisation du nuage de mot crée par WordClou
 
 2. Normalisation
 
-Avant de procéder à la normalisation de l’ensemble des DUMPS-TEXT, nous avons du créer une variable “all_texts” qui comporte tous les contenus des fichiers DUMPS-TEXT. Glob nous permet de recuperer tous les textes et une boucle “for” les ouvre et les concatène dans la variable “all_texts”.
+Avant de procéder à la normalisation de l’ensemble des DUMPS-TEXT, nous avons dû créer une variable “all_texts” qui comporte tous les contenus des fichiers DUMPS-TEXT. Glob nous permet de récupérer tous les textes et une boucle “for” les ouvre et les concatène dans la variable “all_texts”.
 Ensuite on tokenise “all_texts” et on enlève la punctuation et les stopwords sur la base de la langue choisie. Le resultat obtenu est une liste de lexèmes qui, par la suite, est lemmatisée à travers le “lemmatizer” précédemment initialisé. L’ensemble des mots lemmatisés est après uni sous une seule variable “joined_cleaned_doc”.
 
 
@@ -51,7 +51,7 @@ Ensuite on tokenise “all_texts” et on enlève la punctuation et les stopword
 
 3. Génération du WordCloud
 
-Finalement, la fonction “create_word_cloud” génère un nuage de mot à partir de “joined_cleaned_doc” avec des paramètres de visualisation que nous avons concordé. Avec matplotlib on va enfin pouvoir visualiser et sauvegarder l’image WordCloud générée.
+Finalement, la fonction “create_word_cloud” génère un nuage de mot à partir de “joined_cleaned_doc” avec des paramètres de visualisation choisis. Enfin, avec matplotlib nous allons pouvoir visualiser et sauvegarder l’image WordCloud générée.
 
 
 
