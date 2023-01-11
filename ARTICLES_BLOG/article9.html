@@ -132,14 +132,14 @@
             <h2 class="blog-post-title mb-1">Neuvième étape - Ajout des contextes aux tables HTML</h2>
             <p class="blog-post-meta">écrit le 30 novembre 2022 par <a href="../contact.html">Lilas, Mathilde, Diego</a></p><br>
             <p>
-                Une des donnéés les plus importantes à analyser dans le cadre de notre projet est le contexte d’apparition des nos mots-clés “banlieue”, “periferia”, “suburb” et “προάστιο” dans chacun des articles de presse qui composent notre corpus. 
-                Au niveau informatique nous étions aménés à extraire la ligne où nos mots-clés apparaissent dans chaque articles et à en extraire aussi la ligne précédente et la ligne suivante. Pour cela faire, les DUMPS-TEXT extraits précédemment avec “lynx” se sont révélés très utiles et nous ont permis d'accomplir cette tache. Plus précisement, voici les lignes du script qui nous ont permis de créer un fichier texte contenant la ligne où le mot-clés apparait avec une ligne avant et une après et de l’ajouter aux tableaux HTML :
+                Une des données les plus importantes à analyser dans le cadre de notre projet est le contexte d’apparition des nos mots-clés “banlieue”, “periferia”, “suburb” et “προάστιο” dans chacun des articles de presse qui composent notre corpus. 
+                Au niveau informatique nous étions amenés à extraire la ligne où nos mots-clés apparaissent dans chaque articles et à en extraire aussi la ligne précédente et la ligne suivante. Pour cela, les DUMPS-TEXT extraits précédemment avec “lynx” se sont révélés très utiles. Plus précisement, voici les lignes du script qui nous ont permis de créer un fichier texte contenant la ligne où le mot-clé apparaît avec une ligne avant et une après et de l’ajouter aux tableaux HTML :
             </p>
             <p>
                 <img width=100% src="../assets/img/1.contextesHTML.png" alt="screenshot contexte mot">
             </p>
             <p>
-                Cette simple recherche “egrep” sur chaque dumps-text du dossier DUMPS-TEXT contient les optons -B 1 et -A 1 (Before – After) qui ont tout simplement la fonction de retourner une ligne avant et une ligne après par rapport à la ligne où le pattern a été matché. L’option -i sert à ignorer la casse car dans le texte on compte autant les occurrences qui débutent par majuscule que celle qui sont complétement en minuscule. Une fois obtenus les 200 resultats de cette commande “egrep”, nous les avons sauvés sous un nouveau dossier CONTEXTES. Le fichiers texte contenus dans CONTEXTES sont ensuite intégrés aux tableaux HTML et différenciés grace à la variable “compteur” (pour la numérotation) et la variable “fichier” (pour différencier les langues/tableaux). Là où dans le script on peut lire <i>< a href=”../CONTEXTES/$compteur$fichier”></i>, il est important de savoir qu’il s’agit du moyen avec lequel en HTML on peut créer des hyper liens qui, dans notre cas, renvoient aux fichiers texte contenus dans le dossier CONTEXTES. 
+                Cette simple recherche “egrep” sur chaque dump-text du dossier DUMPS-TEXT contient les optons -B 1 et -A 1 (Before – After) qui ont tout simplement la fonction de retourner une ligne avant et une ligne après par rapport à la ligne où le pattern a été matché. L’option -i sert à ignorer la casse car dans le texte on compte autant les occurrences qui débutent par une majuscule que celles qui sont complètement en minuscules. Une fois obtenus les 200 résultats de cette commande “egrep”, nous les avons sauvegardés sous un nouveau dossier CONTEXTES. Les fichiers texte contenus dans CONTEXTES sont ensuite intégrés aux tableaux HTML et différenciés grace à la variable “compteur” (pour la numérotation) et la variable “fichier” (pour différencier les langues/tableaux). Là où dans le script on peut lire <i>< a href=”../CONTEXTES/$compteur$fichier”></i>, il est important de savoir qu’il s’agit du moyen avec lequel en HTML on peut créer des hyper liens qui, dans notre cas, renvoient aux fichiers texte contenus dans le dossier CONTEXTES. 
             </p>
             <p>
                 <img width=100% src="../assets/img/2.contextesHTML.png" alt="screenshot contexte mot2">
@@ -158,8 +158,8 @@
                 <ol class="list-unstyled mb-0">
                 <li>→ <a href="./jdb.html">Journal de bord</a></li>
                 <li>→ <a href="./article11.html">11. Itrameur</a></li>
-                <li>→ <a href="./article12.html">12. Le nuage de mot</a></li>
-                <li>→ <a href="./article13.html">13. Résultat : italien</a></li>
+                <li>→ <a href="./article12.html">12. Le nuage de mots</a></li>
+                <li>→ <a href="./article13.html">13. Résultat - Italien</a></li>
                 <li>→ <a href="../etapes.html">Tous les articles</a></li>
                 </ol>
             </div>

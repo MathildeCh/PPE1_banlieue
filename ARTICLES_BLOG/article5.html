@@ -132,27 +132,27 @@
             <h2 class="blog-post-title mb-1">Cinquième étape - Intégration des codes HTTP et des encodages aux tables</h2>
             <p class="blog-post-meta">écrit le 16 novembre 2022 par <a href="../contact.html">Lilas, Mathilde, Diego</a></p><br>
             <p>
-                Suite à la création des tableaux HTML, nous avons continué progressivement leur remplissage. Dans cette étape nous avons ajouté aux tableaux HTML les codes HTTP des tous les urls et leur encodage. Pour cela faire nous avons procédé de la façon suivante à la modification de notre script bash/HTML :
+                Suite à la création des tableaux HTML, nous avons continué progressivement leur remplissage. Dans cette étape nous avons ajouté aux tableaux HTML les codes HTTP des tous les urls et leur encodage. Pour cela, nous avons procédé de la façon suivante à la modification de notre script bash/HTML :
 
                 <br><br>
 
                 
                 <h4 class="mb-3">Code HTTP des urls</h4>
 
-                Pour chaque urls traité par la boucle “while”, nous avons executé une commande “curl” qui nous a retourné en tant que resultat le code HTTP de ces derniers. La ligne de code que nous avons écrit est la suivante : 
+                Pour chaque urls traité par la boucle “while”, nous avons exécuté une commande “curl” qui nous a donné le code HTTP de ces derniers. La ligne de code que nous avons écrite est la suivante : 
 
             </p>
             <p>
                 <img width=100% src="../assets/img/1.integrationCodesHTTPTableaux.png" alt="screenshot intégration des tableaux">
             </p>
             <p>
-                Après la déclaration de la variable “codeHTTP”, nous lui avons attribué le resultat de plusieurs opérations effectuées sur les aspirations de “curl”. Pour que “curl” nous renvoie seulement le code HTTP de l’url traité, nous avons choisi plusieurs options de "curl" disponibles : 
+                Après la déclaration de la variable “codeHTTP”, nous lui avons attribué le résultat de plusieurs opérations effectuées sur les aspirations de “curl”. Pour que “curl” nous renvoie seulement le code HTTP de l’url traitée, nous avons choisi plusieurs options de "curl" disponibles : 
                 <ul>
                     <li>
-                        -b --cookie = pour accepter les cookies eventuels
+                        -b --cookie = pour accepter les cookies éventuels
                     </li>
                     <li>
-                        -A = spécification de l’user agent
+                        -A = spécification de l’user agent, en lien avec les cookies
                     </li>
                     <li>
                         -L = permet à “curl” de suivre toutes les redirections
@@ -166,21 +166,21 @@
                 </ul>
             </p>
             <p>
-                Une fois que la variable “codeHTTP” contient le code HTTP de l’url traité, nous l’avons ajoutée aux tableaux HTML crée lors de l’étape précedente. Il est important aussi de remarquer que les aspirations des tous les urls ont été stockées et triées dans un dossier appelé ASPIRATIONS.
+                Une fois le code HTTP de l’url traitée stocké dans la variable “codeHTTP”, nous l’avons ajouté aux tableaux HTML créés lors de l’étape précedente. Il est important aussi de remarquer que les aspirations des tous les urls ont été stockées et triées dans un dossier appelé ASPIRATIONS.
                 <br><br>
             </p>
                 <h4>Encodage des textes des urls</h4>
             <p>
-                Afin de retrouver l’encodage des caractères des textes des articles constituants notre corpus, nous avons écrit la ligne de commnde suivante :
+                Afin de retrouver l’encodage des caractères des textes des articles constituants notre corpus, nous avons écrit la ligne de commande suivante :
             </p>
             <p>
                 <img width=100% src="../assets/img/2.integrationCodesHTTPTableaux.png" alt="screenshot intégration des tableaux2">
             </p>
             <p>
-                Comme vu auparavant, ici aussi on a déclaré une varable “encodage” et nous y avons stocké dedans le resultat d’une opération “curl”, “grep”,”cut” et “head” dans l’ordre ci-precisé. Les options choisis pour “curl” cette fois ci-sont :
+                Comme vu auparavant, ici aussi nous avons déclaré une variable “encodage” et nous y avons stocké le résultat d’une opération “curl”, “grep”,”cut” et “head” (dans cet ordre). Les options choisies pour “curl” cette fois-ci sont :
                 <ul>
                     <li>
-                        -I = “curl” affihe seulement les headers
+                        -I = “curl” affiche seulement les headers
                     </li>
                     <li>
                         -s = mode silence de “curl”
@@ -191,7 +191,7 @@
                 </ul>
             </p>
             <p>
-                Toutefois, le resultat de “curl” n’était pas encore parfait car on devait encore isoler l’encodage sans qu’autres portions du texte du header n’apparaissent. Pour cela faire nous avons utilisé “grep” sur la sortie standard de “curl” avec les options suivantes : 
+                Toutefois, le résultat de “curl” n’était pas encore parfait car on devait encore isoler l’encodage sans que d'autres portions du texte que le header n’apparaissent. Pour cela, nous avons utilisé “grep” sur la sortie standard de “curl” avec les options suivantes : 
                 <ul>
                     <li>
                       -i = “grep” ignore la casse  
@@ -205,10 +205,10 @@
                 </ul>
             </p>
             <p>
-                À ce moment là, il nous fallait absulement éliminer le mot “charset=” pour garder juste le portion du texte qui suit. C’est donc avec “cut” que nous avons divisé la sortie de “grep” en ce qui est avant le symbole “=” et ce qui suit ce symbole. Ensuite nous en avons recuperé la déuixème ligne où il est marqué l’encodage du texte de l’article et nous avons ajouté la valeur de la variable "encodage" à nos tableaux HTML :
+                À ce moment là, il nous fallait absolument éliminer le mot “charset=” pour garder uniquement la portion du texte qui suit. C’est donc avec “cut” que nous avons divisé la sortie de “grep” en deux, à partir du symbole “=”. Ensuite nous en avons recuperé la deuxième partie, c'est-à-dire l’encodage du texte de l’article, et nous avons ajouté la valeur de la variable "encodage" à nos tableaux HTML :
             </p>
             <p>
-                <img width=100% src="../assets/img/3.integrationCodesHTTPTableaux.png" alt="screenshot intégration des tableaux3">
+                <img width=80% src="../assets/img/3.integrationCodesHTTPTableaux.png" alt="screenshot intégration des tableaux3">
             </p>
 
             </article>
